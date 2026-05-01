@@ -6,8 +6,8 @@ export const legalMatterLabels = {
   wills: "Wills",
   employment: "Employment",
   personal_injury: "Personal Injury",
-  commercial: "Commercial",
-  landlord_tenant: "Landlord Tenant",
+  commercial: "Commercial Law",
+  landlord_tenant: "Landlord and Tenant",
 } as const;
 
 export type LegalMatterType = keyof typeof legalMatterLabels;

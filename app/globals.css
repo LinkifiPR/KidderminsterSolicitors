@@ -3,10 +3,15 @@
 :root {
   --background: #f8f5ef;
   --foreground: #1f2933;
-  --muted: #6b7280;
+  --charcoal: #1f2933;
+  --muted: #667085;
   --panel: #ffffff;
-  --line: #e7e0d5;
+  --line: #d8e2ea;
+  --border: #d8e2ea;
   --navy: #071827;
+  --trust-blue: #0e3a5b;
+  --mid-blue: #175c8e;
+  --pale-blue: #eef6fb;
   --gold: #c6a15b;
   --cream: #f8f5ef;
 }
@@ -71,9 +76,9 @@ a {
 
 .hero-motion {
   background:
-    radial-gradient(circle at 20% 20%, rgba(198, 161, 91, 0.24), transparent 30%),
-    radial-gradient(circle at 80% 15%, rgba(255, 255, 255, 0.14), transparent 24%),
-    linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+    radial-gradient(circle at 20% 20%, rgba(23, 92, 142, 0.18), transparent 30%),
+    radial-gradient(circle at 80% 15%, rgba(198, 161, 91, 0.18), transparent 24%),
+    linear-gradient(115deg, transparent, rgba(14, 58, 91, 0.08), transparent);
   animation: hero-drift 18s ease-in-out infinite alternate;
 }
 

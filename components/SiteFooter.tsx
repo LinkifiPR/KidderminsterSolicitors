@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { servicePages, trustPages } from "../lib/site";
+import { CookieSettingsButton } from "./CookieSettingsButton";
 
 export function SiteFooter() {
   return (
@@ -10,12 +11,12 @@ export function SiteFooter() {
             Kidderminster Solicitors
           </p>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-white/68">
-            An independent local guide to finding trusted solicitors in
-            Kidderminster. We are not a law firm and do not provide legal
-            advice. Enquiries may be passed to a solicitor firm or legal service
-            provider, and we may receive a referral fee, marketing fee, or
-            commercial payment.
+            Kidderminster Solicitors is an independent legal information and
+            solicitor introduction website. We are not a law firm and do not
+            provide legal advice. Solicitor firms and legal service providers
+            are responsible for any advice they provide.
           </p>
+          <p className="mt-5 text-sm text-white/70">Contact: use the quote or contact form.</p>
         </div>
 
         <div>
@@ -37,6 +38,7 @@ export function SiteFooter() {
                 {page.h1}
               </Link>
             ))}
+            <CookieSettingsButton />
           </div>
         </div>
       </div>

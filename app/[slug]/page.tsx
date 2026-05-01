@@ -59,21 +59,20 @@ export default async function ContentPage({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-[var(--cream)]">
       <SiteHeader />
-      <section className="relative isolate overflow-hidden bg-[var(--navy)] px-5 pb-16 pt-32 text-white sm:px-8">
-        <div className="absolute inset-0 -z-20 bg-[url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=2200&q=80')] bg-cover bg-center opacity-30" />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(7,24,39,0.96),rgba(7,24,39,0.82)_54%,rgba(7,24,39,0.62))]" />
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div>
+      <section className="relative isolate overflow-hidden bg-[var(--pale-blue)] px-5 pb-16 pt-12 sm:px-8">
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-32 bg-white" />
+        <div className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] border border-[var(--border)] bg-white p-6 shadow-[0_26px_90px_rgba(7,24,39,0.1)] sm:p-10 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="self-center">
             <p className="text-sm font-semibold uppercase text-[var(--gold)]">
               {isService ? "Solicitor comparison guide" : "Trust and disclosure"}
             </p>
-            <h1 className="mt-4 max-w-4xl text-5xl font-semibold leading-[1.04] sm:text-6xl">
+            <h1 className="mt-4 max-w-4xl text-5xl font-semibold leading-[1.04] text-[var(--navy)] sm:text-6xl">
               {page.h1}
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-white/76">
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-[var(--muted)]">
               {page.metaDescription}
             </p>
-            <p className="mt-6 max-w-2xl text-sm leading-6 text-white/64">
+            <p className="mt-6 max-w-2xl text-sm leading-6 text-[var(--muted)]">
               Independent local guide. We are not a law firm and do not provide
               legal advice.
             </p>

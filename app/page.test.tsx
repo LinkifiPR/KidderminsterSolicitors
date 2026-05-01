@@ -14,12 +14,16 @@ describe("Home", () => {
       0,
     );
     expect(
-      screen.getByText(/independent legal information site/i),
-    ).toBeInTheDocument();
+      screen.getAllByText(/independent local solicitor guide/i).length,
+    ).toBeGreaterThan(0);
     expect(
-      screen.getByRole("button", {
-        name: /request my no obligation quote/i,
-      }),
-    ).toBeInTheDocument();
+      screen.getAllByRole("button", {
+        name: /request my quote/i,
+      }).length,
+    ).toBeGreaterThan(0);
+    expect(screen.getAllByText(/we review your enquiry/i).length).toBeGreaterThan(
+      0,
+    );
+    expect(screen.queryByText(/kit/i)).not.toBeInTheDocument();
   });
 });

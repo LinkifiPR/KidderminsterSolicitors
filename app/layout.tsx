@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { baseUrl } from "../lib/site";
+import { CookieConsentMount } from "../components/CookieConsentMount";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -27,7 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieConsentMount />
+      </body>
     </html>
   );
 }

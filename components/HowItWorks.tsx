@@ -3,16 +3,16 @@ import { MessageSquareText, Send, UserRoundCheck } from "lucide-react";
 const steps = [
   {
     title: "Tell us what legal help you need",
-    text: "Use the custom quote form to explain the category, postcode, and preferred contact time.",
+    text: "Share a few details about your enquiry, including the area of law, your postcode, and the best way to contact you.",
     icon: MessageSquareText,
   },
   {
-    title: "We route your enquiry",
-    text: "Your enquiry is added to Kit, tagged by town and category, and routed to the assigned partner workflow.",
+    title: "We review your enquiry",
+    text: "We check the details and match your enquiry with a suitable solicitor partner where appropriate.",
     icon: Send,
   },
   {
-    title: "A partner contacts you directly",
+    title: "A solicitor partner contacts you",
     text: "The solicitor firm or legal service provider can contact you. You are under no obligation to instruct them.",
     icon: UserRoundCheck,
   },
@@ -27,7 +27,7 @@ export function HowItWorks() {
             How it works
           </p>
           <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
-            A clear quote process, without pretending to be a law firm.
+            A clear quote process, without pressure.
           </h2>
         </div>
 

@@ -31,6 +31,7 @@ function jsonResponse(body: unknown, status = 200) {
 describe("POST /api/leads", () => {
   const fetchMock = vi.fn();
   const originalEnv = process.env;
+  const originalFetch = globalThis.fetch;
 
   beforeEach(() => {
     vi.stubGlobal("fetch", fetchMock);
@@ -42,7 +43,11 @@ describe("POST /api/leads", () => {
   });
 
   afterEach(() => {
-    vi.unstubAllGlobals();
+    if (originalFetch) {
+      vi.stubGlobal("fetch", originalFetch);
+    } else {
+      Reflect.deleteProperty(globalThis, "fetch");
+    }
     fetchMock.mockReset();
     process.env = originalEnv;
   });

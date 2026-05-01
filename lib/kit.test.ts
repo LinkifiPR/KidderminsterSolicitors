@@ -25,13 +25,18 @@ function jsonResponse(body: unknown, status = 200) {
 
 describe("submitLeadToKit", () => {
   const fetchMock = vi.fn();
+  const originalFetch = globalThis.fetch;
 
   beforeEach(() => {
     vi.stubGlobal("fetch", fetchMock);
   });
 
   afterEach(() => {
-    vi.unstubAllGlobals();
+    if (originalFetch) {
+      vi.stubGlobal("fetch", originalFetch);
+    } else {
+      Reflect.deleteProperty(globalThis, "fetch");
+    }
     fetchMock.mockReset();
   });
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState, type FormEvent } from "react";
+import Link from "next/link";
 import { legalMatterLabels, type LegalMatterType } from "../lib/leads";
 
 type FormState = {
@@ -91,7 +92,7 @@ export function QuoteForm() {
       setStatus("success");
       setForm(initialState);
       setMessage(
-        "Thanks. Your enquiry has been received and a suitable solicitor partner can contact you directly.",
+        "Thank you. Your enquiry has been received. A solicitor partner may contact you directly if they are able to help.",
       );
       return;
     }
@@ -114,18 +115,18 @@ export function QuoteForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-[2rem] border border-white/20 bg-white/95 p-6 text-slate-950 shadow-[0_30px_90px_rgba(0,0,0,0.28)] backdrop-blur-md sm:p-7"
+      className="rounded-2xl border border-[var(--border)] bg-white p-6 text-[var(--charcoal)] shadow-[0_22px_70px_rgba(7,24,39,0.1)] sm:p-7"
     >
       <div className="mb-6">
-        <p className="text-xs font-semibold uppercase text-[var(--gold)]">
-          No obligation quote
+        <p className="text-xs font-semibold uppercase text-[var(--mid-blue)]">
+          Request a no obligation quote
         </p>
         <h2 className="mt-2 text-2xl font-semibold text-[var(--navy)]">
-          Tell us what legal help you need
+          Request a no obligation quote
         </h2>
         <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
-          We will route your enquiry through Kit to the relevant solicitor
-          partner and send you a confirmation.
+          Tell us what legal help you need and we&apos;ll connect you with a
+          suitable solicitor partner where appropriate.
         </p>
       </div>
 
@@ -229,7 +230,7 @@ export function QuoteForm() {
           />
           <span>
             I consent to being contacted about my enquiry using the details I
-            provide.
+            have provided.
           </span>
         </label>
         <label className="flex gap-3 text-xs leading-5 text-[var(--muted)]">
@@ -255,16 +256,24 @@ export function QuoteForm() {
         disabled={status === "submitting"}
         className="mt-6 w-full rounded-full bg-[var(--gold)] px-6 py-4 text-sm font-bold uppercase text-[var(--navy)] transition hover:bg-[#d8b66f] disabled:cursor-not-allowed disabled:opacity-70"
       >
-        {status === "submitting"
-          ? "Sending enquiry..."
-          : "Request my no obligation quote"}
+        {status === "submitting" ? "Sending enquiry..." : "Request my quote"}
       </button>
+
+      <p className="mt-4 text-xs leading-5 text-[var(--muted)]">
+        By submitting this form, you agree that we may use your details to
+        handle your enquiry and may pass them to a solicitor firm or legal
+        service provider where appropriate. See our{" "}
+        <Link href="/privacy-policy/" className="font-semibold text-[var(--navy)]">
+          Privacy Policy
+        </Link>{" "}
+        for details. We are not a law firm and do not provide legal advice.
+      </p>
 
       {message ? (
         <p
           className={`mt-4 rounded-2xl px-4 py-3 text-sm leading-6 ${
             status === "success"
-              ? "bg-emerald-50 text-emerald-800"
+              ? "bg-[var(--pale-blue)] text-[var(--trust-blue)]"
               : "bg-red-50 text-red-800"
           }`}
         >

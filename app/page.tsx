@@ -1,3 +1,12 @@
+import Link from "next/link";
+import {
+  BadgeCheck,
+  BookOpenText,
+  FileCheck,
+  Handshake,
+  MapPin,
+  ShieldCheck,
+} from "lucide-react";
 import { QuoteForm } from "../components/QuoteForm";
 import { FeaturedPartner } from "../components/FeaturedPartner";
 import { HowItWorks } from "../components/HowItWorks";
@@ -10,77 +19,171 @@ import {
   websiteSchema,
 } from "../lib/site";
 
+const trustItems = [
+  {
+    title: "Independent local guide",
+    text: "Clear information for people comparing solicitor services in Kidderminster.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Transparent referral disclosure",
+    text: "Featured placement and commercial relationships are disclosed.",
+    icon: FileCheck,
+  },
+  {
+    title: "No obligation to instruct",
+    text: "You remain free to choose whether any introduced firm is right for you.",
+    icon: BadgeCheck,
+  },
+  {
+    title: "Solicitor partner introductions",
+    text: "A suitable solicitor firm or legal service provider may contact you directly.",
+    icon: Handshake,
+  },
+];
+
+const expectationCards = [
+  {
+    title: "Clear process",
+    text: "A straightforward quote request with plain-language disclosure.",
+  },
+  {
+    title: "No obligation quote",
+    text: "You can compare your options without committing to instruct a firm.",
+  },
+  {
+    title: "Local solicitor partner introduction",
+    text: "Your enquiry may be passed to a relevant solicitor partner where appropriate.",
+  },
+];
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[var(--cream)]">
+    <main className="min-h-screen bg-white">
       <SiteHeader />
-      <section className="relative isolate overflow-hidden bg-[var(--navy)] px-5 pb-12 pt-28 text-white sm:px-8 lg:min-h-screen">
-        <div className="absolute inset-0 -z-20 bg-[url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2200&q=80')] bg-cover bg-center opacity-40" />
-        <div className="hero-motion absolute inset-0 -z-10 opacity-30" />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(7,24,39,0.94),rgba(7,24,39,0.74)_48%,rgba(7,24,39,0.48))]" />
-        <div className="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
-          <div className="max-w-4xl">
-            <p className="mb-5 text-sm font-semibold uppercase text-[var(--gold)]">
-              Premium local legal comparison
+
+      <section className="bg-[var(--pale-blue)] px-5 py-14 sm:px-8 lg:py-18">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+          <div>
+            <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
+              Independent local solicitor guide
             </p>
-            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="mt-4 max-w-4xl text-5xl font-semibold leading-[1.04] text-[var(--navy)] sm:text-6xl">
               Find trusted solicitors in Kidderminster
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl">
-              Compare local legal services and request a no obligation quote
-              from a trusted solicitor partner.
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]">
+              An independent local guide helping you compare solicitor services
+              and request a no obligation quote from a suitable solicitor
+              partner.
             </p>
-            <div className="mt-9 grid max-w-2xl gap-3 text-sm text-white/78 sm:grid-cols-3">
-              <span className="rounded-full border border-white/15 bg-white/10 px-4 py-3">
-                Independent local guide
-              </span>
-              <span className="rounded-full border border-white/15 bg-white/10 px-4 py-3">
-                Clear referral disclosure
-              </span>
-              <span className="rounded-full border border-white/15 bg-white/10 px-4 py-3">
-                Custom Kit lead routing
-              </span>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="#quote"
+                className="inline-flex justify-center rounded-full bg-[var(--gold)] px-6 py-4 text-sm font-bold uppercase text-[var(--navy)]"
+              >
+                Get a no obligation quote
+              </Link>
+              <Link
+                href="#services"
+                className="inline-flex justify-center rounded-full border border-[var(--border)] bg-white px-6 py-4 text-sm font-bold uppercase text-[var(--trust-blue)]"
+              >
+                Compare solicitor services
+              </Link>
             </div>
-            <p className="mt-7 max-w-2xl text-sm leading-6 text-white/64">
-              Independent legal information site. We are not a law firm and do
-              not provide legal advice.
+            <p className="mt-5 text-sm leading-6 text-[var(--muted)]">
+              We are not a law firm and do not provide legal advice.
             </p>
           </div>
 
-          <div id="quote">
-          <QuoteForm />
+          <div className="relative">
+            <div className="overflow-hidden rounded-3xl border border-white bg-white shadow-[0_24px_90px_rgba(7,24,39,0.14)]">
+              <div className="h-[430px] bg-[url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=80')] bg-cover bg-center" />
+            </div>
+            <div className="absolute -bottom-7 left-6 right-6 rounded-2xl border border-[var(--border)] bg-white p-5 shadow-[0_18px_55px_rgba(7,24,39,0.13)]">
+              <div className="flex items-start gap-4">
+                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[var(--pale-blue)] text-[var(--mid-blue)]">
+                  <MapPin className="h-5 w-5" aria-hidden />
+                </span>
+                <div>
+                  <p className="text-sm font-semibold text-[var(--navy)]">
+                    Serving Kidderminster and Wyre Forest
+                  </p>
+                  <p className="mt-1 text-sm leading-6 text-[var(--muted)]">
+                    Built for local legal enquiries, comparison, and transparent
+                    solicitor partner introductions.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div className="mx-auto mt-12 grid max-w-7xl gap-3 border-t border-white/15 pt-5 text-sm text-white/64 sm:grid-cols-3">
-          <span>Serving Kidderminster and the wider Wyre Forest area.</span>
-          <span>Transparent referral and advertising disclosure.</span>
-          <span>Powered by custom forms routed into Kit.</span>
         </div>
       </section>
 
-      <section className="bg-white px-5 py-20 sm:px-8">
+      <section id="quote" className="bg-white px-5 py-16 sm:px-8">
+        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
+              Start here
+            </p>
+            <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
+              Request a no obligation quote
+            </h2>
+            <p className="mt-5 text-base leading-8 text-[var(--muted)]">
+              Submit your enquiry and we&apos;ll connect you with a suitable
+              solicitor partner. You are under no obligation to instruct them.
+            </p>
+          </div>
+          <QuoteForm />
+        </div>
+      </section>
+
+      <section id="services" className="bg-[var(--cream)] px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
-            <div>
-              <p className="text-sm font-semibold uppercase text-[var(--gold)]">
-                Popular solicitor services
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
+                Services for you
               </p>
               <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
-                Compare local solicitor services in Kidderminster.
+                Compare solicitor services in Kidderminster.
               </h2>
               <p className="mt-5 text-base leading-8 text-[var(--muted)]">
-                Start with the area of law that best matches your enquiry. Each
-                page keeps the comparison angle clear and includes a quote route
-                with disclosure.
+                Choose the category that best matches your enquiry and compare
+                what to ask before choosing a solicitor firm.
               </p>
             </div>
-            <div className="grid gap-5 sm:grid-cols-2">
-              {servicePages.slice(0, 6).map((service) => (
-                <ServiceCard key={service.slug} service={service} />
-              ))}
-            </div>
+            <Link
+              href="/conveyancing-solicitors-kidderminster/"
+              className="text-sm font-bold uppercase text-[var(--trust-blue)]"
+            >
+              View service guides
+            </Link>
           </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {servicePages.slice(0, 8).map((service) => (
+              <ServiceCard key={service.slug} service={service} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-12 sm:px-8">
+        <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {trustItems.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <article key={item.title} className="rounded-2xl border border-[var(--border)] bg-white p-6">
+                <Icon className="h-7 w-7 text-[var(--gold)]" aria-hidden />
+                <h3 className="mt-5 text-lg font-semibold text-[var(--navy)]">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
+                  {item.text}
+                </p>
+              </article>
+            );
+          })}
         </div>
       </section>
 
@@ -88,40 +191,143 @@ export default function Home() {
       <HowItWorks />
 
       <section className="bg-white px-5 py-20 sm:px-8">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1fr]">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="text-sm font-semibold uppercase text-[var(--gold)]">
-              Local trust
+            <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
+              Why use this guide
             </p>
             <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
-              Built for Kidderminster, not as a fake solicitor office.
+              Local information with clear commercial disclosure.
             </h2>
           </div>
           <div className="space-y-5 text-base leading-8 text-[var(--muted)]">
             <p>
-              This project is designed for organic rankings, local comparison
-              content, and transparent lead capture. It should not be represented
-              as a solicitor practice, regulated legal provider, or fake local
-              business location.
+              This website is built around organic local search, helpful
+              comparison content, and transparent solicitor partner
+              introductions.
             </p>
             <p>
-              Every commercial placement should be disclosed, and users should
-              verify the credentials, costs, and suitability of any firm before
-              instructing them.
+              We do not present the website as a solicitor practice, regulated
+              legal provider, or fake local office. Users should verify the
+              credentials, costs, and suitability of any firm before instructing
+              them.
             </p>
           </div>
         </div>
       </section>
 
+      <section className="bg-[var(--pale-blue)] px-5 py-20 sm:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
+                Local area
+              </p>
+              <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
+                Serving Kidderminster and the wider Wyre Forest area.
+              </h2>
+            </div>
+            <p className="text-base leading-8 text-[var(--muted)]">
+              The guide is written for people looking for solicitor services in
+              Kidderminster, Stourport, Bewdley, and nearby Worcestershire
+              communities. It focuses on practical local intent rather than
+              pretending to operate from a physical law firm office.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-20 sm:px-8">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
+            What users can expect
+          </p>
+          <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
+            No fake reviews. Just a clear process.
+          </h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {expectationCards.map((card) => (
+              <article
+                key={card.title}
+                className="rounded-2xl border border-[var(--border)] bg-[var(--cream)] p-6"
+              >
+                <h3 className="text-xl font-semibold text-[var(--navy)]">
+                  {card.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
+                  {card.text}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[var(--cream)] px-5 py-20 sm:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex items-center justify-between gap-5">
+            <div>
+              <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
+                Legal guides
+              </p>
+              <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
+                Local guides and solicitor comparisons.
+              </h2>
+            </div>
+            <BookOpenText className="hidden h-10 w-10 text-[var(--gold)] sm:block" />
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {servicePages.slice(0, 3).map((service) => (
+              <Link
+                key={service.slug}
+                href={`/${service.slug}/`}
+                className="rounded-2xl border border-[var(--border)] bg-white p-6"
+              >
+                <p className="text-xs font-semibold uppercase text-[var(--mid-blue)]">
+                  Guide
+                </p>
+                <h3 className="mt-3 text-xl font-semibold text-[var(--navy)]">
+                  {service.title}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
+                  {service.summary}
+                </p>
+                <span className="mt-6 inline-flex text-sm font-semibold text-[var(--trust-blue)]">
+                  Read more
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[var(--trust-blue)] px-5 py-20 sm:px-8">
+        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+          <div className="text-white">
+            <p className="text-sm font-semibold uppercase text-[var(--gold)]">
+              Speak to a solicitor partner
+            </p>
+            <h2 className="mt-3 text-4xl font-semibold">
+              Request a no obligation quote
+            </h2>
+            <p className="mt-5 text-base leading-8 text-white/75">
+              Tell us what legal help you need and we&apos;ll connect you with a
+              suitable solicitor partner where appropriate.
+            </p>
+          </div>
+          <QuoteForm />
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-4xl">
-          <p className="text-sm font-semibold uppercase text-[var(--gold)]">
+          <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
             FAQs
           </p>
           <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
             Common questions before requesting a quote.
           </h2>
-          <div className="mt-10 divide-y divide-[var(--line)] rounded-[1.5rem] border border-[var(--line)] bg-white">
+          <div className="mt-10 divide-y divide-[var(--border)] rounded-2xl border border-[var(--border)] bg-white">
             {[
               [
                 "Is KidderminsterSolicitors.co.uk a law firm?",
@@ -129,7 +335,7 @@ export default function Home() {
               ],
               [
                 "What happens when I submit the form?",
-                "Your enquiry is sent into Kit, tagged by category and town, and may be passed to a solicitor firm or legal service provider.",
+                "We review your enquiry and may pass it to a suitable solicitor firm or legal service provider who can contact you directly.",
               ],
               [
                 "Do I have to use the featured solicitor partner?",
@@ -146,23 +352,6 @@ export default function Home() {
               </details>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="bg-[var(--navy)] px-5 py-20 text-white sm:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="text-sm font-semibold uppercase text-[var(--gold)]">
-            Ready to compare options?
-          </p>
-          <h2 className="mt-3 text-4xl font-semibold">
-            Request a no obligation quote from a trusted solicitor partner.
-          </h2>
-          <a
-            href="#quote"
-            className="mt-8 inline-flex rounded-full bg-[var(--gold)] px-7 py-4 text-sm font-bold uppercase text-[var(--navy)]"
-          >
-            Get a no obligation quote
-          </a>
         </div>
       </section>
 

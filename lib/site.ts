@@ -303,7 +303,7 @@ export const servicePages: ServicePage[] = [
     h1: "Commercial solicitors in Kidderminster",
     metaDescription:
       "Compare commercial solicitor options for Kidderminster businesses and request a no obligation quote.",
-    category: "Commercial",
+    category: "Commercial Law",
     summary:
       "Introductions for business law, contracts, disputes, and commercial legal support.",
     intro:
@@ -410,7 +410,7 @@ export const trustPages: TrustPage[] = [
     body: [
       "This website collects enquiry information such as name, email address, phone number, postcode, legal matter type, preferred contact time, message, source page, and attribution data where available.",
       "We use this information to process the enquiry, route it to a suitable solicitor firm or legal service provider, send confirmation, and maintain basic reporting.",
-      "Enquiries may be processed through Kit and may be shared with a partner firm or legal service provider for the purpose of responding to the enquiry.",
+      "Enquiries may be processed to handle your request and may be shared with a partner firm or legal service provider for the purpose of responding to the enquiry.",
       "Users should avoid submitting unnecessary sensitive information through the website form. Further details can be shared directly with the solicitor or legal provider if the user chooses to proceed.",
       "Users can request deletion or correction of their information by contacting the website operator.",
     ],
@@ -458,6 +458,20 @@ export const trustPages: TrustPage[] = [
       "Commercial relationships may affect placement, but advertising should be identifiable and the website should not misrepresent itself as a solicitor firm.",
       "Users should verify credentials, regulatory status, costs, and suitability before instructing any solicitor or legal service provider.",
       "Legal advice comes only from the solicitor firm or legal service provider, not from this website.",
+    ],
+  },
+  {
+    type: "trust",
+    slug: "cookie-policy",
+    title: "Cookie Policy",
+    h1: "Cookie policy",
+    metaDescription:
+      "How KidderminsterSolicitors.co.uk uses necessary, analytics, and marketing cookies.",
+    body: [
+      "Necessary cookies are used to make the website work and remember choices such as cookie preferences.",
+      "Analytics cookies help us understand site performance and improve the user experience. They are off by default until consent is given.",
+      "Marketing cookies may support marketing activity where consent is given. They are off by default until consent is given.",
+      "You can accept all cookies, reject non-essential cookies, or manage preferences using the cookie settings link in the footer.",
     ],
   },
 ];

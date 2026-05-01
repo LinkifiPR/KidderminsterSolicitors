@@ -6,24 +6,23 @@ export function FeaturedPartner() {
   return (
     <section className="bg-white px-5 py-20 sm:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-8 rounded-[2rem] border border-[var(--line)] bg-[var(--cream)] p-7 shadow-[0_30px_90px_rgba(7,24,39,0.08)] lg:grid-cols-[0.95fr_1.05fr] lg:p-10">
+        <div className="grid gap-8 rounded-3xl border border-[var(--border)] bg-[var(--pale-blue)] p-7 shadow-[0_26px_80px_rgba(7,24,39,0.08)] lg:grid-cols-[0.95fr_1.05fr] lg:p-10">
           <div>
-            <p className="text-sm font-semibold uppercase text-[var(--gold)]">
-              Featured partner
+            <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
+              Featured solicitor partner
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-[var(--navy)] sm:text-4xl">
-              Featured Kidderminster solicitor partner
+              Partner placement without pretending a partner exists.
             </h2>
             <p className="mt-5 text-base leading-8 text-[var(--muted)]">
-              Partner placement is presented with disclosure and should feel like
-              an editorial recommendation, not a directory listing or fake firm
-              profile.
+              Partner placement is reserved for a vetted solicitor firm or legal
+              service provider serving Kidderminster enquiries.
             </p>
           </div>
 
-          <div className="rounded-[1.5rem] bg-white p-6">
+          <div className="rounded-2xl bg-white p-6">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-[var(--navy)] text-[var(--gold)]">
+              <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-[var(--border)] bg-[var(--cream)] text-[var(--mid-blue)]">
                 <BadgeCheck className="h-7 w-7" aria-hidden="true" />
               </div>
               <div>
@@ -66,6 +65,9 @@ export function FeaturedPartner() {
                 Request a quote
                 <ExternalLink className="h-4 w-4" aria-hidden />
               </Link>
+              <span className="text-xs leading-5 text-[var(--muted)]">
+                Response time: added after partner onboarding
+              </span>
               <span className="text-xs leading-5 text-[var(--muted)]">
                 SRA number: {featuredPartner.sraNumber}
               </span>
