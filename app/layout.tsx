@@ -1,10 +1,23 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { baseUrl } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Kidderminster Solicitors | Coming Soon",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: "Kidderminster Solicitors | Independent Local Guide",
+    template: "%s | Kidderminster Solicitors",
+  },
   description:
-    "An independent information site for people looking for solicitors and no-obligation legal quotes in Kidderminster.",
+    "An independent local guide to finding trusted solicitors in Kidderminster and requesting no obligation quotes from solicitor partners.",
+  openGraph: {
+    type: "website",
+    siteName: "Kidderminster Solicitors",
+    url: baseUrl,
+    title: "Kidderminster Solicitors",
+    description:
+      "Compare local legal services and request a no obligation quote from a trusted solicitor partner.",
+  },
 };
 
 export default function RootLayout({
