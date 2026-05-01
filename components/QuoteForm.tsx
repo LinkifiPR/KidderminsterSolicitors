@@ -2,6 +2,7 @@
 
 import { useMemo, useState, type FormEvent } from "react";
 import Link from "next/link";
+import { ChevronDown, Send } from "lucide-react";
 import { legalMatterLabels, type LegalMatterType } from "../lib/leads";
 
 type FormState = {
@@ -114,39 +115,45 @@ export function QuoteForm() {
 
   return (
     <form
+      aria-label="Quote request"
       onSubmit={handleSubmit}
-      className="rounded-2xl border border-[var(--border)] bg-white p-6 text-[var(--charcoal)] shadow-[0_22px_70px_rgba(7,24,39,0.1)] sm:p-7"
+      className="quote-form-card mx-auto w-full max-w-2xl overflow-hidden rounded-[1.65rem] border border-white/80 bg-white text-[var(--charcoal)] shadow-[0_24px_90px_rgba(7,24,39,0.16)] ring-1 ring-[rgba(198,161,91,0.24)]"
     >
-      <div className="mb-6">
-        <p className="text-xs font-semibold uppercase text-[var(--mid-blue)]">
-          Request a no obligation quote
-        </p>
-        <h2 className="mt-2 text-2xl font-semibold text-[var(--navy)]">
+      <div className="bg-[linear-gradient(135deg,var(--navy),var(--trust-blue))] px-5 py-5 text-white sm:px-6">
+        <div className="inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-[var(--gold)]">
+          Private quote request
+        </div>
+        <h2 className="mt-3 text-2xl font-semibold leading-tight">
           Request a no obligation quote
         </h2>
-        <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
+        <p className="mt-2 text-sm leading-6 text-white/78">
           Tell us what legal help you need and we&apos;ll connect you with a
           suitable solicitor partner where appropriate.
         </p>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-3 p-5 sm:grid-cols-2 sm:p-6">
         <label className="sm:col-span-2">
           <span className="form-label">Legal matter type</span>
-          <select
-            value={form.legalMatterType}
-            onChange={(event) =>
-              updateField("legalMatterType", event.target.value as LegalMatterType)
-            }
-            className="form-input"
-            required
-          >
-            {matterOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
+          <span className="relative block">
+            <select
+              value={form.legalMatterType}
+              onChange={(event) =>
+                updateField("legalMatterType", event.target.value as LegalMatterType)
+              }
+              className="form-input form-select"
+              required
+            >
+              {matterOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+            <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[var(--gold)]">
+              <ChevronDown className="h-5 w-5" aria-hidden />
+            </span>
+          </span>
         </label>
 
         <label>
@@ -215,71 +222,77 @@ export function QuoteForm() {
             required
           />
         </label>
-      </div>
+        <div className="space-y-3 rounded-2xl border border-[var(--border)] bg-[var(--pale-blue)] p-4 sm:col-span-2">
+          <label className="flex gap-3 text-xs leading-5 text-[var(--muted)]">
+            <input
+              type="checkbox"
+              checked={form.consentAccepted}
+              onChange={(event) =>
+                updateField("consentAccepted", event.target.checked)
+              }
+              className="mt-1 h-4 w-4 accent-[var(--gold)]"
+              required
+            />
+            <span>
+              I consent to being contacted about my enquiry using the details I
+              have provided.
+            </span>
+          </label>
+          <label className="flex gap-3 text-xs leading-5 text-[var(--muted)]">
+            <input
+              type="checkbox"
+              checked={form.disclosureAccepted}
+              onChange={(event) =>
+                updateField("disclosureAccepted", event.target.checked)
+              }
+              className="mt-1 h-4 w-4 accent-[var(--gold)]"
+              required
+            />
+            <span>
+              I understand this website is an independent guide and my enquiry
+              may be passed to a solicitor firm or legal service provider who
+              can contact me about my enquiry.
+            </span>
+          </label>
+        </div>
 
-      <div className="mt-5 space-y-3">
-        <label className="flex gap-3 text-xs leading-5 text-[var(--muted)]">
-          <input
-            type="checkbox"
-            checked={form.consentAccepted}
-            onChange={(event) =>
-              updateField("consentAccepted", event.target.checked)
-            }
-            className="mt-1 h-4 w-4 accent-[var(--gold)]"
-            required
-          />
-          <span>
-            I consent to being contacted about my enquiry using the details I
-            have provided.
-          </span>
-        </label>
-        <label className="flex gap-3 text-xs leading-5 text-[var(--muted)]">
-          <input
-            type="checkbox"
-            checked={form.disclosureAccepted}
-            onChange={(event) =>
-              updateField("disclosureAccepted", event.target.checked)
-            }
-            className="mt-1 h-4 w-4 accent-[var(--gold)]"
-            required
-          />
-          <span>
-            I understand this website is an independent guide and my enquiry may
-            be passed to a solicitor firm or legal service provider who can
-            contact me about my enquiry.
-          </span>
-        </label>
-      </div>
-
-      <button
-        type="submit"
-        disabled={status === "submitting"}
-        className="mt-6 w-full rounded-full bg-[var(--gold)] px-6 py-4 text-sm font-bold uppercase text-[var(--navy)] transition hover:bg-[#d8b66f] disabled:cursor-not-allowed disabled:opacity-70"
-      >
-        {status === "submitting" ? "Sending enquiry..." : "Request my quote"}
-      </button>
-
-      <p className="mt-4 text-xs leading-5 text-[var(--muted)]">
-        By submitting this form, you agree that we may use your details to
-        handle your enquiry and may pass them to a solicitor firm or legal
-        service provider where appropriate. See our{" "}
-        <Link href="/privacy-policy/" className="font-semibold text-[var(--navy)]">
-          Privacy Policy
-        </Link>{" "}
-        for details. We are not a law firm and do not provide legal advice.
-      </p>
-
-      {message ? (
-        <p
-          className={`mt-4 rounded-2xl px-4 py-3 text-sm leading-6 ${
-            status === "success"
-              ? "bg-[var(--pale-blue)] text-[var(--trust-blue)]"
-              : "bg-red-50 text-red-800"
-          }`}
+        <button
+          type="submit"
+          disabled={status === "submitting"}
+          className="group mt-1 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--gold)] px-6 py-4 text-sm font-bold uppercase text-[var(--navy)] shadow-[0_14px_30px_rgba(198,161,91,0.32)] transition hover:bg-[#d8b66f] disabled:cursor-not-allowed disabled:opacity-70 sm:col-span-2"
         >
-          {message}
+          {status === "submitting" ? "Sending enquiry..." : "Request my quote"}
+          <Send
+            className="h-4 w-4 transition group-hover:translate-x-0.5"
+            aria-hidden
+          />
+        </button>
+
+        <p className="sm:col-span-2 text-xs leading-5 text-[var(--muted)]">
+          By submitting this form, you agree that we may use your details to
+          handle your enquiry and may pass them to a solicitor firm or legal
+          service provider where appropriate. See our{" "}
+          <Link
+            href="/privacy-policy/"
+            className="font-semibold text-[var(--navy)]"
+          >
+            Privacy Policy
+          </Link>{" "}
+          for details. We are not a law firm and do not provide legal advice.
         </p>
-      ) : null}
+
+        {message ? (
+          <p
+            className={`sm:col-span-2 rounded-2xl px-4 py-3 text-sm leading-6 ${
+              status === "success"
+                ? "bg-[var(--pale-blue)] text-[var(--trust-blue)]"
+                : "bg-red-50 text-red-800"
+            }`}
+          >
+            {message}
+          </p>
+        ) : null}
+      </div>
     </form>
   );
 }

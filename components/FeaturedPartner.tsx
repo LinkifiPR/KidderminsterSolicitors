@@ -6,8 +6,8 @@ export function FeaturedPartner() {
   return (
     <section className="bg-white px-5 py-20 sm:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-8 rounded-3xl border border-[var(--border)] bg-[var(--pale-blue)] p-7 shadow-[0_26px_80px_rgba(7,24,39,0.08)] lg:grid-cols-[0.95fr_1.05fr] lg:p-10">
-          <div>
+        <div className="grid gap-8 overflow-hidden rounded-[2rem] border border-[var(--border)] bg-white shadow-[0_26px_80px_rgba(7,24,39,0.1)] lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="bg-[var(--pale-blue)] p-7 lg:p-10">
             <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
               Featured solicitor partner
             </p>
@@ -20,7 +20,7 @@ export function FeaturedPartner() {
             </p>
           </div>
 
-          <div className="rounded-2xl bg-white p-6">
+          <div className="p-7 lg:p-10">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
               <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-[var(--border)] bg-[var(--cream)] text-[var(--mid-blue)]">
                 <BadgeCheck className="h-7 w-7" aria-hidden="true" />
@@ -60,7 +60,7 @@ export function FeaturedPartner() {
             <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <Link
                 href={featuredPartner.websiteUrl}
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--navy)] px-5 py-3 text-sm font-semibold text-white"
+                className="partner-cta inline-flex items-center justify-center gap-2 rounded-full bg-[var(--gold)] px-6 py-3 text-sm font-bold uppercase text-[var(--navy)] shadow-[0_12px_28px_rgba(198,161,91,0.32)] transition hover:bg-[#d8b66f]"
               >
                 Request a quote
                 <ExternalLink className="h-4 w-4" aria-hidden />

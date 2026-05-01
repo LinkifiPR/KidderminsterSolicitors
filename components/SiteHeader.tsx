@@ -4,7 +4,7 @@ import { servicePages, trustPages } from "../lib/site";
 
 export function SiteHeader() {
   return (
-    <header className="bg-white">
+    <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-white/95 shadow-[0_10px_35px_rgba(7,24,39,0.08)] backdrop-blur">
       <div className="border-b border-[var(--border)] bg-[var(--pale-blue)] px-5 py-2 text-xs text-[var(--muted)] sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3">
           <span>Independent local solicitor guide</span>
@@ -15,7 +15,7 @@ export function SiteHeader() {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-5 sm:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 sm:px-8">
         <Link href="/" className="flex items-center gap-3">
           <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--navy)] text-[var(--gold)]">
             <Scale className="h-5 w-5" aria-hidden="true" />

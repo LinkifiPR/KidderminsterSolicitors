@@ -120,8 +120,8 @@ export default function Home() {
       </section>
 
       <section id="quote" className="bg-white px-5 py-16 sm:px-8">
-        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-          <div>
+        <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
               Start here
             </p>
@@ -133,7 +133,9 @@ export default function Home() {
               solicitor partner. You are under no obligation to instruct them.
             </p>
           </div>
+          <div className="mt-8">
           <QuoteForm />
+          </div>
         </div>
       </section>
 
@@ -302,8 +304,8 @@ export default function Home() {
       </section>
 
       <section className="bg-[var(--trust-blue)] px-5 py-20 sm:px-8">
-        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="text-white">
+        <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-2xl text-center text-white">
             <p className="text-sm font-semibold uppercase text-[var(--gold)]">
               Speak to a solicitor partner
             </p>
@@ -315,19 +317,27 @@ export default function Home() {
               suitable solicitor partner where appropriate.
             </p>
           </div>
+          <div className="mt-8">
           <QuoteForm />
+          </div>
         </div>
       </section>
 
       <section className="bg-white px-5 py-20 sm:px-8">
-        <div className="mx-auto max-w-4xl">
-          <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
-            FAQs
-          </p>
-          <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
-            Common questions before requesting a quote.
-          </h2>
-          <div className="mt-10 divide-y divide-[var(--border)] rounded-2xl border border-[var(--border)] bg-white">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.78fr_1.22fr]">
+          <div>
+            <p className="text-sm font-semibold uppercase text-[var(--mid-blue)]">
+              FAQs
+            </p>
+            <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
+              Common questions before requesting a quote.
+            </h2>
+            <p className="mt-5 text-base leading-8 text-[var(--muted)]">
+              Clear answers about how the introduction process works and what
+              you are agreeing to.
+            </p>
+          </div>
+          <div className="faq-panel grid gap-4 rounded-[2rem] border border-[var(--border)] bg-[var(--pale-blue)] p-4 shadow-[0_22px_70px_rgba(7,24,39,0.08)]">
             {[
               [
                 "Is KidderminsterSolicitors.co.uk a law firm?",
@@ -342,9 +352,15 @@ export default function Home() {
                 "No. You are under no obligation to instruct any firm introduced through this website.",
               ],
             ].map(([question, answer]) => (
-              <details key={question} className="group p-6">
-                <summary className="cursor-pointer list-none text-lg font-semibold text-[var(--navy)]">
-                  {question}
+              <details
+                key={question}
+                className="faq-item group rounded-2xl border border-[var(--border)] bg-white p-5 transition open:shadow-[0_16px_45px_rgba(7,24,39,0.08)]"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-[var(--navy)]">
+                  <span>{question}</span>
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--cream)] text-[var(--gold)] transition group-open:rotate-45">
+                    +
+                  </span>
                 </summary>
                 <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
                   {answer}
