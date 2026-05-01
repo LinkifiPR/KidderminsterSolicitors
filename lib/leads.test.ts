@@ -46,7 +46,7 @@ describe("validateLeadPayload", () => {
 });
 
 describe("mapLeadToKitFields", () => {
-  it("maps validated lead data to the Kit custom field labels", () => {
+  it("maps validated lead data to the Kit custom field keys", () => {
     const result = validateLeadPayload(validPayload);
 
     if (!result.ok) {
@@ -54,14 +54,14 @@ describe("mapLeadToKitFields", () => {
     }
 
     expect(mapLeadToKitFields(result.lead)).toMatchObject({
-      Phone: "01562 123456",
-      Postcode: "DY10 1AA",
-      "Legal Matter Type": "Conveyancing",
-      Town: "Kidderminster",
-      "Source Page": "https://kidderminstersolicitors.co.uk/",
-      "UTM Source": "google",
-      "Consent Given": "true",
-      "Disclosure Accepted": "true",
+      phone: "01562 123456",
+      postcode: "DY10 1AA",
+      legal_matter_type: "Conveyancing",
+      town: "Kidderminster",
+      source_page: "https://kidderminstersolicitors.co.uk/",
+      utm_source: "google",
+      consent_given: "true",
+      disclosure_accepted: "true",
     });
   });
 });
