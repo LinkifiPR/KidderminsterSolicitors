@@ -2,7 +2,7 @@
 
 import { useMemo, useState, type FormEvent } from "react";
 import Link from "next/link";
-import { ChevronDown, Send } from "lucide-react";
+import { Check, ChevronDown, Send } from "lucide-react";
 import { legalMatterLabels, type LegalMatterType } from "../lib/leads";
 
 type FormState = {
@@ -59,6 +59,7 @@ export function QuoteForm() {
     "idle",
   );
   const [message, setMessage] = useState("");
+  const [legalMatterOpen, setLegalMatterOpen] = useState(false);
   const matterOptions = useMemo(
     () =>
       Object.entries(legalMatterLabels).map(([value, label]) => ({
@@ -73,6 +74,11 @@ export function QuoteForm() {
     value: FormState[Field],
   ) {
     setForm((current) => ({ ...current, [field]: value }));
+  }
+
+  function chooseLegalMatter(value: LegalMatterType) {
+    updateField("legalMatterType", value);
+    setLegalMatterOpen(false);
   }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -133,28 +139,66 @@ export function QuoteForm() {
       </div>
 
       <div className="grid gap-3 p-5 sm:grid-cols-2 sm:p-6">
-        <label className="sm:col-span-2">
-          <span className="form-label">Legal matter type</span>
-          <span className="relative block">
-            <select
-              value={form.legalMatterType}
-              onChange={(event) =>
-                updateField("legalMatterType", event.target.value as LegalMatterType)
-              }
-              className="form-input form-select"
-              required
-            >
-              {matterOptions.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-            <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-[var(--gold)]">
-              <ChevronDown className="h-5 w-5" aria-hidden />
-            </span>
+        <div className="relative sm:col-span-2">
+          <span id="legal-matter-label" className="form-label">
+            Legal matter type
           </span>
-        </label>
+          <button
+            type="button"
+            aria-haspopup="listbox"
+            aria-expanded={legalMatterOpen}
+            aria-labelledby="legal-matter-label legal-matter-value"
+            onClick={() => setLegalMatterOpen((open) => !open)}
+            className="legal-matter-trigger flex w-full items-center justify-between gap-4 rounded-[1.05rem] border border-[rgba(198,161,91,0.42)] bg-[linear-gradient(135deg,#ffffff,#f8f5ef)] px-4 py-3.5 text-left font-semibold text-[var(--navy)] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_10px_28px_rgba(7,24,39,0.07)] transition hover:border-[var(--gold)] focus:outline-none focus:ring-4 focus:ring-[rgba(198,161,91,0.18)]"
+          >
+            <span className="flex min-w-0 items-center gap-3">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--navy)] text-xs font-bold text-[var(--gold)]">
+                KS
+              </span>
+              <span id="legal-matter-value" className="truncate">
+                {legalMatterLabels[form.legalMatterType]}
+              </span>
+            </span>
+            <ChevronDown
+              className={`h-5 w-5 shrink-0 text-[var(--gold)] transition ${
+                legalMatterOpen ? "rotate-180" : ""
+              }`}
+              aria-hidden
+            />
+          </button>
+
+          {legalMatterOpen ? (
+            <div
+              role="listbox"
+              aria-label="Legal matter type"
+              className="legal-matter-listbox absolute z-30 mt-3 grid w-full gap-1.5 rounded-[1.25rem] border border-[rgba(198,161,91,0.35)] bg-white p-2 shadow-[0_22px_70px_rgba(7,24,39,0.18)]"
+            >
+              {matterOptions.map((option) => {
+                const isSelected = option.value === form.legalMatterType;
+
+                return (
+                  <button
+                    key={option.value}
+                    type="button"
+                    role="option"
+                    aria-selected={isSelected}
+                    onClick={() => chooseLegalMatter(option.value)}
+                    className={`legal-matter-option flex w-full items-center justify-between rounded-2xl px-4 py-3 text-left text-sm font-semibold text-[var(--navy)] transition hover:bg-[var(--pale-blue)] ${
+                      isSelected
+                        ? "bg-[var(--pale-blue)] text-[var(--trust-blue)]"
+                        : "bg-white"
+                    }`}
+                  >
+                    <span>{option.label}</span>
+                    {isSelected ? (
+                      <Check className="h-4 w-4 text-[var(--gold)]" aria-hidden />
+                    ) : null}
+                  </button>
+                );
+              })}
+            </div>
+          ) : null}
+        </div>
 
         <label>
           <span className="form-label">Name</span>

@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen, within } from "@testing-library/react";
 import Home from "../app/page";
 import { FeaturedPartner } from "./FeaturedPartner";
 import { QuoteForm } from "./QuoteForm";
@@ -11,15 +11,33 @@ describe("UI polish", () => {
     expect(screen.getByRole("banner")).toHaveClass("sticky");
   });
 
-  it("uses the compact premium form and custom select treatment", () => {
+  it("uses the compact premium form and custom legal matter picker", () => {
     render(<QuoteForm />);
 
     expect(screen.getByRole("form", { name: /quote request/i })).toHaveClass(
       "quote-form-card",
     );
-    expect(screen.getByLabelText(/legal matter type/i)).toHaveClass(
-      "form-select",
-    );
+    expect(screen.queryByRole("combobox")).not.toBeInTheDocument();
+
+    const picker = screen.getByRole("button", {
+      name: /legal matter type conveyancing/i,
+    });
+
+    expect(picker).toHaveClass("legal-matter-trigger");
+    fireEvent.click(picker);
+
+    const options = screen.getByRole("listbox", { name: /legal matter type/i });
+    expect(options).toHaveClass("legal-matter-listbox");
+    expect(
+      within(options).getByRole("option", { name: /probate/i }),
+    ).toHaveClass("legal-matter-option");
+
+    fireEvent.click(within(options).getByRole("option", { name: /probate/i }));
+
+    expect(
+      screen.getByRole("button", { name: /legal matter type probate/i }),
+    ).toBeInTheDocument();
+    expect(screen.queryByRole("listbox")).not.toBeInTheDocument();
   });
 
   it("uses a readable featured partner CTA", () => {
