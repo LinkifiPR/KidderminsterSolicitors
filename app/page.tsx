@@ -1,57 +1,61 @@
+import { QuoteForm } from "../components/QuoteForm";
+
 export default function Home() {
   return (
-    <main className="min-h-screen px-5 py-6 sm:px-8">
-      <section className="mx-auto flex min-h-[calc(100vh-3rem)] w-full max-w-6xl flex-col justify-between">
+    <main className="min-h-screen bg-[var(--cream)]">
+      <section className="relative isolate overflow-hidden bg-[var(--navy)] px-5 py-6 text-white sm:px-8">
+        <div className="absolute inset-0 -z-20 bg-[url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2200&q=80')] bg-cover bg-center opacity-40" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(7,24,39,0.94),rgba(7,24,39,0.74)_48%,rgba(7,24,39,0.48))]" />
+        <div className="mx-auto flex min-h-[calc(100vh-3rem)] w-full max-w-7xl flex-col">
         <nav
           aria-label="Site"
-          className="flex items-center justify-between gap-4 border-b border-[var(--line)] pb-5"
+          className="flex items-center justify-between gap-4 border-b border-white/15 pb-5"
         >
-          <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--green)]">
+          <span className="text-sm font-semibold uppercase text-white">
             Kidderminster Solicitors
           </span>
-          <span className="rounded-full border border-[var(--line)] bg-white px-4 py-2 text-sm font-medium text-[var(--muted)]">
-            Coming soon
+          <span className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white">
+            Independent local guide
           </span>
         </nav>
 
-        <div className="grid flex-1 items-center gap-12 py-14 lg:grid-cols-[1.08fr_0.92fr] lg:py-20">
-          <div className="max-w-3xl">
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[var(--gold)]">
-              Independent legal information for Wyre Forest
+        <div className="grid flex-1 items-center gap-12 py-14 lg:grid-cols-[1.02fr_0.98fr] lg:py-20">
+          <div className="max-w-4xl">
+            <p className="mb-5 text-sm font-semibold uppercase text-[var(--gold)]">
+              Premium local legal comparison
             </p>
-            <h1 className="text-5xl font-semibold leading-[1.02] text-[var(--foreground)] sm:text-6xl lg:text-7xl">
-              Kidderminster solicitors, made easier to compare.
+            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] text-white sm:text-6xl lg:text-7xl">
+              Find trusted solicitors in Kidderminster
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-[var(--muted)] sm:text-xl">
-              We are building an independent information site for local people
-              who want to understand their options and request a no-obligation
-              legal quote from a suitable solicitor in Kidderminster.
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl">
+              Compare local legal services and request a no obligation quote
+              from a trusted solicitor partner.
+            </p>
+            <div className="mt-9 grid max-w-2xl gap-3 text-sm text-white/78 sm:grid-cols-3">
+              <span className="rounded-full border border-white/15 bg-white/10 px-4 py-3">
+                Independent local guide
+              </span>
+              <span className="rounded-full border border-white/15 bg-white/10 px-4 py-3">
+                Clear referral disclosure
+              </span>
+              <span className="rounded-full border border-white/15 bg-white/10 px-4 py-3">
+                Custom Kit lead routing
+              </span>
+            </div>
+            <p className="mt-7 max-w-2xl text-sm leading-6 text-white/64">
+              Independent legal information site. We are not a law firm and do
+              not provide legal advice.
             </p>
           </div>
 
-          <aside className="border-l-4 border-[var(--green)] bg-[var(--panel)] p-7 shadow-[0_24px_80px_rgba(23,33,27,0.12)] sm:p-9">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--plum)]">
-              Launch focus
-            </p>
-            <ul className="mt-8 space-y-6 text-base leading-7 text-[var(--muted)]">
-              <li>
-                Clear guides for common legal services in and around
-                Kidderminster.
-              </li>
-              <li>
-                A simple quote request route once the full site is ready.
-              </li>
-              <li>
-                Built as an information resource, not presented as a law firm.
-              </li>
-            </ul>
-          </aside>
+          <QuoteForm />
         </div>
 
-        <footer className="flex flex-col gap-3 border-t border-[var(--line)] pt-5 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
+        <footer className="flex flex-col gap-3 border-t border-white/15 pt-5 text-sm text-white/64 sm:flex-row sm:items-center sm:justify-between">
           <span>Serving Kidderminster and the wider Wyre Forest area.</span>
-          <span>Local legal guidance project in development.</span>
+          <span>Featured firms may have a commercial relationship with us.</span>
         </footer>
+        </div>
       </section>
     </main>
   );

@@ -2,20 +2,24 @@ import { render, screen } from "@testing-library/react";
 import Home from "./page";
 
 describe("Home", () => {
-  it("presents the site as a coming-soon Kidderminster solicitors quote website", () => {
+  it("presents the site as a Kidderminster solicitors quote website", () => {
     render(<Home />);
 
     expect(
       screen.getByRole("heading", {
-        name: /kidderminster solicitors/i,
+        name: /find trusted solicitors in kidderminster/i,
       }),
     ).toBeInTheDocument();
+    expect(screen.getAllByText(/no obligation quote/i).length).toBeGreaterThan(
+      0,
+    );
     expect(
-      screen.getByText(/no-obligation legal quote/i),
+      screen.getByText(/independent legal information site/i),
     ).toBeInTheDocument();
     expect(
-      screen.getByText(/independent information site/i),
+      screen.getByRole("button", {
+        name: /request my no obligation quote/i,
+      }),
     ).toBeInTheDocument();
-    expect(screen.getByText(/coming soon/i)).toBeInTheDocument();
   });
 });

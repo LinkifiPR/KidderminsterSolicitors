@@ -1,0 +1,93 @@
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { POST } from "./route";
+
+const validPayload = {
+  legalMatterType: "conveyancing",
+  name: "Sarah Example",
+  phone: "01562 123456",
+  email: "sarah@example.com",
+  postcode: "DY10 1AA",
+  preferredContactTime: "Morning",
+  message: "I am buying a house in Kidderminster.",
+  consentAccepted: true,
+  disclosureAccepted: true,
+  sourcePage: "https://kidderminstersolicitors.co.uk/",
+};
+
+function request(body: unknown) {
+  return new Request("https://kidderminstersolicitors.co.uk/api/leads", {
+    method: "POST",
+    body: JSON.stringify(body),
+  });
+}
+
+function jsonResponse(body: unknown, status = 200) {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: { "Content-Type": "application/json" },
+  });
+}
+
+describe("POST /api/leads", () => {
+  const fetchMock = vi.fn();
+  const originalEnv = process.env;
+
+  beforeEach(() => {
+    vi.stubGlobal("fetch", fetchMock);
+    process.env = {
+      ...originalEnv,
+      KIT_API_KEY: "test-key",
+      KIT_FORM_ID: "9391183",
+    };
+  });
+
+  afterEach(() => {
+    vi.unstubAllGlobals();
+    fetchMock.mockReset();
+    process.env = originalEnv;
+  });
+
+  it("returns 400 for invalid lead payloads", async () => {
+    const response = await POST(
+      request({ ...validPayload, email: "", consentAccepted: false }),
+    );
+
+    expect(response.status).toBe(400);
+    await expect(response.json()).resolves.toMatchObject({
+      ok: false,
+      errors: expect.arrayContaining([
+        "Email is required.",
+        "Consent is required.",
+      ]),
+    });
+  });
+
+  it("returns 503 when the Kit API key is not configured", async () => {
+    process.env.KIT_API_KEY = "";
+
+    const response = await POST(request(validPayload));
+
+    expect(response.status).toBe(503);
+    await expect(response.json()).resolves.toEqual({
+      ok: false,
+      errors: ["Lead capture is not configured yet."],
+    });
+  });
+
+  it("submits valid leads to Kit", async () => {
+    fetchMock
+      .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
+      .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 10 } }))
+      .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 11 } }))
+      .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 12 } }))
+      .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }));
+
+    const response = await POST(request(validPayload));
+
+    expect(response.status).toBe(200);
+    await expect(response.json()).resolves.toEqual({ ok: true });
+  });
+});
