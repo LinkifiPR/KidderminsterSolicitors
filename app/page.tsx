@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   BadgeCheck,
@@ -126,7 +127,17 @@ export default function Home() {
 
           <div className="relative">
             <div className="overflow-hidden rounded-3xl border border-white bg-white shadow-[0_24px_90px_rgba(7,24,39,0.14)]">
-              <div className="h-[430px] bg-[linear-gradient(180deg,rgba(7,24,39,0.02),rgba(7,24,39,0.16)),url('https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=1400&q=82')] bg-cover bg-center lg:h-[500px]" />
+              <div className="relative h-[430px] lg:h-[500px]">
+                <Image
+                  src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=1400&q=82"
+                  alt="Professional office setting for solicitor service enquiries"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 680px, 100vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,24,39,0.02),rgba(7,24,39,0.16))]" />
+              </div>
             </div>
             <div className="absolute -bottom-7 left-5 right-5 rounded-[1.4rem] border border-white/80 bg-white/95 p-5 shadow-[0_20px_60px_rgba(7,24,39,0.14)] ring-1 ring-[rgba(216,226,234,0.8)] backdrop-blur">
               <div className="flex items-start gap-4">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   BriefcaseBusiness,
   FileSignature,
@@ -54,13 +55,15 @@ export function ServiceCard({ service }: { service: ServicePage }) {
       href={`/${service.slug}/`}
       className="group overflow-hidden rounded-[1.5rem] border border-[rgba(216,226,234,0.9)] bg-white shadow-[0_18px_55px_rgba(7,24,39,0.08)] transition duration-200 hover:-translate-y-1.5 hover:border-[rgba(23,92,142,0.34)] hover:shadow-[0_26px_80px_rgba(7,24,39,0.12)]"
     >
-      <div className="overflow-hidden">
-        <div
-          className="h-44 bg-cover bg-center transition duration-500 group-hover:scale-[1.03]"
-          style={{
-            backgroundImage: `linear-gradient(180deg,rgba(7,24,39,0.03),rgba(7,24,39,0.22)), url('${imageMap[service.category]}')`,
-          }}
+      <div className="relative h-44 overflow-hidden">
+        <Image
+          src={imageMap[service.category]}
+          alt={`${service.category} solicitor service in Kidderminster`}
+          fill
+          sizes="(min-width: 1280px) 302px, (min-width: 768px) 50vw, 100vw"
+          className="object-cover transition duration-500 group-hover:scale-[1.03]"
         />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,24,39,0.03),rgba(7,24,39,0.22))]" />
       </div>
       <div className="relative z-10 bg-white p-6 pt-0">
         <span className="relative z-20 -mt-6 flex h-12 w-12 items-center justify-center rounded-2xl border border-white bg-[var(--pale-blue)] text-[var(--mid-blue)] shadow-[0_12px_30px_rgba(7,24,39,0.12)]">
