@@ -101,6 +101,7 @@ export function QuoteForm() {
       setMessage(
         "Thank you. Your enquiry has been received. A solicitor partner may contact you directly if they are able to help.",
       );
+      window.location.assign("/thank-you/");
       return;
     }
 
