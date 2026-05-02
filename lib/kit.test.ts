@@ -75,6 +75,30 @@ describe("submitLeadToKit", () => {
         jsonResponse({
           subscriber: { id: 123, email_address: "sarah@example.com" },
         }),
+      )
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 13 } }))
+      .mockResolvedValueOnce(
+        jsonResponse({
+          subscriber: { id: 123, email_address: "sarah@example.com" },
+        }),
+      )
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 14 } }))
+      .mockResolvedValueOnce(
+        jsonResponse({
+          subscriber: { id: 123, email_address: "sarah@example.com" },
+        }),
+      )
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 15 } }))
+      .mockResolvedValueOnce(
+        jsonResponse({
+          subscriber: { id: 123, email_address: "sarah@example.com" },
+        }),
+      )
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 16 } }))
+      .mockResolvedValueOnce(
+        jsonResponse({
+          subscriber: { id: 123, email_address: "sarah@example.com" },
+        }),
       );
 
     await submitLeadToKit(result.lead, {
@@ -101,7 +125,7 @@ describe("submitLeadToKit", () => {
       3,
       "https://api.kit.com/v4/tags",
       expect.objectContaining({
-        body: JSON.stringify({ name: "Lead - Website" }),
+        body: JSON.stringify({ name: "Legal Lead" }),
       }),
     );
     expect(fetchMock).toHaveBeenNthCalledWith(
@@ -111,6 +135,6 @@ describe("submitLeadToKit", () => {
         body: JSON.stringify({ email_address: "sarah@example.com" }),
       }),
     );
-    expect(fetchMock).toHaveBeenCalledTimes(8);
+    expect(fetchMock).toHaveBeenCalledTimes(16);
   });
 });

@@ -135,6 +135,10 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
 
 export function buildLeadTags(lead: Lead) {
   return [
+    "Legal Lead",
+    "Kidderminster",
+    "Wyre Forest",
+    `Category: ${legalMatterLabels[lead.legalMatterType]}`,
     "Lead - Website",
     "Town - Kidderminster",
     `Category - ${legalMatterLabels[lead.legalMatterType]}`,
@@ -143,11 +147,15 @@ export function buildLeadTags(lead: Lead) {
 
 export function mapLeadToKitFields(lead: Lead) {
   return {
+    full_name: lead.name,
+    email: lead.email,
     phone: lead.phone,
     postcode: lead.postcode,
+    legal_category: legalMatterLabels[lead.legalMatterType],
     legal_matter_type: legalMatterLabels[lead.legalMatterType],
     town: lead.town,
     preferred_contact_time: lead.preferredContactTime,
+    enquiry_message: lead.message,
     message: lead.message,
     source_page: lead.sourcePage,
     utm_source: lead.utmSource,
@@ -157,7 +165,9 @@ export function mapLeadToKitFields(lead: Lead) {
     utm_content: lead.utmContent,
     consent_given: String(lead.consentAccepted),
     disclosure_accepted: String(lead.disclosureAccepted),
+    referral_disclosure_accepted: String(lead.disclosureAccepted),
     assigned_partner: lead.assignedPartner,
+    submitted_at: lead.leadTimestamp,
     lead_timestamp: lead.leadTimestamp,
   };
 }

@@ -88,6 +88,14 @@ describe("POST /api/leads", () => {
       .mockResolvedValueOnce(jsonResponse({ tag: { id: 11 } }))
       .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
       .mockResolvedValueOnce(jsonResponse({ tag: { id: 12 } }))
+      .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 13 } }))
+      .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 14 } }))
+      .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 15 } }))
+      .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
+      .mockResolvedValueOnce(jsonResponse({ tag: { id: 16 } }))
       .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }));
 
     const response = await POST(request(validPayload));

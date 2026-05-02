@@ -54,20 +54,26 @@ describe("mapLeadToKitFields", () => {
     }
 
     expect(mapLeadToKitFields(result.lead)).toMatchObject({
+      full_name: "Sarah Example",
+      email: "sarah@example.com",
       phone: "01562 123456",
       postcode: "DY10 1AA",
+      legal_category: "Conveyancing",
       legal_matter_type: "Conveyancing",
       town: "Kidderminster",
+      enquiry_message: "I am buying a house in Kidderminster.",
       source_page: "https://kidderminstersolicitors.co.uk/",
       utm_source: "google",
       consent_given: "true",
       disclosure_accepted: "true",
+      referral_disclosure_accepted: "true",
+      submitted_at: result.lead.leadTimestamp,
     });
   });
 });
 
 describe("buildLeadTags", () => {
-  it("creates website, town, and category tags for Kit automation routing", () => {
+  it("creates commercial routing, town, and category tags", () => {
     const result = validateLeadPayload(validPayload);
 
     if (!result.ok) {
@@ -75,6 +81,10 @@ describe("buildLeadTags", () => {
     }
 
     expect(buildLeadTags(result.lead)).toEqual([
+      "Legal Lead",
+      "Kidderminster",
+      "Wyre Forest",
+      "Category: Conveyancing",
       "Lead - Website",
       "Town - Kidderminster",
       "Category - Conveyancing",
