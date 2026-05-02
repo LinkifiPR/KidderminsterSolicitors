@@ -15,8 +15,8 @@ export function SiteHeader() {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 sm:px-8 lg:py-5">
-        <Link href="/" className="flex items-center gap-3">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 sm:px-8 lg:py-5">
+        <Link href="/" className="flex shrink-0 items-center gap-3">
           <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--navy)] text-[var(--gold)] shadow-[0_10px_26px_rgba(7,24,39,0.18)]">
             <Scale className="h-5 w-5" aria-hidden="true" />
           </span>
@@ -41,24 +41,24 @@ export function SiteHeader() {
             <Link
               key={label}
               href={href}
-              className="rounded-full px-4 py-2 transition hover:bg-white hover:text-[var(--trust-blue)] hover:shadow-sm"
+              className="whitespace-nowrap rounded-full px-4 py-2 transition hover:bg-white hover:text-[var(--trust-blue)] hover:shadow-sm"
             >
               {label}
             </Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-3">
           <Link
             href="/contact/"
-            className="hidden items-center gap-2 text-sm font-bold text-[var(--trust-blue)] transition hover:text-[var(--navy)] lg:flex"
+            className="hidden items-center gap-2 whitespace-nowrap text-sm font-bold text-[var(--trust-blue)] transition hover:text-[var(--navy)] lg:flex"
           >
             <Phone className="h-4 w-4" aria-hidden />
             Need help?
           </Link>
           <Link
             href="/#quote"
-            className="rounded-full bg-[var(--gold)] px-5 py-3 text-xs font-extrabold uppercase text-[var(--navy)] shadow-[0_12px_26px_rgba(198,161,91,0.28)] transition hover:-translate-y-0.5 hover:bg-[#d9ba78] hover:shadow-[0_16px_32px_rgba(198,161,91,0.36)]"
+            className="whitespace-nowrap rounded-full bg-[var(--gold)] px-6 py-3 text-xs font-extrabold uppercase text-[var(--navy)] shadow-[0_12px_26px_rgba(198,161,91,0.28)] transition hover:-translate-y-0.5 hover:bg-[#d9ba78] hover:shadow-[0_16px_32px_rgba(198,161,91,0.36)]"
           >
             Get a quote
           </Link>

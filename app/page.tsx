@@ -107,14 +107,14 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="#quote"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--gold)] px-7 py-4 text-sm font-extrabold uppercase text-[var(--navy)] shadow-[0_16px_36px_rgba(198,161,91,0.34)] transition hover:-translate-y-0.5 hover:bg-[#d8b66f]"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-[var(--gold)] px-7 py-4 text-sm font-extrabold uppercase text-[var(--navy)] shadow-[0_16px_36px_rgba(198,161,91,0.34)] transition hover:-translate-y-0.5 hover:bg-[#d8b66f] sm:px-6 lg:px-7"
               >
                 Get a no obligation quote
                 <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
               <Link
                 href="#services"
-                className="inline-flex justify-center rounded-full border border-[var(--border)] bg-white px-7 py-4 text-sm font-extrabold uppercase text-[var(--trust-blue)] shadow-sm transition hover:border-[var(--mid-blue)] hover:bg-[var(--pale-blue)]"
+                className="inline-flex justify-center whitespace-nowrap rounded-full border border-[var(--border)] bg-white px-7 py-4 text-sm font-extrabold uppercase text-[var(--trust-blue)] shadow-sm transition hover:border-[var(--mid-blue)] hover:bg-[var(--pale-blue)] sm:px-6 lg:px-7"
               >
                 Compare solicitor services
               </Link>
