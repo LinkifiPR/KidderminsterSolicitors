@@ -1,6 +1,5 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import Home from "../app/page";
-import { FeaturedPartner } from "./FeaturedPartner";
 import { QuoteForm } from "./QuoteForm";
 import { SiteHeader } from "./SiteHeader";
 
@@ -40,18 +39,17 @@ describe("UI polish", () => {
     expect(screen.queryByRole("listbox")).not.toBeInTheDocument();
   });
 
-  it("uses a readable featured partner CTA", () => {
-    render(<FeaturedPartner />);
-
-    expect(screen.getByRole("link", { name: /request a quote/i })).toHaveClass(
-      "partner-cta",
-    );
-  });
-
   it("renders the polished FAQ treatment on the homepage", () => {
     const { container } = render(<Home />);
 
     expect(container.querySelector(".faq-panel")).toBeInTheDocument();
     expect(container.querySelector(".faq-item")).toBeInTheDocument();
+  });
+
+  it("removes public featured partner placeholders from the homepage", () => {
+    render(<Home />);
+
+    expect(screen.queryByText(/featured solicitor partner/i)).not.toBeInTheDocument();
+    expect(screen.getByText(/why use an independent local guide/i)).toBeInTheDocument();
   });
 });

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { QuoteForm } from "../../components/QuoteForm";
-import { FeaturedPartner } from "../../components/FeaturedPartner";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
 import {
@@ -90,7 +89,7 @@ export default async function ContentPage({ params }: PageProps) {
         <>
           <section className="bg-white px-5 py-20 sm:px-8">
             <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm font-semibold uppercase text-[var(--gold)]">
                   {page.category}
                 </p>
@@ -115,8 +114,6 @@ export default async function ContentPage({ params }: PageProps) {
             </div>
           </section>
 
-          <FeaturedPartner />
-
           <section className="bg-white px-5 py-20 sm:px-8">
             <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.85fr]">
               <div>
@@ -126,14 +123,14 @@ export default async function ContentPage({ params }: PageProps) {
                 <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
                   Questions about {page.category.toLowerCase()} enquiries.
                 </h2>
-                <div className="faq-panel mt-8 grid gap-4 rounded-[2rem] border border-[var(--border)] bg-[var(--pale-blue)] p-4 shadow-[0_22px_70px_rgba(7,24,39,0.08)]">
+                <div className="faq-panel mt-8 grid min-w-0 gap-4 rounded-[2rem] border border-[var(--border)] bg-[var(--pale-blue)] p-4 shadow-[0_22px_70px_rgba(7,24,39,0.08)]">
                   {page.faq.map((item) => (
                     <details
                       key={item.question}
                       className="faq-item group rounded-2xl border border-[var(--border)] bg-white p-5 transition open:shadow-[0_16px_45px_rgba(7,24,39,0.08)]"
                     >
                       <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-[var(--navy)]">
-                        <span>{item.question}</span>
+                        <span className="min-w-0">{item.question}</span>
                         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--cream)] text-[var(--gold)] transition group-open:rotate-45">
                           +
                         </span>

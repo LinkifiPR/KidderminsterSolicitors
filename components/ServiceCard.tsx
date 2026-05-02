@@ -52,31 +52,31 @@ export function ServiceCard({ service }: { service: ServicePage }) {
   return (
     <Link
       href={`/${service.slug}/`}
-      className="group overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-[0_18px_55px_rgba(7,24,39,0.08)] transition hover:-translate-y-1 hover:border-[var(--mid-blue)]"
+      className="group overflow-hidden rounded-[1.5rem] border border-[rgba(216,226,234,0.9)] bg-white shadow-[0_18px_55px_rgba(7,24,39,0.08)] transition duration-200 hover:-translate-y-1.5 hover:border-[rgba(23,92,142,0.34)] hover:shadow-[0_26px_80px_rgba(7,24,39,0.12)]"
     >
       <div
-        className="h-40 bg-cover bg-center"
+        className="h-44 bg-cover bg-center transition duration-500 group-hover:scale-[1.03]"
         style={{
-          backgroundImage: `linear-gradient(rgba(7,24,39,0.08), rgba(7,24,39,0.08)), url('${imageMap[service.category]}')`,
+          backgroundImage: `linear-gradient(180deg,rgba(7,24,39,0.03),rgba(7,24,39,0.22)), url('${imageMap[service.category]}')`,
         }}
       />
-      <div className="p-6">
-        <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--pale-blue)] text-[var(--mid-blue)]">
+      <div className="p-6 pt-0">
+        <span className="-mt-6 flex h-12 w-12 items-center justify-center rounded-2xl border border-white bg-[var(--pale-blue)] text-[var(--mid-blue)] shadow-[0_12px_30px_rgba(7,24,39,0.12)]">
           <Icon className="h-5 w-5" aria-hidden="true" />
         </span>
-        <h3 className="mt-5 text-xl font-semibold text-[var(--navy)]">
+        <h3 className="mt-5 text-xl font-extrabold text-[var(--navy)]">
           {service.category}
         </h3>
         <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
           {service.summary}
         </p>
-        <span className="mt-6 inline-flex text-sm font-semibold text-[var(--trust-blue)]">
+        <span className="mt-6 inline-flex items-center text-sm font-extrabold text-[var(--trust-blue)]">
           Compare options
           <span
             className="ml-2 transition group-hover:translate-x-1"
             aria-hidden="true"
           >
-            -&gt;
+            →
           </span>
         </span>
       </div>

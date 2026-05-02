@@ -68,7 +68,7 @@ export const servicePages: ServicePage[] = [
           "No. This is an independent local information and comparison website. Legal advice is provided only by the solicitor firm you choose to instruct.",
       },
       {
-        question: "Do I have to use the featured partner?",
+        question: "Do I have to instruct a firm introduced through this website?",
         answer:
           "No. You are under no obligation to instruct any firm introduced through this website.",
       },
@@ -436,10 +436,10 @@ export const trustPages: TrustPage[] = [
     title: "Advertising Disclosure",
     h1: "Advertising and referral disclosure",
     metaDescription:
-      "How featured placement, referral fees, marketing fees, and commercial relationships work on KidderminsterSolicitors.co.uk.",
+      "How referral fees, marketing fees, and commercial relationships work on KidderminsterSolicitors.co.uk.",
     body: [
       "This website is an independent legal information and solicitor comparison website. It is not a law firm and does not provide legal advice.",
-      "Featured firms may pay for placement or may have a commercial relationship with this website.",
+      "Solicitor firms or legal service providers may have a commercial relationship with this website.",
       "We may receive a referral fee, marketing fee, or other commercial payment from partner firms or legal service providers.",
       "Commercial placement does not guarantee that a firm is suitable for every user or every matter.",
       "Users are under no obligation to instruct any firm introduced through this website and can contact firms independently.",
@@ -451,10 +451,10 @@ export const trustPages: TrustPage[] = [
     title: "Editorial Policy",
     h1: "Editorial policy",
     metaDescription:
-      "How KidderminsterSolicitors.co.uk writes local legal guides and explains featured solicitor placement.",
+      "How KidderminsterSolicitors.co.uk writes local legal guides and explains solicitor introductions.",
     body: [
       "The website aims to publish clear, useful, local information about solicitor services in Kidderminster and the wider Wyre Forest area.",
-      "Featured placement means a firm may be highlighted because of relevance, availability, category fit, or a commercial relationship with this website.",
+      "Solicitor introductions may be influenced by relevance, availability, category fit, and commercial relationships with this website.",
       "Commercial relationships may affect placement, but advertising should be identifiable and the website should not misrepresent itself as a solicitor firm.",
       "Users should verify credentials, regulatory status, costs, and suitability before instructing any solicitor or legal service provider.",
       "Legal advice comes only from the solicitor firm or legal service provider, not from this website.",
@@ -475,19 +475,6 @@ export const trustPages: TrustPage[] = [
     ],
   },
 ];
-
-export const featuredPartner = {
-  firmName: "Featured solicitor partner",
-  shortDescription:
-    "Partner placement is reserved for a vetted solicitor firm or legal service provider serving Kidderminster enquiries.",
-  practiceAreas: ["Conveyancing", "Probate", "Family Law"],
-  address: "Kidderminster and surrounding Worcestershire areas",
-  phone: "Partner phone added after onboarding",
-  websiteUrl: "#quote",
-  sraNumber: "Added when partner is appointed",
-  disclosure:
-    "Featured placement. This firm may have a commercial relationship with this website.",
-};
 
 export const guideOrganizationSchema = {
   "@context": "https://schema.org",

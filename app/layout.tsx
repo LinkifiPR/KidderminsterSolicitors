@@ -1,7 +1,20 @@
 import type { Metadata } from "next";
+import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import { baseUrl } from "../lib/site";
 import { CookieConsentMount } from "../components/CookieConsentMount";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -28,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-GB">
-      <body>
+      <body className={`${inter.variable} ${manrope.variable}`}>
         {children}
         <CookieConsentMount />
       </body>
