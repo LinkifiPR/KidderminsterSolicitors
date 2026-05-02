@@ -39,4 +39,25 @@ describe("CookieConsent", () => {
       marketing: false,
     });
   });
+
+  it("notifies consent-gated scripts when preferences change", async () => {
+    const listener = vi.fn();
+    window.addEventListener("cookie-consent-updated", listener);
+
+    render(<CookieConsent />);
+
+    fireEvent.click(await screen.findByRole("button", { name: /accept all/i }));
+
+    expect(listener).toHaveBeenCalledWith(
+      expect.objectContaining({
+        detail: {
+          necessary: true,
+          analytics: true,
+          marketing: true,
+        },
+      }),
+    );
+
+    window.removeEventListener("cookie-consent-updated", listener);
+  });
 });

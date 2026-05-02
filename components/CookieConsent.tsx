@@ -13,6 +13,9 @@ const storageKey = "cookie-consent";
 
 function saveConsent(consent: Consent) {
   localStorage.setItem(storageKey, JSON.stringify(consent));
+  window.dispatchEvent(
+    new CustomEvent("cookie-consent-updated", { detail: consent }),
+  );
 }
 
 export function CookieConsent() {

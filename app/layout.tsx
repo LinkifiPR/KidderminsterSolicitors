@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 import { baseUrl } from "../lib/site";
+import { Analytics } from "../components/Analytics";
 import { CookieConsentMount } from "../components/CookieConsentMount";
 
 const inter = Inter({
@@ -43,6 +44,7 @@ export default function RootLayout({
     <html lang="en-GB">
       <body className={`${inter.variable} ${manrope.variable}`}>
         {children}
+        <Analytics />
         <CookieConsentMount />
       </body>
     </html>
