@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
+import { LeadConversionEvent } from "../../components/LeadConversionEvent";
 import { baseUrl, servicePages } from "../../lib/site";
 
 export const metadata: Metadata = {
@@ -51,6 +52,7 @@ const nextSteps = [
 export default function ThankYouPage() {
   return (
     <main className="min-h-screen bg-white">
+      <LeadConversionEvent />
       <SiteHeader />
 
       <section className="bg-[linear-gradient(180deg,#ffffff_0%,var(--pale-blue)_100%)] px-5 py-20 sm:px-8">
