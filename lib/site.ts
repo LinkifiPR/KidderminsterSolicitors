@@ -46,8 +46,9 @@ export type GuidePage = {
   intro: string;
   sections: {
     heading: string;
-    body: string;
+    body: string[];
   }[];
+  relatedGuideSlugs: string[];
   faq?: Faq[];
 };
 
@@ -505,29 +506,67 @@ export const guidePages: GuidePage[] = [
     updated: "2026-05-04",
     relatedServiceSlug: "conveyancing-solicitors-kidderminster",
     intro:
-      "Conveyancing costs can vary depending on the property, lender requirements, leasehold issues, searches, and how complex the transaction becomes.",
+      "Conveyancing costs in Kidderminster are not just one legal fee. A useful quote should separate the solicitor's fee from third-party costs, explain what is included, and make clear when extras may apply. This matters because two quotes that look similar at first glance can end up very different once searches, lender work, leasehold checks, bank transfer fees, and Land Registry costs are added.",
     sections: [
       {
-        heading: "What is usually included",
-        body:
-          "A conveyancing quote may include the solicitor's legal fee, VAT, search fees, Land Registry fees, bank transfer fees, identity checks, and other disbursements. Ask for a full breakdown so you can compare like with like.",
+        heading: "The main parts of a conveyancing quote",
+        body: [
+          "Most conveyancing quotes have two broad parts: the solicitor's own legal fee and disbursements. The legal fee is what the firm charges for handling the transaction. Disbursements are third-party costs paid to others, such as search providers, HM Land Registry, identity check providers, or bank transfer services.",
+          "When comparing Kidderminster conveyancing quotes, ask whether the legal fee includes acting for the lender, reporting on the mortgage offer, dealing with gifted deposits, handling completion funds, and submitting the Stamp Duty Land Tax return where needed. Some firms include these as standard; others list them as additional items.",
+        ],
       },
       {
-        heading: "Why quotes differ",
-        body:
-          "A leasehold flat, remortgage, shared ownership property, gifted deposit, or purchase with a mortgage can involve extra checks. A cheaper headline price may not include every required item.",
+        heading: "Why a cheaper headline price can be misleading",
+        body: [
+          "A low headline price can be attractive, especially when you are already budgeting for removals, survey fees, mortgage costs, and deposit funds. The risk is that the cheapest-looking quote may not include everything your transaction needs. Leasehold properties, new-build homes, Help to Buy redemptions, shared ownership, gifted deposits, and unregistered land can all add work.",
+          "A good comparison is not simply 'which solicitor is cheapest?' It is 'which quote is clear, complete, and suitable for this property?' For a home in Kidderminster, Stourport, Bewdley, Cookley, or Hagley, the work required will still depend on the title, lender, property type, chain, and searches rather than the town alone.",
+        ],
       },
       {
-        heading: "How to compare local options",
-        body:
-          "If you are buying or selling in Kidderminster or the Wyre Forest area, compare response times, lender panel status, what is included, and who will handle your file day to day.",
+        heading: "What can affect the final cost",
+        body: [
+          "Property value can affect Land Registry fees and sometimes the legal fee. Whether you are buying, selling, remortgaging, or transferring equity will also change the work involved. A purchase with a mortgage usually involves more steps than a straightforward cash sale. Leasehold matters often require more document review than freehold houses.",
+          "Search packs can vary too. Your solicitor may order local authority, drainage and water, environmental, and other searches depending on the property and lender requirements. For homes around the Wyre Forest area, local authority information, planning history, access, drainage, mining or environmental points may need to be reviewed carefully by the conveyancer.",
+        ],
       },
+      {
+        heading: "Where conveyancing costs often go wrong",
+        body: [
+          "Problems usually begin when a quote is not itemised. If you cannot see what is included, you cannot tell whether a later fee is genuinely additional or something that should have been expected from the start. Vague wording such as 'standard legal work' is less useful than a clear list of included tasks.",
+          "Costs can also rise when important facts are not mentioned early. Tell the solicitor if the property is leasehold, has a management company, is a new build, involves a gifted deposit, is being bought with a mortgage, or is part of a chain. The sooner the firm understands the transaction, the more realistic the quote is likely to be.",
+        ],
+      },
+      {
+        heading: "What to prepare before requesting a quote",
+        body: [
+          "Have the property price, postcode, property type, tenure if known, mortgage lender, and transaction type ready. If you are selling, know whether there is a mortgage to redeem and whether the property is freehold or leasehold. If you are buying, know whether you are using a mortgage, cash, gifted deposit, or Help to Buy-related arrangement.",
+          "You do not need to send confidential documents through a comparison form. A short summary is enough at quote stage. Keep details practical: buying or selling, location, price, mortgage lender, leasehold/freehold if known, and any timing pressure. Documents can be shared directly with the solicitor firm if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a conveyancing solicitor",
+        body: [
+          "Ask whether the quote includes VAT, searches, Land Registry fees, SDLT form submission, lender work, bank transfer fees, ID checks, and acting on a gifted deposit if relevant. Ask who will handle your file day to day, how updates are provided, and whether you can contact the case handler directly.",
+          "Also ask whether the firm is on your mortgage lender's panel. If they are not, the lender may need separate representation, which can cause extra cost and delay. Finally, ask what happens if the transaction falls through before exchange and whether any part of the fee remains payable.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are comparing conveyancing solicitors in Kidderminster, use the conveyancing quote page to request a no obligation quote. We will review the enquiry and may pass it to a suitable solicitor partner who can contact you directly.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. We are not a law firm and do not provide legal advice. You are under no obligation to instruct any firm introduced through this website.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-conveyancing-solicitor-do",
+      "buying-a-house-in-kidderminster-legal-checklist",
     ],
     faq: [
       {
         question: "Is the cheapest conveyancing quote always best?",
         answer:
-          "Not necessarily. Compare what is included, how extras are charged, and how clearly the firm communicates.",
+          "Not necessarily. A low headline price may exclude work or disbursements that are needed later. Compare the full breakdown, not just the first figure.",
       },
       {
         question: "Can I request a conveyancing quote through this website?",
@@ -547,22 +586,72 @@ export const guidePages: GuidePage[] = [
     updated: "2026-05-04",
     relatedServiceSlug: "conveyancing-solicitors-kidderminster",
     intro:
-      "A conveyancing solicitor helps with the legal process of transferring property ownership. Their role depends on whether you are buying, selling, remortgaging, or transferring equity.",
+      "A conveyancing solicitor deals with the legal work needed to transfer, mortgage, remortgage, or change ownership of property. Their role is practical and document-heavy: checking title, reviewing contracts, raising enquiries, dealing with lenders, managing exchange and completion, and making sure the right registrations happen after completion.",
     sections: [
       {
-        heading: "For buyers",
-        body:
-          "A solicitor may review the contract pack, raise enquiries, order searches, report to your lender, handle exchange and completion, and register ownership after completion.",
+        heading: "What they do when you are buying",
+        body: [
+          "For a purchase, the solicitor reviews the contract pack from the seller's solicitor, checks the legal title, orders searches, raises enquiries, reviews replies, reports to you and your lender, prepares the transfer and mortgage deed, requests funds, exchanges contracts, completes the purchase, and registers your ownership.",
+          "That sounds linear, but conveyancing rarely moves in a perfectly straight line. A search result may raise a planning question, the lender may request clarification, a management company may be slow to supply leasehold information, or the seller's solicitor may need time to answer enquiries. The solicitor's job is to identify legal issues and keep the process moving where possible.",
+        ],
       },
       {
-        heading: "For sellers",
-        body:
-          "A solicitor may prepare contract paperwork, answer buyer enquiries, manage mortgage redemption figures, handle exchange and completion, and account for sale proceeds.",
+        heading: "What they do when you are selling",
+        body: [
+          "For a sale, the solicitor prepares the draft contract pack, obtains title documents, helps you complete property information forms, answers enquiries from the buyer's solicitor, obtains mortgage redemption figures, manages exchange and completion, repays the mortgage if there is one, pays estate agent fees where authorised, and sends the remaining sale proceeds to you.",
+          "Sellers can help by completing forms accurately and quickly. If work has been done to the property, gather building regulation certificates, planning permissions, guarantees, FENSA certificates, boiler service records, or other documents before they are requested. Missing paperwork can slow a Kidderminster sale even where the buyer is ready.",
+        ],
       },
       {
-        heading: "Why communication matters",
-        body:
-          "Property transactions often involve estate agents, lenders, surveyors, and other solicitors. Clear communication helps keep each stage moving.",
+        heading: "What they do for remortgages and transfers",
+        body: [
+          "For a remortgage, the solicitor checks the new lender's requirements, deals with title checks, obtains a redemption statement from the existing lender, completes the new mortgage, repays the old one, and registers the new charge. This can be simpler than a purchase but still needs careful handling.",
+          "For a transfer of equity, the solicitor may deal with ownership changes, lender consent, transfer documents, identity checks, and registration. If money changes hands or a mortgage is involved, the work can be more involved than people expect. The solicitor may also recommend separate advice where parties have different interests.",
+        ],
+      },
+      {
+        heading: "Where things often go wrong",
+        body: [
+          "Common problems include slow replies in a chain, mortgage offer delays, missing leasehold packs, unclear rights of way, gifted deposit checks, title restrictions, discrepancies between the property and title plan, or search results that need further explanation. These issues are not always dramatic, but they can affect timing.",
+          "Communication problems are also common. Ask at the outset how updates are provided, who your main contact will be, and whether you will be told when the file is waiting on another party. A good process does not remove every delay, but it should make the cause of delay easier to understand.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Buyers should prepare proof of identity, source of funds information, mortgage details, gifted deposit information if relevant, estate agent details, and any timing requirements. Sellers should prepare title paperwork, property forms, certificates, guarantees, leasehold information if applicable, mortgage details, and estate agent details.",
+          "For Kidderminster and Wyre Forest transactions, it can also help to mention practical local points early: whether the property is leasehold, has shared access, is near a watercourse, has extensions, has parking arrangements, or includes land that may not be obvious from the address.",
+        ],
+      },
+      {
+        heading: "Questions to ask before instructing",
+        body: [
+          "Ask whether the firm can act for your lender, what the quote includes, what extras may apply, who will handle the file, how quickly they normally respond, and what happens if your transaction falls through. If you are in a chain, ask how the firm manages communication with estate agents and other solicitors.",
+          "Ask whether the firm regularly handles the kind of property you are dealing with. Leasehold flats, new-build homes, remortgages, equity transfers, and unregistered land can all require different experience. The right question is not just 'what does it cost?' but 'can this firm handle this transaction clearly and efficiently?'",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you need help comparing conveyancing solicitors in Kidderminster, you can request a no obligation quote through the conveyancing page. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+      "buying-a-house-in-kidderminster-legal-checklist",
+    ],
+    faq: [
+      {
+        question: "Does a conveyancing solicitor check the physical condition of the property?",
+        answer:
+          "No. A solicitor reviews legal title and documents. A surveyor checks the physical condition of the property.",
+      },
+      {
+        question: "Can I use a solicitor outside Kidderminster?",
+        answer:
+          "Yes. Many conveyancing matters are handled remotely, but some users prefer a local or regional firm for familiarity and communication.",
       },
     ],
   },
@@ -577,22 +666,72 @@ export const guidePages: GuidePage[] = [
     updated: "2026-05-04",
     relatedServiceSlug: "conveyancing-solicitors-kidderminster",
     intro:
-      "Buying a property is easier to manage when you understand the common legal steps and the information your solicitor may ask for.",
+      "Buying a home in Kidderminster is easier to manage when you know which legal steps come next, what documents to prepare, and where avoidable delays often happen.",
     sections: [
       {
-        heading: "Before instructing",
-        body:
-          "Check the firm can act for your mortgage lender, ask for a full quote, and confirm who will handle your file.",
+        heading: "Quick checklist before you instruct",
+        body: [
+          "Before you instruct a conveyancing solicitor, check that the firm can act for your mortgage lender, confirm who will handle your file day to day, and ask for a written quote that separates legal fees from third-party costs. If you are buying with a gifted deposit, Help to Buy ISA, Lifetime ISA, or family support, mention this early because it may require extra checks.",
+          "You should also make sure your mortgage application, deposit funds, identity documents, and proof of funds are ready. Conveyancing often feels slow because several people need to act in sequence. Having the basics prepared can remove simple blockers from the start.",
+        ],
       },
       {
-        heading: "Early paperwork",
-        body:
-          "Be ready for identity checks, source of funds questions, mortgage details, and information about any gifted deposit.",
+        heading: "Legal steps after your offer is accepted",
+        body: [
+          "Once your offer is accepted, the seller's solicitor will usually send a draft contract pack. Your solicitor reviews the title, contract, property information forms, fittings and contents list, lease documents if relevant, and any guarantees or permissions supplied by the seller.",
+          "Searches are then ordered, enquiries are raised, and your mortgage offer is reviewed. When the legal checks are complete, you will receive a report explaining the key points before exchange of contracts. Exchange makes the transaction legally binding, so the legal review should be clear before you commit.",
+        ],
       },
       {
-        heading: "Local practicalities",
-        body:
-          "For homes around Kidderminster, Stourport, Bewdley, and nearby villages, searches and enquiries may raise local planning, drainage, access, or title issues that need reviewing by the solicitor.",
+        heading: "Where purchases can slow down",
+        body: [
+          "Common delays include missing title documents, slow management company replies on leasehold properties, unanswered enquiries, mortgage offer issues, gifted deposit paperwork, or search results that need further explanation. Chains can also create delay because your purchase may depend on other buyers and sellers being ready.",
+          "In and around Kidderminster, Stourport, Bewdley, Cookley, and Hagley, local searches may raise planning, drainage, highways, conservation, or access points that need checking. This does not mean there is a problem, but it does mean the issue should be understood before exchange.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare photo ID, proof of address, source of funds evidence, mortgage details, estate agent details, deposit information, and any documents relating to a sale if you are buying and selling at the same time. If someone is contributing to the purchase, ask early what evidence the solicitor will need from them.",
+          "If the property is leasehold, ask for service charge information, ground rent details, lease length, management company details, and any planned major works. Leasehold paperwork can be one of the biggest causes of delay, so early clarity helps.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether the firm is on your lender's panel, what is included in the quote, what is charged separately, how often you will receive updates, who will be your contact, and how urgent issues are handled. If you have a target moving date, ask whether it is realistic rather than assuming it can be guaranteed.",
+          "You can also ask how the firm deals with leasehold packs, gifted deposits, remortgages linked to the purchase, and title issues. Good conveyancing communication is not just about speed. It is about knowing what still needs to happen and who is responsible for the next step.",
+        ],
+      },
+      {
+        heading: "Local relevance for Kidderminster buyers",
+        body: [
+          "Kidderminster has a mixture of older homes, newer estates, flats, terraces, and properties in nearby Wyre Forest villages. Different property types can raise different legal questions, from rights of way and boundaries to lease terms or planning permissions.",
+          "A local or regional conveyancing solicitor may be helpful if you want familiarity with Worcestershire property transactions, although many matters can be handled remotely. The important point is to choose a firm that communicates clearly and understands the type of property you are buying.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are preparing to buy in Kidderminster or the wider Wyre Forest area, compare conveyancing options and request a no obligation quote through the conveyancing page. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+      "what-does-a-conveyancing-solicitor-do",
+    ],
+    faq: [
+      {
+        question: "Should I instruct a solicitor before or after my offer is accepted?",
+        answer:
+          "Many buyers compare firms before offering and formally instruct once the offer is accepted. This can help you move quickly when the seller is ready.",
+      },
+      {
+        question: "Can conveyancing timescales be guaranteed?",
+        answer:
+          "No. Timescales depend on searches, mortgage offers, enquiries, chains, and third parties. A solicitor can explain likely steps but should not guarantee a completion date before the file is ready.",
       },
     ],
   },
@@ -607,22 +746,72 @@ export const guidePages: GuidePage[] = [
     updated: "2026-05-04",
     relatedServiceSlug: "probate-solicitors-kidderminster",
     intro:
-      "A probate solicitor can help executors and families understand and manage the legal and practical steps involved in administering an estate.",
+      "A probate solicitor can help executors and families understand the legal and practical steps involved in administering an estate, particularly where property, tax, paperwork, or family circumstances make the process harder to manage alone.",
     sections: [
       {
         heading: "Common probate support",
-        body:
-          "Support may include identifying estate assets, preparing probate forms, applying for a grant of representation, dealing with tax paperwork, and distributing the estate.",
+        body: [
+          "Probate support may include identifying estate assets, checking the will, confirming who can act, preparing inheritance tax paperwork where needed, applying for a grant of representation, dealing with financial institutions, and distributing the estate to beneficiaries.",
+          "Some families only need help with the grant application. Others want full estate administration, including collecting assets, paying debts, keeping estate accounts, selling property, and managing beneficiary communication. It is worth asking exactly which parts of the process a firm will handle.",
+        ],
       },
       {
         heading: "When help may be useful",
-        body:
-          "Professional help may be useful where there is property, inheritance tax, multiple beneficiaries, overseas assets, unclear paperwork, or a dispute risk.",
+        body: [
+          "Professional support may be useful where the estate includes a property, business interest, overseas asset, trust, inheritance tax issue, missing paperwork, unclear will, multiple beneficiaries, or a risk of disagreement. Executors can be personally responsible for mistakes, so uncertainty should be taken seriously.",
+          "A solicitor may also help where the executor lives away from Kidderminster but the deceased person's property, bank, or family arrangements are local. Practical distance can make estate administration slower if no one is available to gather documents or deal with local property matters.",
+        ],
+      },
+      {
+        heading: "Where things can go wrong",
+        body: [
+          "Problems often arise when executors distribute funds too early, miss liabilities, misunderstand the will, fail to keep clear records, or do not communicate properly with beneficiaries. Property sales can add further complexity if the home needs insurance, clearance, valuation, or maintenance before sale.",
+          "Tax and deadlines can also cause concern. This website cannot advise on inheritance tax or probate deadlines, but it can help users understand when speaking directly to a qualified solicitor or legal service provider may be sensible.",
+        ],
       },
       {
         heading: "What to prepare",
-        body:
-          "Useful documents can include the will, death certificate, asset details, liability details, bank information, pension details, and beneficiary contact information.",
+        body: [
+          "Useful documents include the will and any codicils, death certificate, property details, bank and savings information, pension and life policy details, debts, funeral costs, utility bills, tax records, and beneficiary contact information. If there is no will, gather details of close family members and their relationship to the person who died.",
+          "It also helps to prepare a simple asset list with approximate values and notes on whether accounts were sole or joint. The first conversation with a solicitor is more productive when the estate picture is clear, even if exact figures are not yet available.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether the firm can handle the full estate or only the grant application, how fees are calculated, what information is needed first, who will contact beneficiaries, and how estate accounts will be prepared. If there is property in Kidderminster or Worcestershire, ask how property sale steps fit into the probate process.",
+          "You should also ask what happens if a dispute arises, whether inheritance tax forms are likely to be needed, and how often you will receive updates. Clear communication matters because probate can last months, not days.",
+        ],
+      },
+      {
+        heading: "Local relevance around Kidderminster",
+        body: [
+          "Probate enquiries around Kidderminster, Stourport, Bewdley, Cookley, and Hagley often involve local property, family homes, bank paperwork, and executors who may not all live nearby. A local or regional solicitor can sometimes make practical coordination easier, especially where property sale and family communication overlap.",
+          "The right firm should explain the process without making unrealistic promises. Probate can be sensitive, so users should look for calm communication, transparent fees, and a clear plan for what happens next.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are acting as an executor or trying to understand whether probate support is needed, you can compare probate solicitor options in Kidderminster and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "how-long-does-probate-take",
+      "do-you-need-a-solicitor-for-probate",
+    ],
+    faq: [
+      {
+        question: "Does every estate need probate?",
+        answer:
+          "Not always. Whether probate is needed depends on the assets, ownership, financial institutions, and circumstances. A solicitor or provider can explain this based on the estate details.",
+      },
+      {
+        question: "Can a probate solicitor deal with beneficiaries?",
+        answer:
+          "Many firms can help communicate with beneficiaries as part of estate administration, but you should confirm the scope of work before instructing.",
       },
     ],
   },
@@ -637,22 +826,72 @@ export const guidePages: GuidePage[] = [
     updated: "2026-05-04",
     relatedServiceSlug: "probate-solicitors-kidderminster",
     intro:
-      "Probate timescales vary. Some estates are straightforward, while others take longer because of property, tax, missing information, or disputes.",
+      "Probate timescales vary widely. A simple estate may move relatively quickly, while estates involving property, tax, missing paperwork, or disagreements can take much longer.",
     sections: [
       {
+        heading: "The short answer",
+        body: [
+          "There is no single guaranteed probate timescale. The grant application is only one stage. Executors first need to identify assets and liabilities, value the estate, deal with tax paperwork where required, submit the application, receive the grant, collect funds, settle debts, and distribute the estate.",
+          "Some estates can be administered in months. Others take longer because a property must be sold, beneficiaries need tracing, tax questions need resolving, or financial institutions take time to respond.",
+        ],
+      },
+      {
         heading: "What affects timing",
-        body:
-          "Timing can depend on how quickly asset values are gathered, whether tax forms are needed, how busy the probate registry is, and whether beneficiaries or documents are difficult to trace.",
+        body: [
+          "Timing can depend on how quickly asset values are gathered, whether inheritance tax forms are needed, whether the will is clear, how busy the probate registry is, and whether banks, pension providers, insurers, or beneficiaries respond promptly.",
+          "If the estate includes a home in Kidderminster or the wider Wyre Forest area, the property sale can become a major part of the timetable. Insurance, clearance, valuations, estate agent steps, conveyancing, and buyer delays may all affect when funds can be distributed.",
+        ],
       },
       {
-        heading: "Estate administration can take longer",
-        body:
-          "Receiving the grant is only one stage. Selling property, paying liabilities, resolving tax matters, and distributing funds may take additional time.",
+        heading: "Where things can go wrong",
+        body: [
+          "Executors can run into problems if they distribute money before all debts, tax, and claims are understood. Delays can also happen where there are missing account details, no clear will, disagreement between family members, or uncertainty about who has authority to act.",
+          "Probate can also feel slow because third parties are involved. A solicitor may be waiting for valuations, registry responses, bank paperwork, property sale updates, or beneficiary instructions. Clear updates help, but not every delay is within one person's control.",
+        ],
       },
       {
-        heading: "How to reduce delay",
-        body:
-          "Clear records, prompt replies, accurate asset information, and early professional support can help reduce avoidable delays.",
+        heading: "What to prepare",
+        body: [
+          "Prepare the will, death certificate, property information, bank details, pension details, investment statements, debts, funeral invoice, utility details, insurance policies, and beneficiary information. If you are unsure what exists, make a list of organisations to contact.",
+          "Keep a written record of correspondence and decisions. Executors should be able to show what they have done and why. Good records make it easier for a solicitor to understand the estate and reduce duplicated work.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask which stages are likely to affect timing, whether inheritance tax forms may be needed, how property sale timing is handled, what you can do to speed up information gathering, and when it may be appropriate to make interim distributions.",
+          "You can also ask how updates are provided and what information the solicitor needs from you first. A good answer should give a realistic process rather than an unrealistic promise of speed.",
+        ],
+      },
+      {
+        heading: "Local relevance for Wyre Forest estates",
+        body: [
+          "Many probate matters around Kidderminster, Stourport, Bewdley, Cookley, and Hagley involve family homes, local estate agents, local property valuations, and relatives living in different places. This can make coordination more important than people expect.",
+          "A local or regional probate solicitor may be useful where property, family communication, and estate administration need to move together. The key is clear scope, transparent fees, and realistic timing.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you need help understanding probate timescales for an estate connected to Kidderminster or Wyre Forest, you can compare probate solicitor options and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-probate-solicitor-do",
+      "do-you-need-a-solicitor-for-probate",
+    ],
+    faq: [
+      {
+        question: "Is receiving the grant the end of probate?",
+        answer:
+          "No. The grant allows executors to deal with assets, but collecting funds, selling property, paying liabilities, and distributing the estate can take additional time.",
+      },
+      {
+        question: "Can a solicitor speed up probate?",
+        answer:
+          "A solicitor may reduce avoidable delay by preparing paperwork correctly and explaining what information is needed, but third-party timings cannot be guaranteed.",
       },
     ],
   },
@@ -667,22 +906,65 @@ export const guidePages: GuidePage[] = [
     updated: "2026-05-04",
     relatedServiceSlug: "probate-solicitors-kidderminster",
     intro:
-      "Some executors handle probate themselves, but professional support can be useful where the estate is complex or the executor is unsure about the process.",
+      "Some executors deal with probate themselves, but professional support can be useful where the estate is complex, the executor is uncertain, or family circumstances make mistakes more costly.",
     sections: [
       {
         heading: "When people handle it themselves",
-        body:
-          "A simple estate with clear assets, no property, no tax issues, and cooperative beneficiaries may be more manageable for an executor.",
+        body: [
+          "A simple estate may be manageable without a solicitor where there is a clear will, no property, no inheritance tax issue, straightforward bank accounts, no disputes, and beneficiaries who agree on the process. Even then, executors should understand their responsibilities before distributing funds.",
+          "Handling probate yourself can reduce professional fees, but it also means you take on the administration, paperwork, deadlines, record keeping, and beneficiary communication. The practical workload is often larger than expected.",
+        ],
       },
       {
         heading: "When support may help",
-        body:
-          "A solicitor may be helpful where there is property, inheritance tax, missing documents, overseas assets, business interests, trusts, or potential disagreement.",
+        body: [
+          "A solicitor may be helpful where there is property, inheritance tax, missing documents, overseas assets, business interests, trusts, unclear family circumstances, or potential disagreement. Support can also be sensible where the executor is grieving, busy, or uncomfortable dealing with financial institutions.",
+          "If the estate includes a property in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or nearby Worcestershire areas, property sale steps may run alongside probate administration. That can add legal and practical complexity.",
+        ],
       },
       {
-        heading: "Comparing options",
-        body:
-          "Ask whether the solicitor can handle the full estate administration or only specific parts, and compare how fees are calculated.",
+        heading: "Where things can go wrong",
+        body: [
+          "Executors may accidentally miss debts, misunderstand the will, distribute too early, fail to keep estate accounts, or overlook tax paperwork. Beneficiary disputes can also become harder to manage if communication is unclear or inconsistent.",
+          "This is why comparing levels of support matters. Some users need full estate administration, while others only need help with the grant application or a specific issue. A clear scope can control cost and reduce confusion.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare the will, death certificate, list of assets and debts, property details, bank statements, pension information, tax records, funeral invoice, and beneficiary details. If you are not sure whether probate is needed, gather enough information for a solicitor to understand the estate structure.",
+          "Make a note of any concerns, such as missing documents, family disagreement, overseas assets, lifetime gifts, or property that needs selling. These points help a solicitor explain whether limited support or full administration may be more suitable.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether probate is likely to be needed, whether the firm offers fixed-fee help for the grant, whether full estate administration is available, what fees are charged, and what work remains your responsibility.",
+          "You should also ask who will communicate with beneficiaries, how estate accounts are handled, what documents are needed first, and how property sale steps are coordinated if the estate includes a home.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are unsure whether you need a probate solicitor, you can compare probate options in Kidderminster and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-probate-solicitor-do",
+      "how-long-does-probate-take",
+    ],
+    faq: [
+      {
+        question: "Can an executor choose limited solicitor support?",
+        answer:
+          "Often, yes. Some firms offer help with specific stages, such as the grant application, while others provide full estate administration.",
+      },
+      {
+        question: "Is probate support always expensive?",
+        answer:
+          "Costs vary depending on the estate and the work needed. Ask for a clear explanation of fees, what is included, and what may be charged separately.",
       },
     ],
   },
@@ -697,22 +979,65 @@ export const guidePages: GuidePage[] = [
     updated: "2026-05-04",
     relatedServiceSlug: "divorce-solicitors-kidderminster",
     intro:
-      "Preparing before a first divorce consultation can help you explain the situation clearly and make better use of the appointment.",
+      "Preparing before a first divorce solicitor consultation can help you explain the situation clearly, understand the likely next steps, and avoid using the appointment just to gather basic facts.",
     sections: [
       {
+        heading: "What the first consultation should achieve",
+        body: [
+          "A first consultation is usually about understanding your circumstances, identifying the main issues, and explaining possible next steps. It is not about deciding everything immediately. Divorce, finances, child arrangements, housing, and communication can each need separate consideration.",
+          "You do not need a perfect file before speaking to a solicitor. A clear summary of the relationship, the current position, and your main concerns is often more useful than a large bundle of unorganised documents.",
+        ],
+      },
+      {
         heading: "Information to gather",
-        body:
-          "It may help to list important dates, marriage or civil partnership details, children arrangements, property, savings, pensions, debts, and income information.",
+        body: [
+          "It may help to list marriage or civil partnership dates, separation date, children's ages and arrangements, property ownership, mortgage details, income, savings, pensions, debts, business interests, and any urgent concerns such as housing or safety.",
+          "For users in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or nearby areas, practical arrangements such as school runs, local housing, childcare, and work patterns can be relevant when discussing next steps. Keep the first summary factual and proportionate.",
+        ],
+      },
+      {
+        heading: "Where things can go wrong",
+        body: [
+          "A consultation can become less useful if it focuses only on blame, long background detail, or arguments that do not affect the legal process. Try to separate facts, concerns, and goals. If something is urgent, put that near the top of your notes.",
+          "Another common issue is underestimating finances. Pensions, debts, business interests, and future housing needs can matter. Even if figures are approximate, write them down so the solicitor can see what information is missing.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare a one-page timeline, details of children and current arrangements, property and mortgage information, income and employment details, savings, debts, pensions, and any court papers or previous correspondence. If mediation has already taken place, note when and what happened.",
+          "Avoid sending unnecessary sensitive documents through a general enquiry form. Use the form to explain the broad issue and preferred contact method, then share detailed documents directly with the solicitor or legal service provider if you choose to instruct them.",
+        ],
       },
       {
         heading: "Questions to ask",
-        body:
-          "Ask about likely stages, communication, costs, timescales, what information is needed, and whether mediation or other support may be relevant.",
+        body: [
+          "Ask what the likely stages are, what information is needed first, whether mediation may be relevant, how finances and child arrangements are handled, what costs could look like, and who will be your day-to-day contact.",
+          "You can also ask what should happen if communication with your former partner is difficult, whether urgent steps may be needed, and how the firm explains options without making unrealistic promises.",
+        ],
       },
       {
-        heading: "Keep detail proportionate",
-        body:
-          "Use the initial enquiry to outline the matter. Avoid sending unnecessary sensitive information through comparison forms before speaking directly with a solicitor.",
+        heading: "Next step",
+        body: [
+          "If you are preparing to speak to a divorce solicitor in Kidderminster or the wider Wyre Forest area, you can compare divorce solicitor options and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-family-law-solicitor-help-with",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+    faq: [
+      {
+        question: "Do I need all financial documents before a first divorce consultation?",
+        answer:
+          "No, but a basic list of property, income, savings, pensions, and debts can make the first conversation more useful.",
+      },
+      {
+        question: "Should I include sensitive details in the quote form?",
+        answer:
+          "Keep the form summary proportionate. Detailed personal documents should usually be shared directly with a solicitor or legal provider if you choose to instruct them.",
       },
     ],
   },
@@ -727,22 +1052,65 @@ export const guidePages: GuidePage[] = [
     updated: "2026-05-04",
     relatedServiceSlug: "family-law-solicitors-kidderminster",
     intro:
-      "Family law solicitors may help with a wide range of personal matters, often involving relationships, children, finances, and future arrangements.",
+      "Family law solicitors may help with personal and sensitive matters involving relationships, children, finances, separation, and future arrangements.",
     sections: [
       {
         heading: "Common family law matters",
-        body:
-          "Support may relate to separation, divorce, child arrangements, financial arrangements, cohabitation, domestic abuse protections, and related documentation.",
+        body: [
+          "Family law support may relate to separation, divorce, child arrangements, financial arrangements, cohabitation, domestic abuse protections, prenuptial or postnuptial agreements, and related documentation. The exact support needed depends on the circumstances.",
+          "A solicitor may help explain process, prepare documents, negotiate with another party, support mediation outcomes, or represent a client where formal legal steps are needed. This website does not provide advice, but it can help users understand what type of solicitor support may be relevant.",
+        ],
       },
       {
-        heading: "Choosing support",
-        body:
-          "Ask whether the firm regularly handles matters like yours, how costs are explained, and who will be your day-to-day contact.",
+        heading: "Children, finances, and separation",
+        body: [
+          "Child arrangements can involve where children live, how time is shared, school practicalities, holidays, and communication. Financial matters can involve property, savings, pensions, debts, maintenance, and future housing needs.",
+          "For families around Kidderminster, Stourport, Bewdley, Cookley, and Hagley, local routines can matter. School locations, work travel, family support, and housing availability can all affect what people need to discuss with a solicitor.",
+        ],
       },
       {
-        heading: "Local considerations",
-        body:
-          "Some users prefer a local or regional solicitor where meetings, local services, or practical support around Kidderminster and Wyre Forest matter.",
+        heading: "Where things can go wrong",
+        body: [
+          "Family matters can become harder when communication breaks down, informal agreements are unclear, financial information is missing, or one person does not understand the consequences of an arrangement. Sensitive issues should be handled carefully and with appropriate professional support.",
+          "Another common problem is waiting until a situation becomes urgent. If there are deadlines, court papers, safeguarding concerns, or significant financial decisions, users should speak directly to a qualified provider rather than relying on general information.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare a short timeline, key dates, current arrangements, details of children, housing information, income, debts, pensions, and any relevant correspondence or court papers. Keep notes factual and focus on what needs to be resolved.",
+          "If your concern is mainly about children, note current routines and practical issues. If your concern is financial, gather property, mortgage, account, pension, and debt information where available.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether the firm handles matters like yours, how costs are explained, what information is needed first, whether mediation may be relevant, and who will manage your file. You should also ask what can and cannot be resolved through informal agreement.",
+          "A good first conversation should help you understand the process and next steps without promising an outcome. Be cautious of absolute claims, especially in sensitive family matters.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you need family law solicitor support in Kidderminster or the wider Wyre Forest area, you can compare family law options and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "how-to-prepare-for-a-divorce-solicitor-consultation",
+      "do-you-need-a-solicitor-for-probate",
+    ],
+    faq: [
+      {
+        question: "Does family law only mean divorce?",
+        answer:
+          "No. Family law can include child arrangements, separation, finances, cohabitation, protective steps, and other relationship-related legal matters.",
+      },
+      {
+        question: "Can this website advise on a family law problem?",
+        answer:
+          "No. This website provides general information and solicitor introductions only. Legal advice must come from a qualified solicitor or legal service provider.",
       },
     ],
   },
@@ -757,22 +1125,72 @@ export const guidePages: GuidePage[] = [
     updated: "2026-05-04",
     relatedServiceSlug: "employment-solicitors-kidderminster",
     intro:
-      "A settlement agreement is commonly used to record agreed terms between an employer and employee, often when employment is ending.",
+      "A settlement agreement is commonly used to record agreed terms between an employer and employee, often when employment is ending or a workplace dispute is being resolved.",
     sections: [
       {
+        heading: "What a settlement agreement does",
+        body: [
+          "A settlement agreement normally sets out what the employer will provide and what the employee agrees in return. It may cover termination date, notice, holiday pay, compensation, confidentiality, references, restrictive covenants, company property, and claims being waived.",
+          "For the agreement to be valid in relation to employment claims, independent legal advice is usually required. The adviser should explain the effect of the agreement and the rights being waived. This website cannot provide that advice.",
+        ],
+      },
+      {
         heading: "Why legal advice matters",
-        body:
-          "Settlement agreements usually require independent legal advice for the agreement to be valid. The adviser should explain the effect of the agreement and the rights being waived.",
+        body: [
+          "Settlement agreement advice is not just a signature exercise. The solicitor or adviser should help the employee understand the wording, practical consequences, and any points that may need clarifying before signing.",
+          "Employers around Kidderminster and Worcestershire may also need advice when preparing settlement agreements so that the process is handled properly, wording is clear, and risks are understood.",
+        ],
+      },
+      {
+        heading: "Where things can go wrong",
+        body: [
+          "Problems can arise where the termination payment is unclear, tax treatment is misunderstood, post-employment restrictions are too broad, references are not agreed, confidentiality wording is unrealistic, or deadlines are too tight for proper review.",
+          "Employees should avoid signing before they understand the agreement. Employers should avoid assuming a template will be suitable for every situation. The context matters, especially where there has been a grievance, redundancy process, sickness absence, or performance issue.",
+        ],
       },
       {
         heading: "What to prepare",
-        body:
-          "Useful information can include the draft agreement, employment contract, recent payslips, bonus or commission information, and any relevant correspondence.",
+        body: [
+          "Prepare the draft settlement agreement, employment contract, staff handbook if relevant, recent payslips, bonus or commission information, benefits details, redundancy calculations, and any correspondence about the issue. If there is a deadline, note it clearly.",
+          "It also helps to list questions before the appointment. For example, whether the payment is correct, whether the reference wording is acceptable, whether restrictions affect future work, and whether the employer contribution covers the advice cost.",
+        ],
       },
       {
-        heading: "Costs and timing",
-        body:
-          "Employers often contribute to advice costs, but the amount varies. Settlement agreements can be time sensitive, so prompt contact with a solicitor may be important.",
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask what the agreement means, which claims are being waived, whether any wording needs changing, whether the payment is clearly explained, how tax is treated, what restrictions apply after employment, and whether the employer's contribution is enough for the advice required.",
+          "You can also ask how quickly the review can be completed. Settlement agreements can be time sensitive, but the process should still allow enough time for meaningful advice.",
+        ],
+      },
+      {
+        heading: "Local relevance for Kidderminster employees and employers",
+        body: [
+          "Employment issues in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Worcestershire area may involve local employers, hybrid work, regional offices, or small businesses where relationships are close and reputational concerns matter.",
+          "Whether you are an employee asked to sign or an employer preparing terms, clear employment solicitor support can help avoid confusion. The right next step depends on the agreement, deadline, and surrounding facts.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you need settlement agreement support, you can compare employment solicitor options in Kidderminster and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "when-should-you-speak-to-an-employment-solicitor",
+      "how-to-prepare-for-a-divorce-solicitor-consultation",
+    ],
+    faq: [
+      {
+        question: "Does my employer usually pay for settlement agreement advice?",
+        answer:
+          "Employers often contribute to the cost, but the amount varies. Ask the solicitor whether the contribution is likely to cover the work needed.",
+      },
+      {
+        question: "Can I negotiate a settlement agreement?",
+        answer:
+          "Sometimes points can be queried or negotiated, but this depends on the facts and the employer's position. A qualified adviser can explain options.",
       },
     ],
   },
@@ -787,22 +1205,65 @@ export const guidePages: GuidePage[] = [
     updated: "2026-05-04",
     relatedServiceSlug: "employment-solicitors-kidderminster",
     intro:
-      "Employment issues can move quickly. Speaking to a solicitor may be useful where deadlines, documents, or workplace disputes need careful handling.",
+      "Employment issues can move quickly. Speaking to a solicitor may be useful where deadlines, documents, workplace disputes, or exit terms need careful handling.",
     sections: [
       {
         heading: "Employee situations",
-        body:
-          "Employees may seek help with settlement agreements, dismissal concerns, redundancy, discrimination concerns, grievances, disciplinary issues, or contract questions.",
+        body: [
+          "Employees may seek help with settlement agreements, dismissal concerns, redundancy, discrimination concerns, grievances, disciplinary issues, sickness absence issues, contract questions, restrictive covenants, or unpaid wages. The right time to speak to a solicitor is often before making a final decision or missing a deadline.",
+          "If you work in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or elsewhere in Worcestershire, local employment issues may involve smaller workplaces where relationships and references matter. A solicitor can explain process and options based on the facts if you choose to instruct them.",
+        ],
       },
       {
         heading: "Employer situations",
-        body:
-          "Employers may need support with contracts, policies, grievances, dismissals, redundancies, settlement agreements, and tribunal risk.",
+        body: [
+          "Employers may need support with contracts, policies, grievances, disciplinaries, dismissals, redundancies, settlement agreements, absence management, restructures, and tribunal risk. Small businesses often benefit from early guidance before a problem becomes formal.",
+          "This is especially relevant where a decision affects someone's job, pay, working pattern, or reputation. Clear documents and fair process can matter as much as the final decision.",
+        ],
       },
       {
-        heading: "Do not delay where deadlines may apply",
-        body:
-          "Employment tribunal and internal process deadlines can be short. This website cannot advise on deadlines, so users should speak directly with a qualified provider where timing may matter.",
+        heading: "Where things can go wrong",
+        body: [
+          "Employment issues can escalate when emails are sent in anger, deadlines are missed, meetings are attended without preparation, or a settlement agreement is signed without understanding its effect. Employers can also create risk by skipping process or using unclear wording.",
+          "Internal deadlines and employment tribunal time limits can be short. This website cannot advise on deadlines, so users should speak directly with a qualified solicitor or legal service provider where timing may matter.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare your contract, staff handbook or policies, relevant emails, meeting notes, payslips, redundancy letters, disciplinary or grievance documents, and any settlement agreement. Write a short timeline with dates and what happened.",
+          "Employers should prepare the relevant contract, policy documents, correspondence, decision notes, consultation records, and the commercial outcome they want to achieve. The more organised the facts are, the easier it is for a solicitor to identify the next sensible step.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether there are urgent deadlines, what information is needed first, what options may be available, how costs are handled, who will manage the matter, and what communication should be avoided until advice is taken.",
+          "Employees may want to ask about settlement, references, restrictions, pay, and process. Employers may want to ask about risk, documentation, consultation, and whether a proposed step is proportionate.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are unsure whether to speak to an employment solicitor, you can compare employment solicitor options in Kidderminster and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "settlement-agreements-explained",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+    faq: [
+      {
+        question: "Should I wait until my employer makes a final decision?",
+        answer:
+          "Not always. Early support may be useful where meetings, deadlines, settlement agreements, or dismissal risks are involved.",
+      },
+      {
+        question: "Can this website tell me if I have a claim?",
+        answer:
+          "No. This website provides general information and solicitor introductions only. A qualified solicitor or legal provider would need to assess the facts.",
       },
     ],
   },

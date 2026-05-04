@@ -3,7 +3,6 @@ import {
   baseUrl,
   buildCanonicalUrl,
   getAllPageSlugs,
-  getPageBySlug,
   guideOrganizationSchema,
   guidePages,
   phaseOneServiceSlugs,
@@ -20,7 +19,7 @@ describe("site content model", () => {
     ]);
 
     expect(servicePages.map((page) => page.slug)).toEqual(
-      expect.arrayContaining(phaseOneServiceSlugs),
+      expect.arrayContaining([...phaseOneServiceSlugs]),
     );
   });
 
@@ -38,7 +37,7 @@ describe("site content model", () => {
   });
 
   it("keeps the site positioned as an independent guide, not a law firm", () => {
-    const page = getPageBySlug("advertising-disclosure");
+    const page = trustPages.find((trustPage) => trustPage.slug === "advertising-disclosure");
 
     expect(page?.body).toEqual(
       expect.arrayContaining([
@@ -87,5 +86,38 @@ describe("site content model", () => {
     expect(getAllPageSlugs()).toContain(
       "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
     );
+  });
+
+  it("keeps guide content useful, local, and conversion-aware", () => {
+    const localPattern =
+      /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;
+    const prohibitedPattern = /our solicitors|we advise|our legal team/i;
+
+    guidePages.forEach((page) => {
+      const fullText = [
+        page.title,
+        page.h1,
+        page.metaDescription,
+        page.intro,
+        ...page.sections.flatMap((section) => [
+          section.heading,
+          ...section.body,
+        ]),
+        ...(page.faq ?? []).flatMap((item) => [item.question, item.answer]),
+      ].join(" ");
+
+      expect(fullText.length).toBeGreaterThan(3000);
+      expect(fullText).toMatch(localPattern);
+      expect(fullText).not.toMatch(prohibitedPattern);
+      expect(page.relatedGuideSlugs.length).toBeGreaterThan(0);
+      expect(page.sections.some((section) => /what to prepare/i.test(section.heading))).toBe(
+        true,
+      );
+      expect(page.sections.some((section) => /questions to ask/i.test(section.heading))).toBe(
+        true,
+      );
+      expect(fullText).toMatch(/no obligation quote|request a quote/i);
+      expect(fullText).toMatch(/not a law firm/i);
+    });
   });
 });
