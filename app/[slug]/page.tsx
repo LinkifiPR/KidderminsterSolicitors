@@ -71,6 +71,11 @@ export default async function ContentPage({ params }: PageProps) {
         .map((guideSlug) => guidePages.find((guide) => guide.slug === guideSlug))
         .filter((guide): guide is (typeof guidePages)[number] => Boolean(guide))
     : [];
+  const relatedServiceGuides = isService
+    ? (page.relatedGuideSlugs ?? [])
+        .map((guideSlug) => guidePages.find((guide) => guide.slug === guideSlug))
+        .filter((guide): guide is (typeof guidePages)[number] => Boolean(guide))
+    : [];
 
   return (
     <main className="min-h-screen bg-[var(--cream)]">
@@ -161,6 +166,84 @@ export default async function ContentPage({ params }: PageProps) {
               </div>
             </div>
           </section>
+
+          {page.keyTakeaways?.length || page.sections?.length ? (
+            <section className="bg-[var(--cream)] px-5 py-20 sm:px-8">
+              <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.72fr_1.28fr]">
+                {page.keyTakeaways?.length ? (
+                  <aside className="lg:sticky lg:top-28 lg:self-start">
+                    <div className="rounded-[2rem] border border-[var(--border)] bg-white p-6 shadow-[0_18px_60px_rgba(7,24,39,0.08)]">
+                      <p className="text-sm font-extrabold uppercase text-[var(--gold)]">
+                        Key takeaways
+                      </p>
+                      <ul className="mt-5 grid gap-4 text-sm leading-7 text-[var(--navy)]">
+                        {page.keyTakeaways.map((takeaway) => (
+                          <li key={takeaway} className="flex gap-3">
+                            <span
+                              aria-hidden="true"
+                              className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--gold)]"
+                            />
+                            <span>{takeaway}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </aside>
+                ) : null}
+
+                {page.sections?.length ? (
+                  <div className="rounded-[2rem] border border-[var(--border)] bg-white p-7 shadow-[0_26px_90px_rgba(7,24,39,0.08)] sm:p-10">
+                    <div className="space-y-10">
+                      {page.sections.map((section) => (
+                        <section key={section.heading}>
+                          <h2 className="text-3xl font-extrabold text-[var(--navy)]">
+                            {section.heading}
+                          </h2>
+                          <div className="mt-4 space-y-4 text-base leading-8 text-[var(--muted)]">
+                            {section.body.map((paragraph) => (
+                              <p key={paragraph}>{paragraph}</p>
+                            ))}
+                          </div>
+                        </section>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            </section>
+          ) : null}
+
+          {relatedServiceGuides.length ? (
+            <section className="bg-white px-5 py-20 sm:px-8">
+              <div className="mx-auto max-w-7xl">
+                <p className="text-sm font-semibold uppercase text-[var(--gold)]">
+                  Related guides
+                </p>
+                <h2 className="mt-3 text-4xl font-semibold text-[var(--navy)]">
+                  Learn more before requesting a quote.
+                </h2>
+                <div className="mt-8 grid gap-5 md:grid-cols-3">
+                  {relatedServiceGuides.map((guide) => (
+                    <a
+                      key={guide.slug}
+                      href={`/${guide.slug}/`}
+                      className="rounded-2xl border border-[var(--border)] bg-[var(--pale-blue)] p-6 transition hover:-translate-y-1 hover:border-[var(--mid-blue)] hover:bg-white hover:shadow-[0_18px_45px_rgba(7,24,39,0.1)]"
+                    >
+                      <p className="text-xs font-extrabold uppercase text-[var(--gold)]">
+                        {guide.category}
+                      </p>
+                      <h3 className="mt-3 text-xl font-extrabold leading-7 text-[var(--navy)]">
+                        {guide.h1}
+                      </h3>
+                      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
+                        {guide.metaDescription}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </section>
+          ) : null}
 
           <section className="bg-white px-5 py-20 sm:px-8">
             <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.85fr]">

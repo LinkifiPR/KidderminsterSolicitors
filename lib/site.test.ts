@@ -127,4 +127,38 @@ describe("site content model", () => {
       expect(fullText).toMatch(/not a law firm/i);
     });
   });
+
+  it("gives Phase 1 money pages enough YMYL and conversion structure", () => {
+    phaseOneServiceSlugs.forEach((slug) => {
+      const page = servicePages.find((service) => service.slug === slug);
+
+      expect(page).toBeDefined();
+      expect(page?.keyTakeaways?.length).toBeGreaterThanOrEqual(3);
+      expect(page?.sections?.length).toBeGreaterThanOrEqual(4);
+      expect(page?.relatedGuideSlugs?.length).toBeGreaterThanOrEqual(2);
+      expect(page?.faq.length).toBeGreaterThanOrEqual(3);
+
+      const fullText = [
+        page?.title,
+        page?.h1,
+        page?.metaDescription,
+        page?.summary,
+        page?.intro,
+        page?.localAngle,
+        ...(page?.keyTakeaways ?? []),
+        ...(page?.sections ?? []).flatMap((section) => [
+          section.heading,
+          ...section.body,
+        ]),
+        ...(page?.comparisonPoints ?? []),
+        ...(page?.faq ?? []).flatMap((item) => [item.question, item.answer]),
+      ].join(" ");
+
+      expect(fullText).toMatch(/Kidderminster|Wyre Forest/i);
+      expect(fullText).toMatch(/no obligation quote|suitable solicitor partner/i);
+      expect(fullText).not.toMatch(
+        /our solicitors|our legal team|we advise|we represent you|guaranteed result|best solicitor|cheapest solicitor/i,
+      );
+    });
+  });
 });
