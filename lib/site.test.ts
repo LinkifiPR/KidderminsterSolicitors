@@ -99,6 +99,7 @@ describe("site content model", () => {
         page.h1,
         page.metaDescription,
         page.intro,
+        ...page.keyTakeaways,
         ...page.sections.flatMap((section) => [
           section.heading,
           ...section.body,
@@ -109,7 +110,13 @@ describe("site content model", () => {
       expect(fullText.length).toBeGreaterThan(3000);
       expect(fullText).toMatch(localPattern);
       expect(fullText).not.toMatch(prohibitedPattern);
+      expect(page.keyTakeaways.length).toBeGreaterThanOrEqual(3);
       expect(page.relatedGuideSlugs.length).toBeGreaterThan(0);
+      expect(page.faq?.length).toBeGreaterThanOrEqual(2);
+      page.faq?.forEach((item) => {
+        expect(item.question.length).toBeGreaterThan(20);
+        expect(item.answer.length).toBeGreaterThan(40);
+      });
       expect(page.sections.some((section) => /what to prepare/i.test(section.heading))).toBe(
         true,
       );

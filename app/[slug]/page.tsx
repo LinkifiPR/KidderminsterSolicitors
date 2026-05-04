@@ -18,6 +18,13 @@ type PageProps = {
   }>;
 };
 
+function buildSectionId(heading: string) {
+  return heading
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
 export function generateStaticParams() {
   return getAllPageSlugs().map((slug) => ({ slug }));
 }
@@ -213,6 +220,22 @@ export default async function ContentPage({ params }: PageProps) {
                     Solicitors is not a law firm and does not provide legal
                     advice.
                   </p>
+                  <div className="mt-6 rounded-3xl border border-white/70 bg-white/70 p-4">
+                    <p className="text-xs font-extrabold uppercase text-[var(--gold)]">
+                      On this page
+                    </p>
+                    <nav aria-label="Guide sections" className="mt-3 grid gap-2">
+                      {page.sections.map((section) => (
+                        <a
+                          key={section.heading}
+                          href={`#${buildSectionId(section.heading)}`}
+                          className="text-sm font-semibold leading-6 text-[var(--trust-blue)] transition hover:text-[var(--mid-blue)]"
+                        >
+                          {section.heading}
+                        </a>
+                      ))}
+                    </nav>
+                  </div>
                   {relatedService ? (
                     <a
                       href={`/${relatedService.slug}/`}
@@ -225,9 +248,29 @@ export default async function ContentPage({ params }: PageProps) {
               </aside>
 
               <article className="rounded-[2rem] border border-[var(--border)] bg-white p-7 shadow-[0_26px_90px_rgba(7,24,39,0.08)] sm:p-10">
+                <section className="mb-10 rounded-[2rem] border border-[var(--border)] bg-[var(--pale-blue)] p-6">
+                  <p className="text-sm font-extrabold uppercase text-[var(--gold)]">
+                    Key takeaways
+                  </p>
+                  <ul className="mt-4 grid gap-3 text-base leading-7 text-[var(--navy)]">
+                    {page.keyTakeaways.map((takeaway) => (
+                      <li key={takeaway} className="flex gap-3">
+                        <span
+                          aria-hidden="true"
+                          className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--gold)]"
+                        />
+                        <span>{takeaway}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
                 <div className="space-y-10">
                   {page.sections.map((section) => (
-                    <section key={section.heading}>
+                    <section
+                      key={section.heading}
+                      id={buildSectionId(section.heading)}
+                      className="scroll-mt-32"
+                    >
                       <h2 className="text-3xl font-extrabold text-[var(--navy)]">
                         {section.heading}
                       </h2>

@@ -44,6 +44,7 @@ export type GuidePage = {
   updated: string;
   relatedServiceSlug: string;
   intro: string;
+  keyTakeaways: string[];
   sections: {
     heading: string;
     body: string[];
@@ -507,6 +508,11 @@ export const guidePages: GuidePage[] = [
     relatedServiceSlug: "conveyancing-solicitors-kidderminster",
     intro:
       "Conveyancing costs in Kidderminster are not just one legal fee. A useful quote should separate the solicitor's fee from third-party costs, explain what is included, and make clear when extras may apply. This matters because two quotes that look similar at first glance can end up very different once searches, lender work, leasehold checks, bank transfer fees, and Land Registry costs are added.",
+    keyTakeaways: [
+      "Compare the full quote breakdown, not just the headline legal fee.",
+      "Property type, tenure, lender requirements, and transaction complexity can all affect final cost.",
+      "A no obligation quote should help you understand likely fees without committing to instruct a firm.",
+    ],
     sections: [
       {
         heading: "The main parts of a conveyancing quote",
@@ -587,6 +593,11 @@ export const guidePages: GuidePage[] = [
     relatedServiceSlug: "conveyancing-solicitors-kidderminster",
     intro:
       "A conveyancing solicitor deals with the legal work needed to transfer, mortgage, remortgage, or change ownership of property. Their role is practical and document-heavy: checking title, reviewing contracts, raising enquiries, dealing with lenders, managing exchange and completion, and making sure the right registrations happen after completion.",
+    keyTakeaways: [
+      "A conveyancing solicitor checks legal title, contract paperwork, searches, lender requirements, and completion steps.",
+      "They do not inspect the physical condition of the property, so surveys remain separate.",
+      "Clear communication matters because delays often come from missing documents, search issues, lender checks, or unanswered enquiries.",
+    ],
     sections: [
       {
         heading: "What they do when you are buying",
@@ -667,6 +678,11 @@ export const guidePages: GuidePage[] = [
     relatedServiceSlug: "conveyancing-solicitors-kidderminster",
     intro:
       "Buying a home in Kidderminster is easier to manage when you know which legal steps come next, what documents to prepare, and where avoidable delays often happen.",
+    keyTakeaways: [
+      "Prepare ID, source of funds, mortgage details, and deposit information before the file starts.",
+      "Searches, enquiries, lender checks, and chain readiness all affect purchase timing.",
+      "A local or regional conveyancing solicitor may help you understand property-specific issues around Kidderminster and Wyre Forest.",
+    ],
     sections: [
       {
         heading: "Quick checklist before you instruct",
@@ -747,6 +763,11 @@ export const guidePages: GuidePage[] = [
     relatedServiceSlug: "probate-solicitors-kidderminster",
     intro:
       "A probate solicitor can help executors and families understand the legal and practical steps involved in administering an estate, particularly where property, tax, paperwork, or family circumstances make the process harder to manage alone.",
+    keyTakeaways: [
+      "A probate solicitor may help with the grant application, estate administration, tax paperwork, property sale coordination, and beneficiary communication.",
+      "Executor mistakes can be costly, especially where assets, debts, family circumstances, or tax questions are unclear.",
+      "You can compare limited probate support and full estate administration depending on what the estate needs.",
+    ],
     sections: [
       {
         heading: "Common probate support",
@@ -827,6 +848,11 @@ export const guidePages: GuidePage[] = [
     relatedServiceSlug: "probate-solicitors-kidderminster",
     intro:
       "Probate timescales vary widely. A simple estate may move relatively quickly, while estates involving property, tax, missing paperwork, or disagreements can take much longer.",
+    keyTakeaways: [
+      "Probate is not finished when the grant is issued; estate administration can continue afterwards.",
+      "Property sales, tax paperwork, missing information, and beneficiary issues are common sources of delay.",
+      "Organised estate records and early clarity on assets can reduce avoidable hold-ups.",
+    ],
     sections: [
       {
         heading: "The short answer",
@@ -907,6 +933,11 @@ export const guidePages: GuidePage[] = [
     relatedServiceSlug: "probate-solicitors-kidderminster",
     intro:
       "Some executors deal with probate themselves, but professional support can be useful where the estate is complex, the executor is uncertain, or family circumstances make mistakes more costly.",
+    keyTakeaways: [
+      "Simple estates may be manageable without full solicitor support, but executors still carry responsibility.",
+      "Property, tax, missing documents, overseas assets, trusts, or disputes can make professional help more important.",
+      "Some firms offer limited probate support, while others handle full estate administration.",
+    ],
     sections: [
       {
         heading: "When people handle it themselves",
@@ -980,6 +1011,11 @@ export const guidePages: GuidePage[] = [
     relatedServiceSlug: "divorce-solicitors-kidderminster",
     intro:
       "Preparing before a first divorce solicitor consultation can help you explain the situation clearly, understand the likely next steps, and avoid using the appointment just to gather basic facts.",
+    keyTakeaways: [
+      "A concise timeline and summary of children, property, finances, and urgent concerns can make the first conversation more useful.",
+      "Keep enquiry forms proportionate and share sensitive documents directly with a solicitor if you choose to instruct them.",
+      "Ask about process, costs, information needed, mediation context, and communication before deciding what to do next.",
+    ],
     sections: [
       {
         heading: "What the first consultation should achieve",
@@ -1053,6 +1089,11 @@ export const guidePages: GuidePage[] = [
     relatedServiceSlug: "family-law-solicitors-kidderminster",
     intro:
       "Family law solicitors may help with personal and sensitive matters involving relationships, children, finances, separation, and future arrangements.",
+    keyTakeaways: [
+      "Family law can cover separation, child arrangements, finances, cohabitation, protective steps, and related documents.",
+      "Practical local factors such as schools, housing, work patterns, and family support can matter in Wyre Forest family enquiries.",
+      "A first conversation should clarify process and next steps without promising a specific outcome.",
+    ],
     sections: [
       {
         heading: "Common family law matters",
@@ -1126,6 +1167,11 @@ export const guidePages: GuidePage[] = [
     relatedServiceSlug: "employment-solicitors-kidderminster",
     intro:
       "A settlement agreement is commonly used to record agreed terms between an employer and employee, often when employment is ending or a workplace dispute is being resolved.",
+    keyTakeaways: [
+      "Settlement agreements usually require independent legal advice to be effective for employment claims.",
+      "The review should cover payment terms, claims being waived, restrictions, confidentiality, references, and timing.",
+      "Employees and employers should avoid treating a settlement agreement as a simple template exercise.",
+    ],
     sections: [
       {
         heading: "What a settlement agreement does",
@@ -1206,6 +1252,11 @@ export const guidePages: GuidePage[] = [
     relatedServiceSlug: "employment-solicitors-kidderminster",
     intro:
       "Employment issues can move quickly. Speaking to a solicitor may be useful where deadlines, documents, workplace disputes, or exit terms need careful handling.",
+    keyTakeaways: [
+      "Employment support may be useful before deadlines, meetings, dismissals, grievances, redundancies, or settlement agreements move too far.",
+      "Employees and employers should prepare documents, timelines, and key correspondence before speaking to a solicitor.",
+      "This website cannot assess claims or deadlines, so users should speak directly with a qualified provider where timing may matter.",
+    ],
     sections: [
       {
         heading: "Employee situations",
