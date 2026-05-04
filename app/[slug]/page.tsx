@@ -8,6 +8,7 @@ import {
   buildFaqSchema,
   getAllPageSlugs,
   getPageBySlug,
+  servicePages,
 } from "../../lib/site";
 
 type PageProps = {
@@ -53,7 +54,10 @@ export default async function ContentPage({ params }: PageProps) {
   }
 
   const isService = page.type === "service";
+  const isGuide = page.type === "guide";
   const hasQuoteForm = isService || page.slug === "contact";
+  const relatedService =
+    isGuide && servicePages.find((service) => service.slug === page.relatedServiceSlug);
 
   return (
     <main className="min-h-screen bg-[var(--cream)]">
@@ -63,14 +67,27 @@ export default async function ContentPage({ params }: PageProps) {
         <div className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] border border-[var(--border)] bg-white p-6 shadow-[0_26px_90px_rgba(7,24,39,0.1)] sm:p-10 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="self-center">
             <p className="text-sm font-semibold uppercase text-[var(--gold)]">
-              {isService ? "Solicitor comparison guide" : "Trust and disclosure"}
+              {isService
+                ? "Solicitor comparison guide"
+                : isGuide
+                  ? "Local legal guide"
+                  : "Trust and disclosure"}
             </p>
             <h1 className="mt-4 max-w-4xl text-5xl font-semibold leading-[1.04] text-[var(--navy)] sm:text-6xl">
               {page.h1}
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-[var(--muted)]">
-              {page.metaDescription}
+              {isGuide ? page.intro : page.metaDescription}
             </p>
+            {isGuide ? (
+              <p className="mt-5 text-sm font-semibold uppercase text-[var(--trust-blue)]">
+                Updated {new Date(page.updated).toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </p>
+            ) : null}
             <p className="mt-6 max-w-2xl text-sm leading-6 text-[var(--muted)]">
               Independent local guide. We are not a law firm and do not provide
               legal advice.
@@ -80,6 +97,24 @@ export default async function ContentPage({ params }: PageProps) {
           {hasQuoteForm ? (
             <div id={isService ? undefined : "quote"}>
               <QuoteForm />
+            </div>
+          ) : isGuide && relatedService ? (
+            <div className="self-center rounded-[2rem] border border-[var(--border)] bg-[var(--cream)] p-6 shadow-[0_22px_70px_rgba(7,24,39,0.08)]">
+              <p className="text-sm font-semibold uppercase text-[var(--gold)]">
+                Related service
+              </p>
+              <h2 className="mt-3 text-2xl font-extrabold text-[var(--navy)]">
+                {relatedService.h1}
+              </h2>
+              <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
+                {relatedService.summary}
+              </p>
+              <a
+                href={`/${relatedService.slug}/#quote`}
+                className="mt-6 inline-flex rounded-full bg-[var(--gold)] px-5 py-3 text-sm font-extrabold uppercase text-[var(--navy)] transition hover:bg-[#d9ba78]"
+              >
+                Request a quote
+              </a>
             </div>
           ) : null}
         </div>
@@ -154,6 +189,94 @@ export default async function ContentPage({ params }: PageProps) {
               __html: JSON.stringify(buildFaqSchema(page)),
             }}
           />
+        </>
+      ) : isGuide ? (
+        <>
+          <section className="bg-white px-5 py-20 sm:px-8">
+            <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.7fr_1.3fr]">
+              <aside className="lg:sticky lg:top-28 lg:self-start">
+                <div className="rounded-[2rem] border border-[var(--border)] bg-[var(--pale-blue)] p-6 shadow-[0_18px_60px_rgba(7,24,39,0.08)]">
+                  <p className="text-sm font-semibold uppercase text-[var(--gold)]">
+                    {page.category}
+                  </p>
+                  <h2 className="mt-3 text-3xl font-extrabold text-[var(--navy)]">
+                    General information only.
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-[var(--muted)]">
+                    This guide is for general information. Kidderminster
+                    Solicitors is not a law firm and does not provide legal
+                    advice.
+                  </p>
+                  {relatedService ? (
+                    <a
+                      href={`/${relatedService.slug}/`}
+                      className="mt-6 inline-flex rounded-full border border-[var(--border)] bg-white px-5 py-3 text-sm font-extrabold uppercase text-[var(--trust-blue)] transition hover:border-[var(--mid-blue)] hover:bg-[var(--cream)]"
+                    >
+                      Compare {relatedService.category}
+                    </a>
+                  ) : null}
+                </div>
+              </aside>
+
+              <article className="rounded-[2rem] border border-[var(--border)] bg-white p-7 shadow-[0_26px_90px_rgba(7,24,39,0.08)] sm:p-10">
+                <div className="space-y-10">
+                  {page.sections.map((section) => (
+                    <section key={section.heading}>
+                      <h2 className="text-3xl font-extrabold text-[var(--navy)]">
+                        {section.heading}
+                      </h2>
+                      <p className="mt-4 text-base leading-8 text-[var(--muted)]">
+                        {section.body}
+                      </p>
+                    </section>
+                  ))}
+                </div>
+
+                {page.faq?.length ? (
+                  <section className="mt-12 border-t border-[var(--border)] pt-10">
+                    <h2 className="text-3xl font-extrabold text-[var(--navy)]">
+                      Common questions
+                    </h2>
+                    <div className="mt-6 grid gap-4">
+                      {page.faq.map((item) => (
+                        <details
+                          key={item.question}
+                          className="rounded-2xl border border-[var(--border)] bg-[var(--cream)] p-5"
+                        >
+                          <summary className="cursor-pointer text-lg font-semibold text-[var(--navy)]">
+                            {item.question}
+                          </summary>
+                          <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
+                            {item.answer}
+                          </p>
+                        </details>
+                      ))}
+                    </div>
+                  </section>
+                ) : null}
+              </article>
+            </div>
+          </section>
+
+          {page.faq?.length ? (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: page.faq.map((item) => ({
+                    "@type": "Question",
+                    name: item.question,
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: item.answer,
+                    },
+                  })),
+                }),
+              }}
+            />
+          ) : null}
         </>
       ) : (
         <section className="bg-white px-5 py-20 sm:px-8">

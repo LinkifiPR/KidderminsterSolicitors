@@ -56,6 +56,9 @@ export function SiteFooter() {
             <Link href="/#quote" className="transition hover:text-white">
               Get a quote
             </Link>
+            <Link href="/legal-guides/" className="transition hover:text-white">
+              Legal guides
+            </Link>
           </div>
         </div>
 

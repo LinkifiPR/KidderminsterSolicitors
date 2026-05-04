@@ -35,6 +35,7 @@ export function SiteHeader() {
             ["Family law", `/${servicePages[2].slug}/`],
             ["Wills", `/${servicePages[4].slug}/`],
             ["Employment", `/${servicePages[5].slug}/`],
+            ["Guides", "/legal-guides/"],
             ["About", `/${trustPages[0].slug}/`],
             ["Contact", `/${trustPages[1].slug}/`],
           ].map(([label, href]) => (

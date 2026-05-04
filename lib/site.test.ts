@@ -5,6 +5,7 @@ import {
   getAllPageSlugs,
   getPageBySlug,
   guideOrganizationSchema,
+  guidePages,
   phaseOneServiceSlugs,
   servicePages,
   trustPages,
@@ -53,5 +54,38 @@ describe("site content model", () => {
     expect(buildCanonicalUrl("")).toBe(baseUrl);
     expect(buildCanonicalUrl("privacy-policy")).toBe(`${baseUrl}/privacy-policy/`);
     expect(getAllPageSlugs()).toContain("conveyancing-solicitors-kidderminster");
+  });
+
+  it("includes the next commercial service pages and guide content cluster", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "divorce-solicitors-kidderminster",
+        "wills-solicitors-kidderminster",
+        "employment-solicitors-kidderminster",
+        "personal-injury-solicitors-kidderminster",
+        "commercial-solicitors-kidderminster",
+        "landlord-tenant-solicitors-kidderminster",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+        "what-does-a-conveyancing-solicitor-do",
+        "buying-a-house-in-kidderminster-legal-checklist",
+        "what-does-a-probate-solicitor-do",
+        "how-long-does-probate-take",
+        "do-you-need-a-solicitor-for-probate",
+        "how-to-prepare-for-a-divorce-solicitor-consultation",
+        "what-does-a-family-law-solicitor-help-with",
+        "settlement-agreements-explained",
+        "when-should-you-speak-to-an-employment-solicitor",
+      ]),
+    );
+
+    expect(getAllPageSlugs()).toContain("legal-guides");
+    expect(getAllPageSlugs()).toContain(
+      "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+    );
   });
 });

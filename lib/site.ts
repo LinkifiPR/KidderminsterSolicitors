@@ -34,7 +34,24 @@ export type TrustPage = {
   body: string[];
 };
 
-export type SitePage = ServicePage | TrustPage;
+export type GuidePage = {
+  type: "guide";
+  slug: string;
+  title: string;
+  h1: string;
+  metaDescription: string;
+  category: string;
+  updated: string;
+  relatedServiceSlug: string;
+  intro: string;
+  sections: {
+    heading: string;
+    body: string;
+  }[];
+  faq?: Faq[];
+};
+
+export type SitePage = ServicePage | TrustPage | GuidePage;
 
 export const servicePages: ServicePage[] = [
   {
@@ -476,6 +493,321 @@ export const trustPages: TrustPage[] = [
   },
 ];
 
+export const guidePages: GuidePage[] = [
+  {
+    type: "guide",
+    slug: "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+    title: "How Much Do Conveyancing Solicitors Cost in Kidderminster?",
+    h1: "How much do conveyancing solicitors cost in Kidderminster?",
+    metaDescription:
+      "A general guide to conveyancing solicitor costs in Kidderminster, what may be included, and what to compare before requesting a quote.",
+    category: "Conveyancing",
+    updated: "2026-05-04",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Conveyancing costs can vary depending on the property, lender requirements, leasehold issues, searches, and how complex the transaction becomes.",
+    sections: [
+      {
+        heading: "What is usually included",
+        body:
+          "A conveyancing quote may include the solicitor's legal fee, VAT, search fees, Land Registry fees, bank transfer fees, identity checks, and other disbursements. Ask for a full breakdown so you can compare like with like.",
+      },
+      {
+        heading: "Why quotes differ",
+        body:
+          "A leasehold flat, remortgage, shared ownership property, gifted deposit, or purchase with a mortgage can involve extra checks. A cheaper headline price may not include every required item.",
+      },
+      {
+        heading: "How to compare local options",
+        body:
+          "If you are buying or selling in Kidderminster or the Wyre Forest area, compare response times, lender panel status, what is included, and who will handle your file day to day.",
+      },
+    ],
+    faq: [
+      {
+        question: "Is the cheapest conveyancing quote always best?",
+        answer:
+          "Not necessarily. Compare what is included, how extras are charged, and how clearly the firm communicates.",
+      },
+      {
+        question: "Can I request a conveyancing quote through this website?",
+        answer:
+          "Yes. You can request a no obligation quote and a suitable solicitor partner may contact you directly.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "what-does-a-conveyancing-solicitor-do",
+    title: "What Does a Conveyancing Solicitor Do?",
+    h1: "What does a conveyancing solicitor do?",
+    metaDescription:
+      "General guide to what a conveyancing solicitor may handle when buying, selling, remortgaging, or transferring property.",
+    category: "Conveyancing",
+    updated: "2026-05-04",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "A conveyancing solicitor helps with the legal process of transferring property ownership. Their role depends on whether you are buying, selling, remortgaging, or transferring equity.",
+    sections: [
+      {
+        heading: "For buyers",
+        body:
+          "A solicitor may review the contract pack, raise enquiries, order searches, report to your lender, handle exchange and completion, and register ownership after completion.",
+      },
+      {
+        heading: "For sellers",
+        body:
+          "A solicitor may prepare contract paperwork, answer buyer enquiries, manage mortgage redemption figures, handle exchange and completion, and account for sale proceeds.",
+      },
+      {
+        heading: "Why communication matters",
+        body:
+          "Property transactions often involve estate agents, lenders, surveyors, and other solicitors. Clear communication helps keep each stage moving.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "buying-a-house-in-kidderminster-legal-checklist",
+    title: "Buying a House in Kidderminster: Legal Checklist",
+    h1: "Buying a house in Kidderminster: legal checklist",
+    metaDescription:
+      "A practical general checklist for legal steps when buying a house in Kidderminster or the wider Wyre Forest area.",
+    category: "Conveyancing",
+    updated: "2026-05-04",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Buying a property is easier to manage when you understand the common legal steps and the information your solicitor may ask for.",
+    sections: [
+      {
+        heading: "Before instructing",
+        body:
+          "Check the firm can act for your mortgage lender, ask for a full quote, and confirm who will handle your file.",
+      },
+      {
+        heading: "Early paperwork",
+        body:
+          "Be ready for identity checks, source of funds questions, mortgage details, and information about any gifted deposit.",
+      },
+      {
+        heading: "Local practicalities",
+        body:
+          "For homes around Kidderminster, Stourport, Bewdley, and nearby villages, searches and enquiries may raise local planning, drainage, access, or title issues that need reviewing by the solicitor.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "what-does-a-probate-solicitor-do",
+    title: "What Does a Probate Solicitor Do?",
+    h1: "What does a probate solicitor do?",
+    metaDescription:
+      "General information about what probate solicitors may help executors and families with during estate administration.",
+    category: "Probate and Wills",
+    updated: "2026-05-04",
+    relatedServiceSlug: "probate-solicitors-kidderminster",
+    intro:
+      "A probate solicitor can help executors and families understand and manage the legal and practical steps involved in administering an estate.",
+    sections: [
+      {
+        heading: "Common probate support",
+        body:
+          "Support may include identifying estate assets, preparing probate forms, applying for a grant of representation, dealing with tax paperwork, and distributing the estate.",
+      },
+      {
+        heading: "When help may be useful",
+        body:
+          "Professional help may be useful where there is property, inheritance tax, multiple beneficiaries, overseas assets, unclear paperwork, or a dispute risk.",
+      },
+      {
+        heading: "What to prepare",
+        body:
+          "Useful documents can include the will, death certificate, asset details, liability details, bank information, pension details, and beneficiary contact information.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "how-long-does-probate-take",
+    title: "How Long Does Probate Take?",
+    h1: "How long does probate take?",
+    metaDescription:
+      "A general guide to probate timescales, common delays, and what can affect estate administration.",
+    category: "Probate and Wills",
+    updated: "2026-05-04",
+    relatedServiceSlug: "probate-solicitors-kidderminster",
+    intro:
+      "Probate timescales vary. Some estates are straightforward, while others take longer because of property, tax, missing information, or disputes.",
+    sections: [
+      {
+        heading: "What affects timing",
+        body:
+          "Timing can depend on how quickly asset values are gathered, whether tax forms are needed, how busy the probate registry is, and whether beneficiaries or documents are difficult to trace.",
+      },
+      {
+        heading: "Estate administration can take longer",
+        body:
+          "Receiving the grant is only one stage. Selling property, paying liabilities, resolving tax matters, and distributing funds may take additional time.",
+      },
+      {
+        heading: "How to reduce delay",
+        body:
+          "Clear records, prompt replies, accurate asset information, and early professional support can help reduce avoidable delays.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "do-you-need-a-solicitor-for-probate",
+    title: "Do You Need a Solicitor for Probate?",
+    h1: "Do you need a solicitor for probate?",
+    metaDescription:
+      "General information about when executors may handle probate themselves and when solicitor support may be useful.",
+    category: "Probate and Wills",
+    updated: "2026-05-04",
+    relatedServiceSlug: "probate-solicitors-kidderminster",
+    intro:
+      "Some executors handle probate themselves, but professional support can be useful where the estate is complex or the executor is unsure about the process.",
+    sections: [
+      {
+        heading: "When people handle it themselves",
+        body:
+          "A simple estate with clear assets, no property, no tax issues, and cooperative beneficiaries may be more manageable for an executor.",
+      },
+      {
+        heading: "When support may help",
+        body:
+          "A solicitor may be helpful where there is property, inheritance tax, missing documents, overseas assets, business interests, trusts, or potential disagreement.",
+      },
+      {
+        heading: "Comparing options",
+        body:
+          "Ask whether the solicitor can handle the full estate administration or only specific parts, and compare how fees are calculated.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "how-to-prepare-for-a-divorce-solicitor-consultation",
+    title: "How to Prepare for a Divorce Solicitor Consultation",
+    h1: "How to prepare for a divorce solicitor consultation",
+    metaDescription:
+      "General preparation checklist for speaking to a divorce solicitor about separation, finances, and child arrangements.",
+    category: "Family and Divorce",
+    updated: "2026-05-04",
+    relatedServiceSlug: "divorce-solicitors-kidderminster",
+    intro:
+      "Preparing before a first divorce consultation can help you explain the situation clearly and make better use of the appointment.",
+    sections: [
+      {
+        heading: "Information to gather",
+        body:
+          "It may help to list important dates, marriage or civil partnership details, children arrangements, property, savings, pensions, debts, and income information.",
+      },
+      {
+        heading: "Questions to ask",
+        body:
+          "Ask about likely stages, communication, costs, timescales, what information is needed, and whether mediation or other support may be relevant.",
+      },
+      {
+        heading: "Keep detail proportionate",
+        body:
+          "Use the initial enquiry to outline the matter. Avoid sending unnecessary sensitive information through comparison forms before speaking directly with a solicitor.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "what-does-a-family-law-solicitor-help-with",
+    title: "What Does a Family Law Solicitor Help With?",
+    h1: "What does a family law solicitor help with?",
+    metaDescription:
+      "General guide to the types of issues a family law solicitor may help with, including separation and child arrangements.",
+    category: "Family and Divorce",
+    updated: "2026-05-04",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "Family law solicitors may help with a wide range of personal matters, often involving relationships, children, finances, and future arrangements.",
+    sections: [
+      {
+        heading: "Common family law matters",
+        body:
+          "Support may relate to separation, divorce, child arrangements, financial arrangements, cohabitation, domestic abuse protections, and related documentation.",
+      },
+      {
+        heading: "Choosing support",
+        body:
+          "Ask whether the firm regularly handles matters like yours, how costs are explained, and who will be your day-to-day contact.",
+      },
+      {
+        heading: "Local considerations",
+        body:
+          "Some users prefer a local or regional solicitor where meetings, local services, or practical support around Kidderminster and Wyre Forest matter.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "settlement-agreements-explained",
+    title: "Settlement Agreements Explained",
+    h1: "Settlement agreements explained",
+    metaDescription:
+      "General information about settlement agreements, why independent legal advice is usually required, and what to prepare.",
+    category: "Employment",
+    updated: "2026-05-04",
+    relatedServiceSlug: "employment-solicitors-kidderminster",
+    intro:
+      "A settlement agreement is commonly used to record agreed terms between an employer and employee, often when employment is ending.",
+    sections: [
+      {
+        heading: "Why legal advice matters",
+        body:
+          "Settlement agreements usually require independent legal advice for the agreement to be valid. The adviser should explain the effect of the agreement and the rights being waived.",
+      },
+      {
+        heading: "What to prepare",
+        body:
+          "Useful information can include the draft agreement, employment contract, recent payslips, bonus or commission information, and any relevant correspondence.",
+      },
+      {
+        heading: "Costs and timing",
+        body:
+          "Employers often contribute to advice costs, but the amount varies. Settlement agreements can be time sensitive, so prompt contact with a solicitor may be important.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "when-should-you-speak-to-an-employment-solicitor",
+    title: "When Should You Speak to an Employment Solicitor?",
+    h1: "When should you speak to an employment solicitor?",
+    metaDescription:
+      "General guide to situations where speaking to an employment solicitor may be useful for employees or employers.",
+    category: "Employment",
+    updated: "2026-05-04",
+    relatedServiceSlug: "employment-solicitors-kidderminster",
+    intro:
+      "Employment issues can move quickly. Speaking to a solicitor may be useful where deadlines, documents, or workplace disputes need careful handling.",
+    sections: [
+      {
+        heading: "Employee situations",
+        body:
+          "Employees may seek help with settlement agreements, dismissal concerns, redundancy, discrimination concerns, grievances, disciplinary issues, or contract questions.",
+      },
+      {
+        heading: "Employer situations",
+        body:
+          "Employers may need support with contracts, policies, grievances, dismissals, redundancies, settlement agreements, and tribunal risk.",
+      },
+      {
+        heading: "Do not delay where deadlines may apply",
+        body:
+          "Employment tribunal and internal process deadlines can be short. This website cannot advise on deadlines, so users should speak directly with a qualified provider where timing may matter.",
+      },
+    ],
+  },
+];
+
 export const guideOrganizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -517,9 +849,13 @@ export function buildCanonicalUrl(slug: string) {
 }
 
 export function getAllPageSlugs() {
-  return [...servicePages, ...trustPages].map((page) => page.slug);
+  return ["legal-guides", ...servicePages, ...trustPages, ...guidePages].map(
+    (page) => (typeof page === "string" ? page : page.slug),
+  );
 }
 
 export function getPageBySlug(slug: string) {
-  return [...servicePages, ...trustPages].find((page) => page.slug === slug);
+  return [...servicePages, ...trustPages, ...guidePages].find(
+    (page) => page.slug === slug,
+  );
 }
