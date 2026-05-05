@@ -303,9 +303,48 @@ export const servicePages: ServicePage[] = [
     summary:
       "Solicitor introductions for divorce, financial arrangements, and separation-related legal support.",
     intro:
-      "Divorce matters need clear communication and transparent costs. This page helps users compare what to ask before choosing a firm.",
+      "Divorce can involve the legal divorce process, financial arrangements, children, housing, pensions, and communication with a former partner. This page helps users in Kidderminster understand what to compare before requesting a no obligation quote from a suitable solicitor partner.",
     localAngle:
-      "Users in Kidderminster and nearby Worcestershire areas may prefer a firm that can explain the process clearly and respond quickly.",
+      "Users in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area may prefer a firm that can explain the process clearly, respond quickly, and understand the practical pressure around homes, schools, work, and family routines.",
+    keyTakeaways: [
+      "Divorce support may cover the divorce application, financial arrangements, pensions, property, and child-related issues.",
+      "Costs and scope can vary, so ask whether a quote covers only the divorce process or wider financial and family law work.",
+      "This website is an independent local guide and does not provide divorce advice or representation.",
+    ],
+    sections: [
+      {
+        heading: "What divorce solicitors may help with",
+        body: [
+          "A divorce solicitor may help with the divorce process itself, financial disclosure, property questions, pensions, savings, debts, child arrangements, consent orders, and correspondence with the other party or their solicitor. Some matters are mainly administrative. Others involve negotiation, mediation, or court-related steps.",
+          "It is important to ask what the firm is quoting for. A fixed-fee divorce package may only cover the divorce application and may not include financial arrangements, pensions, property transfer, or child-related advice. Clear scope helps prevent surprises later.",
+        ],
+      },
+      {
+        heading: "Where divorce enquiries can become complicated",
+        body: [
+          "Common pressure points include disagreements about the family home, mortgage affordability, pension sharing, business interests, savings, debt, school routines, communication breakdown, missing financial information, and uncertainty about whether an agreement is legally binding.",
+          "Users should be cautious about relying only on informal agreement. A solicitor or legal service provider can explain what documents may be needed if you choose to instruct them, but this website cannot assess your legal position.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Before requesting a quote, prepare the marriage date, separation date if relevant, whether there are children, current living arrangements, broad property and mortgage details, income, pensions, savings, debts, and any existing correspondence or draft agreement.",
+          "Keep the first enquiry factual and proportionate. Do not send unnecessary sensitive documents through the quote form. Detailed papers should be shared directly with a solicitor or legal service provider if you decide to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a divorce solicitor",
+        body: [
+          "Ask whether the firm handles both divorce and financial remedy work, whether fixed-fee stages are available, who will manage the matter day to day, what information is needed before the first appointment, and how urgent issues are handled.",
+          "You may also want to ask how the firm approaches mediation, consent orders, pensions, property, and communication with the other party. A suitable provider should explain process and cost clearly without promising a particular outcome.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "how-to-prepare-for-a-divorce-solicitor-consultation",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
     comparisonPoints: [
       "Ask whether the firm handles financial remedy work as well as the divorce process.",
       "Check whether fixed-fee or staged pricing is available.",
@@ -340,9 +379,48 @@ export const servicePages: ServicePage[] = [
     summary:
       "Help finding solicitors for wills, estate planning, and related private client work.",
     intro:
-      "A professionally prepared will can reduce uncertainty for families. This guide helps users compare local solicitor options.",
+      "A professionally prepared will can reduce uncertainty for family members and make wishes easier to understand after death. This page helps Kidderminster users compare wills solicitor options and request a no obligation quote where appropriate.",
     localAngle:
-      "Kidderminster users may want a local or regional firm that can explain the process in plain English and help with related documents.",
+      "People in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire communities may want a local or regional firm that can explain wills, executors, guardianship, property, and related private client documents in plain English.",
+    keyTakeaways: [
+      "A will can deal with beneficiaries, executors, guardians for children, gifts, property, and funeral wishes.",
+      "Professional help may be useful where there are blended families, property, business interests, vulnerable beneficiaries, or inheritance tax questions.",
+      "This website provides general information and solicitor introductions only, not wills or estate planning advice.",
+    ],
+    sections: [
+      {
+        heading: "What wills solicitors may help with",
+        body: [
+          "A wills solicitor may help draft a new will, update an existing will, explain executor choices, record gifts, deal with property ownership questions, and discuss related documents such as lasting powers of attorney. They may also help reduce ambiguity where family circumstances are not straightforward.",
+          "Simple wills can still raise important questions. A solicitor may ask about children, previous relationships, jointly owned property, business assets, overseas assets, vulnerable beneficiaries, and whether anyone may be disappointed by the will.",
+        ],
+      },
+      {
+        heading: "Where wills can go wrong",
+        body: [
+          "Problems can arise if a will is not signed or witnessed correctly, uses unclear wording, leaves out a major asset, appoints unsuitable executors, fails to reflect a later marriage or divorce, or does not consider people who may expect provision from the estate.",
+          "Online templates may be suitable for some simple situations, but users should understand the risk of ambiguity. This website cannot decide whether a will is valid or suitable; that assessment belongs with a solicitor or legal service provider.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare a list of assets, property ownership details, approximate savings and investments, pensions and life policies, business interests, debts, names of proposed executors, names of beneficiaries, and any specific gifts you want to make.",
+          "If you already have a will, note when it was signed and whether your circumstances have changed. Common triggers for review include marriage, divorce, children, property purchases, bereavement, business changes, or a change in family relationships.",
+        ],
+      },
+      {
+        heading: "Questions to ask a wills solicitor",
+        body: [
+          "Ask what is included in the quote, whether mirror wills are available, whether inheritance tax or trust questions are included, how signing and witnessing works, and whether the firm stores original documents.",
+          "You may also want to ask whether the same provider can help with probate, lasting powers of attorney, or future updates. Clear pricing and plain-English explanation matter more than a low headline fee.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "do-you-need-a-solicitor-for-probate",
+      "what-does-a-probate-solicitor-do",
+    ],
     comparisonPoints: [
       "Ask what the quote includes and whether mirror wills cost extra.",
       "Check whether the solicitor can advise on inheritance tax and trusts if needed.",
@@ -377,9 +455,48 @@ export const servicePages: ServicePage[] = [
     summary:
       "Introductions for workplace disputes, settlement agreements, contracts, and employer or employee matters.",
     intro:
-      "Employment law questions can be time sensitive. This page helps users request a suitable solicitor introduction without treating the website as an advice provider.",
+      "Employment law questions can be time sensitive, especially where deadlines, settlement agreements, dismissal, redundancy, or grievances are involved. This page helps Kidderminster workers and employers compare employment solicitor options and request a suitable introduction.",
     localAngle:
-      "Kidderminster workers and employers may need quick, practical guidance from a regulated legal provider.",
+      "Kidderminster workers and employers across the Wyre Forest area may need quick, practical guidance from a regulated legal provider, especially where workplace documents need reviewing or a response deadline is approaching.",
+    keyTakeaways: [
+      "Employment matters often involve short deadlines, so users should not delay if tribunal, appeal, or agreement deadlines may apply.",
+      "Ask whether the firm acts for employees, employers, or both, and whether urgent document review is available.",
+      "This website can support a no obligation introduction, but it does not provide employment law advice.",
+    ],
+    sections: [
+      {
+        heading: "What employment solicitors may help with",
+        body: [
+          "An employment solicitor may help with settlement agreements, redundancy, dismissal concerns, grievances, disciplinary processes, employment contracts, restrictive covenants, workplace discrimination, unpaid wages, and employer HR issues.",
+          "The right support depends on whether you are an employee, employer, director, contractor, or business owner. Some enquiries need a document review. Others need a broader strategy around deadlines, correspondence, or negotiation.",
+        ],
+      },
+      {
+        heading: "Where employment matters can become urgent",
+        body: [
+          "Deadlines can apply to tribunal claims, internal appeals, settlement agreement signing, redundancy consultation, grievance responses, and disciplinary hearings. Waiting too long can reduce options, so users should speak directly with a solicitor or legal service provider where time limits may matter.",
+          "This website cannot assess deadlines or provide urgent advice. The quote form should be used for a concise introduction request, and urgent matters should be raised clearly when a solicitor or legal provider contacts you.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare your employment contract, settlement agreement if relevant, key emails or letters, dates of meetings, dismissal or redundancy dates, grievance or disciplinary paperwork, pay details, and any deadline you have been given.",
+          "Do not upload or send detailed confidential papers through the quote form. Summarise the issue, include your preferred contact time, and provide documents directly to a solicitor or legal service provider if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask an employment solicitor",
+        body: [
+          "Ask whether the firm acts for employees, employers, or both, whether they handle settlement agreements quickly, how fees work, and who will review documents. If you are an employer, ask whether fixed-fee or retainer options are available.",
+          "You should also ask how quickly the firm can respond where a deadline is approaching and whether the first step is a document review, consultation, or more detailed written advice from the provider.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "settlement-agreements-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
     comparisonPoints: [
       "Check whether the firm acts for employees, employers, or both.",
       "Ask about fees for settlement agreements and urgent document reviews.",
@@ -414,9 +531,48 @@ export const servicePages: ServicePage[] = [
     summary:
       "Introductions for personal injury enquiries, with transparent wording around referral relationships.",
     intro:
-      "Personal injury marketing needs especially careful language. This site avoids outcome promises and does not claim users will win a claim.",
+      "Personal injury enquiries need careful, transparent wording. This site avoids outcome promises, does not claim users will win a claim, and helps Kidderminster users request a no obligation introduction where appropriate.",
     localAngle:
-      "Users in Kidderminster may want to speak with a regulated firm that can explain funding, eligibility, and next steps.",
+      "Users in Kidderminster and the wider Wyre Forest area may want to speak with a regulated firm that can explain funding, eligibility, evidence, limitation periods, and next steps in plain English.",
+    keyTakeaways: [
+      "A personal injury solicitor may assess liability, evidence, medical records, funding terms, and time limits.",
+      "Users should be cautious of any marketing that promises compensation or suggests an outcome is certain.",
+      "This website is an independent introduction site and does not assess claims or provide legal advice.",
+    ],
+    sections: [
+      {
+        heading: "What personal injury solicitors may help with",
+        body: [
+          "A personal injury solicitor may consider accidents at work, road traffic accidents, slips and trips, public liability incidents, medical evidence, rehabilitation needs, loss of earnings, liability, and limitation periods. They may also explain whether a funding arrangement is available.",
+          "A solicitor will usually need to understand what happened, when it happened, who may be responsible, what evidence exists, and what injury or loss has been suffered. This website cannot assess whether a claim is valid.",
+        ],
+      },
+      {
+        heading: "Where personal injury enquiries can go wrong",
+        body: [
+          "Problems can arise when users wait too long, have limited evidence, misunderstand funding deductions, assume an outcome is certain, or do not understand what information a solicitor needs to assess the matter.",
+          "Funding terms can vary. If a firm discusses no win no fee or another arrangement, ask them to explain deductions, insurance, costs, cancellation terms, and what happens if the claim does not proceed.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare the incident date, location, brief description, parties involved, photos, witness details, accident reports, correspondence, medical appointments, time off work, and any insurer or employer contact.",
+          "Do not send large bundles of sensitive medical documents through the quote form. A short factual summary is enough for an introduction. Detailed evidence should be provided directly to a solicitor or legal service provider if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a personal injury solicitor",
+        body: [
+          "Ask who will handle the matter, how funding works, what deductions may apply, whether insurance is needed, how evidence will be reviewed, what timescales may apply, and how updates are provided.",
+          "You should also ask what happens if the provider decides the matter is not suitable. A responsible firm should explain uncertainty and process rather than promising compensation.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "when-should-you-speak-to-an-employment-solicitor",
+      "settlement-agreements-explained",
+    ],
     comparisonPoints: [
       "Ask how fees work and whether any deductions may apply.",
       "Avoid relying on any website that promises a result.",
@@ -451,9 +607,48 @@ export const servicePages: ServicePage[] = [
     summary:
       "Introductions for business law, contracts, disputes, and commercial legal support.",
     intro:
-      "Local businesses often need legal help that is practical, responsive, and clear on cost.",
+      "Local businesses often need legal help that is practical, responsive, and clear on cost. This page helps Kidderminster business owners compare commercial solicitor options for contracts, disputes, leases, and business transactions.",
     localAngle:
-      "Kidderminster and Wyre Forest businesses may need support with contracts, leases, disputes, terms, and trading arrangements.",
+      "Kidderminster and Wyre Forest businesses, from local shops and service firms to regional operators, may need support with contracts, leases, disputes, terms, and trading arrangements.",
+    keyTakeaways: [
+      "Commercial solicitors may help with contracts, disputes, leases, business sales, shareholder issues, and trading documents.",
+      "Business enquiries should be clear about urgency, commercial value, documents involved, and whether the matter is contentious.",
+      "This website can introduce users to a suitable solicitor partner but does not review contracts or provide business legal advice.",
+    ],
+    sections: [
+      {
+        heading: "What commercial solicitors may help with",
+        body: [
+          "A commercial solicitor may help with contract drafting or review, terms and conditions, supplier disputes, unpaid invoices, commercial leases, business sales or purchases, shareholder issues, partnership matters, intellectual property questions, and general trading arrangements.",
+          "The right provider depends on the type and size of the matter. A quick contract review is different from a disputed termination, lease negotiation, business acquisition, or shareholder disagreement.",
+        ],
+      },
+      {
+        heading: "Where business legal issues can become costly",
+        body: [
+          "Commercial problems can escalate when contracts are unclear, deadlines are missed, evidence is incomplete, correspondence becomes heated, or a business signs documents without understanding obligations. Early clarity can reduce wasted time and help owners make better commercial decisions.",
+          "Users should not share confidential business documents through the public quote form. A short summary is enough at introduction stage, with detailed documents provided directly to a solicitor or legal service provider if instructed.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare the type of business, issue summary, relevant dates, approximate value, documents involved, names of other parties, whether there is a deadline, and whether the matter is a new transaction, ongoing negotiation, or dispute.",
+          "If the matter involves a commercial lease, contract, business purchase, or shareholder issue, note whether any draft documents have already been received and what decision is needed next.",
+        ],
+      },
+      {
+        heading: "Questions to ask a commercial solicitor",
+        body: [
+          "Ask whether the firm has experience with businesses of your size and sector, how fees are structured, who will handle the matter, whether fixed-fee stages are available, and what information is needed before work can start.",
+          "For disputes, ask how the provider approaches early resolution, correspondence, evidence, settlement, and court or tribunal routes where relevant. No firm should promise a particular commercial outcome.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "settlement-agreements-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
     comparisonPoints: [
       "Ask whether the firm has experience with businesses of your size and sector.",
       "Clarify whether advice is fixed-fee, hourly, or retainer-based.",
@@ -471,9 +666,9 @@ export const servicePages: ServicePage[] = [
           "No. Contract review and advice must come from the solicitor or legal service provider.",
       },
       {
-        question: "Can commercial placement be exclusive?",
+        question: "What should I include in a business law enquiry?",
         answer:
-          "Commercial partner placement can be configured by category, subject to suitability and disclosure.",
+          "Include the type of business, a short summary of the issue, any deadline, and the broad type of document or dispute involved. Detailed documents should be shared directly with a solicitor or legal service provider if you choose to instruct them.",
       },
     ],
   },
@@ -488,9 +683,48 @@ export const servicePages: ServicePage[] = [
     summary:
       "Introductions for tenancy disputes, landlord issues, possession matters, and housing-related enquiries.",
     intro:
-      "Landlord and tenant matters can involve strict process and deadlines, so users should speak directly with a qualified legal provider.",
+      "Landlord and tenant matters can involve strict process, documents, notices, deposits, rent arrears, repairs, and deadlines. This page helps Kidderminster landlords and tenants compare solicitor options and request a no obligation quote.",
     localAngle:
-      "Kidderminster landlords and tenants may need local or regional support for practical property disputes.",
+      "Kidderminster landlords and tenants across Wyre Forest may need local or regional support for practical property disputes involving residential tenancies, commercial premises, notices, arrears, deposits, or lease terms.",
+    keyTakeaways: [
+      "Landlord and tenant matters can be document-heavy and deadline-sensitive, especially where notices or possession steps are involved.",
+      "Ask whether the firm acts for landlords, tenants, or both, and whether it handles residential, commercial, or both types of property matter.",
+      "This website can pass an enquiry to a suitable solicitor partner, but it does not provide emergency legal advice.",
+    ],
+    sections: [
+      {
+        heading: "What landlord and tenant solicitors may help with",
+        body: [
+          "A landlord and tenant solicitor may help with tenancy disputes, rent arrears, deposit issues, repairs, notices, possession proceedings, lease interpretation, commercial lease disputes, dilapidations, and settlement discussions.",
+          "The right support depends on whether the matter is residential or commercial, landlord or tenant-side, urgent or early-stage, and whether notices or court papers have already been served.",
+        ],
+      },
+      {
+        heading: "Where property disputes can go wrong",
+        body: [
+          "Mistakes can happen when notices are drafted incorrectly, deadlines are missed, tenancy documents are incomplete, deposit rules have not been followed, repair evidence is poor, or users take action before understanding the process.",
+          "If there is an urgent hearing, possession date, notice deadline, or risk of homelessness, users should contact a qualified legal provider directly. This website is an introduction route only and does not provide urgent advice.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare the tenancy agreement or lease, notices, deposit information, rent account, repair correspondence, photographs, inspection reports, emails, court papers, and key dates. For commercial leases, include the lease term, break clauses, rent review dates, and any dispute correspondence.",
+          "Use the quote form for a short summary and preferred contact time. Detailed documents should be provided directly to a solicitor or legal service provider if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a landlord and tenant solicitor",
+        body: [
+          "Ask whether the firm acts for landlords, tenants, or both, whether it handles residential or commercial matters, how urgent documents are reviewed, how costs are structured, and what information is needed first.",
+          "You may also want to ask whether the matter is suitable for early correspondence, negotiation, formal notice review, or more urgent action. A provider should explain process and risk without promising an outcome.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-conveyancing-solicitor-do",
+      "buying-a-house-in-kidderminster-legal-checklist",
+    ],
     comparisonPoints: [
       "Ask whether the firm acts for landlords, tenants, or both.",
       "Clarify urgent deadlines and documents before delaying.",

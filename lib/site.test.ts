@@ -161,4 +161,44 @@ describe("site content model", () => {
       );
     });
   });
+
+  it("keeps every service page commercially useful and compliance-safe", () => {
+    const localPattern =
+      /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;
+    const prohibitedPattern =
+      /our solicitors|our legal team|we advise|we represent you|guaranteed result|best solicitor|cheapest solicitor|commercial placement/i;
+
+    servicePages.forEach((page) => {
+      const fullText = [
+        page.title,
+        page.h1,
+        page.metaDescription,
+        page.summary,
+        page.intro,
+        page.localAngle,
+        ...(page.keyTakeaways ?? []),
+        ...(page.sections ?? []).flatMap((section) => [
+          section.heading,
+          ...section.body,
+        ]),
+        ...page.comparisonPoints,
+        ...page.faq.flatMap((item) => [item.question, item.answer]),
+      ].join(" ");
+
+      expect(page.keyTakeaways?.length).toBeGreaterThanOrEqual(3);
+      expect(page.sections?.length).toBeGreaterThanOrEqual(4);
+      expect(page.relatedGuideSlugs?.length).toBeGreaterThanOrEqual(2);
+      expect(page.faq.length).toBeGreaterThanOrEqual(3);
+      expect(fullText.length).toBeGreaterThan(2500);
+      expect(fullText).toMatch(localPattern);
+      expect(fullText).toMatch(/no obligation quote|suitable solicitor partner|suitable introduction/i);
+      expect(fullText).not.toMatch(prohibitedPattern);
+      expect(page.sections?.some((section) => /what to prepare/i.test(section.heading))).toBe(
+        true,
+      );
+      expect(page.sections?.some((section) => /questions to ask/i.test(section.heading))).toBe(
+        true,
+      );
+    });
+  });
 });
