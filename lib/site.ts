@@ -748,6 +748,102 @@ export const servicePages: ServicePage[] = [
       },
     ],
   },
+  {
+    type: "service",
+    slug: "solicitors-in-kidderminster",
+    title: "Solicitors in Kidderminster",
+    h1: "Solicitors in Kidderminster",
+    metaDescription:
+      "Compare solicitor services in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
+    category: "Solicitor Services",
+    summary:
+      "A local guide for comparing solicitor services and requesting a no obligation quote in Kidderminster.",
+    intro:
+      "People searching for solicitors in Kidderminster may need help with property, probate, family matters, wills, employment issues, business concerns, disputes, or injury-related enquiries. This page explains common solicitor service categories, how to compare options, and how to request a no obligation quote from a suitable solicitor partner where appropriate.",
+    localAngle:
+      "Kidderminster sits at the centre of the Wyre Forest area, with residents and businesses also looking for solicitor services around Stourport, Bewdley, Cookley, Hagley, Franche, Comberton, and nearby Worcestershire communities. Some people prefer a local or regional firm; others are happy to use a provider that works remotely. The right fit depends on the matter, communication style, cost transparency, and whether the firm handles the relevant area of law.",
+    keyTakeaways: [
+      "Kidderminster Solicitors is an independent local guide, not a law firm, and does not provide legal advice.",
+      "A solicitor partner may contact you if your enquiry is suitable, but you are under no obligation to instruct them.",
+      "Useful comparison points include service area, likely fees, response time, regulatory status, communication, and relevant experience.",
+    ],
+    sections: [
+      {
+        heading: "What solicitor services people commonly look for",
+        body: [
+          "Local solicitor searches in Kidderminster often begin with a practical problem: buying or selling a home, applying for probate, making or updating a will, dealing with separation, reviewing a settlement agreement, recovering a business debt, or responding to a property dispute. Each area needs different experience, documents, timescales, and fee information.",
+          "Conveyancing enquiries usually involve quotes, searches, lender requirements, leasehold checks, and completion deadlines. Probate and wills enquiries often involve executors, estate paperwork, family arrangements, and questions about what documents are needed. Family law and divorce enquiries can be sensitive and may involve children, finances, separation, or mediation context. Employment and business matters may turn on contracts, correspondence, deadlines, and evidence.",
+        ],
+      },
+      {
+        heading: "How the solicitor introduction process works",
+        body: [
+          "You can submit a short enquiry explaining the type of legal help you are looking for, your postcode, preferred contact time, and the broad issue. The enquiry may then be reviewed and passed to a suitable solicitor firm or legal service provider where appropriate. If they can help, they may contact you directly.",
+          "The process is designed to save time at the comparison stage. It does not create a solicitor-client relationship with this website, and it does not mean you have instructed a solicitor. You remain free to compare other firms, ask questions, check credentials, and decide whether any introduced provider is suitable for your needs.",
+        ],
+      },
+      {
+        heading: "What to compare before choosing a solicitor",
+        body: [
+          "Start with the area of law. A conveyancing solicitor is not the same as an employment solicitor, and a probate matter is different from a commercial contract review. Once the service area is clear, compare how the firm explains fees, who will handle the matter day to day, how quickly they respond, and what information they need before giving a meaningful quote.",
+          "For regulated legal services, users should also check the firm's regulatory details, complaints process, client care information, and terms of business before instructing. If a solicitor partner is introduced through this website, that introduction is only a starting point. The firm itself is responsible for explaining its services, fees, regulatory position, and suitability.",
+        ],
+      },
+      {
+        heading: "What to prepare before requesting a quote",
+        body: [
+          "A clear enquiry usually gets a better response than a vague one. Prepare your full name, email address, phone number, postcode, preferred contact time, the area of law, and a short summary of what has happened or what you need. If there are dates or deadlines, mention them in general terms.",
+          "Do not send confidential documents through the public quote form. For conveyancing, include whether you are buying, selling, remortgaging, or transferring equity. For probate, note whether there is a will and whether probate has already been started. For family, employment, or business matters, keep the first message practical and brief until you are speaking directly with a solicitor or legal service provider.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor before instructing",
+        body: [
+          "Useful questions include: do you handle this type of matter regularly, who will be my main contact, how are fees calculated, what is included in the quote, what information do you need from me, what are the likely stages, and how will updates be provided?",
+          "You may also want to ask whether the firm can work to any important deadline, whether fixed-fee stages are available, what happens if the matter becomes more complex, and how complaints are handled. A trustworthy provider should explain process and cost clearly without promising a particular outcome.",
+        ],
+      },
+      {
+        heading: "Local Kidderminster and Wyre Forest context",
+        body: [
+          "Kidderminster has a mix of residential property, local businesses, families, older estates, newer developments, and nearby villages and towns across the Wyre Forest area. That creates a broad range of solicitor enquiries, from house moves and wills to family support, employment concerns, and commercial disputes.",
+          "Local context can help when a matter involves property searches, local authority information, regional court or tribunal practicalities, or a preference for a nearby meeting. It is still important to choose based on the solicitor firm's actual service area, experience, fees, and communication rather than location alone.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-conveyancing-solicitor-do",
+      "what-does-a-probate-solicitor-do",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+    comparisonPoints: [
+      "Check that the firm handles the specific area of law you need, not just general legal work.",
+      "Ask for clear fee information and what is included before you decide whether to instruct.",
+      "Confirm who will contact you, how updates are provided, and what documents are needed next.",
+    ],
+    faq: [
+      {
+        question: "Is Kidderminster Solicitors a law firm?",
+        answer:
+          "No. Kidderminster Solicitors is an independent local legal information and solicitor introduction website. It does not provide legal advice.",
+      },
+      {
+        question: "Can I request a quote for different types of solicitor services?",
+        answer:
+          "Yes. You can request a no obligation quote for common categories such as conveyancing, probate, wills, family law, divorce, employment, personal injury, commercial law, and landlord and tenant matters.",
+      },
+      {
+        question: "Do I have to instruct a solicitor partner introduced through this site?",
+        answer:
+          "No. You are under no obligation to instruct any solicitor firm or legal service provider introduced through this website.",
+      },
+      {
+        question: "What should I include in my first enquiry?",
+        answer:
+          "Include your contact details, postcode, the area of law, preferred contact time, and a short practical summary. Avoid sending confidential documents through the public form.",
+      },
+    ],
+  },
 ];
 
 export const trustPages: TrustPage[] = [
