@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { submitLeadToKit } from "../../../lib/kit";
+import { sendLeadNotificationEmail } from "../../../lib/lead-email";
 import { validateLeadPayload } from "../../../lib/leads";
 
 export async function POST(request: Request) {
@@ -25,8 +26,14 @@ export async function POST(request: Request) {
 
   const apiKey = process.env.KIT_API_KEY;
   const formId = process.env.KIT_FORM_ID || "9391183";
+  const resendApiKey = process.env.RESEND_API_KEY;
+  const leadNotificationFrom =
+    process.env.LEAD_NOTIFICATION_FROM ||
+    "Kidderminster Solicitors <onboarding@resend.dev>";
+  const partnerLeadEmail = process.env.PARTNER_LEAD_EMAIL;
+  const adminLeadEmail = process.env.ADMIN_LEAD_EMAIL;
 
-  if (!apiKey) {
+  if (!apiKey || !resendApiKey || !partnerLeadEmail) {
     return NextResponse.json(
       { ok: false, errors: ["Lead capture is not configured yet."] },
       { status: 503 },
@@ -35,8 +42,15 @@ export async function POST(request: Request) {
 
   try {
     await submitLeadToKit(validation.lead, { apiKey, formId });
+    await sendLeadNotificationEmail(validation.lead, {
+      apiKey: resendApiKey,
+      from: leadNotificationFrom,
+      partnerEmail: partnerLeadEmail,
+      adminEmail: adminLeadEmail,
+    });
     return NextResponse.json({ ok: true });
-  } catch {
+  } catch (error) {
+    console.error("Lead capture failed", error);
     return NextResponse.json(
       { ok: false, errors: ["Lead capture failed. Please try again."] },
       { status: 502 },
