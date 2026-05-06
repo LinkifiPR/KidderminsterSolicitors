@@ -1558,56 +1558,71 @@ export const guidePages: GuidePage[] = [
     metaDescription:
       "General information about what probate solicitors may help executors and families with during estate administration.",
     category: "Probate and Wills",
-    updated: "2026-05-04",
+    updated: "2026-05-06",
     relatedServiceSlug: "probate-solicitors-kidderminster",
     intro:
-      "A probate solicitor can help executors and families understand the legal and practical steps involved in administering an estate, particularly where property, tax, paperwork, or family circumstances make the process harder to manage alone.",
+      "A probate solicitor can help executors and families understand the legal and practical steps involved in administering an estate. The right level of help depends on the estate: some people only need support with the grant application, while others need full estate administration from start to finish.",
     keyTakeaways: [
       "A probate solicitor may help with the grant application, estate administration, tax paperwork, property sale coordination, and beneficiary communication.",
       "Executor mistakes can be costly, especially where assets, debts, family circumstances, or tax questions are unclear.",
+      "Before requesting a quote, gather the will, death certificate, asset details, debts, beneficiary information, and any urgent concerns.",
       "You can compare limited probate support and full estate administration depending on what the estate needs.",
     ],
     sections: [
       {
-        heading: "Common probate support",
+        heading: "What probate work can involve",
         body: [
-          "Probate support may include identifying estate assets, checking the will, confirming who can act, preparing inheritance tax paperwork where needed, applying for a grant of representation, dealing with financial institutions, and distributing the estate to beneficiaries.",
-          "Some families only need help with the grant application. Others want full estate administration, including collecting assets, paying debts, keeping estate accounts, selling property, and managing beneficiary communication. It is worth asking exactly which parts of the process a firm will handle.",
+          "Probate is often used as a shorthand for several different jobs. A solicitor may help confirm who has authority to act, check the will, identify estate assets, prepare inheritance tax paperwork where required, apply for a grant of representation, contact banks and financial institutions, keep estate accounts, pay debts, and arrange distributions to beneficiaries.",
+          "The scope matters. A grant-only service may focus on preparing and submitting the application. Full estate administration may include collecting assets, dealing with HMRC paperwork, managing beneficiary communication, coordinating property sale steps, paying liabilities, and preparing final estate accounts. When comparing firms, ask what is included rather than assuming every quote covers the same work.",
+          "The solicitor's role is not just paperwork. In many estates, the value is in helping the executor understand the sequence of tasks, avoid premature distributions, keep records, and know when a complication needs careful handling.",
         ],
       },
       {
-        heading: "When help may be useful",
+        heading: "When a probate solicitor may be useful",
         body: [
-          "Professional support may be useful where the estate includes a property, business interest, overseas asset, trust, inheritance tax issue, missing paperwork, unclear will, multiple beneficiaries, or a risk of disagreement. Executors can be personally responsible for mistakes, so uncertainty should be taken seriously.",
-          "A solicitor may also help where the executor lives away from Kidderminster but the deceased person's property, bank, or family arrangements are local. Practical distance can make estate administration slower if no one is available to gather documents or deal with local property matters.",
+          "Professional support may be useful where the estate includes a property, business interest, overseas asset, trust, inheritance tax question, missing paperwork, unclear will, multiple beneficiaries, or a risk of disagreement. Executors can be personally responsible for mistakes, so uncertainty should be taken seriously.",
+          "Support may also be sensible where the executor is grieving, busy, elderly, living outside the area, or uncomfortable dealing with financial institutions. If the deceased person's home is in Kidderminster or the wider Wyre Forest area but the executor lives elsewhere, local property checks, insurance, clearance, estate agent contact, and conveyancing coordination can become harder to manage.",
+          "A solicitor may not be needed for every step. Some executors want a professional to take over the process, while others want limited help at key stages. A good first quote conversation should clarify which type of support is being offered.",
+        ],
+      },
+      {
+        heading: "Grant-only help vs full estate administration",
+        body: [
+          "A grant-only service is usually narrower. The firm may help prepare the application for the grant of probate or letters of administration, but the executor remains responsible for much of the administration afterwards. This may suit straightforward estates where assets, debts, beneficiaries, and tax position are clear.",
+          "Full estate administration is broader. It may include gathering asset values, contacting banks, preparing tax forms, applying for the grant, collecting funds, paying liabilities, selling or transferring property, preparing estate accounts, and distributing the estate. This may be more suitable where the executor wants the process handled professionally or where there are complications.",
+          "When comparing quotes, ask whether the price is for grant-only support or full administration. A cheap quote may not be cheaper if it covers only a small part of the job.",
         ],
       },
       {
         heading: "Where things can go wrong",
         body: [
-          "Problems often arise when executors distribute funds too early, miss liabilities, misunderstand the will, fail to keep clear records, or do not communicate properly with beneficiaries. Property sales can add further complexity if the home needs insurance, clearance, valuation, or maintenance before sale.",
-          "Tax and deadlines can also cause concern. This website cannot advise on inheritance tax or probate deadlines, but it can help users understand when speaking directly to a qualified solicitor or legal service provider may be sensible.",
+          "Problems often arise when executors distribute funds too early, miss liabilities, misunderstand the will, fail to keep clear records, or do not communicate properly with beneficiaries. Property sales can add complexity if the home needs insurance, clearance, valuation, maintenance, or a sale before funds are available for distribution.",
+          "Family tension can also make the process harder. Beneficiaries may ask for updates, challenge delays, question estate accounts, or disagree about personal items. Clear communication and written records can reduce avoidable friction.",
+          "Tax and deadlines can cause concern too. This website cannot advise on inheritance tax or probate deadlines, but it can help users understand when speaking directly to a qualified solicitor or legal service provider may be sensible.",
         ],
       },
       {
         heading: "What to prepare",
         body: [
-          "Useful documents include the will and any codicils, death certificate, property details, bank and savings information, pension and life policy details, debts, funeral costs, utility bills, tax records, and beneficiary contact information. If there is no will, gather details of close family members and their relationship to the person who died.",
-          "It also helps to prepare a simple asset list with approximate values and notes on whether accounts were sole or joint. The first conversation with a solicitor is more productive when the estate picture is clear, even if exact figures are not yet available.",
+          "Useful documents include the will and any codicils, death certificate, property details, bank and savings information, pension and life policy details, debts, funeral costs, utility bills, tax records, insurance information, and beneficiary contact details. If there is no will, gather details of close family members and their relationship to the person who died.",
+          "Prepare a simple asset list with approximate values and notes on whether accounts were sole or joint. Include property addresses, mortgage information, savings providers, investment accounts, vehicles, valuable items, business interests, and any known lifetime gifts. Exact figures may not be available at the start, but a rough picture helps a solicitor understand the likely work.",
+          "It is also useful to write down who is asking for updates, whether anyone disagrees about the estate, whether the property is occupied, and whether any urgent bills, insurance renewals, or deadlines are known.",
         ],
       },
       {
         heading: "Questions to ask a solicitor",
         body: [
           "Ask whether the firm can handle the full estate or only the grant application, how fees are calculated, what information is needed first, who will contact beneficiaries, and how estate accounts will be prepared. If there is property in Kidderminster or Worcestershire, ask how property sale steps fit into the probate process.",
-          "You should also ask what happens if a dispute arises, whether inheritance tax forms are likely to be needed, and how often you will receive updates. Clear communication matters because probate can last months, not days.",
+          "Ask who will be your day-to-day contact, how updates are provided, what work remains your responsibility, whether inheritance tax forms may be needed, what happens if a dispute arises, and whether any costs are likely to be charged separately.",
+          "You can also ask what would make the quote change. Probate fees may change if extra assets are discovered, beneficiaries become difficult to trace, tax work is more involved than expected, or property sale issues arise.",
         ],
       },
       {
         heading: "Local relevance around Kidderminster",
         body: [
-          "Probate enquiries around Kidderminster, Stourport, Bewdley, Cookley, and Hagley often involve local property, family homes, bank paperwork, and executors who may not all live nearby. A local or regional solicitor can sometimes make practical coordination easier, especially where property sale and family communication overlap.",
+          "Probate enquiries around Kidderminster, Stourport, Bewdley, Cookley, and Hagley often involve local property, family homes, estate agents, bank paperwork, and executors who may not all live nearby. Local context can matter where the estate includes a Wyre Forest property that needs valuation, clearance, insurance, sale, or transfer.",
           "The right firm should explain the process without making unrealistic promises. Probate can be sensitive, so users should look for calm communication, transparent fees, and a clear plan for what happens next.",
+          "If you are comparing probate help locally, focus on the provider's probate process, communication, and scope of work rather than location alone. A nearby office can be convenient, but clear probate experience and reliable updates are usually more important.",
         ],
       },
       {
@@ -1633,6 +1648,21 @@ export const guidePages: GuidePage[] = [
         answer:
           "Many firms can help communicate with beneficiaries as part of estate administration, but you should confirm the scope of work before instructing.",
       },
+      {
+        question: "What is the difference between grant-only probate and full estate administration?",
+        answer:
+          "Grant-only support usually focuses on applying for the grant of probate or letters of administration. Full estate administration is broader and may include collecting assets, paying debts, preparing estate accounts, dealing with tax paperwork, selling property, and distributing the estate.",
+      },
+      {
+        question: "Should I speak to a solicitor before contacting banks?",
+        answer:
+          "Some executors contact banks directly to find out what information is needed. If the estate is complex, there is uncertainty about who can act, or there may be tax or family issues, speaking to a solicitor early may help you understand the process before decisions are made.",
+      },
+      {
+        question: "Can I compare probate solicitor options in Kidderminster?",
+        answer:
+          "Yes. You can submit a no obligation probate enquiry through this website. We may pass your enquiry to a suitable solicitor partner where appropriate, and you are under no obligation to instruct them.",
+      },
     ],
   },
   {
@@ -1643,56 +1673,71 @@ export const guidePages: GuidePage[] = [
     metaDescription:
       "A general guide to probate timescales, common delays, and what can affect estate administration.",
     category: "Probate and Wills",
-    updated: "2026-05-04",
+    updated: "2026-05-06",
     relatedServiceSlug: "probate-solicitors-kidderminster",
     intro:
-      "Probate timescales vary widely. A simple estate may move relatively quickly, while estates involving property, tax, missing paperwork, or disagreements can take much longer.",
+      "Probate timescales vary widely because the grant application is only one part of the job. Executors may also need to value assets, deal with tax paperwork, sell or transfer property, pay debts, prepare estate accounts, and communicate with beneficiaries.",
     keyTakeaways: [
       "Probate is not finished when the grant is issued; estate administration can continue afterwards.",
       "Property sales, tax paperwork, missing information, and beneficiary issues are common sources of delay.",
       "Organised estate records and early clarity on assets can reduce avoidable hold-ups.",
+      "Any timescale should be treated as an estimate, not a promise.",
     ],
     sections: [
       {
         heading: "The short answer",
         body: [
-          "There is no single assured probate timescale. The grant application is only one stage. Executors first need to identify assets and liabilities, value the estate, deal with tax paperwork where required, submit the application, receive the grant, collect funds, settle debts, and distribute the estate.",
-          "Some estates can be administered in months. Others take longer because a property must be sold, beneficiaries need tracing, tax questions need resolving, or financial institutions take time to respond.",
+          "There is no single assured probate timescale. Some estates are relatively straightforward, while others take much longer because information is missing, property must be sold, tax questions need resolving, beneficiaries need tracing, or family disagreement slows the process.",
+          "The grant application is only one stage. Executors first need to identify assets and liabilities, value the estate, deal with tax paperwork where required, submit the application, receive the grant, collect funds, settle debts, prepare accounts, and distribute the estate. Each stage can depend on third parties.",
+          "For that reason, a useful probate conversation should focus on stages and likely blockers rather than a guaranteed completion date.",
+        ],
+      },
+      {
+        heading: "Typical stages that affect timing",
+        body: [
+          "The early stage usually involves finding the will, confirming executors, registering the death, identifying assets and debts, and gathering account information. This can be quick if records are organised, but slow if paperwork is missing or providers take time to respond.",
+          "The application stage may involve inheritance tax forms, probate registry submissions, and answering any queries. After the grant is issued, the executor may still need to close accounts, sell or transfer property, settle debts, prepare accounts, and distribute the estate.",
+          "If the estate includes a house, the property timetable can become a major factor. Clearance, valuations, insurance, marketing, conveyancing, buyer delays, and completion dates can all affect when money is available to distribute.",
         ],
       },
       {
         heading: "What affects timing",
         body: [
-          "Timing can depend on how quickly asset values are gathered, whether inheritance tax forms are needed, whether the will is clear, how busy the probate registry is, and whether banks, pension providers, insurers, or beneficiaries respond promptly.",
+          "Timing can depend on how quickly asset values are gathered, whether inheritance tax forms are needed, whether the will is clear, how busy the probate registry is, and whether banks, pension providers, insurers, estate agents, or beneficiaries respond promptly.",
+          "Estates with several bank accounts, investments, pensions, business interests, overseas assets, or lifetime gifts usually require more information gathering. Even simple estates can be delayed if account details are incomplete or correspondence goes to old addresses.",
           "If the estate includes a home in Kidderminster or the wider Wyre Forest area, the property sale can become a major part of the timetable. Insurance, clearance, valuations, estate agent steps, conveyancing, and buyer delays may all affect when funds can be distributed.",
         ],
       },
       {
         heading: "Where things can go wrong",
         body: [
-          "Executors can run into problems if they distribute money before all debts, tax, and claims are understood. Delays can also happen where there are missing account details, no clear will, disagreement between family members, or uncertainty about who has authority to act.",
-          "Probate can also feel slow because third parties are involved. A solicitor may be waiting for valuations, registry responses, bank paperwork, property sale updates, or beneficiary instructions. Clear updates help, but not every delay is within one person's control.",
+          "Executors can run into problems if they distribute money before all debts, tax, and claims are understood. Delays can also happen where there are missing account details, no clear will, disagreement between family members, uncertainty about who has authority to act, or questions about gifts made before death.",
+          "Probate can feel slow because third parties are involved. A solicitor may be waiting for valuations, registry responses, bank paperwork, HMRC correspondence, property sale updates, or beneficiary instructions. Clear updates help, but not every delay is within one person's control.",
+          "Another common issue is poor record keeping. If decisions, payments, and correspondence are not recorded, it can be harder to answer beneficiary questions or prepare estate accounts later.",
         ],
       },
       {
         heading: "What to prepare",
         body: [
-          "Prepare the will, death certificate, property information, bank details, pension details, investment statements, debts, funeral invoice, utility details, insurance policies, and beneficiary information. If you are unsure what exists, make a list of organisations to contact.",
+          "Prepare the will, death certificate, property information, bank details, pension details, investment statements, debts, funeral invoice, utility details, insurance policies, tax records, and beneficiary information. If you are unsure what exists, make a list of organisations to contact.",
+          "Create a working timeline of what has already happened: date of death, when accounts were notified, which providers have replied, whether property has been valued, whether inheritance tax forms may be needed, and whether any beneficiary concerns have been raised.",
           "Keep a written record of correspondence and decisions. Executors should be able to show what they have done and why. Good records make it easier for a solicitor to understand the estate and reduce duplicated work.",
         ],
       },
       {
         heading: "Questions to ask a solicitor",
         body: [
-          "Ask which stages are likely to affect timing, whether inheritance tax forms may be needed, how property sale timing is handled, what you can do to speed up information gathering, and when it may be appropriate to make interim distributions.",
-          "You can also ask how updates are provided and what information the solicitor needs from you first. A good answer should give a realistic process rather than an unrealistic promise of speed.",
+          "Ask which stages are likely to affect timing, whether inheritance tax forms may be needed, how property sale timing is handled, what you can do to speed up information gathering, and when it may be appropriate to consider interim distributions.",
+          "You can also ask how updates are provided, who will be your day-to-day contact, what information is needed first, and what delays are outside the solicitor's control. A good answer should give a realistic process rather than an unrealistic promise of speed.",
+          "If there are deadlines, beneficiary concerns, or property sale issues, raise these early. A solicitor cannot remove every delay, but they may be able to explain the practical next step.",
         ],
       },
       {
         heading: "Local relevance for Wyre Forest estates",
         body: [
           "Many probate matters around Kidderminster, Stourport, Bewdley, Cookley, and Hagley involve family homes, local estate agents, local property valuations, and relatives living in different places. This can make coordination more important than people expect.",
-          "A local or regional probate solicitor may be useful where property, family communication, and estate administration need to move together. The key is clear scope, transparent fees, and realistic timing.",
+          "If a Wyre Forest property needs selling, probate timing may overlap with conveyancing, buyer chains, clearance, insurance, and estate agent updates. A local or regional probate solicitor may be useful where property, family communication, and estate administration need to move together.",
+          "The key is clear scope, transparent fees, and realistic timing. Be cautious of anyone giving a precise completion date before the estate details are understood.",
         ],
       },
       {
@@ -1718,6 +1763,21 @@ export const guidePages: GuidePage[] = [
         answer:
           "A solicitor may reduce avoidable delay by preparing paperwork correctly and explaining what information is needed, but third-party timings cannot be promised.",
       },
+      {
+        question: "What is usually the slowest part of probate?",
+        answer:
+          "It depends on the estate. Common slow points include gathering asset values, tax paperwork, registry processing, selling property, tracing beneficiaries, and waiting for banks or pension providers to respond.",
+      },
+      {
+        question: "Can beneficiaries be paid before everything is finished?",
+        answer:
+          "Executors should be cautious about distributing estate funds before debts, tax, claims, and administration costs are understood. A solicitor can explain whether interim distributions may be appropriate in a specific estate if you choose to instruct them.",
+      },
+      {
+        question: "Does a Kidderminster property make probate take longer?",
+        answer:
+          "A property can add extra stages wherever it is located. In Kidderminster and the wider Wyre Forest area, valuation, insurance, clearance, estate agent work, conveyancing, and buyer timing may all affect the estate timetable.",
+      },
     ],
   },
   {
@@ -1728,49 +1788,70 @@ export const guidePages: GuidePage[] = [
     metaDescription:
       "General information about when executors may handle probate themselves and when solicitor support may be useful.",
     category: "Probate and Wills",
-    updated: "2026-05-04",
+    updated: "2026-05-06",
     relatedServiceSlug: "probate-solicitors-kidderminster",
     intro:
-      "Some executors deal with probate themselves, but professional support can be useful where the estate is complex, the executor is uncertain, or family circumstances make mistakes more costly.",
+      "You do not always need a solicitor for probate, but professional support can be useful where the estate is complex, the executor is uncertain, or family circumstances make mistakes more costly. The right answer depends on the assets, paperwork, people involved, and how confident the executor feels taking responsibility.",
     keyTakeaways: [
       "Simple estates may be manageable without full solicitor support, but executors still carry responsibility.",
       "Property, tax, missing documents, overseas assets, trusts, or disputes can make professional help more important.",
       "Some firms offer limited probate support, while others handle full estate administration.",
+      "A first quote enquiry should explain the estate structure, known assets, whether there is a will, and any concerns.",
     ],
     sections: [
       {
-        heading: "When people handle it themselves",
+        heading: "When people may handle probate themselves",
         body: [
-          "A simple estate may be manageable without a solicitor where there is a clear will, no property, no inheritance tax issue, straightforward bank accounts, no disputes, and beneficiaries who agree on the process. Even then, executors should understand their responsibilities before distributing funds.",
-          "Handling probate yourself can reduce professional fees, but it also means you take on the administration, paperwork, deadlines, record keeping, and beneficiary communication. The practical workload is often larger than expected.",
+          "A simple estate may be manageable without a solicitor where there is a clear will, no property, no inheritance tax question, straightforward bank accounts, no disputes, and beneficiaries who agree on the process. Even then, executors should understand their responsibilities before distributing funds.",
+          "Handling probate yourself can reduce professional fees, but it also means taking on administration, paperwork, deadlines, record keeping, asset collection, debt checks, estate accounts, and beneficiary communication. The practical workload is often larger than expected.",
+          "A common middle ground is limited professional support. Some executors handle routine information gathering themselves but ask a solicitor for help with the grant application, inheritance tax paperwork, property sale coordination, or a specific complication.",
         ],
       },
       {
         heading: "When support may help",
         body: [
-          "A solicitor may be helpful where there is property, inheritance tax, missing documents, overseas assets, business interests, trusts, unclear family circumstances, or potential disagreement. Support can also be sensible where the executor is grieving, busy, or uncomfortable dealing with financial institutions.",
-          "If the estate includes a property in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or nearby Worcestershire areas, property sale steps may run alongside probate administration. That can add legal and practical complexity.",
+          "A solicitor may be helpful where there is property, inheritance tax, missing documents, overseas assets, business interests, trusts, unclear family circumstances, lifetime gifts, or potential disagreement. Support can also be sensible where the executor is grieving, busy, elderly, or uncomfortable dealing with financial institutions.",
+          "If the estate includes a property in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or nearby Worcestershire areas, property sale steps may run alongside probate administration. That can add legal and practical complexity because insurance, clearance, valuation, estate agency, and conveyancing steps may all need coordination.",
+          "Professional support may also be useful where the person who died did not leave a will, where there are estranged relatives, where a beneficiary is vulnerable, or where the executor is unsure who should be told about the estate.",
+        ],
+      },
+      {
+        heading: "Decision checklist before requesting a quote",
+        body: [
+          "Ask yourself whether there is a valid will, who the executors are, whether the estate includes a property, whether bank accounts are sole or joint, whether inheritance tax paperwork may be needed, whether all beneficiaries are known, and whether anyone is likely to disagree.",
+          "Also consider your own capacity. Probate can involve months of correspondence, forms, calls, record keeping, and decisions. Even a capable executor may prefer support if they are dealing with grief, work pressure, distance, or family tension.",
+          "If several answers are uncertain, a no obligation quote enquiry can help you compare whether limited support or full estate administration may be more appropriate.",
         ],
       },
       {
         heading: "Where things can go wrong",
         body: [
-          "Executors may accidentally miss debts, misunderstand the will, distribute too early, fail to keep estate accounts, or overlook tax paperwork. Beneficiary disputes can also become harder to manage if communication is unclear or inconsistent.",
+          "Executors may accidentally miss debts, misunderstand the will, distribute too early, fail to keep estate accounts, overlook tax paperwork, or assume an asset passes through the estate when it does not. Beneficiary disputes can also become harder to manage if communication is unclear or inconsistent.",
+          "Property can create additional risk. A home may need insurance, security, maintenance, utility management, valuation, clearance, and sale arrangements before the estate can be finalised. If the executor lives away from Wyre Forest, these tasks can become harder to coordinate.",
           "This is why comparing levels of support matters. Some users need full estate administration, while others only need help with the grant application or a specific issue. A clear scope can control cost and reduce confusion.",
         ],
       },
       {
         heading: "What to prepare",
         body: [
-          "Prepare the will, death certificate, list of assets and debts, property details, bank statements, pension information, tax records, funeral invoice, and beneficiary details. If you are not sure whether probate is needed, gather enough information for a solicitor to understand the estate structure.",
-          "Make a note of any concerns, such as missing documents, family disagreement, overseas assets, lifetime gifts, or property that needs selling. These points help a solicitor explain whether limited support or full administration may be more suitable.",
+          "Prepare the will, death certificate, list of assets and debts, property details, bank statements, pension information, investment statements, tax records, funeral invoice, insurance details, and beneficiary details. If you are not sure whether probate is needed, gather enough information for a solicitor to understand the estate structure.",
+          "Make a note of any concerns, such as missing documents, family disagreement, overseas assets, lifetime gifts, a property that needs selling, or beneficiaries who are difficult to contact. These points help a solicitor explain whether limited support or full administration may be more suitable.",
+          "For a first enquiry, keep the summary practical. Include whether there is a will, whether probate has already been started, whether the estate includes property, and what help you think you need.",
         ],
       },
       {
         heading: "Questions to ask a solicitor",
         body: [
           "Ask whether probate is likely to be needed, whether the firm offers fixed-fee help for the grant, whether full estate administration is available, what fees are charged, and what work remains your responsibility.",
-          "You should also ask who will communicate with beneficiaries, how estate accounts are handled, what documents are needed first, and how property sale steps are coordinated if the estate includes a home.",
+          "You should also ask who will communicate with beneficiaries, how estate accounts are handled, what documents are needed first, how property sale steps are coordinated if the estate includes a home, and what would cause the estimate to change.",
+          "If you are unsure whether to instruct, ask whether the firm can explain the likely options before you commit. You are under no obligation to instruct a solicitor partner introduced through this website.",
+        ],
+      },
+      {
+        heading: "Local context for Kidderminster and Wyre Forest estates",
+        body: [
+          "Local probate enquiries often involve family homes in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or nearby Worcestershire areas. Property steps may need coordination with local estate agents, valuers, house clearance providers, insurers, and conveyancers.",
+          "A local or regional probate solicitor may be useful where practical property coordination matters, but location should not be the only factor. Clear probate experience, transparent scope, and reliable communication are usually more important than proximity alone.",
         ],
       },
       {
@@ -1795,6 +1876,21 @@ export const guidePages: GuidePage[] = [
         question: "Is probate support always expensive?",
         answer:
           "Costs vary depending on the estate and the work needed. Ask for a clear explanation of fees, what is included, and what may be charged separately.",
+      },
+      {
+        question: "Can I do probate myself and still ask a solicitor for part of it?",
+        answer:
+          "Often, yes. Some firms offer limited support for specific stages, such as the grant application or tax paperwork, while the executor handles other administration tasks. Confirm scope and fees before instructing.",
+      },
+      {
+        question: "When is probate more likely to need professional support?",
+        answer:
+          "Professional support may be more useful where there is property, inheritance tax paperwork, missing documents, disputes, overseas assets, trusts, business interests, unclear family circumstances, or an executor who is unsure about their responsibilities.",
+      },
+      {
+        question: "Can I request a probate quote before I know every asset value?",
+        answer:
+          "Yes. You can submit a practical summary with approximate information. A solicitor partner may ask for more detail before giving a firm quote or explaining what level of support may be suitable.",
       },
     ],
   },
