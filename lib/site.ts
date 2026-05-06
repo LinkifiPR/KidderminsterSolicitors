@@ -2041,6 +2041,10 @@ export function getAllPageSlugs() {
   );
 }
 
+export function getDynamicPageSlugs() {
+  return [...servicePages, ...trustPages, ...guidePages].map((page) => page.slug);
+}
+
 export function getPageBySlug(slug: string) {
   return [...servicePages, ...trustPages, ...guidePages].find(
     (page) => page.slug === slug,

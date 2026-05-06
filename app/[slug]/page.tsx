@@ -6,7 +6,7 @@ import { SiteHeader } from "../../components/SiteHeader";
 import {
   buildCanonicalUrl,
   buildFaqSchema,
-  getAllPageSlugs,
+  getDynamicPageSlugs,
   getPageBySlug,
   guidePages,
   servicePages,
@@ -26,7 +26,7 @@ function buildSectionId(heading: string) {
 }
 
 export function generateStaticParams() {
-  return getAllPageSlugs().map((slug) => ({ slug }));
+  return getDynamicPageSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({

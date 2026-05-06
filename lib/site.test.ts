@@ -3,6 +3,7 @@ import {
   baseUrl,
   buildCanonicalUrl,
   getAllPageSlugs,
+  getDynamicPageSlugs,
   guideOrganizationSchema,
   guidePages,
   phaseOneServiceSlugs,
@@ -53,6 +54,11 @@ describe("site content model", () => {
     expect(buildCanonicalUrl("")).toBe(baseUrl);
     expect(buildCanonicalUrl("privacy-policy")).toBe(`${baseUrl}/privacy-policy/`);
     expect(getAllPageSlugs()).toContain("conveyancing-solicitors-kidderminster");
+  });
+
+  it("keeps static hubs out of dynamic slug generation", () => {
+    expect(getAllPageSlugs()).toContain("legal-guides");
+    expect(getDynamicPageSlugs()).not.toContain("legal-guides");
   });
 
   it("includes the next commercial service pages and guide content cluster", () => {
