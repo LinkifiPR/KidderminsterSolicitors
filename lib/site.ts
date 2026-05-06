@@ -1428,6 +1428,130 @@ export const guidePages: GuidePage[] = [
   },
   {
     type: "guide",
+    slug: "selling-house-kidderminster-solicitor-checklist",
+    title: "Selling a House in Kidderminster: Solicitor Checklist",
+    h1: "Selling a house in Kidderminster: solicitor checklist",
+    metaDescription:
+      "A practical solicitor checklist for selling a house in Kidderminster, including title documents, forms, enquiries, mortgage redemption, and completion.",
+    category: "Conveyancing",
+    updated: "2026-05-06",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Selling a house is often smoother when the legal paperwork is ready before the buyer's solicitor starts raising questions. A seller's solicitor usually prepares the contract pack, checks title documents, helps with property information forms, answers enquiries, obtains mortgage redemption figures, and manages exchange and completion. This checklist explains what sellers in Kidderminster and the wider Wyre Forest area can prepare before requesting a no obligation conveyancing quote.",
+    keyTakeaways: [
+      "Sellers can reduce avoidable delay by preparing title details, property forms, certificates, guarantees, mortgage information, and leasehold documents early.",
+      "The buyer's solicitor will usually raise enquiries, so accurate paperwork and clear supporting documents matter.",
+      "Kidderminster Solicitors is an independent local guide and may introduce you to a suitable solicitor partner, but it is not a law firm and does not provide legal advice.",
+    ],
+    sections: [
+      {
+        heading: "Title documents and ownership details",
+        body: [
+          "The seller's solicitor will usually obtain official title documents from HM Land Registry to confirm ownership, boundaries, charges, restrictions, and any registered rights affecting the property. If the title is unregistered, older deeds and ownership papers may be needed, which can make the process more involved.",
+          "Before requesting a quote, note whether the property is freehold or leasehold, whether there is a mortgage, whether anyone else is registered as an owner, and whether there have been changes such as extensions, transfers, or inherited ownership. If you are unsure, say so. A solicitor partner can explain what information they would need if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Property information forms",
+        body: [
+          "Sellers are normally asked to complete property information forms that cover boundaries, disputes, notices, planning, building work, guarantees, insurance, utilities, occupiers, and other practical details. These forms are important because the buyer's solicitor relies on them when reviewing the transaction.",
+          "Accuracy matters. If you do not know an answer, it is usually better to say you do not know than to guess. Keep copies of supporting documents close by, especially if you are selling a property in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or nearby Worcestershire villages where older work, shared access, or local property history may raise questions.",
+        ],
+      },
+      {
+        heading: "Fixtures, fittings, certificates, and guarantees",
+        body: [
+          "The fixtures and fittings form usually records what is included or excluded from the sale, such as appliances, curtains, light fittings, garden items, or fitted furniture. Clear answers help avoid disagreement before completion. If something is important, make sure it is written down rather than relying on informal conversation.",
+          "Gather certificates and guarantees for work carried out at the property. Useful documents may include planning permissions, building regulation approvals, completion certificates, FENSA or window certificates, boiler installation or service documents, electrical certificates, damp guarantees, roof guarantees, and warranties for significant work. Missing paperwork can trigger buyer enquiries and delay exchange.",
+        ],
+      },
+      {
+        heading: "Leasehold seller documents",
+        body: [
+          "If you are selling a leasehold flat or house, the buyer's solicitor will usually need the lease, service charge information, ground rent details, buildings insurance, management company accounts, planned works information, and replies from the landlord or managing agent. This is often supplied through a leasehold management information pack.",
+          "Leasehold packs can take time and may involve fees from the landlord or managing agent. Sellers should ask early what is needed because leasehold paperwork is one of the most common causes of delay. A buyer cannot usually exchange confidently until the leasehold position has been reviewed.",
+        ],
+      },
+      {
+        heading: "Answering buyer enquiries",
+        body: [
+          "After the buyer's solicitor reviews the contract pack, they may raise enquiries. These can cover title entries, boundaries, building work, guarantees, planning, rights of way, lease terms, service charges, environmental points, or inconsistencies in the paperwork. Some enquiries are routine; others need documents or explanation.",
+          "Sellers can help by responding promptly and providing evidence where available. If an enquiry relates to something you do not understand, ask the solicitor handling the sale to explain what is being requested. This website cannot advise on legal answers, but good preparation can make the solicitor's job easier if you instruct a firm.",
+        ],
+      },
+      {
+        heading: "Mortgage redemption and estate agent coordination",
+        body: [
+          "If there is a mortgage on the property, the seller's solicitor will usually obtain a redemption statement from the lender showing how much must be repaid on completion. The mortgage is then repaid from sale proceeds. If an early repayment charge applies, it may affect the final completion statement.",
+          "Estate agents may also be involved in chasing the chain, confirming agreed details, and sending their invoice to the solicitor where authorised. The solicitor's role is the legal sale process, but practical coordination between seller, agent, buyer's solicitor, lender, and chain can affect timing.",
+        ],
+      },
+      {
+        heading: "Exchange, completion, and sale proceeds",
+        body: [
+          "Exchange of contracts is the point at which the sale usually becomes legally binding. Before exchange, the contract, enquiries, buyer's funding, completion date, and chain readiness should be clear. Completion is when the buyer's money is received, the sale completes, keys are released, and the property ownership moves forward.",
+          "After completion, the seller's solicitor normally repays the mortgage where relevant, pays estate agent fees if authorised, deducts legal fees and agreed costs, and sends the remaining sale proceeds to the seller. Ask how completion statements will be provided and when you can expect final figures.",
+        ],
+      },
+      {
+        heading: "Where seller transactions often go wrong",
+        body: [
+          "Common problems include missing certificates, slow leasehold packs, unclear boundaries, unregistered title, unresolved planning questions, delays getting mortgage redemption figures, late chain changes, or disagreement about fixtures and fittings. None of these automatically means a sale will fail, but they can slow progress.",
+          "Communication can also become difficult where a seller assumes the solicitor, estate agent, or buyer already has a document. Keep a simple folder of paperwork and note what has been sent. If you are selling and buying at the same time, chain pressure can make early preparation even more important.",
+        ],
+      },
+      {
+        heading: "What to prepare before requesting a quote",
+        body: [
+          "Prepare the property postcode, expected sale price, whether the property is freehold or leasehold, mortgage lender if there is one, estate agent details, title or deed information if available, leasehold management details if relevant, and any known issues such as missing certificates, shared access, disputes, or recent building work.",
+          "Do not send confidential or detailed documents through the public quote form. A concise summary is enough at enquiry stage. Detailed paperwork should be shared directly with a solicitor firm or legal service provider if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask what is included in the sale quote, whether VAT and bank transfer fees are included, who will handle the file, how enquiries are managed, how quickly leasehold paperwork should be ordered, and what happens if the sale falls through before exchange.",
+          "You may also want to ask how the firm coordinates with estate agents, how mortgage redemption is handled, when sale proceeds are normally sent after completion, and what documents you should gather before the buyer's solicitor raises enquiries.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are selling a house in Kidderminster or the wider Wyre Forest area, you can compare conveyancing options and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice. You are under no obligation to instruct any solicitor firm or legal service provider introduced through this website.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "solicitor-costs-buying-selling-house",
+      "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+      "what-does-a-conveyancing-solicitor-do",
+    ],
+    faq: [
+      {
+        question: "When should I instruct a solicitor when selling a house?",
+        answer:
+          "Many sellers compare conveyancing options as soon as the property is marketed and formally instruct once a sale is agreed. Early preparation can help the contract pack go out faster.",
+      },
+      {
+        question: "What documents does a seller's solicitor usually need?",
+        answer:
+          "They may need title documents, completed property information forms, fixtures and fittings details, mortgage information, certificates and guarantees, leasehold information where relevant, and estate agent details.",
+      },
+      {
+        question: "Can leasehold paperwork delay a sale?",
+        answer:
+          "Yes. Leasehold management information packs, landlord replies, service charge details, and planned works information can take time to obtain and review.",
+      },
+      {
+        question: "Can I request a seller conveyancing quote through this website?",
+        answer:
+          "Yes. You can request a no obligation conveyancing quote and your enquiry may be passed to a suitable solicitor partner who can contact you directly.",
+      },
+    ],
+  },
+  {
+    type: "guide",
     slug: "what-does-a-probate-solicitor-do",
     title: "What Does a Probate Solicitor Do?",
     h1: "What does a probate solicitor do?",
