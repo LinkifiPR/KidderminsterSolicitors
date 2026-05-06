@@ -218,6 +218,109 @@ export const servicePages: ServicePage[] = [
   },
   {
     type: "service",
+    slug: "conveyancing-quotes-kidderminster",
+    title: "Conveyancing Quotes Kidderminster",
+    h1: "Conveyancing quotes in Kidderminster",
+    metaDescription:
+      "Request a no obligation conveyancing quote in Kidderminster and compare what may be included in solicitor fees and third-party costs.",
+    category: "Conveyancing",
+    summary:
+      "Compare conveyancing quote factors for buying, selling, remortgaging, and transfer of equity enquiries.",
+    intro:
+      "If you are buying, selling, remortgaging, or transferring equity, a clear conveyancing quote helps you understand likely legal fees, third-party costs, and possible extras before you decide whether to instruct a firm. This page explains what to look for when requesting conveyancing quotes in Kidderminster and how a suitable solicitor partner may contact you if your enquiry is appropriate.",
+    localAngle:
+      "Kidderminster and the wider Wyre Forest property market includes town-centre terraces, family homes around Franche and Comberton, riverside and village property near Stourport and Bewdley, and homes around Cookley, Hagley, and nearby Worcestershire areas. The right conveyancing quote depends on the property, title, lender, chain, tenure, and work required rather than location alone.",
+    keyTakeaways: [
+      "A useful conveyancing quote should separate the solicitor's legal fee from searches, Land Registry fees, bank transfer charges, ID checks, and other third-party costs.",
+      "Leasehold, new-build, shared ownership, gifted deposit, mortgage lender, and chain complexity can all affect the work needed.",
+      "Kidderminster Solicitors is an independent local guide and may introduce you to a suitable solicitor partner, but it is not a law firm and does not provide legal advice.",
+    ],
+    sections: [
+      {
+        heading: "What a conveyancing quote may include",
+        body: [
+          "A conveyancing quote usually includes the firm's own legal fee plus a list of third-party costs. The legal fee covers the solicitor or conveyancer's work on the transaction. Third-party costs, often called disbursements, can include search fees, HM Land Registry fees, identity checks, bank transfer charges, and other payments made to external bodies.",
+          "When requesting a quote, ask whether the figure includes VAT, lender work, submission of a Stamp Duty Land Tax return where required, acting on a gifted deposit, dealing with management company information, and post-completion registration. A quote that looks cheaper at first can become less attractive if common steps are later added as separate extras.",
+        ],
+      },
+      {
+        heading: "Legal fees, disbursements, and possible extras",
+        body: [
+          "The legal fee is the amount charged for the professional conveyancing work. Disbursements are not usually profit for the solicitor firm; they are costs paid to others as part of the process. For a purchase, these may include local authority, drainage and water, environmental, and other searches. For a sale, costs may include official copies and leasehold management information if relevant.",
+          "Possible extras can arise where the matter involves leasehold property, unregistered title, a new-build developer deadline, shared ownership, a gifted deposit, more than one mortgage, a transfer of equity, or unusual title entries. This does not mean anything is wrong. It means the quote should match the actual work rather than presenting every transaction as standard.",
+        ],
+      },
+      {
+        heading: "Buying, selling, remortgaging, and transfer of equity",
+        body: [
+          "A purchase quote is usually different from a sale quote because the buyer's solicitor often reviews searches, title, enquiries, mortgage offer conditions, source of funds information, and registration after completion. A seller's solicitor usually prepares contract papers, responds to enquiries, deals with title evidence, obtains redemption figures, and helps complete the sale.",
+          "A remortgage quote may involve lender panel checks, title review, mortgage redemption, completion funds, and registration of the new lender's charge. Transfer of equity work can overlap with remortgaging but may also involve ownership changes, lender consent, and additional checks. Make the transaction type clear at enquiry stage so any solicitor partner can respond more accurately.",
+        ],
+      },
+      {
+        heading: "What affects conveyancing quote accuracy",
+        body: [
+          "The more practical information you provide, the easier it is for a firm to give a meaningful quote. Property price, postcode, tenure, lender, transaction type, chain position, expected timescale, and whether the property is leasehold or new build can all matter. If you are unsure about tenure, say so rather than guessing.",
+          "Quotes can also change if new information appears later. Examples include missing title documents, leasehold restrictions, building regulation questions, gifted deposit evidence, lender-specific requirements, or an unexpected issue in a search result. A trustworthy provider should explain why the scope has changed if extra work becomes necessary.",
+        ],
+      },
+      {
+        heading: "Local Kidderminster search and property context",
+        body: [
+          "For property in Kidderminster and Wyre Forest, conveyancing may involve local authority search information, planning history, building control records, drainage and water details, environmental information, highways questions, or area-specific checks depending on the property and lender. Your solicitor or conveyancer explains the results if you choose to instruct them.",
+          "Local context can be useful, but it should not replace proper comparison. A firm serving Kidderminster enquiries should still be judged on fee clarity, lender panel position, communication, relevant property experience, and whether the quote explains what is included and excluded.",
+        ],
+      },
+      {
+        heading: "What to prepare before requesting a quote",
+        body: [
+          "Before requesting a conveyancing quote, prepare the property postcode, estimated price, whether you are buying, selling, remortgaging, or transferring equity, whether a mortgage is involved, lender name if known, tenure if known, and whether there is a related sale or purchase. Mention if the property is leasehold, new build, shared ownership, or involves a gifted deposit.",
+          "You do not need to send confidential documents through the public quote form. A short practical summary is enough for an initial enquiry. Detailed documents should be shared directly with a solicitor firm or legal service provider if you decide to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask before comparing quotes",
+        body: [
+          "Ask whether the quote includes VAT, searches, Land Registry fees, bank transfer fees, ID checks, lender work, SDLT return submission, leasehold supplements, and post-completion registration. Ask who will handle the file, how updates are provided, and whether the firm can act for your mortgage lender.",
+          "You should also ask what happens if the transaction falls through before exchange, whether any upfront payment is needed, how quickly the file can be opened, and what information the firm needs from you next. Clear answers can be more valuable than the lowest headline price.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+      "what-does-a-conveyancing-solicitor-do",
+      "buying-a-house-in-kidderminster-legal-checklist",
+    ],
+    comparisonPoints: [
+      "Compare the full itemised quote, not only the headline legal fee.",
+      "Check whether the firm can act for your mortgage lender before you instruct.",
+      "Tell the firm early about leasehold, gifted deposit, new-build, or chain details so the quote reflects the work needed.",
+    ],
+    faq: [
+      {
+        question: "Can I request a conveyancing quote in Kidderminster through this website?",
+        answer:
+          "Yes. You can request a no obligation quote and your enquiry may be passed to a suitable solicitor partner who can contact you directly.",
+      },
+      {
+        question: "What information helps with a conveyancing quote?",
+        answer:
+          "Useful details include the property postcode, price, transaction type, mortgage lender, tenure if known, chain position, and whether the matter involves leasehold, new build, shared ownership, gifted deposit, remortgage, or transfer of equity.",
+      },
+      {
+        question: "Is the cheapest conveyancing quote always the right choice?",
+        answer:
+          "Not necessarily. A low headline fee may exclude work or third-party costs that are needed later. It is usually better to compare what is included, what may be extra, and how clearly the firm communicates.",
+      },
+      {
+        question: "Does Kidderminster Solicitors provide conveyancing advice?",
+        answer:
+          "No. Kidderminster Solicitors is an independent local guide and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+      },
+    ],
+  },
+  {
+    type: "service",
     slug: "family-law-solicitors-kidderminster",
     title: "Family Law Solicitors Kidderminster",
     h1: "Family law solicitors in Kidderminster",
