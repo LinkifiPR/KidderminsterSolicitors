@@ -20,6 +20,13 @@ type KitTagResponse = {
   };
 };
 
+type KitTagsResponse = {
+  tags?: Array<{
+    id?: number;
+    name?: string;
+  }>;
+};
+
 async function kitRequest<T>(
   path: string,
   config: KitConfig,
@@ -73,6 +80,13 @@ async function addSubscriberToForm(lead: Lead, config: KitConfig) {
 }
 
 async function createOrReuseTag(name: string, config: KitConfig) {
+  const tagsResponse = await kitRequest<KitTagsResponse>("/tags", config);
+  const existingTag = tagsResponse.tags?.find((tag) => tag.name === name);
+
+  if (existingTag?.id) {
+    return existingTag.id;
+  }
+
   const response = await kitRequest<KitTagResponse>("/tags", config, { name });
 
   if (!response.tag?.id) {

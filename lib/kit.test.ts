@@ -9,6 +9,10 @@ const payload = {
   email: "sarah@example.com",
   postcode: "DY10 1AA",
   preferredContactTime: "Morning",
+  address: "1 High Street, Kidderminster",
+  hasContactedSolicitor: "No",
+  enquiryUrgency: "This week",
+  matterStage: "Ready to compare quotes",
   message: "I am buying a house in Kidderminster.",
   consentAccepted: true,
   disclosureAccepted: true,
@@ -58,42 +62,49 @@ describe("submitLeadToKit", () => {
           subscriber: { id: 123, email_address: "sarah@example.com" },
         }),
       )
+      .mockResolvedValueOnce(jsonResponse({ tags: [] }))
       .mockResolvedValueOnce(jsonResponse({ tag: { id: 10 } }))
       .mockResolvedValueOnce(
         jsonResponse({
           subscriber: { id: 123, email_address: "sarah@example.com" },
         }),
       )
+      .mockResolvedValueOnce(jsonResponse({ tags: [] }))
       .mockResolvedValueOnce(jsonResponse({ tag: { id: 11 } }))
       .mockResolvedValueOnce(
         jsonResponse({
           subscriber: { id: 123, email_address: "sarah@example.com" },
         }),
       )
+      .mockResolvedValueOnce(jsonResponse({ tags: [] }))
       .mockResolvedValueOnce(jsonResponse({ tag: { id: 12 } }))
       .mockResolvedValueOnce(
         jsonResponse({
           subscriber: { id: 123, email_address: "sarah@example.com" },
         }),
       )
+      .mockResolvedValueOnce(jsonResponse({ tags: [] }))
       .mockResolvedValueOnce(jsonResponse({ tag: { id: 13 } }))
       .mockResolvedValueOnce(
         jsonResponse({
           subscriber: { id: 123, email_address: "sarah@example.com" },
         }),
       )
+      .mockResolvedValueOnce(jsonResponse({ tags: [] }))
       .mockResolvedValueOnce(jsonResponse({ tag: { id: 14 } }))
       .mockResolvedValueOnce(
         jsonResponse({
           subscriber: { id: 123, email_address: "sarah@example.com" },
         }),
       )
+      .mockResolvedValueOnce(jsonResponse({ tags: [] }))
       .mockResolvedValueOnce(jsonResponse({ tag: { id: 15 } }))
       .mockResolvedValueOnce(
         jsonResponse({
           subscriber: { id: 123, email_address: "sarah@example.com" },
         }),
       )
+      .mockResolvedValueOnce(jsonResponse({ tags: [] }))
       .mockResolvedValueOnce(jsonResponse({ tag: { id: 16 } }))
       .mockResolvedValueOnce(
         jsonResponse({
@@ -124,15 +135,71 @@ describe("submitLeadToKit", () => {
     expect(fetchMock).toHaveBeenNthCalledWith(
       3,
       "https://api.kit.com/v4/tags",
+      expect.objectContaining({ method: "GET" }),
+    );
+    expect(fetchMock).toHaveBeenNthCalledWith(
+      4,
+      "https://api.kit.com/v4/tags",
       expect.objectContaining({
         body: JSON.stringify({ name: "Legal Lead" }),
       }),
     );
     expect(fetchMock).toHaveBeenNthCalledWith(
-      4,
+      5,
       "https://api.kit.com/v4/tags/10/subscribers",
       expect.objectContaining({
         body: JSON.stringify({ email_address: "sarah@example.com" }),
+      }),
+    );
+    expect(fetchMock).toHaveBeenCalledTimes(23);
+  });
+
+  it("reuses an existing Kit tag instead of creating a duplicate", async () => {
+    const result = validateLeadPayload(payload);
+
+    if (!result.ok) {
+      throw new Error("Expected payload to be valid");
+    }
+
+    fetchMock
+      .mockResolvedValueOnce(
+        jsonResponse({
+          subscriber: { id: 123, email_address: "sarah@example.com" },
+        }),
+      )
+      .mockResolvedValueOnce(
+        jsonResponse({
+          subscriber: { id: 123, email_address: "sarah@example.com" },
+        }),
+      );
+
+    for (const tagName of [
+      "Legal Lead",
+      "Kidderminster",
+      "Wyre Forest",
+      "Category: Conveyancing",
+      "Lead - Website",
+      "Town - Kidderminster",
+      "Category - Conveyancing",
+    ]) {
+      fetchMock
+        .mockResolvedValueOnce(jsonResponse({ tags: [{ id: 99, name: tagName }] }))
+        .mockResolvedValueOnce(
+          jsonResponse({
+            subscriber: { id: 123, email_address: "sarah@example.com" },
+          }),
+        );
+    }
+
+    await submitLeadToKit(result.lead, {
+      apiKey: "test-key",
+      formId: "9391183",
+    });
+
+    expect(fetchMock).not.toHaveBeenCalledWith(
+      "https://api.kit.com/v4/tags",
+      expect.objectContaining({
+        body: expect.any(String),
       }),
     );
     expect(fetchMock).toHaveBeenCalledTimes(16);
