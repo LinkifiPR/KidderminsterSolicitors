@@ -1226,6 +1226,123 @@ export const guidePages: GuidePage[] = [
   },
   {
     type: "guide",
+    slug: "solicitor-costs-buying-selling-house",
+    title: "Solicitor Costs for Buying and Selling a House",
+    h1: "Solicitor costs for buying and selling a house",
+    metaDescription:
+      "General guide to solicitor costs when buying and selling a house, including legal fees, disbursements, leasehold extras, and what to compare.",
+    category: "Conveyancing",
+    updated: "2026-05-06",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Solicitor costs for buying and selling a house can feel difficult to compare because a quote is rarely one single fee. Buyers, sellers, and people doing both at the same time may see legal fees, searches, Land Registry costs, mortgage redemption work, bank transfer charges, leasehold extras, and VAT presented in different ways. This guide explains the main moving parts so you can compare quotes more confidently before requesting a no obligation quote.",
+    keyTakeaways: [
+      "Buyer and seller conveyancing costs are different because each side has different legal work, documents, and third-party payments.",
+      "A useful quote should separate the solicitor's legal fee from disbursements such as searches, Land Registry fees, and bank transfer costs.",
+      "Kidderminster Solicitors is an independent local guide, not a law firm, and may introduce you to a suitable solicitor partner where appropriate.",
+    ],
+    sections: [
+      {
+        heading: "Buyer solicitor costs",
+        body: [
+          "A buyer's solicitor or conveyancer usually deals with title checks, contract review, searches, enquiries, mortgage offer conditions, source of funds checks, exchange, completion, Stamp Duty Land Tax return submission where required, and registration after completion. Because the buyer is taking ownership, the legal review is usually more involved than simply transferring money on completion day.",
+          "Common buyer quote items may include the legal fee, search pack, Land Registry fee, identity checks, bank transfer fee, acting for a mortgage lender, gifted deposit checks, and post-completion work. If the property is leasehold, shared ownership, new build, or has unusual title points, the quote may include extra work or warn that additional charges could apply.",
+        ],
+      },
+      {
+        heading: "Seller solicitor costs",
+        body: [
+          "A seller's solicitor usually prepares the contract pack, obtains title documents, reviews property information forms, deals with the fixtures and contents list, answers buyer enquiries, obtains mortgage redemption figures, exchanges contracts, completes the sale, repays the mortgage where needed, and sends net sale proceeds to the seller.",
+          "Seller costs may be lower than buyer costs in some straightforward freehold sales because the seller does not usually pay for buyer searches or registration of the buyer's ownership. However, leasehold sales can involve management packs, landlord or managing agent fees, certificates, notices, and additional enquiries that make the work more involved.",
+        ],
+      },
+      {
+        heading: "Legal fees and disbursements explained",
+        body: [
+          "The legal fee is the amount charged by the solicitor firm or conveyancing provider for doing the work. Disbursements are payments made to third parties as part of the transaction. They may include search fees, HM Land Registry fees, official copy documents, bank transfer fees, identity verification, and leasehold information pack costs.",
+          "When comparing quotes, do not look only at the legal fee. A low legal fee with many extras may be less clear than a higher but more complete quote. Ask whether VAT is included, what disbursements are estimates, whether third-party costs can change, and which items are optional or transaction-specific.",
+        ],
+      },
+      {
+        heading: "Costs when buying and selling at the same time",
+        body: [
+          "If you are buying and selling in the same move, there will normally be two linked files: one sale and one purchase. The sale proceeds may be used toward the purchase, your mortgage may need to be redeemed, a new mortgage may need to complete, and chain timing becomes important. A quote should show both sides clearly rather than hiding the combined work in one vague figure.",
+          "For a Kidderminster move, this might involve selling a house in Franche while buying in Stourport, moving from Bewdley into Kidderminster town, or buying and selling across nearby Wyre Forest villages. The location can affect practical coordination, but the main cost drivers remain the title, tenure, mortgage, chain, and documents involved.",
+        ],
+      },
+      {
+        heading: "Mortgage redemption, estate agents, and completion funds",
+        body: [
+          "On a sale, the solicitor may obtain a redemption statement from the existing lender and repay the mortgage on completion. They may also pay estate agent fees from the sale proceeds if authorised. These are not the same as the solicitor's own fees, but they affect the completion statement and the amount the seller receives after completion.",
+          "On a purchase, the solicitor may request mortgage funds from the lender, receive deposit money, handle completion funds, and transfer money to the seller's solicitor. Bank transfer charges may appear as a separate quote item. Ask how completion statements are provided and when final figures are usually confirmed.",
+        ],
+      },
+      {
+        heading: "Leasehold and other extras",
+        body: [
+          "Leasehold property often costs more to handle because there are more documents to review. A buyer's solicitor may need to check the lease, lease length, ground rent, service charge, buildings insurance, management accounts, planned works, restrictions, consents, and notices. A seller may need to buy a management information pack or provide landlord certificates.",
+          "Other possible extras include new-build deadlines, shared ownership, Help to Buy-related work, gifted deposits, unregistered title, transfer of equity, bridging finance, or unusual rights of way. These are not automatically problems, but they should be identified early so the quote reflects the likely work.",
+        ],
+      },
+      {
+        heading: "Where cost comparisons often go wrong",
+        body: [
+          "The biggest issue is comparing incomplete quotes. One firm may include lender work, SDLT return submission, ID checks, and bank transfer fees in the main quote. Another may show a lower starting fee but add those items separately. Without an itemised breakdown, it is hard to compare properly.",
+          "Costs can also become unclear when users forget to mention key facts. If the property is leasehold, has a management company, is new build, uses a gifted deposit, involves a sale and purchase chain, or has a tight deadline, include that in the enquiry. A solicitor partner can only price accurately if the starting information is realistic.",
+        ],
+      },
+      {
+        heading: "What to prepare before requesting a quote",
+        body: [
+          "Prepare the property postcode, sale or purchase price, whether you are buying, selling, or doing both, tenure if known, mortgage lender if known, chain position, estate agent details if available, and any special circumstances such as leasehold, shared ownership, gifted deposit, new build, remortgage, or transfer of equity.",
+          "Keep the first enquiry practical and avoid sending confidential documents through the public quote form. A short summary is enough at this stage. Detailed paperwork should be shared directly with a solicitor firm or legal service provider if you decide to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask what is included in the legal fee, which disbursements are expected, whether VAT is included, what may be charged as an extra, whether the firm can act for your mortgage lender, who will handle your file, and how updates are provided. If you are buying and selling, ask whether the two transactions will be handled by the same team.",
+          "You may also want to ask what happens if the transaction falls through before exchange, whether a no-sale-no-fee arrangement applies, whether leasehold supplements are fixed or variable, and how quickly the file can be opened once you decide to instruct.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are comparing solicitor costs for buying or selling a house in Kidderminster or the wider Wyre Forest area, you can request a no obligation conveyancing quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice. You are under no obligation to instruct any solicitor firm or legal service provider introduced through this website.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+      "what-does-a-conveyancing-solicitor-do",
+      "buying-a-house-in-kidderminster-legal-checklist",
+    ],
+    faq: [
+      {
+        question: "Are solicitor costs different for buying and selling?",
+        answer:
+          "Yes. A buyer and seller usually need different conveyancing work. Buyers often have searches, lender checks, and registration work. Sellers usually prepare contract papers, answer enquiries, and deal with mortgage redemption where relevant.",
+      },
+      {
+        question: "Why do conveyancing quotes show legal fees and disbursements separately?",
+        answer:
+          "Legal fees are charged for the solicitor firm's work. Disbursements are third-party costs such as searches, Land Registry fees, official copy documents, or bank transfer costs. Separating them makes comparison clearer.",
+      },
+      {
+        question: "Can I request a no obligation quote for buying and selling?",
+        answer:
+          "Yes. You can request a no obligation conveyancing quote and your enquiry may be passed to a suitable solicitor partner who can contact you directly.",
+      },
+      {
+        question: "Does this website provide conveyancing advice?",
+        answer:
+          "No. Kidderminster Solicitors is an independent local guide and solicitor introduction website. It does not provide legal advice.",
+      },
+    ],
+  },
+  {
+    type: "guide",
     slug: "buying-a-house-in-kidderminster-legal-checklist",
     title: "Buying a House in Kidderminster: Legal Checklist",
     h1: "Buying a house in Kidderminster: legal checklist",
