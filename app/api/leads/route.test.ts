@@ -144,6 +144,34 @@ describe("POST /api/leads", () => {
     });
   });
 
+  it("uses the verified domain sender when the old Resend onboarding sender is configured", async () => {
+    process.env.LEAD_NOTIFICATION_FROM =
+      "Kidderminster Solicitors <onboarding@resend.dev>";
+    mockEmailSuccess();
+    mockKitSuccess();
+
+    const response = await POST(request(validPayload));
+
+    expect(response.status).toBe(200);
+    expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toMatchObject({
+      from: "Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>",
+    });
+  });
+
+  it("strips accidental wrapping quotes from the sender env value", async () => {
+    process.env.LEAD_NOTIFICATION_FROM =
+      "\"Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>\"";
+    mockEmailSuccess();
+    mockKitSuccess();
+
+    const response = await POST(request(validPayload));
+
+    expect(response.status).toBe(200);
+    expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toMatchObject({
+      from: "Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>",
+    });
+  });
+
   it("returns 502 when the partner email notification fails", async () => {
     fetchMock.mockResolvedValueOnce(
       jsonResponse({ message: "Email rejected" }, 422),

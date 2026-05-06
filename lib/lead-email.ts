@@ -136,6 +136,21 @@ export async function sendLeadNotificationEmail(
   });
 
   if (!response.ok) {
-    throw new Error(`Lead notification email failed: ${response.status}`);
+    let details = response.statusText;
+
+    try {
+      const json = await response.json();
+      if (typeof json.message === "string") {
+        details = json.message;
+      } else if (typeof json.error === "string") {
+        details = json.error;
+      }
+    } catch {
+      // Keep the HTTP status text when Resend returns a non-JSON error.
+    }
+
+    throw new Error(
+      `Lead notification email failed: ${response.status} ${details}`,
+    );
   }
 }

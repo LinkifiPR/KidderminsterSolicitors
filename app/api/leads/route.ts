@@ -3,6 +3,19 @@ import { submitLeadToKit } from "../../../lib/kit";
 import { sendLeadNotificationEmail } from "../../../lib/lead-email";
 import { validateLeadPayload } from "../../../lib/leads";
 
+const DEFAULT_LEAD_NOTIFICATION_FROM =
+  "Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>";
+
+function normaliseLeadNotificationFrom(value: string | undefined) {
+  const trimmed = (value || "").trim().replace(/^["']|["']$/g, "");
+
+  if (!trimmed || trimmed.includes("onboarding@resend.dev")) {
+    return DEFAULT_LEAD_NOTIFICATION_FROM;
+  }
+
+  return trimmed;
+}
+
 export async function POST(request: Request) {
   let body: unknown;
 
@@ -27,9 +40,9 @@ export async function POST(request: Request) {
   const apiKey = process.env.KIT_API_KEY;
   const formId = process.env.KIT_FORM_ID || "9391183";
   const resendApiKey = process.env.RESEND_API_KEY;
-  const leadNotificationFrom =
-    process.env.LEAD_NOTIFICATION_FROM ||
-    "Kidderminster Solicitors <onboarding@resend.dev>";
+  const leadNotificationFrom = normaliseLeadNotificationFrom(
+    process.env.LEAD_NOTIFICATION_FROM,
+  );
   const partnerLeadEmail = process.env.PARTNER_LEAD_EMAIL;
   const adminLeadEmail = process.env.ADMIN_LEAD_EMAIL;
 
