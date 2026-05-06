@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, BookOpen, FileText } from "lucide-react";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
-import { baseUrl, guidePages, servicePages } from "../../lib/site";
+import { baseUrl, buildGuidePath, guidePages, servicePages } from "../../lib/site";
 
 export const metadata: Metadata = {
   title: "Legal Guides Kidderminster",
@@ -95,7 +95,7 @@ export default function LegalGuidesPage() {
                     {guides.map((guide) => (
                       <Link
                         key={guide.slug}
-                        href={`/${guide.slug}/`}
+                        href={buildGuidePath(guide.slug)}
                         className="group rounded-2xl border border-[var(--border)] bg-white p-5 shadow-[0_14px_40px_rgba(7,24,39,0.05)] transition hover:-translate-y-1 hover:border-[rgba(23,92,142,0.35)] hover:shadow-[0_22px_60px_rgba(7,24,39,0.1)]"
                       >
                         <div className="flex gap-4">

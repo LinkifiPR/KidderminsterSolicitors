@@ -4,6 +4,7 @@ import {
   buildCanonicalUrl,
   getAllPageSlugs,
   getDynamicPageSlugs,
+  getRootPageSlugs,
   guideOrganizationSchema,
   guidePages,
   phaseOneServiceSlugs,
@@ -53,12 +54,16 @@ describe("site content model", () => {
   it("builds canonical URLs for every static page", () => {
     expect(buildCanonicalUrl("")).toBe(baseUrl);
     expect(buildCanonicalUrl("privacy-policy")).toBe(`${baseUrl}/privacy-policy/`);
+    expect(buildCanonicalUrl("what-does-a-conveyancing-solicitor-do")).toBe(
+      `${baseUrl}/legal-guides/what-does-a-conveyancing-solicitor-do/`,
+    );
     expect(getAllPageSlugs()).toContain("conveyancing-solicitors-kidderminster");
   });
 
   it("keeps static hubs out of dynamic slug generation", () => {
     expect(getAllPageSlugs()).toContain("legal-guides");
     expect(getDynamicPageSlugs()).not.toContain("legal-guides");
+    expect(getRootPageSlugs()).not.toContain("what-does-a-conveyancing-solicitor-do");
   });
 
   it("includes the next commercial service pages and guide content cluster", () => {

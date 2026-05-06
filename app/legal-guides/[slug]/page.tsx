@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { notFound, redirect } from "next/navigation";
-import { ContentPageView } from "../../components/ContentPageView";
+import { notFound } from "next/navigation";
+import { ContentPageView } from "../../../components/ContentPageView";
 import {
   buildCanonicalUrl,
-  buildGuidePath,
   getPageBySlug,
-  getRootPageSlugs,
-} from "../../lib/site";
+  guidePages,
+} from "../../../lib/site";
 
 type PageProps = {
   params: Promise<{
@@ -15,7 +14,7 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getRootPageSlugs().map((slug) => ({ slug }));
+  return guidePages.map((guide) => ({ slug: guide.slug }));
 }
 
 export async function generateMetadata({
@@ -24,7 +23,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const page = getPageBySlug(slug);
 
-  if (!page) {
+  if (!page || page.type !== "guide") {
     return {};
   }
 
@@ -42,16 +41,12 @@ export async function generateMetadata({
   };
 }
 
-export default async function ContentPage({ params }: PageProps) {
+export default async function GuidePage({ params }: PageProps) {
   const { slug } = await params;
   const page = getPageBySlug(slug);
 
-  if (!page) {
+  if (!page || page.type !== "guide") {
     notFound();
-  }
-
-  if (page.type === "guide") {
-    redirect(buildGuidePath(page.slug));
   }
 
   return <ContentPageView page={page} />;

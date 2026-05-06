@@ -20,7 +20,7 @@ describe("LegalGuidesPage", () => {
       }),
     ).toHaveAttribute(
       "href",
-      "/how-much-do-conveyancing-solicitors-cost-in-kidderminster/",
+      "/legal-guides/how-much-do-conveyancing-solicitors-cost-in-kidderminster/",
     );
   });
 

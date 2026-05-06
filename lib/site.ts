@@ -2156,7 +2156,27 @@ export function buildFaqSchema(page: ServicePage) {
 }
 
 export function buildCanonicalUrl(slug: string) {
-  return slug ? `${baseUrl}/${slug}/` : baseUrl;
+  if (!slug) {
+    return baseUrl;
+  }
+
+  if (slug === "legal-guides") {
+    return `${baseUrl}/legal-guides/`;
+  }
+
+  if (guidePages.some((page) => page.slug === slug)) {
+    return `${baseUrl}/legal-guides/${slug}/`;
+  }
+
+  return `${baseUrl}/${slug}/`;
+}
+
+export function buildPagePath(page: SitePage) {
+  return page.type === "guide" ? `/legal-guides/${page.slug}/` : `/${page.slug}/`;
+}
+
+export function buildGuidePath(slug: string) {
+  return `/legal-guides/${slug}/`;
 }
 
 export function getAllPageSlugs() {
@@ -2167,6 +2187,10 @@ export function getAllPageSlugs() {
 
 export function getDynamicPageSlugs() {
   return [...servicePages, ...trustPages, ...guidePages].map((page) => page.slug);
+}
+
+export function getRootPageSlugs() {
+  return [...servicePages, ...trustPages].map((page) => page.slug);
 }
 
 export function getPageBySlug(slug: string) {
