@@ -2,7 +2,7 @@
 
 import { useMemo, useState, type FormEvent } from "react";
 import Link from "next/link";
-import { Check, ChevronDown, Send } from "lucide-react";
+import { Check, ChevronDown, Clock, MapPin, Send } from "lucide-react";
 import { legalMatterLabels, type LegalMatterType } from "../lib/leads";
 
 type FormState = {
@@ -10,8 +10,12 @@ type FormState = {
   name: string;
   phone: string;
   email: string;
+  address: string;
   postcode: string;
   preferredContactTime: string;
+  hasContactedSolicitor: string;
+  enquiryUrgency: string;
+  matterStage: string;
   message: string;
   consentAccepted: boolean;
   disclosureAccepted: boolean;
@@ -22,12 +26,52 @@ const initialState: FormState = {
   name: "",
   phone: "",
   email: "",
+  address: "",
   postcode: "",
   preferredContactTime: "",
+  hasContactedSolicitor: "",
+  enquiryUrgency: "",
+  matterStage: "",
   message: "",
   consentAccepted: false,
   disclosureAccepted: false,
 };
+
+type SelectOption<Value extends string> = {
+  value: Value;
+  label: string;
+  hint?: string;
+};
+
+const contactTimeOptions: SelectOption<string>[] = [
+  { value: "Morning", label: "Morning", hint: "9am to 12pm" },
+  { value: "Afternoon", label: "Afternoon", hint: "12pm to 5pm" },
+  { value: "Evening", label: "Evening", hint: "5pm to 7pm" },
+  { value: "Anytime", label: "Anytime", hint: "No strong preference" },
+  { value: "As soon as possible", label: "As soon as possible" },
+];
+
+const contactedSolicitorOptions: SelectOption<string>[] = [
+  { value: "No", label: "No" },
+  { value: "Yes - comparing options", label: "Yes, comparing options" },
+  { value: "Yes - waiting for a response", label: "Yes, waiting for a response" },
+  { value: "Not sure", label: "Not sure" },
+];
+
+const urgencyOptions: SelectOption<string>[] = [
+  { value: "As soon as possible", label: "As soon as possible" },
+  { value: "This week", label: "This week" },
+  { value: "Next 2 weeks", label: "Next 2 weeks" },
+  { value: "This month", label: "This month" },
+  { value: "No fixed deadline", label: "No fixed deadline" },
+];
+
+const matterStageOptions: SelectOption<string>[] = [
+  { value: "Ready to compare quotes", label: "Ready to compare quotes" },
+  { value: "Researching options", label: "Researching options" },
+  { value: "Need help understanding next steps", label: "Need next steps" },
+  { value: "Already have documents or correspondence", label: "Have documents" },
+];
 
 function getAttribution() {
   if (typeof window === "undefined") {
@@ -59,7 +103,7 @@ export function QuoteForm() {
     "idle",
   );
   const [message, setMessage] = useState("");
-  const [legalMatterOpen, setLegalMatterOpen] = useState(false);
+  const [openSelect, setOpenSelect] = useState<string | null>(null);
   const matterOptions = useMemo(
     () =>
       Object.entries(legalMatterLabels).map(([value, label]) => ({
@@ -76,9 +120,124 @@ export function QuoteForm() {
     setForm((current) => ({ ...current, [field]: value }));
   }
 
-  function chooseLegalMatter(value: LegalMatterType) {
-    updateField("legalMatterType", value);
-    setLegalMatterOpen(false);
+  function handlePhoneChange(value: string) {
+    const cleaned = value.replace(/[^\d+()\s.-]/g, "");
+    updateField("phone", cleaned);
+  }
+
+  function handlePostcodeChange(value: string) {
+    updateField("postcode", value.toUpperCase());
+  }
+
+  function CustomSelect<Field extends keyof FormState>({
+    name,
+    label,
+    value,
+    options,
+    icon,
+  }: {
+    name: Field;
+    label: string;
+    value: string;
+    options: SelectOption<FormState[Field] & string>[];
+    icon?: "clock" | "pin" | "ks";
+  }) {
+    const isOpen = openSelect === String(name);
+    const selected = options.find((option) => option.value === value);
+    const Icon = icon === "clock" ? Clock : icon === "pin" ? MapPin : null;
+    const buttonId = `${String(name)}-value`;
+    const labelId = `${String(name)}-label`;
+
+    return (
+      <div className="relative">
+        <span id={labelId} className="form-label">
+          {label}
+        </span>
+        <button
+          type="button"
+          aria-haspopup="listbox"
+          aria-expanded={isOpen}
+          aria-labelledby={`${labelId} ${buttonId}`}
+          onClick={() =>
+            setOpenSelect((open) =>
+              open === String(name) ? null : String(name),
+            )
+          }
+          className="legal-matter-trigger flex w-full items-center justify-between gap-4 rounded-[1.05rem] border border-[rgba(198,161,91,0.42)] bg-[linear-gradient(135deg,#ffffff,#f8f5ef)] px-4 py-3.5 text-left font-semibold text-[var(--navy)] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_10px_28px_rgba(7,24,39,0.07)] transition hover:border-[var(--gold)] focus:outline-none focus:ring-4 focus:ring-[rgba(198,161,91,0.18)]"
+        >
+          <span className="flex min-w-0 items-center gap-3">
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--navy)] text-xs font-bold text-[var(--gold)]">
+              {Icon ? <Icon className="h-4 w-4" aria-hidden /> : "KS"}
+            </span>
+            <span id={buttonId} className="min-w-0">
+              <span
+                className={
+                  selected ? "block truncate" : "block truncate text-[var(--muted)]"
+                }
+              >
+                {selected?.label || "Please select"}
+              </span>
+              {selected?.hint ? (
+                <span className="block truncate text-xs font-semibold text-[var(--muted)]">
+                  {selected.hint}
+                </span>
+              ) : null}
+            </span>
+          </span>
+          <ChevronDown
+            className={`h-5 w-5 shrink-0 text-[var(--gold)] transition ${
+              isOpen ? "rotate-180" : ""
+            }`}
+            aria-hidden
+          />
+        </button>
+
+        {isOpen ? (
+          <div
+            role="listbox"
+            aria-label={label}
+            className="legal-matter-listbox absolute z-30 mt-3 grid w-full gap-1.5 rounded-[1.25rem] border border-[rgba(198,161,91,0.35)] bg-white p-2 shadow-[0_22px_70px_rgba(7,24,39,0.18)]"
+          >
+            {options.map((option) => {
+              const isSelected = option.value === value;
+
+              return (
+                <button
+                  key={option.value}
+                  type="button"
+                  role="option"
+                  aria-selected={isSelected}
+                  onClick={() => {
+                    updateField(name, option.value as FormState[Field]);
+                    setOpenSelect(null);
+                  }}
+                  className={`legal-matter-option flex w-full items-center justify-between gap-3 rounded-2xl px-4 py-3 text-left text-sm font-semibold text-[var(--navy)] transition hover:bg-[var(--pale-blue)] ${
+                    isSelected
+                      ? "bg-[var(--pale-blue)] text-[var(--trust-blue)]"
+                      : "bg-white"
+                  }`}
+                >
+                  <span className="min-w-0">
+                    <span className="block truncate">{option.label}</span>
+                    {option.hint ? (
+                      <span className="block text-xs text-[var(--muted)]">
+                        {option.hint}
+                      </span>
+                    ) : null}
+                  </span>
+                  {isSelected ? (
+                    <Check
+                      className="h-4 w-4 shrink-0 text-[var(--gold)]"
+                      aria-hidden
+                    />
+                  ) : null}
+                </button>
+              );
+            })}
+          </div>
+        ) : null}
+      </div>
+    );
   }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -124,9 +283,9 @@ export function QuoteForm() {
     <form
       aria-label="Quote request"
       onSubmit={handleSubmit}
-      className="quote-form-card mx-auto w-full max-w-2xl overflow-hidden rounded-[1.65rem] border border-white/80 bg-white text-[var(--charcoal)] shadow-[0_24px_90px_rgba(7,24,39,0.16)] ring-1 ring-[rgba(198,161,91,0.24)]"
+      className="quote-form-card mx-auto w-full max-w-2xl overflow-visible rounded-[1.65rem] border border-white/80 bg-white text-[var(--charcoal)] shadow-[0_24px_90px_rgba(7,24,39,0.16)] ring-1 ring-[rgba(198,161,91,0.24)]"
     >
-      <div className="bg-[linear-gradient(135deg,var(--navy),var(--trust-blue))] px-5 py-5 text-white sm:px-6">
+      <div className="rounded-t-[1.65rem] bg-[linear-gradient(135deg,var(--navy),var(--trust-blue))] px-5 py-5 text-white sm:px-6">
         <div className="inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-[var(--gold)]">
           Private quote request
         </div>
@@ -140,65 +299,13 @@ export function QuoteForm() {
       </div>
 
       <div className="grid gap-3 p-5 sm:grid-cols-2 sm:p-6">
-        <div className="relative sm:col-span-2">
-          <span id="legal-matter-label" className="form-label">
-            Legal matter type
-          </span>
-          <button
-            type="button"
-            aria-haspopup="listbox"
-            aria-expanded={legalMatterOpen}
-            aria-labelledby="legal-matter-label legal-matter-value"
-            onClick={() => setLegalMatterOpen((open) => !open)}
-            className="legal-matter-trigger flex w-full items-center justify-between gap-4 rounded-[1.05rem] border border-[rgba(198,161,91,0.42)] bg-[linear-gradient(135deg,#ffffff,#f8f5ef)] px-4 py-3.5 text-left font-semibold text-[var(--navy)] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_10px_28px_rgba(7,24,39,0.07)] transition hover:border-[var(--gold)] focus:outline-none focus:ring-4 focus:ring-[rgba(198,161,91,0.18)]"
-          >
-            <span className="flex min-w-0 items-center gap-3">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--navy)] text-xs font-bold text-[var(--gold)]">
-                KS
-              </span>
-              <span id="legal-matter-value" className="truncate">
-                {legalMatterLabels[form.legalMatterType]}
-              </span>
-            </span>
-            <ChevronDown
-              className={`h-5 w-5 shrink-0 text-[var(--gold)] transition ${
-                legalMatterOpen ? "rotate-180" : ""
-              }`}
-              aria-hidden
-            />
-          </button>
-
-          {legalMatterOpen ? (
-            <div
-              role="listbox"
-              aria-label="Legal matter type"
-              className="legal-matter-listbox absolute z-30 mt-3 grid w-full gap-1.5 rounded-[1.25rem] border border-[rgba(198,161,91,0.35)] bg-white p-2 shadow-[0_22px_70px_rgba(7,24,39,0.18)]"
-            >
-              {matterOptions.map((option) => {
-                const isSelected = option.value === form.legalMatterType;
-
-                return (
-                  <button
-                    key={option.value}
-                    type="button"
-                    role="option"
-                    aria-selected={isSelected}
-                    onClick={() => chooseLegalMatter(option.value)}
-                    className={`legal-matter-option flex w-full items-center justify-between rounded-2xl px-4 py-3 text-left text-sm font-semibold text-[var(--navy)] transition hover:bg-[var(--pale-blue)] ${
-                      isSelected
-                        ? "bg-[var(--pale-blue)] text-[var(--trust-blue)]"
-                        : "bg-white"
-                    }`}
-                  >
-                    <span>{option.label}</span>
-                    {isSelected ? (
-                      <Check className="h-4 w-4 text-[var(--gold)]" aria-hidden />
-                    ) : null}
-                  </button>
-                );
-              })}
-            </div>
-          ) : null}
+        <div className="sm:col-span-2">
+          <CustomSelect
+            name="legalMatterType"
+            label="Legal matter type"
+            value={form.legalMatterType}
+            options={matterOptions}
+          />
         </div>
 
         <label>
@@ -213,12 +320,17 @@ export function QuoteForm() {
         </label>
 
         <label>
-          <span className="form-label">Phone</span>
+          <span className="form-label">UK phone number</span>
           <input
+            type="tel"
             value={form.phone}
-            onChange={(event) => updateField("phone", event.target.value)}
+            onChange={(event) => handlePhoneChange(event.target.value)}
             className="form-input"
             autoComplete="tel"
+            inputMode="tel"
+            pattern="^(0[1-9][0-9 ]{8,13}|\\+44[1-9][0-9 ]{8,13})$"
+            placeholder="07123 456789"
+            title="Enter a UK phone number starting 0 or +44"
             required
           />
         </label>
@@ -239,24 +351,67 @@ export function QuoteForm() {
           <span className="form-label">Postcode</span>
           <input
             value={form.postcode}
-            onChange={(event) => updateField("postcode", event.target.value)}
+            onChange={(event) => handlePostcodeChange(event.target.value)}
             className="form-input"
             autoComplete="postal-code"
+            inputMode="text"
+            pattern="^[A-Za-z]{1,2}[0-9][A-Za-z0-9]?\\s*[0-9][A-Za-z]{2}$"
+            placeholder="DY10 1AA"
+            title="Enter a valid UK postcode"
             required
           />
         </label>
 
         <label className="sm:col-span-2">
-          <span className="form-label">Preferred contact time</span>
+          <span className="form-label">Address or first line</span>
           <input
-            value={form.preferredContactTime}
-            onChange={(event) =>
-              updateField("preferredContactTime", event.target.value)
-            }
+            value={form.address}
+            onChange={(event) => updateField("address", event.target.value)}
             className="form-input"
-            placeholder="Morning, afternoon, evening..."
+            autoComplete="street-address"
+            placeholder="Optional, but useful for property or local enquiries"
           />
         </label>
+
+        <div className="sm:col-span-2">
+          <CustomSelect
+            name="preferredContactTime"
+            label="Preferred contact time"
+            value={form.preferredContactTime}
+            options={contactTimeOptions}
+            icon="clock"
+          />
+        </div>
+
+        <div className="sm:col-span-2 grid gap-3 rounded-[1.35rem] border border-[rgba(216,226,234,0.92)] bg-[linear-gradient(135deg,#f8fbfd,#f8f5ef)] p-4">
+          <div>
+            <p className="text-sm font-bold text-[var(--navy)]">
+              Help us send a stronger enquiry
+            </p>
+            <p className="mt-1 text-xs leading-5 text-[var(--muted)]">
+              These details help a solicitor partner understand how ready and
+              urgent your enquiry is.
+            </p>
+          </div>
+          <CustomSelect
+            name="hasContactedSolicitor"
+            label="Have you contacted a solicitor already?"
+            value={form.hasContactedSolicitor}
+            options={contactedSolicitorOptions}
+          />
+          <CustomSelect
+            name="enquiryUrgency"
+            label="How urgent is this?"
+            value={form.enquiryUrgency}
+            options={urgencyOptions}
+          />
+          <CustomSelect
+            name="matterStage"
+            label="What stage are you at?"
+            value={form.matterStage}
+            options={matterStageOptions}
+          />
+        </div>
 
         <label className="sm:col-span-2">
           <span className="form-label">Brief description</span>

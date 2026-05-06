@@ -17,8 +17,12 @@ export type Lead = {
   name: string;
   phone: string;
   email: string;
+  address: string;
   postcode: string;
   preferredContactTime: string;
+  hasContactedSolicitor: string;
+  enquiryUrgency: string;
+  matterStage: string;
   message: string;
   consentAccepted: true;
   disclosureAccepted: true;
@@ -55,6 +59,19 @@ function isLegalMatterType(value: string): value is LegalMatterType {
   return Object.hasOwn(legalMatterLabels, value);
 }
 
+function isValidUkPhone(value: string) {
+  const compact = value.replace(/[()\s.-]/g, "");
+  const normalized = compact.startsWith("0044")
+    ? `+44${compact.slice(4)}`
+    : compact;
+
+  return /^(?:0[1-9]\d{9}|\+44[1-9]\d{9})$/.test(normalized);
+}
+
+function isValidUkPostcode(value: string) {
+  return /^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$/.test(value);
+}
+
 export function validateLeadPayload(payload: unknown): ValidationResult {
   const data =
     payload && typeof payload === "object"
@@ -65,8 +82,12 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
   const name = asString(data.name);
   const phone = asString(data.phone);
   const email = asString(data.email).toLowerCase();
+  const address = asString(data.address);
   const postcode = asString(data.postcode).toUpperCase();
   const preferredContactTime = asString(data.preferredContactTime);
+  const hasContactedSolicitor = asString(data.hasContactedSolicitor);
+  const enquiryUrgency = asString(data.enquiryUrgency);
+  const matterStage = asString(data.matterStage);
   const message = asString(data.message);
   const consentAccepted = asBoolean(data.consentAccepted);
   const disclosureAccepted = asBoolean(data.disclosureAccepted);
@@ -82,6 +103,8 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
 
   if (!phone) {
     errors.push("Phone is required.");
+  } else if (!isValidUkPhone(phone)) {
+    errors.push("Please enter a valid UK phone number.");
   }
 
   if (!email || !email.includes("@")) {
@@ -90,6 +113,24 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
 
   if (!postcode) {
     errors.push("Postcode is required.");
+  } else if (!isValidUkPostcode(postcode)) {
+    errors.push("Please enter a valid UK postcode.");
+  }
+
+  if (!preferredContactTime) {
+    errors.push("Preferred contact time is required.");
+  }
+
+  if (!hasContactedSolicitor) {
+    errors.push("Please confirm whether you have already contacted a solicitor.");
+  }
+
+  if (!enquiryUrgency) {
+    errors.push("Urgency is required.");
+  }
+
+  if (!matterStage) {
+    errors.push("Matter stage is required.");
   }
 
   if (!message) {
@@ -115,8 +156,12 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
       name,
       phone,
       email,
+      address,
       postcode,
       preferredContactTime,
+      hasContactedSolicitor,
+      enquiryUrgency,
+      matterStage,
       message,
       consentAccepted: true,
       disclosureAccepted: true,
@@ -150,11 +195,15 @@ export function mapLeadToKitFields(lead: Lead) {
     full_name: lead.name,
     email: lead.email,
     phone: lead.phone,
+    address: lead.address,
     postcode: lead.postcode,
     legal_category: legalMatterLabels[lead.legalMatterType],
     legal_matter_type: legalMatterLabels[lead.legalMatterType],
     town: lead.town,
     preferred_contact_time: lead.preferredContactTime,
+    has_contacted_solicitor: lead.hasContactedSolicitor,
+    enquiry_urgency: lead.enquiryUrgency,
+    matter_stage: lead.matterStage,
     enquiry_message: lead.message,
     message: lead.message,
     source_page: lead.sourcePage,

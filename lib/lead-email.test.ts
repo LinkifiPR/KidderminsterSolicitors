@@ -9,6 +9,10 @@ const validPayload = {
   email: "chris@example.com",
   postcode: "DY10 1AA",
   preferredContactTime: "Morning",
+  address: "1 High Street, Kidderminster",
+  hasContactedSolicitor: "No",
+  enquiryUrgency: "This week",
+  matterStage: "Ready to compare quotes",
   message: "I need help with probate for a Kidderminster estate.",
   consentAccepted: true,
   disclosureAccepted: true,
@@ -42,9 +46,13 @@ describe("buildLeadNotificationEmail", () => {
     expect(email.text).toContain("Name: Chris Test");
     expect(email.text).toContain("Email: chris@example.com");
     expect(email.text).toContain("Phone: 07873 737474");
+    expect(email.text).toContain("Address: 1 High Street, Kidderminster");
     expect(email.text).toContain("Postcode: DY10 1AA");
     expect(email.text).toContain("Legal matter type: Probate");
     expect(email.text).toContain("Preferred contact time: Morning");
+    expect(email.text).toContain("Already contacted a solicitor?: No");
+    expect(email.text).toContain("Urgency: This week");
+    expect(email.text).toContain("Matter stage: Ready to compare quotes");
     expect(email.text).toContain("Brief description: I need help with probate");
     expect(email.text).toContain("Source page: https://kidderminstersolicitors.co.uk/probate-solicitors-kidderminster/");
     expect(email.text).toContain("UTM source: google");
