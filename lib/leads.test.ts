@@ -62,6 +62,17 @@ describe("validateLeadPayload", () => {
     }
   });
 
+  it("accepts common UK postcode formats used by Kidderminster enquiries", () => {
+    for (const postcode of ["DY10 1AA", "DY101AA", "dy10 1aa", "DY10 4TD"]) {
+      const result = validateLeadPayload({
+        ...validPayload,
+        postcode,
+      });
+
+      expect(result.ok).toBe(true);
+    }
+  });
+
   it("requires preferred contact time and lead qualification answers", () => {
     const result = validateLeadPayload({
       ...validPayload,

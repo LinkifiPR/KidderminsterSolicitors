@@ -126,7 +126,7 @@ export function QuoteForm() {
   }
 
   function handlePostcodeChange(value: string) {
-    updateField("postcode", value.toUpperCase());
+    updateField("postcode", value.toUpperCase().replace(/\s+/g, " "));
   }
 
   function CustomSelect<Field extends keyof FormState>({
@@ -355,9 +355,7 @@ export function QuoteForm() {
             className="form-input"
             autoComplete="postal-code"
             inputMode="text"
-            pattern="^[A-Za-z]{1,2}[0-9][A-Za-z0-9]?\\s*[0-9][A-Za-z]{2}$"
             placeholder="DY10 1AA"
-            title="Enter a valid UK postcode"
             required
           />
         </label>

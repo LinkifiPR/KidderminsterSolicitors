@@ -69,7 +69,7 @@ function isValidUkPhone(value: string) {
 }
 
 function isValidUkPostcode(value: string) {
-  return /^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$/.test(value);
+  return /^(?:GIR\s*0AA|[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2})$/.test(value);
 }
 
 export function validateLeadPayload(payload: unknown): ValidationResult {
@@ -83,7 +83,9 @@ export function validateLeadPayload(payload: unknown): ValidationResult {
   const phone = asString(data.phone);
   const email = asString(data.email).toLowerCase();
   const address = asString(data.address);
-  const postcode = asString(data.postcode).toUpperCase();
+  const postcode = asString(data.postcode)
+    .toUpperCase()
+    .replace(/\s+/g, " ");
   const preferredContactTime = asString(data.preferredContactTime);
   const hasContactedSolicitor = asString(data.hasContactedSolicitor);
   const enquiryUrgency = asString(data.enquiryUrgency);
