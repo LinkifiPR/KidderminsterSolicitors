@@ -4,7 +4,6 @@ const KIT_API_BASE = "https://api.kit.com/v4";
 
 type KitConfig = {
   apiKey: string;
-  formId: string;
 };
 
 type KitSubscriberResponse = {
@@ -68,17 +67,6 @@ async function createOrUpdateSubscriber(lead: Lead, config: KitConfig) {
   });
 }
 
-async function addSubscriberToForm(lead: Lead, config: KitConfig) {
-  return kitRequest<KitSubscriberResponse>(
-    `/forms/${config.formId}/subscribers`,
-    config,
-    {
-      email_address: lead.email,
-      referrer: lead.sourcePage || undefined,
-    },
-  );
-}
-
 async function createOrReuseTag(name: string, config: KitConfig) {
   const tagsResponse = await kitRequest<KitTagsResponse>("/tags", config);
   const existingTag = tagsResponse.tags?.find((tag) => tag.name === name);
@@ -108,7 +96,6 @@ async function tagSubscriber(email: string, tagId: number, config: KitConfig) {
 
 export async function submitLeadToKit(lead: Lead, config: KitConfig) {
   await createOrUpdateSubscriber(lead, config);
-  await addSubscriberToForm(lead, config);
 
   for (const tagName of buildLeadTags(lead)) {
     const tagId = await createOrReuseTag(tagName, config);

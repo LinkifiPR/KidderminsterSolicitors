@@ -47,7 +47,7 @@ Required email environment variables:
 ```bash
 RESEND_API_KEY=
 PARTNER_LEAD_EMAIL=chrispanteli@gmail.com
-LEAD_NOTIFICATION_FROM="Kidderminster Solicitors <onboarding@resend.dev>"
+LEAD_NOTIFICATION_FROM="Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>"
 ```
 
 Optional internal copy:
@@ -56,20 +56,19 @@ Optional internal copy:
 ADMIN_LEAD_EMAIL=chrispanteli@gmail.com
 ```
 
-For production, verify `kidderminstersolicitors.co.uk` in Resend and change
-`LEAD_NOTIFICATION_FROM` to a domain sender such as:
+Optional separate sender for public user confirmation emails:
 
 ```bash
-LEAD_NOTIFICATION_FROM="Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>"
+LEAD_CONFIRMATION_FROM="Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>"
 ```
 
 The form submits to `/api/leads`, which:
 
 - creates or updates the Kit subscriber
-- adds the subscriber to Kit form `9391183`
 - creates/reuses routing tags
 - applies website, town, and category tags
 - sends the validated lead details to `PARTNER_LEAD_EMAIL`
+- sends a Resend confirmation email to the submitted user email address
 
 Kit tags currently created by the integration:
 
@@ -85,7 +84,7 @@ Kit tags currently created by the integration:
 - `Category - Commercial`
 - `Category - Landlord Tenant`
 
-Set Kit automations to trigger from either the quote request form or the category
-tags. Use those automations for user confirmation and any reporting sheet
-integration. Partner lead delivery is handled by the server-side email
-notification in `/api/leads`.
+Set Kit automations to trigger from tags only when they are internal/admin
+workflows. Do not use Kit to send public-facing quote enquiry confirmations.
+Partner lead delivery and user confirmation are handled by server-side Resend
+email in `/api/leads`.

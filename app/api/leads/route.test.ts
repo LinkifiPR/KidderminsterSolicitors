@@ -40,7 +40,6 @@ describe("POST /api/leads", () => {
   function mockKitSuccess() {
     fetchMock
       .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
-      .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
       .mockResolvedValueOnce(jsonResponse({ tags: [] }))
       .mockResolvedValueOnce(jsonResponse({ tag: { id: 10 } }))
       .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }))
@@ -118,8 +117,9 @@ describe("POST /api/leads", () => {
   });
 
   it("submits valid leads to Kit", async () => {
-    mockEmailSuccess();
     mockKitSuccess();
+    mockEmailSuccess();
+    mockEmailSuccess();
 
     const response = await POST(request(validPayload));
 
@@ -127,6 +127,16 @@ describe("POST /api/leads", () => {
     await expect(response.json()).resolves.toEqual({ ok: true });
     expect(fetchMock).toHaveBeenNthCalledWith(
       1,
+      "https://api.kit.com/v4/subscribers",
+      expect.objectContaining({ method: "POST" }),
+    );
+    expect(fetchMock).toHaveBeenNthCalledWith(
+      23,
+      "https://api.resend.com/emails",
+      expect.objectContaining({ method: "POST" }),
+    );
+    expect(fetchMock).toHaveBeenNthCalledWith(
+      24,
       "https://api.resend.com/emails",
       expect.objectContaining({ method: "POST" }),
     );
@@ -147,13 +157,14 @@ describe("POST /api/leads", () => {
   it("uses the verified domain sender when the old Resend onboarding sender is configured", async () => {
     process.env.LEAD_NOTIFICATION_FROM =
       "Kidderminster Solicitors <onboarding@resend.dev>";
-    mockEmailSuccess();
     mockKitSuccess();
+    mockEmailSuccess();
+    mockEmailSuccess();
 
     const response = await POST(request(validPayload));
 
     expect(response.status).toBe(200);
-    expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toMatchObject({
+    expect(JSON.parse(fetchMock.mock.calls[22][1].body)).toMatchObject({
       from: "Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>",
     });
   });
@@ -161,18 +172,20 @@ describe("POST /api/leads", () => {
   it("strips accidental wrapping quotes from the sender env value", async () => {
     process.env.LEAD_NOTIFICATION_FROM =
       "\"Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>\"";
-    mockEmailSuccess();
     mockKitSuccess();
+    mockEmailSuccess();
+    mockEmailSuccess();
 
     const response = await POST(request(validPayload));
 
     expect(response.status).toBe(200);
-    expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toMatchObject({
+    expect(JSON.parse(fetchMock.mock.calls[22][1].body)).toMatchObject({
       from: "Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>",
     });
   });
 
   it("returns 502 when the partner email notification fails", async () => {
+    mockKitSuccess();
     fetchMock.mockResolvedValueOnce(
       jsonResponse({ message: "Email rejected" }, 422),
     );
@@ -182,23 +195,32 @@ describe("POST /api/leads", () => {
     expect(response.status).toBe(502);
     await expect(response.json()).resolves.toEqual({
       ok: false,
-      errors: ["Lead notification failed. Please try again."],
+      errors: ["Lead capture failed. Please try again."],
     });
-    expect(fetchMock).toHaveBeenCalledTimes(1);
+    expect(fetchMock).toHaveBeenCalledTimes(23);
   });
 
-  it("returns success with a warning when Kit fails after the email sends", async () => {
+  it("sends a Resend confirmation email to the user after the partner notification", async () => {
+    mockKitSuccess();
     mockEmailSuccess();
-    fetchMock.mockResolvedValueOnce(
-      jsonResponse({ errors: ["Unknown custom field"] }, 422),
-    );
+    mockEmailSuccess();
 
     const response = await POST(request(validPayload));
 
     expect(response.status).toBe(200);
-    await expect(response.json()).resolves.toEqual({
-      ok: true,
-      warnings: ["Subscriber capture needs review."],
+    const partnerEmailPayload = JSON.parse(fetchMock.mock.calls[22][1].body);
+    const confirmationEmailPayload = JSON.parse(fetchMock.mock.calls[23][1].body);
+    expect(partnerEmailPayload).toMatchObject({
+      to: ["chrispanteli@gmail.com"],
+      reply_to: "sarah@example.com",
+      subject: "You have received a lead from KidderminsterSolicitors.co.uk",
     });
+    expect(confirmationEmailPayload).toMatchObject({
+      to: ["sarah@example.com"],
+      reply_to: "leads@kidderminstersolicitors.co.uk",
+      subject: "We’ve received your solicitor enquiry",
+    });
+    expect(confirmationEmailPayload.text).not.toContain("confirm your subscription");
+    expect(confirmationEmailPayload.text).not.toContain("Kit");
   });
 });

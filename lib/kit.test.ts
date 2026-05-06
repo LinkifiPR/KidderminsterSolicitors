@@ -44,7 +44,7 @@ describe("submitLeadToKit", () => {
     fetchMock.mockReset();
   });
 
-  it("creates a subscriber, adds them to the form, creates/reuses tags, and applies tags", async () => {
+  it("creates a subscriber, creates/reuses tags, and applies tags without subscribing them to a Kit form", async () => {
     const result = validateLeadPayload(payload);
 
     if (!result.ok) {
@@ -52,11 +52,6 @@ describe("submitLeadToKit", () => {
     }
 
     fetchMock
-      .mockResolvedValueOnce(
-        jsonResponse({
-          subscriber: { id: 123, email_address: "sarah@example.com" },
-        }),
-      )
       .mockResolvedValueOnce(
         jsonResponse({
           subscriber: { id: 123, email_address: "sarah@example.com" },
@@ -114,7 +109,6 @@ describe("submitLeadToKit", () => {
 
     await submitLeadToKit(result.lead, {
       apiKey: "test-key",
-      formId: "9391183",
     });
 
     expect(fetchMock).toHaveBeenNthCalledWith(
@@ -129,29 +123,28 @@ describe("submitLeadToKit", () => {
     );
     expect(fetchMock).toHaveBeenNthCalledWith(
       2,
-      "https://api.kit.com/v4/forms/9391183/subscribers",
-      expect.objectContaining({ method: "POST" }),
-    );
-    expect(fetchMock).toHaveBeenNthCalledWith(
-      3,
       "https://api.kit.com/v4/tags",
       expect.objectContaining({ method: "GET" }),
     );
     expect(fetchMock).toHaveBeenNthCalledWith(
-      4,
+      3,
       "https://api.kit.com/v4/tags",
       expect.objectContaining({
         body: JSON.stringify({ name: "Legal Lead" }),
       }),
     );
     expect(fetchMock).toHaveBeenNthCalledWith(
-      5,
+      4,
       "https://api.kit.com/v4/tags/10/subscribers",
       expect.objectContaining({
         body: JSON.stringify({ email_address: "sarah@example.com" }),
       }),
     );
-    expect(fetchMock).toHaveBeenCalledTimes(23);
+    expect(fetchMock).not.toHaveBeenCalledWith(
+      "https://api.kit.com/v4/forms/9391183/subscribers",
+      expect.anything(),
+    );
+    expect(fetchMock).toHaveBeenCalledTimes(22);
   });
 
   it("reuses an existing Kit tag instead of creating a duplicate", async () => {
@@ -162,11 +155,6 @@ describe("submitLeadToKit", () => {
     }
 
     fetchMock
-      .mockResolvedValueOnce(
-        jsonResponse({
-          subscriber: { id: 123, email_address: "sarah@example.com" },
-        }),
-      )
       .mockResolvedValueOnce(
         jsonResponse({
           subscriber: { id: 123, email_address: "sarah@example.com" },
@@ -193,7 +181,6 @@ describe("submitLeadToKit", () => {
 
     await submitLeadToKit(result.lead, {
       apiKey: "test-key",
-      formId: "9391183",
     });
 
     expect(fetchMock).not.toHaveBeenCalledWith(
@@ -202,6 +189,6 @@ describe("submitLeadToKit", () => {
         body: expect.any(String),
       }),
     );
-    expect(fetchMock).toHaveBeenCalledTimes(16);
+    expect(fetchMock).toHaveBeenCalledTimes(15);
   });
 });

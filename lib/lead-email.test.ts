@@ -1,5 +1,10 @@
 import { describe, expect, it, vi } from "vitest";
-import { buildLeadNotificationEmail, sendLeadNotificationEmail } from "./lead-email";
+import {
+  buildLeadConfirmationEmail,
+  buildLeadNotificationEmail,
+  sendLeadConfirmationEmail,
+  sendLeadNotificationEmail,
+} from "./lead-email";
 import { validateLeadPayload } from "./leads";
 
 const validPayload = {
@@ -61,6 +66,51 @@ describe("buildLeadNotificationEmail", () => {
     expect(email.html).toContain("<strong>Name:</strong>");
     expect(email.html).toContain("Chris Test");
   });
+
+  it("falls back to the site reply-to when the submitted email is invalid", () => {
+    const email = buildLeadNotificationEmail(
+      {
+        ...validLead(),
+        email: "not-an-email",
+      },
+      {
+        from: "Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>",
+        partnerEmail: "partner@example.com",
+        fallbackReplyTo: "leads@kidderminstersolicitors.co.uk",
+      },
+    );
+
+    expect(email.reply_to).toBe("leads@kidderminstersolicitors.co.uk");
+  });
+});
+
+describe("buildLeadConfirmationEmail", () => {
+  it("formats a user confirmation email without Kit subscription wording", () => {
+    const email = buildLeadConfirmationEmail(validLead(), {
+      from: "Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>",
+      replyTo: "leads@kidderminstersolicitors.co.uk",
+    });
+
+    expect(email).toMatchObject({
+      from: "Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>",
+      to: ["chris@example.com"],
+      reply_to: "leads@kidderminstersolicitors.co.uk",
+      subject: "We’ve received your solicitor enquiry",
+    });
+    expect(email.text).toContain("Hello Chris Test,");
+    expect(email.text).toContain("Thank you for submitting your enquiry");
+    expect(email.text).toContain("Legal matter type: Probate");
+    expect(email.text).toContain("Postcode: DY10 1AA");
+    expect(email.text).toContain("Urgency: This week");
+    expect(email.text).toContain("Already contacted a solicitor: No");
+    expect(email.text).toContain(
+      "We are not a law firm and do not provide legal advice.",
+    );
+    expect(email.text).not.toContain("confirm your subscription");
+    expect(email.text).not.toContain("Kit");
+    expect(email.html).not.toContain("confirm your subscription");
+    expect(email.html).not.toContain("Kit");
+  });
 });
 
 describe("sendLeadNotificationEmail", () => {
@@ -94,6 +144,29 @@ describe("sendLeadNotificationEmail", () => {
       to: ["chrispanteli@gmail.com"],
       reply_to: "chris@example.com",
       subject: "You have received a lead from KidderminsterSolicitors.co.uk",
+    });
+  });
+
+  it("sends the user confirmation through Resend", async () => {
+    const fetchMock = vi.fn().mockResolvedValue(
+      new Response(JSON.stringify({ id: "email_456" }), {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      }),
+    );
+    vi.stubGlobal("fetch", fetchMock);
+
+    await sendLeadConfirmationEmail(validLead(), {
+      apiKey: "resend-test-key",
+      from: "Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>",
+      replyTo: "leads@kidderminstersolicitors.co.uk",
+    });
+
+    expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toMatchObject({
+      from: "Kidderminster Solicitors <leads@kidderminstersolicitors.co.uk>",
+      to: ["chris@example.com"],
+      reply_to: "leads@kidderminstersolicitors.co.uk",
+      subject: "We’ve received your solicitor enquiry",
     });
   });
 });
