@@ -64,6 +64,10 @@ describe("POST /api/leads", () => {
       .mockResolvedValueOnce(jsonResponse({ subscriber: { id: 123 } }));
   }
 
+  function mockEmailSuccess() {
+    fetchMock.mockResolvedValueOnce(jsonResponse({ id: "email_123" }));
+  }
+
   beforeEach(() => {
     vi.stubGlobal("fetch", fetchMock);
     process.env = {
@@ -114,14 +118,15 @@ describe("POST /api/leads", () => {
   });
 
   it("submits valid leads to Kit", async () => {
+    mockEmailSuccess();
     mockKitSuccess();
-    fetchMock.mockResolvedValueOnce(jsonResponse({ id: "email_123" }));
 
     const response = await POST(request(validPayload));
 
     expect(response.status).toBe(200);
     await expect(response.json()).resolves.toEqual({ ok: true });
-    expect(fetchMock).toHaveBeenLastCalledWith(
+    expect(fetchMock).toHaveBeenNthCalledWith(
+      1,
       "https://api.resend.com/emails",
       expect.objectContaining({ method: "POST" }),
     );
@@ -140,7 +145,6 @@ describe("POST /api/leads", () => {
   });
 
   it("returns 502 when the partner email notification fails", async () => {
-    mockKitSuccess();
     fetchMock.mockResolvedValueOnce(
       jsonResponse({ message: "Email rejected" }, 422),
     );
@@ -150,7 +154,23 @@ describe("POST /api/leads", () => {
     expect(response.status).toBe(502);
     await expect(response.json()).resolves.toEqual({
       ok: false,
-      errors: ["Lead capture failed. Please try again."],
+      errors: ["Lead notification failed. Please try again."],
+    });
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+  });
+
+  it("returns success with a warning when Kit fails after the email sends", async () => {
+    mockEmailSuccess();
+    fetchMock.mockResolvedValueOnce(
+      jsonResponse({ errors: ["Unknown custom field"] }, 422),
+    );
+
+    const response = await POST(request(validPayload));
+
+    expect(response.status).toBe(200);
+    await expect(response.json()).resolves.toEqual({
+      ok: true,
+      warnings: ["Subscriber capture needs review."],
     });
   });
 });

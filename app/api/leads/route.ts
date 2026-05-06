@@ -41,19 +41,28 @@ export async function POST(request: Request) {
   }
 
   try {
-    await submitLeadToKit(validation.lead, { apiKey, formId });
     await sendLeadNotificationEmail(validation.lead, {
       apiKey: resendApiKey,
       from: leadNotificationFrom,
       partnerEmail: partnerLeadEmail,
       adminEmail: adminLeadEmail,
     });
-    return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error("Lead capture failed", error);
+    console.error("Lead notification failed", error);
     return NextResponse.json(
-      { ok: false, errors: ["Lead capture failed. Please try again."] },
+      { ok: false, errors: ["Lead notification failed. Please try again."] },
       { status: 502 },
     );
+  }
+
+  try {
+    await submitLeadToKit(validation.lead, { apiKey, formId });
+    return NextResponse.json({ ok: true });
+  } catch (error) {
+    console.error("Kit lead capture failed after notification email", error);
+    return NextResponse.json({
+      ok: true,
+      warnings: ["Subscriber capture needs review."],
+    });
   }
 }
