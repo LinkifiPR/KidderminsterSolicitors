@@ -192,22 +192,33 @@ export function buildLeadTags(lead: Lead) {
   ];
 }
 
+function buildKitLeadSummary(lead: Lead) {
+  return [
+    lead.message,
+    "",
+    "Lead qualification details:",
+    `Address: ${lead.address || "Not provided"}`,
+    `Preferred contact time: ${lead.preferredContactTime}`,
+    `Already contacted a solicitor?: ${lead.hasContactedSolicitor}`,
+    `Urgency: ${lead.enquiryUrgency}`,
+    `Matter stage: ${lead.matterStage}`,
+  ].join("\n");
+}
+
 export function mapLeadToKitFields(lead: Lead) {
+  const leadSummary = buildKitLeadSummary(lead);
+
   return {
     full_name: lead.name,
     email: lead.email,
     phone: lead.phone,
-    address: lead.address,
     postcode: lead.postcode,
     legal_category: legalMatterLabels[lead.legalMatterType],
     legal_matter_type: legalMatterLabels[lead.legalMatterType],
     town: lead.town,
     preferred_contact_time: lead.preferredContactTime,
-    has_contacted_solicitor: lead.hasContactedSolicitor,
-    enquiry_urgency: lead.enquiryUrgency,
-    matter_stage: lead.matterStage,
-    enquiry_message: lead.message,
-    message: lead.message,
+    enquiry_message: leadSummary,
+    message: leadSummary,
     source_page: lead.sourcePage,
     utm_source: lead.utmSource,
     utm_medium: lead.utmMedium,

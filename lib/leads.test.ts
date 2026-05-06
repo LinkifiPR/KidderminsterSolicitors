@@ -110,11 +110,10 @@ describe("mapLeadToKitFields", () => {
       legal_category: "Conveyancing",
       legal_matter_type: "Conveyancing",
       town: "Kidderminster",
-      address: "1 High Street, Kidderminster",
-      enquiry_message: "I am buying a house in Kidderminster.",
-      has_contacted_solicitor: "No",
-      enquiry_urgency: "Within 1 week",
-      matter_stage: "Ready to compare quotes",
+      enquiry_message: expect.stringContaining(
+        "I am buying a house in Kidderminster.",
+      ),
+      message: expect.stringContaining("Address: 1 High Street, Kidderminster"),
       source_page: "https://kidderminstersolicitors.co.uk/",
       utm_source: "google",
       consent_given: "true",
@@ -122,6 +121,12 @@ describe("mapLeadToKitFields", () => {
       referral_disclosure_accepted: "true",
       submitted_at: result.lead.leadTimestamp,
     });
+    expect(mapLeadToKitFields(result.lead)).not.toHaveProperty("address");
+    expect(mapLeadToKitFields(result.lead)).not.toHaveProperty(
+      "has_contacted_solicitor",
+    );
+    expect(mapLeadToKitFields(result.lead)).not.toHaveProperty("enquiry_urgency");
+    expect(mapLeadToKitFields(result.lead)).not.toHaveProperty("matter_stage");
   });
 });
 
