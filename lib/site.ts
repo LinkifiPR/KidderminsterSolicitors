@@ -192,6 +192,10 @@ export const servicePages: ServicePage[] = [
       "how-much-do-solicitors-charge-for-probate",
       "probate-costs-kidderminster",
       "executor-responsibilities-explained",
+      "beneficiaries-rights-to-information",
+      "intermeddling-in-an-estate",
+      "intestacy-rules-explained",
+      "dies-without-a-will-uk",
       "what-does-a-probate-solicitor-do",
       "how-long-does-probate-take",
       "do-you-need-a-solicitor-for-probate",
@@ -2009,6 +2013,469 @@ export const guidePages: GuidePage[] = [
         question: "Can I request probate support if I am unsure about a trustee role?",
         answer:
           "Yes. You can submit a no obligation enquiry and we may pass it to a suitable solicitor partner where appropriate. You are under no obligation to instruct them.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "beneficiaries-rights-to-information",
+    title: "Beneficiaries' Rights to Information",
+    h1: "Beneficiaries' rights to information",
+    metaDescription:
+      "General guide to what beneficiaries may expect from executors, estate accounts, probate updates, and practical questions to ask.",
+    category: "Probate and Wills",
+    updated: "2026-05-07",
+    relatedServiceSlug: "probate-solicitors-kidderminster",
+    intro:
+      "Beneficiaries often want to know what is happening with an estate, but the amount and timing of information can depend on the stage of administration, the executor's role, the will, the estate assets, and whether there are concerns about how matters are being handled.",
+    keyTakeaways: [
+      "Beneficiaries may reasonably expect clear communication, but executors usually need time to identify assets, debts, tax issues, and practical estate steps before giving firm answers.",
+      "Estate accounts, probate updates, property sale progress, and distribution timing can all become sensitive if communication is unclear.",
+      "If an estate connected to Kidderminster or Wyre Forest involves property, several beneficiaries, or family tension, organised records and careful updates matter.",
+      "This guide is general information only; a solicitor partner may explain options if you request a no obligation probate quote.",
+    ],
+    sections: [
+      {
+        heading: "What beneficiaries often want to know",
+        body: [
+          "Beneficiaries commonly ask whether they are named in the will, what the estate includes, whether probate has been applied for, when property will be sold, whether debts or tax need paying, and when distributions may be made. These are understandable questions, especially where the estate includes a family home or where relatives live in different places.",
+          "Executors may not be able to answer everything immediately. Early in an estate, asset values may still be unknown, banks may not have replied, property may need valuation, and liabilities may still be emerging. A cautious executor should avoid promising distributions before the estate position is clear.",
+          "Good communication usually means explaining the stage reached, what information is still outstanding, and what practical steps are next. It does not always mean every document is shared immediately or every estimate is certain.",
+        ],
+      },
+      {
+        heading: "Executor duties and beneficiary expectations",
+        body: [
+          "An executor is responsible for administering the estate correctly. That may include finding the will, identifying assets and debts, applying for probate where needed, paying liabilities, keeping records, preparing estate accounts, and distributing the estate according to the will or intestacy rules.",
+          "Beneficiaries are not usually responsible for running the estate, but they may have legitimate questions about progress and final estate accounts. Tension can arise where beneficiaries feel shut out, or where executors feel pressured to give answers before the facts are known.",
+          "The practical answer is often structured communication. Executors can keep a note of updates given, questions asked, and documents requested. Beneficiaries can keep questions focused on the estate rather than turning every update into a dispute.",
+        ],
+      },
+      {
+        heading: "Estate accounts and final distributions",
+        body: [
+          "Estate accounts help explain what came into the estate, what was paid out, and how the final distribution figure was reached. They may include assets, debts, funeral costs, professional fees, tax payments, property sale figures, and distributions to beneficiaries.",
+          "A beneficiary may be especially interested in estate accounts where the estate has taken longer than expected, where property has been sold, where expenses are unclear, or where several beneficiaries receive different shares. Executors should keep records from the start rather than trying to reconstruct them at the end.",
+          "If you are a beneficiary and the figures do not make sense, write down the points you do not understand. A calm list of questions is usually more useful than general accusations. If you are an executor, clear accounts can reduce avoidable concern.",
+        ],
+      },
+      {
+        heading: "Where things commonly go wrong",
+        body: [
+          "Problems often start with silence. Beneficiaries may assume nothing is happening when the executor is actually waiting for banks, valuations, probate registry steps, tax information, or a property sale. Executors may assume beneficiaries understand the process when they do not.",
+          "Other problems include distributing personal possessions informally, paying some beneficiaries before all liabilities are known, failing to explain property sale delays, losing records, or refusing reasonable questions without explanation. Family history can make these issues more emotional than they first appear.",
+          "If a Kidderminster or Wyre Forest estate includes an empty property, practical delays can also affect communication. Insurance, clearance, valuation, estate agent updates, conveyancing, and buyer chains may all affect when money can be distributed.",
+        ],
+      },
+      {
+        heading: "What to prepare before speaking to a solicitor",
+        body: [
+          "If you are a beneficiary, prepare the will details if available, the executor's name, any probate reference if known, dates of key updates, copies of relevant correspondence, questions you have asked, and the specific information you believe is missing.",
+          "If you are an executor, prepare the will, death certificate, asset list, debt list, property information, bank replies, estate accounts draft, beneficiary list, timeline, and notes showing what updates have already been given.",
+          "Do not send confidential estate documents through a public quote form. Use the form to summarise the issue and then share documents directly with a solicitor firm or legal service provider if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask what information beneficiaries may reasonably expect at the current stage, whether estate accounts should be prepared, how communication should be handled, and whether the estate position suggests limited support or wider probate help may be needed.",
+          "If there is disagreement, ask what practical steps may reduce confusion before the situation escalates. If property is involved, ask how sale proceeds, expenses, insurance, clearance, and conveyancing updates should be recorded.",
+          "You can also ask whether the firm can help with a defined issue, such as estate accounts or executor communication, rather than taking over full administration. The suitable scope depends on the estate and the concern being raised.",
+        ],
+      },
+      {
+        heading: "Local context for Kidderminster estates",
+        body: [
+          "Probate enquiries around Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area often involve local family homes and beneficiaries who may no longer live nearby. Distance can make updates more important because people cannot easily see what is happening at the property.",
+          "Local estate administration can also involve valuers, estate agents, house clearance, insurance queries, and conveyancing steps. Those practical details can affect when beneficiaries receive useful information and when distributions become realistic.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are an executor or beneficiary dealing with information concerns in an estate connected to Kidderminster or Wyre Forest, you can request a no obligation probate quote. We may pass your enquiry to a suitable solicitor partner where appropriate.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "executor-responsibilities-explained",
+      "what-does-a-probate-solicitor-do",
+      "do-you-need-a-solicitor-for-probate",
+      "intermeddling-in-an-estate",
+    ],
+    faq: [
+      {
+        question: "Can a beneficiary ask an executor for estate updates?",
+        answer:
+          "Beneficiaries often ask for updates, and clear communication can reduce confusion. What can be provided may depend on the stage of administration and the information available.",
+      },
+      {
+        question: "Do beneficiaries always receive estate accounts?",
+        answer:
+          "Estate accounts are commonly used to explain assets, liabilities, expenses, and distributions. Whether and when they are provided can depend on the estate and the beneficiary's position.",
+      },
+      {
+        question: "What if an executor is not replying?",
+        answer:
+          "Keep a record of messages, dates, and specific questions. If communication has broken down or you are concerned about estate administration, speaking directly with a qualified provider may be sensible.",
+      },
+      {
+        question: "Can this website tell me what information I am entitled to?",
+        answer:
+          "No. This website provides general information and solicitor introductions only. A solicitor or legal service provider would need to consider the estate facts before giving specific guidance.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "intermeddling-in-an-estate",
+    title: "Intermeddling in an Estate Explained",
+    h1: "Intermeddling in an estate explained",
+    metaDescription:
+      "General guide to intermeddling in an estate, why it can matter, common risk points, and what to prepare before seeking probate support.",
+    category: "Probate and Wills",
+    updated: "2026-05-07",
+    relatedServiceSlug: "probate-solicitors-kidderminster",
+    intro:
+      "Intermeddling is a probate term often used when someone acts in a way that may amount to taking on the administration of an estate. It can matter because estate administration carries responsibility, and informal action after a death can create uncertainty about who is acting and why.",
+    keyTakeaways: [
+      "Intermeddling concerns can arise when someone deals with estate assets before their authority and responsibilities are clear.",
+      "Helpful practical steps, funeral arrangements, and estate administration decisions are not always the same thing, but the boundary can feel unclear.",
+      "Executors, relatives, and beneficiaries should keep records and avoid informal distributions before debts, tax, beneficiaries, and authority are understood.",
+      "This guide is general information only; request a no obligation probate quote if you need a qualified provider to consider a specific situation.",
+    ],
+    sections: [
+      {
+        heading: "What intermeddling can mean",
+        body: [
+          "Intermeddling is generally used to describe conduct that may show someone has taken on the role of administering an estate, even if they did not formally set out to do so. The concern is that a person may become involved in estate assets or decisions in a way that carries responsibility.",
+          "This can be especially relevant where someone is unsure whether they want to act as executor, where there is no will, where several relatives are involved, or where family members start dealing with property and possessions before authority is clear.",
+          "The word can sound dramatic, but many situations begin with practical intentions: securing a house, paying urgent bills, arranging funeral matters, or helping relatives. The important point is to understand when practical help might become estate administration.",
+        ],
+      },
+      {
+        heading: "Examples of risk points",
+        body: [
+          "Risk points may include selling or giving away estate assets, collecting estate money, closing accounts, paying non-urgent debts from estate funds, distributing personal possessions without agreement, or making decisions about property before the correct authority is understood.",
+          "Practical steps such as securing an empty home, checking insurance, arranging funeral matters, or preserving paperwork may be different from distributing assets. Even so, people should keep records and avoid presenting themselves as authorised if that is uncertain.",
+          "If the estate includes a Kidderminster or Wyre Forest property, family members may feel pressure to remove items, deal with keys, manage utilities, or speak to estate agents quickly. Those steps can be sensible, but they should be handled carefully and recorded.",
+        ],
+      },
+      {
+        heading: "Why it matters",
+        body: [
+          "Estate administration is not just paperwork. The person dealing with the estate may need to identify assets, pay debts, protect property, keep accounts, communicate with beneficiaries, and avoid distributing funds too early. Mistakes can affect creditors, tax, beneficiaries, and family relationships.",
+          "If someone has acted as though they are administering the estate, it may become harder to step away later. This is why people who are unsure whether they should act need to be cautious before making decisions about estate assets.",
+          "This website cannot decide whether a particular action is intermeddling. The facts, documents, timing, and role of the person involved all matter. If you are worried, speak directly with a qualified solicitor or legal service provider.",
+        ],
+      },
+      {
+        heading: "Executor role and intestacy context",
+        body: [
+          "Where there is a will, named executors may have authority to deal with the estate, although practical steps and formal probate requirements still need care. Where there is no will, the position can be more uncertain because the person entitled to administer the estate may need to be identified.",
+          "Family members sometimes assume that being the eldest child, living closest, paying funeral costs, or holding keys gives them authority. Those assumptions can cause confusion if the legal position has not been checked.",
+          "If there is no will, read the related guide on intestacy and consider getting probate support before collecting, selling, or distributing assets. The correct next step may depend on family structure, assets, and whether a grant is needed.",
+        ],
+      },
+      {
+        heading: "Where things commonly go wrong",
+        body: [
+          "Problems can arise when relatives clear a house without recording items, use estate money informally, pay one person before others, sell a vehicle, transfer savings, or dispose of personal possessions that beneficiaries later ask about.",
+          "Disputes can also start when someone controls information. If one person has bank papers, keys, property access, or contact with estate agents, other relatives may become suspicious. Clear records and careful communication can reduce avoidable conflict.",
+          "For estates around Kidderminster, practical property pressure can be significant. Empty homes may need insurance checks, security, maintenance, clearance, valuation, and eventual sale steps. Acting quickly is not the same as acting without care.",
+        ],
+      },
+      {
+        heading: "What to prepare before speaking to a solicitor",
+        body: [
+          "Prepare the will if there is one, death certificate, names of executors or close relatives, asset and debt information, property details, what actions have already been taken, who has keys or documents, and whether any money or personal items have already been moved.",
+          "Write a factual timeline. Include dates of death, funeral arrangements, account closures, property visits, payments made, items removed, and messages between family members. This helps a solicitor understand the practical position without relying on memory.",
+          "Do not send sensitive documents through the public quote form. Summarise the concern, then share documents directly with a solicitor firm or legal service provider if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether the actions already taken may create responsibility, who appears to have authority to act, whether probate or letters of administration may be needed, and what should happen before any further assets are moved or distributed.",
+          "Ask how to protect property, records, and estate funds while the position is clarified. If there is disagreement, ask what practical communication or record keeping may reduce the chance of matters escalating.",
+          "You can also ask whether limited advice on the immediate concern is enough, or whether broader estate administration support may be needed.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are worried about intermeddling in an estate connected to Kidderminster or Wyre Forest, you can request a no obligation probate quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "executor-responsibilities-explained",
+      "do-you-need-a-solicitor-for-probate",
+      "intestacy-rules-explained",
+      "beneficiaries-rights-to-information",
+    ],
+    faq: [
+      {
+        question: "Is arranging a funeral intermeddling?",
+        answer:
+          "Funeral arrangements and estate administration are not always the same thing, but facts matter. If you are unsure what you can safely do, speak directly with a qualified provider.",
+      },
+      {
+        question: "Can clearing a house cause probate problems?",
+        answer:
+          "It can create confusion if items are removed, sold, or distributed without records or agreement. Empty property may need practical attention, but decisions should be recorded carefully.",
+      },
+      {
+        question: "What should I do if I have already dealt with estate assets?",
+        answer:
+          "Make a clear factual record of what happened, when, why, and where any money or items went. A solicitor can consider the specific position if you choose to instruct them.",
+      },
+      {
+        question: "Does this website decide whether intermeddling has happened?",
+        answer:
+          "No. This website provides general information only. A solicitor or legal service provider would need to consider the facts before giving specific guidance.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "intestacy-rules-explained",
+    title: "Intestacy Rules Explained",
+    h1: "Intestacy rules explained",
+    metaDescription:
+      "General guide to intestacy, what can happen when someone dies without a valid will, and what families may need to prepare.",
+    category: "Probate and Wills",
+    updated: "2026-05-07",
+    relatedServiceSlug: "probate-solicitors-kidderminster",
+    intro:
+      "Intestacy is the term used when someone dies without a valid will covering their estate. The rules can affect who may administer the estate, who may inherit, and what practical steps family members need to take before assets are collected or distributed.",
+    keyTakeaways: [
+      "Intestacy can apply when there is no valid will, or where a will does not deal with all estate assets.",
+      "The rules may not match what family members expected, especially for unmarried partners, blended families, estranged relatives, and jointly owned property.",
+      "If there is a Kidderminster or Wyre Forest property, intestacy questions can affect who can deal with the home, sale steps, and estate administration.",
+      "This guide is general information only; a solicitor partner may explain options if you request a no obligation probate quote.",
+    ],
+    sections: [
+      {
+        heading: "What intestacy means",
+        body: [
+          "Intestacy usually means someone has died without a valid will that disposes of their estate. Sometimes the person never made a will. Sometimes a will exists but is invalid, revoked, or only deals with part of the estate. The practical result is that statutory rules may decide who is entitled to administer and benefit from the estate.",
+          "This can surprise families because the intestacy rules may not reflect informal promises, family expectations, or who was closest to the person who died. The position can be especially sensitive where there are children from different relationships, an unmarried partner, estranged relatives, or property owned in a particular way.",
+          "This website cannot apply intestacy rules to a specific family. If the estate is unclear, a solicitor or legal service provider can consider the facts if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Who may be affected",
+        body: [
+          "Intestacy may affect spouses, civil partners, children, wider relatives, unmarried partners, stepchildren, dependants, and people who expected to receive a gift. The outcome depends on family structure and the assets that form part of the estate.",
+          "Unmarried partners are a common area of misunderstanding. Living together, sharing bills, or being in a long relationship does not automatically mean the same position as being married or in a civil partnership. Family members should avoid making assumptions before the estate position is checked.",
+          "Children, adopted children, half-siblings, and wider relatives can also raise practical questions. A solicitor can explain the relevant position based on the facts, documents, and family tree if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Common misconceptions",
+        body: [
+          "A common misconception is that everything automatically goes to the person who was closest to the deceased. Another is that the person who paid for the funeral, held the house keys, or lived nearby automatically has authority to administer the estate.",
+          "People also assume that all property passes under intestacy. Jointly owned assets, nominated pensions, life policies, trusts, and jointly held bank accounts may need separate consideration. Not every asset connected to the person who died necessarily passes through the estate in the same way.",
+          "If the estate includes a home in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or the wider Wyre Forest area, property ownership details can be particularly important. Whether property is held jointly or solely can affect practical next steps.",
+        ],
+      },
+      {
+        heading: "Estate administration where there is no will",
+        body: [
+          "Where there is no will, someone may need to apply for letters of administration rather than a grant of probate. The person entitled to apply may depend on the family position. Before anyone collects or distributes assets, authority should be understood.",
+          "The administrator may need to identify assets and debts, value property, deal with tax paperwork where required, collect estate funds, pay liabilities, prepare estate accounts, and distribute the estate according to the relevant rules.",
+          "Because there is no will naming executors, communication can become more difficult. Family members may disagree about who should act, what the person would have wanted, or whether someone should receive provision. Early clarity can reduce avoidable conflict.",
+        ],
+      },
+      {
+        heading: "Why wills matter",
+        body: [
+          "A valid will can appoint executors, set out gifts, deal with personal possessions, make provision for children or vulnerable beneficiaries, and give clearer instructions about property and estate administration. It can reduce uncertainty, though it does not remove every possible issue.",
+          "Intestacy can be particularly difficult for blended families, unmarried partners, business owners, people with property, and families where relationships are strained. A will can help make intentions clearer, provided it is properly prepared and kept up to date.",
+          "If someone has already died without a will, the focus shifts from prevention to administration. If you are planning ahead, compare wills support and consider whether a solicitor partner may be appropriate.",
+        ],
+      },
+      {
+        heading: "Where things commonly go wrong",
+        body: [
+          "Problems often arise when relatives assume who inherits, clear property before authority is clear, distribute personal items informally, miss debts, or fail to identify all family members. Misunderstanding the family tree can create serious practical problems.",
+          "Another risk is delay. If no one is sure who should act, banks, property sale steps, and estate administration can stall. If a home is empty, insurance, security, utilities, and maintenance may still need attention while authority is clarified.",
+          "For local estates, property can create pressure because estate agents, valuers, house clearance, and conveyancing steps may all depend on someone having authority to move matters forward.",
+        ],
+      },
+      {
+        heading: "What to prepare before speaking to a solicitor",
+        body: [
+          "Prepare the death certificate, any will or old will if one has been found, family tree details, marriage or civil partnership information, children and adopted children details, property ownership information, bank and savings details, debts, funeral invoice, and any urgent property concerns.",
+          "Make a note of who has taken practical steps so far, who has keys or documents, whether any assets have been moved, whether anyone disputes the position, and whether a property needs insurance, clearance, valuation, or sale.",
+          "Use a quote form for a short practical summary only. Detailed documents should be shared directly with a solicitor firm or legal service provider if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether the estate appears to be intestate, who may be entitled to apply for letters of administration, what information is needed to understand the family tree, and whether property ownership changes the next step.",
+          "Ask whether any urgent steps are needed to protect assets, whether inheritance tax paperwork may be required, how beneficiaries should be identified, and what should be avoided until authority is clear.",
+          "If the family situation is sensitive, ask how communication should be handled and whether limited support or full estate administration may be more appropriate.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are dealing with an intestacy issue connected to Kidderminster or Wyre Forest, you can request a no obligation probate quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "dies-without-a-will-uk",
+      "what-does-a-probate-solicitor-do",
+      "do-you-need-a-solicitor-for-probate",
+      "executor-responsibilities-explained",
+    ],
+    faq: [
+      {
+        question: "Does intestacy mean there is no estate to administer?",
+        answer:
+          "No. Intestacy usually means there is no valid will covering the estate. Administration may still be needed to identify assets, pay debts, and distribute the estate correctly.",
+      },
+      {
+        question: "Can an unmarried partner inherit automatically under intestacy?",
+        answer:
+          "The position can be different from what people expect. This website cannot apply the rules to a specific family, so speak directly with a qualified provider if this issue matters.",
+      },
+      {
+        question: "What if an old will is found after someone dies?",
+        answer:
+          "Keep the document safe and do not assume the estate is intestate until the will position has been checked. A solicitor can consider whether the document is relevant if you choose to instruct them.",
+      },
+      {
+        question: "Can I request help with intestacy through this website?",
+        answer:
+          "Yes. You can submit a no obligation probate enquiry and we may pass it to a suitable solicitor partner where appropriate. You are under no obligation to instruct them.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "dies-without-a-will-uk",
+    title: "What Happens If Someone Dies Without a Will?",
+    h1: "What happens if someone dies without a will?",
+    metaDescription:
+      "General guide to what may happen when someone dies without a will in the UK, including practical first steps and probate questions.",
+    category: "Probate and Wills",
+    updated: "2026-05-07",
+    relatedServiceSlug: "probate-solicitors-kidderminster",
+    intro:
+      "When someone dies without a will, family members often face two problems at once: grief and uncertainty. There may be questions about who can deal with the estate, who may inherit, what happens to property, and what practical steps should be taken first.",
+    keyTakeaways: [
+      "Dying without a will can mean intestacy rules decide who may inherit and who may administer the estate.",
+      "Family members should avoid distributing money, property, or possessions before authority, debts, tax, and beneficiaries are understood.",
+      "Practical first steps include finding documents, securing property, identifying assets and debts, and working out whether letters of administration may be needed.",
+      "This guide is general information only; a solicitor partner may explain options if you request a no obligation probate quote.",
+    ],
+    sections: [
+      {
+        heading: "The short answer",
+        body: [
+          "If someone dies without a valid will, the estate may be dealt with under intestacy rules. Those rules can decide who is entitled to administer the estate and who may inherit. The outcome may not match what relatives expected or what the person may have said informally.",
+          "There may still be probate-style administration to handle. Assets need identifying, debts may need paying, property may need protecting, tax paperwork may be required, and beneficiaries need to be worked out correctly.",
+          "This guide explains the practical issues in general terms. It cannot tell you who inherits in a specific family or whether a particular person has authority to act.",
+        ],
+      },
+      {
+        heading: "Practical first steps",
+        body: [
+          "Start by checking carefully whether a will exists. Look for paperwork at home, with banks, among personal documents, or with any solicitor firm the person may have used. Do not assume there is no will simply because family members have not seen one.",
+          "Register the death, secure important documents, protect property, note urgent bills, and make a list of known assets and debts. If there is an empty home in Kidderminster or the wider Wyre Forest area, check insurance, security, utilities, and maintenance needs before making decisions about sale or clearance.",
+          "Avoid distributing possessions or money too early. Even small personal items can become disputed if family members later disagree about entitlement or if estate records are incomplete.",
+        ],
+      },
+      {
+        heading: "Who deals with the estate",
+        body: [
+          "When there is a will, named executors usually deal with the estate. Without a will, someone may need to apply for letters of administration. The person who can apply may depend on family circumstances and the order of entitlement.",
+          "This can be sensitive where there are several adult children, an unmarried partner, estranged relatives, children from different relationships, or disagreement about who should take responsibility.",
+          "Before one person starts collecting money or selling assets, it is sensible to understand who has authority. Acting informally can create confusion and may cause problems later.",
+        ],
+      },
+      {
+        heading: "Property, bank accounts, and personal possessions",
+        body: [
+          "Property is often the largest estate asset. If the person owned a house in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or elsewhere in Worcestershire, the administrator may need to understand ownership, insurance, valuation, sale, mortgage, utilities, and maintenance issues.",
+          "Bank accounts, savings, investments, pensions, and life policies may each have different requirements. Some providers may release small sums without a grant, while others may require formal authority.",
+          "Personal possessions should be recorded before removal or distribution. Photos, lists, and agreed storage can reduce later disagreement, especially where several beneficiaries expect sentimental items.",
+        ],
+      },
+      {
+        heading: "Common misconceptions",
+        body: [
+          "People often assume that everything passes automatically to the person who lived with the deceased, the eldest child, or the relative who arranged the funeral. These assumptions can be wrong or incomplete.",
+          "Another misconception is that probate is not needed if there is no will. In reality, a different form of authority may be needed depending on the assets, ownership, and provider requirements.",
+          "Families may also assume that informal promises decide inheritance. A promise may be emotionally important, but the estate still needs to be administered according to the relevant legal position.",
+        ],
+      },
+      {
+        heading: "Where things commonly go wrong",
+        body: [
+          "Problems can arise when relatives clear property too quickly, move money without authority, miss debts, ignore tax paperwork, fail to identify all beneficiaries, or assume that a long-term partner automatically receives everything.",
+          "Delay can also create risk. Empty properties may need insurance and security. Bills may need attention. Banks and pension providers may need documents. Family members may become frustrated if nobody knows who is responsible.",
+          "The safest practical approach is usually to preserve records, avoid irreversible decisions, and get clarity on authority before distributing assets.",
+        ],
+      },
+      {
+        heading: "What to prepare before speaking to a solicitor",
+        body: [
+          "Prepare the death certificate, any possible will or old will, details of spouse or civil partner, children, wider relatives, property ownership information, bank details, pension and life policy details, debts, funeral invoice, and any urgent property concerns.",
+          "Write down what has already happened: who has keys, whether anyone has contacted banks, whether any possessions have been removed, whether property is insured, and whether any relatives disagree about what should happen.",
+          "If you are requesting a quote, provide a short summary and avoid uploading sensitive documents through the public form. Detailed information should be shared directly with a solicitor firm if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether letters of administration may be needed, who may be entitled to apply, what documents are needed, how property should be protected, and what should be avoided until authority is clear.",
+          "Ask how to identify beneficiaries, whether tax paperwork may be required, whether property sale steps can start, and how personal possessions should be recorded. If there is family disagreement, raise that early.",
+          "You can also ask whether the provider offers limited help with the application or full estate administration. The right level of support depends on the estate and the confidence of the person dealing with it.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If someone has died without a will and the estate is connected to Kidderminster or Wyre Forest, you can request a no obligation probate quote. We may pass your enquiry to a suitable solicitor partner where appropriate.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "intestacy-rules-explained",
+      "do-you-need-a-solicitor-for-probate",
+      "what-does-a-probate-solicitor-do",
+      "executor-responsibilities-explained",
+    ],
+    faq: [
+      {
+        question: "Is probate still needed if there is no will?",
+        answer:
+          "Formal authority may still be needed, but the process may involve letters of administration rather than a grant of probate. Whether it is needed depends on the estate assets and provider requirements.",
+      },
+      {
+        question: "Who inherits if someone dies without a will?",
+        answer:
+          "That depends on the intestacy rules and the family circumstances. This website cannot apply the rules to a specific family, so speak directly with a qualified provider if inheritance is unclear.",
+      },
+      {
+        question: "Can family members clear the house straight away?",
+        answer:
+          "Urgent safety, insurance, or preservation steps may be needed, but distributing or disposing of possessions without records can cause problems. Keep a careful record and seek clarity where authority is uncertain.",
+      },
+      {
+        question: "Can I request help if there is no will?",
+        answer:
+          "Yes. You can submit a no obligation probate enquiry through this website. A suitable solicitor partner may contact you directly if they are able to help.",
       },
     ],
   },
