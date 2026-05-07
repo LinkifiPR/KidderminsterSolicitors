@@ -38,7 +38,7 @@ export function ContentPageView({ page }: { page: SitePage }) {
       <SiteHeader />
       <section className="relative isolate overflow-hidden bg-[var(--pale-blue)] px-5 pb-16 pt-12 sm:px-8">
         <div className="absolute inset-x-0 bottom-0 -z-10 h-32 bg-white" />
-        <div className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] border border-[var(--border)] bg-white p-6 shadow-[0_26px_90px_rgba(7,24,39,0.1)] sm:p-10 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="mx-auto grid max-w-7xl gap-8 rounded-[2rem] border border-[var(--border)] bg-white p-6 shadow-[0_26px_90px_rgba(7,24,39,0.1)] sm:p-10 lg:grid-cols-[1.18fr_0.82fr] lg:items-start">
           <div className="self-center">
             <p className="text-sm font-semibold uppercase text-[var(--gold)]">
               {isService
@@ -69,8 +69,8 @@ export function ContentPageView({ page }: { page: SitePage }) {
           </div>
 
           {hasQuoteForm ? (
-            <div id={isService ? undefined : "quote"}>
-              <QuoteForm />
+            <div id={isService ? undefined : "quote"} className="lg:justify-self-end">
+              <QuoteForm variant="compact" />
             </div>
           ) : isGuide && relatedService ? (
             <div className="self-center rounded-[2rem] border border-[var(--border)] bg-[var(--cream)] p-6 shadow-[0_22px_70px_rgba(7,24,39,0.08)]">

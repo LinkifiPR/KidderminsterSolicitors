@@ -43,6 +43,10 @@ type SelectOption<Value extends string> = {
   hint?: string;
 };
 
+type QuoteFormProps = {
+  variant?: "full" | "compact";
+};
+
 const contactTimeOptions: SelectOption<string>[] = [
   { value: "Morning", label: "Morning", hint: "9am to 12pm" },
   { value: "Afternoon", label: "Afternoon", hint: "12pm to 5pm" },
@@ -97,13 +101,38 @@ function getAttribution() {
   };
 }
 
-export function QuoteForm() {
+export function QuoteForm({ variant = "full" }: QuoteFormProps = {}) {
   const [form, setForm] = useState<FormState>(initialState);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">(
     "idle",
   );
   const [message, setMessage] = useState("");
   const [openSelect, setOpenSelect] = useState<string | null>(null);
+  const isCompact = variant === "compact";
+  const formShellClass = isCompact
+    ? "quote-form-card quote-form-card--compact mx-auto w-full max-w-[31rem] overflow-visible rounded-[1.25rem] border border-white/80 bg-white text-[var(--charcoal)] shadow-[0_18px_60px_rgba(7,24,39,0.14)] ring-1 ring-[rgba(198,161,91,0.22)]"
+    : "quote-form-card mx-auto w-full max-w-2xl overflow-visible rounded-[1.65rem] border border-white/80 bg-white text-[var(--charcoal)] shadow-[0_24px_90px_rgba(7,24,39,0.16)] ring-1 ring-[rgba(198,161,91,0.24)]";
+  const headerClass = isCompact
+    ? "rounded-t-[1.25rem] bg-[linear-gradient(135deg,var(--navy),var(--trust-blue))] px-4 py-4 text-white"
+    : "rounded-t-[1.65rem] bg-[linear-gradient(135deg,var(--navy),var(--trust-blue))] px-5 py-5 text-white sm:px-6";
+  const gridClass = isCompact
+    ? "grid gap-2.5 p-4 sm:grid-cols-2"
+    : "grid gap-3 p-5 sm:grid-cols-2 sm:p-6";
+  const inputClass = isCompact
+    ? "form-input rounded-xl px-3 py-2.5 text-sm"
+    : "form-input";
+  const selectTriggerClass = isCompact
+    ? "legal-matter-trigger flex w-full items-center justify-between gap-2 rounded-xl border border-[rgba(198,161,91,0.38)] bg-[linear-gradient(135deg,#ffffff,#f8f5ef)] px-3 py-2.5 text-left text-sm font-semibold text-[var(--navy)] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_8px_20px_rgba(7,24,39,0.06)] transition hover:border-[var(--gold)] focus:outline-none focus:ring-4 focus:ring-[rgba(198,161,91,0.16)]"
+    : "legal-matter-trigger flex w-full items-center justify-between gap-4 rounded-[1.05rem] border border-[rgba(198,161,91,0.42)] bg-[linear-gradient(135deg,#ffffff,#f8f5ef)] px-4 py-3.5 text-left font-semibold text-[var(--navy)] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_10px_28px_rgba(7,24,39,0.07)] transition hover:border-[var(--gold)] focus:outline-none focus:ring-4 focus:ring-[rgba(198,161,91,0.18)]";
+  const selectBadgeClass = isCompact
+    ? "flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--navy)] text-[0.62rem] font-bold text-[var(--gold)]"
+    : "flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--navy)] text-xs font-bold text-[var(--gold)]";
+  const selectListClass = isCompact
+    ? "legal-matter-listbox absolute z-30 mt-2 grid w-full gap-1 rounded-[1rem] border border-[rgba(198,161,91,0.35)] bg-white p-1.5 shadow-[0_18px_55px_rgba(7,24,39,0.18)]"
+    : "legal-matter-listbox absolute z-30 mt-3 grid w-full gap-1.5 rounded-[1.25rem] border border-[rgba(198,161,91,0.35)] bg-white p-2 shadow-[0_22px_70px_rgba(7,24,39,0.18)]";
+  const optionClass = isCompact
+    ? "legal-matter-option flex w-full items-center justify-between gap-2 rounded-xl px-3 py-2 text-left text-sm font-semibold text-[var(--navy)] transition hover:bg-[var(--pale-blue)]"
+    : "legal-matter-option flex w-full items-center justify-between gap-3 rounded-2xl px-4 py-3 text-left text-sm font-semibold text-[var(--navy)] transition hover:bg-[var(--pale-blue)]";
   const matterOptions = useMemo(
     () =>
       Object.entries(legalMatterLabels).map(([value, label]) => ({
@@ -163,10 +192,10 @@ export function QuoteForm() {
               open === String(name) ? null : String(name),
             )
           }
-          className="legal-matter-trigger flex w-full items-center justify-between gap-4 rounded-[1.05rem] border border-[rgba(198,161,91,0.42)] bg-[linear-gradient(135deg,#ffffff,#f8f5ef)] px-4 py-3.5 text-left font-semibold text-[var(--navy)] shadow-[inset_0_1px_0_rgba(255,255,255,0.9),0_10px_28px_rgba(7,24,39,0.07)] transition hover:border-[var(--gold)] focus:outline-none focus:ring-4 focus:ring-[rgba(198,161,91,0.18)]"
+          className={selectTriggerClass}
         >
           <span className="flex min-w-0 items-center gap-3">
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--navy)] text-xs font-bold text-[var(--gold)]">
+            <span className={selectBadgeClass}>
               {Icon ? <Icon className="h-4 w-4" aria-hidden /> : "KS"}
             </span>
             <span id={buttonId} className="min-w-0">
@@ -196,7 +225,7 @@ export function QuoteForm() {
           <div
             role="listbox"
             aria-label={label}
-            className="legal-matter-listbox absolute z-30 mt-3 grid w-full gap-1.5 rounded-[1.25rem] border border-[rgba(198,161,91,0.35)] bg-white p-2 shadow-[0_22px_70px_rgba(7,24,39,0.18)]"
+            className={selectListClass}
           >
             {options.map((option) => {
               const isSelected = option.value === value;
@@ -211,7 +240,7 @@ export function QuoteForm() {
                     updateField(name, option.value as FormState[Field]);
                     setOpenSelect(null);
                   }}
-                  className={`legal-matter-option flex w-full items-center justify-between gap-3 rounded-2xl px-4 py-3 text-left text-sm font-semibold text-[var(--navy)] transition hover:bg-[var(--pale-blue)] ${
+                  className={`${optionClass} ${
                     isSelected
                       ? "bg-[var(--pale-blue)] text-[var(--trust-blue)]"
                       : "bg-white"
@@ -283,22 +312,34 @@ export function QuoteForm() {
     <form
       aria-label="Quote request"
       onSubmit={handleSubmit}
-      className="quote-form-card mx-auto w-full max-w-2xl overflow-visible rounded-[1.65rem] border border-white/80 bg-white text-[var(--charcoal)] shadow-[0_24px_90px_rgba(7,24,39,0.16)] ring-1 ring-[rgba(198,161,91,0.24)]"
+      className={formShellClass}
     >
-      <div className="rounded-t-[1.65rem] bg-[linear-gradient(135deg,var(--navy),var(--trust-blue))] px-5 py-5 text-white sm:px-6">
-        <div className="inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-[var(--gold)]">
-          Private quote request
+      <div className={headerClass}>
+        <div className="inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[0.64rem] font-bold uppercase tracking-[0.12em] text-[var(--gold)]">
+          {isCompact ? "60-second enquiry" : "Private quote request"}
         </div>
-        <h2 className="mt-3 text-2xl font-semibold leading-tight">
+        <h2
+          className={
+            isCompact
+              ? "mt-2 text-xl font-semibold leading-tight"
+              : "mt-3 text-2xl font-semibold leading-tight"
+          }
+        >
           Request a no obligation quote
         </h2>
-        <p className="mt-2 text-sm leading-6 text-white/78">
+        <p
+          className={
+            isCompact
+              ? "mt-1.5 text-xs leading-5 text-white/78"
+              : "mt-2 text-sm leading-6 text-white/78"
+          }
+        >
           Tell us what legal help you need and we&apos;ll connect you with a
           suitable solicitor partner where appropriate.
         </p>
       </div>
 
-      <div className="grid gap-3 p-5 sm:grid-cols-2 sm:p-6">
+      <div className={gridClass}>
         <div className="sm:col-span-2">
           <CustomSelect
             name="legalMatterType"
@@ -313,7 +354,7 @@ export function QuoteForm() {
           <input
             value={form.name}
             onChange={(event) => updateField("name", event.target.value)}
-            className="form-input"
+            className={inputClass}
             autoComplete="name"
             required
           />
@@ -325,7 +366,7 @@ export function QuoteForm() {
             type="tel"
             value={form.phone}
             onChange={(event) => handlePhoneChange(event.target.value)}
-            className="form-input"
+            className={inputClass}
             autoComplete="tel"
             inputMode="tel"
             pattern="^(0[1-9][0-9 ]{8,13}|\\+44[1-9][0-9 ]{8,13})$"
@@ -341,7 +382,7 @@ export function QuoteForm() {
             type="email"
             value={form.email}
             onChange={(event) => updateField("email", event.target.value)}
-            className="form-input"
+            className={inputClass}
             autoComplete="email"
             required
           />
@@ -352,7 +393,7 @@ export function QuoteForm() {
           <input
             value={form.postcode}
             onChange={(event) => handlePostcodeChange(event.target.value)}
-            className="form-input"
+            className={inputClass}
             autoComplete="postal-code"
             inputMode="text"
             placeholder="DY10 1AA"
@@ -365,7 +406,7 @@ export function QuoteForm() {
           <input
             value={form.address}
             onChange={(event) => updateField("address", event.target.value)}
-            className="form-input"
+            className={inputClass}
             autoComplete="street-address"
             placeholder="Optional, but useful for property or local enquiries"
           />
@@ -381,8 +422,14 @@ export function QuoteForm() {
           />
         </div>
 
-        <div className="sm:col-span-2 grid gap-3 rounded-[1.35rem] border border-[rgba(216,226,234,0.92)] bg-[linear-gradient(135deg,#f8fbfd,#f8f5ef)] p-4">
-          <div>
+        <div
+          className={
+            isCompact
+              ? "grid gap-2.5 rounded-[1rem] border border-[rgba(216,226,234,0.92)] bg-[linear-gradient(135deg,#f8fbfd,#f8f5ef)] p-3 sm:col-span-2"
+              : "grid gap-3 rounded-[1.35rem] border border-[rgba(216,226,234,0.92)] bg-[linear-gradient(135deg,#f8fbfd,#f8f5ef)] p-4 sm:col-span-2"
+          }
+        >
+          <div className={isCompact ? "sr-only" : undefined}>
             <p className="text-sm font-bold text-[var(--navy)]">
               Help us send a stronger enquiry
             </p>
@@ -416,11 +463,17 @@ export function QuoteForm() {
           <textarea
             value={form.message}
             onChange={(event) => updateField("message", event.target.value)}
-            className="form-input min-h-28 resize-y"
+            className={`${inputClass} ${isCompact ? "min-h-20" : "min-h-28"} resize-y`}
             required
           />
         </label>
-        <div className="space-y-3 rounded-2xl border border-[var(--border)] bg-[var(--pale-blue)] p-4 sm:col-span-2">
+        <div
+          className={
+            isCompact
+              ? "space-y-2 rounded-xl border border-[var(--border)] bg-[var(--pale-blue)] p-3 sm:col-span-2"
+              : "space-y-3 rounded-2xl border border-[var(--border)] bg-[var(--pale-blue)] p-4 sm:col-span-2"
+          }
+        >
           <label className="flex gap-3 text-xs leading-5 text-[var(--muted)]">
             <input
               type="checkbox"
@@ -457,7 +510,11 @@ export function QuoteForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="group mt-1 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--gold)] px-6 py-4 text-sm font-bold uppercase text-[var(--navy)] shadow-[0_14px_30px_rgba(198,161,91,0.32)] transition hover:bg-[#d8b66f] disabled:cursor-not-allowed disabled:opacity-70 sm:col-span-2"
+          className={
+            isCompact
+              ? "group mt-1 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--gold)] px-5 py-3 text-xs font-bold uppercase text-[var(--navy)] shadow-[0_12px_26px_rgba(198,161,91,0.28)] transition hover:bg-[#d8b66f] disabled:cursor-not-allowed disabled:opacity-70 sm:col-span-2"
+              : "group mt-1 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--gold)] px-6 py-4 text-sm font-bold uppercase text-[var(--navy)] shadow-[0_14px_30px_rgba(198,161,91,0.32)] transition hover:bg-[#d8b66f] disabled:cursor-not-allowed disabled:opacity-70 sm:col-span-2"
+          }
         >
           {status === "submitting" ? "Sending enquiry..." : "Request my quote"}
           <Send
@@ -466,7 +523,13 @@ export function QuoteForm() {
           />
         </button>
 
-        <p className="sm:col-span-2 text-xs leading-5 text-[var(--muted)]">
+        <p
+          className={
+            isCompact
+              ? "text-[0.68rem] leading-5 text-[var(--muted)] sm:col-span-2"
+              : "text-xs leading-5 text-[var(--muted)] sm:col-span-2"
+          }
+        >
           By submitting this form, you agree that we may use your details to
           handle your enquiry and may pass them to a solicitor firm or legal
           service provider where appropriate. See our{" "}
