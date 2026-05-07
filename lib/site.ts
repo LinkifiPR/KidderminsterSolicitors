@@ -191,6 +191,7 @@ export const servicePages: ServicePage[] = [
     relatedGuideSlugs: [
       "how-much-do-solicitors-charge-for-probate",
       "probate-costs-kidderminster",
+      "executor-responsibilities-explained",
       "what-does-a-probate-solicitor-do",
       "how-long-does-probate-take",
       "do-you-need-a-solicitor-for-probate",
@@ -1776,6 +1777,243 @@ export const guidePages: GuidePage[] = [
   },
   {
     type: "guide",
+    slug: "executor-responsibilities-explained",
+    title: "Executor Responsibilities Explained",
+    h1: "Executor responsibilities explained",
+    metaDescription:
+      "General guide to executor responsibilities in the UK, including first steps, estate assets, debts, beneficiaries, records, and probate support.",
+    category: "Probate and Wills",
+    updated: "2026-05-07",
+    relatedServiceSlug: "probate-solicitors-kidderminster",
+    intro:
+      "An executor is responsible for dealing with the estate of someone who has died. The role can involve finding the will, protecting estate assets, identifying debts, applying for probate where needed, keeping records, communicating with beneficiaries, and distributing the estate correctly.",
+    keyTakeaways: [
+      "Executors should understand the estate before distributing money or personal items.",
+      "Property, tax paperwork, missing documents, debts, and beneficiary questions can make the role more demanding.",
+      "Good records and clear communication can reduce avoidable disputes and confusion.",
+      "This guide is general information only; a solicitor partner may explain options if you request a no obligation probate quote.",
+    ],
+    sections: [
+      {
+        heading: "First steps for an executor",
+        body: [
+          "The first practical step is usually to locate the will and confirm who has been appointed as executor. If there is more than one executor, they should agree how decisions will be made, who will gather information, and how communication with beneficiaries will be handled.",
+          "Executors may need to register the death, arrange or support funeral practicalities, secure property, notify banks and providers, and begin building a picture of the estate. Some tasks are administrative, but others carry responsibility because decisions can affect creditors, beneficiaries, and tax paperwork.",
+          "If you are unsure whether you are willing or able to act, take care before doing anything that could be treated as taking on the role. This website cannot advise on renouncing or reserving power, but it can help you identify when speaking directly to a qualified provider may be sensible.",
+        ],
+      },
+      {
+        heading: "Finding assets and debts",
+        body: [
+          "Executors usually need to identify bank accounts, savings, investments, pensions, life policies, property, vehicles, valuable items, business interests, debts, tax liabilities, utility accounts, credit cards, loans, and funeral costs. A clear asset and liability schedule helps the probate process and later estate accounts.",
+          "Joint assets, nominated benefits, trusts, and gifts made before death may need careful handling. Not everything connected to the person who died necessarily passes through the estate in the same way.",
+          "For estates around Kidderminster and Wyre Forest, family homes are often central. A property may need insurance, security checks, valuation, maintenance, clearance, and eventual sale or transfer. These practical steps can create work before beneficiaries receive anything.",
+        ],
+      },
+      {
+        heading: "Applying for probate where needed",
+        body: [
+          "Executors may need a grant of probate before certain banks, investment providers, or property transactions can move forward. Whether a grant is needed depends on the assets, ownership, provider requirements, and estate structure.",
+          "The application process may involve asset values, inheritance tax forms where required, details of the will, executor information, and declarations. Mistakes can delay the grant or create problems later in administration.",
+          "Some executors handle the application themselves. Others ask a solicitor for grant-only support or full estate administration. The right level of help depends on complexity, confidence, time, and risk.",
+        ],
+      },
+      {
+        heading: "Paying debts and keeping records",
+        body: [
+          "Executors should identify and settle estate liabilities before final distribution. This may include funeral costs, utility bills, care fees, credit cards, loans, tax liabilities, property costs, professional fees, and other debts.",
+          "Clear records matter. Executors should be able to explain what money came in, what was paid out, what decisions were made, and why beneficiaries received particular amounts. Estate accounts can become important if questions are raised later.",
+          "Problems often arise when money is distributed too early, a debt is missed, personal items are given away without agreement, or records are too thin to answer beneficiary questions.",
+        ],
+      },
+      {
+        heading: "Communicating with beneficiaries",
+        body: [
+          "Beneficiaries may want updates, timescales, copies of information, or explanations about delays. Executors should communicate carefully, avoid making promises before the estate position is clear, and keep a record of important conversations.",
+          "Family expectations can be difficult, especially where people are grieving or live in different places. A Kidderminster estate may involve beneficiaries in Stourport, Bewdley, Cookley, Hagley, elsewhere in Worcestershire, or outside the area entirely.",
+          "If communication becomes strained, professional support may help create a clearer process. This website cannot advise on disputes, but it can help users understand when a probate solicitor introduction may be useful.",
+        ],
+      },
+      {
+        heading: "Where executor responsibilities can go wrong",
+        body: [
+          "Common risks include misunderstanding the will, distributing too early, missing debts, failing to protect property, overlooking tax paperwork, not keeping estate accounts, treating beneficiaries inconsistently, or taking informal family pressure as authority to act.",
+          "Property can increase risk. If a house is empty, there may be insurance conditions, security concerns, maintenance issues, bills, clearance decisions, and sale timing to manage. Executors should avoid assuming that property can simply wait without attention.",
+          "Executors can be personally exposed if they make mistakes. That does not mean every estate needs full professional administration, but uncertainty should be treated seriously.",
+        ],
+      },
+      {
+        heading: "What to prepare before speaking to a solicitor",
+        body: [
+          "Prepare the will, death certificate, executor names, beneficiary details, asset list, debts, property details, insurance information, bank and investment information, pension or life policy details, tax records, funeral invoice, and notes of any concerns.",
+          "It also helps to prepare a simple timeline: date of death, whether banks have been contacted, whether property has been secured, whether probate has started, whether any beneficiaries have asked questions, and whether urgent bills or deadlines exist.",
+          "If you are requesting a quote, keep the first summary practical. You do not need to upload sensitive documents through a public form. Detailed documents should be shared directly with a solicitor firm if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether probate is likely to be needed, whether the firm offers grant-only support or full administration, what work remains your responsibility, how fees are calculated, and who will communicate with beneficiaries.",
+          "Ask how property is handled, whether estate accounts are included, whether inheritance tax paperwork may be needed, what documents are needed first, and what would cause the quote to change.",
+          "If there is family disagreement, missing paperwork, overseas assets, trusts, or uncertainty about who should act, raise this early. A solicitor partner can only give a useful response if the starting information is clear.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are an executor dealing with an estate in Kidderminster or the wider Wyre Forest area, you can request a no obligation probate quote. We may pass your enquiry to a suitable solicitor partner where appropriate.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "executor-and-trustee-of-will",
+      "what-does-a-probate-solicitor-do",
+      "do-you-need-a-solicitor-for-probate",
+    ],
+    faq: [
+      {
+        question: "Can an executor be personally responsible for mistakes?",
+        answer:
+          "Executors can carry responsibility for how the estate is administered. If you are uncertain about debts, beneficiaries, tax, property, or the will, speaking to a qualified provider may be sensible.",
+      },
+      {
+        question: "Does every executor need a solicitor?",
+        answer:
+          "Not always. Some straightforward estates may be handled by executors themselves, while more complex estates may benefit from grant-only support or full estate administration.",
+      },
+      {
+        question: "Should beneficiaries be updated before probate is finished?",
+        answer:
+          "Beneficiaries often expect updates, but executors should avoid promising timings or distributions before debts, tax, assets, and estate accounts are understood.",
+      },
+      {
+        question: "Can I request help with executor responsibilities through this website?",
+        answer:
+          "Yes. You can submit a no obligation probate enquiry and we may pass it to a suitable solicitor partner where appropriate. You are under no obligation to instruct them.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "executor-and-trustee-of-will",
+    title: "Executor and Trustee of a Will: What Is the Difference?",
+    h1: "Executor and trustee of a will: what is the difference?",
+    metaDescription:
+      "Plain English guide to the difference between executors and trustees of a will, when roles overlap, and what to prepare before seeking probate support.",
+    category: "Probate and Wills",
+    updated: "2026-05-07",
+    relatedServiceSlug: "probate-solicitors-kidderminster",
+    intro:
+      "Executors and trustees can both appear in a will, and sometimes the same people are appointed to both roles. The executor deals with administering the estate after death. A trustee may hold or manage assets for beneficiaries under the terms of a trust.",
+    keyTakeaways: [
+      "Executors usually deal with the estate administration process after someone dies.",
+      "Trustees may manage assets held on trust, sometimes for children, vulnerable beneficiaries, or future events.",
+      "The same person can be both executor and trustee, but the duties may continue for different lengths of time.",
+      "If you are unsure which role applies, request a no obligation probate quote and speak directly with a suitable solicitor partner where appropriate.",
+    ],
+    sections: [
+      {
+        heading: "What an executor does",
+        body: [
+          "An executor is appointed in a will to deal with the estate after death. Their work may include finding assets, identifying debts, applying for probate where needed, paying liabilities, keeping estate accounts, communicating with beneficiaries, and distributing the estate according to the will.",
+          "The executor's role is usually focused on administration. It may last months, or longer if property needs selling, tax paperwork is involved, institutions are slow, or beneficiaries raise questions.",
+          "Executors should avoid distributing estate assets before they understand debts, tax, claims, and the correct beneficiaries. Keeping written records is important because questions may arise later.",
+        ],
+      },
+      {
+        heading: "What a trustee does",
+        body: [
+          "A trustee holds or manages assets under the terms of a trust. A trust may be created by a will where assets are held for children until a certain age, for a vulnerable beneficiary, for a life interest, or for another arrangement set out in the document.",
+          "A trustee's role can continue after the main estate administration has finished. For example, trustees may need to manage money or property until a beneficiary reaches a specified age or until a trust condition is met.",
+          "Trustee responsibilities can involve careful decision-making, record keeping, tax reporting, investment or property management, and communication with beneficiaries. Specific trust duties should be discussed with a qualified professional if you are appointed.",
+        ],
+      },
+      {
+        heading: "When the same person is both executor and trustee",
+        body: [
+          "It is common for a will to appoint the same people as executors and trustees. This can be practical because the people administering the estate may also need authority to hold assets temporarily or manage any trust created by the will.",
+          "The roles can overlap at first. An executor may collect assets and then, if the will creates a trust, those assets may be held by the trustees rather than distributed immediately.",
+          "The distinction matters because executor tasks may end once administration is complete, while trustee duties may continue. People appointed to both roles should understand when estate administration ends and any continuing trust responsibilities begin.",
+        ],
+      },
+      {
+        heading: "Examples of will trusts",
+        body: [
+          "A will might say that a child inherits at a certain age, meaning trustees hold the asset until then. A will might create a life interest, where one person benefits from an asset during their lifetime and another person receives it later. A will might also include provisions for vulnerable beneficiaries or complex family circumstances.",
+          "These examples can be sensitive and fact-specific. This website cannot interpret a will or advise on trust duties, but it can help users understand why professional probate or wills support may be useful.",
+          "If a family home in Kidderminster or Wyre Forest is involved, trust wording can affect whether property is sold, occupied, transferred, or held for future beneficiaries. That should be checked directly with a solicitor if you choose to instruct one.",
+        ],
+      },
+      {
+        heading: "Where things can go wrong",
+        body: [
+          "Problems can arise when executors distribute assets that should be held on trust, trustees fail to keep records, beneficiaries do not understand why assets are being held, or family members assume that informal agreement overrides the will.",
+          "Another risk is treating trustee responsibilities as finished when they are ongoing. A trustee may need to manage assets, report to beneficiaries, deal with tax paperwork, insure property, or make decisions over time.",
+          "If the will wording is unclear, if there are young beneficiaries, if property is held in trust, or if family members disagree, professional support may be important before decisions are made.",
+        ],
+      },
+      {
+        heading: "What to prepare before speaking to a solicitor",
+        body: [
+          "Prepare the will and any codicils, death certificate, executor and trustee names, beneficiary details, asset list, property details, information about any children or vulnerable beneficiaries, and notes on any clause you do not understand.",
+          "If a property is involved, note the address, who lives there, whether it is insured, whether there is a mortgage, and whether anyone expects to sell, transfer, or keep it. Property can make executor and trustee duties more practical and time-sensitive.",
+          "You do not need to send the will through a public quote form. Use the form to explain that executor or trustee wording needs review, then share documents directly with a solicitor firm if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether the will creates a trust, whether the executor and trustee roles are separate, what duties continue after probate, who should communicate with beneficiaries, and whether estate accounts or trust records are needed.",
+          "Ask whether property, tax paperwork, beneficiary ages, life interests, or vulnerable beneficiaries change the process. If several people are appointed, ask how decisions should be made and recorded.",
+          "Also ask what level of support is available. Some users need help understanding one clause; others need full estate administration or trust-related support.",
+        ],
+      },
+      {
+        heading: "Local context for Kidderminster families",
+        body: [
+          "Executor and trustee questions around Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire areas often involve family homes, blended families, children, relatives living away, or property that needs maintaining while decisions are made.",
+          "Local context does not decide the legal answer, but it can affect practical administration. Empty homes, insurance, estate agents, relatives with keys, and beneficiary expectations can all create pressure before the will has been properly understood.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you have been appointed as an executor, trustee, or both, and you are unsure what the role involves, you can request a no obligation probate quote. We may pass your enquiry to a suitable solicitor partner where appropriate.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "executor-responsibilities-explained",
+      "what-does-a-probate-solicitor-do",
+      "do-you-need-a-solicitor-for-probate",
+    ],
+    faq: [
+      {
+        question: "Can the same person be executor and trustee?",
+        answer:
+          "Yes. A will often appoints the same people as executors and trustees, but the duties can be different and trustee responsibilities may continue after estate administration.",
+      },
+      {
+        question: "Does every will create a trust?",
+        answer:
+          "No. Some wills simply distribute assets. Others create trusts for children, life interests, vulnerable beneficiaries, or other arrangements. The wording of the will matters.",
+      },
+      {
+        question: "Can trustees sell a property held under a will?",
+        answer:
+          "That depends on the will, the trust terms, the property, and the circumstances. This website cannot advise on a specific trust, so speak directly with a qualified provider if property decisions are needed.",
+      },
+      {
+        question: "Can I request probate support if I am unsure about a trustee role?",
+        answer:
+          "Yes. You can submit a no obligation enquiry and we may pass it to a suitable solicitor partner where appropriate. You are under no obligation to instruct them.",
+      },
+    ],
+  },
+  {
+    type: "guide",
     slug: "what-does-a-probate-solicitor-do",
     title: "What Does a Probate Solicitor Do?",
     h1: "What does a probate solicitor do?",
@@ -1860,6 +2098,7 @@ export const guidePages: GuidePage[] = [
     relatedGuideSlugs: [
       "how-much-do-solicitors-charge-for-probate",
       "probate-costs-kidderminster",
+      "executor-responsibilities-explained",
       "how-long-does-probate-take",
       "do-you-need-a-solicitor-for-probate",
     ],
@@ -1977,6 +2216,7 @@ export const guidePages: GuidePage[] = [
     relatedGuideSlugs: [
       "how-much-do-solicitors-charge-for-probate",
       "probate-costs-kidderminster",
+      "executor-responsibilities-explained",
       "what-does-a-probate-solicitor-do",
       "do-you-need-a-solicitor-for-probate",
     ],
@@ -2093,6 +2333,7 @@ export const guidePages: GuidePage[] = [
     relatedGuideSlugs: [
       "how-much-do-solicitors-charge-for-probate",
       "probate-costs-kidderminster",
+      "executor-responsibilities-explained",
       "what-does-a-probate-solicitor-do",
       "how-long-does-probate-take",
     ],
