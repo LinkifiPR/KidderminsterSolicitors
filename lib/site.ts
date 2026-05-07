@@ -484,17 +484,18 @@ export const servicePages: ServicePage[] = [
     title: "Wills Solicitors Kidderminster",
     h1: "Wills solicitors in Kidderminster",
     metaDescription:
-      "Find wills solicitor options in Kidderminster and request a no obligation quote.",
+      "Compare wills solicitor options in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
     category: "Wills",
     summary:
       "Help finding solicitors for wills, estate planning, and related private client work.",
     intro:
-      "A professionally prepared will can reduce uncertainty for family members and make wishes easier to understand after death. This page helps Kidderminster users compare wills solicitor options and request a no obligation quote where appropriate.",
+      "A clear, properly prepared will can reduce uncertainty for family members and make wishes easier to understand after death. This page helps Kidderminster users compare wills solicitor options, understand what to prepare, and request a no obligation quote from a suitable solicitor partner where appropriate.",
     localAngle:
       "People in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire communities may want a local or regional firm that can explain wills, executors, guardianship, property, and related private client documents in plain English.",
     keyTakeaways: [
-      "A will can deal with beneficiaries, executors, guardians for children, gifts, property, and funeral wishes.",
+      "A will can deal with executors, beneficiaries, guardians for children, gifts, property, personal possessions, and the residuary estate.",
       "Professional help may be useful where there are blended families, property, business interests, vulnerable beneficiaries, or inheritance tax questions.",
+      "A wills quote should explain what is included, whether mirror wills or updates cost extra, and how signing and witnessing will be handled.",
       "This website provides general information and solicitor introductions only, not wills or estate planning advice.",
     ],
     sections: [
@@ -503,6 +504,23 @@ export const servicePages: ServicePage[] = [
         body: [
           "A wills solicitor may help draft a new will, update an existing will, explain executor choices, record gifts, deal with property ownership questions, and discuss related documents such as lasting powers of attorney. They may also help reduce ambiguity where family circumstances are not straightforward.",
           "Simple wills can still raise important questions. A solicitor may ask about children, previous relationships, jointly owned property, business assets, overseas assets, vulnerable beneficiaries, and whether anyone may be disappointed by the will.",
+          "The aim is usually to make the will clear enough that executors know what to do later. A poorly drafted or out-of-date will can create practical probate problems, family uncertainty, and extra cost after death.",
+        ],
+      },
+      {
+        heading: "When people write or update wills",
+        body: [
+          "People often make or review a will after buying a home, getting married, separating, divorcing, having children, starting a business, receiving an inheritance, losing a loved one, or changing their mind about executors or beneficiaries.",
+          "A will may also need reviewing if you move property, acquire assets in another country, become responsible for a vulnerable person, or want to make specific gifts. Even where the existing will still works, checking it can reduce uncertainty.",
+          "If you live in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or elsewhere in Wyre Forest, local family and property circumstances may shape the questions you want to ask. Local relevance does not replace legal advice, but it can help you prepare a clearer enquiry.",
+        ],
+      },
+      {
+        heading: "Common contents of a will",
+        body: [
+          "A will often names executors, identifies beneficiaries, sets out specific gifts, explains what happens to the remainder of the estate, and may name guardians for children. It may also include funeral wishes, though those wishes may not be binding in the same way as gifts.",
+          "Property wording can be important. Jointly owned homes, sole-owned property, mortgages, business premises, rental property, or family arrangements can all affect what needs to be discussed with a solicitor.",
+          "Some wills are straightforward. Others need careful wording for blended families, children from previous relationships, vulnerable beneficiaries, life interests, trusts, business assets, or a person who may expect provision from the estate.",
         ],
       },
       {
@@ -510,6 +528,7 @@ export const servicePages: ServicePage[] = [
         body: [
           "Problems can arise if a will is not signed or witnessed correctly, uses unclear wording, leaves out a major asset, appoints unsuitable executors, fails to reflect a later marriage or divorce, or does not consider people who may expect provision from the estate.",
           "Online templates may be suitable for some simple situations, but users should understand the risk of ambiguity. This website cannot decide whether a will is valid or suitable; that assessment belongs with a solicitor or legal service provider.",
+          "Another common problem is assuming that family members will work everything out later. Executors may be left dealing with unclear gifts, missing property instructions, sentimental items, or beneficiaries who expected something different.",
         ],
       },
       {
@@ -517,6 +536,7 @@ export const servicePages: ServicePage[] = [
         body: [
           "Prepare a list of assets, property ownership details, approximate savings and investments, pensions and life policies, business interests, debts, names of proposed executors, names of beneficiaries, and any specific gifts you want to make.",
           "If you already have a will, note when it was signed and whether your circumstances have changed. Common triggers for review include marriage, divorce, children, property purchases, bereavement, business changes, or a change in family relationships.",
+          "Also prepare details of any children, stepchildren, dependants, vulnerable beneficiaries, charities, overseas assets, business interests, trusts, or family circumstances that may need careful discussion. You do not need to send sensitive documents through a public quote form.",
         ],
       },
       {
@@ -524,10 +544,29 @@ export const servicePages: ServicePage[] = [
         body: [
           "Ask what is included in the quote, whether mirror wills are available, whether inheritance tax or trust questions are included, how signing and witnessing works, and whether the firm stores original documents.",
           "You may also want to ask whether the same provider can help with probate, lasting powers of attorney, or future updates. Clear pricing and plain-English explanation matter more than a low headline fee.",
+          "Ask who will draft the will, what happens if you need changes, whether meetings can be handled remotely or locally, and what information the solicitor needs before giving a meaningful quote.",
+        ],
+      },
+      {
+        heading: "Local context for Kidderminster families",
+        body: [
+          "Wills enquiries around Kidderminster and Wyre Forest often involve family homes, adult children living elsewhere, blended families, small businesses, rental property, or relatives in nearby areas such as Stourport, Bewdley, Cookley, and Hagley.",
+          "A local or regional solicitor partner may be useful where you prefer a provider familiar with Worcestershire clients and practical signing arrangements. The more important point is clear drafting, transparent cost, and a process that explains what happens next.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you want to compare wills solicitor options in Kidderminster, you can request a no obligation quote. We may pass your enquiry to a suitable solicitor partner where appropriate, and you are under no obligation to instruct them.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
         ],
       },
     ],
     relatedGuideSlugs: [
+      "what-should-be-included-in-a-will",
+      "intestacy-rules-explained",
+      "dies-without-a-will-uk",
+      "executor-and-trustee-of-will",
       "do-you-need-a-solicitor-for-probate",
       "what-does-a-probate-solicitor-do",
     ],
@@ -540,17 +579,132 @@ export const servicePages: ServicePage[] = [
       {
         question: "Do I need a solicitor to make a will?",
         answer:
-          "Not always, but a solicitor can be useful where your estate, family arrangements, or wishes are more complex.",
+          "Not always, but a solicitor may be useful where your estate, property, family arrangements, business interests, or wishes are more complex.",
       },
       {
         question: "Can I get a no obligation quote?",
         answer:
-          "Yes. The quote request can be passed to a solicitor firm or legal service provider.",
+          "Yes. You can submit a no obligation enquiry and it may be passed to a suitable solicitor partner who can contact you directly.",
       },
       {
         question: "Is this site a wills provider?",
         answer:
-          "No. This site is an independent guide and introduction website.",
+          "No. Kidderminster Solicitors is an independent guide and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+      },
+      {
+        question: "What should I prepare before requesting a wills quote?",
+        answer:
+          "Prepare details of assets, property, executors, beneficiaries, children or dependants, specific gifts, business interests, and any existing will or major life changes.",
+      },
+    ],
+  },
+  {
+    type: "service",
+    slug: "solicitor-for-wills-near-me-kidderminster",
+    title: "Solicitor for Wills Near Me Kidderminster",
+    h1: "Solicitor for wills near me in Kidderminster",
+    metaDescription:
+      "Looking for a solicitor for wills near Kidderminster? Compare local and regional wills support and request a no obligation quote.",
+    category: "Wills",
+    summary:
+      "Local-intent wills support for people comparing nearby solicitor options around Kidderminster and Wyre Forest.",
+    intro:
+      "Searching for a solicitor for wills near me usually means you want practical, local-feeling support from someone who can explain the process clearly. This page helps Kidderminster and Wyre Forest users compare wills solicitor options and request a no obligation quote from a suitable solicitor partner where appropriate.",
+    localAngle:
+      "The site is an independent guide rather than a physical law office. It can help users in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire areas request an introduction to a suitable solicitor partner for wills enquiries.",
+    keyTakeaways: [
+      "Nearby wills support may mean a local office, regional solicitor, remote appointment, or a provider able to handle signing and witnessing clearly.",
+      "A wills enquiry should explain family circumstances, property, executors, beneficiaries, and any existing will or major life changes.",
+      "You are under no obligation to instruct any solicitor partner introduced through this website.",
+      "Kidderminster Solicitors is an independent solicitor introduction website, not a law firm.",
+    ],
+    sections: [
+      {
+        heading: "What nearby wills support can mean",
+        body: [
+          "For some people, nearby support means being able to meet in person. For others, it means a solicitor who understands local clients, can communicate clearly by phone or video, and can explain how signing and witnessing will work.",
+          "Wills work can often start with a phone or online conversation, but the final document must still be handled carefully. Ask how the firm manages identity checks, draft review, signing instructions, witnesses, storage, and future updates.",
+          "This website does not claim to be a local solicitor firm or law office. It is an independent guide that may pass your enquiry to a suitable solicitor partner where appropriate.",
+        ],
+      },
+      {
+        heading: "Common wills enquiries",
+        body: [
+          "People commonly seek help with first wills, mirror wills, will updates, executor choices, guardians for children, gifts, property, blended families, vulnerable beneficiaries, funeral wishes, and questions about what happens if there is no will.",
+          "Some enquiries are straightforward. Others need more careful discussion because there is property, a business, children from a previous relationship, an unmarried partner, inheritance tax questions, or someone who may expect provision from the estate.",
+          "A clear first enquiry helps the solicitor partner understand whether the matter looks simple, whether extra planning questions may arise, and what information may be needed before quoting.",
+        ],
+      },
+      {
+        heading: "How the introduction process works",
+        body: [
+          "You can submit a short no obligation enquiry explaining what wills support you need. We may review the details and pass the enquiry to a suitable solicitor partner or legal service provider who can contact you directly.",
+          "You are not required to instruct any firm introduced through this website. You can compare options, ask questions, and decide whether the provider is right for you.",
+          "Do not include unnecessary sensitive documents in the public form. A concise summary is enough at enquiry stage. Detailed documents should be shared directly with a solicitor firm if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare your full name, postcode, preferred contact time, whether you need a new will or an update, whether you want mirror wills, and whether there are urgent deadlines or health concerns affecting timing.",
+          "Also prepare a broad list of assets, property, savings, pensions, life policies, debts, executors, beneficiaries, children or dependants, specific gifts, business interests, overseas assets, and any existing will.",
+          "If you live around Kidderminster or Wyre Forest and own property locally, note whether it is jointly owned, mortgaged, rented out, or part of wider family arrangements.",
+        ],
+      },
+      {
+        heading: "Questions to ask a wills solicitor",
+        body: [
+          "Ask what is included in the quote, whether the firm handles simple wills, mirror wills, updates, trusts, lasting powers of attorney, or inheritance tax-related questions, and what may cost extra.",
+          "Ask who drafts the will, how long the process usually takes, how signing and witnessing are handled, whether remote appointments are available, whether original wills are stored, and how future updates work.",
+          "If family circumstances are sensitive, ask how the solicitor will help clarify instructions and reduce ambiguity without assuming the answer before the facts are understood.",
+        ],
+      },
+      {
+        heading: "Local Kidderminster and Wyre Forest context",
+        body: [
+          "Wills enquiries in Kidderminster and the wider Wyre Forest area often involve family homes, adult children, blended families, small businesses, rental properties, or relatives spread across Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire communities.",
+          "Local context can make the enquiry more practical, especially where signing arrangements, property, or family communication matters. The legal work still needs to be handled by a qualified provider if you choose to instruct one.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you are looking for a solicitor for wills near Kidderminster, you can request a no obligation quote. We may pass your enquiry to a suitable solicitor partner where appropriate.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "what-should-be-included-in-a-will",
+      "intestacy-rules-explained",
+      "dies-without-a-will-uk",
+      "executor-and-trustee-of-will",
+    ],
+    comparisonPoints: [
+      "Ask whether appointments can be handled locally, remotely, or by phone.",
+      "Check what is included in the wills quote and whether updates or mirror wills cost extra.",
+      "Confirm how signing, witnessing, storage, and future changes are handled.",
+    ],
+    faq: [
+      {
+        question: "Is this website a local wills solicitor office?",
+        answer:
+          "No. Kidderminster Solicitors is an independent guide and solicitor introduction website. It is not a law firm or a physical solicitor office.",
+      },
+      {
+        question: "Can I request a quote from a solicitor for wills near me?",
+        answer:
+          "Yes. You can submit a no obligation enquiry and a suitable solicitor partner may contact you directly if they are able to help.",
+      },
+      {
+        question: "Do wills appointments need to be in person?",
+        answer:
+          "Not always. Some firms can start by phone or video, but signing and witnessing must still be handled properly. Ask the solicitor partner how their process works.",
+      },
+      {
+        question: "What should I include in my first wills enquiry?",
+        answer:
+          "Include whether you need a new will or update, your postcode, preferred contact time, broad family/property circumstances, and any timing concerns. Avoid sending sensitive documents through the public form.",
       },
     ],
   },
@@ -2476,6 +2630,126 @@ export const guidePages: GuidePage[] = [
         question: "Can I request help if there is no will?",
         answer:
           "Yes. You can submit a no obligation probate enquiry through this website. A suitable solicitor partner may contact you directly if they are able to help.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "what-should-be-included-in-a-will",
+    title: "What Should Be Included in a Will?",
+    h1: "What should be included in a will?",
+    metaDescription:
+      "General guide to common will contents, including executors, beneficiaries, gifts, property, guardians, residuary estate, and questions to ask.",
+    category: "Probate and Wills",
+    updated: "2026-05-07",
+    relatedServiceSlug: "wills-solicitors-kidderminster",
+    intro:
+      "A will should make it easier for the people left behind to understand who deals with the estate, who receives what, and how important practical decisions should be handled. The exact wording depends on personal circumstances, but there are common topics many people should think about before speaking to a wills solicitor.",
+    keyTakeaways: [
+      "A will commonly names executors, beneficiaries, specific gifts, guardians for children, and who receives the remainder of the estate.",
+      "Property, blended families, business interests, vulnerable beneficiaries, and overseas assets can make the wording more important.",
+      "A useful wills conversation starts with clear information about assets, family circumstances, executors, beneficiaries, and any concerns.",
+      "This guide is general information only; a solicitor partner may explain options if you request a no obligation wills quote.",
+    ],
+    sections: [
+      {
+        heading: "Executors",
+        body: [
+          "Executors are the people appointed to deal with the estate after death. Their role can involve finding assets, paying debts, applying for probate where needed, keeping estate accounts, communicating with beneficiaries, and distributing the estate.",
+          "Choosing executors is a practical decision as well as a personal one. They should be able to handle paperwork, make decisions, keep records, and communicate calmly. Some people choose relatives or friends. Others may want professional involvement where the estate or family circumstances are more complex.",
+          "Before naming someone, consider whether they are willing, available, trustworthy, and likely to work well with any co-executors. If your estate includes a Kidderminster property, business assets, or several beneficiaries, practical administration may matter more than people expect.",
+        ],
+      },
+      {
+        heading: "Beneficiaries and gifts",
+        body: [
+          "A will normally identifies who should benefit from the estate. This may include family members, friends, charities, or other organisations. It can also include specific gifts, such as jewellery, personal possessions, money gifts, or items with sentimental value.",
+          "Specific gifts should be described clearly enough to avoid confusion. If the item may be sold, replaced, or no longer owned later, ask how the will should deal with that possibility. Ambiguous gifts can create disputes between beneficiaries and extra work for executors.",
+          "If you want to leave different shares to different people, exclude someone who might expect provision, or benefit a vulnerable person, discuss this directly with a solicitor. This website cannot advise on suitability or wording.",
+        ],
+      },
+      {
+        heading: "Property and the residuary estate",
+        body: [
+          "The residuary estate is broadly what remains after debts, expenses, tax, and specific gifts have been dealt with. Many wills include wording explaining who receives this remainder. Without clear residuary wording, part of the estate may be harder to administer.",
+          "Property can need careful consideration. A jointly owned home may pass differently from a solely owned property. Mortgages, rental property, business premises, trusts, life interests, and rights for someone to live in a property can all affect the discussion.",
+          "For people in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or nearby Worcestershire areas, family homes are often central to the will conversation. Make sure property ownership details are checked rather than assumed.",
+        ],
+      },
+      {
+        heading: "Guardians for children",
+        body: [
+          "Parents with children under 18 may want to think about guardians. A will can name who should care for children if both parents have died, although the wider circumstances can still matter.",
+          "Guardian choices can be sensitive. Practical points include location, relationship with the children, values, financial stability, health, age, existing family commitments, and whether the proposed guardian is willing to take on the role.",
+          "A will may also need to consider how money is held for children until they reach a certain age. This can overlap with trustee decisions, so ask how executor and trustee appointments fit together.",
+        ],
+      },
+      {
+        heading: "Funeral wishes and personal wishes",
+        body: [
+          "Some people include funeral wishes in a will. These may help family members understand preferences, but practical arrangements often need to happen before the will is fully reviewed. It can be sensible to tell executors or family members where important documents are kept.",
+          "A will may also include personal wishes, but not every wish works in the same way as a legal gift. Ask a solicitor what should go in the will and what may be better recorded separately.",
+          "If wishes are emotionally important, clarity matters. Vague wording can leave family members trying to interpret intentions at a difficult time.",
+        ],
+      },
+      {
+        heading: "Where wills commonly go wrong",
+        body: [
+          "Problems can arise where a will is not signed or witnessed correctly, executors are unsuitable, a gift is unclear, a beneficiary has died, a later marriage or divorce changes the position, or important assets are not considered.",
+          "Other issues include assuming that an unmarried partner is automatically protected, failing to review the will after children are born, ignoring jointly owned property, or using a template that does not fit the family circumstances.",
+          "A will does not remove every possible dispute, but clearer drafting and regular review can reduce avoidable uncertainty.",
+        ],
+      },
+      {
+        heading: "What to prepare before speaking to a solicitor",
+        body: [
+          "Prepare a list of assets, property ownership details, mortgage information, savings, investments, pensions, life policies, business interests, debts, proposed executors, beneficiaries, children or dependants, charities, specific gifts, and any existing will.",
+          "Also note any family circumstances that may need careful handling, such as previous relationships, estranged relatives, vulnerable beneficiaries, stepchildren, overseas assets, or someone who may expect provision from the estate.",
+          "Use the public quote form for a practical summary only. Detailed financial or personal documents should be shared directly with a solicitor firm or legal service provider if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a wills solicitor",
+        body: [
+          "Ask what information is needed, what is included in the quote, whether mirror wills are available, how executors and trustees are chosen, how signing and witnessing works, and whether the original will can be stored securely.",
+          "Ask whether your property ownership, family structure, children, business interests, trusts, or inheritance tax questions mean the will is more than a simple draft. If you already have a will, ask whether an update or a full replacement is more suitable.",
+          "You may also want to ask whether the same provider can help with lasting powers of attorney or future probate support.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you want to discuss what should be included in a will, you can compare wills solicitor options in Kidderminster and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "intestacy-rules-explained",
+      "dies-without-a-will-uk",
+      "executor-and-trustee-of-will",
+      "do-you-need-a-solicitor-for-probate",
+    ],
+    faq: [
+      {
+        question: "Does every will need to include the same things?",
+        answer:
+          "No. Common topics include executors, beneficiaries, gifts, property, guardians, and the residuary estate, but the right content depends on personal circumstances.",
+      },
+      {
+        question: "Should funeral wishes be included in a will?",
+        answer:
+          "Some people include funeral wishes, but practical arrangements may need to happen before the will is fully reviewed. Ask a solicitor how best to record important wishes.",
+      },
+      {
+        question: "Can a will deal with property in Kidderminster?",
+        answer:
+          "A will can deal with estate property, but ownership details matter. Jointly owned and solely owned property may need different consideration, so assumptions should be checked.",
+      },
+      {
+        question: "Can I request a wills quote through this website?",
+        answer:
+          "Yes. You can submit a no obligation enquiry and we may pass it to a suitable solicitor partner where appropriate. You are under no obligation to instruct them.",
       },
     ],
   },
