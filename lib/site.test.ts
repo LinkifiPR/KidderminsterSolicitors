@@ -86,7 +86,7 @@ describe("site content model", () => {
         "what-does-a-probate-solicitor-do",
         "how-long-does-probate-take",
         "do-you-need-a-solicitor-for-probate",
-        "how-to-prepare-for-a-divorce-solicitor-consultation",
+        "prepare-divorce-solicitor-consultation",
         "what-does-a-family-law-solicitor-help-with",
         "settlement-agreements-explained",
         "when-should-you-speak-to-an-employment-solicitor",

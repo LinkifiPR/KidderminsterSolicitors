@@ -619,7 +619,7 @@ export const servicePages: ServicePage[] = [
     ],
     relatedGuideSlugs: [
       "what-does-a-family-law-solicitor-help-with",
-      "how-to-prepare-for-a-divorce-solicitor-consultation",
+      "prepare-divorce-solicitor-consultation",
       "what-does-a-conveyancing-solicitor-do",
       "what-does-a-probate-solicitor-do",
     ],
@@ -646,82 +646,92 @@ export const servicePages: ServicePage[] = [
       },
     ],
   },
-  {
-    type: "service",
+  createSpecialistServicePage({
     slug: "divorce-solicitors-kidderminster",
     title: "Divorce Solicitors Kidderminster",
     h1: "Divorce solicitors in Kidderminster",
     metaDescription:
-      "Compare divorce solicitor options in Kidderminster and request a no obligation quote.",
+      "Compare divorce solicitor options in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
     category: "Divorce",
     summary:
-      "Solicitor introductions for divorce, financial arrangements, and separation-related legal support.",
-    intro:
-      "Divorce can involve the legal divorce process, financial arrangements, children, housing, pensions, and communication with a former partner. This page helps users in Kidderminster understand what to compare before requesting a no obligation quote from a suitable solicitor partner.",
-    localAngle:
-      "Users in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area may prefer a firm that can explain the process clearly, respond quickly, and understand the practical pressure around homes, schools, work, and family routines.",
-    keyTakeaways: [
-      "Divorce support may cover the divorce application, financial arrangements, pensions, property, and child-related issues.",
-      "Costs and scope can vary, so ask whether a quote covers only the divorce process or wider financial and family law work.",
-      "This website is an independent local guide and does not provide divorce advice or representation.",
+      "Solicitor introductions for divorce, financial arrangements, child arrangements, and separation-related legal support.",
+    userNeed:
+      "Divorce enquiries often start when someone needs to understand the divorce process, financial arrangements, children issues, housing, pensions, or how to prepare for a first conversation with a solicitor.",
+    serviceScope: [
+      "A divorce solicitor may help with the divorce application, conditional order and final order process, financial disclosure, consent orders, pension questions, property and mortgage issues, and communication with another party or their solicitor.",
+      "Divorce work can be narrow or broad. Some users only need help with the legal divorce paperwork, while others need support with money, children, property, business interests, or a separation agreement.",
     ],
-    sections: [
-      {
-        heading: "What divorce solicitors may help with",
-        body: [
-          "A divorce solicitor may help with the divorce process itself, financial disclosure, property questions, pensions, savings, debts, child arrangements, consent orders, and correspondence with the other party or their solicitor. Some matters are mainly administrative. Others involve negotiation, mediation, or court-related steps.",
-          "It is important to ask what the firm is quoting for. A fixed-fee divorce package may only cover the divorce application and may not include financial arrangements, pensions, property transfer, or child-related advice. Clear scope helps prevent surprises later.",
-        ],
-      },
-      {
-        heading: "Where divorce enquiries can become complicated",
-        body: [
-          "Common pressure points include disagreements about the family home, mortgage affordability, pension sharing, business interests, savings, debt, school routines, communication breakdown, missing financial information, and uncertainty about whether an agreement is legally binding.",
-          "Users should be cautious about relying only on informal agreement. A solicitor or legal service provider can explain what documents may be needed if you choose to instruct them, but this website cannot assess your legal position.",
-        ],
-      },
-      {
-        heading: "What to prepare",
-        body: [
-          "Before requesting a quote, prepare the marriage date, separation date if relevant, whether there are children, current living arrangements, broad property and mortgage details, income, pensions, savings, debts, and any existing correspondence or draft agreement.",
-          "Keep the first enquiry factual and proportionate. Do not send unnecessary sensitive documents through the quote form. Detailed papers should be shared directly with a solicitor or legal service provider if you decide to instruct them.",
-        ],
-      },
-      {
-        heading: "Questions to ask a divorce solicitor",
-        body: [
-          "Ask whether the firm handles both divorce and financial remedy work, whether fixed-fee stages are available, who will manage the matter day to day, what information is needed before the first appointment, and how urgent issues are handled.",
-          "You may also want to ask how the firm approaches mediation, consent orders, pensions, property, and communication with the other party. A suitable provider should explain process and cost clearly without promising a particular outcome.",
-        ],
-      },
+    localContext:
+      "For users in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area, divorce questions often overlap with local housing, school routines, childcare, work travel, mortgage affordability, and family support networks.",
+    prepareItems: [
+      "marriage or civil partnership dates",
+      "separation date if relevant",
+      "children's ages and current arrangements",
+      "property and mortgage details",
+      "income, savings, debts, and pension information",
+      "any court papers or draft agreement",
+    ],
+    questionItems: [
+      "whether the firm handles divorce and financial remedy work",
+      "what is included in any fixed-fee stage",
+      "whether children and finances are handled separately",
+      "what documents are needed first",
+      "how urgent concerns are managed",
+    ],
+    riskItems: [
+      "Things commonly go wrong when people assume the divorce application alone resolves finances, rely on informal agreements, overlook pensions, miss documents, or wait until communication has broken down completely.",
+      "A quote can also become unclear where it does not explain whether it covers only the divorce process or wider financial, property, pension, and child-related work.",
     ],
     relatedGuideSlugs: [
-      "how-to-prepare-for-a-divorce-solicitor-consultation",
+      "prepare-divorce-solicitor-consultation",
+      "divorce-financial-settlements-explained",
+      "how-long-does-divorce-take",
+      "divorce-costs-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "divorce-separation-solicitors-kidderminster",
+    title: "Divorce and Separation Solicitors Kidderminster",
+    h1: "Divorce and separation solicitors in Kidderminster",
+    metaDescription:
+      "Compare divorce and separation solicitor options in Kidderminster and request a no obligation quote.",
+    category: "Divorce and Separation",
+    summary:
+      "Help comparing solicitor options for separation, divorce, finances, housing, children, and practical next steps.",
+    userNeed:
+      "Separation can raise urgent practical questions before, during, or instead of a formal divorce application. Users may need to understand what to compare before speaking with a solicitor about children, money, housing, or future arrangements.",
+    serviceScope: [
+      "A solicitor may help with separation agreements, divorce process questions, financial disclosure, property and mortgage arrangements, child arrangements, consent orders, and communication where direct discussion is difficult.",
+      "Some couples are already divorcing. Others are separating but not ready to start a divorce application. The right support depends on the facts, documents, urgency, and whether there are children, property, pensions, debts, or business interests.",
+    ],
+    localContext:
+      "In Kidderminster and Wyre Forest, separation enquiries may involve practical local issues such as where each person will live, school routines, childcare, family support in Stourport or Bewdley, and whether the family home can be kept, sold, or transferred.",
+    prepareItems: [
+      "a short timeline",
+      "current living arrangements",
+      "children's routines if relevant",
+      "property and mortgage details",
+      "income and pension information",
+      "any written agreement or correspondence",
+    ],
+    questionItems: [
+      "whether divorce, separation agreement, or both may need discussing",
+      "how finances and child arrangements are approached",
+      "what information is needed before a quote",
+      "whether mediation may be relevant",
+      "what could make the matter urgent or more complex",
+    ],
+    riskItems: [
+      "Problems can arise where separated people rely on informal promises about money, the family home, pensions, debt, or children without understanding whether the arrangement is recorded properly.",
+      "Another risk is focusing only on the divorce application while leaving financial arrangements unresolved or unclear.",
+    ],
+    relatedGuideSlugs: [
+      "prepare-divorce-solicitor-consultation",
+      "divorce-financial-settlements-explained",
+      "child-arrangements-explained",
       "what-does-a-family-law-solicitor-help-with",
     ],
-    comparisonPoints: [
-      "Ask whether the firm handles financial remedy work as well as the divorce process.",
-      "Check whether fixed-fee or staged pricing is available.",
-      "Confirm how contact will be managed and how quickly updates are normally provided.",
-    ],
-    faq: [
-      {
-        question: "Can this website advise me about divorce?",
-        answer:
-          "No. We provide general information and introductions only. Legal advice must come from a qualified legal provider.",
-      },
-      {
-        question: "Can I request a divorce solicitor quote?",
-        answer:
-          "Yes. You can submit a no obligation enquiry and a suitable partner may contact you.",
-      },
-      {
-        question: "Will my enquiry be confidential?",
-        answer:
-          "We handle enquiries carefully, but users should avoid sending unnecessary sensitive information until speaking directly with a solicitor.",
-      },
-    ],
-  },
+  }),
   {
     type: "service",
     slug: "wills-solicitors-kidderminster",
@@ -1074,6 +1084,49 @@ export const servicePages: ServicePage[] = [
       },
     ],
   },
+  createSpecialistServicePage({
+    slug: "child-law-solicitors-kidderminster",
+    title: "Child Law Solicitors Kidderminster",
+    h1: "Child law solicitors in Kidderminster",
+    metaDescription:
+      "Compare child law solicitor options in Kidderminster for child arrangements, parental responsibility, and family law enquiries.",
+    category: "Child Law",
+    summary:
+      "Support comparing solicitor options for child arrangements, parental responsibility, holidays, relocation concerns, and family communication issues.",
+    userNeed:
+      "Child law enquiries often begin when parents or carers need to understand how to approach arrangements for where a child lives, time with each parent, holidays, school routines, parental responsibility, or communication after separation.",
+    serviceScope: [
+      "A child law solicitor may help with child arrangements, parental responsibility, consent for travel, specific issue questions, prohibited steps concerns, correspondence, mediation context, and court-related process where appropriate.",
+      "The work needed can vary widely. Some users need a calm first conversation about practical arrangements. Others may have court papers, safeguarding concerns, urgent travel issues, or a breakdown in communication.",
+    ],
+    localContext:
+      "For families in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Wyre Forest areas, practical local details such as schools, nursery routines, travel between homes, family support, and work patterns can shape what needs to be discussed directly with a solicitor.",
+    prepareItems: [
+      "children's ages",
+      "current living and contact arrangements",
+      "school or nursery routines",
+      "a short timeline",
+      "any existing agreement or court order",
+      "urgent dates such as holidays or school changes",
+    ],
+    questionItems: [
+      "whether the firm handles child arrangement matters",
+      "what information is needed before the first appointment",
+      "whether mediation may be relevant",
+      "how urgent child-related concerns are handled",
+      "how costs and communication will be explained",
+    ],
+    riskItems: [
+      "Child-related matters can become more difficult where communication breaks down, arrangements are vague, school or holiday plans are unclear, or one person acts without discussing a significant decision.",
+      "Sensitive family issues should be handled carefully. If there is immediate risk of harm, users should contact emergency services or appropriate urgent support rather than relying on a website enquiry.",
+    ],
+    relatedGuideSlugs: [
+      "child-arrangements-explained",
+      "parental-responsibility-order-explained",
+      "what-does-a-family-law-solicitor-help-with",
+      "prepare-divorce-solicitor-consultation",
+    ],
+  }),
   createSpecialistServicePage({
     slug: "contested-probate-solicitors-kidderminster",
     title: "Contested Probate Solicitors Kidderminster",
@@ -4185,162 +4238,496 @@ export const guidePages: GuidePage[] = [
       },
     ],
   },
-  {
-    type: "guide",
-    slug: "how-to-prepare-for-a-divorce-solicitor-consultation",
-    title: "How to Prepare for a Divorce Solicitor Consultation",
-    h1: "How to prepare for a divorce solicitor consultation",
+  createQualityGuide({
+    slug: "divorce-financial-settlements-explained",
+    title: "Divorce Financial Settlements Explained",
+    h1: "Divorce financial settlements explained",
     metaDescription:
-      "General preparation checklist for speaking to a divorce solicitor about separation, finances, and child arrangements.",
+      "General guide to divorce financial settlements, disclosure, property, pensions, consent orders, and what to prepare before speaking to a solicitor.",
     category: "Family and Divorce",
-    updated: "2026-05-04",
     relatedServiceSlug: "divorce-solicitors-kidderminster",
     intro:
-      "Preparing before a first divorce solicitor consultation can help you explain the situation clearly, understand the likely next steps, and avoid using the appointment just to gather basic facts.",
+      "A divorce financial settlement is the part of separation that deals with money, property, pensions, debt, income, and future needs. It can matter even where the divorce itself feels straightforward.",
     keyTakeaways: [
-      "A concise timeline and summary of children, property, finances, and urgent concerns can make the first conversation more useful.",
-      "Keep enquiry forms proportionate and share sensitive documents directly with a solicitor if you choose to instruct them.",
-      "Ask about process, costs, information needed, mediation context, and communication before deciding what to do next.",
+      "The divorce application and financial arrangements are separate issues, so finances should not be ignored just because the divorce process is moving.",
+      "Financial settlement discussions commonly involve disclosure, property, mortgages, pensions, savings, debts, income, and future housing needs.",
+      "A consent order may be used to record an agreement, but individual suitability must be discussed with a qualified provider.",
     ],
-    sections: [
-      {
-        heading: "What the first consultation should achieve",
-        body: [
-          "A first consultation is usually about understanding your circumstances, identifying the main issues, and explaining possible next steps. It is not about deciding everything immediately. Divorce, finances, child arrangements, housing, and communication can each need separate consideration.",
-          "You do not need a perfect file before speaking to a solicitor. A clear summary of the relationship, the current position, and your main concerns is often more useful than a large bundle of unorganised documents.",
-        ],
-      },
-      {
-        heading: "Information to gather",
-        body: [
-          "It may help to list marriage or civil partnership dates, separation date, children's ages and arrangements, property ownership, mortgage details, income, savings, pensions, debts, business interests, and any urgent concerns such as housing or safety.",
-          "For users in Kidderminster, Stourport, Bewdley, Cookley, Hagley, or nearby areas, practical arrangements such as school runs, local housing, childcare, and work patterns can be relevant when discussing next steps. Keep the first summary factual and proportionate.",
-        ],
-      },
-      {
-        heading: "Where things can go wrong",
-        body: [
-          "A consultation can become less useful if it focuses only on blame, long background detail, or arguments that do not affect the legal process. Try to separate facts, concerns, and goals. If something is urgent, put that near the top of your notes.",
-          "Another common issue is underestimating finances. Pensions, debts, business interests, and future housing needs can matter. Even if figures are approximate, write them down so the solicitor can see what information is missing.",
-        ],
-      },
-      {
-        heading: "What to prepare",
-        body: [
-          "Prepare a one-page timeline, details of children and current arrangements, property and mortgage information, income and employment details, savings, debts, pensions, and any court papers or previous correspondence. If mediation has already taken place, note when and what happened.",
-          "Avoid sending unnecessary sensitive documents through a general enquiry form. Use the form to explain the broad issue and preferred contact method, then share detailed documents directly with the solicitor or legal service provider if you choose to instruct them.",
-        ],
-      },
-      {
-        heading: "Questions to ask",
-        body: [
-          "Ask what the likely stages are, what information is needed first, whether mediation may be relevant, how finances and child arrangements are handled, what costs could look like, and who will be your day-to-day contact.",
-          "You can also ask what should happen if communication with your former partner is difficult, whether urgent steps may be needed, and how the firm explains options without making unrealistic promises.",
-        ],
-      },
-      {
-        heading: "Next step",
-        body: [
-          "If you are preparing to speak to a divorce solicitor in Kidderminster or the wider Wyre Forest area, you can compare divorce solicitor options and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
-          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
-        ],
-      },
+    topicOverview: [
+      "Financial settlement is a broad label for how separating spouses or civil partners deal with assets, debts, income, pensions, and future arrangements. The facts can be simple or complex depending on property, children, business interests, pensions, savings, borrowing, and whether both people provide full financial information.",
+      "A solicitor may help explain process, organise disclosure, draft or review documents, discuss consent orders, correspond with the other party, and identify what information is missing. This website cannot advise on what a fair settlement would be.",
     ],
+    practicalExamples: [
+      "A Kidderminster couple may agree who keeps living in the family home but still need to understand mortgage affordability, transfer of equity, pension information, and whether the agreement should be recorded formally.",
+      "Another person may have limited knowledge of household finances because their former partner handled accounts, savings, pensions, or business paperwork. In that situation, disclosure and document gathering may be a major early step.",
+      "A financial settlement can also be relevant where there are no children and no obvious dispute, because future claims and clean-break wording may still need to be considered directly with a solicitor.",
+    ],
+    commonProblems: [
+      "Common problems include treating an informal agreement as final, overlooking pensions, failing to list debts, misunderstanding mortgage capacity, using approximate figures for major assets, or assuming the court process is only about who owns what now.",
+      "Things also become harder when people delay gathering documents, mix emotional arguments with financial evidence, or agree to terms before understanding the long-term practical consequences.",
+    ],
+    prepareItems: [
+      "a short relationship and separation timeline",
+      "property and mortgage information",
+      "income details",
+      "savings and debts",
+      "pension information",
+      "business or self-employment details if relevant",
+      "any draft agreement or mediation summary",
+    ],
+    questionItems: [
+      "what financial information is needed first",
+      "whether pensions need specialist attention",
+      "whether a consent order may be relevant",
+      "what costs are likely for each stage",
+      "what could make the matter more complex",
+    ],
+    localContext:
+      "In Kidderminster and Wyre Forest, financial settlement questions often overlap with local house prices, mortgage affordability, school routines, work travel, and whether one person can stay close to family support in areas such as Stourport, Bewdley, Cookley, or Hagley.",
     relatedGuideSlugs: [
+      "divorce-costs-explained",
+      "how-long-does-divorce-take",
+      "prepare-divorce-solicitor-consultation",
       "what-does-a-family-law-solicitor-help-with",
-      "when-should-you-speak-to-an-employment-solicitor",
     ],
     faq: [
       {
-        question: "Do I need all financial documents before a first divorce consultation?",
+        question: "Is a divorce financial settlement separate from the divorce itself?",
         answer:
-          "No, but a basic list of property, income, savings, pensions, and debts can make the first conversation more useful.",
+          "Yes. The divorce process and financial arrangements are related but separate. A solicitor can explain what may be needed for your circumstances if you choose to instruct them.",
+      },
+      {
+        question: "Do pensions matter in divorce financial settlements?",
+        answer:
+          "They can. Pensions may be significant assets, especially after a long relationship. Users should ask directly whether pension information or specialist input may be needed.",
+      },
+      {
+        question: "Can this website tell me what settlement is fair?",
+        answer:
+          "No. This website provides general information and solicitor introductions only. It cannot assess fairness or provide legal advice.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "how-long-does-divorce-take",
+    title: "How Long Does Divorce Take?",
+    h1: "How long does divorce take?",
+    metaDescription:
+      "Understand general divorce timescales in England and Wales, what can delay divorce, and what to prepare before speaking to a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "divorce-solicitors-kidderminster",
+    intro:
+      "A divorce in England and Wales usually has minimum process stages, but the overall time can vary where finances, children, documents, or communication are unresolved.",
+    keyTakeaways: [
+      "The divorce process has staged waiting periods, so it cannot usually be completed immediately.",
+      "Financial arrangements, pensions, property, children, missing information, or poor communication can make the wider separation take longer.",
+      "No website can guarantee a divorce timeline; timing depends on the process, documents, and any related issues.",
+    ],
+    topicOverview: [
+      "The formal divorce process is not the same as resolving every practical issue after separation. A person may progress the divorce application while still needing to deal with finances, property, pensions, or child arrangements.",
+      "In England and Wales, users should expect staged process points rather than a single appointment. Government guidance explains that applicants generally wait before applying for a conditional order and again before applying for a final order. Court rules and fees can change, so users should check current official guidance or speak directly with a solicitor.",
+    ],
+    practicalExamples: [
+      "A divorce may feel simple where both people agree to the process, respond quickly, and have no unresolved financial issues. Even then, staged waiting periods mean it is not instant.",
+      "Another divorce may take longer because the family home in Kidderminster needs valuing, mortgage options need checking, pension information is slow to arrive, or one person has not provided full financial details.",
+      "Children arrangements can also affect the overall separation even if they are not part of the divorce application itself. Practical routines around school, holidays, and travel between homes may need separate discussion.",
+    ],
+    commonProblems: [
+      "Delays commonly arise from missing documents, slow responses, unresolved financial disclosure, pension valuations, mortgage questions, disagreements about the family home, or confusion about when the final order should be requested.",
+      "A further risk is applying for the final order before understanding financial consequences. Users should ask a qualified provider about timing if financial arrangements are not resolved.",
+    ],
+    prepareItems: [
+      "marriage or civil partnership date",
+      "separation date if relevant",
+      "any divorce application details",
+      "children arrangements",
+      "property and mortgage information",
+      "financial disclosure documents",
+      "urgent dates or court correspondence",
+    ],
+    questionItems: [
+      "which divorce stage you are at",
+      "what could delay the next step",
+      "how finances affect timing",
+      "whether there is any risk in requesting a final order too soon",
+      "what information is needed now",
+    ],
+    localContext:
+      "For separating couples in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area, timing can be affected by local housing decisions, school terms, work patterns, mortgage appointments, and how quickly documents can be gathered.",
+    relatedGuideSlugs: [
+      "prepare-divorce-solicitor-consultation",
+      "divorce-financial-settlements-explained",
+      "divorce-costs-explained",
+      "child-arrangements-explained",
+    ],
+    faq: [
+      {
+        question: "Can divorce be completed quickly if both people agree?",
+        answer:
+          "Agreement can reduce conflict, but the divorce process still has staged waiting periods and practical steps. Related financial issues may also take longer.",
+      },
+      {
+        question: "Do finances have to be resolved before divorce finishes?",
+        answer:
+          "Financial arrangements are separate from the divorce application. Users should ask a solicitor about timing and the possible consequences before making decisions.",
+      },
+      {
+        question: "Can this website estimate exactly how long my divorce will take?",
+        answer:
+          "No. This website provides general information only. A qualified provider would need to consider the facts, documents, and process stage.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "divorce-costs-explained",
+    title: "Divorce Costs Explained",
+    h1: "Divorce costs explained",
+    metaDescription:
+      "Understand divorce cost factors, solicitor fees, court fees, financial settlement work, and what to ask before comparing quotes.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "divorce-solicitors-kidderminster",
+    intro:
+      "Divorce costs can vary because the legal divorce process, financial settlement work, child-related issues, mediation, and solicitor support may be separate pieces of work.",
+    keyTakeaways: [
+      "A quote should explain whether it covers only the divorce application or also finances, children, property, pensions, and consent order work.",
+      "Court fees and government charges can change, so users should check current official figures rather than relying on old estimates.",
+      "The cheapest headline quote is not always the clearest quote if likely extras are not explained.",
+    ],
+    topicOverview: [
+      "Divorce costs can include a court or application fee, solicitor fees for the divorce process, additional work for financial arrangements, consent orders, child-related matters, mediation support, document drafting, and correspondence.",
+      "The cost depends heavily on scope. A straightforward administrative divorce is different from a matter involving a family home, pensions, business interests, disputes about disclosure, or urgent children issues. This website cannot tell users what their divorce should cost.",
+    ],
+    practicalExamples: [
+      "A user may receive one quote for the divorce application and a separate quote for financial settlement work. That is not automatically a problem, but the distinction should be clear before instructing a firm.",
+      "Another person may need advice on a draft consent order, pension sharing, or property transfer after divorce. Those steps may not be included in a basic fixed-fee divorce package.",
+      "A Kidderminster parent may also need help with child arrangements or communication around school holidays. That work may sit under family law rather than the divorce application itself.",
+    ],
+    commonProblems: [
+      "Costs become confusing when VAT, court fees, consent order drafting, pension work, correspondence, or court-related hearings are not clearly separated. Users should ask what is included and what is likely to be charged separately.",
+      "Another common problem is waiting until a dispute has escalated. Early organisation can sometimes make a first solicitor conversation more focused, even though no outcome or cost can be guaranteed.",
+    ],
+    prepareItems: [
+      "the divorce stage if known",
+      "whether finances are agreed or disputed",
+      "property and mortgage details",
+      "pension information",
+      "children arrangements if relevant",
+      "any draft agreement",
+      "a budget question list",
+    ],
+    questionItems: [
+      "whether the quote includes VAT and court fees",
+      "what is included in the fixed-fee stage",
+      "whether financial settlement work is separate",
+      "what could increase the fee",
+      "how updates about costs are provided",
+    ],
+    localContext:
+      "Users in Kidderminster and Wyre Forest often need to compare costs alongside practical concerns such as mortgage affordability, local housing options, school routines, and whether meetings can be handled remotely or locally.",
+    relatedGuideSlugs: [
+      "how-long-does-divorce-take",
+      "divorce-financial-settlements-explained",
+      "prepare-divorce-solicitor-consultation",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+    faq: [
+      {
+        question: "Why do divorce solicitor quotes vary so much?",
+        answer:
+          "Quotes vary because some cover only a defined divorce stage while others include financial settlement work, consent orders, correspondence, or wider family law support.",
+      },
+      {
+        question: "Should I compare only the lowest divorce quote?",
+        answer:
+          "No. Compare scope, likely extras, communication, experience with similar matters, and how clearly costs are explained.",
+      },
+      {
+        question: "Does this website provide fixed divorce prices?",
+        answer:
+          "No. This website provides general information and solicitor introductions only. Any quote must come from the solicitor firm or legal service provider.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "prepare-divorce-solicitor-consultation",
+    title: "How to Prepare for a Divorce Solicitor Consultation",
+    h1: "How to prepare for a divorce solicitor consultation",
+    metaDescription:
+      "Practical checklist for preparing to speak to a divorce solicitor about separation, finances, children, property, and next steps.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "divorce-solicitors-kidderminster",
+    intro:
+      "Preparing for a divorce solicitor consultation helps you explain the facts clearly, ask better questions, and avoid spending the first conversation trying to find basic information.",
+    keyTakeaways: [
+      "Prepare a short timeline, key dates, children information, property details, income, pensions, debts, and any urgent concerns.",
+      "Keep the first enquiry factual and proportionate; detailed sensitive documents should be shared directly with a solicitor if you choose to instruct them.",
+      "Ask about scope, process, costs, finances, children, documents, communication, and what should happen next.",
+    ],
+    topicOverview: [
+      "A first divorce consultation is usually most useful when the solicitor can quickly understand the background, current position, and main questions. You do not need to have every document ready, but you should know what is missing.",
+      "The consultation may cover the divorce process, separation, financial arrangements, children, housing, pensions, mediation, or urgent practical issues. The more organised the first summary is, the easier it is to identify the next sensible step.",
+    ],
+    practicalExamples: [
+      "A user in Kidderminster might prepare a one-page note covering marriage date, separation date, children, home ownership, mortgage, income, pensions, savings, debts, and what has already been discussed.",
+      "Another user may have already received court papers, a draft agreement, or messages from the other party. In that situation, dates and deadlines should be made clear at the start of the consultation.",
+      "If mediation has taken place, note when it happened, what was discussed, and whether any summary or agreement was produced.",
+    ],
+    commonProblems: [
+      "Consultations can become less useful when they focus only on blame, long background detail, or emotional history without a clear question. Sensitive detail can matter, but it should be organised around the issue that needs resolving.",
+      "Another common problem is underestimating financial information. Pensions, mortgage capacity, debts, business interests, and future housing needs can be significant even where both people want an amicable process.",
+    ],
+    prepareItems: [
+      "a one-page timeline",
+      "marriage and separation dates",
+      "children and current arrangements",
+      "property and mortgage details",
+      "income, savings, debts, and pensions",
+      "court papers or correspondence",
+      "urgent dates",
+    ],
+    questionItems: [
+      "what the likely stages are",
+      "what documents are needed first",
+      "how finances and children are handled",
+      "whether mediation is relevant",
+      "how costs and communication will work",
+    ],
+    localContext:
+      "For people in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire areas, useful preparation may include school routines, local housing practicalities, work travel, childcare, and whether face-to-face or remote appointments are preferred.",
+    relatedGuideSlugs: [
+      "divorce-financial-settlements-explained",
+      "divorce-costs-explained",
+      "how-long-does-divorce-take",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+    faq: [
+      {
+        question: "Do I need every financial document before a divorce consultation?",
+        answer:
+          "No, but a basic list of property, mortgage, income, savings, pensions, and debts can make the first conversation more useful.",
       },
       {
         question: "Should I include sensitive details in the quote form?",
         answer:
-          "Keep the form summary proportionate. Detailed personal documents should usually be shared directly with a solicitor or legal provider if you choose to instruct them.",
+          "Keep the quote form summary proportionate. Detailed documents should usually be shared directly with a solicitor or legal provider if you choose to instruct them.",
+      },
+      {
+        question: "Can a solicitor explain children and financial issues in the same consultation?",
+        answer:
+          "They may be able to discuss both at a high level, but the scope depends on the firm, the facts, and the time available. Ask what can realistically be covered.",
       },
     ],
-  },
-  {
-    type: "guide",
+  }),
+  createQualityGuide({
     slug: "what-does-a-family-law-solicitor-help-with",
     title: "What Does a Family Law Solicitor Help With?",
     h1: "What does a family law solicitor help with?",
     metaDescription:
-      "General guide to the types of issues a family law solicitor may help with, including separation and child arrangements.",
+      "General guide to family law solicitor support, including separation, children, finances, cohabitation, documents, and what to prepare.",
     category: "Family and Divorce",
-    updated: "2026-05-04",
     relatedServiceSlug: "family-law-solicitors-kidderminster",
     intro:
-      "Family law solicitors may help with personal and sensitive matters involving relationships, children, finances, separation, and future arrangements.",
+      "A family law solicitor may help with personal and sensitive issues involving separation, children, finances, living arrangements, protection, and relationship-related documents.",
     keyTakeaways: [
-      "Family law can cover separation, child arrangements, finances, cohabitation, protective steps, and related documents.",
-      "Practical local factors such as schools, housing, work patterns, and family support can matter in Wyre Forest family enquiries.",
-      "A first conversation should clarify process and next steps without promising a specific outcome.",
+      "Family law is broader than divorce and can include children, finances, cohabitation, protective steps, agreements, and practical arrangements.",
+      "The first step is usually to identify the issue, urgency, documents, current arrangements, and what outcome needs discussing directly with a solicitor.",
+      "This website can help with general information and solicitor introductions, but it cannot provide legal advice.",
     ],
-    sections: [
-      {
-        heading: "Common family law matters",
-        body: [
-          "Family law support may relate to separation, divorce, child arrangements, financial arrangements, cohabitation, domestic abuse protections, prenuptial or postnuptial agreements, and related documentation. The exact support needed depends on the circumstances.",
-          "A solicitor may help explain process, prepare documents, negotiate with another party, support mediation outcomes, or represent a client where formal legal steps are needed. This website does not provide advice, but it can help users understand what type of solicitor support may be relevant.",
-        ],
-      },
-      {
-        heading: "Children, finances, and separation",
-        body: [
-          "Child arrangements can involve where children live, how time is shared, school practicalities, holidays, and communication. Financial matters can involve property, savings, pensions, debts, maintenance, and future housing needs.",
-          "For families around Kidderminster, Stourport, Bewdley, Cookley, and Hagley, local routines can matter. School locations, work travel, family support, and housing availability can all affect what people need to discuss with a solicitor.",
-        ],
-      },
-      {
-        heading: "Where things can go wrong",
-        body: [
-          "Family matters can become harder when communication breaks down, informal agreements are unclear, financial information is missing, or one person does not understand the consequences of an arrangement. Sensitive issues should be handled carefully and with appropriate professional support.",
-          "Another common problem is waiting until a situation becomes urgent. If there are deadlines, court papers, safeguarding concerns, or significant financial decisions, users should speak directly to a qualified provider rather than relying on general information.",
-        ],
-      },
-      {
-        heading: "What to prepare",
-        body: [
-          "Prepare a short timeline, key dates, current arrangements, details of children, housing information, income, debts, pensions, and any relevant correspondence or court papers. Keep notes factual and focus on what needs to be resolved.",
-          "If your concern is mainly about children, note current routines and practical issues. If your concern is financial, gather property, mortgage, account, pension, and debt information where available.",
-        ],
-      },
-      {
-        heading: "Questions to ask a solicitor",
-        body: [
-          "Ask whether the firm handles matters like yours, how costs are explained, what information is needed first, whether mediation may be relevant, and who will manage your file. You should also ask what can and cannot be resolved through informal agreement.",
-          "A good first conversation should help you understand the process and next steps without promising an outcome. Be cautious of absolute claims, especially in sensitive family matters.",
-        ],
-      },
-      {
-        heading: "Next step",
-        body: [
-          "If you need family law solicitor support in Kidderminster or the wider Wyre Forest area, you can compare family law options and request a no obligation quote. A suitable solicitor partner may contact you directly if they are able to help.",
-          "This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
-        ],
-      },
+    topicOverview: [
+      "Family law covers a wide range of personal issues. A solicitor may help explain process, prepare or review documents, correspond with another party, support mediation outcomes, or assist where court-related steps may be needed.",
+      "Common topics include divorce, separation, child arrangements, financial arrangements, cohabitation, prenuptial and postnuptial agreements, parental responsibility, travel with children, and protective steps where there are safety concerns.",
     ],
+    practicalExamples: [
+      "A parent may want to understand child arrangements after separation, including school routines, holidays, handovers, and communication.",
+      "A separating couple may need help with property, pensions, debts, and whether an agreement should be recorded formally.",
+      "Someone living with a partner but not married may need to understand what documents or property questions to raise with a solicitor, especially where a home or children are involved.",
+    ],
+    commonProblems: [
+      "Family matters become harder when arrangements are informal, financial information is incomplete, children issues are mixed with adult conflict, or people wait until a deadline or urgent situation has developed.",
+      "Another problem is assuming family law always means court. A solicitor may discuss process, negotiation, mediation context, documents, or protective steps, but the right route depends on the facts.",
+    ],
+    prepareItems: [
+      "a short timeline",
+      "children details if relevant",
+      "current arrangements",
+      "housing information",
+      "income and debt details",
+      "property and pension information",
+      "any correspondence or court papers",
+    ],
+    questionItems: [
+      "whether the firm regularly handles matters like yours",
+      "what information is needed first",
+      "whether mediation may be relevant",
+      "how costs are explained",
+      "who will handle the matter day to day",
+    ],
+    localContext:
+      "For families in Kidderminster and the wider Wyre Forest area, practical details such as school locations, childcare, work travel, housing options, and family support in places such as Stourport, Bewdley, Cookley, and Hagley can shape the first conversation.",
     relatedGuideSlugs: [
-      "how-to-prepare-for-a-divorce-solicitor-consultation",
-      "do-you-need-a-solicitor-for-probate",
+      "child-arrangements-explained",
+      "prepare-divorce-solicitor-consultation",
+      "divorce-financial-settlements-explained",
+      "parental-responsibility-order-explained",
     ],
     faq: [
       {
         question: "Does family law only mean divorce?",
         answer:
-          "No. Family law can include child arrangements, separation, finances, cohabitation, protective steps, and other relationship-related legal matters.",
+          "No. Family law can include child arrangements, separation, finances, cohabitation, parental responsibility, protective steps, and relationship-related documents.",
       },
       {
         question: "Can this website advise on a family law problem?",
         answer:
           "No. This website provides general information and solicitor introductions only. Legal advice must come from a qualified solicitor or legal service provider.",
       },
+      {
+        question: "What should I prepare before contacting a family solicitor?",
+        answer:
+          "Prepare a factual timeline, key dates, current arrangements, any children or financial details that matter, and copies of important documents to share directly if you instruct a provider.",
+      },
     ],
-  },
+  }),
+  createQualityGuide({
+    slug: "child-arrangements-explained",
+    title: "Child Arrangements Explained",
+    h1: "Child arrangements explained",
+    metaDescription:
+      "General guide to child arrangements after separation, including practical routines, school holidays, preparation, questions to ask, and solicitor support.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "Child arrangements are the practical arrangements for where a child lives, when they spend time with each parent or carer, and how important routines are managed after separation.",
+    keyTakeaways: [
+      "Child arrangements can cover living arrangements, time with each parent, school routines, holidays, communication, handovers, and important decisions.",
+      "Useful preparation focuses on practical details: current routines, children's needs, school, travel, work patterns, and any existing agreement or order.",
+      "This guide is general information only and cannot tell anyone what arrangement is right for a child.",
+    ],
+    topicOverview: [
+      "Child arrangements are often discussed when parents separate or when existing routines no longer work. They may involve day-to-day care, weekends, school holidays, birthdays, travel, communication, and how decisions are made.",
+      "A solicitor may help explain process, documents, mediation context, correspondence, or court-related options where appropriate. The focus should be on practical arrangements and the child's welfare, but this website cannot assess individual circumstances.",
+    ],
+    practicalExamples: [
+      "One family may need to make school-week arrangements around homes in Kidderminster and Stourport, including pick-ups, homework, clubs, and work shifts.",
+      "Another family may agree most routines but struggle with holidays, passports, travel abroad, or communication about medical and school decisions.",
+      "Some users may already have an agreement that is not being followed, or a court order that needs understanding. They should speak directly with a qualified provider about the documents.",
+    ],
+    commonProblems: [
+      "Problems often arise when arrangements are vague, communication is hostile, school holiday plans are left too late, handovers are unclear, or one person makes a significant decision without discussion.",
+      "Child-related issues can also become more sensitive where there are safety concerns, safeguarding worries, allegations, or urgent travel plans. If there is immediate risk, users should seek urgent appropriate help.",
+    ],
+    prepareItems: [
+      "children's ages and schools",
+      "current living arrangements",
+      "weekly routines",
+      "holiday arrangements",
+      "travel distances",
+      "work patterns",
+      "any existing agreement, order, or correspondence",
+    ],
+    questionItems: [
+      "what information is needed before discussing arrangements",
+      "whether mediation may be relevant",
+      "how urgent issues are handled",
+      "whether existing orders or agreements need reviewing",
+      "how costs and next steps are explained",
+    ],
+    localContext:
+      "For families in Kidderminster, Wyre Forest, Stourport, Bewdley, Cookley, and Hagley, practical local details such as school travel, public transport, work shifts, childcare, and family support may be central to the conversation.",
+    relatedGuideSlugs: [
+      "what-does-a-family-law-solicitor-help-with",
+      "parental-responsibility-order-explained",
+      "prepare-divorce-solicitor-consultation",
+      "how-long-does-divorce-take",
+    ],
+    faq: [
+      {
+        question: "What can child arrangements cover?",
+        answer:
+          "They can cover where a child lives, time with each parent or carer, school routines, holidays, communication, handovers, and practical decision-making.",
+      },
+      {
+        question: "Can this website say what arrangement is best?",
+        answer:
+          "No. This website provides general information and solicitor introductions only. A qualified provider would need to consider the facts.",
+      },
+      {
+        question: "Should I mention urgent child-related dates in the quote form?",
+        answer:
+          "Yes. Mention urgent dates such as holidays, court papers, school changes, or travel plans, but avoid sending unnecessary sensitive documents through the form.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "parental-responsibility-order-explained",
+    title: "Parental Responsibility Order Explained",
+    h1: "Parental responsibility order explained",
+    metaDescription:
+      "General guide to parental responsibility orders, what parental responsibility can involve, what to prepare, and questions to ask a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "Parental responsibility is about the legal rights, duties, powers, and responsibilities a person may have for a child. A parental responsibility order is one possible route for someone who does not already have it.",
+    keyTakeaways: [
+      "Parental responsibility can affect important decisions about a child's upbringing, education, health, religion, and documents.",
+      "Who has parental responsibility depends on the facts, relationship to the child, and legal position, so individual questions should be raised with a qualified provider.",
+      "A parental responsibility order is a sensitive family law topic and this website cannot advise whether an application is appropriate.",
+    ],
+    topicOverview: [
+      "Parental responsibility can matter where adults need to understand who can make or be involved in important decisions for a child. It may come up after separation, where parents were not married, where a birth certificate position is unclear, or where another adult has caring responsibilities.",
+      "A solicitor may help explain the general process, what documents may be needed, whether an agreement route exists, and what questions the court or another party may raise. This website cannot assess entitlement or advise on applications.",
+    ],
+    practicalExamples: [
+      "A parent may want to clarify parental responsibility before dealing with school, medical, travel, or passport decisions.",
+      "Another adult caring for a child may need to understand whether a parental responsibility order, child arrangements order, or another route is relevant to discuss with a solicitor.",
+      "A separated family in Kidderminster may have practical agreement on weekly care but uncertainty about who can make decisions about school, healthcare, or travel.",
+    ],
+    commonProblems: [
+      "Problems can arise where adults assume day-to-day care automatically gives the same legal position as parental responsibility, or where one person makes important decisions without understanding who should be involved.",
+      "Another common issue is confusing parental responsibility with where a child lives or how much time they spend with someone. These topics overlap but are not identical.",
+    ],
+    prepareItems: [
+      "the child's age and living arrangements",
+      "birth certificate details if available",
+      "relationship to the child",
+      "current care arrangements",
+      "any existing order or agreement",
+      "school or medical decision concerns",
+      "urgent dates",
+    ],
+    questionItems: [
+      "whether parental responsibility is already held",
+      "what documents are needed",
+      "whether an agreement route may be relevant",
+      "how parental responsibility relates to child arrangements",
+      "what costs and timescales may apply",
+    ],
+    localContext:
+      "In Kidderminster and the wider Wyre Forest area, parental responsibility questions may arise around school decisions, healthcare, travel, separated parenting routines, or adults caring for children across nearby communities such as Stourport, Bewdley, Cookley, and Hagley.",
+    relatedGuideSlugs: [
+      "child-arrangements-explained",
+      "what-does-a-family-law-solicitor-help-with",
+      "prepare-divorce-solicitor-consultation",
+      "how-long-does-divorce-take",
+    ],
+    faq: [
+      {
+        question: "Is parental responsibility the same as child arrangements?",
+        answer:
+          "No. Parental responsibility concerns legal rights and responsibilities for a child. Child arrangements concern practical living and time arrangements. They can overlap but are not the same.",
+      },
+      {
+        question: "Can this website tell me if I already have parental responsibility?",
+        answer:
+          "No. This website provides general information only. A qualified provider would need to consider the facts and documents.",
+      },
+      {
+        question: "What should I prepare before asking about parental responsibility?",
+        answer:
+          "Prepare the child's details, birth certificate position if available, current living arrangements, relationship to the child, any existing orders, and the specific decision or concern.",
+      },
+    ],
+  }),
   {
     type: "guide",
     slug: "settlement-agreements-explained",
@@ -4411,7 +4798,7 @@ export const guidePages: GuidePage[] = [
     ],
     relatedGuideSlugs: [
       "when-should-you-speak-to-an-employment-solicitor",
-      "how-to-prepare-for-a-divorce-solicitor-consultation",
+      "prepare-divorce-solicitor-consultation",
     ],
     faq: [
       {
