@@ -25,6 +25,16 @@ export const metadata: Metadata = {
   },
   description:
     "An independent local guide to finding trusted solicitors in Kidderminster and requesting no obligation quotes from solicitor partners.",
+  icons: {
+    icon: [
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   openGraph: {
     type: "website",
     siteName: "Kidderminster Solicitors",
