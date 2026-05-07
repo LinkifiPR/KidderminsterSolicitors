@@ -3,7 +3,20 @@ import Link from "next/link";
 import { ArrowRight, BookOpen, FileText } from "lucide-react";
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
-import { baseUrl, buildGuidePath, guidePages, servicePages } from "../../lib/site";
+import {
+  baseUrl,
+  buildGuidePath,
+  coreServiceSlugs,
+  guidePages,
+  servicePages,
+} from "../../lib/site";
+
+const guideHubServices = coreServiceSlugs
+  .slice(0, 4)
+  .map((slug) => servicePages.find((service) => service.slug === slug))
+  .filter((service): service is (typeof servicePages)[number] =>
+    Boolean(service),
+  );
 
 export const metadata: Metadata = {
   title: "Legal Guides Kidderminster",
@@ -53,7 +66,7 @@ export default function LegalGuidesPage() {
           </div>
 
           <div className="grid content-center gap-4">
-            {servicePages.slice(0, 4).map((service) => (
+            {guideHubServices.map((service) => (
               <Link
                 key={service.slug}
                 href={`/${service.slug}/`}

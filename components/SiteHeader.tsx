@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { Phone, Scale } from "lucide-react";
-import { servicePages, trustPages } from "../lib/site";
+import { trustPages } from "../lib/site";
+
+const primaryNavLinks = [
+  ["Conveyancing", "/conveyancing-solicitors-kidderminster/"],
+  ["Probate", "/probate-solicitors-kidderminster/"],
+  ["Family law", "/family-law-solicitors-kidderminster/"],
+  ["Wills", "/wills-solicitors-kidderminster/"],
+  ["Employment", "/employment-solicitors-kidderminster/"],
+  ["Guides", "/legal-guides/"],
+  ["About", `/${trustPages[0].slug}/`],
+  ["Contact", `/${trustPages[1].slug}/`],
+] as const;
 
 export function SiteHeader() {
   return (
@@ -29,16 +40,7 @@ export function SiteHeader() {
           aria-label="Primary"
           className="hidden items-center gap-1 rounded-full border border-[var(--border)] bg-[var(--pale-blue)]/60 p-1 text-sm font-semibold text-[var(--charcoal)] xl:flex"
         >
-          {[
-            ["Conveyancing", `/${servicePages[0].slug}/`],
-            ["Probate", `/${servicePages[1].slug}/`],
-            ["Family law", `/${servicePages[2].slug}/`],
-            ["Wills", `/${servicePages[4].slug}/`],
-            ["Employment", `/${servicePages[5].slug}/`],
-            ["Guides", "/legal-guides/"],
-            ["About", `/${trustPages[0].slug}/`],
-            ["Contact", `/${trustPages[1].slug}/`],
-          ].map(([label, href]) => (
+          {primaryNavLinks.map(([label, href]) => (
             <Link
               key={label}
               href={href}

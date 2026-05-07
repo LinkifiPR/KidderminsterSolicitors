@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { Scale } from "lucide-react";
-import { servicePages, trustPages } from "../lib/site";
+import { coreServiceSlugs, servicePages, trustPages } from "../lib/site";
 import { CookieSettingsButton } from "./CookieSettingsButton";
+
+const footerServices = coreServiceSlugs
+  .slice(0, 6)
+  .map((slug) => servicePages.find((page) => page.slug === slug))
+  .filter((page): page is (typeof servicePages)[number] => Boolean(page));
 
 export function SiteFooter() {
   return (
@@ -29,7 +34,7 @@ export function SiteFooter() {
         <div>
           <p className="text-sm font-semibold uppercase text-white">Services</p>
           <div className="mt-4 grid gap-3 text-sm text-white/68">
-            {servicePages.slice(0, 5).map((page) => (
+            {footerServices.map((page) => (
               <Link
                 key={page.slug}
                 href={`/${page.slug}/`}

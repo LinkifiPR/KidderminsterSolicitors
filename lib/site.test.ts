@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   baseUrl,
   buildCanonicalUrl,
+  coreServiceSlugs,
   getAllPageSlugs,
   getDynamicPageSlugs,
   getRootPageSlugs,
@@ -23,6 +24,17 @@ describe("site content model", () => {
     expect(servicePages.map((page) => page.slug)).toEqual(
       expect.arrayContaining([...phaseOneServiceSlugs]),
     );
+  });
+
+  it("keeps the core homepage service set unique", () => {
+    const coreServices = coreServiceSlugs.map((slug) =>
+      servicePages.find((page) => page.slug === slug),
+    );
+    const categories = coreServices.map((page) => page?.category);
+
+    expect(coreServices).not.toContain(undefined);
+    expect(new Set(coreServiceSlugs).size).toBe(coreServiceSlugs.length);
+    expect(new Set(categories).size).toBe(categories.length);
   });
 
   it("includes required trust and disclosure pages", () => {

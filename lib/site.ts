@@ -6,6 +6,17 @@ export const phaseOneServiceSlugs = [
   "family-law-solicitors-kidderminster",
 ] as const;
 
+export const coreServiceSlugs = [
+  "conveyancing-solicitors-kidderminster",
+  "probate-solicitors-kidderminster",
+  "family-law-solicitors-kidderminster",
+  "divorce-solicitors-kidderminster",
+  "wills-solicitors-kidderminster",
+  "employment-solicitors-kidderminster",
+  "personal-injury-solicitors-kidderminster",
+  "commercial-solicitors-kidderminster",
+] as const;
+
 export type Faq = {
   question: string;
   answer: string;

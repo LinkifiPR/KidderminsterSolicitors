@@ -19,10 +19,17 @@ import { ServiceCard } from "../components/ServiceCard";
 import { SiteFooter } from "../components/SiteFooter";
 import { SiteHeader } from "../components/SiteHeader";
 import {
+  coreServiceSlugs,
   guideOrganizationSchema,
   servicePages,
   websiteSchema,
 } from "../lib/site";
+
+const homepageServices = coreServiceSlugs
+  .map((slug) => servicePages.find((service) => service.slug === slug))
+  .filter((service): service is (typeof servicePages)[number] =>
+    Boolean(service),
+  );
 
 const trustItems = [
   {
@@ -227,7 +234,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {servicePages.slice(0, 8).map((service) => (
+            {homepageServices.map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
           </div>
@@ -344,7 +351,7 @@ export default function Home() {
             <BookOpenText className="hidden h-10 w-10 text-[var(--gold)] sm:block" />
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {servicePages.slice(0, 3).map((service) => (
+            {homepageServices.slice(0, 3).map((service) => (
               <Link
                 key={service.slug}
                 href={`/${service.slug}/`}

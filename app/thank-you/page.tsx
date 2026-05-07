@@ -10,7 +10,13 @@ import {
 import { SiteFooter } from "../../components/SiteFooter";
 import { SiteHeader } from "../../components/SiteHeader";
 import { LeadConversionEvent } from "../../components/LeadConversionEvent";
-import { baseUrl, servicePages } from "../../lib/site";
+import { baseUrl, coreServiceSlugs, servicePages } from "../../lib/site";
+
+const thankYouServices = coreServiceSlugs
+  .map((slug) => servicePages.find((service) => service.slug === slug))
+  .filter((service): service is (typeof servicePages)[number] =>
+    Boolean(service),
+  );
 
 export const metadata: Metadata = {
   title: "Thank You",
@@ -132,7 +138,7 @@ export default function ThankYouPage() {
             </h2>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {servicePages.slice(0, 8).map((service) => (
+            {thankYouServices.map((service) => (
               <Link
                 key={service.slug}
                 href={`/${service.slug}/`}
