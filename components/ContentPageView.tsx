@@ -16,6 +16,55 @@ function buildSectionId(heading: string) {
     .replace(/(^-|-$)/g, "");
 }
 
+function QuoteHeroPrompt({ category }: { category: string }) {
+  return (
+    <aside className="mx-auto w-full max-w-[27rem] rounded-[1.35rem] border border-white/80 bg-white shadow-[0_18px_60px_rgba(7,24,39,0.12)] ring-1 ring-[rgba(198,161,91,0.22)] lg:mx-0">
+      <div className="rounded-t-[1.35rem] bg-[linear-gradient(135deg,var(--navy),var(--trust-blue))] p-5 text-white">
+        <p className="inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[0.64rem] font-bold uppercase tracking-[0.12em] text-[var(--gold)]">
+          Start here
+        </p>
+        <h2 className="mt-3 text-2xl font-semibold leading-tight">
+          Request a no obligation quote
+        </h2>
+        <p className="mt-2 text-sm leading-6 text-white/78">
+          Tell us what you need and we&apos;ll connect you with a suitable
+          solicitor partner where appropriate.
+        </p>
+      </div>
+
+      <div className="grid gap-4 p-5">
+        <div className="grid gap-2 text-sm leading-6 text-[var(--muted)]">
+          {[
+            `${category} enquiry`,
+            "No obligation to instruct",
+            "Independent local guide",
+          ].map((item) => (
+            <div key={item} className="flex items-center gap-3">
+              <span
+                aria-hidden="true"
+                className="h-2.5 w-2.5 rounded-full bg-[var(--gold)]"
+              />
+              <span>{item}</span>
+            </div>
+          ))}
+        </div>
+
+        <a
+          href="#quote"
+          className="inline-flex items-center justify-center rounded-full bg-[var(--gold)] px-5 py-3 text-sm font-extrabold uppercase text-[var(--navy)] shadow-[0_12px_28px_rgba(198,161,91,0.3)] transition hover:-translate-y-0.5 hover:bg-[#d8b66f]"
+        >
+          Complete the quote form
+        </a>
+
+        <p className="text-xs leading-5 text-[var(--muted)]">
+          The full enquiry form is below. We are not a law firm and do not
+          provide legal advice.
+        </p>
+      </div>
+    </aside>
+  );
+}
+
 export function ContentPageView({ page }: { page: SitePage }) {
   const isService = page.type === "service";
   const isGuide = page.type === "guide";
@@ -70,7 +119,11 @@ export function ContentPageView({ page }: { page: SitePage }) {
 
           {hasQuoteForm ? (
             <div id={isService ? undefined : "quote"} className="lg:justify-self-end">
-              <QuoteForm variant="compact" />
+              {isService ? (
+                <QuoteHeroPrompt category={page.category} />
+              ) : (
+                <QuoteForm variant="compact" />
+              )}
             </div>
           ) : isGuide && relatedService ? (
             <div className="self-center rounded-[2rem] border border-[var(--border)] bg-[var(--cream)] p-6 shadow-[0_22px_70px_rgba(7,24,39,0.08)]">
