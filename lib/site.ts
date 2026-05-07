@@ -564,6 +564,8 @@ export const servicePages: ServicePage[] = [
     ],
     relatedGuideSlugs: [
       "what-should-be-included-in-a-will",
+      "when-should-you-update-a-will",
+      "lasting-power-of-attorney-basics",
       "intestacy-rules-explained",
       "dies-without-a-will-uk",
       "executor-and-trustee-of-will",
@@ -676,6 +678,8 @@ export const servicePages: ServicePage[] = [
     ],
     relatedGuideSlugs: [
       "what-should-be-included-in-a-will",
+      "when-should-you-update-a-will",
+      "lasting-power-of-attorney-basics",
       "intestacy-rules-explained",
       "dies-without-a-will-uk",
       "executor-and-trustee-of-will",
@@ -705,6 +709,124 @@ export const servicePages: ServicePage[] = [
         question: "What should I include in my first wills enquiry?",
         answer:
           "Include whether you need a new will or update, your postcode, preferred contact time, broad family/property circumstances, and any timing concerns. Avoid sending sensitive documents through the public form.",
+      },
+    ],
+  },
+  {
+    type: "service",
+    slug: "lasting-power-of-attorney-solicitors-kidderminster",
+    title: "Lasting Power of Attorney Solicitors Kidderminster",
+    h1: "Lasting power of attorney solicitors in Kidderminster",
+    metaDescription:
+      "Compare lasting power of attorney solicitor options in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
+    category: "Lasting Power of Attorney",
+    summary:
+      "Help comparing solicitor support for property and financial affairs LPAs, health and welfare LPAs, registration, and related planning.",
+    intro:
+      "A lasting power of attorney can help trusted people make decisions if someone loses capacity or needs practical support later. This page helps Kidderminster and Wyre Forest users understand the main issues, compare solicitor options, and request a no obligation quote from a suitable solicitor partner where appropriate.",
+    localAngle:
+      "People in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire communities may want support that explains attorney choices, registration, safeguarding, and practical family arrangements clearly.",
+    keyTakeaways: [
+      "There are two main types of lasting power of attorney: property and financial affairs, and health and welfare.",
+      "Solicitor support may be useful where family circumstances, capacity concerns, property, business interests, or safeguarding questions make the application more sensitive.",
+      "A useful quote should explain what is included, who prepares the documents, how registration is handled, and what the user must do.",
+      "Kidderminster Solicitors is an independent legal information and solicitor introduction website, not a law firm.",
+    ],
+    sections: [
+      {
+        heading: "What lasting power of attorney solicitors may help with",
+        body: [
+          "A solicitor may help explain the difference between a property and financial affairs LPA and a health and welfare LPA, prepare the forms, discuss attorney choices, identify certificate provider issues, and explain the registration process.",
+          "They may also help where there are family disagreements, concerns about pressure, a vulnerable person, business assets, jointly owned property, or questions about how attorneys should act. These issues can be sensitive, so clear process and record keeping matter.",
+          "The role of this website is narrower. It provides general information and may introduce users to a suitable solicitor partner. It does not prepare LPAs, assess capacity, or provide legal advice.",
+        ],
+      },
+      {
+        heading: "Property and financial affairs LPA",
+        body: [
+          "A property and financial affairs LPA can allow attorneys to help with bank accounts, bills, pensions, property, investments, and other financial matters. Depending on how it is set up and registered, it may be used while the person still has capacity if they choose.",
+          "People often consider this document where a parent is ageing, someone has a diagnosis, travel or mobility makes paperwork difficult, or family members want a clearer plan before a crisis.",
+          "If there is a home in Kidderminster or the wider Wyre Forest area, rental property, savings, business interests, or several family members involved, the choice of attorneys and instructions may need careful thought.",
+        ],
+      },
+      {
+        heading: "Health and welfare LPA",
+        body: [
+          "A health and welfare LPA can cover decisions about care, living arrangements, medical treatment, and day-to-day welfare if the person can no longer make those decisions. It is different from financial authority and has different practical limits.",
+          "Users should be careful not to assume one document covers everything. A solicitor or legal service provider can explain the distinction if instructed, but this website cannot tell a user what to choose.",
+          "Health and welfare questions can be emotionally sensitive. It can help to prepare a calm summary of the family situation, existing care arrangements, and who is expected to be involved in future decisions.",
+        ],
+      },
+      {
+        heading: "Where LPA enquiries can become complicated",
+        body: [
+          "Complications can arise where family members disagree about attorneys, someone is worried about undue influence, the person may already have capacity issues, there are blended family concerns, or the donor owns business assets or property.",
+          "Another common problem is leaving the process until a crisis. If capacity is already in doubt, a solicitor may need to consider whether an LPA is still possible or whether a different route may be needed. This website cannot assess that point.",
+          "Errors in names, dates, signatures, certificate provider details, or notification steps can also delay registration. A more expensive but careful service may be better value than a cheap process that creates avoidable corrections.",
+        ],
+      },
+      {
+        heading: "What to prepare",
+        body: [
+          "Prepare the donor's full name, date of birth, address, contact details, proposed attorneys, replacement attorneys if any, and whether the enquiry relates to finances, health and welfare, or both.",
+          "Also prepare a short note about why the LPA is being considered, whether there are capacity concerns, whether any family members disagree, whether property or business interests are involved, and whether there are urgent timing pressures.",
+          "If you are requesting a quote through this website, keep the enquiry concise. Sensitive medical, financial, or family documents should be shared directly with a solicitor firm or legal service provider if you decide to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask an LPA solicitor",
+        body: [
+          "Ask what is included in the quote, whether both types of LPA are covered, who prepares the forms, how signing is handled, how registration is managed, and whether Office of the Public Guardian fees are included or separate.",
+          "Ask how the solicitor deals with capacity concerns, family disagreement, replacement attorneys, instructions and preferences, and safeguarding concerns. If timing matters, ask about likely process stages without expecting a guaranteed date.",
+          "You may also want to ask whether the same firm can help with wills, probate, deputyship questions, or later-life planning if related issues arise.",
+        ],
+      },
+      {
+        heading: "Local context for Kidderminster families",
+        body: [
+          "LPA enquiries around Kidderminster and Wyre Forest often involve adult children helping parents, relatives living in different towns, family homes, savings, care planning, or practical support between Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire areas.",
+          "A local or regional solicitor partner may be useful where family members want clear communication, practical signing arrangements, and a provider who can explain the process in plain English.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you want to compare lasting power of attorney solicitor options in Kidderminster, you can request a no obligation quote. We may pass your enquiry to a suitable solicitor partner where appropriate, and you are under no obligation to instruct them.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "lasting-power-of-attorney-basics",
+      "when-should-you-update-a-will",
+      "what-should-be-included-in-a-will",
+      "executor-responsibilities-explained",
+    ],
+    comparisonPoints: [
+      "Ask whether the quote covers one LPA or both types of LPA.",
+      "Check whether registration support and Office of the Public Guardian fees are included or separate.",
+      "Confirm how the provider handles capacity concerns, family disagreement, and signing arrangements.",
+    ],
+    faq: [
+      {
+        question: "Can this website prepare a lasting power of attorney?",
+        answer:
+          "No. Kidderminster Solicitors is an independent guide and solicitor introduction website. It is not a law firm and does not prepare legal documents.",
+      },
+      {
+        question: "Can I request a no obligation LPA quote?",
+        answer:
+          "Yes. You can submit an enquiry and we may pass it to a suitable solicitor partner where appropriate. You are under no obligation to instruct them.",
+      },
+      {
+        question: "What are the two main types of lasting power of attorney?",
+        answer:
+          "The two main types are property and financial affairs, and health and welfare. They cover different decisions and may both need to be considered.",
+      },
+      {
+        question: "When might solicitor support be useful for an LPA?",
+        answer:
+          "Solicitor support may be useful where there are capacity concerns, family disagreement, safeguarding concerns, property, business interests, or uncertainty about attorney choices.",
       },
     ],
   },
@@ -2725,6 +2847,8 @@ export const guidePages: GuidePage[] = [
       },
     ],
     relatedGuideSlugs: [
+      "when-should-you-update-a-will",
+      "lasting-power-of-attorney-basics",
       "intestacy-rules-explained",
       "dies-without-a-will-uk",
       "executor-and-trustee-of-will",
@@ -2748,6 +2872,238 @@ export const guidePages: GuidePage[] = [
       },
       {
         question: "Can I request a wills quote through this website?",
+        answer:
+          "Yes. You can submit a no obligation enquiry and we may pass it to a suitable solicitor partner where appropriate. You are under no obligation to instruct them.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "when-should-you-update-a-will",
+    title: "When Should You Update a Will?",
+    h1: "When should you update a will?",
+    metaDescription:
+      "General guide to when a will may need reviewing, including marriage, divorce, property, children, executors, beneficiaries, and later-life changes.",
+    category: "Probate and Wills",
+    updated: "2026-05-07",
+    relatedServiceSlug: "wills-solicitors-kidderminster",
+    intro:
+      "A will is not something to write once and forget forever. Family, property, money, relationships, and wishes can all change. Reviewing a will after major life events can reduce uncertainty for executors and beneficiaries later.",
+    keyTakeaways: [
+      "A will may need reviewing after marriage, divorce, separation, children, property changes, bereavement, business changes, or a change in executors or beneficiaries.",
+      "Out-of-date wills can create practical problems even where the document was valid when signed.",
+      "Before speaking to a solicitor, prepare details of the existing will, major life changes, assets, property, executors, and beneficiaries.",
+      "This guide is general information only; you can request a no obligation wills quote if you want a suitable solicitor partner to contact you.",
+    ],
+    sections: [
+      {
+        heading: "The short answer",
+        body: [
+          "You should consider reviewing a will whenever a major personal, family, property, or financial change has happened. The document may still be valid, but it may no longer do what you want or may create avoidable confusion.",
+          "Common triggers include marriage, divorce, separation, having children, buying or selling property, receiving an inheritance, starting or selling a business, a beneficiary dying, an executor becoming unsuitable, or moving assets around.",
+          "A review does not always mean a complete rewrite. A solicitor or legal service provider may explain whether a new will, codicil, or broader planning conversation is appropriate if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Marriage, divorce, and separation",
+        body: [
+          "Marriage, civil partnership, divorce, and separation are some of the most important reasons to review a will. The effect of these events can be significant and assumptions can be risky.",
+          "Someone who has separated but not divorced may have different concerns from someone whose divorce has completed. New relationships, stepchildren, jointly owned property, and financial arrangements can all make the wording more sensitive.",
+          "If your family circumstances have changed around Kidderminster, Wyre Forest, Stourport, Bewdley, Cookley, Hagley, or elsewhere in Worcestershire, prepare a clear summary before requesting a quote rather than relying on old documents.",
+        ],
+      },
+      {
+        heading: "Children, grandchildren, and dependants",
+        body: [
+          "A will may need reviewing after the birth or adoption of children, after grandchildren arrive, or if someone becomes financially dependent on you. Parents may also need to think about guardians for children under 18.",
+          "Blended families can be especially sensitive. A will written before a second relationship, stepchildren, or children from different relationships may no longer reflect the current family position.",
+          "Vulnerable beneficiaries may also need careful thought. A solicitor may discuss whether simple gifts, trusts, trustees, or other arrangements should be considered, but this website cannot advise on what is suitable.",
+        ],
+      },
+      {
+        heading: "Property, business, and financial changes",
+        body: [
+          "Buying a home, selling a home, paying off a mortgage, buying a rental property, inheriting money, starting a business, selling business assets, or acquiring overseas assets can all make an old will less useful.",
+          "Property ownership is often misunderstood. Jointly owned and solely owned property may be treated differently, and a will should not be reviewed without checking how property is actually owned.",
+          "For Kidderminster and Wyre Forest residents, family homes, local rental property, small businesses, and adult children living elsewhere can all shape the practical questions to ask.",
+        ],
+      },
+      {
+        heading: "Executors and beneficiaries",
+        body: [
+          "A will should be reviewed if an executor has died, moved away, become unwell, lost capacity, become unsuitable, or no longer has a good relationship with the family. Executors need to be practical, trustworthy, and able to keep records.",
+          "Beneficiary changes also matter. A beneficiary may have died, become vulnerable, fallen out with the family, changed name, moved abroad, or already received support in another way.",
+          "Even where your wishes have not changed, updating names, addresses, backup executors, and substitute beneficiaries can make administration easier later.",
+        ],
+      },
+      {
+        heading: "Where things commonly go wrong",
+        body: [
+          "Problems arise when people assume an old will still says what they want, forget that a beneficiary has died, leave an unsuitable executor in place, ignore a new relationship, or fail to consider property ownership.",
+          "Another common issue is using informal notes instead of updating the will properly. Informal notes may help explain wishes, but they may not change the legal effect of the will.",
+          "Delay can also create problems. If someone loses capacity before updating a will, the options may become more limited and more complex.",
+        ],
+      },
+      {
+        heading: "What to prepare before speaking to a solicitor",
+        body: [
+          "Prepare a copy of the current will, details of when it was signed, any codicils, names of executors and beneficiaries, and a list of the life changes that have happened since it was made.",
+          "Also prepare property ownership details, mortgage information, savings, investments, pensions, life policies, business interests, debts, children or dependants, vulnerable beneficiaries, overseas assets, and any concerns about disputes.",
+          "If you are unsure whether a small change is enough, say so in the enquiry. Do not send sensitive documents through the public quote form; a short summary is enough at this stage.",
+        ],
+      },
+      {
+        heading: "Questions to ask a wills solicitor",
+        body: [
+          "Ask whether the current will should be reviewed, updated by codicil, or replaced completely. Ask what information is needed before the solicitor can comment, and whether any previous will should be brought to the appointment.",
+          "Ask whether marriage, divorce, property ownership, children, business interests, trusts, vulnerable beneficiaries, or inheritance tax questions need closer attention. If timing matters, ask how quickly the review can start.",
+          "You may also want to ask whether related documents such as lasting powers of attorney should be considered at the same time.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you think a will may need updating, you can compare wills solicitor options in Kidderminster and request a no obligation quote. We may pass your enquiry to a suitable solicitor partner where appropriate.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "what-should-be-included-in-a-will",
+      "lasting-power-of-attorney-basics",
+      "intestacy-rules-explained",
+      "dies-without-a-will-uk",
+    ],
+    faq: [
+      {
+        question: "How often should a will be reviewed?",
+        answer:
+          "Many people review a will after major life events or every few years. The right timing depends on personal, family, property, and financial circumstances.",
+      },
+      {
+        question: "Does getting married or divorced affect a will?",
+        answer:
+          "Marriage, civil partnership, divorce, and separation can all be important triggers for review. Ask a qualified provider how your specific circumstances should be handled.",
+      },
+      {
+        question: "Can I update a will myself?",
+        answer:
+          "Changing a will informally can create problems. If you want a change to have legal effect, consider speaking directly with a solicitor or legal service provider.",
+      },
+      {
+        question: "Can I request a quote for updating a will?",
+        answer:
+          "Yes. You can submit a no obligation enquiry through this website and a suitable solicitor partner may contact you if they are able to help.",
+      },
+    ],
+  },
+  {
+    type: "guide",
+    slug: "lasting-power-of-attorney-basics",
+    title: "Lasting Power of Attorney Basics",
+    h1: "Lasting power of attorney basics",
+    metaDescription:
+      "General guide to lasting power of attorney basics, including the two LPA types, attorney choices, registration, preparation, and questions to ask.",
+    category: "Probate and Wills",
+    updated: "2026-05-07",
+    relatedServiceSlug: "lasting-power-of-attorney-solicitors-kidderminster",
+    intro:
+      "A lasting power of attorney is a legal document that lets someone choose trusted people to make certain decisions if help is needed later. It is often considered alongside wills, care planning, ageing parents, illness, or practical family support.",
+    keyTakeaways: [
+      "There are two main LPA types: property and financial affairs, and health and welfare.",
+      "Attorney choice is practical and sensitive; trust, availability, record keeping, and family dynamics all matter.",
+      "Registration and signing errors can cause delay, so careful preparation is important.",
+      "This guide is general information only; you can request a no obligation quote if you want a suitable solicitor partner to contact you.",
+    ],
+    sections: [
+      {
+        heading: "What a lasting power of attorney is",
+        body: [
+          "A lasting power of attorney, often shortened to LPA, is a document that allows a person to appoint attorneys to make certain decisions for them. The person making the LPA is often called the donor.",
+          "LPAs are often made before they are urgently needed. That is because capacity, signing, attorney choices, certificate provider requirements, and registration all need to be handled properly.",
+          "This guide explains the basics in general terms for users in Kidderminster and the wider Wyre Forest area. It is not legal advice and cannot say whether an LPA is right for a particular person.",
+        ],
+      },
+      {
+        heading: "The two main types of LPA",
+        body: [
+          "A property and financial affairs LPA can cover matters such as bank accounts, bills, pensions, investments, property, and other financial tasks. Depending on the setup and registration, it may sometimes be used while the donor still has capacity.",
+          "A health and welfare LPA can cover decisions about care, living arrangements, treatment, and welfare if the donor cannot make those decisions. It is different from a financial LPA and should not be assumed to cover the same matters.",
+          "Some people make one type. Others make both. The right choice depends on circumstances and should be discussed directly with a qualified provider if advice is needed.",
+        ],
+      },
+      {
+        heading: "Choosing attorneys",
+        body: [
+          "Attorneys should be trustworthy, practical, willing to act, and able to keep records. They may be family members, friends, or in some cases professionals. The donor should think carefully before appointing someone simply because they are the eldest child or nearest relative.",
+          "Practical points include where the attorney lives, whether they communicate well, whether they understand money and paperwork, whether there are family tensions, and whether more than one attorney should act together or separately.",
+          "Replacement attorneys may also be worth considering. If an attorney dies, loses capacity, becomes unwilling, or is no longer suitable, a replacement can reduce the risk of the LPA becoming less useful.",
+        ],
+      },
+      {
+        heading: "Signing, certificate providers, and registration",
+        body: [
+          "LPAs involve formal signing and witnessing steps. A certificate provider is also involved to help confirm that the donor understands the document and is not being pressured. Mistakes in the process can delay registration.",
+          "The document usually needs registering before it can be used. Registration can take time, so leaving it until a crisis can be stressful. Users should ask a solicitor partner what timing is realistic rather than relying on a guaranteed date.",
+          "Where family members live across Kidderminster, Stourport, Bewdley, Cookley, Hagley, and elsewhere in Worcestershire, practical signing arrangements may need planning.",
+        ],
+      },
+      {
+        heading: "Where things commonly go wrong",
+        body: [
+          "Problems can arise when the wrong LPA type is chosen, attorneys are unsuitable, family members disagree, the donor may already lack capacity, forms are signed incorrectly, or registration is delayed until an urgent decision is needed.",
+          "Another risk is assuming that a spouse, adult child, or next of kin can automatically handle everything. Without the right authority, banks, care providers, or other organisations may not be able to deal with them in the way the family expects.",
+          "Safeguarding concerns should be taken seriously. If there is pressure, financial abuse, family conflict, or concern about capacity, explain this directly to a solicitor or legal service provider if you choose to instruct one.",
+        ],
+      },
+      {
+        heading: "What to prepare before speaking to a solicitor",
+        body: [
+          "Prepare the donor's name, address, date of birth, contact details, preferred contact method, proposed attorneys, replacement attorneys, and whether the enquiry concerns finances, health and welfare, or both.",
+          "Also prepare notes on property, savings, pensions, business interests, family circumstances, care needs, capacity concerns, and whether anyone is likely to object or disagree.",
+          "If this relates to an ageing parent or vulnerable person in Kidderminster or Wyre Forest, include practical details such as whether they can attend a meeting, whether remote contact is easier, and whether timing is urgent.",
+        ],
+      },
+      {
+        heading: "Questions to ask a solicitor",
+        body: [
+          "Ask whether the quote covers one LPA or both, whether registration is included, what Office of the Public Guardian fees are separate, who prepares the documents, and how signing will be managed.",
+          "Ask how capacity concerns, family disagreement, replacement attorneys, instructions, preferences, and safeguarding issues are handled. If the donor has already lost capacity, ask what options may be available without assuming an LPA can still be made.",
+          "You may also ask whether related documents such as a will, probate planning, or later-life legal support should be considered separately.",
+        ],
+      },
+      {
+        heading: "Next step",
+        body: [
+          "If you want help comparing lasting power of attorney solicitor options, you can request a no obligation quote. We may pass your enquiry to a suitable solicitor partner where appropriate.",
+          "Kidderminster Solicitors is an independent legal information and solicitor introduction website. It is not a law firm and does not provide legal advice.",
+        ],
+      },
+    ],
+    relatedGuideSlugs: [
+      "when-should-you-update-a-will",
+      "what-should-be-included-in-a-will",
+      "executor-responsibilities-explained",
+      "do-you-need-a-solicitor-for-probate",
+    ],
+    faq: [
+      {
+        question: "What are the two main types of lasting power of attorney?",
+        answer:
+          "The two main types are property and financial affairs, and health and welfare. They cover different decisions and may both be relevant depending on the person's circumstances.",
+      },
+      {
+        question: "When should someone think about making an LPA?",
+        answer:
+          "Many people think about LPAs before a crisis, especially after illness, ageing, care planning, property concerns, or family discussions about future support.",
+      },
+      {
+        question: "Can a person make an LPA after losing capacity?",
+        answer:
+          "Capacity is central to making an LPA. If there are concerns, speak directly with a qualified provider because a different route may be needed.",
+      },
+      {
+        question: "Can I request an LPA solicitor quote through this website?",
         answer:
           "Yes. You can submit a no obligation enquiry and we may pass it to a suitable solicitor partner where appropriate. You are under no obligation to instruct them.",
       },
