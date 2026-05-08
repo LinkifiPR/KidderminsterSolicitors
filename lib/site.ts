@@ -1270,6 +1270,94 @@ export const servicePages: ServicePage[] = [
       "when-should-you-update-a-will",
     ],
   }),
+  createSpecialistServicePage({
+    slug: "remortgage-solicitors-kidderminster",
+    title: "Remortgage Solicitors Kidderminster",
+    h1: "Remortgage solicitors in Kidderminster",
+    metaDescription:
+      "Compare remortgage solicitor options in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
+    category: "Remortgage",
+    summary:
+      "Support comparing solicitor options for remortgages, lender panel checks, redemption statements, title checks, and transfer of equity overlap.",
+    userNeed:
+      "Remortgage enquiries often start when a homeowner is changing lender, switching product, raising funds, or combining a remortgage with a transfer of equity. This page helps users compare options and request a no obligation quote from a suitable solicitor partner where appropriate.",
+    serviceScope: [
+      "A remortgage solicitor may check title, review the new lender's instructions, obtain redemption information from the existing lender, complete the new mortgage, repay the old mortgage, and register the new lender's charge.",
+      "The work can become more involved where the property is leasehold, ownership is changing, the lender has specific panel requirements, or the title contains restrictions that need resolving before completion.",
+    ],
+    localContext:
+      "Homeowners in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area may remortgage to switch rates, release funds, restructure ownership, or deal with a property after separation or inheritance.",
+    prepareItems: [
+      "current lender details",
+      "new lender details",
+      "mortgage offer if available",
+      "property address",
+      "whether the property is leasehold",
+      "whether ownership is changing",
+      "target completion date",
+    ],
+    questionItems: [
+      "whether the firm is on the new lender's panel",
+      "what the quote includes",
+      "whether transfer of equity is needed",
+      "whether leasehold notices or consents apply",
+      "what could delay completion",
+    ],
+    riskItems: [
+      "Remortgage matters can be delayed by lender panel issues, missing redemption statements, identity checks, title restrictions, leasehold notice requirements, and assumptions that no legal work is needed because the owner is not moving home.",
+      "If another person is being added to or removed from the title, the remortgage may need transfer of equity work and potentially separate advice for the parties involved.",
+    ],
+    relatedGuideSlugs: [
+      "remortgage-solicitor-checklist",
+      "transfer-of-equity-solicitor-guide",
+      "leasehold-conveyancing-explained",
+      "what-does-a-conveyancing-solicitor-do",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "land-property-disputes-solicitors-kidderminster",
+    title: "Land and Property Disputes Solicitors Kidderminster",
+    h1: "Land and property disputes solicitors in Kidderminster",
+    metaDescription:
+      "Compare land and property dispute solicitor options in Kidderminster for boundaries, access, rights of way, and related property concerns.",
+    category: "Land and Property Disputes",
+    summary:
+      "Support comparing solicitor options for boundary questions, rights of way, access disputes, title concerns, and property disagreements.",
+    userNeed:
+      "Land and property dispute enquiries often begin when a homeowner, buyer, seller, landlord, neighbour, or business owner is worried about boundaries, access, rights of way, title issues, or interference with land. This page helps users compare options and request a no obligation quote from a suitable solicitor partner where appropriate.",
+    serviceScope: [
+      "A property dispute solicitor may help review title documents, correspondence, plans, rights of way, boundary concerns, easements, covenants, access arrangements, and options for resolving a disagreement.",
+      "Some disputes are early-stage questions that need document review. Others involve urgent deadlines, threatened works, neighbour conflict, sale delays, or court-related correspondence.",
+    ],
+    localContext:
+      "Property disputes around Kidderminster and Wyre Forest can involve older terraces, shared drives, rural access, garden boundaries, private roads, converted buildings, and homes around Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire villages.",
+    prepareItems: [
+      "property address",
+      "title plan if available",
+      "photos of the issue",
+      "neighbour or third-party correspondence",
+      "dates of key events",
+      "survey notes if available",
+      "whether a sale or purchase is affected",
+    ],
+    questionItems: [
+      "what documents should be reviewed first",
+      "whether a surveyor may be needed",
+      "whether the issue is urgent",
+      "what resolution routes may be available",
+      "how costs and correspondence are handled",
+    ],
+    riskItems: [
+      "Property disputes can become harder to manage when people rely on informal assumptions, remove boundary features, carry out works before documents are checked, or send heated correspondence that escalates the disagreement.",
+      "A title plan may not show the exact legal boundary. Evidence, historic use, physical features, documents, and expert input may all matter depending on the facts.",
+    ],
+    relatedGuideSlugs: [
+      "property-boundaries-explained",
+      "rights-of-way-access-disputes",
+      "overriding-interests-property",
+      "leasehold-vs-freehold-explained",
+    ],
+  }),
   {
     type: "service",
     slug: "employment-solicitors-kidderminster",
@@ -5413,6 +5501,559 @@ export const guidePages: GuidePage[] = [
         question: "What should I prepare before asking about parental responsibility?",
         answer:
           "Prepare the child's details, birth certificate position if available, current living arrangements, relationship to the child, any existing orders, and the specific decision or concern.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "rights-of-way-access-disputes",
+    title: "Rights of Way and Access Disputes Explained",
+    h1: "Rights of way and access disputes explained",
+    metaDescription:
+      "General guide to rights of way and access disputes, including title documents, shared access, evidence, and what to prepare before speaking to a solicitor.",
+    category: "Conveyancing",
+    relatedServiceSlug: "land-property-disputes-solicitors-kidderminster",
+    intro:
+      "Rights of way and access disputes can affect homes, gardens, driveways, private roads, paths, commercial premises, and land. The key question is usually not only who uses the route, but what the title documents, historic use, physical layout, and correspondence show.",
+    keyTakeaways: [
+      "A right of way may be recorded in title documents, arise from older deeds, or be argued from long use depending on the facts.",
+      "Access disputes can escalate quickly, so clear evidence and calm correspondence matter.",
+      "This website cannot decide whether a right exists; a qualified provider would need to review the documents and facts.",
+    ],
+    topicOverview: [
+      "A right of way is a legal right to pass over land belonging to someone else. It may be for vehicles, pedestrians, services, maintenance, or a specific purpose. The exact wording matters because a right to walk over a path is not necessarily the same as a right to park, widen access, or use the route for a new development.",
+      "Access disputes often arise when a neighbour blocks a route, changes a gate, parks on a shared drive, disputes maintenance, increases use, or challenges whether the right exists. A solicitor may need to review Land Registry documents, old transfers, plans, photographs, witness evidence, and correspondence.",
+    ],
+    practicalExamples: [
+      "A homeowner in Kidderminster may share a driveway with a neighbour and discover that the title wording is vague about parking, turning, or maintenance. That can affect everyday use and a future sale.",
+      "A rural or edge-of-town property near Bewdley, Cookley, or Hagley may rely on a private lane. If gates, repairs, or increased use become disputed, the legal position may need careful document review.",
+    ],
+    commonProblems: [
+      "Problems commonly arise where people assume long use is enough, block access without checking documents, rely on estate agent descriptions, or confuse permission with a legal right.",
+      "Another risk is making physical changes before the position is clear. Removing gates, putting up bollards, widening a driveway, or changing locks can escalate the dispute and make resolution harder.",
+    ],
+    prepareItems: [
+      "property address",
+      "title register and plan if available",
+      "old deeds or transfer documents",
+      "photos of the access route",
+      "correspondence with neighbours",
+      "dates of use or obstruction",
+      "details of any sale or purchase affected",
+    ],
+    questionItems: [
+      "what documents should be checked first",
+      "whether the right is written or disputed from use",
+      "whether urgent steps are needed",
+      "whether a surveyor may help",
+      "what resolution options may avoid escalation",
+    ],
+    localContext:
+      "Rights of way issues around Kidderminster and Wyre Forest can involve shared drives, older terraces, private roads, rural access, converted buildings, and properties across Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire villages.",
+    relatedGuideSlugs: [
+      "property-boundaries-explained",
+      "overriding-interests-property",
+      "leasehold-vs-freehold-explained",
+      "what-can-delay-conveyancing",
+    ],
+    faq: [
+      {
+        question: "Is a right of way always shown clearly on the title plan?",
+        answer:
+          "Not always. The title register, plan, older deeds, wording of rights, and practical evidence may all need to be reviewed together.",
+      },
+      {
+        question: "Can someone block a shared access route?",
+        answer:
+          "That depends on the legal rights and facts. This website cannot decide the issue, so a solicitor or legal service provider would need to review the documents if instructed.",
+      },
+      {
+        question: "What evidence is useful in an access dispute?",
+        answer:
+          "Useful evidence may include title documents, plans, photographs, historic use, correspondence, witness notes, and records of obstruction or maintenance.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "overriding-interests-property",
+    title: "Overriding Interests Affecting Property",
+    h1: "Overriding interests affecting property",
+    metaDescription:
+      "General guide to overriding interests in property, why they can matter, what buyers may need to prepare, and questions to ask a solicitor.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Overriding interests are property rights or interests that may affect land even if they are not obvious from the registered title in the usual way. They can be technical, so buyers and sellers should avoid assumptions and ask a qualified provider to review specific concerns.",
+    keyTakeaways: [
+      "Overriding interests can matter because not every relevant right is always obvious from a quick title check.",
+      "Actual occupation, certain easements, and other property interests may need careful consideration depending on the facts.",
+      "This guide is general information only and should not be used to decide whether a particular property is affected.",
+    ],
+    topicOverview: [
+      "In conveyancing, the registered title is central, but it is not always the whole story. Some interests can bind a buyer even where they are not immediately apparent from the register. The details are technical and depend on land registration rules, documents, occupation, and the facts of the transaction.",
+      "A solicitor may raise enquiries about occupiers, inspect replies from the seller, review title entries, consider rights affecting the land, and report on risks. Buyers should answer lender and solicitor questions about occupiers and property use accurately.",
+    ],
+    practicalExamples: [
+      "A buyer may discover that someone other than the seller lives at the property or contributes to it. The solicitor may need to understand whether that person has any interest that needs addressing before completion.",
+      "A property in Kidderminster or the wider Wyre Forest area may also have rights of way, service rights, or historic arrangements that need checking against the title and practical use on the ground.",
+    ],
+    commonProblems: [
+      "Problems arise when occupiers are not disclosed clearly, adult residents are overlooked, informal family contributions are ignored, or replies to enquiries are treated as a formality.",
+      "Another common issue is assuming that a clean-looking title means there can be no other risk. Conveyancing questions about occupation, rights, and use are designed to reduce that risk before exchange.",
+    ],
+    prepareItems: [
+      "property address",
+      "title documents if available",
+      "details of everyone living at the property",
+      "seller replies",
+      "known access or use rights",
+      "mortgage lender details",
+      "any unusual occupation or contribution history",
+    ],
+    questionItems: [
+      "whether any occupier needs to sign documents",
+      "what rights may affect the property",
+      "whether any enquiry answers need clarification",
+      "whether lender requirements are affected",
+      "what should be resolved before exchange",
+    ],
+    localContext:
+      "Property in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire areas may include older homes, shared access, family occupation, informal arrangements, and historic rights that make careful conveyancing questions important.",
+    relatedGuideSlugs: [
+      "rights-of-way-access-disputes",
+      "property-boundaries-explained",
+      "what-does-a-conveyancing-solicitor-do",
+      "buying-a-house-in-kidderminster-legal-checklist",
+    ],
+    faq: [
+      {
+        question: "Can this website identify an overriding interest?",
+        answer:
+          "No. This website provides general information only. A solicitor or legal service provider would need to review the specific documents and facts.",
+      },
+      {
+        question: "Why do solicitors ask about adult occupiers?",
+        answer:
+          "Occupiers can sometimes affect lender requirements or completion paperwork. The exact position depends on the facts and documents.",
+      },
+      {
+        question: "Should buyers mention unusual property use early?",
+        answer:
+          "Yes. Mentioning occupiers, access arrangements, or unusual use early can help the solicitor decide what enquiries may be needed.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "fathers-rights-unborn-child",
+    title: "Fathers' Rights Before a Child Is Born",
+    h1: "Fathers' rights before a child is born",
+    metaDescription:
+      "General family law guide to fathers' rights before a child is born, parental responsibility, birth registration, and what to prepare before speaking to a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "Questions about a father's position before a child is born can be emotionally sensitive. The legal position may depend on parental responsibility, birth registration, relationship status, safety concerns, and what decisions need to be made after birth.",
+    keyTakeaways: [
+      "Legal rights and responsibilities can depend on parental responsibility and the facts after the child is born.",
+      "Birth registration, communication, safety, and practical arrangements may all need careful discussion.",
+      "This website cannot advise either parent what to do; it can only provide general information and solicitor introductions.",
+    ],
+    topicOverview: [
+      "Before birth, questions often involve communication, scans, birth planning, surname, registration, parental responsibility, future contact, and how decisions will be made after the baby is born. The legal and practical position can be different before and after birth.",
+      "A solicitor may explain general family law process, parental responsibility routes, child arrangements after birth, and what information is useful for a first appointment. If there are safety concerns, urgent specialist support may be needed.",
+    ],
+    practicalExamples: [
+      "An expectant father in Kidderminster may want to understand what happens if communication has broken down before the baby is born and how parental responsibility might be considered after birth.",
+      "Another parent may be worried about pressure, conflict, or safety and need to understand how to raise practical concerns carefully with a solicitor or support service.",
+    ],
+    commonProblems: [
+      "Common problems include confusing emotional expectations with legal rights, sending hostile messages, making assumptions about birth registration, or waiting until conflict escalates before asking for help.",
+      "Sensitive matters involving pregnancy, safety, or coercive behaviour should be handled carefully. If anyone is at immediate risk, emergency services or specialist support should be used rather than a website enquiry.",
+    ],
+    prepareItems: [
+      "expected due date",
+      "relationship background",
+      "communication history",
+      "any safety concerns",
+      "whether birth registration is disputed",
+      "planned living arrangements after birth",
+      "any urgent dates",
+    ],
+    questionItems: [
+      "how parental responsibility may arise",
+      "what can be discussed before birth",
+      "what happens after birth registration",
+      "whether mediation or solicitor correspondence may be relevant",
+      "what to avoid doing if communication is strained",
+    ],
+    localContext:
+      "Families in Kidderminster and Wyre Forest may need to think about local support networks, housing, healthcare appointments, travel between homes, and future childcare arrangements across nearby areas such as Stourport, Bewdley, Cookley, and Hagley.",
+    relatedGuideSlugs: [
+      "parental-responsibility-order-explained",
+      "child-arrangements-explained",
+      "what-does-a-family-law-solicitor-help-with",
+      "coercive-controlling-behaviour-legal-support",
+    ],
+    faq: [
+      {
+        question: "Can this website tell a father what rights he has before birth?",
+        answer:
+          "No. This website gives general information only. A qualified provider would need to consider the facts and any safety concerns.",
+      },
+      {
+        question: "Is parental responsibility relevant after a child is born?",
+        answer:
+          "Yes, parental responsibility can be important for legal decision-making, but how it arises depends on the facts and documents.",
+      },
+      {
+        question: "What should be included in a first enquiry?",
+        answer:
+          "Keep it factual: due date, relationship background, communication, safety concerns, birth registration questions, and any urgent dates.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "taking-child-abroad-after-separation",
+    title: "Taking a Child Abroad After Separation",
+    h1: "Taking a child abroad after separation",
+    metaDescription:
+      "General guide to taking a child abroad after separation, consent, child arrangements, documents, and what to ask a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "Taking a child abroad after separation can raise consent, parental responsibility, passport, holiday, relocation, and child arrangements questions. The safest first step is to understand what documents and permissions may be relevant before travel plans become urgent.",
+    keyTakeaways: [
+      "Separated parents should avoid assuming travel is agreed unless consent and arrangements are clear.",
+      "Existing orders, parental responsibility, destination, duration, and safety concerns may affect what needs to be discussed.",
+      "This guide is general information only and cannot decide whether a proposed trip is allowed.",
+    ],
+    topicOverview: [
+      "Questions about taking a child abroad can involve short holidays, family visits, school trips, emergency travel, or permanent relocation. The legal position may depend on who has parental responsibility, whether there is a court order, what the other parent has agreed, and the purpose and length of travel.",
+      "A solicitor may help explain the general process, correspondence, consent wording, court applications where relevant, or what documents to prepare. If there is a risk that a child may not be returned, urgent specialist advice should be sought directly.",
+    ],
+    practicalExamples: [
+      "A parent in Kidderminster may want to take a child abroad for a school holiday but communication with the other parent is poor. Clear dates, destination, travel details, and written consent may be practical starting points to discuss.",
+      "Another parent may be concerned that a proposed trip is not a holiday but a relocation risk. That kind of concern should be raised promptly with a qualified provider.",
+    ],
+    commonProblems: [
+      "Common problems include booking travel before consent is clear, relying on vague messages, ignoring existing orders, withholding passports, or leaving the issue until just before departure.",
+      "Another risk is mixing holiday disagreements with wider child arrangement disputes. A solicitor may need to separate the immediate travel issue from longer-term arrangements.",
+    ],
+    prepareItems: [
+      "child's age",
+      "travel dates",
+      "destination",
+      "passport position",
+      "who has parental responsibility",
+      "existing orders or agreements",
+      "messages about consent",
+      "any safety or return concerns",
+    ],
+    questionItems: [
+      "whether consent is needed",
+      "how consent should be recorded",
+      "whether an existing order affects travel",
+      "what documents should be shared",
+      "what urgent steps may be available if there is a serious concern",
+    ],
+    localContext:
+      "Separated parents around Kidderminster, Wyre Forest, Stourport, Bewdley, Cookley, and Hagley may need practical arrangements around school holidays, passport handovers, travel to airports, and communication between households.",
+    relatedGuideSlugs: [
+      "separated-parents-school-holidays",
+      "child-arrangements-explained",
+      "parental-responsibility-order-explained",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+    faq: [
+      {
+        question: "Should travel consent be left until the last minute?",
+        answer:
+          "No. It is usually better to raise travel plans early, keep details clear, and avoid booking assumptions where consent is uncertain.",
+      },
+      {
+        question: "Can this website decide whether I can travel with my child?",
+        answer:
+          "No. This website is not a law firm and cannot apply the law to your facts. A qualified provider can review documents if instructed.",
+      },
+      {
+        question: "What details help a solicitor understand a travel issue?",
+        answer:
+          "Useful details include destination, dates, existing orders, parental responsibility, passport position, consent messages, and any safety concerns.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "separated-parents-school-holidays",
+    title: "Separated Parents and School Holidays",
+    h1: "Separated parents and school holidays",
+    metaDescription:
+      "General guide for separated parents planning school holidays, including child arrangements, travel, communication, and what to prepare before speaking to a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "School holidays can put pressure on separated parents because usual weekly routines may not work during half terms, summer holidays, Christmas, or trips away. Clear planning can reduce conflict, but unresolved disagreements may need solicitor support.",
+    keyTakeaways: [
+      "Holiday arrangements should be clear, practical, and focused on the child rather than only the parents' preferred dates.",
+      "Existing orders, work patterns, travel plans, childcare, and school dates may all affect what needs to be agreed.",
+      "This guide is general information only and does not decide what arrangement is suitable for a particular family.",
+    ],
+    topicOverview: [
+      "Holiday issues can include how school breaks are divided, handover times, childcare, trips abroad, Christmas or birthdays, communication during holidays, and what happens if one parent changes plans. Where there is an existing order, its wording may need to be checked.",
+      "A solicitor may help explain options for recording arrangements, correspondence, mediation context, or court-related steps where agreement is not possible. Early planning usually gives more room for practical solutions.",
+    ],
+    practicalExamples: [
+      "Parents in Kidderminster may manage term-time arrangements well but disagree about summer holiday blocks, childcare around work shifts, or travel to see relatives outside Worcestershire.",
+      "Another family may have a child arrangement order that sets weekly contact but says little about school holidays. A solicitor may need to review the order before anyone assumes how holiday time should be split.",
+    ],
+    commonProblems: [
+      "Problems arise when holidays are booked before agreement, dates are vague, passports are withheld, work commitments are not discussed, or parents use holiday planning to revisit wider relationship conflict.",
+      "Another issue is leaving Christmas, summer holidays, or foreign travel until the final weeks. That can create unnecessary urgency and make calm discussion harder.",
+    ],
+    prepareItems: [
+      "school holiday dates",
+      "current child arrangements",
+      "work and childcare commitments",
+      "travel plans",
+      "passport details if relevant",
+      "existing orders or written agreements",
+      "messages showing what has been proposed",
+    ],
+    questionItems: [
+      "whether the existing order covers holidays",
+      "how to record agreed changes",
+      "whether mediation may be relevant",
+      "what happens if dates cannot be agreed",
+      "how travel abroad should be handled",
+    ],
+    localContext:
+      "Families across Kidderminster and Wyre Forest may need to plan around school calendars, local childcare, work in nearby towns, travel between homes in Stourport or Bewdley, and family support around Cookley, Hagley, or wider Worcestershire.",
+    relatedGuideSlugs: [
+      "taking-child-abroad-after-separation",
+      "child-arrangements-explained",
+      "parental-responsibility-order-explained",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+    faq: [
+      {
+        question: "Should school holiday arrangements be written down?",
+        answer:
+          "Clear written arrangements can reduce misunderstanding, but the right format depends on the family and any existing order.",
+      },
+      {
+        question: "Can one parent book a holiday without discussing it?",
+        answer:
+          "That can create problems, especially if consent, passports, foreign travel, or existing orders are involved. A solicitor can review the facts if instructed.",
+      },
+      {
+        question: "What should I prepare before asking about holiday arrangements?",
+        answer:
+          "Prepare school dates, current arrangements, proposed holiday dates, travel details, existing orders, messages, and any childcare or work constraints.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "common-law-marriage-uk",
+    title: "What Is a Common Law Marriage?",
+    h1: "What is a common law marriage?",
+    metaDescription:
+      "General UK guide to common law marriage, cohabiting partners, property, children, wills, and what to ask a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "Common law marriage is a phrase many people use for long-term cohabiting couples, but it can be misleading in England and Wales. Living together for many years does not automatically create the same legal position as marriage or civil partnership.",
+    keyTakeaways: [
+      "The phrase common law marriage is often misunderstood and can create false expectations.",
+      "Cohabiting couples may need to think separately about property ownership, wills, children, pensions, and financial arrangements.",
+      "A solicitor may help review documents or explain options, but this website provides general information only.",
+    ],
+    topicOverview: [
+      "Unmarried partners may have important practical commitments, shared homes, children, bills, and family responsibilities, but their legal position can differ from married couples or civil partners. Property ownership, financial claims, inheritance, and pensions may depend on documents and facts rather than the length of the relationship alone.",
+      "This topic often overlaps with cohabitation agreements, declarations of trust, wills, lasting powers of attorney, and child arrangements. The right next step depends on whether the relationship is ongoing, ending, or being planned for the future.",
+    ],
+    practicalExamples: [
+      "A couple living together in Kidderminster may assume each would automatically inherit from the other. Without a will or relevant legal arrangement, that assumption may be unsafe.",
+      "Another couple may both contribute to a home but only one person is on the legal title. If the relationship ends, the documents, payments, intentions, and evidence may become important.",
+    ],
+    commonProblems: [
+      "Problems arise where couples rely on the phrase common law spouse, assume long cohabitation creates automatic property rights, do not make wills, or fail to record contributions to a home clearly.",
+      "Another risk is waiting until separation before checking documents. It is usually easier to create clear records while the relationship is stable than to reconstruct expectations during a dispute.",
+    ],
+    prepareItems: [
+      "property ownership details",
+      "mortgage information",
+      "financial contribution records",
+      "children's details if relevant",
+      "wills or trust documents",
+      "relationship timeline",
+      "what outcome or protection is being considered",
+    ],
+    questionItems: [
+      "whether property ownership documents need review",
+      "whether a cohabitation agreement may be useful",
+      "whether a will should be updated",
+      "what happens if the relationship ends",
+      "how children and housing issues are treated separately",
+    ],
+    localContext:
+      "Cohabiting couples in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Wyre Forest may have shared homes, blended families, local childcare, and informal financial arrangements that should be understood before problems arise.",
+    relatedGuideSlugs: [
+      "cohabitation-agreements-explained",
+      "what-should-be-included-in-a-will",
+      "when-should-you-update-a-will",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+    faq: [
+      {
+        question: "Is common law marriage recognised like marriage in England and Wales?",
+        answer:
+          "The phrase is commonly used but can be misleading. Cohabiting couples should not assume they have the same position as married couples or civil partners.",
+      },
+      {
+        question: "Can living together for many years create automatic inheritance rights?",
+        answer:
+          "Do not assume that. Wills, property ownership, pensions, and family circumstances may need separate consideration by a qualified provider.",
+      },
+      {
+        question: "What documents may help cohabiting couples?",
+        answer:
+          "Depending on the circumstances, couples may consider wills, cohabitation agreements, declarations of trust, LPAs, or property documents.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "cohabitation-agreements-explained",
+    title: "Cohabitation Agreements Explained",
+    h1: "Cohabitation agreements explained",
+    metaDescription:
+      "General guide to cohabitation agreements, what they may cover, when couples consider them, and what to prepare before speaking to a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "A cohabitation agreement is a document that can record how an unmarried couple intends to deal with property, bills, savings, debts, and practical arrangements while living together or if the relationship ends.",
+    keyTakeaways: [
+      "Cohabitation agreements can help unmarried couples record expectations before a disagreement arises.",
+      "They may cover property contributions, mortgage payments, bills, debts, ownership shares, and what happens if the relationship ends.",
+      "Each person may need independent advice so the agreement is considered carefully and fairly.",
+    ],
+    topicOverview: [
+      "Cohabitation agreements are often considered by couples buying a home together, moving into one person's property, contributing unequally to a deposit, supporting children from previous relationships, or wanting clarity before pooling finances.",
+      "The document may sit alongside a declaration of trust, will, or other property planning. It should be tailored to the couple's circumstances rather than copied from a template without understanding.",
+    ],
+    practicalExamples: [
+      "One partner may own a house in Kidderminster and the other may plan to contribute toward the mortgage or renovations. A cohabitation agreement can help record what both people intend those payments to mean.",
+      "A couple buying together in Wyre Forest may contribute different deposit amounts. They may want to record ownership shares, sale arrangements, and what happens if one person wants to leave.",
+    ],
+    commonProblems: [
+      "Problems commonly arise when couples avoid difficult money conversations, assume fairness will be obvious later, or make large contributions without documenting whether they are gifts, loans, or ownership-related payments.",
+      "Another issue is treating the agreement as a one-time document. Major changes such as children, marriage, property sale, inheritance, or a new mortgage may mean documents should be reviewed.",
+    ],
+    prepareItems: [
+      "property ownership details",
+      "deposit contributions",
+      "mortgage details",
+      "monthly bill arrangements",
+      "debts and savings",
+      "children or previous family commitments",
+      "what should happen if the relationship ends",
+    ],
+    questionItems: [
+      "what the agreement can and cannot cover",
+      "whether each person needs separate advice",
+      "how property shares should be recorded",
+      "whether a declaration of trust is also needed",
+      "when the agreement should be reviewed",
+    ],
+    localContext:
+      "Cohabiting couples around Kidderminster and Wyre Forest may be buying their first home, moving into an existing property, combining households in Stourport or Bewdley, or planning around children and family support nearby.",
+    relatedGuideSlugs: [
+      "common-law-marriage-uk",
+      "what-should-be-included-in-a-will",
+      "transfer-of-equity-solicitor-guide",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+    faq: [
+      {
+        question: "Is a cohabitation agreement only for wealthy couples?",
+        answer:
+          "No. It can be useful wherever unmarried partners want clarity about a home, bills, contributions, debts, or what happens if the relationship ends.",
+      },
+      {
+        question: "Should both partners get legal advice?",
+        answer:
+          "Independent advice may be important so each person understands the agreement. A solicitor can explain what is appropriate if instructed.",
+      },
+      {
+        question: "Can a cohabitation agreement replace a will?",
+        answer:
+          "No. Wills and cohabitation agreements deal with different issues. Couples may need to consider both depending on their circumstances.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "prenuptial-agreements-explained",
+    title: "Prenuptial Agreements Explained",
+    h1: "Prenuptial agreements explained",
+    metaDescription:
+      "General guide to prenuptial agreements, what they may cover, when couples consider them, and what to prepare before speaking to a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "A prenuptial agreement is usually made before marriage or civil partnership to record how a couple intends to deal with finances if the relationship later breaks down. It can be sensitive, but it may also create clarity where assets, businesses, property, inheritance, or children from earlier relationships are involved.",
+    keyTakeaways: [
+      "Prenuptial agreements are usually considered before marriage or civil partnership and need careful, timely preparation.",
+      "They may cover property, savings, debts, business interests, inheritance, and financial expectations.",
+      "Each person should understand the agreement and should not be pressured into signing close to the wedding.",
+    ],
+    topicOverview: [
+      "A prenup may be considered where one or both people own property, have business interests, expect inheritance, have children from previous relationships, want to protect family assets, or simply want transparent financial planning before marriage.",
+      "The strength and relevance of an agreement can depend on timing, disclosure, independent advice, fairness, and whether circumstances change. This website cannot assess enforceability or suitability.",
+    ],
+    practicalExamples: [
+      "Someone entering a marriage with a home in Kidderminster, a family business, or expected inheritance may want to discuss how those assets should be treated if the relationship later ends.",
+      "A couple with children from earlier relationships may want to balance future financial expectations with wills, inheritance planning, and responsibilities to different family members.",
+    ],
+    commonProblems: [
+      "Problems arise where an agreement is raised too close to the wedding, financial disclosure is incomplete, one person feels pressured, or the document is not reviewed when life changes significantly.",
+      "Another risk is assuming a prenup replaces wider planning. Wills, property ownership, pensions, business documents, and later changes in children or health may need separate review.",
+    ],
+    prepareItems: [
+      "wedding or civil partnership date",
+      "property details",
+      "savings and debts",
+      "business interests",
+      "expected inheritance",
+      "children or previous family commitments",
+      "any existing agreement or draft",
+    ],
+    questionItems: [
+      "how early the process should start",
+      "what financial disclosure is needed",
+      "whether each person needs separate advice",
+      "how future children or changes are considered",
+      "when the agreement should be reviewed",
+    ],
+    localContext:
+      "Couples in Kidderminster, Wyre Forest, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may consider prenups where property, family businesses, farming or rural assets, inheritance, or blended family planning are relevant.",
+    relatedGuideSlugs: [
+      "postnuptial-agreements-explained",
+      "cohabitation-agreements-explained",
+      "what-should-be-included-in-a-will",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+    faq: [
+      {
+        question: "When should a prenuptial agreement be discussed?",
+        answer:
+          "It should be discussed well before the wedding or civil partnership. Leaving it until the last minute can create pressure and practical problems.",
+      },
+      {
+        question: "Does this website advise whether a prenup is enforceable?",
+        answer:
+          "No. This website provides general information only. A solicitor would need to review the facts and documents if instructed.",
+      },
+      {
+        question: "What information is useful for a prenup enquiry?",
+        answer:
+          "Useful information includes wedding date, assets, debts, income, property, business interests, inheritance expectations, and whether either person has children from a previous relationship.",
       },
     ],
   }),
