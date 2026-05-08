@@ -2273,6 +2273,683 @@ export const guidePages: GuidePage[] = [
       },
     ],
   },
+  createQualityGuide({
+    slug: "how-long-does-conveyancing-take",
+    title: "How Long Does Conveyancing Take?",
+    h1: "How long does conveyancing take?",
+    metaDescription:
+      "General guide to conveyancing timescales, common stages, delays, and what buyers and sellers can prepare before requesting a quote.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Conveyancing timescales vary because a property transaction depends on documents, searches, mortgage lenders, chains, enquiries, and third parties. A straightforward freehold transaction may move faster than a leasehold, new-build, chain-heavy, or mortgage-dependent matter, but no completion date should be treated as guaranteed until the legal work is ready.",
+    keyTakeaways: [
+      "Conveyancing timing depends on the transaction, chain, lender, searches, title, and replies to enquiries.",
+      "Exchange and completion dates should not be relied on until the solicitor confirms the file is ready.",
+      "Good preparation can reduce avoidable delay, but it cannot control every third party in the chain.",
+    ],
+    topicOverview: [
+      "The main conveyancing stages usually include instructing a solicitor, identity and source of funds checks, contract pack review, searches, mortgage offer checks, enquiries, reporting, exchange, completion, and post-completion registration. Some stages can run in parallel, while others depend on replies from sellers, lenders, search providers, management companies, or other firms in the chain.",
+      "For buyers, searches and mortgage conditions can be significant timing points. For sellers, preparing the contract pack quickly and answering enquiries clearly can make a real difference. For leasehold matters, management packs and landlord information are often a key source of delay.",
+    ],
+    practicalExamples: [
+      "A cash buyer purchasing a straightforward freehold house with no chain may have fewer moving parts than someone buying a leasehold flat with a mortgage and a long chain. That does not mean the first transaction is automatically instant, but it normally has fewer dependency points.",
+      "A seller in Kidderminster who has planning permissions, building regulation certificates, boiler paperwork, guarantees, and property forms ready before a buyer is found may be better placed than a seller who starts looking for documents after enquiries arrive.",
+    ],
+    commonProblems: [
+      "Common causes of delay include late mortgage offers, slow search results, unanswered enquiries, missing certificates, leasehold management packs, gifted deposit checks, chain disagreements, survey issues, and title restrictions.",
+      "Another problem is assuming an estate agent's preferred date is legally fixed. Until contracts are exchanged, a proposed completion date is usually only a target. Travel, removals, notice dates, and school arrangements should be planned carefully around confirmed legal milestones.",
+    ],
+    prepareItems: [
+      "proof of identity",
+      "source of funds information",
+      "mortgage details",
+      "property address",
+      "estate agent details",
+      "chain information",
+      "any urgent target dates",
+    ],
+    questionItems: [
+      "what stages are outstanding before exchange",
+      "whether searches have been ordered",
+      "whether the mortgage offer has been checked",
+      "what enquiries are still unanswered",
+      "whether the chain is ready",
+    ],
+    localContext:
+      "For Kidderminster and Wyre Forest transactions, timing can be affected by local authority searches, property age, leasehold arrangements, shared access, drainage points, and whether the move involves nearby areas such as Stourport, Bewdley, Cookley, or Hagley.",
+    relatedGuideSlugs: [
+      "what-can-delay-conveyancing",
+      "house-buying-searches-explained",
+      "buying-a-house-in-kidderminster-legal-checklist",
+    ],
+    faq: [
+      {
+        question: "Can a conveyancing solicitor guarantee a completion date?",
+        answer:
+          "Usually not before the file is ready to exchange. Completion depends on searches, enquiries, mortgage conditions, contracts, funds, and chain readiness.",
+      },
+      {
+        question: "What is the biggest cause of conveyancing delay?",
+        answer:
+          "There is no single cause. Common issues include slow replies, mortgage delays, leasehold packs, search results, missing paperwork, and chain problems.",
+      },
+      {
+        question: "Can I request a conveyancing quote through this website?",
+        answer:
+          "Yes. You can request a no obligation quote and a suitable solicitor partner may contact you directly if they are able to help.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "what-can-delay-conveyancing",
+    title: "What Can Delay Conveyancing?",
+    h1: "What can delay conveyancing?",
+    metaDescription:
+      "Practical guide to common conveyancing delays, including chains, mortgages, searches, leasehold packs, missing documents, and title issues.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Conveyancing delays usually happen because one part of the transaction is waiting on documents, answers, checks, funding, or another party in the chain. Some delays are avoidable with preparation, while others depend on lenders, search providers, landlords, managing agents, sellers, buyers, or other solicitors.",
+    keyTakeaways: [
+      "Most delays are caused by missing information, unanswered enquiries, mortgage issues, searches, leasehold documents, or chain coordination.",
+      "Buyers and sellers can help by preparing documents early and responding clearly to requests.",
+      "A delay does not automatically mean the transaction will fail, but it should be understood quickly.",
+    ],
+    topicOverview: [
+      "Conveyancing is a linked process. The buyer's solicitor cannot report fully until title, contract paperwork, searches, mortgage offer conditions, and replies to enquiries have been reviewed. The seller's solicitor cannot answer some enquiries without information from the seller, landlord, management company, lender, or third-party documents.",
+      "Delays often feel frustrating because they are not always visible from the outside. A file may appear quiet while the solicitor is waiting for search results, lender confirmation, signed papers, or a response from another party.",
+    ],
+    practicalExamples: [
+      "A buyer may be ready emotionally and financially, but if their mortgage offer has not been issued or contains conditions that need legal review, exchange cannot safely happen.",
+      "A leasehold seller may accept an offer quickly, but the buyer's solicitor may still need service charge accounts, ground rent information, insurance details, planned works information, and landlord replies before they can advise the buyer.",
+    ],
+    commonProblems: [
+      "Typical delay points include late mortgage offers, missing ID or source of funds evidence, slow local authority searches, unclear boundaries, absent planning certificates, unregistered title, gifted deposit paperwork, survey renegotiations, and slow responses in a chain.",
+      "Leasehold properties can also be delayed by management packs, deed of covenant requirements, notices, consents, ground rent issues, or missing buildings insurance documents. These issues are common enough that leasehold sellers should start gathering information early.",
+    ],
+    prepareItems: [
+      "ID documents",
+      "source of funds evidence",
+      "mortgage lender details",
+      "certificates for property work",
+      "leasehold management details",
+      "gifted deposit information",
+      "chain and estate agent contacts",
+    ],
+    questionItems: [
+      "what exactly is causing the delay",
+      "who is responsible for the next action",
+      "whether any document is missing",
+      "whether the lender or search provider is involved",
+      "what can be done now to avoid later delay",
+    ],
+    localContext:
+      "In Kidderminster and the wider Wyre Forest area, older properties, shared access, leasehold flats, extensions, drainage arrangements, and local authority search points can all create extra questions. These are not unusual, but they need clear paperwork.",
+    relatedGuideSlugs: [
+      "how-long-does-conveyancing-take",
+      "selling-house-kidderminster-solicitor-checklist",
+      "house-buying-searches-explained",
+    ],
+    faq: [
+      {
+        question: "Can I prevent all conveyancing delays?",
+        answer:
+          "No. Some delays depend on third parties, but you can reduce avoidable delays by preparing documents early and answering solicitor requests promptly.",
+      },
+      {
+        question: "Do searches always delay conveyancing?",
+        answer:
+          "Not always, but searches can take time and may reveal points that need further explanation before exchange.",
+      },
+      {
+        question: "Is a leasehold property more likely to take longer?",
+        answer:
+          "Leasehold conveyancing often involves extra documents and third-party replies, so it can take longer than a straightforward freehold transaction.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "house-buying-searches-explained",
+    title: "What Searches Are Needed When Buying a House?",
+    h1: "What searches are needed when buying a house?",
+    metaDescription:
+      "General guide to house buying searches, including local authority, drainage, environmental, mining, lender requirements, and what results can show.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Searches are enquiries made with local authorities and specialist search providers to reveal information that may affect a property purchase. They are different from a survey: searches focus on legal, environmental, drainage, planning, and area-related information rather than the physical condition of the building.",
+    keyTakeaways: [
+      "Common searches include local authority, drainage and water, environmental, and other location-specific checks.",
+      "Mortgage lenders often require searches before they will allow completion.",
+      "Search results can reveal planning, highways, drainage, contamination, flood, or other issues that need review.",
+    ],
+    topicOverview: [
+      "A local authority search can reveal planning entries, building control information, highways matters, restrictions, notices, and other local records affecting the property. It does not usually answer every possible question about neighbouring land or future development, but it is a key part of many purchases.",
+      "Drainage and water searches can show whether the property is connected to mains water and sewerage, whether public sewers are nearby, and whether there are drainage points to consider. Environmental searches can flag potential contamination, flood risk, landfill, ground stability, and other environmental issues.",
+    ],
+    practicalExamples: [
+      "A buyer purchasing a house in Kidderminster with a mortgage may need a local authority search, drainage and water search, environmental search, and any extra searches required by the lender or property location.",
+      "A property near older industrial land, watercourses, mining-related areas, or land with historic use may require careful review of environmental or area-specific search results. The solicitor can explain what the search says if you instruct them.",
+    ],
+    commonProblems: [
+      "Problems can arise where buyers assume searches are optional because the property looks fine. A survey and search serve different purposes. A property can appear physically sound but still have planning, drainage, highways, or environmental issues that need legal review.",
+      "Another issue is delay. Search results can take time, and results may raise follow-up questions. If a seller wants a fast exchange, the buyer should understand whether searches have been ordered and whether the lender requires them.",
+    ],
+    prepareItems: [
+      "property address",
+      "postcode",
+      "mortgage lender details",
+      "whether the property is freehold or leasehold",
+      "any known land or access concerns",
+      "target timing",
+    ],
+    questionItems: [
+      "which searches are recommended for this property",
+      "which searches the lender requires",
+      "how long searches are expected to take",
+      "what happens if a search reveals an issue",
+      "whether search insurance is ever appropriate",
+    ],
+    localContext:
+      "For Kidderminster and Wyre Forest purchases, local authority search context may involve Wyre Forest District Council records, planning history, building control entries, highways questions, drainage, environmental points, and property-specific local features.",
+    relatedGuideSlugs: [
+      "local-authority-searches-kidderminster",
+      "buying-a-house-in-kidderminster-legal-checklist",
+      "how-long-does-conveyancing-take",
+    ],
+    faq: [
+      {
+        question: "Are searches the same as a survey?",
+        answer:
+          "No. Searches review records and area-related information. A survey looks at the physical condition of the property.",
+      },
+      {
+        question: "Can a cash buyer skip searches?",
+        answer:
+          "A cash buyer may have more choice than a mortgage buyer, but skipping searches can create risk. A solicitor can explain options if instructed.",
+      },
+      {
+        question: "Do searches guarantee there are no problems?",
+        answer:
+          "No. Searches provide information from specific records and providers. They do not guarantee that every issue has been discovered.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "local-authority-searches-kidderminster",
+    title: "Local Authority Searches in Kidderminster",
+    h1: "Local authority searches in Kidderminster",
+    metaDescription:
+      "General guide to local authority searches for Kidderminster property purchases, including planning, highways, building control, and restrictions.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "A local authority search is one of the common searches ordered during a property purchase. For homes in Kidderminster and the wider Wyre Forest area, it can help reveal local records affecting the property, including planning, building control, highways, notices, restrictions, and other matters that a buyer and lender may need to understand.",
+    keyTakeaways: [
+      "Local authority searches are record-based checks, not physical inspections.",
+      "They can reveal planning, highways, building control, notices, restrictions, and local land charge entries.",
+      "Search results may lead to follow-up enquiries before a buyer can exchange contracts.",
+    ],
+    topicOverview: [
+      "The local authority search usually includes a local land charges search and enquiries of the local authority. It can show entries affecting the property itself, such as planning permissions, building regulation entries, conservation or tree-related restrictions, enforcement notices, road adoption information, and other public record matters.",
+      "It is important to understand the limits. A local authority search generally focuses on the property being purchased. It may not tell a buyer everything about neighbouring land, future developments, or every practical issue in the wider area.",
+    ],
+    practicalExamples: [
+      "A buyer in Kidderminster may want to know whether an extension has planning or building control records. A local authority search may help identify entries, but the solicitor may still need certificates, completion documents, or replies from the seller.",
+      "A property near shared access, private roads, or local restrictions may raise highways or land charge questions. Search results can help the solicitor decide what enquiries to raise before exchange.",
+    ],
+    commonProblems: [
+      "A common issue is assuming the search replaces seller paperwork. If building work has been carried out, the buyer's solicitor may still ask for permissions, completion certificates, guarantees, or indemnity discussion where appropriate.",
+      "Another problem is timing. Local authority searches can take time and may need clarification. If a buyer is using a mortgage, the lender may require satisfactory search results before funds can be released.",
+    ],
+    prepareItems: [
+      "full property address",
+      "postcode",
+      "estate agent details",
+      "mortgage lender details",
+      "any known building work",
+      "questions about access or restrictions",
+    ],
+    questionItems: [
+      "which local authority search will be ordered",
+      "what the search covers and does not cover",
+      "whether any search result needs a seller reply",
+      "whether the lender has search requirements",
+      "whether timing could affect exchange",
+    ],
+    localContext:
+      "Kidderminster property searches may involve Wyre Forest District Council records and practical local context across Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire areas. The exact issues depend on the property, not just the postcode.",
+    relatedGuideSlugs: [
+      "house-buying-searches-explained",
+      "buying-a-house-in-kidderminster-legal-checklist",
+      "what-can-delay-conveyancing",
+    ],
+    faq: [
+      {
+        question: "Does a local authority search check the condition of the house?",
+        answer:
+          "No. It checks local authority records. A survey is used to inspect the physical condition of the property.",
+      },
+      {
+        question: "Can a local authority search reveal planning issues?",
+        answer:
+          "It can reveal planning records affecting the property, but the solicitor may still need to review documents and ask follow-up questions.",
+      },
+      {
+        question: "Is this guide legal advice about searches?",
+        answer:
+          "No. It is general information only. A solicitor or legal service provider can review specific search results if instructed.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "leasehold-vs-freehold-explained",
+    title: "Leasehold vs Freehold Explained",
+    h1: "Leasehold vs freehold explained",
+    metaDescription:
+      "General guide to leasehold and freehold property, including ground rent, service charge, lease length, lender issues, and questions to ask.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Leasehold and freehold are two different ways property can be owned in England and Wales. Freehold usually means owning the property and land outright, while leasehold means owning the right to occupy the property for the term of a lease. The difference can affect costs, responsibilities, lender requirements, and saleability.",
+    keyTakeaways: [
+      "Freehold and leasehold ownership involve different rights, responsibilities, documents, and costs.",
+      "Leasehold buyers should pay close attention to lease length, ground rent, service charge, restrictions, and management information.",
+      "The title and lease should be reviewed by a qualified provider if you are buying, selling, or remortgaging.",
+    ],
+    topicOverview: [
+      "Freehold ownership is common for houses and usually means the owner owns the building and land, subject to any rights, restrictions, covenants, mortgages, or title entries. Leasehold ownership is common for flats and some houses, and it is based on a lease granted for a set number of years.",
+      "A lease can include obligations to pay ground rent and service charge, rules about alterations or subletting, repair responsibilities, insurance arrangements, and requirements to serve notices or obtain consents. These details can matter when buying, selling, or remortgaging.",
+    ],
+    practicalExamples: [
+      "A buyer comparing two Kidderminster properties may find one freehold house with fewer management documents and one leasehold flat with service charge accounts, insurance documents, a managing agent, and lease restrictions to review.",
+      "A lease with a short remaining term, unusual ground rent terms, or high service charges can affect mortgage availability, future saleability, and negotiation. A solicitor can explain the legal position if instructed.",
+    ],
+    commonProblems: [
+      "Leasehold problems often involve short lease length, missing management packs, unexpected service charge arrears, planned major works, ground rent clauses, restrictions on alterations, or delays getting landlord replies.",
+      "Freehold properties can still have issues. Rights of way, restrictive covenants, boundary questions, rentcharges, private roads, drainage arrangements, and title restrictions can all require legal review.",
+    ],
+    prepareItems: [
+      "property address",
+      "whether it is freehold or leasehold if known",
+      "lease length",
+      "ground rent and service charge figures",
+      "management company details",
+      "mortgage lender details",
+    ],
+    questionItems: [
+      "how long is left on the lease",
+      "what ground rent and service charge apply",
+      "whether the lender may have concerns",
+      "what consents or restrictions exist",
+      "what extra leasehold fees may apply",
+    ],
+    localContext:
+      "Across Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire areas, buyers may see a mix of freehold houses, leasehold flats, converted buildings, newer developments, and properties with shared access or management arrangements.",
+    relatedGuideSlugs: [
+      "leasehold-conveyancing-explained",
+      "what-can-delay-conveyancing",
+      "solicitor-costs-buying-selling-house",
+    ],
+    faq: [
+      {
+        question: "Is freehold always simpler than leasehold?",
+        answer:
+          "Freehold is often less document-heavy, but it can still involve rights, covenants, boundaries, private roads, or other title issues.",
+      },
+      {
+        question: "Why can lease length matter?",
+        answer:
+          "A shorter lease can affect mortgageability, value, and future saleability. Buyers should ask a solicitor to review the lease if instructed.",
+      },
+      {
+        question: "Can I request a quote for leasehold conveyancing?",
+        answer:
+          "Yes. You can request a no obligation conveyancing quote and a suitable solicitor partner may contact you directly.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "leasehold-conveyancing-explained",
+    title: "Leasehold Conveyancing Explained",
+    h1: "Leasehold conveyancing explained",
+    metaDescription:
+      "General guide to leasehold conveyancing, management packs, service charges, ground rent, lease length, notices, consents, and delays.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Leasehold conveyancing usually involves more paperwork than a straightforward freehold transaction because the buyer is not only checking ownership, but also reviewing the lease, landlord arrangements, management company information, service charges, ground rent, insurance, restrictions, and consents.",
+    keyTakeaways: [
+      "Leasehold conveyancing often needs the lease, management pack, service charge accounts, insurance details, and landlord or managing agent replies.",
+      "Lease length, ground rent, service charges, restrictions, and planned works can affect the transaction.",
+      "Leasehold sales and purchases can take longer because third-party information is often needed.",
+    ],
+    topicOverview: [
+      "For a leasehold purchase, the buyer's solicitor usually reviews the lease, title, landlord information, management pack, service charge accounts, ground rent terms, insurance arrangements, planned works, restrictions, and any consents or notices required after completion.",
+      "For a leasehold sale, the seller's solicitor may need to obtain a leasehold information pack from the landlord or managing agent. That pack can be essential for answering the buyer's enquiries and helping the buyer understand ongoing costs.",
+    ],
+    practicalExamples: [
+      "A buyer purchasing a leasehold flat may need to know whether service charges are up to date, whether major works are planned, whether the lease permits pets or letting, and whether the lender is satisfied with the ground rent and lease term.",
+      "A seller may accept an offer quickly but still wait for the managing agent to provide replies, accounts, insurance schedules, fire safety information, or planned works details. This can delay exchange even when both buyer and seller are ready.",
+    ],
+    commonProblems: [
+      "Common leasehold issues include short leases, high or escalating ground rent, missing management packs, service charge disputes, planned major works, absent consents for alterations, restrictions on use, landlord notice fees, and lender concerns.",
+      "Another issue is cost surprise. Leasehold matters can involve landlord or managing agent fees, notice fees, deed of covenant fees, certificate of compliance fees, and extra legal work. Ask for a clear explanation before comparing quotes.",
+    ],
+    prepareItems: [
+      "copy lease if available",
+      "lease length",
+      "ground rent amount",
+      "service charge amount",
+      "management company details",
+      "planned works information",
+      "mortgage lender details",
+    ],
+    questionItems: [
+      "what extra leasehold work is included in the quote",
+      "whether landlord or managing agent fees are expected",
+      "whether the lease length may concern a lender",
+      "what management documents are still outstanding",
+      "what could delay exchange",
+    ],
+    localContext:
+      "Leasehold properties around Kidderminster and Wyre Forest can include flats, converted buildings, newer developments, and managed estates. The important point is the lease and management information for the specific property, not only the area.",
+    relatedGuideSlugs: [
+      "leasehold-vs-freehold-explained",
+      "what-can-delay-conveyancing",
+      "selling-house-kidderminster-solicitor-checklist",
+    ],
+    faq: [
+      {
+        question: "Why does leasehold conveyancing often take longer?",
+        answer:
+          "It often depends on landlord or managing agent information, lease review, service charge records, insurance details, and lender requirements.",
+      },
+      {
+        question: "What is a leasehold management pack?",
+        answer:
+          "It is usually a pack of information from the landlord or managing agent covering service charges, insurance, management, planned works, and related leasehold details.",
+      },
+      {
+        question: "Can leasehold fees be compared before instructing?",
+        answer:
+          "You can request a no obligation quote, but some third-party landlord or managing agent costs may only become clear once the property details are known.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "remortgage-solicitor-checklist",
+    title: "Remortgage Solicitor Checklist",
+    h1: "Remortgage solicitor checklist",
+    metaDescription:
+      "Practical checklist for remortgage solicitor work, including lender panel checks, redemption statements, title checks, registration, and transfer of equity overlap.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "A remortgage can feel simpler than buying or selling because the owner is usually staying in the same property. Legal work may still be needed to satisfy the new lender, repay the existing mortgage, check title, complete the new mortgage, and register the new lender's charge.",
+    keyTakeaways: [
+      "A remortgage solicitor may need to check title, lender requirements, redemption figures, identity, and registration.",
+      "The solicitor usually needs to be acceptable to the new lender or on the lender's panel.",
+      "Transfer of equity, leasehold property, or title issues can make a remortgage more involved.",
+    ],
+    topicOverview: [
+      "The solicitor's role in a remortgage is usually to act for the borrower and often the new lender. They check the title, review lender instructions, obtain redemption information from the existing lender, arrange completion funds, repay the old mortgage, complete the new mortgage, and update registration.",
+      "Some remortgages are straightforward. Others involve adding or removing an owner, dealing with leasehold notices, resolving title restrictions, obtaining consents, or answering lender queries.",
+    ],
+    practicalExamples: [
+      "A homeowner in Kidderminster switching lenders may need a solicitor to check the new lender's requirements, arrange repayment of the existing mortgage, and register the new charge at HM Land Registry.",
+      "If a couple is remortgaging while adding or removing someone from the title, transfer of equity work may also be needed. That can involve additional documents, lender consent, and sometimes separate advice.",
+    ],
+    commonProblems: [
+      "Remortgage delays can come from late mortgage offers, missing ID, unclear source of funds, existing lender redemption delays, title restrictions, leasehold notice requirements, or the solicitor not being on the new lender's panel.",
+      "Another issue is assuming a remortgage has no legal complexity. If ownership is changing, the property is leasehold, the title has restrictions, or there are arrears or charges, the legal work can become more detailed.",
+    ],
+    prepareItems: [
+      "current lender name",
+      "new lender name",
+      "mortgage offer details",
+      "property title details",
+      "ID documents",
+      "leasehold details if relevant",
+      "whether ownership is changing",
+    ],
+    questionItems: [
+      "whether the solicitor is on the new lender's panel",
+      "what the remortgage quote includes",
+      "whether transfer of equity is needed",
+      "whether leasehold notices apply",
+      "what could delay completion",
+    ],
+    localContext:
+      "Remortgage enquiries in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire areas may involve homeowners switching rates, raising funds, changing ownership, or dealing with leasehold requirements.",
+    relatedGuideSlugs: [
+      "transfer-of-equity-solicitor-guide",
+      "leasehold-conveyancing-explained",
+      "solicitor-costs-buying-selling-house",
+    ],
+    faq: [
+      {
+        question: "Do I always need a solicitor for a remortgage?",
+        answer:
+          "Many remortgages require legal work for the lender and registration, but the exact need depends on the lender and circumstances.",
+      },
+      {
+        question: "Can transfer of equity happen with a remortgage?",
+        answer:
+          "Yes. Adding or removing an owner may overlap with a remortgage and can make the legal work more involved.",
+      },
+      {
+        question: "Can I request a remortgage quote through this website?",
+        answer:
+          "Yes. You can request a no obligation conveyancing quote and explain that the enquiry relates to a remortgage.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "transfer-of-equity-solicitor-guide",
+    title: "Transfer of Equity Solicitor Guide",
+    h1: "Transfer of equity solicitor guide",
+    metaDescription:
+      "General guide to transfer of equity solicitor work, including adding or removing owners, lender consent, documents, registration, and questions to ask.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "A transfer of equity changes who owns a property without necessarily selling it on the open market. It may involve adding a partner, removing a former partner, transferring ownership after separation, changing shares, or restructuring ownership alongside a remortgage.",
+    keyTakeaways: [
+      "Transfer of equity work can involve title checks, lender consent, transfer documents, identity checks, and registration.",
+      "If there is a mortgage, the lender usually needs to agree before ownership changes.",
+      "Parties may need separate legal advice where their interests are different.",
+    ],
+    topicOverview: [
+      "A solicitor may prepare transfer documents, check the title, deal with lender requirements, confirm identity, arrange signatures, manage completion, and register the updated ownership. If money is changing hands, tax or lender issues may need consideration by the instructed provider.",
+      "Transfer of equity can overlap with family separation, marriage, cohabitation, estate planning, remortgaging, or removing someone from a mortgage. The legal process may be simple in concept but sensitive in practice.",
+    ],
+    practicalExamples: [
+      "A homeowner may want to add a spouse or partner to the title after marriage or cohabitation. The solicitor may need to check whether there is a mortgage and whether the lender consents.",
+      "After separation, one person may keep the property and the other may be removed from the title and mortgage. This can involve conveyancing, lender approval, financial arrangements, and sometimes family law context.",
+    ],
+    commonProblems: [
+      "Common issues include assuming the mortgage can simply be changed, not checking lender consent, misunderstanding beneficial shares, failing to consider tax or financial implications, and using one solicitor where the parties need separate advice.",
+      "Delay can also arise from lender requirements, missing ID, unclear consideration, unsigned documents, title restrictions, or disagreement about timing and payment.",
+    ],
+    prepareItems: [
+      "property address",
+      "current owner names",
+      "proposed owner names",
+      "mortgage lender details",
+      "whether money is changing hands",
+      "reason for transfer",
+      "target timing",
+    ],
+    questionItems: [
+      "whether lender consent is required",
+      "whether separate advice is needed",
+      "what documents must be signed",
+      "whether the quote includes registration",
+      "what tax or financial issues should be considered by appropriate advisers",
+    ],
+    localContext:
+      "Transfer of equity enquiries around Kidderminster and Wyre Forest often arise from relationship changes, remortgages, family arrangements, inherited property, or practical household planning. The right support depends on the facts and documents.",
+    relatedGuideSlugs: [
+      "remortgage-solicitor-checklist",
+      "leasehold-vs-freehold-explained",
+      "what-does-a-conveyancing-solicitor-do",
+    ],
+    faq: [
+      {
+        question: "Can someone be removed from a mortgage automatically?",
+        answer:
+          "No. If there is a mortgage, the lender usually needs to agree before someone is released or ownership is changed.",
+      },
+      {
+        question: "Is transfer of equity the same as selling a house?",
+        answer:
+          "No. It changes ownership without a normal open-market sale, but legal documents, lender checks, and registration may still be needed.",
+      },
+      {
+        question: "Can I request a transfer of equity quote here?",
+        answer:
+          "Yes. You can request a no obligation quote and explain the proposed ownership change in the enquiry form.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "new-build-conveyancing-guide",
+    title: "New Build Conveyancing Guide",
+    h1: "New build conveyancing guide",
+    metaDescription:
+      "General guide to new build conveyancing, reservation deadlines, developer contracts, warranties, roads, services, searches, and questions to ask.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "New build conveyancing can be more deadline-driven and document-heavy than a standard resale purchase. Buyers may face reservation deadlines, developer contracts, plot plans, estate roads, service arrangements, planning documents, warranties, and completion-on-notice provisions.",
+    keyTakeaways: [
+      "New build purchases often involve tight exchange deadlines and detailed developer paperwork.",
+      "A solicitor may need to review planning, warranties, roads, drainage, management charges, and completion-on-notice terms.",
+      "Buyers should understand what is finished, what is still being built, and what ongoing estate charges may apply.",
+    ],
+    topicOverview: [
+      "A new build solicitor may review the developer's contract, title, planning documents, building regulation position, warranty arrangements, adoption of roads and sewers, management company structure, service charges, plot plan, rights, restrictions, and mortgage offer timing.",
+      "New build contracts can involve exchange before the property is physically complete. Completion may happen on notice once the home is ready. This makes timing, mortgage offer expiry, snagging, and moving arrangements important.",
+    ],
+    practicalExamples: [
+      "A buyer reserving a new home near Kidderminster may be asked to exchange within a short deadline. The solicitor still needs enough time to review the contract pack, raise enquiries, check the lender position, and report to the buyer.",
+      "An estate may have private roads, shared areas, management charges, or service arrangements that continue after completion. Buyers should understand these ongoing commitments before exchange.",
+    ],
+    commonProblems: [
+      "Common new build issues include pressure to exchange quickly, incomplete documents, delayed construction, mortgage offer expiry, unclear management charges, unadopted roads, drainage arrangements, missing warranty details, and changes between plot plans and finished property.",
+      "Another risk is focusing only on incentives or reservation terms while ignoring legal obligations. Incentives, gifted deposits, allowances, or developer contributions may need to be disclosed to the lender.",
+    ],
+    prepareItems: [
+      "reservation form",
+      "developer details",
+      "plot number",
+      "purchase price",
+      "mortgage lender",
+      "incentive details",
+      "target exchange deadline",
+    ],
+    questionItems: [
+      "whether the solicitor regularly handles new build transactions",
+      "what the exchange deadline is",
+      "whether roads and sewers will be adopted",
+      "what warranty applies",
+      "what management charges may continue after completion",
+    ],
+    localContext:
+      "New build and newer estate purchases around Kidderminster, Wyre Forest, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire areas may involve estate management, planning conditions, roads, services, and practical completion timing.",
+    relatedGuideSlugs: [
+      "house-buying-searches-explained",
+      "how-long-does-conveyancing-take",
+      "what-can-delay-conveyancing",
+    ],
+    faq: [
+      {
+        question: "Why do developers ask buyers to exchange quickly?",
+        answer:
+          "Developers often use reservation deadlines to keep sales moving, but buyers still need proper legal review before exchange.",
+      },
+      {
+        question: "What is completion on notice?",
+        answer:
+          "It usually means completion happens after the developer gives notice that the property is ready, rather than on a fixed date agreed far in advance.",
+      },
+      {
+        question: "Can new build conveyancing cost more?",
+        answer:
+          "It can involve extra legal work. Ask for a clear quote that explains new build extras, lender work, and any developer-related complexity.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "property-boundaries-explained",
+    title: "Property Boundaries Explained",
+    h1: "Property boundaries explained",
+    metaDescription:
+      "General guide to property boundaries, title plans, fences, shared access, disputes, and what to prepare before speaking to a solicitor.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Property boundaries can matter when buying, selling, extending, fencing, sharing access, or dealing with a neighbour dispute. Title plans can be useful, but they do not always show the precise legal boundary on the ground. Practical evidence and professional input may be needed where the position is unclear.",
+    keyTakeaways: [
+      "Title plans usually show general boundaries, not always exact measured lines.",
+      "Boundary questions can involve title documents, historic use, physical features, plans, photographs, and neighbour communication.",
+      "Do not assume a fence, hedge, wall, or driveway always proves the legal boundary.",
+    ],
+    topicOverview: [
+      "Boundary issues may arise during conveyancing when the title plan does not match what is visible at the property, when an extension or fence appears close to neighbouring land, or when access or maintenance responsibilities are unclear.",
+      "A solicitor may review title documents, plans, rights, covenants, transfer documents, seller replies, and correspondence. In some cases, a surveyor may also be needed to consider measurements or physical features.",
+    ],
+    practicalExamples: [
+      "A buyer in Kidderminster may notice that the garden fence does not line up with the title plan. That does not automatically prove a defect, but it may justify enquiries before exchange.",
+      "A seller may know of an informal arrangement with a neighbour about access or maintenance. If it is not documented, the buyer's solicitor may ask further questions because informal arrangements can create uncertainty.",
+    ],
+    commonProblems: [
+      "Boundary problems commonly involve assumptions based on fences, old verbal agreements, missing plans, shared driveways, unclear maintenance, historic encroachment, extensions near boundaries, and disputes that were not disclosed clearly during a sale.",
+      "Another problem is leaving boundary questions until late in the transaction. If a buyer has concerns, they should raise them early so the solicitor can decide what enquiries may be needed if instructed.",
+    ],
+    prepareItems: [
+      "property address",
+      "title plan if available",
+      "photos of the boundary",
+      "details of fences or walls",
+      "seller replies",
+      "any neighbour correspondence",
+      "survey notes if available",
+    ],
+    questionItems: [
+      "whether the title plan shows only general boundaries",
+      "what documents should be reviewed",
+      "whether a surveyor may be needed",
+      "whether the issue should be raised before exchange",
+      "whether there is any known dispute",
+    ],
+    localContext:
+      "Boundary questions in Kidderminster and Wyre Forest can arise with older terraces, rural edges, shared access, converted buildings, gardens, driveways, and properties around Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire villages.",
+    relatedGuideSlugs: [
+      "buying-a-house-in-kidderminster-legal-checklist",
+      "selling-house-kidderminster-solicitor-checklist",
+      "what-can-delay-conveyancing",
+    ],
+    faq: [
+      {
+        question: "Does the title plan show the exact boundary?",
+        answer:
+          "Often it shows general boundaries rather than exact measured legal lines. Specific disputes may need document review and sometimes surveyor input.",
+      },
+      {
+        question: "Should boundary concerns be raised before exchange?",
+        answer:
+          "Yes, where possible. Boundary concerns can affect risk and should usually be considered before contracts become binding.",
+      },
+      {
+        question: "Can this website decide a boundary dispute?",
+        answer:
+          "No. This website provides general information only and is not a law firm. A qualified provider can review specific documents if instructed.",
+      },
+    ],
+  }),
   {
     type: "guide",
     slug: "how-much-do-solicitors-charge-for-probate",
