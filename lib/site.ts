@@ -1358,82 +1358,141 @@ export const servicePages: ServicePage[] = [
       "leasehold-vs-freehold-explained",
     ],
   }),
-  {
-    type: "service",
+  createSpecialistServicePage({
     slug: "employment-solicitors-kidderminster",
     title: "Employment Solicitors Kidderminster",
     h1: "Employment solicitors in Kidderminster",
     metaDescription:
-      "Compare employment solicitor options in Kidderminster and request a no obligation quote.",
+      "Compare employment solicitor options in Kidderminster for settlement agreements, redundancy, dismissal, grievances, contracts, and workplace disputes.",
     category: "Employment",
     summary:
-      "Introductions for workplace disputes, settlement agreements, contracts, and employer or employee matters.",
-    intro:
-      "Employment law questions can be time sensitive, especially where deadlines, settlement agreements, dismissal, redundancy, or grievances are involved. This page helps Kidderminster workers and employers compare employment solicitor options and request a suitable introduction.",
-    localAngle:
-      "Kidderminster workers and employers across the Wyre Forest area may need quick, practical guidance from a regulated legal provider, especially where workplace documents need reviewing or a response deadline is approaching.",
-    keyTakeaways: [
-      "Employment matters often involve short deadlines, so users should not delay if tribunal, appeal, or agreement deadlines may apply.",
-      "Ask whether the firm acts for employees, employers, or both, and whether urgent document review is available.",
-      "This website can support a no obligation introduction, but it does not provide employment law advice.",
+      "Support comparing employment solicitor options for employees, employers, settlement agreements, redundancy, dismissal concerns, grievances, contracts, and workplace disputes.",
+    userNeed:
+      "Employment enquiries can be time sensitive, especially where a settlement agreement, redundancy process, dismissal, grievance, disciplinary hearing, contract question, or workplace deadline is involved.",
+    serviceScope: [
+      "An employment solicitor may help employees or employers understand process, documents, deadlines, settlement terms, redundancy consultation, disciplinary or grievance steps, contract wording, restrictive covenants, pay issues, or tribunal-related risk.",
+      "Some employment matters need a quick document review. Others need wider correspondence, negotiation, workplace strategy, or careful handling before a decision is made.",
     ],
-    sections: [
-      {
-        heading: "What employment solicitors may help with",
-        body: [
-          "An employment solicitor may help with settlement agreements, redundancy, dismissal concerns, grievances, disciplinary processes, employment contracts, restrictive covenants, workplace discrimination, unpaid wages, and employer HR issues.",
-          "The right support depends on whether you are an employee, employer, director, contractor, or business owner. Some enquiries need a document review. Others need a broader strategy around deadlines, correspondence, or negotiation.",
-        ],
-      },
-      {
-        heading: "Where employment matters can become urgent",
-        body: [
-          "Deadlines can apply to tribunal claims, internal appeals, settlement agreement signing, redundancy consultation, grievance responses, and disciplinary hearings. Waiting too long can reduce options, so users should speak directly with a solicitor or legal service provider where time limits may matter.",
-          "This website cannot assess deadlines or provide urgent advice. The quote form should be used for a concise introduction request, and urgent matters should be raised clearly when a solicitor or legal provider contacts you.",
-        ],
-      },
-      {
-        heading: "What to prepare",
-        body: [
-          "Prepare your employment contract, settlement agreement if relevant, key emails or letters, dates of meetings, dismissal or redundancy dates, grievance or disciplinary paperwork, pay details, and any deadline you have been given.",
-          "Do not upload or send detailed confidential papers through the quote form. Summarise the issue, include your preferred contact time, and provide documents directly to a solicitor or legal service provider if you choose to instruct them.",
-        ],
-      },
-      {
-        heading: "Questions to ask an employment solicitor",
-        body: [
-          "Ask whether the firm acts for employees, employers, or both, whether they handle settlement agreements quickly, how fees work, and who will review documents. If you are an employer, ask whether fixed-fee or retainer options are available.",
-          "You should also ask how quickly the firm can respond where a deadline is approaching and whether the first step is a document review, consultation, or more detailed written advice from the provider.",
-        ],
-      },
+    localContext:
+      "Workers and businesses in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area may need employment support where local workplaces, small businesses, references, hybrid work, or urgent deadlines are involved.",
+    prepareItems: [
+      "employment contract",
+      "staff handbook or policies",
+      "settlement agreement if relevant",
+      "redundancy or dismissal letters",
+      "grievance or disciplinary paperwork",
+      "key emails",
+      "payslips",
+      "any urgent deadlines",
+    ],
+    questionItems: [
+      "whether the firm acts for employees, employers, or both",
+      "whether urgent document review is available",
+      "what deadlines may need checking directly with the solicitor",
+      "how costs are explained",
+      "who will handle the matter day to day",
+    ],
+    riskItems: [
+      "Employment issues can become harder where deadlines are missed, meetings are attended without preparation, heated emails are sent, settlement terms are signed without understanding, or employers skip clear process.",
+      "This website cannot assess tribunal deadlines, claim merits, or document wording. Users should raise urgent timing clearly with a qualified provider if they choose to instruct one.",
     ],
     relatedGuideSlugs: [
       "settlement-agreements-explained",
+      "severance-agreement-explained",
+      "redundancy-rights-overview",
       "when-should-you-speak-to-an-employment-solicitor",
     ],
-    comparisonPoints: [
-      "Check whether the firm acts for employees, employers, or both.",
-      "Ask about fees for settlement agreements and urgent document reviews.",
-      "Clarify timescales where tribunal or response deadlines may apply.",
+  }),
+  createSpecialistServicePage({
+    slug: "settlement-agreement-solicitors-kidderminster",
+    title: "Settlement Agreement Solicitors Kidderminster",
+    h1: "Settlement agreement solicitors in Kidderminster",
+    metaDescription:
+      "Compare settlement agreement solicitor options in Kidderminster and request a no obligation quote for employment agreement review.",
+    category: "Settlement Agreements",
+    summary:
+      "Support comparing solicitor options for settlement agreement review, employment exit terms, references, confidentiality, and payment wording.",
+    userNeed:
+      "Settlement agreement enquiries often begin when an employee has been given a draft agreement, a signing deadline, or an offer connected to leaving employment or resolving a workplace dispute.",
+    serviceScope: [
+      "A settlement agreement solicitor may review the draft agreement, explain its effect, check payment wording, discuss claims being waived, review references, confidentiality, restrictions, tax treatment, and any employer contribution toward advice.",
+      "The process can be urgent where a signing deadline has been set, but users should still understand what they are being asked to sign before agreeing terms.",
     ],
-    faq: [
-      {
-        question: "Can I get employment law advice here?",
-        answer:
-          "No. This website does not provide legal advice. It can introduce you to a legal service provider who may be able to help.",
-      },
-      {
-        question: "Are employment enquiries time sensitive?",
-        answer:
-          "They can be. You should speak directly with a solicitor as soon as possible if deadlines may apply.",
-      },
-      {
-        question: "Is the quote request binding?",
-        answer:
-          "No. The quote request is no obligation.",
-      },
+    localContext:
+      "Employees and employers in Kidderminster and Wyre Forest may need settlement agreement support connected to local employers, restructures, redundancies, performance issues, sickness absence, grievances, or negotiated exits.",
+    prepareItems: [
+      "draft settlement agreement",
+      "employment contract",
+      "recent payslips",
+      "termination or redundancy letters",
+      "reference wording",
+      "benefits information",
+      "bonus or commission details",
+      "signing deadline",
     ],
-  },
+    questionItems: [
+      "whether the employer contribution covers the review",
+      "what claims are being waived",
+      "whether the payment wording is clear",
+      "whether restrictions affect future work",
+      "how quickly the review can be completed",
+    ],
+    riskItems: [
+      "Settlement agreement problems often involve unclear payments, tax assumptions, restrictive covenants, confidentiality wording, references, unrealistic deadlines, or employees treating the review as a signature formality.",
+      "Employers can also create risk by using unsuitable templates, unclear termination wording, or offering terms without considering the surrounding workplace process.",
+    ],
+    relatedGuideSlugs: [
+      "settlement-agreements-explained",
+      "severance-agreement-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
+      "redundancy-rights-overview",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "redundancy-solicitors-kidderminster",
+    title: "Redundancy Solicitors Kidderminster",
+    h1: "Redundancy solicitors in Kidderminster",
+    metaDescription:
+      "Compare redundancy solicitor options in Kidderminster for employees and employers, including consultation, selection, settlement terms, and pay questions.",
+    category: "Redundancy",
+    summary:
+      "Support comparing solicitor options for redundancy consultation, selection concerns, pay questions, settlement agreements, and employer process.",
+    userNeed:
+      "Redundancy enquiries often arise when an employee receives consultation papers, a business is restructuring, roles are at risk, or there are questions about selection, pay, alternatives, or settlement terms.",
+    serviceScope: [
+      "A redundancy solicitor may help review consultation documents, selection criteria, alternative roles, notice, redundancy pay, settlement agreement terms, appeal options, and whether process questions need to be raised.",
+      "Employers may need support planning a fair process, preparing documents, handling consultation, and reducing the risk of avoidable disputes.",
+    ],
+    localContext:
+      "Redundancy questions in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire can involve local employers, small businesses, manufacturing, retail, hospitality, care, office roles, and hybrid work arrangements.",
+    prepareItems: [
+      "redundancy consultation letter",
+      "selection criteria",
+      "job description",
+      "employment contract",
+      "pay and length of service details",
+      "meeting notes",
+      "alternative role information",
+      "appeal or response deadline",
+    ],
+    questionItems: [
+      "whether any urgent deadline needs attention",
+      "what documents should be reviewed first",
+      "whether consultation questions should be raised",
+      "how redundancy pay and notice are being calculated",
+      "whether a settlement agreement is involved",
+    ],
+    riskItems: [
+      "Redundancy issues can become harder where consultation is rushed, selection criteria are unclear, alternatives are not considered, pay calculations are misunderstood, or employees miss appeal or response deadlines.",
+      "Employers can also create risk by announcing outcomes before consultation has properly happened or by failing to document decisions clearly.",
+    ],
+    relatedGuideSlugs: [
+      "redundancy-rights-overview",
+      "settlement-agreements-explained",
+      "severance-agreement-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+  }),
   {
     type: "service",
     slug: "personal-injury-solicitors-kidderminster",
@@ -6057,6 +6116,422 @@ export const guidePages: GuidePage[] = [
       },
     ],
   }),
+  createQualityGuide({
+    slug: "postnuptial-agreements-explained",
+    title: "Postnuptial Agreements Explained",
+    h1: "Postnuptial agreements explained",
+    metaDescription:
+      "General guide to postnuptial agreements, when couples consider them, what they may cover, and what to prepare before speaking to a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "A postnuptial agreement is usually made after marriage or civil partnership to record how a couple intends to deal with finances if the relationship later breaks down. It may be considered after a major life event, business change, inheritance, property purchase, or financial reset.",
+    keyTakeaways: [
+      "Postnuptial agreements are usually made after marriage or civil partnership and need careful disclosure and independent legal input.",
+      "They may cover property, savings, debts, businesses, inheritance, family gifts, and financial expectations.",
+      "They should be reviewed where circumstances change, especially where children, health, assets, or income have changed significantly.",
+    ],
+    topicOverview: [
+      "Couples may consider a postnuptial agreement where financial circumstances have changed after the wedding. Examples include receiving inheritance, starting or selling a business, buying a home, blending families, rebuilding trust after separation, or clarifying what should happen if the relationship ends.",
+      "A solicitor may discuss timing, financial disclosure, fairness, independent advice, and whether related documents such as wills, declarations of trust, shareholder agreements, or pension information also need attention.",
+    ],
+    practicalExamples: [
+      "A couple in Kidderminster may receive family money toward a house deposit and want to record whether that money should be treated as a gift, loan, or protected family contribution.",
+      "A business owner in Wyre Forest may want to discuss how business value, income, or shares should be considered if the marriage later breaks down.",
+    ],
+    commonProblems: [
+      "Problems arise when one person feels pressured, financial disclosure is incomplete, the document is copied from a template, or the agreement is not reviewed after major changes.",
+      "Another issue is assuming a postnuptial agreement replaces broader planning. Wills, property ownership, business documents, pensions, and insurance may need separate consideration.",
+    ],
+    prepareItems: [
+      "marriage or civil partnership date",
+      "property details",
+      "savings and debts",
+      "business interests",
+      "inheritance or family gifts",
+      "children or previous family commitments",
+      "any existing agreement or draft",
+    ],
+    questionItems: [
+      "what information each person should disclose",
+      "whether both people need separate advice",
+      "how timing and pressure are handled",
+      "whether wills or property documents also need review",
+      "when the agreement should be revisited",
+    ],
+    localContext:
+      "Couples in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Worcestershire area may consider postnuptial agreements around property, family businesses, inheritance, rural assets, blended families, or later-life planning.",
+    relatedGuideSlugs: [
+      "prenuptial-agreements-explained",
+      "cohabitation-agreements-explained",
+      "what-should-be-included-in-a-will",
+      "divorce-financial-settlements-explained",
+    ],
+    faq: [
+      {
+        question: "Is a postnuptial agreement made after marriage?",
+        answer:
+          "Yes. A postnuptial agreement is usually considered after marriage or civil partnership, unlike a prenuptial agreement which is considered before it.",
+      },
+      {
+        question: "Can this website say whether a postnuptial agreement is suitable?",
+        answer:
+          "No. This website provides general information only. A solicitor would need to review the facts, documents, timing, and objectives.",
+      },
+      {
+        question: "What should couples prepare before asking about a postnup?",
+        answer:
+          "Useful information includes assets, debts, income, property, business interests, inheritance, family gifts, existing documents, and why the agreement is being considered now.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "mediation-vs-solicitor-family-law",
+    title: "Mediation vs Solicitor Support in Family Law",
+    h1: "Mediation vs solicitor support in family law",
+    metaDescription:
+      "General guide comparing mediation and solicitor support in family law, including when each may be relevant and what to prepare.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "Family mediation and solicitor support are different forms of help. Mediation can help people discuss arrangements, while a solicitor may explain legal process, documents, rights, risks, and how proposals should be recorded.",
+    keyTakeaways: [
+      "Mediation is usually about facilitated discussion; solicitor support is usually about legal process, documents, negotiation, and advice from the provider.",
+      "Some families use both, especially where an agreement reached in mediation needs to be recorded properly.",
+      "Where there are safety concerns, urgency, court papers, or complex finances, users should raise that clearly with a qualified provider.",
+    ],
+    topicOverview: [
+      "Mediation may help separated people discuss children, finances, property, communication, or practical arrangements with a neutral mediator. A mediator does not act for either person.",
+      "A solicitor may help someone understand options, prepare for mediation, review proposals, correspond with another party, draft or review documents, or discuss court-related steps where appropriate.",
+    ],
+    practicalExamples: [
+      "Parents in Kidderminster may use mediation to agree school holiday routines, then speak to a solicitor about how any agreement should be recorded.",
+      "A separating couple in Wyre Forest may need solicitor input before mediation if pensions, property, business interests, debts, or urgent housing concerns are involved.",
+    ],
+    commonProblems: [
+      "Problems arise when people assume mediation automatically creates a legally robust agreement, or when they attend without knowing their financial position.",
+      "Another issue is using mediation where there are serious safety, pressure, or disclosure concerns without first considering whether it is appropriate to speak directly with a qualified provider.",
+    ],
+    prepareItems: [
+      "main issues to discuss",
+      "children's routines if relevant",
+      "property and mortgage details",
+      "income, savings, pensions, and debts",
+      "any previous agreement",
+      "urgent dates",
+      "safety or communication concerns",
+    ],
+    questionItems: [
+      "whether mediation is suitable for the issue",
+      "what legal advice may be useful before mediation",
+      "how an agreement should be recorded",
+      "what documents are needed",
+      "what happens if mediation does not resolve matters",
+    ],
+    localContext:
+      "Families in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may need practical routes that fit school routines, work travel, childcare, housing, and local support networks.",
+    relatedGuideSlugs: [
+      "what-does-a-family-law-solicitor-help-with",
+      "child-arrangements-explained",
+      "divorce-financial-settlements-explained",
+      "prepare-divorce-solicitor-consultation",
+    ],
+    faq: [
+      {
+        question: "Is mediation the same as getting legal advice?",
+        answer:
+          "No. Mediation is usually a facilitated discussion. Legal advice should come from a qualified solicitor or legal service provider if instructed.",
+      },
+      {
+        question: "Can a solicitor help before mediation?",
+        answer:
+          "A solicitor may help someone prepare, understand process, identify documents, or review proposals, depending on the facts and scope of instruction.",
+      },
+      {
+        question: "Do all family matters need mediation?",
+        answer:
+          "Not every matter is suitable for mediation, especially where there are safety concerns, urgency, or complex legal issues. Users should raise concerns directly with a qualified provider.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "legal-services-payment-order-explained",
+    title: "Legal Services Payment Orders Explained",
+    h1: "Legal Services Payment Orders explained",
+    metaDescription:
+      "General guide to Legal Services Payment Orders in divorce and financial remedy cases, including preparation and questions to ask a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "divorce-solicitors-kidderminster",
+    intro:
+      "A Legal Services Payment Order is a family court-related topic that may arise where one person says they cannot reasonably fund legal services for financial remedy proceedings and asks the court to consider whether the other person should contribute.",
+    keyTakeaways: [
+      "Legal Services Payment Orders are specialist and fact-specific; users should not assume they are available in every case.",
+      "A solicitor may need to review income, assets, borrowing options, legal costs, proceedings, and evidence of funding difficulty.",
+      "This website cannot advise whether someone should apply for one or whether an application would succeed.",
+    ],
+    topicOverview: [
+      "Legal Services Payment Orders can arise in divorce financial remedy proceedings where there is an imbalance in access to funds for legal services. The topic is technical and depends on the facts, the stage of proceedings, evidence, and the court process.",
+      "A solicitor may discuss whether the issue is relevant, what evidence is needed, what other funding routes have been considered, and how any application fits with the wider financial case.",
+    ],
+    practicalExamples: [
+      "Someone in Kidderminster may be involved in financial remedy proceedings where the family assets are controlled mainly by the other person and legal funding is becoming difficult.",
+      "Another user may have some income but no practical access to enough funds for representation, while property, pensions, business assets, or disclosure issues are still unresolved.",
+    ],
+    commonProblems: [
+      "Problems arise when people assume the court will automatically order legal funding, or when evidence of income, borrowing, assets, and attempted funding routes is incomplete.",
+      "Another risk is waiting until the case is already under pressure. Funding questions should be raised clearly with a solicitor where proceedings or deadlines are active.",
+    ],
+    prepareItems: [
+      "court papers",
+      "financial disclosure documents",
+      "income and expenditure details",
+      "bank statements if requested by the solicitor",
+      "legal cost estimates",
+      "borrowing or funding information",
+      "key hearing dates",
+    ],
+    questionItems: [
+      "whether this topic is relevant to the current case",
+      "what evidence would be needed",
+      "how costs and funding are handled",
+      "what deadlines or hearings matter",
+      "what alternatives should be considered",
+    ],
+    localContext:
+      "Users in Kidderminster and Wyre Forest may ask about legal service funding where divorce finances involve a family home, local business, pensions, unequal access to accounts, or urgent court timetables.",
+    relatedGuideSlugs: [
+      "divorce-financial-settlements-explained",
+      "divorce-costs-explained",
+      "prepare-divorce-solicitor-consultation",
+      "how-long-does-divorce-take",
+    ],
+    faq: [
+      {
+        question: "Can this website tell me if I can get a Legal Services Payment Order?",
+        answer:
+          "No. This website provides general information only. A solicitor would need to review the facts, documents, funding position, and proceedings.",
+      },
+      {
+        question: "Are Legal Services Payment Orders available in every divorce?",
+        answer:
+          "No. They are specialist and fact-specific. Users should not assume availability without speaking to a qualified provider.",
+      },
+      {
+        question: "What information may be useful before asking about funding?",
+        answer:
+          "Useful information may include court papers, financial disclosure, income, assets, debts, legal cost estimates, funding attempts, and any hearing dates.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "coercive-controlling-behaviour-legal-support",
+    title: "Domestic Abuse, Coercive Control and Legal Support",
+    h1: "Domestic abuse, coercive control and legal support",
+    metaDescription:
+      "Careful general guide to domestic abuse, coercive control, safety, family law support, urgent help, and what to prepare before speaking to a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "Domestic abuse and coercive control are sensitive issues. Legal support may be one part of a wider safety and support plan, but immediate danger should be treated as urgent and handled through emergency services or specialist support.",
+    keyTakeaways: [
+      "If someone is in immediate danger, they should call 999 or seek urgent appropriate help.",
+      "Coercive control can involve patterns of isolation, intimidation, monitoring, financial control, threats, or pressure, not only physical violence.",
+      "A family solicitor may discuss protective steps, child arrangements, separation, housing, or court-related options, but this website cannot provide legal advice or safety planning.",
+    ],
+    topicOverview: [
+      "Domestic abuse can include physical, emotional, psychological, sexual, economic, and controlling behaviour. Coercive control often involves patterns rather than one isolated incident.",
+      "A solicitor may help discuss legal process, protective applications, child arrangements, separation, communication boundaries, or urgent documents where appropriate. Specialist domestic abuse services may also be important for safety planning and support.",
+    ],
+    practicalExamples: [
+      "A person in Kidderminster may be worried about controlling behaviour, monitoring, threats, money restrictions, or being prevented from contacting friends and family.",
+      "Another person may be separating and worried about child handovers, housing, communication, or urgent court papers. The safest route depends on the facts and should be discussed with appropriate support.",
+    ],
+    commonProblems: [
+      "Problems arise when people are pressured to act quickly without support, share plans with the wrong person, delete evidence without advice, or assume abuse must be physical before they can ask for help.",
+      "Another risk is using a public web form for highly sensitive detail. Users should keep public enquiry summaries brief and share detailed documents directly with a solicitor or specialist support service if appropriate.",
+    ],
+    prepareItems: [
+      "safe contact method",
+      "urgent risk or court dates",
+      "basic timeline",
+      "children or housing concerns",
+      "relevant messages or incidents",
+      "existing orders or police reference if any",
+      "whether it is safe to be contacted",
+    ],
+    questionItems: [
+      "whether the firm can contact you safely",
+      "what urgent steps may need specialist support",
+      "what documents should be kept",
+      "how child arrangements or housing issues may be handled",
+      "what costs and timing may apply",
+    ],
+    localContext:
+      "People in Kidderminster, Wyre Forest, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may need legal support alongside local safeguarding, police, health, housing, or specialist domestic abuse services.",
+    relatedGuideSlugs: [
+      "what-does-a-family-law-solicitor-help-with",
+      "child-arrangements-explained",
+      "taking-child-abroad-after-separation",
+      "prepare-divorce-solicitor-consultation",
+    ],
+    faq: [
+      {
+        question: "What should someone do in immediate danger?",
+        answer:
+          "If someone is in immediate danger, they should call 999 or seek urgent appropriate help. This website is not an emergency service.",
+      },
+      {
+        question: "Can coercive control be non-physical?",
+        answer:
+          "Yes. Coercive control can involve patterns of intimidation, isolation, monitoring, financial control, threats, or pressure. A qualified provider or specialist support service can discuss specific circumstances.",
+      },
+      {
+        question: "Is it safe to put detailed abuse information in the quote form?",
+        answer:
+          "Users should avoid putting unnecessary sensitive detail in a public form. A brief enquiry and safe contact instructions are usually more appropriate at first.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "severance-agreement-explained",
+    title: "Severance Agreement Explained",
+    h1: "Severance agreement explained",
+    metaDescription:
+      "General UK guide to severance agreements, settlement agreements, payment terms, references, restrictions, and what to prepare before speaking to a solicitor.",
+    category: "Employment",
+    relatedServiceSlug: "settlement-agreement-solicitors-kidderminster",
+    intro:
+      "The phrase severance agreement is often used informally in the UK when employment is ending by agreement. In many workplace situations, the formal document may be a settlement agreement that needs independent legal advice to be effective for employment claims.",
+    keyTakeaways: [
+      "In UK employment context, users should check whether the document is a settlement agreement and what claims or rights it covers.",
+      "Payment, tax, notice, holiday, bonus, benefits, references, confidentiality, and restrictions should all be reviewed carefully.",
+      "This website cannot review the document; a qualified adviser would need to explain the specific wording if instructed.",
+    ],
+    topicOverview: [
+      "A severance or settlement package may set out termination date, payments, notice, holiday pay, compensation, confidentiality, references, restrictions, company property, and claims being waived.",
+      "Employees should understand what they are receiving, what they are giving up, and whether the employer is contributing to independent advice. Employers should make sure documents match the surrounding process and intended outcome.",
+    ],
+    practicalExamples: [
+      "An employee in Kidderminster may be offered a payment to leave after a restructure and asked to sign a document quickly. They may need to ask what the payment covers and whether restrictions affect future work.",
+      "A local employer may want to resolve a workplace dispute by agreement and needs the terms to be clear, realistic, and properly explained.",
+    ],
+    commonProblems: [
+      "Problems arise where payment wording is unclear, taxable and non-taxable sums are confused, references are not agreed, restrictions are too broad, or the employee signs before understanding the effect.",
+      "Another issue is assuming a severance package is generous without checking notice, holiday, bonus, pension, benefits, and any claims being waived.",
+    ],
+    prepareItems: [
+      "draft agreement",
+      "employment contract",
+      "recent payslips",
+      "benefits information",
+      "bonus or commission details",
+      "reference wording",
+      "termination date",
+      "signing deadline",
+    ],
+    questionItems: [
+      "whether the document is a settlement agreement",
+      "what payments are included",
+      "what claims are being waived",
+      "whether restrictions affect future work",
+      "whether the employer contribution covers advice",
+    ],
+    localContext:
+      "Employees and employers in Kidderminster and Wyre Forest may use severance or settlement terms around restructures, redundancy, workplace conflict, sickness absence, performance concerns, or negotiated exits.",
+    relatedGuideSlugs: [
+      "settlement-agreements-explained",
+      "redundancy-rights-overview",
+      "when-should-you-speak-to-an-employment-solicitor",
+      "severance-agreement-explained",
+    ],
+    faq: [
+      {
+        question: "Is a severance agreement the same as a settlement agreement?",
+        answer:
+          "People often use the terms loosely. In UK employment matters, the formal document may be a settlement agreement, which usually requires independent legal advice for employment claims.",
+      },
+      {
+        question: "Should I sign quickly if there is a deadline?",
+        answer:
+          "You should understand the document before signing. If there is a deadline, mention it clearly when contacting a solicitor or legal service provider.",
+      },
+      {
+        question: "What should I check in a severance package?",
+        answer:
+          "Check termination date, notice, holiday, compensation, tax wording, bonus, benefits, references, restrictions, confidentiality, and which claims are being waived.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "redundancy-rights-overview",
+    title: "Redundancy Rights Overview",
+    h1: "Redundancy rights overview",
+    metaDescription:
+      "General overview of redundancy rights, consultation, selection, redundancy pay, notice, settlement agreements, and what to prepare before speaking to a solicitor.",
+    category: "Employment",
+    relatedServiceSlug: "redundancy-solicitors-kidderminster",
+    intro:
+      "Redundancy can involve consultation, selection, alternative roles, notice, redundancy pay, appeal rights, and sometimes settlement agreement terms. The right questions depend on the facts, documents, and timing.",
+    keyTakeaways: [
+      "Redundancy is not only about payment; process, consultation, selection, alternatives, notice, and documents can all matter.",
+      "Employees should keep letters, meeting notes, selection information, and deadlines together before speaking to a solicitor.",
+      "Employers should plan process and documents carefully before making final decisions.",
+    ],
+    topicOverview: [
+      "A redundancy situation may arise where a role is no longer needed, a workplace closes, work reduces, or a business restructures. Employees may want to understand consultation, selection, pay, notice, appeals, alternatives, or settlement terms.",
+      "Employers may need to manage consultation, selection pools, scoring, alternatives, correspondence, and records. This website cannot assess whether a redundancy is fair or lawful.",
+    ],
+    practicalExamples: [
+      "An employee in Kidderminster may be told their role is at risk and asked to attend a consultation meeting. They may need to understand what questions to ask and what documents to keep.",
+      "A Wyre Forest business may need to reduce roles and wants the process to be clear, documented, and handled with care.",
+    ],
+    commonProblems: [
+      "Problems arise where consultation is rushed, selection criteria are unclear, alternative roles are not discussed, pay calculations are unclear, or employees miss appeal deadlines.",
+      "Another issue is confusing redundancy with poor performance or misconduct. If the reason for dismissal is unclear, users should raise that directly with a qualified provider.",
+    ],
+    prepareItems: [
+      "at-risk letter",
+      "consultation documents",
+      "selection criteria",
+      "job description",
+      "employment contract",
+      "pay and length of service details",
+      "meeting notes",
+      "appeal or response deadline",
+    ],
+    questionItems: [
+      "what deadlines may apply",
+      "whether consultation documents should be reviewed",
+      "how selection criteria were used",
+      "whether redundancy pay and notice look clear",
+      "whether a settlement agreement is involved",
+    ],
+    localContext:
+      "Redundancy enquiries in Kidderminster and Wyre Forest can involve local employers, small businesses, retail, care, hospitality, manufacturing, office roles, and hybrid workers across Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire.",
+    relatedGuideSlugs: [
+      "settlement-agreements-explained",
+      "severance-agreement-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
+      "redundancy-rights-overview",
+    ],
+    faq: [
+      {
+        question: "Is redundancy only about redundancy pay?",
+        answer:
+          "No. Consultation, selection, alternative roles, notice, appeal, and documentation can all matter depending on the facts.",
+      },
+      {
+        question: "Can this website check if a redundancy is fair?",
+        answer:
+          "No. This website provides general information only. A qualified solicitor or legal service provider would need to review the facts and documents.",
+      },
+      {
+        question: "What should I prepare before asking about redundancy?",
+        answer:
+          "Prepare the at-risk letter, consultation documents, selection criteria, contract, pay details, meeting notes, and any appeal or response deadline.",
+      },
+    ],
+  }),
   {
     type: "guide",
     slug: "settlement-agreements-explained",
@@ -6127,7 +6602,9 @@ export const guidePages: GuidePage[] = [
     ],
     relatedGuideSlugs: [
       "when-should-you-speak-to-an-employment-solicitor",
-      "prepare-divorce-solicitor-consultation",
+      "severance-agreement-explained",
+      "redundancy-rights-overview",
+      "workplace-grievance-process",
     ],
     faq: [
       {
@@ -6139,6 +6616,16 @@ export const guidePages: GuidePage[] = [
         question: "Can I negotiate a settlement agreement?",
         answer:
           "Sometimes points can be queried or negotiated, but this depends on the facts and the employer's position. A qualified adviser can explain options.",
+      },
+      {
+        question: "Is a settlement agreement just a standard form?",
+        answer:
+          "No. It can affect employment claims, payment terms, references, confidentiality, restrictions, and future work. A qualified adviser should explain the specific document if instructed.",
+      },
+      {
+        question: "What should I send before a settlement agreement review?",
+        answer:
+          "Prepare the draft agreement, employment contract, recent payslips, benefits information, correspondence about termination, reference wording, and any signing deadline.",
       },
     ],
   },
