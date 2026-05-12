@@ -2147,6 +2147,446 @@ export const servicePages: ServicePage[] = [
       },
     ],
   },
+  createSpecialistServicePage({
+    slug: "solicitors-wyre-forest",
+    title: "Solicitors Wyre Forest",
+    h1: "Solicitors in Wyre Forest",
+    metaDescription:
+      "Compare solicitor services across Wyre Forest, including Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby areas.",
+    category: "Solicitor Services",
+    summary:
+      "A Wyre Forest solicitor introduction guide for residents and businesses comparing common legal service options.",
+    userNeed:
+      "People across Wyre Forest may need solicitor support for property, probate, wills, family matters, employment issues, commercial disputes, injury enquiries, or landlord and tenant questions.",
+    serviceScope: [
+      "A solicitor firm may help with conveyancing, probate, wills, divorce, family law, employment, business contracts, debt recovery, commercial property, personal injury, or other defined legal service areas.",
+      "The right provider depends on the matter, documents, urgency, communication preference, cost structure, and whether a local meeting, regional knowledge, or remote handling is important.",
+    ],
+    localContext:
+      "This page covers Kidderminster, Stourport, Bewdley, Cookley, Hagley, Franche, Comberton, and nearby Worcestershire communities where users may want to compare local or regional solicitor options.",
+    prepareItems: [
+      "postcode",
+      "area of law",
+      "preferred contact time",
+      "short factual summary",
+      "any urgent dates",
+      "whether another firm has been contacted",
+      "basic document types involved",
+    ],
+    questionItems: [
+      "whether the firm handles the relevant service area",
+      "how fees are explained",
+      "who will handle the enquiry",
+      "whether remote or local meetings are available",
+      "what documents should be prepared before instruction",
+    ],
+    riskItems: [
+      "Users can lose time by contacting firms that do not handle the relevant area of law, sending too much sensitive information too early, or choosing based only on location rather than suitability.",
+      "Another common issue is assuming this website is a solicitor firm. It is an independent guide and introduction website only.",
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-conveyancing-solicitor-do",
+      "what-does-a-probate-solicitor-do",
+      "what-does-a-family-law-solicitor-help-with",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "solicitors-near-me-kidderminster",
+    title: "Solicitors Near Me Kidderminster",
+    h1: "Solicitors near me in Kidderminster",
+    metaDescription:
+      "Looking for solicitors near you in Kidderminster? Compare common solicitor service options and request a no obligation quote.",
+    category: "Solicitor Services",
+    summary:
+      "A local-intent guide for people searching for nearby solicitor services in and around Kidderminster.",
+    userNeed:
+      "Searches for solicitors near me usually mean someone wants a practical next step quickly, but proximity is only one part of choosing a suitable solicitor firm.",
+    serviceScope: [
+      "A nearby or regional solicitor firm may help with property, probate, wills, family, divorce, employment, business, landlord and tenant, or injury enquiries depending on its service areas.",
+      "Some matters can be handled remotely, while others may benefit from local familiarity, document handling, or in-person meetings. Users should compare service fit, cost clarity, response time, and regulatory information.",
+    ],
+    localContext:
+      "Kidderminster users may be searching from the town centre, Franche, Comberton, Broadwaters, Stourport Road, Bewdley Road, or nearby Wyre Forest areas. The introduction process focuses on matter suitability rather than pretending this website is a physical law office.",
+    prepareItems: [
+      "postcode",
+      "legal category",
+      "brief issue summary",
+      "preferred contact time",
+      "urgency",
+      "stage of matter",
+      "whether a solicitor has already been contacted",
+    ],
+    questionItems: [
+      "whether the firm handles this exact type of matter",
+      "whether meetings are local, phone, or video",
+      "how quickly the firm can respond",
+      "how fees are quoted",
+      "what documents should be shared securely later",
+    ],
+    riskItems: [
+      "Choosing only the closest firm can be a mistake if the firm does not handle the relevant service area or cannot explain fees clearly.",
+      "Another risk is sharing confidential documents with several firms before checking whether they are suitable. A short enquiry summary is enough at comparison stage.",
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-conveyancing-solicitor-do",
+      "what-does-a-probate-solicitor-do",
+      "prepare-divorce-solicitor-consultation",
+      "settlement-agreements-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "compare-solicitors-kidderminster",
+    title: "Compare Solicitors Kidderminster",
+    h1: "Compare solicitors in Kidderminster",
+    metaDescription:
+      "Compare solicitor services in Kidderminster by service area, fees, response time, communication, regulation, and suitability.",
+    category: "Solicitor Comparison",
+    summary:
+      "A comparison guide for choosing what to ask before requesting a solicitor quote in Kidderminster.",
+    userNeed:
+      "Comparing solicitors is not just about finding a name. Users need to understand service area, fees, communication, experience, regulatory details, and whether the firm is suitable for the matter.",
+    serviceScope: [
+      "A meaningful comparison may consider whether the firm handles the relevant area of law, what the quote includes, who will do the work, whether fixed-fee stages are available, how updates are provided, and what happens if the matter changes.",
+      "For sensitive or urgent matters, the comparison should also cover response time, document security, deadline handling, and whether the firm explains uncertainty clearly.",
+    ],
+    localContext:
+      "People in Kidderminster and Wyre Forest often compare firms for conveyancing, probate, wills, family law, divorce, employment, commercial, property, or injury enquiries. Local relevance helps, but suitability and transparency matter more than location alone.",
+    prepareItems: [
+      "service category",
+      "postcode",
+      "matter stage",
+      "key dates",
+      "preferred communication method",
+      "rough budget questions",
+      "documents you may need later",
+    ],
+    questionItems: [
+      "what exactly is included in the quote",
+      "whether the firm handles similar matters regularly",
+      "who will be the day-to-day contact",
+      "how often updates are provided",
+      "what could increase cost or delay the matter",
+    ],
+    riskItems: [
+      "Comparison can go wrong where users focus only on headline price, assume all solicitors handle all areas, ignore communication style, or fail to ask what is included.",
+      "Another risk is relying on unverifiable claims. Users should check regulatory details, terms of business, client care information, and written fee information before instructing.",
+    ],
+    relatedGuideSlugs: [
+      "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+      "what-does-a-probate-solicitor-do",
+      "divorce-costs-explained",
+      "settlement-agreements-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "stourport-solicitors",
+    title: "Stourport Solicitors",
+    h1: "Solicitors serving Stourport",
+    metaDescription:
+      "Compare solicitor service options for Stourport residents and businesses through an independent Wyre Forest legal guide.",
+    category: "Local Solicitor Services",
+    summary:
+      "Solicitor introductions for Stourport users comparing common legal service options.",
+    userNeed:
+      "People in Stourport may need a solicitor for property, probate, wills, family issues, employment, business matters, disputes, or injury-related enquiries.",
+    serviceScope: [
+      "A solicitor partner may help with conveyancing, probate, wills, divorce, family law, employment, commercial matters, landlord and tenant issues, debt recovery, or personal injury depending on its service areas.",
+      "Users should compare whether the firm handles the relevant matter, how fees are explained, who will respond, and whether the enquiry can be handled locally, regionally, or remotely.",
+    ],
+    localContext:
+      "Stourport-on-Severn residents and businesses often look toward Kidderminster, Bewdley, Worcester, and wider Worcestershire for solicitor services, especially where property, family, estate, or business documents are involved.",
+    prepareItems: [
+      "Stourport postcode",
+      "legal category",
+      "short factual summary",
+      "preferred contact time",
+      "urgency",
+      "matter stage",
+      "whether another solicitor has been contacted",
+    ],
+    questionItems: [
+      "whether the firm covers Stourport enquiries",
+      "whether local meetings are needed",
+      "how fees are structured",
+      "what documents should be prepared",
+      "how quickly the firm can respond",
+    ],
+    riskItems: [
+      "Local searches can go wrong when users focus on geography alone rather than area of law, fee clarity, communication, and suitability.",
+      "Another risk is sending sensitive documents before confirming the firm can help. A brief enquiry is enough at introduction stage.",
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-conveyancing-solicitor-do",
+      "what-does-a-probate-solicitor-do",
+      "what-should-be-included-in-a-will",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "bewdley-solicitors",
+    title: "Bewdley Solicitors",
+    h1: "Solicitors serving Bewdley",
+    metaDescription:
+      "Compare solicitor service options for Bewdley residents and businesses through an independent Wyre Forest legal guide.",
+    category: "Local Solicitor Services",
+    summary:
+      "Solicitor introductions for Bewdley users comparing property, probate, family, employment, business, and dispute services.",
+    userNeed:
+      "People in Bewdley may need solicitor support for house moves, probate, wills, family arrangements, work issues, commercial matters, or property disputes.",
+    serviceScope: [
+      "A solicitor partner may help with conveyancing, estate administration, wills, divorce, family law, employment, commercial contracts, landlord and tenant matters, or other legal categories depending on the enquiry.",
+      "The best starting point is a short practical summary that explains the area of law, postcode, urgency, and preferred contact method.",
+    ],
+    localContext:
+      "Bewdley sits within the Wyre Forest area, close to Kidderminster and Stourport. Local residents may want a nearby or regional provider, but suitability should be judged by service area, communication, and fee transparency.",
+    prepareItems: [
+      "Bewdley postcode",
+      "area of law",
+      "brief factual summary",
+      "preferred contact time",
+      "key dates",
+      "matter stage",
+      "basic documents involved",
+    ],
+    questionItems: [
+      "whether the firm handles the exact legal category",
+      "whether the matter can be handled remotely",
+      "what the quote includes",
+      "who will be the day-to-day contact",
+      "what information is needed before instruction",
+    ],
+    riskItems: [
+      "Users may waste time contacting firms that do not handle the relevant legal category or cannot provide clear fee information.",
+      "A second risk is assuming this website gives legal advice. It does not; advice must come from the solicitor firm or legal service provider.",
+    ],
+    relatedGuideSlugs: [
+      "buying-a-house-in-kidderminster-legal-checklist",
+      "what-does-a-probate-solicitor-do",
+      "when-should-you-update-a-will",
+      "prepare-divorce-solicitor-consultation",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "hagley-solicitors",
+    title: "Hagley Solicitors",
+    h1: "Solicitors serving Hagley",
+    metaDescription:
+      "Compare solicitor service options for Hagley residents and businesses through an independent local legal guide.",
+    category: "Local Solicitor Services",
+    summary:
+      "Solicitor introductions for Hagley users comparing common legal service options.",
+    userNeed:
+      "People in Hagley may need solicitor support for property, wills, probate, family matters, employment issues, business documents, disputes, or injury enquiries.",
+    serviceScope: [
+      "A solicitor partner may assist with conveyancing, probate, wills, family law, employment, commercial matters, debt recovery, or dispute-related enquiries where it is suitable for them to do so.",
+      "Users should compare service fit, availability, cost clarity, regulatory details, and whether the firm can handle the matter locally, regionally, or remotely.",
+    ],
+    localContext:
+      "Hagley users may compare solicitor options across Wyre Forest, Bromsgrove, Stourbridge, Kidderminster, and Worcestershire depending on the matter and preferred communication style.",
+    prepareItems: [
+      "Hagley postcode",
+      "legal matter type",
+      "short enquiry summary",
+      "preferred contact time",
+      "deadline or urgency",
+      "whether documents are ready",
+      "whether another firm has been contacted",
+    ],
+    questionItems: [
+      "whether the firm covers Hagley enquiries",
+      "whether the firm handles the relevant legal category",
+      "how the quote is calculated",
+      "what documents should be shared later",
+      "what next step is realistic",
+    ],
+    riskItems: [
+      "A local search can be misleading if users do not check the exact service area, communication process, and costs before deciding whether to instruct.",
+      "Users should avoid placing sensitive information in a public form; a short summary is enough for an introduction.",
+    ],
+    relatedGuideSlugs: [
+      "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+      "what-should-be-included-in-a-will",
+      "what-does-a-family-law-solicitor-help-with",
+      "settlement-agreements-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "bromsgrove-solicitors",
+    title: "Bromsgrove Solicitors",
+    h1: "Solicitors serving Bromsgrove",
+    metaDescription:
+      "Compare solicitor service options for Bromsgrove residents and businesses through an independent regional legal guide.",
+    category: "Local Solicitor Services",
+    summary:
+      "Solicitor introductions for Bromsgrove users comparing property, probate, family, employment, business, and dispute services.",
+    userNeed:
+      "People in Bromsgrove may need solicitor support for conveyancing, probate, wills, family, employment, commercial, property, or injury enquiries.",
+    serviceScope: [
+      "A solicitor partner may help with common private client, property, family, employment, and commercial legal categories depending on suitability and capacity.",
+      "This page is designed for comparison and introduction, not to represent a physical Bromsgrove law firm or provide legal advice.",
+    ],
+    localContext:
+      "Bromsgrove sits within Worcestershire and has links toward Kidderminster, Hagley, Droitwich, Redditch, and Birmingham. Users may compare local and regional providers depending on the matter.",
+    prepareItems: [
+      "Bromsgrove postcode",
+      "legal category",
+      "matter summary",
+      "preferred contact time",
+      "key dates",
+      "current stage",
+      "documents likely to be relevant",
+    ],
+    questionItems: [
+      "whether the firm has relevant experience",
+      "whether the quote is fixed-fee or hourly",
+      "who will handle the file",
+      "how quickly contact can happen",
+      "what could change the cost",
+    ],
+    riskItems: [
+      "Users can choose poorly if they compare only location and not service area, responsiveness, fee transparency, or document handling.",
+      "Another risk is expecting legal advice from an introduction website. This website only provides general information and may pass enquiries to a suitable solicitor partner.",
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-conveyancing-solicitor-do",
+      "what-does-a-probate-solicitor-do",
+      "divorce-costs-explained",
+      "commercial-property-disputes",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "worcester-solicitors",
+    title: "Worcester Solicitors",
+    h1: "Solicitors serving Worcester",
+    metaDescription:
+      "Compare solicitor service options for Worcester residents and businesses through an independent Worcestershire legal guide.",
+    category: "Local Solicitor Services",
+    summary:
+      "Solicitor introductions for Worcester users comparing common legal services and quote options.",
+    userNeed:
+      "People in Worcester may be comparing solicitor services for property, probate, wills, family law, employment, business, disputes, or injury-related enquiries.",
+    serviceScope: [
+      "A solicitor partner may help with conveyancing, estate administration, wills, divorce, employment, commercial contracts, debt recovery, landlord and tenant, personal injury, or clinical negligence enquiries where appropriate.",
+      "Users should compare whether the firm handles the specific matter, can explain likely costs, communicates clearly, and can manage any important deadline.",
+    ],
+    localContext:
+      "Worcester is a wider regional legal market for Worcestershire users, including people in Kidderminster and Wyre Forest who may be open to regional firms as well as nearby providers.",
+    prepareItems: [
+      "Worcester postcode",
+      "area of law",
+      "short factual summary",
+      "preferred contact time",
+      "urgency",
+      "matter stage",
+      "whether a quote has already been requested",
+    ],
+    questionItems: [
+      "whether the firm handles the relevant area",
+      "whether local or remote handling is available",
+      "what is included in the quote",
+      "who manages the matter day to day",
+      "what documents are needed next",
+    ],
+    riskItems: [
+      "Large regional choice can make comparison harder if users do not narrow the enquiry by service area, urgency, cost structure, and communication needs.",
+      "Users should confirm regulatory details and client care terms directly with any firm before instruction.",
+    ],
+    relatedGuideSlugs: [
+      "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+      "what-does-a-probate-solicitor-do",
+      "settlement-agreements-explained",
+      "what-does-a-family-law-solicitor-help-with",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "stourbridge-solicitors",
+    title: "Stourbridge Solicitors",
+    h1: "Solicitors serving Stourbridge",
+    metaDescription:
+      "Compare solicitor service options for Stourbridge residents and businesses through an independent regional legal guide.",
+    category: "Local Solicitor Services",
+    summary:
+      "Solicitor introductions for Stourbridge users comparing common legal service categories.",
+    userNeed:
+      "People in Stourbridge may need solicitor support for house moves, probate, wills, family issues, employment, business disputes, landlord matters, or injury enquiries.",
+    serviceScope: [
+      "A solicitor partner may assist with a range of private client, property, employment, family, commercial, or dispute matters where the enquiry matches its service areas.",
+      "Users should compare service fit, cost clarity, response times, communication style, and whether local or remote handling is suitable.",
+    ],
+    localContext:
+      "Stourbridge users may compare solicitor options across the West Midlands, Hagley, Kidderminster, Dudley, and Worcestershire depending on the legal category and preferred provider type.",
+    prepareItems: [
+      "Stourbridge postcode",
+      "legal matter type",
+      "short summary",
+      "preferred contact time",
+      "key dates",
+      "documents involved",
+      "whether another solicitor is involved",
+    ],
+    questionItems: [
+      "whether the firm serves Stourbridge enquiries",
+      "whether it handles the specific category",
+      "how costs are explained",
+      "how communication works",
+      "what happens after the first call",
+    ],
+    riskItems: [
+      "Searches can become inefficient where users contact many general firms without a clear matter summary or comparison criteria.",
+      "Another risk is relying on directory-style listings without checking whether the firm actually handles the matter needed.",
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-conveyancing-solicitor-do",
+      "prepare-divorce-solicitor-consultation",
+      "directors-duties-explained",
+      "what-does-a-probate-solicitor-do",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "telford-solicitors",
+    title: "Telford Solicitors",
+    h1: "Solicitors serving Telford",
+    metaDescription:
+      "Compare solicitor service options for Telford residents and businesses through an independent regional legal guide.",
+    category: "Local Solicitor Services",
+    summary:
+      "Solicitor introductions for Telford users comparing common legal service options.",
+    userNeed:
+      "People in Telford may need solicitor support for conveyancing, probate, wills, family, employment, business, disputes, or injury enquiries.",
+    serviceScope: [
+      "A solicitor partner may help where the enquiry matches its service areas, capacity, and geographic coverage. Some matters can be handled remotely, while others may benefit from local or regional familiarity.",
+      "This page supports comparison and introductions only. It does not suggest this website is a Telford law firm or legal adviser.",
+    ],
+    localContext:
+      "Telford sits outside the core Kidderminster market but may be relevant to future regional expansion across Worcestershire, Shropshire, and the West Midlands for solicitor introduction pages.",
+    prepareItems: [
+      "Telford postcode",
+      "legal category",
+      "short factual summary",
+      "preferred contact time",
+      "urgency",
+      "matter stage",
+      "basic documents involved",
+    ],
+    questionItems: [
+      "whether the firm covers Telford enquiries",
+      "whether the matter can be handled remotely",
+      "how fees are structured",
+      "what documents are needed before advice",
+      "how quickly contact can happen",
+    ],
+    riskItems: [
+      "Expansion-area pages should remain transparent and should not pretend the website is a local law office.",
+      "Users should compare suitability, service area, communication, regulatory details, and fee clarity before instructing any firm.",
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-probate-solicitor-do",
+      "employment-status-explained",
+      "what-does-a-conveyancing-solicitor-do",
+      "what-should-be-included-in-a-will",
+    ],
+  }),
 ];
 
 export const trustPages: TrustPage[] = [
@@ -9028,6 +9468,356 @@ export const guidePages: GuidePage[] = [
         question: "Should I upload medical records through this website?",
         answer:
           "No. Use the public form for a brief summary only. Detailed medical records should be shared securely with a solicitor or legal service provider if instructed.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "leasehold-reform-bill-buyers-sellers",
+    title: "Leasehold Reform Bill: What Buyers and Sellers Should Know",
+    h1: "Leasehold reform: what buyers and sellers should know",
+    metaDescription:
+      "General guide to leasehold reform, what buyers and sellers should check, lease length, ground rent, service charge, and conveyancing questions.",
+    category: "Conveyancing",
+    relatedServiceSlug: "conveyancing-solicitors-kidderminster",
+    intro:
+      "Leasehold reform is an important topic for buyers and sellers, but the practical conveyancing question is still document-specific: what does this lease say now, and what should be checked before exchange?",
+    keyTakeaways: [
+      "Leasehold law can change, so buyers and sellers should use up-to-date solicitor advice before relying on reform headlines.",
+      "A conveyancer may still need to review lease length, ground rent, service charge, management packs, restrictions, and lender requirements.",
+      "Sellers should prepare leasehold documents early because missing packs, consents, or service charge information can delay a transaction.",
+    ],
+    topicOverview: [
+      "Leasehold reform has changed parts of the leasehold landscape and further implementation details can depend on commencement, guidance, and the exact issue involved. Buyers and sellers should not assume that a reform headline automatically changes the legal position of a specific property.",
+      "For conveyancing, the practical checks remain familiar: lease term, ground rent, service charge, reserve funds, management company information, planned works, restrictions on use or alterations, insurance, notices, and lender requirements.",
+    ],
+    practicalExamples: [
+      "A Kidderminster buyer looking at a leasehold flat may hear that leasehold law has changed. The conveyancer still needs to check the actual lease, remaining term, rent provisions, service charge history, and lender instructions.",
+      "A Wyre Forest seller may want to list a leasehold property quickly. Ordering the management pack and gathering consents, guarantees, service charge accounts, and notices early can reduce delays.",
+    ],
+    commonProblems: [
+      "Problems arise where buyers assume reform removes all leasehold risk, or sellers wait until a buyer is found before collecting management information.",
+      "Another issue is relying on online summaries without checking whether the particular reform point is in force and relevant to the lease being bought, sold, extended, or varied.",
+    ],
+    prepareItems: [
+      "lease copy",
+      "remaining lease term",
+      "ground rent details",
+      "service charge accounts",
+      "management pack",
+      "building insurance",
+      "alteration consents",
+      "planned works information",
+    ],
+    questionItems: [
+      "whether any reform point affects this specific lease",
+      "whether the lease term concerns the lender",
+      "what ground rent and service charge clauses mean",
+      "whether the management pack is complete",
+      "what could delay exchange or completion",
+    ],
+    localContext:
+      "Leasehold transactions around Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Wyre Forest may involve flats, maisonettes, managed estates, shared buildings, or older lease documents where careful conveyancing review matters.",
+    relatedGuideSlugs: [
+      "leasehold-vs-freehold-explained",
+      "leasehold-conveyancing-explained",
+      "house-buying-searches-explained",
+      "what-can-delay-conveyancing",
+    ],
+    faq: [
+      {
+        question: "Does leasehold reform remove the need for leasehold conveyancing checks?",
+        answer:
+          "No. A conveyancer still needs to review the actual lease, management information, charges, restrictions, lender requirements, and any reform point that may apply.",
+      },
+      {
+        question: "Should sellers prepare leasehold documents before finding a buyer?",
+        answer:
+          "Often yes. Leasehold management packs and consents can take time, so early preparation can reduce delay once a buyer is found.",
+      },
+      {
+        question: "Is this guide legal advice on leasehold reform?",
+        answer:
+          "No. Leasehold law can change and this guide is general information only. Ask a qualified provider to check the specific lease and current rules.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "medical-negligence-claims-where-to-start",
+    title: "Medical Negligence Claims: Where to Start",
+    h1: "Medical negligence claims: where to start",
+    metaDescription:
+      "General guide to starting a medical negligence enquiry, records, complaint timelines, evidence, funding, limitation, and solicitor questions.",
+    category: "Personal Injury and Negligence",
+    relatedServiceSlug: "medical-negligence-solicitors-kidderminster",
+    intro:
+      "A medical negligence enquiry usually starts with a careful timeline, medical records, complaint correspondence, and a clear explanation of what harm is believed to have been caused.",
+    keyTakeaways: [
+      "A poor medical outcome does not automatically mean negligence; the issue usually needs records and expert review.",
+      "Start by organising dates, providers, treatment, complaint steps, current impact, and any urgent limitation concerns.",
+      "Avoid sending detailed medical records through public forms; share sensitive documents securely only with a solicitor or legal service provider if instructed.",
+    ],
+    topicOverview: [
+      "Medical negligence claims can involve questions about standard of care, causation, avoidable harm, records, expert evidence, and timing. The first step is usually to create a factual timeline rather than trying to argue every legal point.",
+      "A solicitor may need to see treatment dates, provider names, what happened, what was expected, what changed afterwards, complaint responses, and whether records have been requested. They may then explain whether the enquiry is suitable for further investigation.",
+    ],
+    practicalExamples: [
+      "A Kidderminster resident may be concerned about delayed diagnosis and wants to understand what to prepare. A clear chronology, appointment dates, referral information, and complaint response can help the first review.",
+      "A Wyre Forest patient may have concerns about dental, GP, hospital, or private treatment. The provider type, records, symptoms, later treatment, and impact all need organising before a solicitor can assess next steps.",
+    ],
+    commonProblems: [
+      "Problems arise where users rely only on memory, do not request or organise records, assume harm proves negligence, or delay asking about limitation where older treatment is involved.",
+      "Another issue is sharing too much sensitive medical information with comparison sites. At enquiry stage, a short factual summary is safer.",
+    ],
+    prepareItems: [
+      "treatment dates",
+      "provider names",
+      "short chronology",
+      "complaint letters",
+      "responses received",
+      "medical record access status",
+      "current impact summary",
+      "any urgent dates",
+    ],
+    questionItems: [
+      "whether the firm handles medical negligence enquiries",
+      "what records are needed first",
+      "whether limitation may be an issue",
+      "how expert evidence is approached",
+      "how funding and deductions are explained",
+    ],
+    localContext:
+      "Medical negligence enquiries from Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Wyre Forest may involve local, regional, NHS, private, dental, GP, hospital, or community treatment. The right provider may be regional or national if specialist experience is needed.",
+    relatedGuideSlugs: [
+      "personal-injury-vs-clinical-negligence",
+      "no-win-no-fee-explained",
+      "workplace-injury-claims",
+      "pedestrian-accident-claims",
+    ],
+    faq: [
+      {
+        question: "What is the first thing to prepare for a medical negligence enquiry?",
+        answer:
+          "Prepare a factual timeline with treatment dates, provider names, what happened, complaint steps, current impact, and whether records have been requested.",
+      },
+      {
+        question: "Does a poor outcome mean medical negligence?",
+        answer:
+          "Not automatically. A qualified provider may need records and expert evidence to consider standard of care and causation.",
+      },
+      {
+        question: "Can this website review medical records?",
+        answer:
+          "No. This website does not review records or provide legal advice. Detailed records should be shared securely with a solicitor or legal service provider if instructed.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "workplace-injury-claims",
+    title: "Workplace Injury Claims Explained",
+    h1: "Workplace injury claims explained",
+    metaDescription:
+      "General guide to workplace injury claims, accident reports, evidence, employer correspondence, medical records, funding, and solicitor questions.",
+    category: "Personal Injury and Negligence",
+    relatedServiceSlug: "personal-injury-solicitors-kidderminster",
+    intro:
+      "A workplace injury enquiry usually depends on what happened, what evidence exists, how the incident was reported, what medical treatment followed, and whether responsibility is disputed.",
+    keyTakeaways: [
+      "Accident reports, photographs, witness details, rota records, training records, and medical appointments can all be important.",
+      "Employees should keep communication factual and preserve documents before speaking with a solicitor or legal service provider.",
+      "Funding terms, limitation, employer insurance, and evidence should be explained before any user decides whether to instruct a firm.",
+    ],
+    topicOverview: [
+      "Workplace injury claims may involve slips, trips, manual handling, machinery, falls, defective equipment, unsafe systems, inadequate training, or other work-related incidents. A solicitor may need to consider liability, evidence, injury, loss, reporting, and timing.",
+      "The first enquiry should focus on facts: when and where the incident happened, who was present, whether it was reported, what injury occurred, and what documents exist.",
+    ],
+    practicalExamples: [
+      "A Kidderminster warehouse worker may be injured while lifting stock and needs to know what evidence to keep. Accident book entries, training records, manager messages, and medical notes may all help.",
+      "A Wyre Forest employee may slip in a workplace area and later be contacted by an insurer. They should keep correspondence and ask a solicitor to explain process before signing anything they do not understand.",
+    ],
+    commonProblems: [
+      "Problems arise where incidents are not reported, photographs are not taken, witness details are lost, users delay medical attention, or employer correspondence is deleted.",
+      "Another issue is assuming that bringing a claim guarantees compensation or guarantees employment consequences. A qualified provider should explain uncertainty and funding carefully.",
+    ],
+    prepareItems: [
+      "incident date",
+      "workplace location",
+      "accident book entry",
+      "photographs",
+      "witness details",
+      "training records if available",
+      "medical appointment details",
+      "time off work and pay records",
+    ],
+    questionItems: [
+      "what evidence should be preserved",
+      "whether limitation or reporting deadlines apply",
+      "how funding works",
+      "whether employer insurance is involved",
+      "what deductions or costs may apply",
+    ],
+    localContext:
+      "Workplace injury enquiries can arise in Kidderminster and Wyre Forest workplaces including manufacturing, warehouses, retail, hospitality, care, offices, construction, trades, and delivery work.",
+    relatedGuideSlugs: [
+      "no-win-no-fee-explained",
+      "personal-injury-vs-clinical-negligence",
+      "pedestrian-accident-claims",
+      "personal-injury-compensation-amounts",
+    ],
+    faq: [
+      {
+        question: "Should a workplace injury be reported?",
+        answer:
+          "A factual report can be important. Keep copies of accident book entries, messages, photographs, medical records, and any employer or insurer correspondence.",
+      },
+      {
+        question: "Can I claim against my employer?",
+        answer:
+          "That depends on the facts, evidence, liability, injury, and timing. This website cannot assess claims; a solicitor or legal service provider would need to review the matter.",
+      },
+      {
+        question: "Do workplace injury claims use no win no fee?",
+        answer:
+          "Some may be offered under conditional fee or other funding arrangements. Ask the solicitor to explain deductions, insurance, disbursements, and cancellation terms.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "pedestrian-accident-claims",
+    title: "Pedestrian Accident Claims Explained",
+    h1: "Pedestrian accident claims explained",
+    metaDescription:
+      "General guide to pedestrian accident claims, road incidents, evidence, medical treatment, insurer contact, funding, and solicitor questions.",
+    category: "Personal Injury and Negligence",
+    relatedServiceSlug: "personal-injury-solicitors-kidderminster",
+    intro:
+      "Pedestrian accident enquiries can involve road traffic evidence, driver details, insurer contact, police reports, medical treatment, witness information, and timing questions.",
+    keyTakeaways: [
+      "Evidence can include driver details, registration numbers, photographs, witnesses, police references, CCTV locations, and medical appointments.",
+      "Users should avoid assuming fault is clear without evidence and should be careful before signing insurer documents they do not understand.",
+      "A solicitor may explain funding, liability, medical evidence, rehabilitation, loss of earnings, and next steps where appropriate.",
+    ],
+    topicOverview: [
+      "Pedestrian accident claims may arise where someone is hit by a vehicle, injured near a crossing, hurt in a car park, or affected by another road-related incident. The key issues often include fault, evidence, injury, medical records, rehabilitation needs, and loss.",
+      "A solicitor may need to know the accident location, vehicle details, whether police attended, whether there were witnesses, what medical treatment was received, and whether insurers have made contact.",
+    ],
+    practicalExamples: [
+      "A pedestrian injured near a Kidderminster crossing may need to gather photographs, witness details, vehicle registration, police reference, and medical appointment information.",
+      "A Wyre Forest resident injured in a car park may have questions about CCTV, driver details, insurer contact, and whether the incident has been reported properly.",
+    ],
+    commonProblems: [
+      "Problems arise where users do not record driver details, delay medical assessment, lose witness information, or accept early insurer contact without understanding the process.",
+      "Another issue is relying on memory alone. A short written chronology made soon after the incident can help preserve details.",
+    ],
+    prepareItems: [
+      "accident date and time",
+      "location",
+      "vehicle details",
+      "driver or insurer details",
+      "police reference if any",
+      "photographs",
+      "witness details",
+      "medical appointment information",
+    ],
+    questionItems: [
+      "what evidence is needed",
+      "whether police or insurer details matter",
+      "how medical evidence is obtained",
+      "how funding works",
+      "what happens if liability is disputed",
+    ],
+    localContext:
+      "Pedestrian accident enquiries around Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Wyre Forest may involve local roads, crossings, car parks, shops, schools, work journeys, and regional insurers.",
+    relatedGuideSlugs: [
+      "no-win-no-fee-explained",
+      "personal-injury-vs-clinical-negligence",
+      "workplace-injury-claims",
+      "personal-injury-compensation-amounts",
+    ],
+    faq: [
+      {
+        question: "What evidence helps after a pedestrian accident?",
+        answer:
+          "Helpful evidence can include vehicle details, photographs, witness details, police references, CCTV locations, medical appointment records, and insurer correspondence.",
+      },
+      {
+        question: "Should I speak to an insurer directly?",
+        answer:
+          "You can receive insurer contact, but be careful before signing anything you do not understand. A solicitor can explain process and funding where appropriate.",
+      },
+      {
+        question: "Does this website assess pedestrian accident claims?",
+        answer:
+          "No. This website does not assess claims or provide legal advice. It can help request an introduction to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "personal-injury-compensation-amounts",
+    title: "How Much Compensation for Personal Injury?",
+    h1: "How much compensation for personal injury?",
+    metaDescription:
+      "General guide to personal injury compensation factors, injury evidence, losses, funding, uncertainty, and solicitor questions. No compensation promises.",
+    category: "Personal Injury and Negligence",
+    relatedServiceSlug: "personal-injury-solicitors-kidderminster",
+    intro:
+      "Personal injury compensation depends on evidence, injury severity, recovery, financial losses, liability, medical opinion, and the facts of the case. No responsible guide can promise a fixed amount.",
+    keyTakeaways: [
+      "Compensation is not calculated from a simple online guess; medical evidence and financial loss evidence usually matter.",
+      "A solicitor may consider pain and suffering, recovery period, loss of earnings, care, treatment, travel, and other proven losses.",
+      "Users should be cautious of websites that imply a guaranteed amount before evidence has been reviewed.",
+    ],
+    topicOverview: [
+      "Personal injury compensation may include general damages for pain, suffering, and loss of amenity, plus special damages for financial losses such as earnings, treatment, care, travel, or damaged property where recoverable and evidenced.",
+      "The amount can be affected by medical evidence, recovery period, long-term prognosis, pre-existing conditions, liability disputes, contributory negligence, and whether losses can be proved with records.",
+    ],
+    practicalExamples: [
+      "A Kidderminster worker who misses time after an accident may need wage records, medical evidence, and recovery information before any realistic discussion of value.",
+      "A pedestrian in Wyre Forest may have treatment costs, travel costs, and ongoing symptoms. The strength of evidence and medical prognosis would matter before a solicitor could discuss valuation.",
+    ],
+    commonProblems: [
+      "Problems arise where users rely on compensation calculators, lose receipts, cannot prove earnings loss, or assume an injury type automatically means a specific payout.",
+      "Another issue is accepting an early offer without understanding medical prognosis, deductions, funding terms, or whether future losses have been considered.",
+    ],
+    prepareItems: [
+      "medical appointment details",
+      "diagnosis and treatment information",
+      "time off work records",
+      "payslips",
+      "receipts",
+      "travel costs",
+      "care notes",
+      "insurer offers or correspondence",
+    ],
+    questionItems: [
+      "what evidence is needed before valuation",
+      "whether medical evidence is complete",
+      "what losses may be considered",
+      "how deductions and funding work",
+      "whether any early offer should be reviewed",
+    ],
+    localContext:
+      "Personal injury enquiries from Kidderminster and Wyre Forest may involve local workplaces, road incidents, shops, leisure venues, car parks, or public areas, but compensation assessment depends on evidence rather than location alone.",
+    relatedGuideSlugs: [
+      "no-win-no-fee-explained",
+      "workplace-injury-claims",
+      "pedestrian-accident-claims",
+      "personal-injury-vs-clinical-negligence",
+    ],
+    faq: [
+      {
+        question: "Can this website tell me how much my claim is worth?",
+        answer:
+          "No. This website does not assess claims or value compensation. A qualified provider would need evidence and medical information before discussing value.",
+      },
+      {
+        question: "What affects personal injury compensation?",
+        answer:
+          "Factors can include injury severity, recovery time, medical evidence, financial losses, liability, contributory negligence, and the strength of evidence.",
+      },
+      {
+        question: "Are online compensation calculators reliable?",
+        answer:
+          "They can be misleading if they do not consider evidence, prognosis, liability, losses, and funding deductions. Ask a solicitor to explain valuation carefully.",
       },
     ],
   }),
