@@ -19,8 +19,9 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
+  applicationName: "Kidderminster Solicitors",
   title: {
-    default: "Kidderminster Solicitors | Independent Local Guide",
+    default: "Kidderminster Solicitors",
     template: "%s | Kidderminster Solicitors",
   },
   description:
