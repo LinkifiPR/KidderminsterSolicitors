@@ -8,6 +8,7 @@ import {
   getMoreGuidesInCategory,
   getRelatedServicesForPage,
   guidePages,
+  parseInlineInternalLinks,
   servicePages,
   type SitePage,
 } from "../lib/site";
@@ -17,6 +18,26 @@ function buildSectionId(heading: string) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
+}
+
+function LinkedParagraph({ text }: { text: string }) {
+  return (
+    <p>
+      {parseInlineInternalLinks(text).map((segment, index) =>
+        segment.type === "link" ? (
+          <a
+            key={`${segment.slug}-${index}`}
+            href={segment.href}
+            className="font-semibold text-[var(--trust-blue)] underline decoration-[rgba(198,161,91,0.55)] underline-offset-4 transition hover:text-[var(--mid-blue)]"
+          >
+            {segment.text}
+          </a>
+        ) : (
+          <span key={`text-${index}`}>{segment.text}</span>
+        ),
+      )}
+    </p>
+  );
 }
 
 function QuoteHeroPrompt({ category }: { category: string }) {
@@ -215,8 +236,11 @@ export function ContentPageView({ page }: { page: SitePage }) {
                             {section.heading}
                           </h2>
                           <div className="mt-4 space-y-4 text-base leading-8 text-[var(--muted)]">
-                            {section.body.map((paragraph) => (
-                              <p key={paragraph}>{paragraph}</p>
+                            {section.body.map((paragraph, index) => (
+                              <LinkedParagraph
+                                key={`${section.heading}-${index}`}
+                                text={paragraph}
+                              />
                             ))}
                           </div>
                         </section>
@@ -426,8 +450,11 @@ export function ContentPageView({ page }: { page: SitePage }) {
                         {section.heading}
                       </h2>
                       <div className="mt-4 space-y-4 text-base leading-8 text-[var(--muted)]">
-                        {section.body.map((paragraph) => (
-                          <p key={paragraph}>{paragraph}</p>
+                        {section.body.map((paragraph, index) => (
+                          <LinkedParagraph
+                            key={`${section.heading}-${index}`}
+                            text={paragraph}
+                          />
                         ))}
                       </div>
                     </section>

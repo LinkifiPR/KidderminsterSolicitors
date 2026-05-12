@@ -151,6 +151,18 @@ export type GuidePage = {
 
 export type SitePage = ServicePage | TrustPage | GuidePage;
 
+export type InlineInternalLinkSegment =
+  | {
+      type: "text";
+      text: string;
+    }
+  | {
+      type: "link";
+      text: string;
+      href: string;
+      slug: string;
+    };
+
 type SpecialistServiceSeed = {
   slug: string;
   title: string;
@@ -2772,7 +2784,7 @@ export const trustPages: TrustPage[] = [
   },
 ];
 
-export const guidePages: GuidePage[] = [
+const rawGuidePages: GuidePage[] = [
   {
     type: "guide",
     slug: "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
@@ -10077,6 +10089,242 @@ export const guidePages: GuidePage[] = [
   },
 ];
 
+const anchorTextByServiceSlug: Record<string, string[]> = {
+  "conveyancing-solicitors-kidderminster": [
+    "conveyancing solicitors in Kidderminster",
+    "Kidderminster conveyancing solicitor options",
+    "local conveyancing support in Kidderminster",
+    "compare conveyancing solicitors",
+    "property solicitor options in Kidderminster",
+  ],
+  "conveyancing-quotes-kidderminster": [
+    "compare conveyancing quotes in Kidderminster",
+    "request a conveyancing quote",
+    "conveyancing quote options",
+    "Kidderminster conveyancing fee comparisons",
+  ],
+  "remortgage-solicitors-kidderminster": [
+    "remortgage solicitor options in Kidderminster",
+    "compare remortgage solicitor support",
+    "remortgage legal quote options",
+  ],
+  "land-property-disputes-solicitors-kidderminster": [
+    "land and property dispute solicitor options",
+    "property dispute support in Kidderminster",
+    "compare property dispute solicitors",
+  ],
+  "probate-solicitors-kidderminster": [
+    "probate solicitor options in Kidderminster",
+    "compare probate solicitors",
+    "probate support in Kidderminster",
+    "request a probate solicitor quote",
+  ],
+  "wills-solicitors-kidderminster": [
+    "wills solicitor options in Kidderminster",
+    "compare wills solicitors",
+    "will writing solicitor support",
+  ],
+  "lasting-power-of-attorney-solicitors-kidderminster": [
+    "lasting power of attorney solicitor options",
+    "compare LPA solicitor support",
+    "Kidderminster LPA solicitor enquiries",
+  ],
+  "contested-probate-solicitors-kidderminster": [
+    "contested probate solicitor options",
+    "compare contentious probate support",
+    "will and probate dispute solicitor enquiries",
+  ],
+  "will-disputes-solicitors-kidderminster": [
+    "will dispute solicitor options",
+    "compare will dispute support",
+    "Kidderminster will dispute enquiries",
+  ],
+  "family-law-solicitors-kidderminster": [
+    "family law solicitor support",
+    "family law solicitors in Kidderminster",
+    "compare family law solicitor options",
+    "local family solicitor enquiries",
+  ],
+  "divorce-solicitors-kidderminster": [
+    "divorce solicitors in Kidderminster",
+    "compare divorce solicitor options",
+    "divorce solicitor support",
+    "request a divorce solicitor quote",
+  ],
+  "divorce-separation-solicitors-kidderminster": [
+    "divorce and separation solicitor options",
+    "compare separation solicitor support",
+    "Kidderminster separation solicitor enquiries",
+  ],
+  "child-law-solicitors-kidderminster": [
+    "child law solicitor options",
+    "compare child arrangements support",
+    "Kidderminster child law solicitor enquiries",
+  ],
+  "employment-solicitors-kidderminster": [
+    "employment solicitor enquiries",
+    "employment solicitors in Kidderminster",
+    "compare employment solicitor options",
+    "workplace legal support options",
+  ],
+  "settlement-agreement-solicitors-kidderminster": [
+    "settlement agreement solicitor options",
+    "compare settlement agreement support",
+    "Kidderminster settlement agreement enquiries",
+  ],
+  "redundancy-solicitors-kidderminster": [
+    "redundancy solicitor options",
+    "compare redundancy legal support",
+    "Kidderminster redundancy solicitor enquiries",
+  ],
+  "constructive-dismissal-solicitors-kidderminster": [
+    "constructive dismissal solicitor options",
+    "compare constructive dismissal support",
+    "employment dispute solicitor enquiries",
+  ],
+  "commercial-solicitors-kidderminster": [
+    "commercial solicitor options in Kidderminster",
+    "compare commercial law support",
+    "business solicitor enquiries",
+  ],
+  "commercial-dispute-solicitors-kidderminster": [
+    "commercial dispute solicitor options",
+    "compare business dispute support",
+    "Kidderminster commercial dispute enquiries",
+  ],
+  "commercial-property-solicitors-kidderminster": [
+    "commercial property solicitor options",
+    "compare commercial property legal support",
+    "commercial lease solicitor enquiries",
+  ],
+  "commercial-landlord-tenant-disputes-kidderminster": [
+    "commercial landlord and tenant solicitor options",
+    "compare commercial lease dispute support",
+    "landlord and tenant dispute enquiries",
+  ],
+  "debt-recovery-solicitors-kidderminster": [
+    "debt recovery solicitor options",
+    "compare business debt recovery support",
+    "commercial debt solicitor enquiries",
+  ],
+  "landlord-tenant-solicitors-kidderminster": [
+    "landlord and tenant solicitor options",
+    "compare tenancy dispute support",
+    "Kidderminster landlord and tenant enquiries",
+  ],
+  "personal-injury-solicitors-kidderminster": [
+    "personal injury solicitor options in Kidderminster",
+    "compare personal injury solicitor support",
+    "accident claim solicitor enquiries",
+  ],
+  "accident-injury-solicitors-kidderminster": [
+    "accident and injury solicitor options",
+    "compare accident claim support",
+    "Kidderminster accident solicitor enquiries",
+  ],
+  "medical-negligence-solicitors-kidderminster": [
+    "medical negligence solicitor options",
+    "compare clinical negligence support",
+    "medical negligence solicitor enquiries",
+  ],
+};
+
+function slugHash(slug: string) {
+  return [...slug].reduce((total, char) => total + char.charCodeAt(0), 0);
+}
+
+function getAnchorText(serviceSlug: string, pageSlug: string, offset = 0) {
+  const service = servicePages.find((page) => page.slug === serviceSlug);
+  const fallbackAnchor = service
+    ? `${service.category.toLowerCase()} solicitor options in Kidderminster`
+    : "solicitor options in Kidderminster";
+  const anchors = anchorTextByServiceSlug[serviceSlug] ?? [
+    fallbackAnchor,
+    `compare ${service?.category.toLowerCase() ?? "solicitor"} support`,
+    `${service?.category.toLowerCase() ?? "legal"} quote options`,
+  ];
+
+  return anchors[(slugHash(pageSlug) + offset) % anchors.length];
+}
+
+function buildInlineLinkMarker(anchor: string, slug: string) {
+  return `[[${anchor}|${slug}]]`;
+}
+
+function getSecondaryPillarSlug(page: GuidePage) {
+  if (
+    page.category === "Conveyancing" &&
+    page.relatedServiceSlug !== "conveyancing-quotes-kidderminster"
+  ) {
+    return "conveyancing-quotes-kidderminster";
+  }
+
+  return null;
+}
+
+function getContextualGuidePillarLinks(page: GuidePage) {
+  const primary = {
+    slug: page.relatedServiceSlug,
+    text: getAnchorText(page.relatedServiceSlug, page.slug),
+  };
+  const secondarySlug = getSecondaryPillarSlug(page);
+  const secondary =
+    secondarySlug && secondarySlug !== primary.slug
+      ? {
+          slug: secondarySlug,
+          text: getAnchorText(secondarySlug, page.slug, 3),
+        }
+      : null;
+
+  return [primary, secondary].filter(
+    (link): link is { slug: string; text: string } => Boolean(link),
+  );
+}
+
+function addContextualGuideLinks(page: GuidePage): GuidePage {
+  const links = getContextualGuidePillarLinks(page);
+
+  if (!links.length) {
+    return page;
+  }
+
+  const sections = page.sections.map((section) => ({
+    ...section,
+    body: [...section.body],
+  }));
+  const firstContentSectionIndex = Math.max(
+    0,
+    sections.findIndex((section) => !/key takeaways/i.test(section.heading)),
+  );
+  const firstLink = links[0];
+  const firstSection = sections[firstContentSectionIndex];
+
+  firstSection.body[0] = `${firstSection.body[0]} If you are comparing next steps, review ${buildInlineLinkMarker(
+    firstLink.text,
+    firstLink.slug,
+  )} before requesting a no obligation quote.`;
+
+  if (links[1]) {
+    const nextStepIndex = sections.findIndex((section) =>
+      /next step|quote|request/i.test(section.heading),
+    );
+    const targetSection = sections[nextStepIndex >= 0 ? nextStepIndex : sections.length - 1];
+    const secondLink = links[1];
+
+    targetSection.body[0] = `${targetSection.body[0]} If cost clarity is important, you can also ${buildInlineLinkMarker(
+      secondLink.text,
+      secondLink.slug,
+    )} before deciding what to do next.`;
+  }
+
+  return {
+    ...page,
+    sections,
+  };
+}
+
+export const guidePages: GuidePage[] = rawGuidePages.map(addContextualGuideLinks);
+
 export const guideOrganizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -10135,6 +10383,64 @@ export function buildPagePath(page: SitePage) {
 
 export function buildGuidePath(slug: string) {
   return `/legal-guides/${slug}/`;
+}
+
+const inlineInternalLinkPattern = /\[\[([^\]|]+)\|([a-z0-9-]+)\]\]/g;
+
+export function buildInternalLinkPath(slug: string) {
+  const page = getPageBySlug(slug);
+
+  return page ? buildPagePath(page) : null;
+}
+
+export function parseInlineInternalLinks(text: string): InlineInternalLinkSegment[] {
+  const segments: InlineInternalLinkSegment[] = [];
+  let lastIndex = 0;
+
+  for (const match of text.matchAll(inlineInternalLinkPattern)) {
+    const [raw, anchor, slug] = match;
+    const index = match.index ?? 0;
+    const href = buildInternalLinkPath(slug);
+
+    if (index > lastIndex) {
+      segments.push({
+        type: "text",
+        text: text.slice(lastIndex, index),
+      });
+    }
+
+    if (href) {
+      segments.push({
+        type: "link",
+        text: anchor,
+        href,
+        slug,
+      });
+    } else {
+      segments.push({
+        type: "text",
+        text: raw,
+      });
+    }
+
+    lastIndex = index + raw.length;
+  }
+
+  if (lastIndex < text.length) {
+    segments.push({
+      type: "text",
+      text: text.slice(lastIndex),
+    });
+  }
+
+  return segments.length ? segments : [{ type: "text", text }];
+}
+
+export function extractInlineInternalLinks(text: string) {
+  return parseInlineInternalLinks(text).filter(
+    (segment): segment is Extract<InlineInternalLinkSegment, { type: "link" }> =>
+      segment.type === "link",
+  );
 }
 
 export function getGuidesForCategoryGroup(

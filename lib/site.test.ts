@@ -12,6 +12,8 @@ import {
   guideCategoryGroups,
   guideOrganizationSchema,
   guidePages,
+  extractInlineInternalLinks,
+  parseInlineInternalLinks,
   phaseOneServiceSlugs,
   servicePages,
   trustPages,
@@ -124,6 +126,62 @@ describe("site content model", () => {
         expect(service.slug).not.toBe(page.slug);
         expect(serviceSlugs.has(service.slug)).toBe(true);
       });
+    });
+  });
+
+  it("parses controlled inline internal link syntax into safe page paths", () => {
+    expect(
+      parseInlineInternalLinks(
+        "Compare [[conveyancing solicitors in Kidderminster|conveyancing-solicitors-kidderminster]] before requesting a quote.",
+      ),
+    ).toEqual([
+      { type: "text", text: "Compare " },
+      {
+        type: "link",
+        text: "conveyancing solicitors in Kidderminster",
+        href: "/conveyancing-solicitors-kidderminster/",
+        slug: "conveyancing-solicitors-kidderminster",
+      },
+      { type: "text", text: " before requesting a quote." },
+    ]);
+  });
+
+  it("adds one or two varied contextual in-content pillar links to every guide", () => {
+    const serviceSlugs = new Set(servicePages.map((page) => page.slug));
+    const anchorsByCategory = new Map<string, Set<string>>();
+
+    guidePages.forEach((page) => {
+      const fullText = [
+        page.intro,
+        ...page.sections.flatMap((section) => section.body),
+      ].join(" ");
+      const links = extractInlineInternalLinks(fullText);
+
+      expect(links.length).toBeGreaterThanOrEqual(1);
+      expect(links.length).toBeLessThanOrEqual(2);
+      expect(links.some((link) => link.slug === page.relatedServiceSlug)).toBe(
+        true,
+      );
+
+      links.forEach((link) => {
+        expect(serviceSlugs.has(link.slug)).toBe(true);
+        expect(link.text.length).toBeGreaterThan(8);
+        expect(link.text).not.toMatch(/click here|read more|learn more/i);
+      });
+
+      if (!anchorsByCategory.has(page.category)) {
+        anchorsByCategory.set(page.category, new Set());
+      }
+
+      links.forEach((link) => anchorsByCategory.get(page.category)?.add(link.text));
+    });
+
+    anchorsByCategory.forEach((anchors, category) => {
+      const guideCount = guidePages.filter((page) => page.category === category).length;
+
+      if (guideCount > 1) {
+        expect(anchors.size).toBeGreaterThan(1);
+      }
     });
   });
 
