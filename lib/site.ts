@@ -1825,6 +1825,52 @@ export const servicePages: ServicePage[] = [
       "rights-of-way-access-disputes",
     ],
   }),
+  createSpecialistServicePage({
+    slug: "debt-recovery-solicitors-kidderminster",
+    title: "Debt Recovery Solicitors Kidderminster",
+    h1: "Debt recovery solicitors in Kidderminster",
+    metaDescription:
+      "Compare debt recovery solicitor options in Kidderminster for unpaid invoices, business debts, payment disputes, and enforcement enquiries.",
+    category: "Debt Recovery",
+    summary:
+      "Support comparing solicitor options for unpaid invoices, business debts, payment disputes, letters before action, court claims, and enforcement steps.",
+    userNeed:
+      "Debt recovery enquiries often begin when a customer, client, tenant, supplier, or business contact has not paid and reminders have not resolved the issue.",
+    serviceScope: [
+      "A debt recovery solicitor may help review invoices, contracts, terms and conditions, payment history, correspondence, debtor details, settlement offers, pre-action steps, court claim options, and enforcement routes if judgment has already been obtained.",
+      "The right route depends on the amount owed, whether the debt is disputed, whether the debtor is an individual or company, what evidence exists, and whether recovery is commercially proportionate.",
+    ],
+    localContext:
+      "Kidderminster and Wyre Forest businesses, landlords, trades, agencies, suppliers, and professional service providers may need help recovering unpaid invoices or deciding whether a debt is worth pursuing.",
+    prepareItems: [
+      "invoice copies",
+      "contract or terms",
+      "statement of account",
+      "debtor name and address",
+      "company number if relevant",
+      "payment history",
+      "reminder emails",
+      "delivery or work evidence",
+      "any dispute response",
+    ],
+    questionItems: [
+      "whether the debt is clearly evidenced",
+      "whether a letter before action is appropriate",
+      "what costs may be recoverable",
+      "whether the debtor appears able to pay",
+      "what enforcement options may exist after judgment",
+    ],
+    riskItems: [
+      "Debt recovery can go wrong where the wrong legal entity is pursued, evidence is incomplete, the debt is genuinely disputed, pre-action steps are skipped, or the likely cost of recovery is disproportionate to the amount owed.",
+      "Another risk is waiting until records are harder to find or limitation becomes an issue. Clear invoices, terms, correspondence, and payment history can make the first solicitor conversation more useful.",
+    ],
+    relatedGuideSlugs: [
+      "debt-recovery-fees-explained",
+      "part-payment-of-debt",
+      "collecting-business-debt",
+      "letter-before-action-small-claims",
+    ],
+  }),
   {
     type: "service",
     slug: "landlord-tenant-solicitors-kidderminster",
@@ -7739,10 +7785,10 @@ export const guidePages: GuidePage[] = [
     localContext:
       "Commercial landlord responsibilities in Kidderminster and Wyre Forest may involve shops, offices, industrial units, workshops, hospitality premises, shared buildings, local landlords, and regional occupiers.",
     relatedGuideSlugs: [
+      "assigning-subletting-commercial-lease",
+      "protected-lease-explained",
+      "commercial-property-disputes",
       "leasehold-conveyancing-explained",
-      "commercial-landlord-responsibilities",
-      "property-boundaries-explained",
-      "rights-of-way-access-disputes",
     ],
     faq: [
       {
@@ -7759,6 +7805,638 @@ export const guidePages: GuidePage[] = [
         question: "What documents matter in a commercial landlord dispute?",
         answer:
           "Useful documents include the lease, heads of terms, service charge records, insurance documents, repair reports, photographs, notices, and correspondence.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "assigning-subletting-commercial-lease",
+    title: "Assigning or Subletting a Commercial Lease",
+    h1: "Assigning or subletting a commercial lease",
+    metaDescription:
+      "General guide to assigning or subletting a commercial lease, landlord consent, lease restrictions, documents, risks, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-landlord-tenant-disputes-kidderminster",
+    intro:
+      "Assigning or subletting a commercial lease can be a practical way to leave, share, or restructure business premises, but the lease wording and landlord consent process matter.",
+    keyTakeaways: [
+      "A commercial lease often restricts assignment or subletting and may require formal landlord consent before anything changes.",
+      "The documents can include a licence to assign, licence to underlet, authorised guarantee agreement, rent deposit deed, or deed of variation depending on the lease and transaction.",
+      "Tenants should check liability after transfer, repair obligations, arrears, guarantees, and whether the proposed assignee or undertenant is acceptable to the landlord.",
+    ],
+    topicOverview: [
+      "Assignment usually means transferring the tenant's lease to another party. Subletting usually means the existing tenant remains tenant under the main lease but grants a sublease of all or part of the premises to someone else. Both can affect liability, rent, use, insurance, repair obligations, and business continuity.",
+      "The starting point is the lease. It may prohibit assignment or subletting, allow it with consent, or set detailed conditions. Landlords often ask for financial information, references, arrears clearance, legal costs, and formal documentation before consent is granted.",
+    ],
+    practicalExamples: [
+      "A Kidderminster retailer may want to assign its lease because the business is being sold. The landlord may need to approve the buyer and require a licence to assign before completion.",
+      "A Wyre Forest business may have more space than it needs and want to sublet part of a unit. The lease may restrict part-sharing, require approval of plans, and control the sublease terms.",
+    ],
+    commonProblems: [
+      "Problems often arise where a tenant agrees commercial terms with a new occupier before checking whether the lease permits the change. That can leave the tenant exposed to delay, wasted costs, or breach of lease.",
+      "Another common issue is assuming assignment ends all future liability. In some situations there may be continuing obligations, guarantees, or arrears issues that need to be understood before signing.",
+    ],
+    prepareItems: [
+      "commercial lease",
+      "heads of terms",
+      "details of proposed assignee or undertenant",
+      "landlord correspondence",
+      "rent and arrears position",
+      "service charge details",
+      "repair documents",
+      "any guarantee or rent deposit deed",
+    ],
+    questionItems: [
+      "whether the lease permits assignment or subletting",
+      "what landlord consent is needed",
+      "whether continuing liability may remain",
+      "what documents will be required",
+      "who pays the legal costs and how long consent may take",
+    ],
+    localContext:
+      "Commercial premises around Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Wyre Forest can include retail units, workshops, offices, hospitality premises, and industrial space where lease transfers and subletting questions often arise during business changes.",
+    relatedGuideSlugs: [
+      "commercial-landlord-responsibilities",
+      "protected-lease-explained",
+      "commercial-property-disputes",
+      "leasehold-conveyancing-explained",
+    ],
+    faq: [
+      {
+        question: "Can I assign a commercial lease without landlord consent?",
+        answer:
+          "That depends on the lease wording. Many commercial leases restrict assignment and require formal landlord consent before the lease can be transferred.",
+      },
+      {
+        question: "Is subletting the same as assignment?",
+        answer:
+          "No. Assignment usually transfers the lease to another tenant. Subletting usually creates a sublease while the original tenant remains responsible under the main lease.",
+      },
+      {
+        question: "What documents might be needed?",
+        answer:
+          "Documents may include a licence to assign, licence to underlet, authorised guarantee agreement, rent deposit deed, deed of variation, or supporting financial information.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "protected-lease-explained",
+    title: "Protected Leases Explained",
+    h1: "Protected leases explained",
+    metaDescription:
+      "General guide to protected commercial leases, security of tenure, lease renewal, contracting out, documents, risks, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-property-solicitors-kidderminster",
+    intro:
+      "A protected commercial lease can give a business tenant important renewal rights, but protection depends on the lease structure, occupation, notices, and whether the lease was contracted out.",
+    keyTakeaways: [
+      "Commercial tenants may have security of tenure rights in some circumstances, but not every lease is protected.",
+      "A lease may be contracted out of renewal protection if the correct process is followed before completion.",
+      "Landlords and tenants should check notices, occupation, expiry dates, renewal correspondence, and any contracting-out documents early.",
+    ],
+    topicOverview: [
+      "A protected lease is commonly used to describe a business tenancy with security of tenure under the Landlord and Tenant Act 1954. In broad terms, this can mean the tenant may have a right to request a new lease when the current lease ends, unless a statutory ground for opposition applies.",
+      "Some leases are outside protection or are contracted out before completion. Contracting out usually involves warning notices and declarations. The detail is document-specific and can affect negotiating power at renewal or exit.",
+    ],
+    practicalExamples: [
+      "A Kidderminster business nearing the end of a shop lease may need to understand whether it can request renewal or whether the lease was contracted out before signing.",
+      "A landlord in Wyre Forest may want possession at lease expiry and needs to understand notices, timing, and possible grounds rather than assuming the tenant must leave automatically.",
+    ],
+    commonProblems: [
+      "Problems arise when expiry dates are missed, notices are ignored, contracting-out paperwork cannot be found, or parties negotiate informally without understanding the statutory timetable.",
+      "Another issue is assuming that being in occupation always means the tenant has renewal rights. The lease, use, occupation, and any exclusion documents all need to be checked.",
+    ],
+    prepareItems: [
+      "commercial lease",
+      "renewal notices",
+      "contracting-out warning notice",
+      "tenant declaration",
+      "occupation history",
+      "rent payment records",
+      "landlord correspondence",
+      "diary of expiry dates",
+    ],
+    questionItems: [
+      "whether the lease is protected or contracted out",
+      "what notice timetable applies",
+      "whether renewal rights are disputed",
+      "what grounds a landlord may rely on",
+      "what negotiation or court deadlines matter",
+    ],
+    localContext:
+      "Protected lease questions can affect shops, offices, units, workshops, and hospitality premises across Kidderminster and the wider Wyre Forest area, especially where a business relies on staying in a familiar location.",
+    relatedGuideSlugs: [
+      "assigning-subletting-commercial-lease",
+      "commercial-landlord-responsibilities",
+      "commercial-property-disputes",
+      "leasehold-conveyancing-explained",
+    ],
+    faq: [
+      {
+        question: "Does every commercial tenant have renewal rights?",
+        answer:
+          "No. Renewal rights depend on the lease, occupation, statutory rules, and whether the tenancy was contracted out. A qualified provider would need to check the documents.",
+      },
+      {
+        question: "What does contracting out mean?",
+        answer:
+          "In this context it usually means excluding security of tenure rights before the lease is completed, using a formal notice and declaration process.",
+      },
+      {
+        question: "When should I ask about a protected lease?",
+        answer:
+          "Ask early if the lease expiry date is approaching, notices have been served, renewal terms are disputed, or the landlord wants the tenant to leave.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "rent-holiday-meaning",
+    title: "Rent Holiday Meaning",
+    h1: "Rent holiday meaning",
+    metaDescription:
+      "Plain-English guide to rent holidays in commercial leases, rent-free periods, deferred rent, side letters, risks, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-landlord-tenant-disputes-kidderminster",
+    intro:
+      "A rent holiday usually means a temporary period where rent is reduced, suspended, or not payable, but the exact meaning depends on the lease, side letter, and commercial agreement.",
+    keyTakeaways: [
+      "A rent holiday is not always the same as rent forgiveness. It may be deferred, conditional, or limited to basic rent only.",
+      "The agreement should say whether service charge, insurance rent, VAT, interest, and other payments still apply.",
+      "Landlords and tenants should record rent holiday terms clearly to avoid later arrears disputes.",
+    ],
+    topicOverview: [
+      "Rent holidays are common in commercial property negotiations, especially where a tenant is fitting out premises, facing cash-flow pressure, or negotiating a lease variation. The phrase can cover rent-free periods, deferred rent, staged rent, temporary reductions, or agreed non-payment for a defined period.",
+      "The important question is what the written document actually says. A rent holiday may apply only to principal rent and not to service charge, insurance, utilities, VAT, or repair obligations. It may also be conditional on the tenant not breaching other lease terms.",
+    ],
+    practicalExamples: [
+      "A business taking new premises in Kidderminster may negotiate three months rent-free while fitting out. The lease or side letter should make clear when normal rent starts and whether other payments remain due.",
+      "A tenant in Wyre Forest may agree temporary deferred rent after a trading difficulty. If the agreement does not say whether the rent is waived or repayable later, a dispute can follow.",
+    ],
+    commonProblems: [
+      "Problems arise where the rent holiday is agreed by email but not documented properly, the parties disagree about whether rent is waived or deferred, or the tenant assumes all property costs stop.",
+      "Another issue is failing to check whether a rent holiday affects break clauses, guarantees, rent deposits, lender consent, or future lease negotiations.",
+    ],
+    prepareItems: [
+      "commercial lease",
+      "side letter",
+      "rent holiday emails",
+      "rent account",
+      "service charge demands",
+      "insurance rent demands",
+      "VAT information",
+      "break clause wording if relevant",
+    ],
+    questionItems: [
+      "whether the rent is waived or deferred",
+      "which payments are covered",
+      "whether conditions apply",
+      "whether the agreement affects break clauses or guarantees",
+      "how the terms should be documented",
+    ],
+    localContext:
+      "Rent holiday questions can affect Kidderminster and Wyre Forest businesses taking shops, offices, industrial units, hospitality premises, or other commercial space where cash flow and lease timing are important.",
+    relatedGuideSlugs: [
+      "commercial-landlord-responsibilities",
+      "assigning-subletting-commercial-lease",
+      "protected-lease-explained",
+      "commercial-property-disputes",
+    ],
+    faq: [
+      {
+        question: "Is a rent holiday free rent?",
+        answer:
+          "Not always. It may be a genuine rent-free period, a temporary reduction, or deferred rent that becomes payable later. The written terms matter.",
+      },
+      {
+        question: "Does a rent holiday cover service charge?",
+        answer:
+          "Only if the agreement says so. Many rent holidays relate to principal rent and may not cover service charge, insurance rent, utilities, VAT, or other payments.",
+      },
+      {
+        question: "Should a rent holiday be documented?",
+        answer:
+          "Yes. Clear written terms reduce the risk of later disputes about arrears, repayment, conditions, or what payments were included.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "commercial-property-disputes",
+    title: "Commercial Property Disputes Explained",
+    h1: "Commercial property disputes explained",
+    metaDescription:
+      "General guide to commercial property disputes, lease issues, rent arrears, repairs, service charges, notices, evidence, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-dispute-solicitors-kidderminster",
+    intro:
+      "Commercial property disputes can affect premises, trading, rent, repairs, service charges, lease renewal, break clauses, access, and relationships between landlords and tenants.",
+    keyTakeaways: [
+      "The lease, notices, correspondence, invoices, photographs, and payment history are usually central to a commercial property dispute.",
+      "Early document review can help clarify whether the issue is about lease wording, evidence, negotiation, arrears, repair obligations, or formal process.",
+      "Business owners should consider proportionality because property disputes can consume management time as well as legal cost.",
+    ],
+    topicOverview: [
+      "Commercial property disputes may involve landlords, tenants, guarantors, managing agents, neighbouring owners, buyers, sellers, lenders, or business partners. Common issues include rent arrears, service charge disputes, dilapidations, repair obligations, break clause conditions, renewal terms, forfeiture, access, assignment, subletting, and boundary or rights of way problems.",
+      "A solicitor may need to review the lease and related documents before assessing options. The practical route may include negotiation, formal correspondence, mediation, court proceedings, or tactical steps connected to lease renewal or exit.",
+    ],
+    practicalExamples: [
+      "A Kidderminster tenant may dispute a large service charge demand for shared premises. The lease, accounts, invoices, budget, and past correspondence may all matter.",
+      "A Wyre Forest landlord may say a tenant has failed to keep a unit in repair before leaving. The schedule of condition, photographs, surveyor evidence, lease wording, and exit correspondence can become important.",
+    ],
+    commonProblems: [
+      "Problems arise where parties act before checking the lease, serve notices without confirming requirements, fail to preserve evidence, or treat commercial lease issues as if they were residential tenancy disputes.",
+      "Another common issue is leaving the dispute until a lease renewal, break date, or possession deadline is close. Timing can materially affect options.",
+    ],
+    prepareItems: [
+      "commercial lease",
+      "notices",
+      "rent account",
+      "service charge documents",
+      "repair photographs",
+      "surveyor reports",
+      "correspondence",
+      "timeline",
+      "desired commercial outcome",
+    ],
+    questionItems: [
+      "what the lease says about the dispute",
+      "whether any notice or break deadline applies",
+      "what evidence should be preserved",
+      "whether negotiation is realistic",
+      "whether the likely cost is proportionate to the business aim",
+    ],
+    localContext:
+      "Commercial property disputes around Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Wyre Forest may involve retail premises, industrial units, offices, hospitality sites, workshops, and mixed-use property.",
+    relatedGuideSlugs: [
+      "commercial-landlord-responsibilities",
+      "assigning-subletting-commercial-lease",
+      "protected-lease-explained",
+      "rent-holiday-meaning",
+    ],
+    faq: [
+      {
+        question: "What documents are useful in a commercial property dispute?",
+        answer:
+          "Useful documents include the lease, notices, rent statements, service charge records, photographs, surveyor reports, correspondence, and any side letters or guarantees.",
+      },
+      {
+        question: "Are commercial property disputes always court matters?",
+        answer:
+          "No. Many disputes are first handled through document review, correspondence, negotiation, or mediation. Court may be one possible route depending on the facts.",
+      },
+      {
+        question: "Can this site advise on a lease dispute?",
+        answer:
+          "No. This website does not provide legal advice. It can help users request a no obligation introduction to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "debt-recovery-fees-explained",
+    title: "Debt Recovery Fees Explained",
+    h1: "Debt recovery fees explained",
+    metaDescription:
+      "General guide to debt recovery fees, fixed fees, hourly rates, court fees, interest, late payment costs, enforcement, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "debt-recovery-solicitors-kidderminster",
+    intro:
+      "Debt recovery fees can depend on whether the debt is disputed, the amount owed, the debtor type, the evidence available, and whether the matter needs letters, a court claim, or enforcement.",
+    keyTakeaways: [
+      "Compare the full recovery route, not just the first letter fee.",
+      "Costs may include solicitor fees, court fees, process steps, enforcement costs, and internal time spent gathering evidence.",
+      "For business debts, statutory interest and fixed late-payment compensation may be relevant in some commercial situations, but the documents and facts matter.",
+    ],
+    topicOverview: [
+      "Debt recovery may be priced as a fixed-fee letter, staged fixed fees, hourly work, or a bespoke quote for disputed or higher-value matters. A straightforward undisputed invoice is different from a contested contractual dispute, insolvent debtor, cross-claim, or enforcement problem.",
+      "Court fees and enforcement costs are separate from solicitor fees. A claim may also need pre-action correspondence, evidence preparation, issue fees, hearing fees, judgment steps, and enforcement decisions if payment is still not made.",
+    ],
+    practicalExamples: [
+      "A Kidderminster supplier may want a solicitor letter for an unpaid invoice. If the debtor accepts the debt and pays quickly, the route may be relatively contained.",
+      "A Wyre Forest business may face a debtor saying the work was defective. That is no longer just collection; it may become a contract dispute requiring evidence review and a more detailed fee discussion.",
+    ],
+    commonProblems: [
+      "Problems arise when businesses compare only the cheapest first letter without asking what happens if the debtor disputes, ignores the letter, or has no assets.",
+      "Another issue is assuming all costs will be recovered from the debtor. Recovery of costs can depend on the route, claim value, agreement, court rules, and practical ability to collect.",
+    ],
+    prepareItems: [
+      "invoices",
+      "contract or terms",
+      "purchase order",
+      "proof of delivery or work",
+      "statement of account",
+      "payment reminders",
+      "debtor details",
+      "any dispute response",
+    ],
+    questionItems: [
+      "what the first stage costs",
+      "what happens if the debt is disputed",
+      "what court or enforcement fees may apply",
+      "whether interest or late-payment costs may be relevant",
+      "whether recovery is commercially proportionate",
+    ],
+    localContext:
+      "Businesses and landlords in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Wyre Forest may need to weigh debt value, customer relationship, evidence strength, and debtor solvency before spending money on recovery.",
+    relatedGuideSlugs: [
+      "collecting-business-debt",
+      "letter-before-action-small-claims",
+      "part-payment-of-debt",
+      "enforce-ccj-against-company",
+    ],
+    faq: [
+      {
+        question: "Can debt recovery be fixed fee?",
+        answer:
+          "Some early stages may be fixed fee, especially for straightforward undisputed debts. Disputed matters, court steps, or enforcement may need different pricing.",
+      },
+      {
+        question: "Are court fees included in solicitor fees?",
+        answer:
+          "Usually court fees are separate disbursements. Ask for a full breakdown of solicitor fees, court fees, VAT, and possible enforcement costs.",
+      },
+      {
+        question: "Can I recover interest on a business debt?",
+        answer:
+          "Interest or late-payment compensation may be relevant in some commercial debts, but it depends on the contract, parties, and facts. A solicitor can review the position.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "part-payment-of-debt",
+    title: "Part Payment of Debt Explained",
+    h1: "Part payment of debt explained",
+    metaDescription:
+      "General guide to part payment of debt, payment plans, settlement wording, evidence, limitation, business debts, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "debt-recovery-solicitors-kidderminster",
+    intro:
+      "Part payment of a debt can be helpful, but it can also create confusion if the parties do not record whether the payment is a payment on account, a full settlement, or part of a payment plan.",
+    keyTakeaways: [
+      "Record what a part payment means before accepting or making it.",
+      "Payment plan terms should cover amount, dates, default consequences, interest, and whether rights are reserved.",
+      "Part payment can affect evidence and limitation questions, so dates and wording matter.",
+    ],
+    topicOverview: [
+      "A debtor may offer part payment because cash flow is tight, the debt is disputed, or they want time to pay. A creditor may accept part payment to reduce exposure or maintain a business relationship. The risk is ambiguity.",
+      "A clear record should explain whether the creditor is accepting the payment only as part of the debt, whether the balance remains due, whether a settlement is full and final, and what happens if the debtor misses future instalments.",
+    ],
+    practicalExamples: [
+      "A Kidderminster business owed several invoices may accept a partial payment while chasing the balance. A short written note reserving the right to pursue the remaining debt can avoid later argument.",
+      "A Wyre Forest customer may offer a reduced lump sum in full and final settlement. The creditor should understand the commercial effect before agreeing wording.",
+    ],
+    commonProblems: [
+      "Problems arise where payment is accepted without written terms, emails use unclear phrases, or both sides later disagree about whether the balance was waived.",
+      "Another issue is failing to check whether a payment plan is realistic. If the debtor defaults quickly, the creditor may have lost time without improving recovery prospects.",
+    ],
+    prepareItems: [
+      "invoice history",
+      "payment records",
+      "settlement emails",
+      "proposed payment plan",
+      "contract terms",
+      "debtor details",
+      "balance calculation",
+      "any admission or dispute wording",
+    ],
+    questionItems: [
+      "whether wording protects the right to pursue the balance",
+      "whether a full and final settlement is intended",
+      "what happens if instalments are missed",
+      "whether interest or costs continue",
+      "whether limitation or evidence issues are affected",
+    ],
+    localContext:
+      "Part-payment arrangements can affect local suppliers, trades, landlords, small businesses, and service providers across Kidderminster and Wyre Forest where maintaining relationships and cash flow both matter.",
+    relatedGuideSlugs: [
+      "debt-recovery-fees-explained",
+      "collecting-business-debt",
+      "letter-before-action-small-claims",
+      "enforce-ccj-against-company",
+    ],
+    faq: [
+      {
+        question: "Does accepting part payment mean I cannot chase the rest?",
+        answer:
+          "Not necessarily, but the wording and circumstances matter. Record clearly whether the payment is accepted on account or as full and final settlement.",
+      },
+      {
+        question: "Should a payment plan be written down?",
+        answer:
+          "Yes. It should cover payment dates, amounts, what happens on default, whether interest or costs continue, and whether the balance remains due.",
+      },
+      {
+        question: "Can part payment help prove a debt?",
+        answer:
+          "It may be relevant evidence, but the effect depends on the facts and wording. Keep payment records and correspondence carefully.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "collecting-business-debt",
+    title: "Collecting Business Debt",
+    h1: "Collecting business debt",
+    metaDescription:
+      "Practical general guide to collecting business debt, evidence, reminders, letters before action, court claims, enforcement, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "debt-recovery-solicitors-kidderminster",
+    intro:
+      "Collecting business debt is usually easier when invoices, terms, delivery evidence, reminders, and debtor details are organised before formal steps are taken.",
+    keyTakeaways: [
+      "Start by confirming who owes the money, what agreement supports the debt, and whether the debt is disputed.",
+      "A structured process may include reminders, a formal letter before action, a court claim, and enforcement if judgment remains unpaid.",
+      "Commercial recovery should be proportionate. The cost, time, debtor solvency, and business relationship all matter.",
+    ],
+    topicOverview: [
+      "Business debt collection can involve unpaid invoices, late payment, disputed work, cancelled contracts, rent arrears, retained deposits, or unpaid goods and services. The strongest starting point is a clear paper trail showing what was agreed, delivered, invoiced, and chased.",
+      "Before escalating, identify the debtor correctly. A trading name, sole trader, partnership, limited company, or individual guarantor can change who should be contacted or named in any claim.",
+    ],
+    practicalExamples: [
+      "A Kidderminster contractor may have completed work for a limited company that has ignored reminders. The invoice, signed quote, delivery evidence, and company details should be checked before escalation.",
+      "A Wyre Forest supplier may have a long-standing customer who has fallen behind. The business may prefer a payment plan, but the terms should be clear if the relationship is to continue.",
+    ],
+    commonProblems: [
+      "Problems arise where invoices do not match the contract, the debtor entity is wrong, evidence of delivery is weak, or the creditor sends aggressive messages that distract from the evidence.",
+      "Another issue is spending more to pursue the debt than the debt is worth. Ask about proportionality, recovery prospects, and enforcement before committing to a route.",
+    ],
+    prepareItems: [
+      "contract or order",
+      "terms and conditions",
+      "invoices",
+      "proof of work or delivery",
+      "payment reminders",
+      "debtor company details",
+      "statement of account",
+      "any dispute or complaint",
+    ],
+    questionItems: [
+      "whether the debtor has been identified correctly",
+      "whether a letter before action is needed",
+      "whether interest or compensation may be claimed",
+      "what happens if the debt is disputed",
+      "whether enforcement is realistic if judgment is obtained",
+    ],
+    localContext:
+      "Kidderminster and Wyre Forest businesses may need to recover debts from local customers, regional trading partners, tenants, suppliers, or limited companies while protecting cash flow and commercial relationships.",
+    relatedGuideSlugs: [
+      "debt-recovery-fees-explained",
+      "part-payment-of-debt",
+      "letter-before-action-small-claims",
+      "enforce-ccj-against-company",
+    ],
+    faq: [
+      {
+        question: "What is the first step in collecting a business debt?",
+        answer:
+          "Confirm the debtor, evidence, amount owed, due date, and whether the debt is disputed. A clear reminder or formal letter may then be appropriate.",
+      },
+      {
+        question: "Do all unpaid invoices need court action?",
+        answer:
+          "No. Some are resolved by reminders, negotiation, payment plans, or formal letters. Court may be considered where informal steps fail and the route is proportionate.",
+      },
+      {
+        question: "What if the debtor says the work was defective?",
+        answer:
+          "That may turn the matter into a wider contract dispute. Keep the complaint, evidence of work, communications, and any inspection records.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "enforce-ccj-against-company",
+    title: "How to Enforce a CCJ Against a Company",
+    h1: "How to enforce a CCJ against a company",
+    metaDescription:
+      "General guide to enforcing a CCJ against a limited company, enforcement options, company checks, evidence, risks, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "debt-recovery-solicitors-kidderminster",
+    intro:
+      "Getting a County Court Judgment against a company does not automatically mean payment. Enforcement is a separate decision based on the debtor company's assets, trading status, and likely recovery prospects.",
+    keyTakeaways: [
+      "Before enforcing, check whether the company is still trading, has assets, is insolvent, or has already ignored other debts.",
+      "Possible enforcement routes may include court enforcement officers, third party debt orders, charging orders, insolvency-related steps, or other procedures depending on the facts.",
+      "The right route should be proportionate to the debt size, evidence, cost, urgency, and chance of recovery.",
+    ],
+    topicOverview: [
+      "A CCJ confirms that a judgment debt is owed, but the creditor may still need to choose an enforcement route. The suitable route depends on what is known about the company: bank accounts, premises, vehicles, assets, customers, property, trading status, or insolvency risk.",
+      "Company enforcement differs from enforcing against an individual. Wages-based routes, for example, are not relevant to a limited company. The company number, registered office, trading address, and asset position can all matter.",
+    ],
+    practicalExamples: [
+      "A Kidderminster business may have judgment against a limited company that continues to trade from a known premises. A solicitor may discuss proportionate enforcement routes and whether further information is needed.",
+      "A Wyre Forest supplier may have a judgment against a company that appears dormant or insolvent. The commercial question becomes whether enforcement spend is likely to recover anything.",
+    ],
+    commonProblems: [
+      "Problems arise where creditors assume judgment guarantees payment, enforce against the wrong entity, or spend more on enforcement without checking whether the company has assets.",
+      "Another issue is delay. If a company is struggling financially, other creditors may also be acting. Timing and insolvency information can affect strategy.",
+    ],
+    prepareItems: [
+      "judgment order",
+      "claim number",
+      "company name and number",
+      "registered office",
+      "trading address",
+      "known assets",
+      "payment history",
+      "previous enforcement steps",
+      "Companies House information",
+    ],
+    questionItems: [
+      "which enforcement route is proportionate",
+      "whether the company appears solvent",
+      "what information is missing",
+      "what fees apply to enforcement",
+      "what happens if enforcement fails",
+    ],
+    localContext:
+      "A CCJ enforcement enquiry in Kidderminster or Wyre Forest may involve local trading premises, known vehicles, supplier relationships, commercial landlords, or companies operating across Worcestershire and the West Midlands.",
+    relatedGuideSlugs: [
+      "collecting-business-debt",
+      "debt-recovery-fees-explained",
+      "letter-before-action-small-claims",
+      "part-payment-of-debt",
+    ],
+    faq: [
+      {
+        question: "Does a CCJ make a company pay automatically?",
+        answer:
+          "No. A judgment confirms the debt, but payment may still require enforcement or negotiation if the company does not pay voluntarily.",
+      },
+      {
+        question: "Can you enforce against company directors personally?",
+        answer:
+          "Usually company debts belong to the company, not directors personally, unless there is a separate basis such as a personal guarantee or other legal route. A solicitor would need to review the facts.",
+      },
+      {
+        question: "What should I check before enforcement?",
+        answer:
+          "Check the company name and number, judgment details, trading status, assets, addresses, and whether the company appears solvent enough to justify enforcement cost.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "letter-before-action-small-claims",
+    title: "Letter Before Action for Small Claims",
+    h1: "Letter before action for small claims",
+    metaDescription:
+      "General guide to letters before action for small claims, what to include, evidence, deadlines, proportionality, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "debt-recovery-solicitors-kidderminster",
+    intro:
+      "A letter before action is a formal warning sent before starting a court claim. For small claims and debt disputes, it should be clear, factual, proportionate, and supported by evidence.",
+    keyTakeaways: [
+      "A letter before action should usually identify the parties, amount claimed, basis of the claim, evidence, deadline for response, and intended next step.",
+      "The wording should be measured. Threatening or inaccurate letters can make a dispute harder to resolve.",
+      "If the recipient is an individual, sole trader, or consumer, extra care may be needed around pre-action process and information.",
+    ],
+    topicOverview: [
+      "A letter before action gives the other party a chance to respond, pay, provide documents, or explain why the claim is disputed before proceedings are started. It can also help show that the claimant tried to resolve matters sensibly.",
+      "For unpaid invoices, the letter should normally explain the agreement, work or goods supplied, invoice numbers, amount due, due date, previous reminders, and what will happen if there is no response. The exact requirements can depend on the type of claim and parties involved.",
+    ],
+    practicalExamples: [
+      "A Kidderminster business may send a formal letter before action after several ignored invoice reminders. The letter should attach or refer to the invoice and give a clear deadline.",
+      "A Wyre Forest landlord or supplier may face a disputed debt. The letter should avoid overstating the position and should invite a substantive response rather than simply demanding payment without evidence.",
+    ],
+    commonProblems: [
+      "Problems arise where letters are vague, name the wrong debtor, demand the wrong amount, ignore dispute correspondence, or fail to attach key documents.",
+      "Another issue is using aggressive template wording that does not fit the facts. A strong letter is usually clear and evidenced, not theatrical.",
+    ],
+    prepareItems: [
+      "contract or order",
+      "invoice numbers",
+      "amount claimed",
+      "payment due date",
+      "evidence of work or delivery",
+      "previous reminders",
+      "debtor address",
+      "any dispute correspondence",
+    ],
+    questionItems: [
+      "what should be included in the letter",
+      "what response deadline is appropriate",
+      "whether the debtor has been identified correctly",
+      "what evidence should be attached",
+      "what happens if the letter is ignored",
+    ],
+    localContext:
+      "Small business debt, supplier disputes, contractor invoices, and landlord payment disputes can arise across Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area.",
+    relatedGuideSlugs: [
+      "collecting-business-debt",
+      "debt-recovery-fees-explained",
+      "part-payment-of-debt",
+      "enforce-ccj-against-company",
+    ],
+    faq: [
+      {
+        question: "Is a letter before action required before a small claim?",
+        answer:
+          "Pre-action steps are generally expected before court proceedings. The right process depends on the type of claim and parties involved, so check before issuing.",
+      },
+      {
+        question: "How long should a letter before action give for response?",
+        answer:
+          "The appropriate deadline depends on the matter and applicable process. It should be realistic and clearly stated in the letter.",
+      },
+      {
+        question: "Can a solicitor write a letter before action?",
+        answer:
+          "Yes. A solicitor may help draft or send a formal letter, especially where the debt is disputed, evidence is complex, or the next step may be court action.",
       },
     ],
   }),
