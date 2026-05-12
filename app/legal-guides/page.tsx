@@ -6,14 +6,16 @@ import { SiteHeader } from "../../components/SiteHeader";
 import {
   baseUrl,
   buildGuidePath,
-  coreServiceSlugs,
-  guidePages,
+  buildPagePath,
+  getGuidesForCategoryGroup,
+  guideCategoryGroups,
   servicePages,
 } from "../../lib/site";
 
-const guideHubServices = coreServiceSlugs
-  .slice(0, 4)
-  .map((slug) => servicePages.find((service) => service.slug === slug))
+const guideHubServices = guideCategoryGroups
+  .map((group) =>
+    servicePages.find((service) => service.slug === group.serviceSlugs[0]),
+  )
   .filter((service): service is (typeof servicePages)[number] =>
     Boolean(service),
   );
@@ -32,13 +34,6 @@ export const metadata: Metadata = {
     url: `${baseUrl}/legal-guides/`,
   },
 };
-
-const guideGroups = [
-  "Conveyancing",
-  "Probate and Wills",
-  "Family and Divorce",
-  "Employment",
-];
 
 export default function LegalGuidesPage() {
   return (
@@ -83,8 +78,15 @@ export default function LegalGuidesPage() {
       <section className="bg-white px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8">
-            {guideGroups.map((group) => {
-              const guides = guidePages.filter((guide) => guide.category === group);
+            {guideCategoryGroups.map((group) => {
+              const guides = getGuidesForCategoryGroup(group);
+              const services = group.serviceSlugs
+                .map((slug) =>
+                  servicePages.find((service) => service.slug === slug),
+                )
+                .filter((service): service is (typeof servicePages)[number] =>
+                  Boolean(service),
+                );
 
               if (!guides.length) {
                 return null;
@@ -92,16 +94,40 @@ export default function LegalGuidesPage() {
 
               return (
                 <section
-                  key={group}
+                  key={group.title}
                   className="rounded-[2rem] border border-[var(--border)] bg-[var(--pale-blue)] p-5 shadow-[0_22px_70px_rgba(7,24,39,0.06)] sm:p-7"
                 >
-                  <div className="flex items-center gap-3">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-[var(--mid-blue)] shadow-sm">
-                      <BookOpen className="h-5 w-5" aria-hidden />
-                    </span>
-                    <h2 className="text-3xl font-extrabold text-[var(--navy)]">
-                      {group}
-                    </h2>
+                  <div className="grid gap-5 lg:grid-cols-[1fr_0.9fr] lg:items-start">
+                    <div className="flex gap-3">
+                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white text-[var(--mid-blue)] shadow-sm">
+                        <BookOpen className="h-5 w-5" aria-hidden />
+                      </span>
+                      <div>
+                        <h2 className="text-3xl font-extrabold text-[var(--navy)]">
+                          {group.title}
+                        </h2>
+                        <p className="mt-3 max-w-3xl text-sm leading-6 text-[var(--muted)]">
+                          {group.description}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="rounded-2xl border border-white/80 bg-white/70 p-4">
+                      <p className="text-xs font-extrabold uppercase text-[var(--gold)]">
+                        Related services
+                      </p>
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {services.map((service) => (
+                          <Link
+                            key={service.slug}
+                            href={buildPagePath(service)}
+                            className="rounded-full border border-[var(--border)] bg-white px-3 py-2 text-xs font-extrabold uppercase text-[var(--trust-blue)] transition hover:border-[var(--mid-blue)] hover:bg-[var(--cream)]"
+                          >
+                            {service.category}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
                   </div>
 
                   <div className="mt-6 grid gap-4 md:grid-cols-2">

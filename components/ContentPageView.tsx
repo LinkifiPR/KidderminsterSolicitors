@@ -4,6 +4,9 @@ import { SiteHeader } from "./SiteHeader";
 import {
   buildFaqSchema,
   buildGuidePath,
+  buildPagePath,
+  getMoreGuidesInCategory,
+  getRelatedServicesForPage,
   guidePages,
   servicePages,
   type SitePage,
@@ -69,6 +72,8 @@ export function ContentPageView({ page }: { page: SitePage }) {
   const isService = page.type === "service";
   const isGuide = page.type === "guide";
   const hasQuoteForm = isService || page.slug === "contact";
+  const relatedServiceLinks =
+    page.type !== "trust" ? getRelatedServicesForPage(page) : [];
   const relatedService =
     isGuide && servicePages.find((service) => service.slug === page.relatedServiceSlug);
   const relatedGuides = isGuide
@@ -76,6 +81,7 @@ export function ContentPageView({ page }: { page: SitePage }) {
         .map((guideSlug) => guidePages.find((guide) => guide.slug === guideSlug))
         .filter((guide): guide is (typeof guidePages)[number] => Boolean(guide))
     : [];
+  const moreGuidesInTopic = isGuide ? getMoreGuidesInCategory(page) : [];
   const relatedServiceGuides = isService
     ? (page.relatedGuideSlugs ?? [])
         .map((guideSlug) => guidePages.find((guide) => guide.slug === guideSlug))
@@ -254,6 +260,38 @@ export function ContentPageView({ page }: { page: SitePage }) {
             </section>
           ) : null}
 
+          {relatedServiceLinks.length ? (
+            <section className="bg-[var(--pale-blue)] px-5 py-20 sm:px-8">
+              <div className="mx-auto max-w-7xl">
+                <p className="text-sm font-semibold uppercase text-[var(--gold)]">
+                  Related solicitor services
+                </p>
+                <h2 className="mt-3 max-w-3xl text-4xl font-semibold text-[var(--navy)]">
+                  Compare connected legal support in Kidderminster.
+                </h2>
+                <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                  {relatedServiceLinks.map((service) => (
+                    <a
+                      key={service.slug}
+                      href={buildPagePath(service)}
+                      className="rounded-2xl border border-[var(--border)] bg-white p-6 transition hover:-translate-y-1 hover:border-[var(--mid-blue)] hover:shadow-[0_18px_45px_rgba(7,24,39,0.1)]"
+                    >
+                      <p className="text-xs font-extrabold uppercase text-[var(--gold)]">
+                        {service.category}
+                      </p>
+                      <h3 className="mt-3 text-xl font-extrabold leading-7 text-[var(--navy)]">
+                        {service.h1}
+                      </h3>
+                      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
+                        {service.summary}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </section>
+          ) : null}
+
           <section className="bg-white px-5 py-20 sm:px-8">
             <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.85fr]">
               <div>
@@ -336,6 +374,27 @@ export function ContentPageView({ page }: { page: SitePage }) {
                       Compare {relatedService.category}
                     </a>
                   ) : null}
+                  {relatedServiceLinks.length ? (
+                    <div className="mt-6 rounded-3xl border border-white/70 bg-white/70 p-4">
+                      <p className="text-xs font-extrabold uppercase text-[var(--gold)]">
+                        Related services
+                      </p>
+                      <nav
+                        aria-label="Related solicitor services"
+                        className="mt-3 grid gap-2"
+                      >
+                        {relatedServiceLinks.map((service) => (
+                          <a
+                            key={service.slug}
+                            href={buildPagePath(service)}
+                            className="rounded-2xl border border-[var(--border)] bg-white px-4 py-3 text-sm font-semibold leading-6 text-[var(--trust-blue)] transition hover:border-[var(--mid-blue)] hover:bg-[var(--cream)]"
+                          >
+                            {service.category}
+                          </a>
+                        ))}
+                      </nav>
+                    </div>
+                  ) : null}
                 </div>
               </aside>
 
@@ -386,6 +445,33 @@ export function ContentPageView({ page }: { page: SitePage }) {
                           key={guide.slug}
                           href={buildGuidePath(guide.slug)}
                           className="rounded-2xl border border-[var(--border)] bg-[var(--pale-blue)] p-5 transition hover:-translate-y-1 hover:border-[var(--mid-blue)] hover:bg-white hover:shadow-[0_18px_45px_rgba(7,24,39,0.1)]"
+                        >
+                          <p className="text-xs font-extrabold uppercase text-[var(--gold)]">
+                            {guide.category}
+                          </p>
+                          <h3 className="mt-2 text-lg font-extrabold leading-6 text-[var(--navy)]">
+                            {guide.h1}
+                          </h3>
+                          <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
+                            {guide.metaDescription}
+                          </p>
+                        </a>
+                      ))}
+                    </div>
+                  </section>
+                ) : null}
+
+                {moreGuidesInTopic.length ? (
+                  <section className="mt-12 border-t border-[var(--border)] pt-10">
+                    <h2 className="text-3xl font-extrabold text-[var(--navy)]">
+                      More guides in this topic
+                    </h2>
+                    <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                      {moreGuidesInTopic.map((guide) => (
+                        <a
+                          key={guide.slug}
+                          href={buildGuidePath(guide.slug)}
+                          className="rounded-2xl border border-[var(--border)] bg-white p-5 transition hover:-translate-y-1 hover:border-[var(--mid-blue)] hover:bg-[var(--pale-blue)] hover:shadow-[0_18px_45px_rgba(7,24,39,0.1)]"
                         >
                           <p className="text-xs font-extrabold uppercase text-[var(--gold)]">
                             {guide.category}

@@ -17,6 +17,85 @@ export const coreServiceSlugs = [
   "commercial-solicitors-kidderminster",
 ] as const;
 
+export const guideCategoryGroups = [
+  {
+    title: "Conveyancing and property",
+    description:
+      "Property buying, selling, remortgaging, searches, leasehold issues, and conveyancing quote research.",
+    categories: ["Conveyancing"],
+    serviceSlugs: [
+      "conveyancing-solicitors-kidderminster",
+      "conveyancing-quotes-kidderminster",
+      "remortgage-solicitors-kidderminster",
+      "land-property-disputes-solicitors-kidderminster",
+    ],
+  },
+  {
+    title: "Probate, wills and later-life planning",
+    description:
+      "Probate, wills, inheritance, lasting power of attorney, contested estates, and later-life planning topics.",
+    categories: ["Probate and Wills"],
+    serviceSlugs: [
+      "probate-solicitors-kidderminster",
+      "wills-solicitors-kidderminster",
+      "solicitor-for-wills-near-me-kidderminster",
+      "lasting-power-of-attorney-solicitors-kidderminster",
+      "contested-probate-solicitors-kidderminster",
+      "will-disputes-solicitors-kidderminster",
+      "elderly-care-solicitors-kidderminster",
+    ],
+  },
+  {
+    title: "Family law and divorce",
+    description:
+      "Divorce, separation, child arrangements, cohabitation, mediation, and family law preparation guides.",
+    categories: ["Family and Divorce"],
+    serviceSlugs: [
+      "family-law-solicitors-kidderminster",
+      "divorce-solicitors-kidderminster",
+      "divorce-separation-solicitors-kidderminster",
+      "child-law-solicitors-kidderminster",
+    ],
+  },
+  {
+    title: "Employment law",
+    description:
+      "Settlement agreements, redundancy, dismissal, wages, workplace rights, grievances, and employment status.",
+    categories: ["Employment"],
+    serviceSlugs: [
+      "employment-solicitors-kidderminster",
+      "settlement-agreement-solicitors-kidderminster",
+      "redundancy-solicitors-kidderminster",
+      "constructive-dismissal-solicitors-kidderminster",
+    ],
+  },
+  {
+    title: "Commercial, debt, landlord and tenant",
+    description:
+      "Business, commercial property, debt recovery, landlord and tenant, shareholder, contract, and lease guides.",
+    categories: ["Commercial, Debt, Landlord and Tenant"],
+    serviceSlugs: [
+      "commercial-solicitors-kidderminster",
+      "commercial-dispute-solicitors-kidderminster",
+      "commercial-property-solicitors-kidderminster",
+      "commercial-landlord-tenant-disputes-kidderminster",
+      "debt-recovery-solicitors-kidderminster",
+      "landlord-tenant-solicitors-kidderminster",
+    ],
+  },
+  {
+    title: "Personal injury and negligence",
+    description:
+      "Accident, injury, no win no fee, workplace injury, pedestrian accident, and clinical negligence guides.",
+    categories: ["Personal Injury and Negligence"],
+    serviceSlugs: [
+      "personal-injury-solicitors-kidderminster",
+      "accident-injury-solicitors-kidderminster",
+      "medical-negligence-solicitors-kidderminster",
+    ],
+  },
+] as const;
+
 export type Faq = {
   question: string;
   answer: string;
@@ -10056,6 +10135,50 @@ export function buildPagePath(page: SitePage) {
 
 export function buildGuidePath(slug: string) {
   return `/legal-guides/${slug}/`;
+}
+
+export function getGuidesForCategoryGroup(
+  group: (typeof guideCategoryGroups)[number],
+) {
+  return guidePages.filter((guide) =>
+    (group.categories as readonly string[]).includes(guide.category),
+  );
+}
+
+function getServiceClusterForSlug(slug: string) {
+  return guideCategoryGroups.find((group) =>
+    (group.serviceSlugs as readonly string[]).includes(slug),
+  );
+}
+
+export function getRelatedServicesForPage(
+  page: ServicePage | GuidePage,
+  limit = 4,
+) {
+  const sourceServiceSlug =
+    page.type === "guide" ? page.relatedServiceSlug : page.slug;
+  const cluster = getServiceClusterForSlug(sourceServiceSlug);
+
+  if (!cluster) {
+    return [];
+  }
+
+  return cluster.serviceSlugs
+    .filter((slug) => slug !== sourceServiceSlug)
+    .map((slug) => servicePages.find((service) => service.slug === slug))
+    .filter((service): service is ServicePage => Boolean(service))
+    .slice(0, limit);
+}
+
+export function getMoreGuidesInCategory(page: GuidePage, limit = 4) {
+  const excludedSlugs = new Set([page.slug, ...page.relatedGuideSlugs]);
+
+  return guidePages
+    .filter(
+      (guide) =>
+        guide.category === page.category && !excludedSlugs.has(guide.slug),
+    )
+    .slice(0, limit);
 }
 
 export function getAllPageSlugs() {

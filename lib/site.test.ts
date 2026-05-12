@@ -5,7 +5,11 @@ import {
   coreServiceSlugs,
   getAllPageSlugs,
   getDynamicPageSlugs,
+  getGuidesForCategoryGroup,
+  getMoreGuidesInCategory,
+  getRelatedServicesForPage,
   getRootPageSlugs,
+  guideCategoryGroups,
   guideOrganizationSchema,
   guidePages,
   phaseOneServiceSlugs,
@@ -76,6 +80,51 @@ describe("site content model", () => {
     expect(getAllPageSlugs()).toContain("legal-guides");
     expect(getDynamicPageSlugs()).not.toContain("legal-guides");
     expect(getRootPageSlugs()).not.toContain("what-does-a-conveyancing-solicitor-do");
+  });
+
+  it("gives every guide category a hub group and cluster service links", () => {
+    const guideCategories = new Set(guidePages.map((page) => page.category));
+    const groupedCategories = new Set<string>(
+      guideCategoryGroups.flatMap((group) => group.categories),
+    );
+    const serviceSlugs = new Set(servicePages.map((page) => page.slug));
+
+    expect(
+      [...guideCategories].filter((category) => !groupedCategories.has(category)),
+    ).toEqual([]);
+
+    guideCategoryGroups.forEach((group) => {
+      expect(getGuidesForCategoryGroup(group).length).toBeGreaterThan(0);
+      group.serviceSlugs.forEach((slug) => {
+        expect(serviceSlugs.has(slug)).toBe(true);
+      });
+    });
+  });
+
+  it("connects guides to money pages, sibling guides, and adjacent services", () => {
+    const serviceSlugs = new Set(servicePages.map((page) => page.slug));
+
+    guidePages.forEach((page) => {
+      expect(serviceSlugs.has(page.relatedServiceSlug)).toBe(true);
+
+      getRelatedServicesForPage(page).forEach((service) => {
+        expect(service.slug).not.toBe(page.relatedServiceSlug);
+        expect(serviceSlugs.has(service.slug)).toBe(true);
+      });
+
+      getMoreGuidesInCategory(page).forEach((guide) => {
+        expect(guide.slug).not.toBe(page.slug);
+        expect(page.relatedGuideSlugs).not.toContain(guide.slug);
+        expect(guide.category).toBe(page.category);
+      });
+    });
+
+    servicePages.forEach((page) => {
+      getRelatedServicesForPage(page).forEach((service) => {
+        expect(service.slug).not.toBe(page.slug);
+        expect(serviceSlugs.has(service.slug)).toBe(true);
+      });
+    });
   });
 
   it("includes the next commercial service pages and guide content cluster", () => {
