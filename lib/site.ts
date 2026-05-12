@@ -1664,8 +1664,8 @@ export const servicePages: ServicePage[] = [
       },
     ],
     relatedGuideSlugs: [
+      "commercial-landlord-responsibilities",
       "settlement-agreements-explained",
-      "when-should-you-speak-to-an-employment-solicitor",
     ],
     comparisonPoints: [
       "Ask whether the firm has experience with businesses of your size and sector.",
@@ -1690,6 +1690,141 @@ export const servicePages: ServicePage[] = [
       },
     ],
   },
+  createSpecialistServicePage({
+    slug: "commercial-dispute-solicitors-kidderminster",
+    title: "Commercial Dispute Solicitors Kidderminster",
+    h1: "Commercial dispute solicitors in Kidderminster",
+    metaDescription:
+      "Compare commercial dispute solicitor options in Kidderminster for contract disputes, unpaid invoices, shareholder issues, and business disagreements.",
+    category: "Commercial Disputes",
+    summary:
+      "Support comparing solicitor options for business disputes, contract disagreements, debt issues, shareholder concerns, and commercial correspondence.",
+    userNeed:
+      "Commercial dispute enquiries often begin when a business is owed money, receives a threatening letter, has a contract disagreement, or needs to understand options before a relationship breaks down further.",
+    serviceScope: [
+      "A commercial dispute solicitor may help review contract wording, correspondence, evidence, invoices, payment history, shareholder or director documents, settlement options, and possible court or pre-action steps.",
+      "The right approach depends on the value, urgency, documents, relationship between the parties, and whether the commercial aim is payment, performance, exit, negotiation, or defence.",
+    ],
+    localContext:
+      "Kidderminster and Wyre Forest businesses may face disputes involving suppliers, customers, contractors, landlords, tenants, directors, shareholders, or regional trading partners across Worcestershire and the West Midlands.",
+    prepareItems: [
+      "contract or terms",
+      "invoices",
+      "correspondence",
+      "timeline",
+      "amount in dispute",
+      "names of other parties",
+      "any deadline",
+      "desired commercial outcome",
+    ],
+    questionItems: [
+      "whether the matter needs urgent response",
+      "what evidence should be organised first",
+      "whether early settlement is realistic",
+      "what costs and stages may apply",
+      "whether the firm handles disputes of this value",
+    ],
+    riskItems: [
+      "Commercial disputes can become harder where a business sends heated emails, misses response deadlines, loses evidence, ignores contract notice provisions, or starts proceedings without understanding cost and proportionality.",
+      "Another common problem is pursuing a point of principle without checking whether the likely cost, management time, and commercial relationship justify the route being considered.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-landlord-responsibilities",
+      "settlement-agreements-explained",
+      "workplace-grievance-process",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "commercial-property-solicitors-kidderminster",
+    title: "Commercial Property Solicitors Kidderminster",
+    h1: "Commercial property solicitors in Kidderminster",
+    metaDescription:
+      "Compare commercial property solicitor options in Kidderminster for leases, premises, business property transactions, and landlord or tenant enquiries.",
+    category: "Commercial Property",
+    summary:
+      "Support comparing solicitor options for commercial leases, business premises, property purchases, sales, and lease-related documents.",
+    userNeed:
+      "Commercial property enquiries often arise when a business is taking premises, renewing a lease, buying or selling business property, negotiating heads of terms, or dealing with landlord and tenant documents.",
+    serviceScope: [
+      "A commercial property solicitor may review leases, heads of terms, rent review clauses, break clauses, repair obligations, service charges, planning or use restrictions, title documents, and completion requirements.",
+      "The level of support depends on whether the matter is a new lease, lease renewal, assignment, subletting, purchase, sale, refinance, or dispute-connected property issue.",
+    ],
+    localContext:
+      "Commercial property matters in Kidderminster and Wyre Forest can involve shops, offices, industrial units, hospitality premises, storage, mixed-use buildings, local landlords, and regional business parks.",
+    prepareItems: [
+      "heads of terms",
+      "draft lease",
+      "property address",
+      "business use",
+      "rent and term details",
+      "break clause information",
+      "repair or service charge notes",
+      "any deadline for signing",
+    ],
+    questionItems: [
+      "whether the lease terms are market-standard",
+      "what repair obligations mean in practice",
+      "whether a break clause is workable",
+      "what searches or title checks may be needed",
+      "how costs and completion timing are handled",
+    ],
+    riskItems: [
+      "Commercial property issues can become costly where lease obligations are signed without understanding repair liability, break clause conditions, service charges, use restrictions, personal guarantees, or assignment restrictions.",
+      "A second risk is treating a lease as a routine form when it may create long-term financial obligations for the business or its directors.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-landlord-responsibilities",
+      "leasehold-conveyancing-explained",
+      "leasehold-vs-freehold-explained",
+      "property-boundaries-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "commercial-landlord-tenant-disputes-kidderminster",
+    title: "Commercial Landlord and Tenant Disputes Kidderminster",
+    h1: "Commercial landlord and tenant disputes in Kidderminster",
+    metaDescription:
+      "Compare solicitor options in Kidderminster for commercial landlord and tenant disputes, rent arrears, lease terms, repairs, break clauses, and premises issues.",
+    category: "Commercial Landlord and Tenant",
+    summary:
+      "Support comparing solicitor options for commercial lease disputes, rent arrears, repairs, service charges, break clauses, and business premises disagreements.",
+    userNeed:
+      "Commercial landlord and tenant disputes can affect business premises, cash flow, trading arrangements, lease obligations, repairs, service charges, rent arrears, and negotiations between landlords and occupiers.",
+    serviceScope: [
+      "A solicitor may help review the commercial lease, rent demands, repair clauses, break clauses, service charge wording, notices, correspondence, arrears position, and options for resolving or escalating the dispute.",
+      "The appropriate route depends on whether the user is a landlord or tenant, whether the business is still trading from the premises, and whether notices, forfeiture, renewal, or urgent deadlines are involved.",
+    ],
+    localContext:
+      "Commercial premises around Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area may include retail units, offices, workshops, hospitality premises, industrial space, and mixed-use property.",
+    prepareItems: [
+      "commercial lease",
+      "rent statement",
+      "service charge documents",
+      "repair correspondence",
+      "notices",
+      "photographs if relevant",
+      "timeline",
+      "urgent dates or hearing notices",
+    ],
+    questionItems: [
+      "whether any notice deadline is urgent",
+      "what the lease says about the issue",
+      "whether negotiation is possible",
+      "what documents should be reviewed first",
+      "what costs and likely stages may apply",
+    ],
+    riskItems: [
+      "Commercial landlord and tenant disputes can worsen where lease wording is ignored, notices are served incorrectly, rent arrears are allowed to build without communication, or repair evidence is not recorded.",
+      "Businesses should avoid assuming residential tenancy rules apply to commercial premises. Commercial leases can work differently and need document-specific review.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-landlord-responsibilities",
+      "leasehold-conveyancing-explained",
+      "property-boundaries-explained",
+      "rights-of-way-access-disputes",
+    ],
+  }),
   {
     type: "service",
     slug: "landlord-tenant-solicitors-kidderminster",
@@ -7204,6 +7339,426 @@ export const guidePages: GuidePage[] = [
         question: "Can this website check my PILON calculation?",
         answer:
           "No. This website provides general information only. A solicitor or legal service provider would need to review the documents.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "vento-bands-explained",
+    title: "Vento Bands Explained",
+    h1: "Vento bands explained",
+    metaDescription:
+      "General UK guide to Vento bands for injury to feelings, current 2026 bands, what they mean, evidence, and why users should not treat them as a guaranteed award.",
+    category: "Employment",
+    relatedServiceSlug: "employment-solicitors-kidderminster",
+    intro:
+      "Vento bands are guideline bands used in some discrimination cases to help assess injury to feelings awards. They are often searched when someone wants to understand possible compensation, but they should not be treated as a calculator or a guaranteed outcome.",
+    keyTakeaways: [
+      "For claims presented on or after 6 April 2026, the published Vento bands are lower band £1,200 to £12,100, middle band £12,100 to £36,400, and upper band £36,400 to £60,700, with exceptional cases above that.",
+      "The right band depends on evidence, seriousness, duration, impact, and the tribunal's assessment of the facts.",
+      "Vento bands can change, so users should check current guidance directly with a qualified provider before relying on figures.",
+    ],
+    topicOverview: [
+      "Vento bands come from employment tribunal guidance for injury to feelings in discrimination claims. They are not used for every employment dispute and do not automatically apply to unfair dismissal, redundancy, wage deduction, or ordinary workplace disagreement claims.",
+      "The lower band is generally for less serious cases, the middle band for cases that do not fit the lower band but are not among the most serious, and the upper band for the most serious cases. Exceptional cases may exceed the upper band, but that is not routine.",
+    ],
+    practicalExamples: [
+      "An employee in Kidderminster may search Vento bands after raising discrimination concerns at work. The figures may help them understand the language used in tribunal discussions, but a solicitor would still need to review evidence and facts.",
+      "An employer responding to a discrimination complaint may also need to understand that injury to feelings is only one potential element of a wider dispute and should not be assessed from headline bands alone.",
+    ],
+    commonProblems: [
+      "Problems arise when people assume the top band applies because the experience felt serious, or when employers assume a low figure without reviewing the facts, evidence, and impact.",
+      "Another issue is using out-of-date bands. The figures are normally updated from time to time, so any page or adviser should be clear about the date of the figures being discussed.",
+    ],
+    prepareItems: [
+      "timeline of events",
+      "grievance documents",
+      "messages or emails",
+      "impact notes",
+      "medical or support evidence if relevant",
+      "tribunal papers if any",
+      "settlement correspondence",
+      "dates of claim or complaint",
+    ],
+    questionItems: [
+      "whether Vento bands apply to the issue",
+      "which date range of guidance is relevant",
+      "what evidence supports impact",
+      "whether other heads of loss may be relevant",
+      "what risks and deadlines need checking",
+    ],
+    localContext:
+      "Employment discrimination concerns around Kidderminster and Wyre Forest can arise in local workplaces, regional employers, small businesses, care settings, retail, hospitality, manufacturing, and office roles. Local context may explain the work setting, but a qualified provider must assess the legal position.",
+    relatedGuideSlugs: [
+      "unfair-dismissal-basics",
+      "workplace-grievance-process",
+      "settlement-agreements-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+    faq: [
+      {
+        question: "Are Vento bands a compensation calculator?",
+        answer:
+          "No. They are guideline bands for injury to feelings in some discrimination claims. They do not guarantee any award or settlement figure.",
+      },
+      {
+        question: "Do Vento bands apply to unfair dismissal?",
+        answer:
+          "Not usually. Vento bands relate to injury to feelings in discrimination claims, not ordinary unfair dismissal compensation.",
+      },
+      {
+        question: "Why does the date matter for Vento bands?",
+        answer:
+          "The published bands can change. The relevant figures may depend on when the claim was presented and the current tribunal guidance.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "endometriosis-disability-work",
+    title: "Is Endometriosis a Disability at Work?",
+    h1: "Is endometriosis a disability at work?",
+    metaDescription:
+      "Careful general guide to endometriosis, workplace disability questions, reasonable adjustments, evidence, and employment solicitor support.",
+    category: "Employment",
+    relatedServiceSlug: "employment-solicitors-kidderminster",
+    intro:
+      "Endometriosis can affect people differently. In some workplace situations, a health condition may raise disability-related employment questions, but whether legal protection applies depends on the facts and should be assessed by a qualified provider.",
+    keyTakeaways: [
+      "This guide is not medical advice and does not decide whether any person is disabled under equality law.",
+      "Workplace questions may involve symptoms, impact on daily activities, absence, adjustments, confidentiality, and how an employer has responded.",
+      "Evidence and communication records can be important where someone is asking about reasonable adjustments or workplace treatment.",
+    ],
+    topicOverview: [
+      "In UK employment context, disability questions often focus on whether a physical or mental impairment has a substantial and long-term adverse effect on normal day-to-day activities. A diagnosis alone may not answer every legal question; impact and evidence can matter.",
+      "Endometriosis-related workplace issues may include absence management, flexible working, pain episodes, fatigue, medical appointments, adjustments, performance concerns, workplace facilities, or how managers respond to private health information.",
+    ],
+    practicalExamples: [
+      "An employee in Kidderminster may have recurring symptoms, medical appointments, and absence triggers, and may want to ask about adjustments such as flexibility, breaks, working pattern changes, or home-working where possible.",
+      "An employer may need to handle health information carefully, consider occupational health input where appropriate, and avoid making assumptions about symptoms or capability.",
+    ],
+    commonProblems: [
+      "Problems arise when employees feel pressured to disclose more medical detail than necessary, or when employers ignore health information, apply attendance policies mechanically, or fail to record adjustment discussions.",
+      "Another issue is treating online summaries as medical or legal advice. The right next step depends on medical evidence, workplace facts, timing, and communication.",
+    ],
+    prepareItems: [
+      "medical appointment notes if relevant",
+      "absence records",
+      "fit notes if any",
+      "occupational health reports if any",
+      "adjustment requests",
+      "emails with managers",
+      "workplace policy",
+      "timeline of concerns",
+    ],
+    questionItems: [
+      "whether disability-related rights may be relevant",
+      "what evidence should be gathered",
+      "how adjustment requests should be recorded",
+      "whether absence or performance action creates urgency",
+      "what information can be kept confidential",
+    ],
+    localContext:
+      "Employees and employers in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may need to manage health-related workplace issues in care, retail, hospitality, office, education, manufacturing, and hybrid roles.",
+    relatedGuideSlugs: [
+      "basic-employee-rights",
+      "employment-status-explained",
+      "workplace-grievance-process",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+    faq: [
+      {
+        question: "Does endometriosis automatically count as a disability at work?",
+        answer:
+          "This depends on the facts. A qualified provider would need to consider impact, duration, evidence, and the workplace situation. This website cannot decide that question.",
+      },
+      {
+        question: "Is this medical advice?",
+        answer:
+          "No. This is general employment information only. Medical questions should be discussed with a qualified healthcare professional.",
+      },
+      {
+        question: "What workplace documents may help?",
+        answer:
+          "Useful records may include absence notes, fit notes, adjustment requests, occupational health reports, emails, policies, and a clear timeline.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "on-call-sleep-in-shift-pay",
+    title: "On-Call and Sleep-In Shift Pay Explained",
+    h1: "On-call and sleep-in shift pay explained",
+    metaDescription:
+      "General UK guide to on-call and sleep-in shift pay, minimum wage questions, contracts, rota evidence, and employment solicitor comparison.",
+    category: "Employment",
+    relatedServiceSlug: "employment-solicitors-kidderminster",
+    intro:
+      "On-call and sleep-in shift pay questions can be complicated because the answer may depend on the working arrangement, contract, rota, location, duties, interruptions, and minimum wage rules.",
+    keyTakeaways: [
+      "On-call and sleep-in pay should be checked against the contract, rota, actual duties, interruptions, and current minimum wage guidance.",
+      "Different arrangements can be treated differently, so users should avoid relying on a single online example.",
+      "Pay records, hours, rota instructions, and written terms are important evidence to prepare.",
+    ],
+    topicOverview: [
+      "On-call work can involve being available for work at home, near the workplace, on employer premises, or while carrying out normal duties. Sleep-in shifts can involve being present overnight, sometimes with interruptions or specific duties.",
+      "Minimum wage and pay questions can turn on the facts, including whether someone is working, available for work, asleep, required to remain on premises, interrupted, or carrying out duties. A qualified provider would need to review the specific arrangement.",
+    ],
+    practicalExamples: [
+      "A care worker in Kidderminster may work sleep-in shifts and keep records of when they are disturbed, what duties they perform, and how the shift is paid.",
+      "An employee in a maintenance or emergency-response role may be on call from home and need to understand how call-outs, waiting time, travel, and standby duties are treated.",
+    ],
+    commonProblems: [
+      "Problems arise when contracts are vague, rota records do not match actual work, interruptions are not recorded, or employees and employers assume all on-call time is treated the same way.",
+      "Another issue is using old guidance or headlines. Minimum wage and working time issues can be technical, so current guidance and specific facts matter.",
+    ],
+    prepareItems: [
+      "employment contract",
+      "rota records",
+      "pay slips",
+      "on-call policy",
+      "sleep-in instructions",
+      "records of interruptions",
+      "travel or call-out records",
+      "messages from managers",
+    ],
+    questionItems: [
+      "what time counts as working time",
+      "how pay is calculated",
+      "whether minimum wage issues may arise",
+      "what records should be preserved",
+      "whether the issue is ongoing or historical",
+    ],
+    localContext:
+      "On-call and sleep-in pay questions around Kidderminster and Wyre Forest may arise in care, security, maintenance, hospitality, emergency cover, facilities, and support roles across local employers and regional providers.",
+    relatedGuideSlugs: [
+      "unlawful-deduction-of-wages",
+      "employment-status-explained",
+      "basic-employee-rights",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+    faq: [
+      {
+        question: "Is every on-call hour paid the same way?",
+        answer:
+          "No. The answer can depend on the arrangement, location, duties, interruptions, contract, and minimum wage rules. A qualified provider would need to review the facts.",
+      },
+      {
+        question: "What evidence helps with sleep-in shift pay questions?",
+        answer:
+          "Useful evidence may include rota records, contract terms, pay slips, sleep-in instructions, interruption records, and manager messages.",
+      },
+      {
+        question: "Can this website calculate unpaid on-call pay?",
+        answer:
+          "No. This website provides general information and solicitor introductions only. It does not calculate claims or provide legal advice.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "employee-rights-temporary-business-closure",
+    title: "Employee Rights During Temporary Business Closure",
+    h1: "Employee rights during temporary business closure",
+    metaDescription:
+      "General UK guide to employee rights during temporary business closure, lay-off, short-time working, pay, contracts, and what to prepare.",
+    category: "Employment",
+    relatedServiceSlug: "employment-solicitors-kidderminster",
+    intro:
+      "Temporary business closure can raise urgent questions about pay, work availability, lay-off, short-time working, holiday, communication, and what the employment contract allows.",
+    keyTakeaways: [
+      "Temporary closure does not always mean the same legal position for every employee; contract wording and the reason for closure matter.",
+      "Lay-off, short-time working, annual leave, unpaid leave, redundancy risk, and pay questions should be checked carefully.",
+      "Employees and employers should keep written communication, contracts, rota records, and pay information together.",
+    ],
+    topicOverview: [
+      "A business might close temporarily because of building issues, flooding, fire, supply problems, refurbishment, financial difficulty, seasonal disruption, safety concerns, or another operational reason. Employees may want to know whether they should be paid and what happens if there is no work.",
+      "Relevant questions may include whether the contract allows lay-off or short-time working, whether holiday is being required, whether statutory guarantee pay applies, whether redundancy is being discussed, and whether the closure is temporary or uncertain.",
+    ],
+    practicalExamples: [
+      "A Kidderminster shop, hospitality venue, workshop, or office may close temporarily because of premises damage or trading disruption. Staff may receive messages about shifts being cancelled and need to understand what documents to keep.",
+      "A Wyre Forest employer may need to communicate clearly with employees about expected closure length, pay arrangements, holiday, alternative work, and what happens if the business cannot reopen as planned.",
+    ],
+    commonProblems: [
+      "Problems arise when employers make informal announcements without confirming pay arrangements, or when employees assume unpaid time off is lawful without checking contract wording and written communication.",
+      "A further risk is letting uncertainty drift. If closure continues, redundancy, lay-off rights, holiday, or contractual issues may become more important.",
+    ],
+    prepareItems: [
+      "employment contract",
+      "staff handbook",
+      "closure announcement",
+      "rota records",
+      "pay slips",
+      "holiday records",
+      "messages from employer",
+      "expected reopening date if given",
+    ],
+    questionItems: [
+      "what the contract says about lay-off or short-time working",
+      "whether pay is being reduced or withheld",
+      "whether holiday is being required",
+      "whether redundancy is being suggested",
+      "what deadlines or response dates apply",
+    ],
+    localContext:
+      "Temporary closure issues in Kidderminster and Wyre Forest can affect retail, hospitality, manufacturing, office, leisure, care, and small local businesses where disruption can quickly affect staff pay and business cash flow.",
+    relatedGuideSlugs: [
+      "redundancy-rights-overview",
+      "unlawful-deduction-of-wages",
+      "basic-employee-rights",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+    faq: [
+      {
+        question: "Do employees always have to be paid during a temporary closure?",
+        answer:
+          "The answer can depend on the contract, reason for closure, work availability, lay-off or short-time provisions, and facts. A qualified provider can review the documents.",
+      },
+      {
+        question: "Can an employer force holiday during closure?",
+        answer:
+          "Holiday rules can be technical and may require proper notice. Users should check the contract, policy, and current guidance with a qualified provider where needed.",
+      },
+      {
+        question: "What should I keep if my workplace closes temporarily?",
+        answer:
+          "Keep the contract, closure messages, rota records, payslips, holiday records, policy documents, and any reopening or redundancy communication.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "time-off-work-care-for-sick-child",
+    title: "Time Off Work to Care for a Sick Child",
+    h1: "Time off work to care for a sick child",
+    metaDescription:
+      "General UK guide to time off work for a sick child, dependants, emergency leave, parental leave, flexible working, evidence, and employer communication.",
+    category: "Employment",
+    relatedServiceSlug: "employment-solicitors-kidderminster",
+    intro:
+      "Needing time off to care for a sick child can be stressful, especially where shifts, pay, absence triggers, emergency childcare, or employer expectations are unclear.",
+    keyTakeaways: [
+      "Time off for dependants may be relevant in emergencies, but pay and length of absence can depend on contract, policy, and the facts.",
+      "Other routes may include parental leave, annual leave, flexible working, or agreed adjustments to working arrangements.",
+      "Employees should communicate clearly and keep records where absence becomes disputed.",
+    ],
+    topicOverview: [
+      "UK employment guidance recognises that employees may need reasonable time off to deal with certain emergencies involving dependants. A sick child may be a dependant situation, but the practical questions often include notice, pay, how long is reasonable, repeated absences, and whether other leave options are better suited.",
+      "Employers may have policies covering dependants leave, compassionate leave, parental leave, flexible working, home-working, or emergency absence. The contract and policy should be checked alongside the immediate facts.",
+    ],
+    practicalExamples: [
+      "A parent in Kidderminster may need to leave work because a child is sent home from school or childcare due to illness. The first step is usually clear communication about the emergency and expected return.",
+      "Another parent may need longer time away because a child has a serious illness or repeated appointments. That may raise different questions about parental leave, flexible working, annual leave, or workplace support.",
+    ],
+    commonProblems: [
+      "Problems arise when employees do not explain the emergency clearly, employers treat every dependant absence as misconduct, or repeated short-notice absence is not discussed through a sensible process.",
+      "Another issue is assuming all dependant time off is paid or unlimited. Pay, duration, and available options can depend on the contract, policy, and facts.",
+    ],
+    prepareItems: [
+      "employment contract",
+      "absence policy",
+      "messages to employer",
+      "dates and duration of absence",
+      "childcare or school communication if relevant",
+      "pay records",
+      "disciplinary or warning letters if any",
+      "flexible working requests if any",
+    ],
+    questionItems: [
+      "whether dependant leave may apply",
+      "whether pay is contractual or discretionary",
+      "whether parental leave or flexible working is relevant",
+      "what evidence or communication is reasonable",
+      "whether disciplinary action creates urgency",
+    ],
+    localContext:
+      "Parents and carers in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may need to balance local schools, childcare, healthcare appointments, shift work, and employer absence processes.",
+    relatedGuideSlugs: [
+      "basic-employee-rights",
+      "workplace-grievance-process",
+      "unfair-dismissal-basics",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+    faq: [
+      {
+        question: "Is time off for a sick child always paid?",
+        answer:
+          "Not always. Pay can depend on the contract, workplace policy, and the type of leave used. A qualified provider can review the documents if there is a dispute.",
+      },
+      {
+        question: "How much time off can I take for a dependant emergency?",
+        answer:
+          "The rules refer to reasonable time for certain emergency situations. What is reasonable depends on the facts and should not be assumed to be unlimited.",
+      },
+      {
+        question: "What if my employer disciplines me for caring responsibilities?",
+        answer:
+          "Keep the policy, messages, dates, and any disciplinary papers. If timing is urgent, raise it directly with a solicitor or legal service provider.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "commercial-landlord-responsibilities",
+    title: "Commercial Landlord Responsibilities Explained",
+    h1: "Commercial landlord responsibilities explained",
+    metaDescription:
+      "General guide to commercial landlord responsibilities, lease terms, repairs, service charges, safety obligations, documents, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-landlord-tenant-disputes-kidderminster",
+    intro:
+      "Commercial landlord responsibilities are usually shaped by the lease, statute, property condition, services, insurance, repair clauses, safety duties, and the way the premises are used.",
+    keyTakeaways: [
+      "Commercial lease responsibilities should be checked against the actual lease rather than assumed from residential landlord rules.",
+      "Repair, insurance, service charge, access, safety, and compliance obligations can sit with the landlord, tenant, or both depending on the wording.",
+      "Landlords and tenants should organise the lease, notices, service charge documents, repair evidence, and correspondence before speaking to a solicitor.",
+    ],
+    topicOverview: [
+      "A commercial landlord may have responsibilities connected to the structure, common parts, insurance, services, access, safety compliance, notices, rent collection, and lease management. The tenant may also have significant obligations, especially around internal repairs, use, alterations, and compliance.",
+      "The starting point is normally the lease. Heads of terms, licences for alterations, rent deposit deeds, guarantees, service charge accounts, and side letters may also matter. A solicitor would need to review the specific documents before giving advice.",
+    ],
+    practicalExamples: [
+      "A landlord in Kidderminster may own a retail unit with a tenant disputing service charge or repair responsibility. The lease wording, invoices, inspection reports, and correspondence may be central.",
+      "A tenant in Wyre Forest may be asked to repair a unit before leaving and needs to understand what the lease says about dilapidations, reinstatement, and condition evidence.",
+    ],
+    commonProblems: [
+      "Problems arise where landlords and tenants rely on assumptions, ignore lease notice requirements, fail to record property condition, or delay dealing with repairs until a renewal, break clause, or exit is close.",
+      "Another issue is mixing up residential and commercial rules. Commercial leases can allocate obligations very differently and may need document-specific review.",
+    ],
+    prepareItems: [
+      "commercial lease",
+      "heads of terms",
+      "licences or side letters",
+      "service charge statements",
+      "insurance details",
+      "repair reports",
+      "photographs",
+      "notices and correspondence",
+    ],
+    questionItems: [
+      "what the lease says about the responsibility",
+      "whether any notice deadline applies",
+      "who pays for repair or service charge",
+      "whether evidence of condition is strong",
+      "what route may resolve the dispute proportionately",
+    ],
+    localContext:
+      "Commercial landlord responsibilities in Kidderminster and Wyre Forest may involve shops, offices, industrial units, workshops, hospitality premises, shared buildings, local landlords, and regional occupiers.",
+    relatedGuideSlugs: [
+      "leasehold-conveyancing-explained",
+      "commercial-landlord-responsibilities",
+      "property-boundaries-explained",
+      "rights-of-way-access-disputes",
+    ],
+    faq: [
+      {
+        question: "Are commercial landlord responsibilities the same as residential responsibilities?",
+        answer:
+          "No. Commercial premises are usually governed heavily by the lease and can allocate responsibilities differently from residential property.",
+      },
+      {
+        question: "Who is responsible for repairs in a commercial lease?",
+        answer:
+          "That depends on the lease wording, the part of the premises involved, any schedules of condition, and the facts. A qualified provider would need to review the documents.",
+      },
+      {
+        question: "What documents matter in a commercial landlord dispute?",
+        answer:
+          "Useful documents include the lease, heads of terms, service charge records, insurance documents, repair reports, photographs, notices, and correspondence.",
       },
     ],
   }),
