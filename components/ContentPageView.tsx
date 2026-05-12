@@ -28,7 +28,7 @@ function LinkedParagraph({ text }: { text: string }) {
           <a
             key={`${segment.slug}-${index}`}
             href={segment.href}
-            className="font-semibold text-[var(--trust-blue)] underline decoration-[rgba(198,161,91,0.55)] underline-offset-4 transition hover:text-[var(--mid-blue)]"
+            className="font-extrabold text-[var(--gold)] underline decoration-[rgba(198,161,91,0.7)] underline-offset-4 transition hover:text-[var(--trust-blue)]"
           >
             {segment.text}
           </a>
