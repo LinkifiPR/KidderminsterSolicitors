@@ -50,6 +50,28 @@ a {
   text-decoration: none;
 }
 
+.content-body-link,
+.content-body-link:visited {
+  color: var(--gold) !important;
+  font-weight: 800;
+  text-decoration-line: underline;
+  text-decoration-color: rgba(198, 161, 91, 0.8);
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.22em;
+}
+
+.content-body-link:hover,
+.content-body-link:focus-visible {
+  color: var(--trust-blue) !important;
+  text-decoration-color: var(--trust-blue);
+}
+
+.content-body-link:focus-visible {
+  outline: 3px solid rgba(198, 161, 91, 0.35);
+  outline-offset: 0.2rem;
+  border-radius: 0.2rem;
+}
+
 ::selection {
   background: var(--navy);
   color: #ffffff;
