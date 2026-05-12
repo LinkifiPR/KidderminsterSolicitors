@@ -1563,6 +1563,7 @@ export const servicePages: ServicePage[] = [
         body: [
           "A personal injury solicitor may consider accidents at work, road traffic accidents, slips and trips, public liability incidents, medical evidence, rehabilitation needs, loss of earnings, liability, and limitation periods. They may also explain whether a funding arrangement is available.",
           "A solicitor will usually need to understand what happened, when it happened, who may be responsible, what evidence exists, and what injury or loss has been suffered. This website cannot assess whether a claim is valid.",
+          "For many users, the first useful step is not a long legal argument. It is a clear summary of the incident date, location, people involved, injury impact, medical treatment, time off work, and whether any insurer, employer, or business has already responded.",
         ],
       },
       {
@@ -1570,6 +1571,7 @@ export const servicePages: ServicePage[] = [
         body: [
           "Problems can arise when users wait too long, have limited evidence, misunderstand funding deductions, assume an outcome is certain, or do not understand what information a solicitor needs to assess the matter.",
           "Funding terms can vary. If a firm discusses no win no fee or another arrangement, ask them to explain deductions, insurance, costs, cancellation terms, and what happens if the claim does not proceed.",
+          "Another common issue is treating personal injury marketing as a promise. A responsible solicitor firm should explain evidence, uncertainty, funding, timing, and process in careful terms before asking a user to sign anything.",
         ],
       },
       {
@@ -1577,6 +1579,7 @@ export const servicePages: ServicePage[] = [
         body: [
           "Prepare the incident date, location, brief description, parties involved, photos, witness details, accident reports, correspondence, medical appointments, time off work, and any insurer or employer contact.",
           "Do not send large bundles of sensitive medical documents through the quote form. A short factual summary is enough for an introduction. Detailed evidence should be provided directly to a solicitor or legal service provider if you choose to instruct them.",
+          "If the matter involves a workplace accident, keep accident book entries, rota records, manager messages, health and safety reports, and wage information. If it involves a road incident, keep insurer correspondence, vehicle details, photographs, and any reference numbers.",
         ],
       },
       {
@@ -1584,12 +1587,22 @@ export const servicePages: ServicePage[] = [
         body: [
           "Ask who will handle the matter, how funding works, what deductions may apply, whether insurance is needed, how evidence will be reviewed, what timescales may apply, and how updates are provided.",
           "You should also ask what happens if the provider decides the matter is not suitable. A responsible firm should explain uncertainty and process rather than promising compensation.",
+          "It is also sensible to ask how medical evidence is obtained, whether rehabilitation support is considered, how loss of earnings is evidenced, what limitation dates may apply, and how often the firm will update you.",
+        ],
+      },
+      {
+        heading: "Local Kidderminster and Wyre Forest context",
+        body: [
+          "Personal injury enquiries around Kidderminster and Wyre Forest may involve local employers, roads, shops, public places, leisure venues, care settings, or regional insurers. Local context can help explain what happened, but the legal assessment still depends on evidence and the specific facts.",
+          "A solicitor partner does not always need to be based in Kidderminster, but they should be transparent about how the case is handled, how documents are shared, whether meetings are needed, and who will be responsible for day-to-day communication.",
         ],
       },
     ],
     relatedGuideSlugs: [
-      "when-should-you-speak-to-an-employment-solicitor",
+      "no-win-no-fee-explained",
+      "personal-injury-vs-clinical-negligence",
       "settlement-agreements-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
     ],
     comparisonPoints: [
       "Ask how fees work and whether any deductions may apply.",
@@ -1690,6 +1703,97 @@ export const servicePages: ServicePage[] = [
       },
     ],
   },
+  createSpecialistServicePage({
+    slug: "accident-injury-solicitors-kidderminster",
+    title: "Accident and Injury Solicitors Kidderminster",
+    h1: "Accident and injury solicitors in Kidderminster",
+    metaDescription:
+      "Compare accident and injury solicitor options in Kidderminster for workplace accidents, road traffic incidents, public liability enquiries, and evidence review.",
+    category: "Accident and Injury",
+    summary:
+      "Support comparing solicitor options for accident and injury enquiries, evidence, funding, limitation, and next-step assessment.",
+    userNeed:
+      "Accident and injury enquiries often begin when someone has been hurt at work, on the road, in a public place, or in another incident and wants to understand whether a solicitor firm may be able to assess the position.",
+    serviceScope: [
+      "An accident and injury solicitor may review incident details, liability evidence, accident reports, photographs, witness information, medical appointments, insurer correspondence, rehabilitation needs, loss of earnings, and possible funding arrangements.",
+      "The first discussion is usually about whether there is enough information for the firm to assess responsibility, timing, evidence, injury impact, and whether the matter is suitable for that provider.",
+    ],
+    localContext:
+      "People in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may need solicitor introductions after workplace incidents, road traffic accidents, trips, slips, or injuries involving local premises, employers, insurers, or public places.",
+    prepareItems: [
+      "incident date",
+      "incident location",
+      "brief factual description",
+      "photographs",
+      "witness details",
+      "accident report",
+      "medical appointment notes",
+      "insurer correspondence",
+      "time off work information",
+    ],
+    questionItems: [
+      "whether limitation or reporting deadlines matter",
+      "what evidence should be kept",
+      "how funding arrangements work",
+      "what deductions or insurance may apply",
+      "who will handle the matter day to day",
+    ],
+    riskItems: [
+      "Accident and injury enquiries can go wrong where evidence is not preserved, users assume compensation is guaranteed, funding terms are not understood, or incident details are too vague for a solicitor to assess.",
+      "Another risk is delay. Dates, accident reports, photographs, medical records, and witness details can become harder to gather over time.",
+    ],
+    relatedGuideSlugs: [
+      "no-win-no-fee-explained",
+      "personal-injury-vs-clinical-negligence",
+      "settlement-agreements-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "medical-negligence-solicitors-kidderminster",
+    title: "Medical Negligence Solicitors Kidderminster",
+    h1: "Medical negligence solicitors in Kidderminster",
+    metaDescription:
+      "Compare medical negligence solicitor options in Kidderminster for cautious, general introductions involving healthcare-related legal enquiries.",
+    category: "Medical Negligence",
+    summary:
+      "Support comparing solicitor options for healthcare-related negligence enquiries, records, evidence, timing, and next-step assessment.",
+    userNeed:
+      "Medical negligence enquiries can be sensitive and fact-heavy. People may want to understand whether a solicitor firm can review records, treatment concerns, timing, harm, and possible next steps.",
+    serviceScope: [
+      "A medical negligence solicitor may consider the treatment timeline, medical records, complaint correspondence, expert evidence needs, causation questions, injury impact, limitation, and whether the issue is suitable for further assessment.",
+      "This website cannot assess medical treatment, diagnose injury, or say whether negligence occurred. It can only help users request a no obligation introduction to a suitable solicitor partner where appropriate.",
+    ],
+    localContext:
+      "Residents around Kidderminster and Wyre Forest may have healthcare-related concerns involving local, regional, private, dental, GP, hospital, or community treatment. The relevant solicitor may not need to be based in Kidderminster, but should be clear about experience, evidence, funding, and process.",
+    prepareItems: [
+      "treatment dates",
+      "provider name",
+      "short factual timeline",
+      "complaint letters",
+      "responses received",
+      "medical record access status",
+      "injury or impact summary",
+      "any urgent limitation dates",
+    ],
+    questionItems: [
+      "whether the firm handles medical negligence enquiries",
+      "what records are needed first",
+      "how expert evidence is approached",
+      "how funding arrangements work",
+      "what timescales and uncertainty should be expected",
+    ],
+    riskItems: [
+      "Medical negligence enquiries can become difficult where users rely on memory alone, do not request or organise records, miss limitation concerns, or assume a poor outcome automatically means negligence.",
+      "Another risk is sharing highly sensitive medical information through a public form. A short summary is enough at introduction stage, with detailed records shared securely with a solicitor or legal service provider if instructed.",
+    ],
+    relatedGuideSlugs: [
+      "personal-injury-vs-clinical-negligence",
+      "no-win-no-fee-explained",
+      "settlement-agreements-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+  }),
   createSpecialistServicePage({
     slug: "commercial-dispute-solicitors-kidderminster",
     title: "Commercial Dispute Solicitors Kidderminster",
@@ -8437,6 +8541,493 @@ export const guidePages: GuidePage[] = [
         question: "Can a solicitor write a letter before action?",
         answer:
           "Yes. A solicitor may help draft or send a formal letter, especially where the debt is disputed, evidence is complex, or the next step may be court action.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "directors-duties-explained",
+    title: "Directors' Duties Explained",
+    h1: "Directors' duties explained",
+    metaDescription:
+      "General guide to directors' duties, company responsibilities, conflicts, records, decisions, disputes, and solicitor questions for business owners.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-solicitors-kidderminster",
+    intro:
+      "Directors' duties matter whenever a company is making decisions about contracts, disputes, finance, shareholders, insolvency risk, conflicts, or major business changes.",
+    keyTakeaways: [
+      "Company directors should understand that duties are owed to the company and can affect decisions, conflicts, records, and use of company powers.",
+      "Good records, board minutes, conflict declarations, shareholder documents, and financial information can be important if a decision is later challenged.",
+      "Directors should ask for qualified advice where there are disputes, insolvency concerns, shareholder pressure, or decisions with significant commercial consequences.",
+    ],
+    topicOverview: [
+      "Directors' duties are often discussed when a company faces a difficult decision: entering a contract, borrowing money, paying dividends, dealing with a conflict, selling assets, responding to a dispute, or handling financial pressure. The Companies Act 2006 sets out core statutory duties, and other legal obligations may also be relevant depending on the situation.",
+      "In practical terms, directors should be able to show how decisions were made, what information was considered, whether conflicts were declared, and why the decision was thought to be in the company's interests. The right records can reduce confusion later.",
+    ],
+    practicalExamples: [
+      "A Kidderminster company may have two directors who disagree about whether to sign a major supplier contract. Board notes, company articles, shareholder agreements, and conflict checks may all matter.",
+      "A Wyre Forest business under cash-flow pressure may need to think carefully before preferring one creditor, selling assets, or taking on new commitments. A solicitor or insolvency professional may need to review the position.",
+    ],
+    commonProblems: [
+      "Problems arise where directors make informal decisions without minutes, ignore conflicts, act for personal benefit, do not understand shareholder documents, or continue trading without considering creditor interests when the company is in serious financial difficulty.",
+      "Another issue is assuming small private companies do not need proper decision records. Even owner-managed businesses can face disputes where clear documents become important.",
+    ],
+    prepareItems: [
+      "company articles",
+      "shareholder agreement",
+      "board minutes",
+      "decision records",
+      "financial information",
+      "contracts",
+      "correspondence",
+      "conflict details",
+      "Companies House information",
+    ],
+    questionItems: [
+      "which company documents should be reviewed first",
+      "whether a conflict should be declared",
+      "whether shareholder approval is needed",
+      "whether insolvency risk changes the position",
+      "what records should be created before the decision is made",
+    ],
+    localContext:
+      "Directors of companies in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Wyre Forest may need commercial support where local trading relationships, shareholders, suppliers, landlords, lenders, or employees are affected by company decisions.",
+    relatedGuideSlugs: [
+      "shareholders-agreement-guide",
+      "enforceable-contracts-explained",
+      "collecting-business-debt",
+    ],
+    faq: [
+      {
+        question: "Do directors' duties apply to small companies?",
+        answer:
+          "Yes. Directors' duties can apply to private companies as well as larger companies. The practical records needed may vary, but the duties should not be ignored.",
+      },
+      {
+        question: "What documents help with a directors' duties question?",
+        answer:
+          "Useful documents can include the articles, shareholder agreement, minutes, financial records, contracts, correspondence, and details of any conflict or dispute.",
+      },
+      {
+        question: "Can this website advise directors?",
+        answer:
+          "No. This website provides general information and solicitor introductions only. Advice must come from a qualified solicitor or legal service provider.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "shareholders-agreement-guide",
+    title: "Shareholders' Agreement Guide",
+    h1: "Shareholders' agreement guide",
+    metaDescription:
+      "General guide to shareholders' agreements, company control, exits, disputes, transfer rules, minority protections, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-solicitors-kidderminster",
+    intro:
+      "A shareholders' agreement can help business owners record how a company is controlled, how key decisions are made, what happens if someone leaves, and how disputes are handled.",
+    keyTakeaways: [
+      "A shareholders' agreement can cover decision-making, share transfers, exits, restrictive covenants, deadlock, confidentiality, and minority protections.",
+      "The agreement should work alongside the company's articles and commercial reality, not sit in a drawer as a generic template.",
+      "Shareholders should review documents before major changes, investment, exits, disputes, or business sales.",
+    ],
+    topicOverview: [
+      "Shareholders' agreements are commonly used where two or more people own a company and want clearer rules than the articles alone provide. They can address voting, reserved matters, director appointments, share transfers, valuation mechanisms, good leaver and bad leaver rules, drag and tag rights, confidentiality, and deadlock.",
+      "The commercial point is predictability. A good agreement helps owners understand what happens before relationships become strained. The wrong agreement, or no agreement at all, can make disputes harder to resolve.",
+    ],
+    practicalExamples: [
+      "Two Kidderminster founders may want to agree what happens if one person leaves the business after two years. A shareholders' agreement can set expectations before there is a dispute.",
+      "A Wyre Forest family company may want to bring in a new shareholder. Existing articles, valuation rules, voting rights, and transfer restrictions should be checked before shares are issued or transferred.",
+    ],
+    commonProblems: [
+      "Problems arise where shareholders rely on verbal promises, use template documents without adapting them, fail to update agreements after investment, or discover too late that the articles and agreement do not fit together.",
+      "Another issue is not planning for deadlock. Equal ownership can work well until shareholders disagree and there is no agreed route forward.",
+    ],
+    prepareItems: [
+      "company articles",
+      "current shareholder agreement if any",
+      "cap table",
+      "director details",
+      "investment documents",
+      "loan agreements",
+      "business sale plans",
+      "shareholder dispute correspondence",
+    ],
+    questionItems: [
+      "whether the articles need changing",
+      "which decisions should need shareholder approval",
+      "how shares can be transferred",
+      "what happens if a shareholder leaves",
+      "how deadlock or disputes should be handled",
+    ],
+    localContext:
+      "Shareholder agreements can be useful for owner-managed businesses, family companies, professional service firms, trades, agencies, and regional companies across Kidderminster and the wider Wyre Forest area.",
+    relatedGuideSlugs: [
+      "directors-duties-explained",
+      "enforceable-contracts-explained",
+      "commercial-property-disputes",
+    ],
+    faq: [
+      {
+        question: "Is a shareholders' agreement legally required?",
+        answer:
+          "Not usually, but it can be commercially useful where owners want clearer rules about decisions, transfers, exits, confidentiality, and disputes.",
+      },
+      {
+        question: "Is a shareholders' agreement the same as articles of association?",
+        answer:
+          "No. Articles are the company's constitutional rules. A shareholders' agreement is a separate contract between shareholders, and the two should work together.",
+      },
+      {
+        question: "When should shareholders review the agreement?",
+        answer:
+          "Review it before investment, share transfers, business sale discussions, disputes, new shareholders, or major changes to control.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "just-equitable-winding-up",
+    title: "Just and Equitable Winding Up Explained",
+    h1: "Just and equitable winding up explained",
+    metaDescription:
+      "General guide to just and equitable winding up, shareholder breakdown, deadlock, unfair prejudice overlap, evidence, risks, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-dispute-solicitors-kidderminster",
+    intro:
+      "Just and equitable winding up is a serious company dispute remedy that may be raised where relationships between business owners have broken down and continuing the company is said to be unfair or impractical.",
+    keyTakeaways: [
+      "This is a serious court remedy and should not be treated as a routine dispute tactic.",
+      "The evidence may involve shareholder expectations, deadlock, exclusion from management, loss of trust, company records, and alternative remedies.",
+      "A solicitor may need to consider whether another route, such as negotiation or an unfair prejudice petition, is more appropriate.",
+    ],
+    topicOverview: [
+      "A just and equitable winding up petition asks the court to wind up a company because it is said to be just and equitable to do so. It is often discussed in shareholder disputes involving small companies, quasi-partnership arguments, deadlock, breakdown of trust, or exclusion from management.",
+      "Because winding up can end the company, the remedy is significant. A solicitor would usually need to review the company documents, ownership structure, conduct history, financial position, and whether less drastic alternatives exist.",
+    ],
+    practicalExamples: [
+      "Two Kidderminster shareholders may own a company equally and be unable to agree on any major decision. If the deadlock cannot be resolved, specialist advice may be needed before any formal step is considered.",
+      "A Wyre Forest shareholder may say they were excluded from a business they expected to help manage. The documents, promises, conduct, and available remedies would need careful review.",
+    ],
+    commonProblems: [
+      "Problems arise where shareholders threaten winding up without understanding cost, risk, evidence, or whether the company itself has value that would be damaged by the process.",
+      "Another issue is failing to preserve company records, messages, financial information, and shareholder communications that may explain how the relationship was intended to work.",
+    ],
+    prepareItems: [
+      "company articles",
+      "shareholder agreement",
+      "share register",
+      "board minutes",
+      "financial records",
+      "messages between shareholders",
+      "deadlock evidence",
+      "offers to buy or sell shares",
+    ],
+    questionItems: [
+      "whether winding up is proportionate",
+      "whether another remedy may be more suitable",
+      "what evidence supports deadlock or breakdown",
+      "what the likely cost and risk may be",
+      "whether urgent steps are needed to protect company records or assets",
+    ],
+    localContext:
+      "Shareholder breakdown can affect owner-managed companies, family businesses, trades, agencies, and local commercial ventures in Kidderminster, Stourport, Bewdley, and the wider Wyre Forest area.",
+    relatedGuideSlugs: [
+      "shareholders-agreement-guide",
+      "directors-duties-explained",
+      "commercial-property-disputes",
+      "enforceable-contracts-explained",
+    ],
+    faq: [
+      {
+        question: "Is just and equitable winding up a first step?",
+        answer:
+          "Usually no. It is a serious remedy and may not be proportionate. A solicitor can explain whether negotiation, buyout discussions, or another claim should be considered.",
+      },
+      {
+        question: "What evidence matters in shareholder breakdown?",
+        answer:
+          "Company documents, shareholder agreements, messages, minutes, financial records, conduct history, and any offers to resolve the dispute may all matter.",
+      },
+      {
+        question: "Can this website assess a company dispute?",
+        answer:
+          "No. This website provides general information only and can help request an introduction. Legal assessment must come from a qualified provider.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "unjust-enrichment-explained",
+    title: "Unjust Enrichment Explained",
+    h1: "Unjust enrichment explained",
+    metaDescription:
+      "General guide to unjust enrichment, mistaken payments, benefits received, repayment disputes, evidence, alternatives, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-dispute-solicitors-kidderminster",
+    intro:
+      "Unjust enrichment is a legal concept that may be relevant where one party has received a benefit and another party says it would be unfair for them to keep it without payment or repayment.",
+    keyTakeaways: [
+      "Unjust enrichment is not simply another phrase for unfairness. The facts, benefit, reason for transfer, and possible defences matter.",
+      "It may arise in mistaken payments, failed contracts, overpayments, informal business arrangements, or services provided without clear payment terms.",
+      "Evidence of what was paid, why it was paid, what was expected, and how the other party responded is usually important.",
+    ],
+    topicOverview: [
+      "Unjust enrichment can be considered where a person or business receives money, services, goods, or another benefit and there is a dispute about whether they should keep it. The concept is technical and fact-specific, so it should not be used casually as a substitute for contract, debt, or misrepresentation arguments.",
+      "A solicitor may need to identify the enrichment, who suffered the corresponding loss, why the enrichment is said to be unjust, and whether a defence or alternative claim applies.",
+    ],
+    practicalExamples: [
+      "A Kidderminster business may accidentally pay the same invoice twice and the recipient refuses to return the second payment. Bank records and correspondence may become important.",
+      "A Wyre Forest contractor may carry out work during negotiations that later collapse. The question may be whether there was a contract, an agreed price, or another basis for payment.",
+    ],
+    commonProblems: [
+      "Problems arise where parties use unjust enrichment language without checking whether a contract actually governs the issue. If there is a contract, the claim may need to be framed differently.",
+      "Another issue is weak evidence. Bank transfers, invoices, messages, delivery records, and explanations of why payment was made can be central.",
+    ],
+    prepareItems: [
+      "payment records",
+      "invoices",
+      "contract documents",
+      "messages about the payment or benefit",
+      "delivery evidence",
+      "bank statements",
+      "timeline",
+      "any refusal to repay",
+    ],
+    questionItems: [
+      "whether there is a contract",
+      "what benefit was received",
+      "why the benefit is said to be unjust",
+      "what evidence proves payment or work",
+      "whether another claim route is more suitable",
+    ],
+    localContext:
+      "Unjust enrichment questions may arise for local businesses, landlords, suppliers, contractors, and individuals around Kidderminster and Wyre Forest where payments, services, or informal arrangements are later disputed.",
+    relatedGuideSlugs: [
+      "enforceable-contracts-explained",
+      "collecting-business-debt",
+      "part-payment-of-debt",
+      "commercial-property-disputes",
+    ],
+    faq: [
+      {
+        question: "Is unjust enrichment the same as breach of contract?",
+        answer:
+          "No. Breach of contract focuses on obligations under a contract. Unjust enrichment focuses on whether a benefit should be returned in particular circumstances.",
+      },
+      {
+        question: "Can unjust enrichment apply to mistaken payments?",
+        answer:
+          "It may be relevant, but the facts, documents, reason for payment, and possible defences need to be considered by a qualified provider.",
+      },
+      {
+        question: "What evidence is useful?",
+        answer:
+          "Payment records, invoices, contracts, messages, bank statements, delivery evidence, and a clear timeline can all help.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "enforceable-contracts-explained",
+    title: "Enforceable Contracts Explained",
+    h1: "Enforceable contracts explained",
+    metaDescription:
+      "General guide to enforceable contracts, written and verbal agreements, offer and acceptance, consideration, evidence, disputes, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-solicitors-kidderminster",
+    intro:
+      "An enforceable contract is not always a signed formal document. Businesses can create binding obligations through emails, forms, terms, purchase orders, conduct, and sometimes verbal agreements.",
+    keyTakeaways: [
+      "Contract enforceability depends on the agreement, parties, intention, consideration, certainty, authority, and evidence.",
+      "Written records make disputes easier to assess, but some agreements may be argued from emails, messages, invoices, orders, or conduct.",
+      "Before escalating a contract dispute, organise the full timeline and documents rather than relying on a single email or invoice.",
+    ],
+    topicOverview: [
+      "For commercial purposes, the key question is often whether there was a clear agreement that both sides intended to be binding. That may involve offer and acceptance, payment or value exchanged, certainty of terms, authority to agree, and whether any formal requirements apply.",
+      "A contract dispute can turn on small details: which terms were incorporated, whether a purchase order was accepted, whether standard terms were exchanged, who had authority, whether work started before signing, and what the parties did afterwards.",
+    ],
+    practicalExamples: [
+      "A Kidderminster supplier may rely on emailed terms and invoices after a customer refuses to pay. The sequence of quote, acceptance, delivery, invoice, and complaint will matter.",
+      "A Wyre Forest business may agree a project verbally and later dispute the price. Messages, drafts, payment history, and conduct may help a solicitor understand the evidence.",
+    ],
+    commonProblems: [
+      "Problems arise where businesses start work without signed terms, exchange competing standard terms, fail to record variations, or allow employees to agree terms without clear authority.",
+      "Another issue is assuming a contract is unenforceable just because it was not signed. The facts and evidence need review before reaching that conclusion.",
+    ],
+    prepareItems: [
+      "quotes",
+      "purchase orders",
+      "terms and conditions",
+      "emails",
+      "messages",
+      "invoices",
+      "delivery notes",
+      "payment records",
+      "variation requests",
+    ],
+    questionItems: [
+      "whether a contract was formed",
+      "which terms apply",
+      "whether authority is disputed",
+      "what evidence supports the agreement",
+      "what remedy or outcome is commercially realistic",
+    ],
+    localContext:
+      "Contract questions affect Kidderminster and Wyre Forest businesses of all sizes, including trades, agencies, shops, suppliers, professional services, landlords, tenants, and regional commercial relationships.",
+    relatedGuideSlugs: [
+      "collecting-business-debt",
+      "unjust-enrichment-explained",
+      "directors-duties-explained",
+    ],
+    faq: [
+      {
+        question: "Can a verbal contract be enforceable?",
+        answer:
+          "Sometimes, but it depends on the facts, terms, evidence, and any formal requirements. Written evidence usually makes assessment easier.",
+      },
+      {
+        question: "Does a contract need to be signed?",
+        answer:
+          "Not always. Some contracts can be formed through emails, conduct, purchase orders, or other evidence, depending on the circumstances.",
+      },
+      {
+        question: "What should I prepare for a contract dispute?",
+        answer:
+          "Prepare quotes, orders, terms, emails, messages, invoices, delivery evidence, payment records, variations, and a timeline of what happened.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "no-win-no-fee-explained",
+    title: "No Win No Fee Explained",
+    h1: "No win no fee explained",
+    metaDescription:
+      "General guide to no win no fee arrangements, conditional fee agreements, success fees, deductions, insurance, risks, and solicitor questions.",
+    category: "Personal Injury and Negligence",
+    relatedServiceSlug: "personal-injury-solicitors-kidderminster",
+    intro:
+      "No win no fee is a common phrase in injury claims, but users should understand what it may mean, what costs can still arise, and what deductions or insurance may apply.",
+    keyTakeaways: [
+      "No win no fee often refers to a conditional fee agreement, but the exact terms must be explained by the solicitor or legal service provider.",
+      "Users should ask about success fees, insurance, disbursements, cancellation, deductions, and what happens if the claim is unsuccessful.",
+      "No website should imply that compensation is guaranteed or that every injury enquiry will be accepted.",
+    ],
+    topicOverview: [
+      "In personal injury and some negligence matters, a provider may offer a conditional fee agreement or another funding arrangement. The public phrase no win no fee can hide important details, so the agreement needs to be read carefully before signing.",
+      "Questions may include what percentage is deducted from damages, whether after-the-event insurance is recommended, who pays for medical reports, what happens if the claim fails, and whether cancellation or cooperation duties apply.",
+    ],
+    practicalExamples: [
+      "A Kidderminster resident injured in an accident may be told the claim can be considered on a no win no fee basis. Before signing, they should ask what deductions would be made if the claim succeeds.",
+      "A Wyre Forest worker may have an accident at work enquiry, but the firm may first need evidence about liability, injury, time limits, and funding suitability before offering terms.",
+    ],
+    commonProblems: [
+      "Problems arise when users assume no win no fee means there is no possible cost, no deduction, or no obligation. Funding documents can still include responsibilities and deductions.",
+      "Another issue is relying on marketing language instead of asking for the written funding terms and a clear explanation of what happens in different outcomes.",
+    ],
+    prepareItems: [
+      "incident date",
+      "accident report",
+      "photographs",
+      "witness information",
+      "medical appointment details",
+      "insurer correspondence",
+      "loss of earnings information",
+      "questions about funding",
+    ],
+    questionItems: [
+      "what no win no fee means in this case",
+      "what success fee or deduction may apply",
+      "whether insurance is needed",
+      "who pays disbursements",
+      "what happens if the claim is unsuccessful",
+    ],
+    localContext:
+      "People in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may compare injury solicitor options after local workplace incidents, road accidents, slips, trips, or public liability concerns.",
+    relatedGuideSlugs: [
+      "personal-injury-vs-clinical-negligence",
+      "settlement-agreements-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+    faq: [
+      {
+        question: "Does no win no fee mean completely free?",
+        answer:
+          "Not necessarily. There may be success fees, insurance, disbursements, cancellation terms, or deductions. The written agreement should be explained before signing.",
+      },
+      {
+        question: "Does no win no fee guarantee compensation?",
+        answer:
+          "No. No funding arrangement guarantees that a claim will succeed or that compensation will be recovered.",
+      },
+      {
+        question: "Can this website explain my funding agreement?",
+        answer:
+          "No. This website does not provide legal advice. The solicitor or legal service provider offering the funding arrangement must explain it.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "personal-injury-vs-clinical-negligence",
+    title: "Personal Injury and Clinical Negligence: What Is the Difference?",
+    h1: "Personal injury and clinical negligence: what is the difference?",
+    metaDescription:
+      "General guide to the difference between personal injury and clinical negligence, evidence, medical records, funding, timing, and solicitor questions.",
+    category: "Personal Injury and Negligence",
+    relatedServiceSlug: "personal-injury-solicitors-kidderminster",
+    intro:
+      "Personal injury and clinical negligence claims can both involve harm, medical evidence, and compensation questions, but they usually arise from different situations and evidence requirements.",
+    keyTakeaways: [
+      "Personal injury often relates to accidents or incidents where another party may be responsible, such as workplace, road, or public liability incidents.",
+      "Clinical negligence usually concerns healthcare treatment where the issue is whether care fell below an appropriate standard and caused avoidable harm.",
+      "Both areas are evidence-heavy and should be assessed by a suitable solicitor or legal service provider, not by a general website.",
+    ],
+    topicOverview: [
+      "A personal injury enquiry might involve a road traffic accident, workplace accident, slip, trip, or public place injury. A clinical negligence enquiry might involve healthcare treatment, delayed diagnosis, surgical concerns, dental treatment, medication issues, or another medical-care concern.",
+      "Clinical negligence can require detailed medical records and expert evidence to consider breach of duty and causation. Personal injury claims may also need medical evidence, but liability evidence can include accident reports, witnesses, photographs, CCTV, or insurer documents.",
+    ],
+    practicalExamples: [
+      "A Kidderminster resident injured in a shop fall may have a personal injury enquiry involving accident records, photographs, witnesses, and medical evidence.",
+      "A Wyre Forest resident concerned about healthcare treatment may have a clinical negligence enquiry where medical records, complaint responses, chronology, and expert review become central.",
+    ],
+    commonProblems: [
+      "Problems arise where users assume a poor medical outcome automatically means clinical negligence, or assume an accident claim can proceed without evidence about fault.",
+      "Another issue is sending detailed medical records through public forms. At enquiry stage, a concise summary is usually safer, with records shared securely if a solicitor is instructed.",
+    ],
+    prepareItems: [
+      "incident or treatment dates",
+      "short factual timeline",
+      "photographs if relevant",
+      "accident reports if relevant",
+      "medical appointments",
+      "complaint correspondence",
+      "insurer letters",
+      "impact on work or daily life",
+    ],
+    questionItems: [
+      "which area of law the enquiry falls into",
+      "what evidence is needed first",
+      "whether limitation may be urgent",
+      "how funding is explained",
+      "whether the firm handles this type of matter regularly",
+    ],
+    localContext:
+      "Residents in Kidderminster and Wyre Forest may need different solicitor options depending on whether the matter involves an accident, workplace incident, road incident, healthcare provider, dental treatment, or medical records.",
+    relatedGuideSlugs: [
+      "no-win-no-fee-explained",
+      "settlement-agreements-explained",
+      "when-should-you-speak-to-an-employment-solicitor",
+    ],
+    faq: [
+      {
+        question: "Is clinical negligence a type of personal injury?",
+        answer:
+          "It is often related to injury and harm, but clinical negligence has specific issues around healthcare standards, medical records, expert evidence, and causation.",
+      },
+      {
+        question: "What if I am not sure which category applies?",
+        answer:
+          "Use a factual summary and explain what happened. A suitable solicitor partner may decide whether the enquiry fits their personal injury or clinical negligence work.",
+      },
+      {
+        question: "Should I upload medical records through this website?",
+        answer:
+          "No. Use the public form for a brief summary only. Detailed medical records should be shared securely with a solicitor or legal service provider if instructed.",
       },
     ],
   }),
