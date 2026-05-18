@@ -81,6 +81,13 @@ export const guideCategoryGroups = [
       "commercial-landlord-tenant-disputes-kidderminster",
       "debt-recovery-solicitors-kidderminster",
       "landlord-tenant-solicitors-kidderminster",
+      "small-business-solicitors-kidderminster",
+      "sme-legal-support-kidderminster",
+      "business-sale-solicitors-kidderminster",
+      "selling-business-solicitors-kidderminster",
+      "shareholder-dispute-solicitors-kidderminster",
+      "partnership-dispute-solicitors-kidderminster",
+      "director-dispute-solicitors-kidderminster",
     ],
   },
   {
@@ -420,6 +427,13 @@ export const servicePages: ServicePage[] = [
         body: [
           "Before requesting a quote, prepare the property postcode, estimated price, whether you are buying or selling, mortgage lender if known, tenure if known, and any special circumstances such as gifted deposits, leasehold, shared ownership, or a related sale.",
           "You do not need to send confidential documents through the quote form. A short practical summary is enough at enquiry stage. Detailed documents should be shared directly with a solicitor or legal service provider if you choose to instruct them.",
+        ],
+      },
+      {
+        heading: "Questions to ask a conveyancing solicitor",
+        body: [
+          "Ask whether the quote includes VAT, searches, Land Registry fees, lender work, bank transfer fees, ID checks, leasehold supplements, gifted deposit checks, and any charges that may apply if the transaction becomes more complex.",
+          "It is also sensible to ask who will handle the file day to day, how updates are provided, whether the firm is on your lender's panel, what can delay exchange, and what happens if the transaction falls through before completion.",
         ],
       },
     ],
@@ -1640,7 +1654,7 @@ export const servicePages: ServicePage[] = [
     summary:
       "Introductions for personal injury enquiries, with transparent wording around referral relationships.",
     intro:
-      "Personal injury enquiries need careful, transparent wording. This site avoids outcome promises, does not claim users will win a claim, and helps Kidderminster users request a no obligation introduction where appropriate.",
+      "Personal injury enquiries need careful, transparent wording. This site avoids outcome promises, does not claim users will win a claim, and helps Kidderminster users request a no obligation quote or introduction where appropriate.",
     localAngle:
       "Users in Kidderminster and the wider Wyre Forest area may want to speak with a regulated firm that can explain funding, eligibility, evidence, limitation periods, and next steps in plain English.",
     keyTakeaways: [
@@ -1714,7 +1728,7 @@ export const servicePages: ServicePage[] = [
       {
         question: "Can I request a call?",
         answer:
-          "Yes. You can submit an enquiry and a partner firm may contact you.",
+          "Yes. You can submit a no obligation quote enquiry and a suitable solicitor partner may contact you if they are able to help.",
       },
     ],
   },
@@ -2676,6 +2690,314 @@ export const servicePages: ServicePage[] = [
       "employment-status-explained",
       "what-does-a-conveyancing-solicitor-do",
       "what-should-be-included-in-a-will",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "small-business-solicitors-kidderminster",
+    title: "Small Business Solicitors Kidderminster",
+    h1: "Small business solicitors in Kidderminster",
+    metaDescription:
+      "Compare small business solicitor options in Kidderminster for contracts, disputes, employment, debt, premises, and business sale enquiries.",
+    category: "Small Business Legal Support",
+    summary:
+      "Support comparing solicitor options for small business contracts, disputes, employment questions, debt recovery, trading terms, and growth or exit plans.",
+    userNeed:
+      "Small business legal enquiries often start when an owner, director, partner, or manager needs practical support with a contract, customer dispute, supplier problem, staff issue, unpaid invoice, premises question, or proposed sale.",
+    serviceScope: [
+      "A solicitor partner may help a small business review contracts, trading terms, shareholder or partnership documents, commercial disputes, employment issues, debt recovery, premises documents, sale preparation, or risk points before a decision is made.",
+      "The work can range from a focused first review to a defined drafting, negotiation, dispute, or transaction stage. The useful comparison is whether the firm understands the business context, likely value, urgency, and documents involved.",
+    ],
+    localContext:
+      "Small businesses in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area may deal with local customers, suppliers, landlords, staff, and family ownership structures where clear documents and proportionate advice matter.",
+    prepareItems: [
+      "business name and postcode",
+      "short description of the issue",
+      "relevant contract or terms",
+      "key correspondence",
+      "invoice or debt details if relevant",
+      "deadline or hearing date",
+      "desired commercial outcome",
+    ],
+    questionItems: [
+      "whether the firm regularly supports small businesses",
+      "whether the matter can be handled as a fixed stage",
+      "what documents should be reviewed first",
+      "how urgent commercial deadlines are handled",
+      "what could make the matter more expensive",
+    ],
+    riskItems: [
+      "Small business issues often become more expensive when contracts are informal, terms are missing, emails are unclear, invoices are chased too late, or a dispute is allowed to become personal before documents are checked.",
+      "Another risk is paying for work that is not proportionate to the value of the issue. Ask for a clear scope and staged quote before deciding whether to instruct.",
+    ],
+    relatedGuideSlugs: [
+      "buying-business-legal-checklist",
+      "commercial-contract-review-guide",
+      "terms-and-conditions-solicitor-guide",
+      "directors-duties-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "sme-legal-support-kidderminster",
+    title: "SME Legal Support Kidderminster",
+    h1: "SME legal support in Kidderminster",
+    metaDescription:
+      "Compare SME legal support options in Kidderminster for contracts, employment, commercial disputes, debt, restructuring, and business planning.",
+    category: "SME Legal Support",
+    summary:
+      "Support comparing legal options for established SMEs managing contracts, staff, suppliers, premises, disputes, debt, and commercial risk.",
+    userNeed:
+      "SME legal enquiries usually involve a business that needs more than a one-off template check but may still need proportionate, commercially practical support rather than a large retainer.",
+    serviceScope: [
+      "A solicitor partner may help an SME with contract reviews, terms of business, supply agreements, commercial disputes, director or shareholder issues, employment processes, debt recovery, premises matters, sale preparation, or recurring risk management.",
+      "SME support can be structured as a one-off issue, a defined project, or repeated advice across several business areas. The important point is to clarify scope, response times, likely cost, and who will own the matter day to day.",
+    ],
+    localContext:
+      "SMEs around Kidderminster and Wyre Forest may operate from retail premises, workshops, offices, industrial estates, rural sites, or home-based operations, with customers and suppliers across Worcestershire and the West Midlands.",
+    prepareItems: [
+      "company or trading name",
+      "sector and approximate size",
+      "documents needing review",
+      "main risk or decision point",
+      "key dates",
+      "people involved",
+      "preferred commercial outcome",
+    ],
+    questionItems: [
+      "whether the firm can support ongoing SME work",
+      "whether named contacts and response times are available",
+      "how costs are scoped for repeat matters",
+      "whether employment and commercial work can be coordinated",
+      "what documents should be prioritised",
+    ],
+    riskItems: [
+      "SME legal work can become fragmented if contract, employment, debt, and premises issues are treated separately when they affect the same commercial decision.",
+      "Costs can also become unclear where a business asks for broad help without agreeing which documents, risks, and outcomes should be handled first.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "terms-and-conditions-solicitor-guide",
+      "directors-duties-explained",
+      "settlement-agreements-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "business-sale-solicitors-kidderminster",
+    title: "Business Sale Solicitors Kidderminster",
+    h1: "Business sale solicitors in Kidderminster",
+    metaDescription:
+      "Compare business sale solicitor options in Kidderminster for asset sales, share sales, due diligence, contracts, and completion documents.",
+    category: "Business Sale Legal Support",
+    summary:
+      "Support comparing solicitor options for selling or buying a business, preparing documents, reviewing risks, and managing completion steps.",
+    userNeed:
+      "Business sale enquiries often start when an owner is considering an exit, has found a buyer, is responding to heads of terms, or needs to understand what legal documents may be needed before a transaction progresses.",
+    serviceScope: [
+      "A solicitor partner may help with asset sale agreements, share purchase agreements, due diligence requests, disclosure, warranties, indemnities, commercial property overlap, employee transfer issues, completion documents, and post-completion obligations.",
+      "The work needed depends on whether the deal is an asset sale, share sale, partnership change, management buyout, or informal transfer of parts of a business. Early scoping can help avoid unclear pricing and missed documents.",
+    ],
+    localContext:
+      "Business sales in Kidderminster, Stourport, Bewdley, Hagley, and nearby Worcestershire areas may involve owner-managed companies, family businesses, local premises, employees, customer contracts, stock, equipment, and trading goodwill.",
+    prepareItems: [
+      "business name",
+      "whether you are buying or selling",
+      "heads of terms if available",
+      "company or asset details",
+      "premises information",
+      "employee details if relevant",
+      "target completion timing",
+    ],
+    questionItems: [
+      "whether the transaction is likely to be an asset sale or share sale",
+      "what due diligence documents are needed",
+      "how warranties and disclosure are handled",
+      "whether property or employment issues need separate work",
+      "what fixed-fee or staged pricing may be available",
+    ],
+    riskItems: [
+      "Business sales can stall when parties agree a price before checking exactly what is being sold, which liabilities remain, whether staff transfer, or whether landlord or lender consent is needed.",
+      "Another common issue is treating heads of terms as a simple formality when they may shape price, exclusivity, timetable, information access, and the eventual legal documents.",
+    ],
+    relatedGuideSlugs: [
+      "buying-business-legal-checklist",
+      "commercial-contract-review-guide",
+      "directors-duties-explained",
+      "shareholders-agreement-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "selling-business-solicitors-kidderminster",
+    title: "Selling a Business Solicitors Kidderminster",
+    h1: "Selling a business solicitors in Kidderminster",
+    metaDescription:
+      "Compare solicitor options for selling a business in Kidderminster, including preparation, due diligence, disclosure, premises, and completion.",
+    category: "Selling a Business",
+    summary:
+      "Support comparing solicitor options for owner-managed business sales, asset sales, share sales, disclosure, and completion planning.",
+    userNeed:
+      "Selling a business can raise document, tax, property, employee, confidentiality, and timing questions before a seller knows whether a buyer is serious or whether a proposed deal is workable.",
+    serviceScope: [
+      "A solicitor partner may help a seller prepare for due diligence, review heads of terms, draft or negotiate sale documents, manage disclosure, check warranties, deal with premises or lease points, and coordinate completion requirements.",
+      "The work may be different for an asset sale than a share sale. A seller should understand what information is being requested, what liabilities may continue, and what the buyer expects before agreeing the final structure.",
+    ],
+    localContext:
+      "Kidderminster and Wyre Forest business sale enquiries may involve local shops, trades, professional services, rural businesses, online operations, small manufacturers, or family-owned companies where goodwill and practical handover matter.",
+    prepareItems: [
+      "buyer details if known",
+      "heads of terms",
+      "accounts summary",
+      "premises lease or ownership details",
+      "employee information",
+      "key contracts",
+      "stock, assets, and equipment list",
+    ],
+    questionItems: [
+      "what documents should be prepared before due diligence",
+      "whether confidentiality or exclusivity wording is needed",
+      "how disclosure against warranties works",
+      "whether landlord consent or employee transfer rules may be relevant",
+      "what timetable is realistic",
+    ],
+    riskItems: [
+      "Sellers can lose leverage if they provide sensitive information without confidentiality protection, agree unclear heads of terms, underestimate landlord consent issues, or leave disclosure until late in the timetable.",
+      "Another risk is assuming that selling assets avoids all historic liabilities. The solicitor may need to explain the structure directly if instructed.",
+    ],
+    relatedGuideSlugs: [
+      "buying-business-legal-checklist",
+      "commercial-contract-review-guide",
+      "terms-and-conditions-solicitor-guide",
+      "directors-duties-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "shareholder-dispute-solicitors-kidderminster",
+    title: "Shareholder Dispute Solicitors Kidderminster",
+    h1: "Shareholder dispute solicitors in Kidderminster",
+    metaDescription:
+      "Compare shareholder dispute solicitor options in Kidderminster for owner-managed companies, director conflict, unfair prejudice, and exit disputes.",
+    category: "Shareholder Disputes",
+    summary:
+      "Support comparing solicitor options for shareholder disagreements, director conflict, company control, buyout discussions, and unfair prejudice concerns.",
+    userNeed:
+      "Shareholder disputes often begin when owners disagree about control, money, duties, information, dividends, decisions, conduct, exit terms, or the future direction of a company.",
+    serviceScope: [
+      "A solicitor partner may review articles, shareholders' agreements, board minutes, Companies House filings, financial information requests, director duties, unfair prejudice concerns, buyout options, and correspondence between owners.",
+      "Some disputes need urgent restraint or court-related advice. Others may be better handled through negotiation, valuation discussion, mediation, or a structured exit. The documents and commercial aim matter from the start.",
+    ],
+    localContext:
+      "Owner-managed companies in Kidderminster, Wyre Forest, Worcestershire, and the West Midlands may involve family members, long-term business partners, local premises, shared banking arrangements, and reputational concerns within a close market.",
+    prepareItems: [
+      "company name",
+      "articles of association",
+      "shareholders' agreement if any",
+      "shareholdings",
+      "board or shareholder minutes",
+      "key correspondence",
+      "financial or information requests",
+    ],
+    questionItems: [
+      "which documents should be reviewed first",
+      "whether there are urgent company control issues",
+      "whether an exit or buyout is realistic",
+      "how valuation evidence may be handled",
+      "what steps should be avoided before advice",
+    ],
+    riskItems: [
+      "Shareholder disputes can worsen when owners remove documents, lock each other out, make unilateral decisions, stop communication, or threaten proceedings before checking the company documents.",
+      "Another risk is confusing shareholder rights, director duties, employment rights, and personal relationships. The same person may wear several hats, so a solicitor may need to separate the issues carefully.",
+    ],
+    relatedGuideSlugs: [
+      "shareholders-agreement-guide",
+      "directors-duties-explained",
+      "just-equitable-winding-up",
+      "commercial-contract-review-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "partnership-dispute-solicitors-kidderminster",
+    title: "Partnership Dispute Solicitors Kidderminster",
+    h1: "Partnership dispute solicitors in Kidderminster",
+    metaDescription:
+      "Compare partnership dispute solicitor options in Kidderminster for business partner exits, profit disputes, agreements, and dissolution questions.",
+    category: "Partnership Disputes",
+    summary:
+      "Support comparing solicitor options for partnership disagreements, business partner exits, profit shares, duties, documents, and dissolution planning.",
+    userNeed:
+      "Partnership disputes often arise when business partners disagree about profits, drawings, decision-making, workload, ownership of assets, customer relationships, retirement, expulsion, or whether the business should continue.",
+    serviceScope: [
+      "A solicitor partner may review a partnership agreement, LLP agreement, accounts, banking records, correspondence, duties, exit provisions, restrictive covenants, client ownership issues, and options for negotiation or dissolution.",
+      "The work needed depends on the business structure. Traditional partnerships, LLPs, informal arrangements, and companies with equal shareholders can raise different legal and practical questions.",
+    ],
+    localContext:
+      "Partnership disputes in Kidderminster and Worcestershire may involve local professional services, trades, family ventures, farms, retail businesses, or small owner-managed operations where personal relationships and business continuity are closely connected.",
+    prepareItems: [
+      "partnership or LLP agreement",
+      "business structure details",
+      "accounts or profit share information",
+      "asset and liability list",
+      "key correspondence",
+      "customer or supplier concerns",
+      "desired exit or continuation outcome",
+    ],
+    questionItems: [
+      "whether the arrangement is a partnership, LLP, company, or informal venture",
+      "what the agreement says about exit or deadlock",
+      "whether urgent steps are needed to protect assets",
+      "how accounts and valuation are approached",
+      "whether negotiation or mediation may be appropriate",
+    ],
+    riskItems: [
+      "Partnership disputes can escalate when one partner changes bank access, contacts customers, removes assets, or announces an exit before checking the agreement and duties involved.",
+      "A further risk is assuming that an informal partnership has no legal consequences. Even without a detailed written agreement, documents, conduct, accounts, and contributions may matter.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "shareholders-agreement-guide",
+      "directors-duties-explained",
+      "terms-and-conditions-solicitor-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "director-dispute-solicitors-kidderminster",
+    title: "Director Dispute Solicitors Kidderminster",
+    h1: "Director dispute solicitors in Kidderminster",
+    metaDescription:
+      "Compare director dispute solicitor options in Kidderminster for board conflict, duties, removal, company control, and owner-managed business disputes.",
+    category: "Director Disputes",
+    summary:
+      "Support comparing solicitor options for board disputes, director duties, removal concerns, company control, misconduct allegations, and owner-managed company conflict.",
+    userNeed:
+      "Director disputes often start when board members disagree about decisions, authority, money, conduct, company property, access to information, removal, resignation, or overlap between director, shareholder, and employee roles.",
+    serviceScope: [
+      "A solicitor partner may review articles, service agreements, shareholder documents, board minutes, Companies House filings, director duties, alleged misconduct, resignation or removal steps, and routes for resolving deadlock.",
+      "Some matters need quick advice before a board meeting or filing. Others need careful negotiation because the same people may also be shareholders, employees, lenders, guarantors, or family members.",
+    ],
+    localContext:
+      "Director disputes around Kidderminster, Wyre Forest, Worcestershire, and nearby West Midlands areas often involve owner-managed companies where business control, personal relationships, premises, staff, and reputation are closely linked.",
+    prepareItems: [
+      "company name and number",
+      "articles of association",
+      "shareholder or director agreements",
+      "board minutes",
+      "Companies House filings",
+      "employment or service contract",
+      "timeline of disputed decisions",
+    ],
+    questionItems: [
+      "which role is in dispute: director, shareholder, employee, or guarantor",
+      "whether any meeting or filing deadline is urgent",
+      "what documents control removal or resignation",
+      "whether duties or misconduct allegations need review",
+      "what communication should be paused until advice is taken",
+    ],
+    riskItems: [
+      "Director disputes can go wrong when someone files a change at Companies House without understanding the underlying documents, excludes another director from information, or uses company assets in a contested way.",
+      "Another risk is treating a director issue as purely personal. Duties to the company, board authority, shareholder rights, and employment rights may all need separate consideration.",
+    ],
+    relatedGuideSlugs: [
+      "directors-duties-explained",
+      "shareholders-agreement-guide",
+      "just-equitable-winding-up",
+      "commercial-contract-review-guide",
     ],
   }),
 ];
@@ -4018,7 +4340,7 @@ const rawGuidePages: GuidePage[] = [
         ],
       },
       {
-        heading: "What affects the final cost",
+        heading: "What to prepare before comparing probate quotes",
         body: [
           "Cost can be affected by the number and type of assets, whether there is a valid will, whether inheritance tax forms are needed, how quickly financial institutions respond, whether property needs to be sold, whether beneficiaries are known and cooperative, and whether disputes or unclear documents arise.",
           "Executors can help keep cost clearer by preparing documents early. Useful information includes the will, death certificate, asset list, debt list, property details, bank and investment information, beneficiary details, tax records, and notes of any known concerns.",
@@ -10087,6 +10409,228 @@ const rawGuidePages: GuidePage[] = [
       },
     ],
   },
+  createQualityGuide({
+    slug: "buying-business-legal-checklist",
+    title: "Buying a Business Legal Checklist",
+    h1: "Buying a business legal checklist",
+    metaDescription:
+      "General checklist for buying a business, including due diligence, contracts, employees, premises, warranties, and questions to ask a solicitor.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "business-sale-solicitors-kidderminster",
+    intro:
+      "Buying a business is not only a price negotiation. The buyer usually needs to understand what is being bought, what liabilities may be inherited, which contracts transfer, whether staff or premises are involved, and what documents should be checked before completion. This checklist explains the main areas to prepare before requesting a no obligation quote from a suitable solicitor partner.",
+    keyTakeaways: [
+      "Clarify whether the transaction is an asset purchase, share purchase, partnership change, or another structure before comparing quotes.",
+      "Due diligence should usually cover finances, contracts, employees, premises, liabilities, intellectual property, stock, equipment, and trading history.",
+      "Heads of terms, warranties, disclosure, completion mechanics, and post-completion restrictions can all affect the practical value of the deal.",
+    ],
+    topicOverview: [
+      "A business purchase can be structured in several ways. An asset purchase may involve buying selected assets, goodwill, stock, contracts, equipment, and sometimes taking on employees. A share purchase usually means buying the company that owns the business, which can bring a wider set of historic liabilities and due diligence questions.",
+      "The legal work often includes reviewing heads of terms, checking due diligence replies, drafting or negotiating the purchase agreement, reviewing warranties and disclosure, dealing with lease or property issues, considering employees, and managing completion documents. Tax and accounting input may also be needed from appropriate advisers.",
+    ],
+    practicalExamples: [
+      "A buyer acquiring a small shop in Kidderminster may need to check the lease, stock valuation, supplier contracts, employees, fixtures, trading name, licences, and whether the landlord must consent before completion.",
+      "A buyer acquiring shares in an owner-managed company may need deeper due diligence on accounts, debts, employment records, customer contracts, tax, disputes, company registers, director loans, and hidden liabilities.",
+    ],
+    commonProblems: [
+      "Problems commonly arise when buyers rely on verbal promises, skip due diligence because the seller is known locally, agree vague heads of terms, underestimate lease issues, or fail to check whether key customer or supplier contracts can transfer.",
+      "Another common problem is not separating commercial risk from legal risk. A solicitor may review documents and explain legal structure if instructed, while accountants, tax advisers, lenders, surveyors, or sector specialists may be needed for other parts of the decision.",
+    ],
+    prepareItems: [
+      "heads of terms",
+      "business name and structure",
+      "asset or share purchase outline",
+      "accounts and finance summary",
+      "lease or premises details",
+      "employee information",
+      "key contracts, licences, stock, and equipment lists",
+    ],
+    questionItems: [
+      "whether the deal is an asset purchase or share purchase",
+      "what due diligence should be requested first",
+      "whether landlord, lender, or third-party consent is needed",
+      "how warranties and disclosure will be handled",
+      "what needs to happen before exchange or completion",
+    ],
+    localContext:
+      "Business purchases in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and wider Worcestershire may involve local customer goodwill, leased premises, family ownership, small teams, trade suppliers, and regional banking or funding arrangements.",
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "terms-and-conditions-solicitor-guide",
+      "directors-duties-explained",
+      "shareholders-agreement-guide",
+    ],
+    faq: [
+      {
+        question: "Is buying business assets different from buying shares?",
+        answer:
+          "Yes. An asset purchase usually targets selected business assets and liabilities, while a share purchase involves buying the company itself. The structure affects due diligence and documents.",
+      },
+      {
+        question: "Should heads of terms be reviewed before signing?",
+        answer:
+          "It can be sensible to ask a qualified provider to review important heads of terms because price, exclusivity, timing, confidentiality, and deal structure may shape the later documents.",
+      },
+      {
+        question: "What documents does a buyer usually need to check?",
+        answer:
+          "Common documents include accounts, contracts, leases, employee information, licences, asset lists, insurance, debt details, company records, and any dispute or claim correspondence.",
+      },
+      {
+        question: "Can this website advise on whether to buy the business?",
+        answer:
+          "No. This website provides general information and solicitor introductions only. A qualified solicitor, accountant, tax adviser, or other adviser would need to assess the facts directly.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "commercial-contract-review-guide",
+    title: "Commercial Contract Review Guide",
+    h1: "Commercial contract review guide",
+    metaDescription:
+      "General guide to commercial contract reviews, including scope, risk clauses, liability, payment terms, termination, and what to prepare.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "small-business-solicitors-kidderminster",
+    intro:
+      "A commercial contract review helps a business understand the practical effect of a proposed agreement before signing or relying on it. The aim is usually to identify unclear obligations, payment risk, liability exposure, termination rights, renewal terms, and points that should be clarified before the contract becomes binding.",
+    keyTakeaways: [
+      "A useful contract review should focus on the business decision, not just legal wording in isolation.",
+      "Payment terms, scope, liability, indemnities, termination, renewal, intellectual property, confidentiality, and dispute clauses often need careful checking.",
+      "The first quote should explain whether the solicitor is reviewing a single contract, negotiating changes, or drafting new wording.",
+    ],
+    topicOverview: [
+      "Commercial contracts can include supplier agreements, customer terms, service contracts, distribution arrangements, agency agreements, software terms, consultancy agreements, confidentiality agreements, and purchase documents. Each document should be reviewed in light of the transaction, value, risk, and bargaining position.",
+      "A solicitor partner may check whether obligations are clear, whether payment and delivery terms match the commercial deal, whether liability caps are proportionate, whether indemnities are too wide, and whether termination provisions allow the business to exit if things go wrong.",
+    ],
+    practicalExamples: [
+      "A Kidderminster business signing a new supplier agreement may need to understand minimum order commitments, price increases, delivery failures, liability limits, and whether the supplier can change terms unilaterally.",
+      "A service provider may need to check whether its customer contract clearly explains scope, payment dates, late payment consequences, intellectual property ownership, complaint handling, and termination rights.",
+    ],
+    commonProblems: [
+      "Contract problems often begin when parties rely on a short email, copy an old template, sign without checking automatic renewal, accept one-sided indemnities, or fail to match the contract wording to the actual commercial deal.",
+      "Another problem is asking for a review too late. If the document has already been signed or work has started, options may be narrower. Mention the current stage clearly when requesting a quote.",
+    ],
+    prepareItems: [
+      "contract draft",
+      "summary of the deal",
+      "value and term",
+      "deadline for signing",
+      "main commercial concerns",
+      "previous versions or markups",
+      "related emails or heads of terms",
+    ],
+    questionItems: [
+      "whether the review is fixed-fee or hourly",
+      "which clauses are highest risk",
+      "whether the solicitor can suggest drafting changes",
+      "whether negotiation support is included",
+      "what should be clarified before signing",
+    ],
+    localContext:
+      "Commercial contract enquiries around Kidderminster and Wyre Forest may involve owner-managed businesses, local suppliers, regional customers, service providers, trades, retail operators, online businesses, and family companies with practical cash-flow concerns.",
+    relatedGuideSlugs: [
+      "terms-and-conditions-solicitor-guide",
+      "buying-business-legal-checklist",
+      "enforceable-contracts-explained",
+      "directors-duties-explained",
+    ],
+    faq: [
+      {
+        question: "Can a solicitor review a contract before I sign it?",
+        answer:
+          "Yes. A solicitor may review a draft contract, explain key risks, suggest changes, and help with negotiation if instructed and if that work is within the agreed scope.",
+      },
+      {
+        question: "What should I say when requesting a contract review quote?",
+        answer:
+          "Explain the contract type, value, deadline, whether it is already signed, what worries you most, and whether you need review only or negotiation support.",
+      },
+      {
+        question: "Are standard commercial templates enough for every deal?",
+        answer:
+          "Not always. Templates can be useful starting points, but the right wording depends on the transaction, parties, risk, value, and bargaining position.",
+      },
+      {
+        question: "Does this guide provide legal advice on a contract?",
+        answer:
+          "No. This is general information only. A solicitor or legal service provider would need to review the specific contract directly if instructed.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "terms-and-conditions-solicitor-guide",
+    title: "Terms and Conditions Solicitor Guide",
+    h1: "Terms and conditions solicitor guide",
+    metaDescription:
+      "General guide to business terms and conditions, including payment, delivery, liability, consumer terms, online sales, and what to ask a solicitor.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "small-business-solicitors-kidderminster",
+    intro:
+      "Business terms and conditions set the default rules for sales, services, payment, delivery, cancellation, liability, complaints, and disputes. They are easy to overlook until something goes wrong. A clear set of terms can help a business explain expectations, reduce avoidable arguments, and show customers or clients how the relationship is supposed to work.",
+    keyTakeaways: [
+      "Terms and conditions should match the way the business actually sells, supplies, delivers, and gets paid.",
+      "Important clauses often cover scope, payment, late payment, delivery, cancellation, liability, intellectual property, data, complaints, and dispute handling.",
+      "Consumer, online, subscription, and distance-selling arrangements may need different wording from business-to-business trading terms.",
+    ],
+    topicOverview: [
+      "Terms and conditions may be used for goods, services, online sales, consultancy, trades, subscriptions, bookings, wholesale supply, or recurring customer relationships. They should be practical enough for staff and customers to understand, while still covering the legal and commercial risks that matter.",
+      "A solicitor partner may help draft or review terms, check whether consumer-facing wording is suitable, align terms with website journeys or order forms, and identify gaps around payment, limitation of liability, delivery, cancellation, refunds, retention of title, or intellectual property.",
+    ],
+    practicalExamples: [
+      "A local trades business may need terms that explain deposits, quotes, variations, cancellations, access to the property, materials, payment stages, complaints, and what happens if a customer delays the work.",
+      "An online retailer may need terms that sit alongside privacy, returns, delivery, consumer cancellation rights, payment processing, product descriptions, and stock availability processes.",
+    ],
+    commonProblems: [
+      "Problems often arise when terms are copied from another business, hidden until after the deal is agreed, inconsistent with quotes or invoices, unclear about cancellation, or silent on what happens when payment is late.",
+      "Another issue is assuming one document works for every customer type. Business-to-business terms, consumer terms, online terms, and subscription terms may need different treatment depending on how the business trades.",
+    ],
+    prepareItems: [
+      "current terms if any",
+      "website or order journey",
+      "quote and invoice templates",
+      "main customer types",
+      "payment and delivery process",
+      "refund or cancellation policy",
+      "common disputes or complaints",
+    ],
+    questionItems: [
+      "whether the terms are for consumers, businesses, or both",
+      "whether website wording and order forms need checking",
+      "how payment and cancellation clauses should be structured",
+      "whether liability limits are proportionate",
+      "how the terms should be incorporated into contracts",
+    ],
+    localContext:
+      "Businesses in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and wider Worcestershire may use terms for local services, online sales, trade supply, professional services, bookings, or recurring customer relationships across the region.",
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "buying-business-legal-checklist",
+      "enforceable-contracts-explained",
+      "collecting-business-debt",
+    ],
+    faq: [
+      {
+        question: "Can I copy another business's terms and conditions?",
+        answer:
+          "Copying another business's terms can create serious mismatch and ownership problems. Terms should reflect your own sales process, customers, risks, and documents.",
+      },
+      {
+        question: "When should terms be shown to customers?",
+        answer:
+          "Terms usually need to be brought to the customer's attention before or when the contract is made. The exact approach depends on the sales process and customer type.",
+      },
+      {
+        question: "Do consumer terms need special care?",
+        answer:
+          "Yes. Consumer-facing terms may need clear cancellation, refund, delivery, fairness, and statutory rights wording. Ask a qualified provider to review the specific setup if instructed.",
+      },
+      {
+        question: "Can this website draft terms and conditions?",
+        answer:
+          "No. Kidderminster Solicitors is not a law firm and does not draft legal documents. It may introduce users to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
 ];
 
 const anchorTextByServiceSlug: Record<string, string[]> = {
@@ -10211,6 +10755,41 @@ const anchorTextByServiceSlug: Record<string, string[]> = {
     "landlord and tenant solicitor options",
     "compare tenancy dispute support",
     "Kidderminster landlord and tenant enquiries",
+  ],
+  "small-business-solicitors-kidderminster": [
+    "small business solicitor options in Kidderminster",
+    "compare small business legal support",
+    "Kidderminster business solicitor enquiries",
+  ],
+  "sme-legal-support-kidderminster": [
+    "SME legal support options in Kidderminster",
+    "compare SME solicitor support",
+    "business legal support for SMEs",
+  ],
+  "business-sale-solicitors-kidderminster": [
+    "business sale solicitor options in Kidderminster",
+    "compare business sale legal support",
+    "buying or selling a business solicitor enquiries",
+  ],
+  "selling-business-solicitors-kidderminster": [
+    "selling a business solicitor options",
+    "compare business sale support",
+    "Kidderminster business exit solicitor enquiries",
+  ],
+  "shareholder-dispute-solicitors-kidderminster": [
+    "shareholder dispute solicitor options",
+    "compare shareholder dispute support",
+    "Kidderminster company owner dispute enquiries",
+  ],
+  "partnership-dispute-solicitors-kidderminster": [
+    "partnership dispute solicitor options",
+    "compare partnership dispute support",
+    "business partner dispute solicitor enquiries",
+  ],
+  "director-dispute-solicitors-kidderminster": [
+    "director dispute solicitor options",
+    "compare director dispute support",
+    "Kidderminster board dispute solicitor enquiries",
   ],
   "personal-injury-solicitors-kidderminster": [
     "personal injury solicitor options in Kidderminster",

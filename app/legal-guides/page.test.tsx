@@ -12,15 +12,23 @@ describe("LegalGuidesPage", () => {
         name: /legal guides for kidderminster solicitor enquiries/i,
       }),
     ).toBeInTheDocument();
-    expect(screen.getByText(/conveyancing/i)).toBeInTheDocument();
-    expect(screen.getByText(/probate and wills/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: /conveyancing and property/i,
+      }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: /probate, wills and later-life planning/i,
+      }),
+    ).toBeInTheDocument();
     expect(
       screen.getByRole("link", {
         name: /how much do conveyancing solicitors cost in kidderminster/i,
       }),
     ).toHaveAttribute(
       "href",
-      "/legal-guides/how-much-do-conveyancing-solicitors-cost-in-kidderminster/",
+      "/legal-guides/how-much-do-conveyancing-solicitors-cost-in-kidderminster",
     );
   });
 

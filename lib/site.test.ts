@@ -218,6 +218,43 @@ describe("site content model", () => {
     );
   });
 
+  it("includes CE2 Phase 2 batch A1 business services and guides", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "small-business-solicitors-kidderminster",
+        "sme-legal-support-kidderminster",
+        "business-sale-solicitors-kidderminster",
+        "selling-business-solicitors-kidderminster",
+        "shareholder-dispute-solicitors-kidderminster",
+        "partnership-dispute-solicitors-kidderminster",
+        "director-dispute-solicitors-kidderminster",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "buying-business-legal-checklist",
+        "commercial-contract-review-guide",
+        "terms-and-conditions-solicitor-guide",
+      ]),
+    );
+
+    [
+      "small-business-solicitors-kidderminster",
+      "sme-legal-support-kidderminster",
+      "business-sale-solicitors-kidderminster",
+      "buying-business-legal-checklist",
+      "selling-business-solicitors-kidderminster",
+      "shareholder-dispute-solicitors-kidderminster",
+      "partnership-dispute-solicitors-kidderminster",
+      "director-dispute-solicitors-kidderminster",
+      "commercial-contract-review-guide",
+      "terms-and-conditions-solicitor-guide",
+    ].forEach((slug) => {
+      expect(getAllPageSlugs()).toContain(slug);
+    });
+  });
+
   it("keeps guide content useful, local, and conversion-aware", () => {
     const localPattern =
       /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;
