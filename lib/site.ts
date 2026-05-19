@@ -88,6 +88,13 @@ export const guideCategoryGroups = [
       "shareholder-dispute-solicitors-kidderminster",
       "partnership-dispute-solicitors-kidderminster",
       "director-dispute-solicitors-kidderminster",
+      "business-contract-dispute-solicitors-kidderminster",
+      "breach-of-contract-solicitors-kidderminster",
+      "supplier-dispute-solicitors-kidderminster",
+      "customer-dispute-solicitors-kidderminster",
+      "late-payment-solicitors-kidderminster",
+      "commercial-lease-review-solicitors-kidderminster",
+      "franchise-agreement-solicitors-kidderminster",
     ],
   },
   {
@@ -2998,6 +3005,314 @@ export const servicePages: ServicePage[] = [
       "shareholders-agreement-guide",
       "just-equitable-winding-up",
       "commercial-contract-review-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "business-contract-dispute-solicitors-kidderminster",
+    title: "Business Contract Dispute Solicitors Kidderminster",
+    h1: "Business contract dispute solicitors in Kidderminster",
+    metaDescription:
+      "Compare business contract dispute solicitor options in Kidderminster for unpaid work, supplier issues, termination, liability, and commercial disagreements.",
+    category: "Business Contract Disputes",
+    summary:
+      "Support comparing solicitor options for contract disagreements involving suppliers, customers, payment, performance, termination, liability, and settlement discussions.",
+    userNeed:
+      "Business contract disputes often begin when a customer refuses to pay, a supplier fails to perform, a party tries to terminate, or the written terms do not match what the business thought had been agreed.",
+    serviceScope: [
+      "A solicitor partner may review the contract, order forms, emails, terms and conditions, invoices, delivery records, performance issues, liability clauses, termination wording, and correspondence between the parties.",
+      "Some disputes need urgent steps to protect cash flow, stock, access, or confidential information. Others may be suitable for negotiation, a letter before action, mediation, or a staged review before costs increase.",
+    ],
+    localContext:
+      "Kidderminster and Wyre Forest businesses may deal with local suppliers, regional customers, trades, manufacturers, online sales, and service contracts where delay, payment, and reputation all matter.",
+    prepareItems: [
+      "signed contract or latest terms",
+      "order forms and quotes",
+      "invoices",
+      "delivery or performance evidence",
+      "key emails and messages",
+      "timeline of events",
+      "commercial outcome wanted",
+    ],
+    questionItems: [
+      "which contract documents control the dispute",
+      "whether urgent action or a letter before action is appropriate",
+      "what evidence should be preserved",
+      "whether negotiation or mediation may be proportionate",
+      "how costs can be staged against the value of the dispute",
+    ],
+    riskItems: [
+      "Business contract disputes can become harder when parties continue performing without reserving their position, send heated emails, miss notice requirements, or rely on assumed terms that are not in the documents.",
+      "Another risk is escalating too quickly where a commercial settlement may be more proportionate than full litigation. Ask for a staged view of options before deciding how far to go.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "terms-and-conditions-solicitor-guide",
+      "commercial-debt-recovery-process",
+      "unpaid-invoice-legal-options",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "breach-of-contract-solicitors-kidderminster",
+    title: "Breach of Contract Solicitors Kidderminster",
+    h1: "Breach of contract solicitors in Kidderminster",
+    metaDescription:
+      "Compare breach of contract solicitor options in Kidderminster for failed performance, non-payment, termination, losses, and contract enforcement.",
+    category: "Breach of Contract",
+    summary:
+      "Support comparing solicitor options where a business or individual believes a contract has been broken and needs to understand practical next steps.",
+    userNeed:
+      "Breach of contract enquiries often start when work has not been delivered, payment has not been made, goods or services are disputed, deadlines have been missed, or one party says the agreement has ended.",
+    serviceScope: [
+      "A solicitor partner may review the contract, evidence of agreement, performance records, payment history, notice clauses, loss evidence, limitation issues, and options for resolving or enforcing the agreement.",
+      "The work may include early merits review, correspondence, negotiation, settlement terms, dispute resolution clauses, or court-related steps where proportionate and suitable.",
+    ],
+    localContext:
+      "Breach of contract issues in Kidderminster, Stourport, Bewdley, Hagley, and Worcestershire may involve local trades, customer relationships, business services, property work, supply chains, or family-run companies.",
+    prepareItems: [
+      "contract or written terms",
+      "quotes and purchase orders",
+      "emails or messages showing agreement",
+      "proof of payment or invoices",
+      "evidence of performance or defects",
+      "loss summary",
+      "deadline or notice dates",
+    ],
+    questionItems: [
+      "whether there is a written or partly oral agreement",
+      "what evidence shows the breach",
+      "what remedy or settlement is realistic",
+      "whether any notice clause has to be followed",
+      "what cost route fits the value of the claim",
+    ],
+    riskItems: [
+      "Breach of contract disputes often go wrong when people assume a verbal agreement is enough without checking evidence, ignore notice clauses, continue work without clarity, or claim losses that cannot be evidenced.",
+      "Another common problem is confusing poor service, delay, breach, negligence, and debt recovery. The legal route may depend on the wording and facts.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "enforceable-contracts-explained",
+      "unpaid-invoice-legal-options",
+      "terms-and-conditions-solicitor-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "supplier-dispute-solicitors-kidderminster",
+    title: "Supplier Dispute Solicitors Kidderminster",
+    h1: "Supplier dispute solicitors in Kidderminster",
+    metaDescription:
+      "Compare supplier dispute solicitor options in Kidderminster for failed delivery, defective goods, service issues, payment disputes, and contract termination.",
+    category: "Supplier Disputes",
+    summary:
+      "Support comparing solicitor options for supplier disagreements involving goods, services, delivery, quality, payment, contract terms, and ongoing trading relationships.",
+    userNeed:
+      "Supplier disputes often arise when goods arrive late, quality is disputed, service levels are missed, prices change, minimum orders become a problem, or the business needs to exit a supplier relationship.",
+    serviceScope: [
+      "A solicitor partner may review supply agreements, purchase orders, service levels, delivery evidence, quality reports, payment records, termination clauses, liability limits, and correspondence with the supplier.",
+      "Where the supplier is important to the business, the next step may need to balance legal leverage with continuity, stock, customers, and cash flow.",
+    ],
+    localContext:
+      "Businesses in Kidderminster and Wyre Forest may rely on regional suppliers, trade accounts, logistics providers, manufacturers, wholesalers, software providers, and contractors where disruption can affect customers quickly.",
+    prepareItems: [
+      "supplier contract",
+      "purchase orders",
+      "delivery notes",
+      "photos or quality evidence",
+      "service level records",
+      "invoices and payment history",
+      "emails about the problem",
+    ],
+    questionItems: [
+      "whether the supplier terms or buyer terms apply",
+      "what evidence shows poor performance",
+      "whether termination could create further risk",
+      "whether urgent replacement supply is needed",
+      "what settlement or commercial outcome is realistic",
+    ],
+    riskItems: [
+      "Supplier disputes can worsen where a business withholds payment without checking the contract, terminates too quickly, fails to document defects, or allows operational urgency to override evidence gathering.",
+      "Another risk is overlooking which terms apply. Battle-of-the-forms issues can affect payment, liability, termination, and dispute clauses.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "terms-and-conditions-solicitor-guide",
+      "unpaid-invoice-legal-options",
+      "commercial-debt-recovery-process",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "customer-dispute-solicitors-kidderminster",
+    title: "Customer Dispute Solicitors Kidderminster",
+    h1: "Customer dispute solicitors in Kidderminster",
+    metaDescription:
+      "Compare customer dispute solicitor options in Kidderminster for complaints, non-payment, rejected goods, service disputes, and commercial settlement.",
+    category: "Customer Disputes",
+    summary:
+      "Support comparing solicitor options for business disputes with customers involving complaints, unpaid invoices, rejected work, refunds, cancellation, or contract terms.",
+    userNeed:
+      "Customer disputes often start when a customer refuses to pay, complains about work, demands a refund, rejects goods, cancels late, posts damaging allegations, or threatens a claim.",
+    serviceScope: [
+      "A solicitor partner may review customer terms, quotes, order forms, invoices, delivery or service records, complaint correspondence, refund policies, liability clauses, and evidence of work completed.",
+      "Support may involve early risk review, a response letter, negotiation, payment recovery, settlement wording, or a proportionate dispute route depending on the value and relationship.",
+    ],
+    localContext:
+      "Customer disputes around Kidderminster and Worcestershire can affect trades, retailers, service businesses, online sellers, hospitality, professional services, and small local companies where reputation matters.",
+    prepareItems: [
+      "customer contract or terms",
+      "quote and invoice",
+      "complaint details",
+      "evidence of goods or services supplied",
+      "payment record",
+      "refund or cancellation policy",
+      "public review or allegation if relevant",
+    ],
+    questionItems: [
+      "whether the customer is a consumer or business",
+      "what terms were provided before the contract",
+      "what evidence supports the business position",
+      "whether settlement is more proportionate than escalation",
+      "how to avoid worsening the dispute in writing",
+    ],
+    riskItems: [
+      "Customer disputes can become harder when a business replies emotionally, ignores consumer status, relies on terms that were not incorporated, or threatens action before checking the documents.",
+      "Another risk is overlooking reputational and cash-flow factors. The right route may depend on value, evidence, repeat business, and public communication.",
+    ],
+    relatedGuideSlugs: [
+      "terms-and-conditions-solicitor-guide",
+      "commercial-contract-review-guide",
+      "unpaid-invoice-legal-options",
+      "commercial-debt-recovery-process",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "late-payment-solicitors-kidderminster",
+    title: "Late Payment Solicitors Kidderminster",
+    h1: "Late payment solicitors in Kidderminster",
+    metaDescription:
+      "Compare late payment solicitor options in Kidderminster for unpaid invoices, business debts, payment disputes, and commercial debt recovery.",
+    category: "Late Payment",
+    summary:
+      "Support comparing solicitor options for late payment, unpaid invoices, disputed debts, payment terms, reminders, and commercial recovery routes.",
+    userNeed:
+      "Late payment enquiries often begin when invoices remain unpaid, reminders are ignored, a customer raises a late dispute, or a business needs to protect cash flow without damaging a relationship unnecessarily.",
+    serviceScope: [
+      "A solicitor partner may review invoices, payment terms, delivery evidence, customer correspondence, disputed items, statutory interest questions, letter before action options, and whether a debt recovery route is proportionate.",
+      "Some late payment issues are straightforward. Others overlap with quality disputes, set-off arguments, contract terms, insolvency risk, or ongoing customer relationships.",
+    ],
+    localContext:
+      "Small businesses and SMEs in Kidderminster, Stourport, Bewdley, Hagley, and Worcestershire may rely on prompt payment to manage wages, suppliers, tax, rent, stock, and operational cash flow.",
+    prepareItems: [
+      "invoice copies",
+      "payment terms",
+      "proof of delivery or work completed",
+      "customer correspondence",
+      "statement of account",
+      "any dispute raised",
+      "company or trading details",
+    ],
+    questionItems: [
+      "whether the debt is disputed",
+      "what recovery step is proportionate",
+      "whether interest or compensation may be claimed",
+      "whether the customer appears insolvent",
+      "what costs may be recoverable and what remains commercial risk",
+    ],
+    riskItems: [
+      "Late payment matters can go wrong when reminders are informal, payment terms are unclear, work evidence is missing, or a business threatens proceedings without checking whether the debt is genuinely disputed.",
+      "Another risk is spending more on recovery than the debt justifies. Ask for staged options and cost clarity before instructing.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-debt-recovery-process",
+      "unpaid-invoice-legal-options",
+      "collecting-business-debt",
+      "terms-and-conditions-solicitor-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "commercial-lease-review-solicitors-kidderminster",
+    title: "Commercial Lease Review Solicitors Kidderminster",
+    h1: "Commercial lease review solicitors in Kidderminster",
+    metaDescription:
+      "Compare commercial lease review solicitor options in Kidderminster for business premises, lease terms, rent, repairs, break clauses, and renewal questions.",
+    category: "Commercial Lease Review",
+    summary:
+      "Support comparing solicitor options for reviewing commercial leases, heads of terms, rent, repairs, service charges, break clauses, assignment, and renewal points.",
+    userNeed:
+      "Commercial lease review enquiries often start when a business is taking new premises, renewing a lease, moving unit, agreeing heads of terms, or worried about repair, rent, break, or service charge obligations.",
+    serviceScope: [
+      "A solicitor partner may review heads of terms, draft leases, rent deposit deeds, guarantees, repairing obligations, service charge wording, break clauses, assignment and subletting rules, planning or use restrictions, and completion requirements.",
+      "The work needed depends on whether the user is a tenant, landlord, buyer, seller, franchisee, or business owner tying premises to a wider commercial transaction.",
+    ],
+    localContext:
+      "Kidderminster and Wyre Forest businesses may occupy high street units, offices, workshops, industrial estates, rural premises, hospitality sites, or mixed-use buildings where lease wording can affect daily trading.",
+    prepareItems: [
+      "heads of terms",
+      "draft lease",
+      "premises address",
+      "rent and term details",
+      "repair and service charge information",
+      "break clause details",
+      "landlord or agent correspondence",
+    ],
+    questionItems: [
+      "what lease clauses carry the most risk",
+      "whether the heads of terms need changing before legal work progresses",
+      "whether repair obligations are full repairing or limited",
+      "what break clause conditions must be followed",
+      "whether guarantees, rent deposits, or licences are required",
+    ],
+    riskItems: [
+      "Commercial lease reviews can go wrong when businesses focus only on rent and ignore repair liabilities, service charge exposure, break conditions, permitted use, assignment restrictions, personal guarantees, or reinstatement obligations.",
+      "Another risk is signing heads of terms that are commercially awkward before the lease is reviewed. Early clarification can save time later.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "terms-and-conditions-solicitor-guide",
+      "commercial-property-disputes",
+      "buying-business-legal-checklist",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "franchise-agreement-solicitors-kidderminster",
+    title: "Franchise Agreement Solicitors Kidderminster",
+    h1: "Franchise agreement solicitors in Kidderminster",
+    metaDescription:
+      "Compare franchise agreement solicitor options in Kidderminster for franchise contracts, fees, territory, restrictions, premises, and exit terms.",
+    category: "Franchise Agreements",
+    summary:
+      "Support comparing solicitor options for franchise agreement reviews, franchisee obligations, fees, territory, renewal, premises, restrictions, and exit planning.",
+    userNeed:
+      "Franchise enquiries often begin when someone is considering buying a franchise, renewing a franchise agreement, transferring a franchise business, or worried about fees, restrictions, territory, or termination.",
+    serviceScope: [
+      "A solicitor partner may review franchise agreements, disclosure information, fee structures, territory wording, operating obligations, supply requirements, intellectual property licences, premises terms, personal guarantees, renewal, sale, and termination clauses.",
+      "Franchise work can overlap with commercial leases, business purchases, employment, brand rules, supplier arrangements, and funding. A focused review should identify the clauses that most affect commercial risk.",
+    ],
+    localContext:
+      "Franchise opportunities in Kidderminster, Worcestershire, and the West Midlands may involve retail, food, care, education, fitness, trade, or service models where local territory and premises assumptions need careful checking.",
+    prepareItems: [
+      "franchise agreement",
+      "disclosure or prospectus documents",
+      "fee and royalty summary",
+      "territory details",
+      "lease or premises information",
+      "funding documents",
+      "deadline for signing",
+    ],
+    questionItems: [
+      "which clauses are most unusual or restrictive",
+      "whether the territory is exclusive",
+      "what fees and renewal costs apply",
+      "how termination and resale work",
+      "whether premises or guarantees create extra risk",
+    ],
+    riskItems: [
+      "Franchise agreements can create problems where the buyer focuses on projected earnings but overlooks fees, supply obligations, personal guarantees, territory limits, restrictions after exit, or franchisor control.",
+      "Another risk is treating the franchise contract as non-negotiable and therefore not worth reviewing. Even where changes are limited, understanding obligations before signing can still matter.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "buying-business-legal-checklist",
+      "nda-solicitor-guide",
+      "terms-and-conditions-solicitor-guide",
     ],
   }),
 ];
@@ -10631,6 +10946,228 @@ const rawGuidePages: GuidePage[] = [
       },
     ],
   }),
+  createQualityGuide({
+    slug: "commercial-debt-recovery-process",
+    title: "Commercial Debt Recovery Process",
+    h1: "Commercial debt recovery process",
+    metaDescription:
+      "General guide to the commercial debt recovery process, including reminders, letters before action, disputed debts, interest, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "late-payment-solicitors-kidderminster",
+    intro:
+      "Commercial debt recovery is the process of pursuing unpaid business invoices or other sums owed by a customer, supplier, tenant, or trading partner. The right route depends on whether the debt is genuinely undisputed, what evidence supports it, whether the debtor can pay, and whether recovery costs are proportionate to the amount owed.",
+    keyTakeaways: [
+      "Before escalating a debt, check the invoice, payment terms, proof of supply, correspondence, and whether the debtor has raised a real dispute.",
+      "Commercial recovery may involve reminders, a formal demand, a letter before action, negotiation, mediation, court proceedings, or insolvency-related steps where appropriate.",
+      "Cost control matters because a recovery route can become uneconomic if the debt value, evidence, or debtor solvency is weak.",
+    ],
+    topicOverview: [
+      "The process often starts with internal checks. A business should confirm the amount owed, due date, payment terms, identity of the debtor, evidence of goods or services supplied, and any complaints or set-off arguments. This helps separate a straightforward unpaid invoice from a wider contractual dispute.",
+      "A solicitor partner may help draft a formal demand, review whether interest or compensation may be claimed, respond to disputes, send a letter before action, discuss settlement options, or explain possible next steps if payment still is not made.",
+    ],
+    practicalExamples: [
+      "A Kidderminster service business may have completed work and sent invoices, but the customer now says the work was defective. That may need contract and evidence review before a debt claim is treated as straightforward.",
+      "A supplier may have several overdue invoices from the same company. The business may need to decide whether to pause supply, negotiate instalments, issue a formal demand, or seek advice about solvency concerns.",
+    ],
+    commonProblems: [
+      "Common problems include weak paper trails, unclear payment terms, invoices sent to the wrong legal entity, late disputes, missing delivery evidence, and spending more on recovery than the debt justifies.",
+      "Another issue is using an aggressive recovery route where the debtor has a genuine dispute. That can increase cost and make settlement harder. A short factual chronology is useful before speaking to a solicitor.",
+    ],
+    prepareItems: [
+      "invoice copies",
+      "payment terms",
+      "contract or order forms",
+      "proof of supply or delivery",
+      "statement of account",
+      "debtor legal name and address",
+      "all dispute correspondence",
+    ],
+    questionItems: [
+      "whether the debt appears disputed",
+      "what recovery step is proportionate",
+      "whether interest or fixed compensation may be claimed",
+      "what evidence is needed before a formal letter",
+      "what happens if the debtor cannot pay",
+    ],
+    localContext:
+      "Debt recovery enquiries in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Worcestershire often involve small businesses where unpaid invoices affect wages, rent, stock, supplier accounts, and tax payments.",
+    relatedGuideSlugs: [
+      "unpaid-invoice-legal-options",
+      "terms-and-conditions-solicitor-guide",
+      "commercial-contract-review-guide",
+      "collecting-business-debt",
+    ],
+    faq: [
+      {
+        question: "Is every unpaid invoice suitable for debt recovery?",
+        answer:
+          "Not always. If the debtor raises a genuine dispute about the work, goods, price, or contract, the matter may need contract dispute analysis before recovery steps.",
+      },
+      {
+        question: "What should I prepare before asking a solicitor about a debt?",
+        answer:
+          "Prepare invoices, payment terms, proof of supply, debtor details, reminders, responses, and a short chronology showing when payment became overdue.",
+      },
+      {
+        question: "Can a business recover interest on late payment?",
+        answer:
+          "Interest may be available in some commercial debts, but this depends on the contract and circumstances. Ask a qualified provider to review the specific debt if instructed.",
+      },
+      {
+        question: "Does this website chase debts for businesses?",
+        answer:
+          "No. Kidderminster Solicitors is not a law firm or debt collection agency. It may introduce users to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "unpaid-invoice-legal-options",
+    title: "Unpaid Invoice Legal Options",
+    h1: "Unpaid invoice legal options",
+    metaDescription:
+      "General guide to unpaid invoice legal options for businesses, including reminders, disputed invoices, letters before action, settlement, and recovery routes.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "late-payment-solicitors-kidderminster",
+    intro:
+      "An unpaid invoice can be a simple cash-flow problem or a sign of a deeper dispute. Before deciding what to do, a business should check whether the customer accepts the debt, whether the invoice was sent to the right party, what payment terms apply, and what evidence proves that goods or services were supplied.",
+    keyTakeaways: [
+      "The first step is to work out whether the invoice is undisputed, partly disputed, or part of a wider customer complaint.",
+      "Options may include reminders, negotiation, staged payment, a formal demand, solicitor correspondence, court proceedings, or writing off a debt where recovery is uneconomic.",
+      "A clear paper trail helps a solicitor partner understand whether a recovery route is proportionate and what risk points need checking.",
+    ],
+    topicOverview: [
+      "Unpaid invoice options usually depend on value, evidence, customer relationship, payment terms, dispute status, and debtor solvency. A business may want fast payment, but the strongest route may still require careful preparation before escalation.",
+      "If the invoice is accepted but unpaid, recovery may be more straightforward. If the customer alleges poor work, delay, defective goods, or set-off, the matter may become a contract dispute rather than simple debt collection.",
+    ],
+    practicalExamples: [
+      "A trades business may have finished work and sent an invoice, only for the customer to raise a defect complaint after reminders. The business may need to preserve photos, messages, variation records, and completion evidence.",
+      "A B2B supplier may have a long-standing customer that is late paying several invoices. A staged payment plan may be commercially sensible, but the business should understand what happens if payments are missed.",
+    ],
+    commonProblems: [
+      "Unpaid invoice recovery can go wrong where invoices do not identify the correct debtor, terms were never incorporated, delivery evidence is thin, or the business keeps supplying without addressing arrears.",
+      "Another problem is making threats that are not followed through. Formal recovery communications should be accurate, proportionate, and based on documents that can be shown if the issue escalates.",
+    ],
+    prepareItems: [
+      "invoice and statement of account",
+      "customer legal name",
+      "contract or terms",
+      "proof of work or delivery",
+      "reminder emails",
+      "complaint or dispute details",
+      "notes on the ongoing relationship",
+    ],
+    questionItems: [
+      "whether the invoice is disputed or undisputed",
+      "what the first formal step should be",
+      "whether settlement or instalments are sensible",
+      "what evidence would be needed for a claim",
+      "whether recovery costs are proportionate to the debt",
+    ],
+    localContext:
+      "Businesses around Kidderminster and Wyre Forest may face unpaid invoices from local customers, regional contractors, trade accounts, online buyers, or owner-managed companies where relationship and reputation still matter.",
+    relatedGuideSlugs: [
+      "commercial-debt-recovery-process",
+      "terms-and-conditions-solicitor-guide",
+      "commercial-contract-review-guide",
+      "collecting-business-debt",
+    ],
+    faq: [
+      {
+        question: "Should I keep supplying a customer who has unpaid invoices?",
+        answer:
+          "That is a commercial decision, but it can increase exposure. Check the contract, payment terms, relationship, and debt value before deciding what to do next.",
+      },
+      {
+        question: "When does an unpaid invoice become a contract dispute?",
+        answer:
+          "If the customer disputes the work, goods, price, delivery, or terms, the matter may need contract dispute review rather than a simple payment chase.",
+      },
+      {
+        question: "Can I ask for a no obligation quote about an unpaid invoice?",
+        answer:
+          "Yes. You can submit a no obligation enquiry and it may be passed to a suitable solicitor partner where appropriate.",
+      },
+      {
+        question: "Is this guide legal advice about my invoice?",
+        answer:
+          "No. This is general information only. A solicitor or legal service provider would need to review the specific documents if instructed.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "nda-solicitor-guide",
+    title: "NDA Solicitor Guide",
+    h1: "NDA solicitor guide",
+    metaDescription:
+      "General guide to non-disclosure agreements, including confidential information, exclusions, duration, remedies, business sales, and questions to ask a solicitor.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "franchise-agreement-solicitors-kidderminster",
+    intro:
+      "A non-disclosure agreement, often called an NDA, is used to protect confidential information before discussions, negotiations, investment conversations, employment exits, franchise enquiries, business sales, supplier talks, or commercial collaborations. The document should match the information being shared and the practical risk involved.",
+    keyTakeaways: [
+      "An NDA should define confidential information clearly and explain what can and cannot be done with it.",
+      "Important points include permitted purpose, exclusions, duration, return of information, remedies, group companies, employees, advisers, and whether disclosure is one-way or mutual.",
+      "An NDA is only useful if the business also controls what information is shared, when it is shared, and who receives it.",
+    ],
+    topicOverview: [
+      "NDAs are common before sharing business plans, customer lists, pricing, designs, software information, financial data, trade processes, supplier terms, franchise details, or sale information. They can be one-way or mutual depending on whether one or both parties disclose information.",
+      "A solicitor partner may draft or review an NDA, check whether it fits the planned discussion, identify overly broad restrictions, and explain whether a separate commercial agreement will still be needed once the parties move beyond early discussions.",
+    ],
+    practicalExamples: [
+      "A Kidderminster business considering a sale may ask a potential buyer to sign an NDA before sharing accounts, customer information, staff details, or supplier arrangements.",
+      "A business exploring a franchise or distribution opportunity may need an NDA before receiving operating manuals, pricing, territory information, or brand materials.",
+    ],
+    commonProblems: [
+      "NDA problems often arise when the document is copied from another deal, the definition of confidential information is vague, the permitted purpose is unclear, or the business shares sensitive information before the NDA is signed.",
+      "Another issue is assuming an NDA replaces commercial judgment. If information is highly sensitive, consider whether all of it needs to be shared at the early stage and who within the recipient organisation can access it.",
+    ],
+    prepareItems: [
+      "draft NDA if available",
+      "purpose of the disclosure",
+      "type of information being shared",
+      "names of parties",
+      "whether disclosure is one-way or mutual",
+      "deadline for discussions",
+      "related transaction documents",
+    ],
+    questionItems: [
+      "whether the NDA should be one-way or mutual",
+      "whether the definition of confidential information is wide enough",
+      "who can receive the information",
+      "how long confidentiality should last",
+      "what happens if information is misused",
+    ],
+    localContext:
+      "NDA enquiries around Kidderminster, Worcestershire, and the West Midlands may arise from business sale discussions, franchise opportunities, supplier negotiations, employment exits, investment talks, or collaboration between local companies.",
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "buying-business-legal-checklist",
+      "terms-and-conditions-solicitor-guide",
+      "directors-duties-explained",
+    ],
+    faq: [
+      {
+        question: "Should an NDA be signed before sharing business sale information?",
+        answer:
+          "It is often considered before sharing sensitive sale information, but the document should fit the transaction and the information being disclosed.",
+      },
+      {
+        question: "Is a mutual NDA different from a one-way NDA?",
+        answer:
+          "Yes. A one-way NDA protects information disclosed by one party. A mutual NDA can protect confidential information shared by both parties.",
+      },
+      {
+        question: "Can an NDA stop all misuse of information?",
+        answer:
+          "No document can prevent every risk. An NDA can create obligations, but practical controls over what is shared and who receives it still matter.",
+      },
+      {
+        question: "Can this website draft an NDA?",
+        answer:
+          "No. This website is not a law firm and does not draft legal documents. It may introduce users to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
 ];
 
 const anchorTextByServiceSlug: Record<string, string[]> = {
@@ -10790,6 +11327,41 @@ const anchorTextByServiceSlug: Record<string, string[]> = {
     "director dispute solicitor options",
     "compare director dispute support",
     "Kidderminster board dispute solicitor enquiries",
+  ],
+  "business-contract-dispute-solicitors-kidderminster": [
+    "business contract dispute solicitor options",
+    "compare contract dispute support",
+    "Kidderminster commercial contract dispute enquiries",
+  ],
+  "breach-of-contract-solicitors-kidderminster": [
+    "breach of contract solicitor options",
+    "compare breach of contract support",
+    "Kidderminster contract enforcement enquiries",
+  ],
+  "supplier-dispute-solicitors-kidderminster": [
+    "supplier dispute solicitor options",
+    "compare supplier dispute support",
+    "Kidderminster supplier contract enquiries",
+  ],
+  "customer-dispute-solicitors-kidderminster": [
+    "customer dispute solicitor options",
+    "compare customer dispute support",
+    "Kidderminster customer contract enquiries",
+  ],
+  "late-payment-solicitors-kidderminster": [
+    "late payment solicitor options",
+    "compare unpaid invoice support",
+    "Kidderminster late payment solicitor enquiries",
+  ],
+  "commercial-lease-review-solicitors-kidderminster": [
+    "commercial lease review solicitor options",
+    "compare commercial lease review support",
+    "Kidderminster business premises solicitor enquiries",
+  ],
+  "franchise-agreement-solicitors-kidderminster": [
+    "franchise agreement solicitor options",
+    "compare franchise contract support",
+    "Kidderminster franchise solicitor enquiries",
   ],
   "personal-injury-solicitors-kidderminster": [
     "personal injury solicitor options in Kidderminster",

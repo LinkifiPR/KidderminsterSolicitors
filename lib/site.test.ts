@@ -255,6 +255,43 @@ describe("site content model", () => {
     });
   });
 
+  it("includes CE2 Phase 2 batch A2 commercial dispute and debt pages", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "business-contract-dispute-solicitors-kidderminster",
+        "breach-of-contract-solicitors-kidderminster",
+        "supplier-dispute-solicitors-kidderminster",
+        "customer-dispute-solicitors-kidderminster",
+        "late-payment-solicitors-kidderminster",
+        "commercial-lease-review-solicitors-kidderminster",
+        "franchise-agreement-solicitors-kidderminster",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "commercial-debt-recovery-process",
+        "unpaid-invoice-legal-options",
+        "nda-solicitor-guide",
+      ]),
+    );
+
+    [
+      "business-contract-dispute-solicitors-kidderminster",
+      "breach-of-contract-solicitors-kidderminster",
+      "supplier-dispute-solicitors-kidderminster",
+      "customer-dispute-solicitors-kidderminster",
+      "late-payment-solicitors-kidderminster",
+      "commercial-debt-recovery-process",
+      "unpaid-invoice-legal-options",
+      "commercial-lease-review-solicitors-kidderminster",
+      "nda-solicitor-guide",
+      "franchise-agreement-solicitors-kidderminster",
+    ].forEach((slug) => {
+      expect(getAllPageSlugs()).toContain(slug);
+    });
+  });
+
   it("keeps guide content useful, local, and conversion-aware", () => {
     const localPattern =
       /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;
