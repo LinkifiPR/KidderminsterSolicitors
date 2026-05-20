@@ -292,6 +292,43 @@ describe("site content model", () => {
     });
   });
 
+  it("includes CE2 Phase 2 batch A3 commercial property and premises pages", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "commercial-property-purchase-solicitors-kidderminster",
+        "commercial-property-sale-solicitors-kidderminster",
+        "commercial-lease-solicitors-kidderminster",
+        "commercial-lease-renewal-solicitors-kidderminster",
+        "commercial-rent-arrears-solicitors-kidderminster",
+        "dilapidations-solicitors-kidderminster",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "commercial-lease-break-clause-guide",
+        "commercial-lease-repairing-obligations",
+        "commercial-property-due-diligence-checklist",
+        "business-premises-legal-checklist",
+      ]),
+    );
+
+    [
+      "commercial-property-purchase-solicitors-kidderminster",
+      "commercial-property-sale-solicitors-kidderminster",
+      "commercial-lease-solicitors-kidderminster",
+      "commercial-lease-renewal-solicitors-kidderminster",
+      "commercial-rent-arrears-solicitors-kidderminster",
+      "dilapidations-solicitors-kidderminster",
+      "commercial-lease-break-clause-guide",
+      "commercial-lease-repairing-obligations",
+      "commercial-property-due-diligence-checklist",
+      "business-premises-legal-checklist",
+    ].forEach((slug) => {
+      expect(getAllPageSlugs()).toContain(slug);
+    });
+  });
+
   it("keeps guide content useful, local, and conversion-aware", () => {
     const localPattern =
       /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;

@@ -95,6 +95,12 @@ export const guideCategoryGroups = [
       "late-payment-solicitors-kidderminster",
       "commercial-lease-review-solicitors-kidderminster",
       "franchise-agreement-solicitors-kidderminster",
+      "commercial-property-purchase-solicitors-kidderminster",
+      "commercial-property-sale-solicitors-kidderminster",
+      "commercial-lease-solicitors-kidderminster",
+      "commercial-lease-renewal-solicitors-kidderminster",
+      "commercial-rent-arrears-solicitors-kidderminster",
+      "dilapidations-solicitors-kidderminster",
     ],
   },
   {
@@ -3313,6 +3319,270 @@ export const servicePages: ServicePage[] = [
       "buying-business-legal-checklist",
       "nda-solicitor-guide",
       "terms-and-conditions-solicitor-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "commercial-property-purchase-solicitors-kidderminster",
+    title: "Commercial Property Purchase Solicitors Kidderminster",
+    h1: "Commercial property purchase solicitors in Kidderminster",
+    metaDescription:
+      "Compare commercial property purchase solicitor options in Kidderminster for business premises, title checks, leases, searches, funding, and completion.",
+    category: "Commercial Property Purchase",
+    summary:
+      "Support comparing solicitor options for buying commercial property, business premises, mixed-use buildings, investment units, and owner-occupier sites.",
+    userNeed:
+      "Commercial property purchase enquiries often begin when a business owner, investor, landlord, or company is considering buying premises and needs to understand title, funding, lease, occupation, and completion issues before committing.",
+    serviceScope: [
+      "A solicitor partner may review title, contract terms, searches, replies to enquiries, planning and use, VAT, funding requirements, existing leases, occupational arrangements, service media, rights of way, and completion documents.",
+      "The work may overlap with business purchases, commercial leases, company funding, personal guarantees, environmental questions, and lender requirements. Early scoping helps the buyer understand what needs review before exchange.",
+    ],
+    localContext:
+      "Commercial property purchases in Kidderminster and Wyre Forest may involve shops, offices, workshops, industrial units, mixed-use buildings, rural business premises, investment property, and sites with access or planning history.",
+    prepareItems: [
+      "property address",
+      "purchase price",
+      "heads of terms",
+      "funding or lender details",
+      "whether the property is occupied",
+      "VAT position if known",
+      "target exchange or completion date",
+    ],
+    questionItems: [
+      "whether the firm regularly handles commercial property purchases",
+      "what searches and title checks are likely",
+      "whether lease or tenant documents need review",
+      "whether lender requirements affect timing",
+      "what could make the transaction more complex",
+    ],
+    riskItems: [
+      "Commercial property purchases can go wrong when buyers focus on price and overlook planning use, occupational rights, VAT, environmental risk, access, lease terms, funding conditions, or repair liabilities.",
+      "Another risk is assuming a commercial purchase works like a house purchase. Business premises often need more tailored due diligence and clearer commercial assumptions.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-property-due-diligence-checklist",
+      "business-premises-legal-checklist",
+      "commercial-lease-repairing-obligations",
+      "commercial-contract-review-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "commercial-property-sale-solicitors-kidderminster",
+    title: "Commercial Property Sale Solicitors Kidderminster",
+    h1: "Commercial property sale solicitors in Kidderminster",
+    metaDescription:
+      "Compare commercial property sale solicitor options in Kidderminster for title packs, replies to enquiries, leases, VAT, completion, and buyer due diligence.",
+    category: "Commercial Property Sale",
+    summary:
+      "Support comparing solicitor options for selling business premises, investment property, mixed-use property, or commercial units.",
+    userNeed:
+      "Commercial property sale enquiries often start when an owner, landlord, company, or investor is preparing to market premises, responding to buyer enquiries, or coordinating a sale alongside a business transaction.",
+    serviceScope: [
+      "A solicitor partner may prepare the sale contract pack, title documents, replies to enquiries, lease or tenancy information, planning documents, VAT information, mortgage redemption details, and completion statements.",
+      "If the property is occupied, mixed-use, subject to licences, or tied to a business sale, the solicitor may need to coordinate property documents with wider commercial arrangements.",
+    ],
+    localContext:
+      "Commercial property sales in Kidderminster, Stourport, Bewdley, Hagley, and Worcestershire may involve local retail units, workshops, offices, yards, industrial sites, investment property, or owner-managed business premises.",
+    prepareItems: [
+      "title documents if available",
+      "property address",
+      "sale agent details",
+      "occupational lease or licence documents",
+      "planning or building documents",
+      "VAT information if known",
+      "mortgage or charge details",
+    ],
+    questionItems: [
+      "what documents should be prepared before marketing",
+      "whether tenant or occupier information is complete",
+      "how VAT and option-to-tax information is handled",
+      "whether a business sale is linked",
+      "what may delay buyer due diligence",
+    ],
+    riskItems: [
+      "Commercial property sales can be delayed by missing leases, unclear occupier rights, absent planning paperwork, unresolved service charge information, VAT uncertainty, or title restrictions that are only discovered once buyer enquiries arrive.",
+      "Another risk is treating replies to enquiries casually. Inaccurate replies can create problems later, so sellers should keep answers factual and document-based.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-property-due-diligence-checklist",
+      "business-premises-legal-checklist",
+      "commercial-lease-repairing-obligations",
+      "buying-business-legal-checklist",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "commercial-lease-solicitors-kidderminster",
+    title: "Commercial Lease Solicitors Kidderminster",
+    h1: "Commercial lease solicitors in Kidderminster",
+    metaDescription:
+      "Compare commercial lease solicitor options in Kidderminster for tenants, landlords, heads of terms, repairs, rent, break clauses, and business premises.",
+    category: "Commercial Leases",
+    summary:
+      "Support comparing solicitor options for commercial leases, lease negotiations, business premises, landlord documents, tenant obligations, and completion steps.",
+    userNeed:
+      "Commercial lease enquiries often begin when a business is taking new premises, a landlord is granting a lease, heads of terms have been agreed, or a party needs to understand rent, repairs, break clauses, and permitted use.",
+    serviceScope: [
+      "A solicitor partner may review or draft leases, heads of terms, rent deposit deeds, guarantees, licences, repairing obligations, service charge wording, alienation clauses, permitted use, break clauses, and completion documents.",
+      "The work can be tenant-focused, landlord-focused, or part of a business purchase or franchise arrangement. Scope should be clear before comparing fees.",
+    ],
+    localContext:
+      "Commercial lease matters in Kidderminster and Wyre Forest may involve shops, salons, offices, workshops, hospitality premises, industrial units, rural sites, managed estates, or mixed-use buildings.",
+    prepareItems: [
+      "heads of terms",
+      "draft lease if available",
+      "premises address",
+      "landlord or tenant details",
+      "rent and term",
+      "repair position",
+      "planned business use",
+    ],
+    questionItems: [
+      "whether the quote covers review, negotiation, and completion",
+      "which lease clauses are highest risk",
+      "whether repair obligations are limited or full repairing",
+      "how break clauses and rent reviews work",
+      "whether guarantees or rent deposits are required",
+    ],
+    riskItems: [
+      "Commercial leases can create long-term liabilities if a business overlooks repair obligations, service charges, rent reviews, break conditions, personal guarantees, permitted use, assignment restrictions, or reinstatement requirements.",
+      "Another risk is agreeing heads of terms without understanding which points will become legally and commercially important in the lease.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-lease-break-clause-guide",
+      "commercial-lease-repairing-obligations",
+      "business-premises-legal-checklist",
+      "commercial-contract-review-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "commercial-lease-renewal-solicitors-kidderminster",
+    title: "Commercial Lease Renewal Solicitors Kidderminster",
+    h1: "Commercial lease renewal solicitors in Kidderminster",
+    metaDescription:
+      "Compare commercial lease renewal solicitor options in Kidderminster for business tenants, landlords, renewal terms, notices, rent, and protected leases.",
+    category: "Commercial Lease Renewal",
+    summary:
+      "Support comparing solicitor options for renewing business leases, reviewing new terms, landlord and tenant notices, rent changes, and renewal deadlines.",
+    userNeed:
+      "Commercial lease renewal enquiries often begin when a business wants to stay in premises, a landlord proposes new terms, a lease expiry date is approaching, or the parties need to understand notices and renewal timing.",
+    serviceScope: [
+      "A solicitor partner may review the existing lease, security of tenure position, renewal notices, proposed heads of terms, rent review context, repair issues, service charge provisions, guarantees, and completion documents for the renewed lease.",
+      "Renewals may be straightforward where terms are agreed, or more involved where rent, repairs, redevelopment plans, break clauses, or statutory renewal rights are disputed.",
+    ],
+    localContext:
+      "Businesses in Kidderminster, Stourport, Bewdley, Hagley, and Worcestershire may renew leases for high street units, workshops, offices, industrial space, or hospitality premises where continuity of location matters.",
+    prepareItems: [
+      "current lease",
+      "expiry date",
+      "landlord or tenant notices",
+      "proposed renewal terms",
+      "rent and service charge history",
+      "repair correspondence",
+      "business timing concerns",
+    ],
+    questionItems: [
+      "whether any renewal deadline is urgent",
+      "whether the lease has security of tenure protection",
+      "what notices have been served or received",
+      "whether rent or repair terms need negotiation",
+      "what happens if terms are not agreed",
+    ],
+    riskItems: [
+      "Lease renewals can go wrong where tenants ignore expiry dates, miss notice deadlines, assume they can stay automatically, or agree new terms without checking repair, rent, service charge, and break provisions.",
+      "Landlords can also face problems if notices are unclear, redevelopment plans are not handled carefully, or old lease issues are carried into a new document without review.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-lease-break-clause-guide",
+      "commercial-lease-repairing-obligations",
+      "business-premises-legal-checklist",
+      "commercial-property-disputes",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "commercial-rent-arrears-solicitors-kidderminster",
+    title: "Commercial Rent Arrears Solicitors Kidderminster",
+    h1: "Commercial rent arrears solicitors in Kidderminster",
+    metaDescription:
+      "Compare commercial rent arrears solicitor options in Kidderminster for landlords, tenants, payment plans, forfeiture risk, lease terms, and business premises disputes.",
+    category: "Commercial Rent Arrears",
+    summary:
+      "Support comparing solicitor options for commercial rent arrears, landlord and tenant disputes, payment plans, lease enforcement, and premises risk.",
+    userNeed:
+      "Commercial rent arrears enquiries often start when a business tenant has fallen behind, a landlord needs to understand recovery options, or both parties want to avoid losing premises or escalating the dispute unnecessarily.",
+    serviceScope: [
+      "A solicitor partner may review the lease, arrears schedule, rent demands, service charge position, guarantor documents, correspondence, payment proposals, forfeiture risk, debt recovery options, and settlement terms.",
+      "The right route depends on the lease, the arrears value, tenant solvency, relationship, business continuity, and whether the landlord or tenant needs urgent protective advice.",
+    ],
+    localContext:
+      "Commercial rent arrears around Kidderminster and Wyre Forest may affect shops, workshops, offices, hospitality premises, landlords with local investments, and small businesses managing cash flow pressure.",
+    prepareItems: [
+      "lease and variations",
+      "arrears schedule",
+      "rent demands",
+      "service charge demands",
+      "guarantee or rent deposit documents",
+      "payment correspondence",
+      "business impact summary",
+    ],
+    questionItems: [
+      "whether the lease allows the proposed recovery step",
+      "whether forfeiture or waiver issues need urgent review",
+      "whether a payment plan is realistic",
+      "whether guarantors or deposits are relevant",
+      "what costs and risks apply before escalation",
+    ],
+    riskItems: [
+      "Commercial rent arrears can become risky when landlords take steps without checking waiver or lease wording, or tenants ignore demands until premises, stock, reputation, or trading continuity are at risk.",
+      "Another risk is treating arrears as only a debt issue when service charges, repair disputes, rent review, or business interruption may sit behind the non-payment.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-debt-recovery-process",
+      "unpaid-invoice-legal-options",
+      "commercial-lease-break-clause-guide",
+      "commercial-lease-repairing-obligations",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "dilapidations-solicitors-kidderminster",
+    title: "Dilapidations Solicitors Kidderminster",
+    h1: "Dilapidations solicitors in Kidderminster",
+    metaDescription:
+      "Compare dilapidations solicitor options in Kidderminster for commercial lease repairs, schedules of dilapidations, reinstatement, negotiations, and premises exits.",
+    category: "Dilapidations",
+    summary:
+      "Support comparing solicitor options for commercial lease dilapidations, repair claims, reinstatement, schedules, tenant exits, and landlord negotiations.",
+    userNeed:
+      "Dilapidations enquiries often begin when a tenant is leaving commercial premises, a landlord serves a schedule of dilapidations, or the parties disagree about repairs, reinstatement, decoration, or end-of-lease condition.",
+    serviceScope: [
+      "A solicitor partner may review the lease, repairing obligations, schedules of condition, licences for alterations, schedules of dilapidations, surveyor correspondence, break clause conditions, and settlement proposals.",
+      "Dilapidations work often involves both legal and surveying input. A solicitor may help with lease interpretation and negotiation while a surveyor considers condition and cost evidence.",
+    ],
+    localContext:
+      "Dilapidations issues in Kidderminster, Wyre Forest, and Worcestershire may involve retail units, workshops, industrial estates, offices, hospitality premises, and older buildings where repair evidence matters.",
+    prepareItems: [
+      "lease",
+      "schedule of condition if any",
+      "licences for alterations",
+      "photos of the premises",
+      "schedule of dilapidations",
+      "surveyor reports",
+      "break or lease expiry date",
+    ],
+    questionItems: [
+      "what the lease says about repair and reinstatement",
+      "whether a schedule of condition limits liability",
+      "whether surveyor input is needed",
+      "whether a break clause is affected",
+      "how settlement negotiations are usually handled",
+    ],
+    riskItems: [
+      "Dilapidations disputes can go wrong when tenants leave repairs too late, landlords overstate claims, alteration documents are missing, or break conditions depend on repair compliance.",
+      "Another risk is confusing practical repairs with legal liability. The lease, schedules, evidence, surveyor input, and timing all matter.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-lease-repairing-obligations",
+      "commercial-lease-break-clause-guide",
+      "business-premises-legal-checklist",
+      "commercial-property-disputes",
     ],
   }),
 ];
@@ -11168,6 +11438,302 @@ const rawGuidePages: GuidePage[] = [
       },
     ],
   }),
+  createQualityGuide({
+    slug: "commercial-lease-break-clause-guide",
+    title: "Commercial Lease Break Clause Guide",
+    h1: "Commercial lease break clause guide",
+    metaDescription:
+      "General guide to commercial lease break clauses, including notice, conditions, rent, repairs, vacant possession, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-lease-solicitors-kidderminster",
+    intro:
+      "A commercial lease break clause may allow a landlord or tenant to end a lease early if the clause is used correctly. Break clauses can be valuable, but they are often technical. Notice wording, service method, timing, rent payment, repair condition, vacant possession, and other conditions can all affect whether the break works.",
+    keyTakeaways: [
+      "A break clause must usually be followed exactly, including notice dates, service method, and any conditions in the lease.",
+      "Common break conditions involve rent payment, vacant possession, repair obligations, and compliance with lease terms.",
+      "A missed or invalid break notice can leave a tenant or landlord tied to the lease for longer than expected.",
+    ],
+    topicOverview: [
+      "Break clauses are negotiated exit rights in commercial leases. They may be tenant-only, landlord-only, or mutual. Some can be used on a fixed date, while others can be used after a certain point if notice is served in time.",
+      "A solicitor partner may review the lease, calculate notice deadlines, check service requirements, consider break conditions, review payment and repair issues, and help decide whether surveyor input is needed before a party relies on the clause.",
+    ],
+    practicalExamples: [
+      "A Kidderminster tenant may want to leave a shop unit early because trading has changed. The lease may require six months' written notice served at a specified address and all rent paid up to the break date.",
+      "A landlord may want to recover premises for redevelopment or a new tenant. The lease wording determines whether a landlord break is available and what conditions need to be satisfied.",
+    ],
+    commonProblems: [
+      "Problems often arise when notices are served late, sent to the wrong address, signed by the wrong party, or fail to follow the exact lease wording. Payment disputes can also complicate whether a condition has been met.",
+      "Vacant possession and repair conditions can be difficult. Leaving equipment, partitions, stock, staff, subtenants, or unresolved alterations may create argument about whether the tenant has properly given back the premises.",
+    ],
+    prepareItems: [
+      "lease and variations",
+      "break clause wording",
+      "notice deadline",
+      "landlord and tenant details",
+      "rent payment record",
+      "repair or dilapidations correspondence",
+      "plans for leaving or recovering the premises",
+    ],
+    questionItems: [
+      "what exact notice date applies",
+      "how notice must be served",
+      "what conditions must be satisfied",
+      "whether rent, repairs, or vacant possession create risk",
+      "whether surveyor input is needed before the break date",
+    ],
+    localContext:
+      "Break clause questions in Kidderminster, Stourport, Bewdley, Hagley, and Worcestershire often involve shops, offices, workshops, hospitality premises, and small businesses needing flexibility around trading conditions.",
+    relatedGuideSlugs: [
+      "commercial-lease-repairing-obligations",
+      "business-premises-legal-checklist",
+      "commercial-property-due-diligence-checklist",
+      "commercial-property-disputes",
+    ],
+    faq: [
+      {
+        question: "Can a commercial lease break notice be informal?",
+        answer:
+          "Usually it should follow the lease wording carefully. Informal emails or conversations may not be enough if the lease specifies formal notice requirements.",
+      },
+      {
+        question: "What happens if a break clause is not exercised correctly?",
+        answer:
+          "The lease may continue, meaning rent and other obligations can remain. A qualified provider should review the clause and facts directly if timing matters.",
+      },
+      {
+        question: "Do repairs matter when using a break clause?",
+        answer:
+          "They can. Some break clauses include repair or compliance conditions, and separate dilapidations issues may also arise when the tenant leaves.",
+      },
+      {
+        question: "Does this guide provide advice on serving a break notice?",
+        answer:
+          "No. This is general information only. A solicitor or legal service provider would need to review the lease before advising on a specific notice.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "commercial-lease-repairing-obligations",
+    title: "Commercial Lease Repairing Obligations",
+    h1: "Commercial lease repairing obligations",
+    metaDescription:
+      "General guide to commercial lease repairing obligations, including full repairing leases, schedules of condition, service charges, and dilapidations.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-lease-solicitors-kidderminster",
+    intro:
+      "Repairing obligations are one of the most important parts of a commercial lease. They decide who is responsible for maintaining, repairing, redecorating, and sometimes reinstating premises. The wording can affect costs during the lease, at renewal, on assignment, when using a break clause, and when the tenant leaves.",
+    keyTakeaways: [
+      "Repair obligations should be checked before signing because they can create substantial cost beyond rent.",
+      "A full repairing and insuring lease can make a tenant responsible for more than they expect, especially in older premises.",
+      "Schedules of condition, service charge wording, licences for alterations, and dilapidations evidence can all affect repair risk.",
+    ],
+    topicOverview: [
+      "Commercial leases may require a tenant to keep premises in repair, put premises into repair, redecorate, comply with statutory obligations, maintain internal parts, contribute to external repairs through service charge, or reinstate alterations at the end of the lease.",
+      "A solicitor partner may review the repair wording, explain how it interacts with service charges and insurance, check whether a schedule of condition limits liability, and identify when surveyor input may be needed before signing or exiting a lease.",
+    ],
+    practicalExamples: [
+      "A tenant taking a workshop in Kidderminster may think they are only paying rent, but the lease may require them to repair roof leaks, internal structure, shopfronts, or alterations unless the wording or schedule of condition limits that risk.",
+      "A landlord may serve a schedule of dilapidations at lease end. The tenant may need to compare the claim against the lease, condition evidence, licences for alterations, and any schedule of condition.",
+    ],
+    commonProblems: [
+      "Repair problems often arise when tenants sign without inspecting properly, ignore schedules of condition, assume the landlord handles all external repairs, or leave reinstatement questions until the final weeks of occupation.",
+      "Another issue is misunderstanding service charge. Even if a landlord carries out certain works, the tenant may still contribute through service charge depending on the lease wording.",
+    ],
+    prepareItems: [
+      "draft or current lease",
+      "schedule of condition",
+      "photos and survey notes",
+      "service charge information",
+      "licences for alterations",
+      "repair correspondence",
+      "lease expiry or break date",
+    ],
+    questionItems: [
+      "whether the tenant must keep or put premises into repair",
+      "whether a schedule of condition limits liability",
+      "what service charge repair costs may arise",
+      "whether alterations must be reinstated",
+      "whether surveyor input is recommended",
+    ],
+    localContext:
+      "Commercial lease repair questions around Kidderminster and Wyre Forest may involve older retail units, converted buildings, workshops, industrial units, rural premises, offices, and hospitality sites with different repair profiles.",
+    relatedGuideSlugs: [
+      "commercial-lease-break-clause-guide",
+      "business-premises-legal-checklist",
+      "commercial-property-due-diligence-checklist",
+      "commercial-property-disputes",
+    ],
+    faq: [
+      {
+        question: "What is a full repairing and insuring lease?",
+        answer:
+          "It is commonly a lease where the tenant takes significant repair and insurance-related obligations, though the exact effect depends on the wording and premises.",
+      },
+      {
+        question: "Can a schedule of condition limit repair liability?",
+        answer:
+          "It may help if properly prepared and incorporated into the lease, but the lease wording and evidence need careful review.",
+      },
+      {
+        question: "Are dilapidations the same as ordinary repairs?",
+        answer:
+          "Dilapidations usually refer to alleged breaches of lease repair, decoration, or reinstatement obligations, often near or after lease end.",
+      },
+      {
+        question: "Can this website advise on my lease repair clause?",
+        answer:
+          "No. This website provides general information only and may introduce users to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "commercial-property-due-diligence-checklist",
+    title: "Commercial Property Due Diligence Checklist",
+    h1: "Commercial property due diligence checklist",
+    metaDescription:
+      "General commercial property due diligence checklist covering title, searches, leases, planning, VAT, environmental issues, funding, and completion.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-property-purchase-solicitors-kidderminster",
+    intro:
+      "Commercial property due diligence is the process of checking the legal, practical, and commercial information that may affect a purchase, lease, funding decision, or business premises move. It usually goes beyond checking price and location because ownership, occupation, planning, VAT, rights, repairs, and environmental issues can all affect value and risk.",
+    keyTakeaways: [
+      "Commercial property due diligence should cover title, searches, occupation, leases, planning and use, VAT, environmental points, rights, restrictions, and funding requirements.",
+      "The checklist differs depending on whether the property is being bought, leased, sold, funded, or acquired as part of a business transaction.",
+      "A clear document list helps a solicitor partner identify missing information before exchange or completion pressure builds.",
+    ],
+    topicOverview: [
+      "For a purchase, the solicitor may review title, contract papers, searches, replies to enquiries, lease documents, planning history, rights of way, service media, restrictions, environmental searches, VAT information, lender requirements, and completion documents.",
+      "For leased or occupied property, due diligence may also include existing leases, rent deposits, licences, service charges, arrears, dilapidations, guarantees, and whether the buyer or business will inherit practical problems after completion.",
+    ],
+    practicalExamples: [
+      "A business buying a unit in Kidderminster may need to check whether its planned use is permitted, whether there are rights for access and services, whether VAT is payable, and whether lender conditions require extra reports.",
+      "An investor buying a let commercial property may need to review the tenant lease, arrears, rent deposit, repair position, service charge records, and whether the income assumptions match the legal documents.",
+    ],
+    commonProblems: [
+      "Problems often arise when buyers assume a seller's summary is enough, overlook occupational rights, fail to check planning use, misunderstand VAT, or discover repair and environmental issues late in the transaction.",
+      "Another common issue is incomplete premises information in a business purchase. The business may look attractive, but lease or property problems can affect whether it can keep trading from the same site.",
+    ],
+    prepareItems: [
+      "property address",
+      "heads of terms",
+      "title documents if available",
+      "occupational lease details",
+      "planning or use information",
+      "funding or lender details",
+      "known repair or environmental concerns",
+    ],
+    questionItems: [
+      "which due diligence checks are essential for this transaction",
+      "whether existing occupiers or leases affect value",
+      "whether VAT or option-to-tax information is needed",
+      "which searches are recommended",
+      "what must be resolved before exchange or completion",
+    ],
+    localContext:
+      "Commercial property due diligence in Kidderminster, Wyre Forest, and Worcestershire may involve older premises, industrial estates, rural access, mixed-use buildings, local planning history, environmental points, and tenant occupation.",
+    relatedGuideSlugs: [
+      "business-premises-legal-checklist",
+      "commercial-lease-repairing-obligations",
+      "commercial-lease-break-clause-guide",
+      "buying-business-legal-checklist",
+    ],
+    faq: [
+      {
+        question: "Is commercial property due diligence different from residential conveyancing?",
+        answer:
+          "Yes. Commercial property often involves business use, leases, VAT, environmental issues, planning, occupational arrangements, and funding requirements that need separate attention.",
+      },
+      {
+        question: "What should I prepare for a commercial property purchase quote?",
+        answer:
+          "Prepare the property address, heads of terms, price, funding details, intended use, occupation details, and any known lease, planning, or repair concerns.",
+      },
+      {
+        question: "Does a solicitor inspect the physical condition of commercial premises?",
+        answer:
+          "Usually not. Legal due diligence is separate from surveyor inspection, valuation, and specialist technical reports.",
+      },
+      {
+        question: "Can this guide replace legal due diligence?",
+        answer:
+          "No. It is general information only. A solicitor or legal service provider would need to review the specific property documents if instructed.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "business-premises-legal-checklist",
+    title: "Business Premises Legal Checklist",
+    h1: "Business premises legal checklist",
+    metaDescription:
+      "General legal checklist for business premises, including leases, purchases, use, repair obligations, service charges, licences, and questions to ask.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-lease-solicitors-kidderminster",
+    intro:
+      "Business premises can shape cash flow, operations, customers, staff, and exit options. Before signing a lease, buying a unit, taking an assignment, or moving into new space, a business should understand the legal documents, costs, use restrictions, repair obligations, and practical deadlines attached to the premises.",
+    keyTakeaways: [
+      "Check whether the premises arrangement is a lease, licence, purchase, assignment, underlease, or informal occupation before comparing solicitor options.",
+      "Important legal points include permitted use, rent, service charge, repairs, insurance, break clauses, assignment, subletting, licences, guarantees, and completion timing.",
+      "Premises documents should be checked alongside the business plan because property obligations can affect trading flexibility and exit options.",
+    ],
+    topicOverview: [
+      "Business premises legal work may involve a new lease, lease renewal, lease assignment, licence to occupy, commercial purchase, rent deposit deed, personal guarantee, licence for alterations, planning use, or business sale documentation.",
+      "A solicitor partner may help review the legal structure, flag key lease or title obligations, coordinate with agents and lenders, and explain which documents need to be ready before the business commits.",
+    ],
+    practicalExamples: [
+      "A cafe taking a Kidderminster unit may need to check permitted use, extraction, opening hours, repair obligations, service charge, signage, alcohol licensing context, and whether alterations are allowed.",
+      "A workshop moving to an industrial unit may need to check access, parking, loading, utilities, environmental responsibilities, repair liabilities, break clauses, and whether personal guarantees are being requested.",
+    ],
+    commonProblems: [
+      "Premises problems often start when a business agrees rent and ignores other costs. Service charge, insurance rent, repair works, deposits, guarantees, business rates, utilities, and fit-out conditions can be just as important.",
+      "Another issue is moving in before documents are properly agreed. Informal occupation can create uncertainty about rent, liability, insurance, termination, and responsibility for damage or works.",
+    ],
+    prepareItems: [
+      "heads of terms",
+      "draft lease or licence",
+      "premises address",
+      "business use",
+      "rent and service charge details",
+      "fit-out or alteration plans",
+      "deadline for occupation",
+    ],
+    questionItems: [
+      "what legal structure is being offered",
+      "whether the planned use is allowed",
+      "what repair and service charge costs may arise",
+      "whether a break clause or renewal right exists",
+      "whether guarantees, deposits, licences, or lender consent are needed",
+    ],
+    localContext:
+      "Business premises enquiries in Kidderminster and Wyre Forest may involve high street units, offices, salons, hospitality sites, workshops, industrial estates, rural premises, or mixed-use buildings across Worcestershire.",
+    relatedGuideSlugs: [
+      "commercial-property-due-diligence-checklist",
+      "commercial-lease-break-clause-guide",
+      "commercial-lease-repairing-obligations",
+      "commercial-contract-review-guide",
+    ],
+    faq: [
+      {
+        question: "Should I sign heads of terms before speaking to a solicitor?",
+        answer:
+          "Heads of terms are often agreed first, but important points in them can shape the legal documents. Consider asking what should be checked before signing or relying on them.",
+      },
+      {
+        question: "Is a licence to occupy the same as a lease?",
+        answer:
+          "No. They can create different rights and obligations. The wording, occupation, exclusivity, and commercial arrangement need review.",
+      },
+      {
+        question: "What premises costs should a business check beyond rent?",
+        answer:
+          "Check service charge, insurance, business rates, utilities, repair obligations, fit-out costs, deposits, guarantees, and end-of-lease reinstatement.",
+      },
+      {
+        question: "Can this website review premises documents?",
+        answer:
+          "No. This website is not a law firm and does not review legal documents. It may introduce users to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
 ];
 
 const anchorTextByServiceSlug: Record<string, string[]> = {
@@ -11362,6 +11928,36 @@ const anchorTextByServiceSlug: Record<string, string[]> = {
     "franchise agreement solicitor options",
     "compare franchise contract support",
     "Kidderminster franchise solicitor enquiries",
+  ],
+  "commercial-property-purchase-solicitors-kidderminster": [
+    "commercial property purchase solicitor options",
+    "compare commercial property purchase support",
+    "Kidderminster business premises purchase enquiries",
+  ],
+  "commercial-property-sale-solicitors-kidderminster": [
+    "commercial property sale solicitor options",
+    "compare commercial property sale support",
+    "Kidderminster commercial property sale enquiries",
+  ],
+  "commercial-lease-solicitors-kidderminster": [
+    "commercial lease solicitor options in Kidderminster",
+    "compare commercial lease support",
+    "business premises lease solicitor enquiries",
+  ],
+  "commercial-lease-renewal-solicitors-kidderminster": [
+    "commercial lease renewal solicitor options",
+    "compare commercial lease renewal support",
+    "Kidderminster lease renewal enquiries",
+  ],
+  "commercial-rent-arrears-solicitors-kidderminster": [
+    "commercial rent arrears solicitor options",
+    "compare business rent arrears support",
+    "Kidderminster commercial rent arrears enquiries",
+  ],
+  "dilapidations-solicitors-kidderminster": [
+    "dilapidations solicitor options",
+    "compare commercial dilapidations support",
+    "Kidderminster lease repair dispute enquiries",
   ],
   "personal-injury-solicitors-kidderminster": [
     "personal injury solicitor options in Kidderminster",
