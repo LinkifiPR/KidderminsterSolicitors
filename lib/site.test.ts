@@ -329,6 +329,43 @@ describe("site content model", () => {
     });
   });
 
+  it("includes CE2 Phase 2 batch A4 corporate and transaction pages", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "business-partnership-agreement-solicitors-kidderminster",
+        "shareholders-agreement-solicitors-kidderminster",
+        "directors-duties-solicitors-kidderminster",
+        "company-formation-solicitors-kidderminster",
+        "business-restructuring-solicitors-kidderminster",
+        "management-buyout-solicitors-kidderminster",
+        "share-purchase-agreement-solicitors-kidderminster",
+        "asset-purchase-agreement-solicitors-kidderminster",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "heads-of-terms-business-sale-guide",
+        "business-due-diligence-checklist",
+      ]),
+    );
+
+    [
+      "business-partnership-agreement-solicitors-kidderminster",
+      "shareholders-agreement-solicitors-kidderminster",
+      "directors-duties-solicitors-kidderminster",
+      "company-formation-solicitors-kidderminster",
+      "business-restructuring-solicitors-kidderminster",
+      "management-buyout-solicitors-kidderminster",
+      "share-purchase-agreement-solicitors-kidderminster",
+      "asset-purchase-agreement-solicitors-kidderminster",
+      "heads-of-terms-business-sale-guide",
+      "business-due-diligence-checklist",
+    ].forEach((slug) => {
+      expect(getAllPageSlugs()).toContain(slug);
+    });
+  });
+
   it("keeps guide content useful, local, and conversion-aware", () => {
     const localPattern =
       /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;

@@ -101,6 +101,14 @@ export const guideCategoryGroups = [
       "commercial-lease-renewal-solicitors-kidderminster",
       "commercial-rent-arrears-solicitors-kidderminster",
       "dilapidations-solicitors-kidderminster",
+      "business-partnership-agreement-solicitors-kidderminster",
+      "shareholders-agreement-solicitors-kidderminster",
+      "directors-duties-solicitors-kidderminster",
+      "company-formation-solicitors-kidderminster",
+      "business-restructuring-solicitors-kidderminster",
+      "management-buyout-solicitors-kidderminster",
+      "share-purchase-agreement-solicitors-kidderminster",
+      "asset-purchase-agreement-solicitors-kidderminster",
     ],
   },
   {
@@ -3583,6 +3591,358 @@ export const servicePages: ServicePage[] = [
       "commercial-lease-break-clause-guide",
       "business-premises-legal-checklist",
       "commercial-property-disputes",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "business-partnership-agreement-solicitors-kidderminster",
+    title: "Business Partnership Agreement Solicitors Kidderminster",
+    h1: "Business partnership agreement solicitors in Kidderminster",
+    metaDescription:
+      "Compare business partnership agreement solicitor options in Kidderminster for profit shares, exits, decision-making, duties, and dispute prevention.",
+    category: "Business Partnership Agreements",
+    summary:
+      "Support comparing solicitor options for partnership agreements, LLP arrangements, business partner rights, exit terms, profit shares, and governance.",
+    userNeed:
+      "Business partnership agreement enquiries often start when two or more people are setting up, formalising an existing venture, bringing in a new partner, or trying to avoid future disagreement about money, control, and exit terms.",
+    serviceScope: [
+      "A solicitor partner may help review or draft partnership agreements, LLP agreements, decision-making rules, profit and loss sharing, capital contributions, duties, restrictive covenants, exit provisions, retirement, expulsion, deadlock, and dispute resolution wording.",
+      "The work can overlap with company formation, shareholder agreements, tax planning, employment, premises, funding, and family business arrangements depending on how the business is structured.",
+    ],
+    localContext:
+      "Partnerships around Kidderminster and Wyre Forest may involve trades, professional services, rural businesses, family ventures, hospitality, healthcare, or local service businesses where personal trust and clear documents both matter.",
+    prepareItems: [
+      "business name or proposed name",
+      "partner names and roles",
+      "planned profit shares",
+      "capital contributions",
+      "existing agreement if any",
+      "premises or funding details",
+      "main concerns about control or exit",
+    ],
+    questionItems: [
+      "whether a partnership, LLP, or company structure is being considered",
+      "what decisions need unanimous consent",
+      "how exits and deadlock should be handled",
+      "whether restrictions after departure are needed",
+      "what documents should be prepared before drafting",
+    ],
+    riskItems: [
+      "Partnership arrangements can go wrong when people rely on friendship or family trust without documenting decision-making, profit shares, contributions, authority, exit routes, and ownership of assets or customers.",
+      "Another risk is using the wrong structure. A solicitor partner may explain legal document options, while tax and accounting advice may also be needed before decisions are made.",
+    ],
+    relatedGuideSlugs: [
+      "business-due-diligence-checklist",
+      "commercial-contract-review-guide",
+      "shareholders-agreement-guide",
+      "directors-duties-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "shareholders-agreement-solicitors-kidderminster",
+    title: "Shareholders Agreement Solicitors Kidderminster",
+    h1: "Shareholders agreement solicitors in Kidderminster",
+    metaDescription:
+      "Compare shareholders agreement solicitor options in Kidderminster for company owners, decision-making, share transfers, exits, deadlock, and minority protection.",
+    category: "Shareholders Agreements",
+    summary:
+      "Support comparing solicitor options for shareholder agreements, owner-managed company governance, share transfers, exits, deadlock, and dispute prevention.",
+    userNeed:
+      "Shareholders agreement enquiries often begin when company owners want to clarify control, share transfers, reserved decisions, dividends, funding, director roles, good leaver and bad leaver terms, or what happens if relationships break down.",
+    serviceScope: [
+      "A solicitor partner may help draft or review shareholders agreements, articles of association, reserved matters, transfer rights, drag and tag rights, valuation mechanisms, leaver provisions, restrictive covenants, confidentiality, and deadlock clauses.",
+      "The work may be needed at company formation, before investment, when a new shareholder joins, before a sale, or after a dispute has exposed gaps in existing documents.",
+    ],
+    localContext:
+      "Owner-managed companies in Kidderminster, Worcestershire, and the West Midlands often involve family members, long-term business partners, premises, local customers, and director-shareholder overlap.",
+    prepareItems: [
+      "company name and number",
+      "current shareholders",
+      "share percentages",
+      "articles of association",
+      "existing shareholder documents",
+      "planned funding or investment",
+      "main control or exit concerns",
+    ],
+    questionItems: [
+      "whether articles of association also need updating",
+      "which decisions should be reserved",
+      "how shares can be transferred or valued",
+      "what happens if a shareholder leaves",
+      "how deadlock should be resolved",
+    ],
+    riskItems: [
+      "Shareholder arrangements can become difficult where people assume equal ownership means equal authority, no one documents exit terms, or a minority shareholder expects protections that are not in writing.",
+      "Another risk is waiting until a dispute has started. A shareholders agreement is often most useful before relationships become strained.",
+    ],
+    relatedGuideSlugs: [
+      "shareholders-agreement-guide",
+      "directors-duties-explained",
+      "heads-of-terms-business-sale-guide",
+      "business-due-diligence-checklist",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "directors-duties-solicitors-kidderminster",
+    title: "Directors Duties Solicitors Kidderminster",
+    h1: "Directors duties solicitors in Kidderminster",
+    metaDescription:
+      "Compare directors duties solicitor options in Kidderminster for company decisions, conflicts, shareholder issues, insolvency concerns, and board disputes.",
+    category: "Directors Duties",
+    summary:
+      "Support comparing solicitor options for director duties, conflicts of interest, board decisions, shareholder overlap, disputes, and risk management.",
+    userNeed:
+      "Directors duties enquiries often start when a director is unsure about authority, conflicts, company money, shareholder pressure, insolvency concerns, decision-making, resignation, or a threatened claim.",
+    serviceScope: [
+      "A solicitor partner may review company documents, board minutes, shareholder agreements, service contracts, conflicts, director loans, transactions, Companies House filings, and correspondence about disputed decisions.",
+      "The work may involve early guidance, document review, dispute strategy, resignation or removal concerns, or coordination with accountants and insolvency specialists where the company is under financial pressure.",
+    ],
+    localContext:
+      "Directors in Kidderminster and Worcestershire owner-managed businesses may also be shareholders, employees, guarantors, landlords, family members, or founders, which can make duties and interests harder to separate.",
+    prepareItems: [
+      "company name and number",
+      "director and shareholder details",
+      "articles of association",
+      "board minutes",
+      "shareholder agreement",
+      "financial pressure summary",
+      "timeline of disputed decisions",
+    ],
+    questionItems: [
+      "which director duty or decision is in issue",
+      "whether conflicts have been declared",
+      "whether the company is solvent",
+      "what records should be preserved",
+      "whether urgent board or shareholder action is planned",
+    ],
+    riskItems: [
+      "Director duty issues can worsen when company money is mixed with personal interests, decisions are not minuted, conflicts are ignored, or one director acts without authority.",
+      "Another risk is leaving advice too late where insolvency concerns, threatened claims, or shareholder disputes are already developing.",
+    ],
+    relatedGuideSlugs: [
+      "directors-duties-explained",
+      "shareholders-agreement-guide",
+      "just-equitable-winding-up",
+      "business-due-diligence-checklist",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "company-formation-solicitors-kidderminster",
+    title: "Company Formation Solicitors Kidderminster",
+    h1: "Company formation solicitors in Kidderminster",
+    metaDescription:
+      "Compare company formation solicitor options in Kidderminster for new companies, articles, shareholders agreements, founders, directors, and business setup.",
+    category: "Company Formation",
+    summary:
+      "Support comparing solicitor options for company setup, founders agreements, articles, shareholders agreements, director roles, and early-stage business documents.",
+    userNeed:
+      "Company formation enquiries often begin when founders want to set up a limited company, bring in co-owners, allocate shares, document decision-making, prepare early contracts, or reduce risk before trading grows.",
+    serviceScope: [
+      "A solicitor partner may help with company structure documents, articles of association, shareholders agreements, founder terms, director roles, share classes, early commercial contracts, and governance questions.",
+      "Formation work may need input from accountants or tax advisers too. The legal documents should fit the commercial plan, ownership, funding, and exit assumptions.",
+    ],
+    localContext:
+      "New businesses in Kidderminster, Wyre Forest, and Worcestershire may start as trades, online shops, professional services, consultancies, hospitality ventures, or family companies where simple setup choices can shape later disputes.",
+    prepareItems: [
+      "proposed company name",
+      "founder names",
+      "planned ownership percentages",
+      "director roles",
+      "funding or investment plans",
+      "business activity summary",
+      "early contract needs",
+    ],
+    questionItems: [
+      "whether a standard company setup is enough",
+      "whether articles or shareholders agreements need tailoring",
+      "how founder exits should be handled",
+      "whether different share classes are needed",
+      "what documents should be prioritised before trading",
+    ],
+    riskItems: [
+      "Company formation can go wrong when founders assume incorporation alone solves ownership, authority, investment, exit, intellectual property, or director duty questions.",
+      "Another risk is delaying agreements until after value has built. It is usually easier to agree documents before a dispute or investment event.",
+    ],
+    relatedGuideSlugs: [
+      "shareholders-agreement-guide",
+      "directors-duties-explained",
+      "business-due-diligence-checklist",
+      "terms-and-conditions-solicitor-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "business-restructuring-solicitors-kidderminster",
+    title: "Business Restructuring Solicitors Kidderminster",
+    h1: "Business restructuring solicitors in Kidderminster",
+    metaDescription:
+      "Compare business restructuring solicitor options in Kidderminster for ownership changes, group structure, directors, shareholders, assets, and trading changes.",
+    category: "Business Restructuring",
+    summary:
+      "Support comparing solicitor options for business restructuring, ownership changes, asset transfers, shareholder changes, group structures, and trading adjustments.",
+    userNeed:
+      "Business restructuring enquiries often arise when owners want to change structure, move assets, add or remove shareholders, separate business lines, prepare for sale, manage growth, or respond to financial pressure.",
+    serviceScope: [
+      "A solicitor partner may review company documents, shareholders agreements, asset transfer needs, contracts, employees, leases, lender consents, guarantees, director duties, and transaction documents for the proposed restructuring.",
+      "Restructuring can involve legal, tax, accounting, employment, property, and insolvency considerations. Scope and adviser roles should be clarified early.",
+    ],
+    localContext:
+      "Kidderminster and Worcestershire businesses may restructure around family succession, new investment, premises changes, regional expansion, separating owners, or preparing an owner-managed company for sale.",
+    prepareItems: [
+      "current business structure",
+      "company documents",
+      "ownership details",
+      "reason for restructuring",
+      "asset and contract list",
+      "employee and premises details",
+      "accountant or tax adviser input if available",
+    ],
+    questionItems: [
+      "what the commercial aim of the restructuring is",
+      "which consents may be needed",
+      "whether employees, leases, or lenders are affected",
+      "how director duties and shareholder rights are managed",
+      "which advisers should coordinate the work",
+    ],
+    riskItems: [
+      "Restructuring can create problems where assets are moved without checking contracts, leases, employees, tax, lender terms, guarantees, or shareholder consent.",
+      "Another risk is treating restructuring as paperwork only. The commercial reason, timing, solvency position, and adviser coordination matter.",
+    ],
+    relatedGuideSlugs: [
+      "business-due-diligence-checklist",
+      "heads-of-terms-business-sale-guide",
+      "directors-duties-explained",
+      "shareholders-agreement-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "management-buyout-solicitors-kidderminster",
+    title: "Management Buyout Solicitors Kidderminster",
+    h1: "Management buyout solicitors in Kidderminster",
+    metaDescription:
+      "Compare management buyout solicitor options in Kidderminster for MBO structure, due diligence, funding, shareholders, warranties, and completion documents.",
+    category: "Management Buyouts",
+    summary:
+      "Support comparing solicitor options for management buyouts, owner exits, funding documents, due diligence, warranties, and completion planning.",
+    userNeed:
+      "Management buyout enquiries often begin when managers, directors, or employees are exploring buying a business from current owners and need to understand structure, funding, risk, and legal documents.",
+    serviceScope: [
+      "A solicitor partner may help with heads of terms, due diligence, share or asset purchase documents, disclosure, warranties, funding conditions, shareholder arrangements, employment overlap, restrictive covenants, and completion steps.",
+      "The work can be sensitive because the buyers may already work inside the business and need to balance confidentiality, funding, ongoing duties, and future ownership arrangements.",
+    ],
+    localContext:
+      "Management buyouts in Kidderminster, Wyre Forest, and Worcestershire may involve owner-managed companies, family businesses, local employers, and succession planning where continuity of staff and customers matters.",
+    prepareItems: [
+      "business and company details",
+      "buyer team details",
+      "heads of terms if available",
+      "funding outline",
+      "current roles in the business",
+      "target timetable",
+      "key concerns about risk or continuity",
+    ],
+    questionItems: [
+      "whether the buyout is structured as a share or asset purchase",
+      "how confidentiality and duties are managed",
+      "what due diligence is needed",
+      "how funding conditions affect completion",
+      "what shareholder agreement is needed after completion",
+    ],
+    riskItems: [
+      "Management buyouts can go wrong when buyer roles, confidentiality, funding assumptions, valuation, warranties, and post-completion governance are not handled clearly.",
+      "Another risk is underestimating conflicts between current employment or director duties and the proposed acquisition.",
+    ],
+    relatedGuideSlugs: [
+      "heads-of-terms-business-sale-guide",
+      "business-due-diligence-checklist",
+      "buying-business-legal-checklist",
+      "shareholders-agreement-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "share-purchase-agreement-solicitors-kidderminster",
+    title: "Share Purchase Agreement Solicitors Kidderminster",
+    h1: "Share purchase agreement solicitors in Kidderminster",
+    metaDescription:
+      "Compare share purchase agreement solicitor options in Kidderminster for company acquisitions, warranties, disclosure, due diligence, and completion.",
+    category: "Share Purchase Agreements",
+    summary:
+      "Support comparing solicitor options for share purchase agreements, company acquisitions, warranties, disclosure, due diligence, and completion documents.",
+    userNeed:
+      "Share purchase agreement enquiries often start when a buyer is acquiring a company or a seller is selling company shares and needs to understand warranties, disclosure, liabilities, price mechanics, and completion steps.",
+    serviceScope: [
+      "A solicitor partner may help review or draft share purchase agreements, disclosure letters, warranties, indemnities, completion accounts, restrictive covenants, due diligence replies, board approvals, and ancillary documents.",
+      "Share sales can carry historic company liabilities, so due diligence and disclosure are usually central to the transaction.",
+    ],
+    localContext:
+      "Share purchase transactions in Kidderminster and Worcestershire may involve owner-managed companies, family businesses, trading companies, investment companies, or local employers with customer, employee, and premises documents.",
+    prepareItems: [
+      "company name and number",
+      "heads of terms",
+      "buyer and seller details",
+      "shareholding information",
+      "due diligence documents",
+      "price and payment structure",
+      "target completion date",
+    ],
+    questionItems: [
+      "what warranties and disclosure are likely",
+      "whether completion accounts or deferred payments are involved",
+      "what due diligence should be prioritised",
+      "whether restrictive covenants are needed",
+      "what documents are needed before exchange or completion",
+    ],
+    riskItems: [
+      "Share purchases can go wrong when buyers underestimate historic liabilities, sellers give warranties without proper disclosure, or parties agree price adjustments without clear wording.",
+      "Another risk is treating a share purchase like an asset sale. Buying shares normally means acquiring the company with its contracts, liabilities, employees, and records.",
+    ],
+    relatedGuideSlugs: [
+      "business-due-diligence-checklist",
+      "heads-of-terms-business-sale-guide",
+      "buying-business-legal-checklist",
+      "commercial-contract-review-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "asset-purchase-agreement-solicitors-kidderminster",
+    title: "Asset Purchase Agreement Solicitors Kidderminster",
+    h1: "Asset purchase agreement solicitors in Kidderminster",
+    metaDescription:
+      "Compare asset purchase agreement solicitor options in Kidderminster for buying or selling business assets, goodwill, employees, contracts, stock, and completion.",
+    category: "Asset Purchase Agreements",
+    summary:
+      "Support comparing solicitor options for asset purchase agreements, business asset sales, goodwill, stock, employees, premises, contracts, and completion.",
+    userNeed:
+      "Asset purchase agreement enquiries often begin when a buyer or seller is transferring selected business assets rather than selling the company itself.",
+    serviceScope: [
+      "A solicitor partner may help with asset purchase agreements, asset lists, goodwill, stock, equipment, customer information, employee transfer issues, contract assignment, premises arrangements, warranties, and completion documents.",
+      "The transaction may overlap with commercial leases, TUPE questions, supplier and customer contracts, intellectual property, licences, and tax or accounting input.",
+    ],
+    localContext:
+      "Asset purchases in Kidderminster, Wyre Forest, and Worcestershire may involve local shops, trades, hospitality businesses, service businesses, workshops, online operations, or family business transfers.",
+    prepareItems: [
+      "heads of terms",
+      "asset list",
+      "stock and equipment details",
+      "employee information",
+      "premises documents",
+      "customer and supplier contract summary",
+      "target completion date",
+    ],
+    questionItems: [
+      "which assets and liabilities are included",
+      "whether employees may transfer",
+      "whether landlord or contract consents are needed",
+      "how stock and completion adjustments are handled",
+      "what warranties and restrictions are appropriate",
+    ],
+    riskItems: [
+      "Asset purchases can go wrong where the parties do not define exactly what transfers, overlook employees, assume contracts can be assigned, or fail to coordinate premises arrangements.",
+      "Another risk is treating goodwill, customer data, stock, equipment, and licences as simple handover items when documents and consents may be needed.",
+    ],
+    relatedGuideSlugs: [
+      "business-due-diligence-checklist",
+      "heads-of-terms-business-sale-guide",
+      "buying-business-legal-checklist",
+      "business-premises-legal-checklist",
     ],
   }),
 ];
@@ -11734,6 +12094,154 @@ const rawGuidePages: GuidePage[] = [
       },
     ],
   }),
+  createQualityGuide({
+    slug: "heads-of-terms-business-sale-guide",
+    title: "Heads of Terms Business Sale Guide",
+    h1: "Heads of terms business sale guide",
+    metaDescription:
+      "General guide to business sale heads of terms, including price, structure, exclusivity, confidentiality, due diligence, timetable, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "business-sale-solicitors-kidderminster",
+    intro:
+      "Heads of terms set out the main commercial points for a proposed business sale, purchase, investment, or management buyout before the full legal documents are prepared. They are often described as non-binding, but they can still shape price, timetable, exclusivity, confidentiality, due diligence, and negotiation leverage.",
+    keyTakeaways: [
+      "Heads of terms should clearly identify the parties, deal structure, price, assets or shares, conditions, timetable, confidentiality, and exclusivity.",
+      "Even where most terms are not intended to be binding, confidentiality, exclusivity, costs, and governing law wording may be binding if drafted that way.",
+      "A careful review before signing can reduce confusion when the purchase agreement, due diligence, disclosure, and completion documents are prepared.",
+    ],
+    topicOverview: [
+      "Heads of terms are used to record the broad deal before detailed legal work begins. In a business sale, they may state whether the deal is an asset sale or share sale, how price is calculated, whether there is deferred consideration, what assets are included, whether employees or premises are involved, and what conditions need to be satisfied.",
+      "A solicitor partner may review heads of terms before signature, identify unclear or risky wording, check whether any parts are binding, and explain which points should be settled before due diligence begins.",
+    ],
+    practicalExamples: [
+      "A Kidderminster owner-managed business may receive heads of terms from a buyer that include exclusivity, access to accounts, stock valuation, employee information, and a proposed completion date.",
+      "A management team considering a buyout may need heads of terms that balance confidentiality with funding conditions, due diligence, seller warranties, and post-completion restrictions.",
+    ],
+    commonProblems: [
+      "Problems often arise where heads of terms are vague about what is being sold, whether the deal is asset or share based, whether the price can change, how long exclusivity lasts, or what information can be shared during due diligence.",
+      "Another issue is treating heads of terms as harmless because they are called non-binding. Some clauses may still create obligations, and even non-binding wording can affect negotiation expectations.",
+    ],
+    prepareItems: [
+      "draft heads of terms",
+      "business or company name",
+      "buyer and seller details",
+      "proposed price and structure",
+      "asset or share sale outline",
+      "premises and employee information",
+      "target timetable",
+    ],
+    questionItems: [
+      "which clauses are intended to be binding",
+      "whether the deal structure is clear",
+      "whether price adjustment or deferred payment wording is needed",
+      "what due diligence access is being promised",
+      "whether exclusivity and confidentiality are proportionate",
+    ],
+    localContext:
+      "Business sale heads of terms in Kidderminster, Wyre Forest, and Worcestershire may involve family companies, local premises, staff continuity, regional customers, and owner exits where commercial trust needs clear written boundaries.",
+    relatedGuideSlugs: [
+      "business-due-diligence-checklist",
+      "buying-business-legal-checklist",
+      "commercial-contract-review-guide",
+      "nda-solicitor-guide",
+    ],
+    faq: [
+      {
+        question: "Are heads of terms legally binding?",
+        answer:
+          "Some parts may be binding and others may not be. Confidentiality, exclusivity, costs, and governing law clauses often need careful checking before signature.",
+      },
+      {
+        question: "Should heads of terms say whether the deal is an asset sale or share sale?",
+        answer:
+          "Yes. The structure affects due diligence, liabilities, documents, employees, premises, warranties, and completion steps.",
+      },
+      {
+        question: "Can heads of terms be changed later?",
+        answer:
+          "They can often be negotiated, but changing them later may be harder if parties have already relied on them during due diligence and drafting.",
+      },
+      {
+        question: "Does this website review heads of terms?",
+        answer:
+          "No. This website is not a law firm and does not review documents. It may introduce users to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "business-due-diligence-checklist",
+    title: "Business Due Diligence Checklist",
+    h1: "Business due diligence checklist",
+    metaDescription:
+      "General business due diligence checklist for buyers and sellers, including company records, contracts, employees, property, debts, disputes, and completion risk.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "business-sale-solicitors-kidderminster",
+    intro:
+      "Business due diligence is the process of checking documents, facts, liabilities, and commercial assumptions before buying, selling, investing in, or restructuring a business. A good checklist helps the parties identify what needs to be reviewed, what is missing, and which risks should be reflected in the transaction documents.",
+    keyTakeaways: [
+      "Due diligence should be tailored to the deal structure, because a share purchase, asset purchase, investment, or management buyout raises different questions.",
+      "Common areas include company records, accounts, tax, contracts, employees, property, intellectual property, data, disputes, debts, insurance, licences, and regulatory issues.",
+      "A clear due diligence process can reduce late surprises and help warranties, disclosure, indemnities, and completion conditions match the facts.",
+    ],
+    topicOverview: [
+      "For buyers, due diligence helps test whether the business is what the seller says it is. For sellers, preparing documents early can reduce delay, improve credibility, and help avoid rushed or inaccurate replies later in the transaction.",
+      "A solicitor partner may review the legal due diligence request list, identify missing documents, assess contract and property risk, coordinate questions with accountants or tax advisers, and explain how issues may be handled in the purchase agreement.",
+    ],
+    practicalExamples: [
+      "A buyer acquiring shares in a Kidderminster company may need company registers, accounts, tax information, employment records, customer contracts, lease documents, dispute correspondence, insurance, and data protection documents.",
+      "A seller preparing an asset sale may need a clear asset list, stock figures, employee information, customer and supplier contracts, premises documents, equipment finance details, and evidence of ownership or licences.",
+    ],
+    commonProblems: [
+      "Due diligence problems often arise when documents are missing, contracts are informal, employees have undocumented arrangements, property occupation is unclear, debts are understated, or disputes are not disclosed early.",
+      "Another issue is asking for every possible document without prioritising what matters to the deal. A proportionate checklist should reflect value, sector, risk, and timetable.",
+    ],
+    prepareItems: [
+      "heads of terms",
+      "company and ownership details",
+      "accounts and tax information",
+      "key contracts",
+      "employee records",
+      "property and lease documents",
+      "debt, dispute, insurance, and licence information",
+    ],
+    questionItems: [
+      "which documents are essential before exchange or completion",
+      "what gaps could affect price or warranties",
+      "whether the deal is asset or share based",
+      "which advisers should review financial, tax, or property documents",
+      "how late-discovered issues are handled",
+    ],
+    localContext:
+      "Business due diligence around Kidderminster, Wyre Forest, and Worcestershire may involve owner-managed companies, family businesses, local premises, staff continuity, regional suppliers, customer goodwill, and informal trading arrangements.",
+    relatedGuideSlugs: [
+      "heads-of-terms-business-sale-guide",
+      "buying-business-legal-checklist",
+      "commercial-property-due-diligence-checklist",
+      "commercial-contract-review-guide",
+    ],
+    faq: [
+      {
+        question: "Is due diligence different for an asset purchase and share purchase?",
+        answer:
+          "Yes. A share purchase usually involves buying the company with its history and liabilities, while an asset purchase focuses on selected assets and liabilities.",
+      },
+      {
+        question: "Who reviews business due diligence documents?",
+        answer:
+          "Legal documents may be reviewed by a solicitor, while accounts, tax, valuation, surveys, funding, and specialist operational issues may need other advisers.",
+      },
+      {
+        question: "Can sellers prepare due diligence before a buyer is found?",
+        answer:
+          "Often yes. Organising key documents early can reduce delay and help identify issues before negotiation pressure increases.",
+      },
+      {
+        question: "Is this checklist legal advice about a business purchase?",
+        answer:
+          "No. This guide is general information only. A qualified provider would need to review the specific documents if instructed.",
+      },
+    ],
+  }),
 ];
 
 const anchorTextByServiceSlug: Record<string, string[]> = {
@@ -11958,6 +12466,46 @@ const anchorTextByServiceSlug: Record<string, string[]> = {
     "dilapidations solicitor options",
     "compare commercial dilapidations support",
     "Kidderminster lease repair dispute enquiries",
+  ],
+  "business-partnership-agreement-solicitors-kidderminster": [
+    "business partnership agreement solicitor options",
+    "compare partnership agreement support",
+    "Kidderminster business partner agreement enquiries",
+  ],
+  "shareholders-agreement-solicitors-kidderminster": [
+    "shareholders agreement solicitor options",
+    "compare shareholder agreement support",
+    "Kidderminster company owner agreement enquiries",
+  ],
+  "directors-duties-solicitors-kidderminster": [
+    "directors duties solicitor options",
+    "compare director duties support",
+    "Kidderminster director duty enquiries",
+  ],
+  "company-formation-solicitors-kidderminster": [
+    "company formation solicitor options",
+    "compare company setup legal support",
+    "Kidderminster company formation enquiries",
+  ],
+  "business-restructuring-solicitors-kidderminster": [
+    "business restructuring solicitor options",
+    "compare restructuring legal support",
+    "Kidderminster business restructuring enquiries",
+  ],
+  "management-buyout-solicitors-kidderminster": [
+    "management buyout solicitor options",
+    "compare MBO legal support",
+    "Kidderminster management buyout enquiries",
+  ],
+  "share-purchase-agreement-solicitors-kidderminster": [
+    "share purchase agreement solicitor options",
+    "compare share purchase agreement support",
+    "Kidderminster company acquisition enquiries",
+  ],
+  "asset-purchase-agreement-solicitors-kidderminster": [
+    "asset purchase agreement solicitor options",
+    "compare asset purchase agreement support",
+    "Kidderminster business asset purchase enquiries",
   ],
   "personal-injury-solicitors-kidderminster": [
     "personal injury solicitor options in Kidderminster",
