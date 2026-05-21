@@ -366,6 +366,43 @@ describe("site content model", () => {
     });
   });
 
+  it("includes CE2 Phase 2 batch A5 employer employment pages", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "employer-employment-law-solicitors-kidderminster",
+        "employment-contract-solicitors-kidderminster",
+        "staff-handbook-solicitors-kidderminster",
+        "redundancy-for-employers-solicitors-kidderminster",
+        "disciplinary-grievance-solicitors-kidderminster",
+        "restrictive-covenant-solicitors-kidderminster",
+        "tupe-solicitors-kidderminster",
+        "settlement-agreement-employer-solicitors-kidderminster",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "workplace-investigation-guide",
+        "employment-tribunal-employer-guide",
+      ]),
+    );
+
+    [
+      "employer-employment-law-solicitors-kidderminster",
+      "employment-contract-solicitors-kidderminster",
+      "staff-handbook-solicitors-kidderminster",
+      "redundancy-for-employers-solicitors-kidderminster",
+      "disciplinary-grievance-solicitors-kidderminster",
+      "restrictive-covenant-solicitors-kidderminster",
+      "tupe-solicitors-kidderminster",
+      "settlement-agreement-employer-solicitors-kidderminster",
+      "workplace-investigation-guide",
+      "employment-tribunal-employer-guide",
+    ].forEach((slug) => {
+      expect(getAllPageSlugs()).toContain(slug);
+    });
+  });
+
   it("keeps guide content useful, local, and conversion-aware", () => {
     const localPattern =
       /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;
