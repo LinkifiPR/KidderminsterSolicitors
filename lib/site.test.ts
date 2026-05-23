@@ -477,6 +477,43 @@ describe("site content model", () => {
     });
   });
 
+  it("includes CE2 Phase 2 batch A8 probate and later-life planning pages", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "estate-administration-solicitors-kidderminster",
+        "intestacy-solicitors-kidderminster",
+        "inheritance-tax-planning-solicitors-kidderminster",
+        "deed-of-variation-solicitors-kidderminster",
+        "executor-dispute-solicitors-kidderminster",
+        "deputyship-solicitors-kidderminster",
+        "care-home-fees-solicitors-kidderminster",
+        "trust-solicitors-kidderminster",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "applying-for-letters-of-administration-guide",
+        "deed-of-variation-explained",
+      ]),
+    );
+
+    [
+      "estate-administration-solicitors-kidderminster",
+      "intestacy-solicitors-kidderminster",
+      "inheritance-tax-planning-solicitors-kidderminster",
+      "deed-of-variation-solicitors-kidderminster",
+      "executor-dispute-solicitors-kidderminster",
+      "deputyship-solicitors-kidderminster",
+      "care-home-fees-solicitors-kidderminster",
+      "trust-solicitors-kidderminster",
+      "applying-for-letters-of-administration-guide",
+      "deed-of-variation-explained",
+    ].forEach((slug) => {
+      expect(getAllPageSlugs()).toContain(slug);
+    });
+  });
+
   it("keeps guide content useful, local, and conversion-aware", () => {
     const localPattern =
       /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;

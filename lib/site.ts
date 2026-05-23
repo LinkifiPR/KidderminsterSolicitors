@@ -43,6 +43,14 @@ export const guideCategoryGroups = [
       "contested-probate-solicitors-kidderminster",
       "will-disputes-solicitors-kidderminster",
       "elderly-care-solicitors-kidderminster",
+      "estate-administration-solicitors-kidderminster",
+      "intestacy-solicitors-kidderminster",
+      "inheritance-tax-planning-solicitors-kidderminster",
+      "deed-of-variation-solicitors-kidderminster",
+      "executor-dispute-solicitors-kidderminster",
+      "deputyship-solicitors-kidderminster",
+      "care-home-fees-solicitors-kidderminster",
+      "trust-solicitors-kidderminster",
     ],
   },
   {
@@ -1770,6 +1778,358 @@ export const servicePages: ServicePage[] = [
       "trusts-protecting-your-assets",
       "inheritance-tax-basics",
       "when-should-you-update-a-will",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "estate-administration-solicitors-kidderminster",
+    title: "Estate Administration Solicitors Kidderminster",
+    h1: "Estate administration solicitors in Kidderminster",
+    metaDescription:
+      "Compare estate administration solicitor options in Kidderminster for probate, assets, debts, estate accounts, beneficiaries, property, and distributions.",
+    category: "Estate Administration",
+    summary:
+      "Support comparing solicitor options for full estate administration, probate, assets, debts, estate accounts, beneficiary updates, property, and distributions.",
+    userNeed:
+      "Estate administration enquiries often begin when an executor or family member needs help beyond the grant application, including collecting assets, paying debts, preparing accounts, selling property, or distributing the estate.",
+    serviceScope: [
+      "A solicitor partner may help with probate or letters of administration, asset and liability information, estate accounts, inheritance tax paperwork, beneficiary communication, property sale coordination, debt payment, and estate distributions.",
+      "The scope should be clear because grant-only help is different from full estate administration. Executors should ask exactly which responsibilities remain with them.",
+    ],
+    localContext:
+      "Kidderminster and Wyre Forest estates may involve a local family home, property valuation, estate agents, utility accounts, relatives living elsewhere, beneficiaries around Stourport, Bewdley, Cookley, Hagley, or wider Worcestershire, and practical house clearance steps.",
+    prepareItems: [
+      "death certificate",
+      "will if available",
+      "asset and debt list",
+      "property details",
+      "beneficiary details",
+      "tax information",
+      "letters from banks or institutions",
+    ],
+    questionItems: [
+      "whether the quote covers grant-only or full administration",
+      "who contacts beneficiaries",
+      "whether estate accounts are included",
+      "how property sale steps are coordinated",
+      "what could make the estate more complex",
+    ],
+    riskItems: [
+      "Estate administration can go wrong when executors distribute too early, miss debts or tax issues, fail to keep accounts, lose beneficiary communication, or assume probate is the only responsibility.",
+      "Another risk is accepting a quote without understanding scope. A cheaper grant-only quote may leave substantial estate administration work with the executor.",
+    ],
+    relatedGuideSlugs: [
+      "probate-costs-kidderminster",
+      "executor-responsibilities-explained",
+      "applying-for-letters-of-administration-guide",
+      "what-does-a-probate-solicitor-do",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "intestacy-solicitors-kidderminster",
+    title: "Intestacy Solicitors Kidderminster",
+    h1: "Intestacy solicitors in Kidderminster",
+    metaDescription:
+      "Compare intestacy solicitor options in Kidderminster for estates without a will, letters of administration, family trees, property, and beneficiaries.",
+    category: "Intestacy",
+    summary:
+      "Support comparing solicitor options for estates without a will, letters of administration, family tree checks, property, beneficiaries, and estate administration.",
+    userNeed:
+      "Intestacy enquiries often start when someone dies without a valid will or where no will can be found, leaving relatives unsure who can apply, who benefits, and what should happen next.",
+    serviceScope: [
+      "A solicitor partner may help check the family position, identify who may be entitled to apply for letters of administration, gather estate information, deal with property, communicate with beneficiaries, and explain practical administration steps.",
+      "Intestacy work can be more sensitive where family relationships are complex, relatives are missing, property ownership is unclear, or people disagree about who should act.",
+    ],
+    localContext:
+      "Intestacy enquiries in Kidderminster, Wyre Forest, and Worcestershire may involve local homes, blended families, adult children living away, elderly relatives, informal promises, and practical questions about securing a property.",
+    prepareItems: [
+      "death certificate",
+      "details of will searches",
+      "family tree information",
+      "property and asset details",
+      "debt information",
+      "names of close relatives",
+      "urgent property or bank letters",
+    ],
+    questionItems: [
+      "who may be entitled to apply",
+      "whether letters of administration are needed",
+      "what family information must be checked",
+      "how missing relatives are handled",
+      "what should be avoided before authority is clear",
+    ],
+    riskItems: [
+      "Intestacy matters can go wrong when relatives assume they can act without authority, distribute assets before checking entitlement, overlook half-siblings or children, or rely on informal family assumptions.",
+      "Another risk is moving money, clearing property, or making promises to relatives before the legal authority and beneficiary position are understood.",
+    ],
+    relatedGuideSlugs: [
+      "intestacy-rules-explained",
+      "applying-for-letters-of-administration-guide",
+      "dies-without-a-will-uk",
+      "executor-responsibilities-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "inheritance-tax-planning-solicitors-kidderminster",
+    title: "Inheritance Tax Planning Solicitors Kidderminster",
+    h1: "Inheritance tax planning solicitors in Kidderminster",
+    metaDescription:
+      "Compare inheritance tax planning solicitor options in Kidderminster for wills, lifetime gifts, trusts, property, business assets, and estate planning.",
+    category: "Inheritance Tax Planning",
+    summary:
+      "Support comparing solicitor options for inheritance tax planning, wills, lifetime gifts, trusts, property, business assets, and estate planning questions.",
+    userNeed:
+      "Inheritance tax planning enquiries often begin when someone wants to review their will, property, lifetime gifts, business interests, family arrangements, or later-life planning before an estate becomes difficult to administer.",
+    serviceScope: [
+      "A solicitor partner may help discuss wills, lifetime gifts, trusts, property ownership, business assets, inheritance tax relief questions, family provision, deeds of variation, and coordination with tax or financial advisers.",
+      "Tax planning is fact-specific and may need specialist tax advice. This website can help users prepare questions but cannot advise on tax outcomes.",
+    ],
+    localContext:
+      "Kidderminster and Worcestershire inheritance tax planning may involve family homes, rental property, local businesses, farms or rural assets, pensions, savings, blended families, and relatives across the Wyre Forest area.",
+    prepareItems: [
+      "asset summary",
+      "property ownership details",
+      "current will",
+      "lifetime gift history",
+      "business or farm interests",
+      "family tree",
+      "existing tax or financial advice",
+    ],
+    questionItems: [
+      "whether the solicitor handles inheritance tax planning",
+      "whether tax or financial adviser input is needed",
+      "how wills and lifetime gifts interact",
+      "whether trusts or reliefs may need discussing",
+      "what documents should be reviewed first",
+    ],
+    riskItems: [
+      "Inheritance tax planning can go wrong when gifts are made without records, wills are not updated, property ownership is misunderstood, trusts are copied from templates, or tax assumptions are made without specialist input.",
+      "Another risk is focusing only on tax while ignoring family fairness, care needs, capacity, control, and practical estate administration.",
+    ],
+    relatedGuideSlugs: [
+      "inheritance-tax-basics",
+      "trusts-protecting-your-assets",
+      "deed-of-variation-explained",
+      "what-should-be-included-in-a-will",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "deed-of-variation-solicitors-kidderminster",
+    title: "Deed of Variation Solicitors Kidderminster",
+    h1: "Deed of variation solicitors in Kidderminster",
+    metaDescription:
+      "Compare deed of variation solicitor options in Kidderminster for changing estate distributions, inheritance tax context, beneficiaries, and probate planning.",
+    category: "Deeds of Variation",
+    summary:
+      "Support comparing solicitor options for deeds of variation, estate distribution changes, beneficiary agreement, inheritance tax context, and probate planning.",
+    userNeed:
+      "Deed of variation enquiries often begin after someone dies, when beneficiaries want to redirect part of an inheritance, adjust estate distributions, or consider tax and family planning implications.",
+    serviceScope: [
+      "A solicitor partner may help with deed of variation drafting, beneficiary consent, estate documents, timing, inheritance tax or capital gains tax context, charity gifts, family arrangements, and executor communication.",
+      "The right approach depends on the will or intestacy position, who is affected, tax advice, timing, and whether every relevant beneficiary has capacity and agrees.",
+    ],
+    localContext:
+      "Families in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Worcestershire may ask about deeds of variation where a local estate includes property, savings, family gifts, charities, or beneficiaries with different needs.",
+    prepareItems: [
+      "will or intestacy details",
+      "grant status if known",
+      "beneficiary names",
+      "proposed change",
+      "estate asset summary",
+      "tax advice if any",
+      "date of death",
+    ],
+    questionItems: [
+      "whether a deed of variation may be suitable",
+      "who must agree",
+      "what timing matters",
+      "whether tax advice is needed",
+      "how executors and beneficiaries are involved",
+    ],
+    riskItems: [
+      "Deeds of variation can go wrong when timing is missed, affected beneficiaries do not consent, tax assumptions are made without advice, or the document does not match the estate distribution being changed.",
+      "Another risk is using a variation to patch wider family disagreement without checking capacity, entitlement, executor duties, and tax consequences.",
+    ],
+    relatedGuideSlugs: [
+      "deed-of-variation-explained",
+      "inheritance-tax-basics",
+      "intestacy-rules-explained",
+      "executor-responsibilities-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "executor-dispute-solicitors-kidderminster",
+    title: "Executor Dispute Solicitors Kidderminster",
+    h1: "Executor dispute solicitors in Kidderminster",
+    metaDescription:
+      "Compare executor dispute solicitor options in Kidderminster for executor duties, beneficiary concerns, estate accounts, delays, caveats, and probate disputes.",
+    category: "Executor Disputes",
+    summary:
+      "Support comparing solicitor options for executor disputes, beneficiary concerns, estate accounts, delays, communication problems, caveats, and probate disagreement.",
+    userNeed:
+      "Executor dispute enquiries often start when beneficiaries cannot get information, executors disagree, estate accounts are unclear, property is being handled badly, or delays and mistrust have developed.",
+    serviceScope: [
+      "A solicitor partner may help review executor duties, estate accounts, beneficiary correspondence, caveats, removal or replacement questions, property sale concerns, distribution delays, and settlement options.",
+      "Executor disputes can overlap with will validity, contested probate, inheritance claims, missing assets, and concerns about pressure or capacity before death.",
+    ],
+    localContext:
+      "Executor disputes around Kidderminster and Wyre Forest may involve a local family home, siblings living in different places, blended families, personal possessions, care records, or disagreements about estate sale timing.",
+    prepareItems: [
+      "will and grant details",
+      "executor names",
+      "beneficiary correspondence",
+      "estate account information",
+      "property sale details",
+      "timeline of delays",
+      "any caveat or court papers",
+    ],
+    questionItems: [
+      "what executor duties may be relevant",
+      "what information beneficiaries can request",
+      "whether the dispute is urgent",
+      "how costs and proportionality are handled",
+      "whether negotiation or court steps may be possible",
+    ],
+    riskItems: [
+      "Executor disputes can go wrong when parties make accusations without documents, remove estate items, distribute assets while concerns remain, ignore caveats, or let communication break down completely.",
+      "Another risk is spending estate money or personal money on a dispute without understanding proportionality, evidence, and likely stages.",
+    ],
+    relatedGuideSlugs: [
+      "executor-responsibilities-explained",
+      "beneficiaries-rights-to-information",
+      "caveats-in-probate",
+      "larke-v-nugus-request-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "deputyship-solicitors-kidderminster",
+    title: "Deputyship Solicitors Kidderminster",
+    h1: "Deputyship solicitors in Kidderminster",
+    metaDescription:
+      "Compare deputyship solicitor options in Kidderminster for Court of Protection applications, capacity concerns, finances, property, care, and family duties.",
+    category: "Deputyship",
+    summary:
+      "Support comparing solicitor options for deputyship, Court of Protection applications, capacity concerns, finances, property, care, and family duties.",
+    userNeed:
+      "Deputyship enquiries often begin when someone cannot make certain decisions and there is no suitable lasting power of attorney in place, leaving relatives unsure how to manage money, property, or care-related decisions.",
+    serviceScope: [
+      "A solicitor partner may help with deputyship applications, capacity evidence, Court of Protection forms, property and financial affairs, care-related documents, reporting duties, family communication, and urgent interim questions.",
+      "Deputyship is different from an LPA because the court process is usually needed after capacity is already an issue. Timing, evidence, and responsibilities should be explained carefully.",
+    ],
+    localContext:
+      "Families in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Worcestershire may need deputyship support where an elderly relative, vulnerable adult, or injured person has property, savings, care needs, or bills that must be managed.",
+    prepareItems: [
+      "person's name and address",
+      "capacity concern summary",
+      "medical or care context",
+      "asset and bill information",
+      "family contact details",
+      "existing LPA or will information",
+      "urgent payment or property issues",
+    ],
+    questionItems: [
+      "whether deputyship may be needed",
+      "what capacity evidence is required",
+      "what forms and timescales apply",
+      "who can act as deputy",
+      "what duties and reporting responsibilities follow",
+    ],
+    riskItems: [
+      "Deputyship matters can go wrong when families assume next of kin can automatically manage finances, wait until bills or property issues become urgent, or do not keep records of decisions and spending.",
+      "Another risk is confusing deputyship with an LPA. The right route depends on capacity, existing documents, and the decisions that need to be made.",
+    ],
+    relatedGuideSlugs: [
+      "lasting-power-of-attorney-basics",
+      "applying-for-letters-of-administration-guide",
+      "lasting-power-of-attorney-basics",
+      "trusts-protecting-your-assets",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "care-home-fees-solicitors-kidderminster",
+    title: "Care Home Fees Solicitors Kidderminster",
+    h1: "Care home fees solicitors in Kidderminster",
+    metaDescription:
+      "Compare care home fees solicitor options in Kidderminster for later-life planning, property, LPAs, deputyship, care funding questions, and family preparation.",
+    category: "Care Home Fees",
+    summary:
+      "Support comparing solicitor options for care home fees, later-life planning, property, LPAs, deputyship, care funding questions, and family preparation.",
+    userNeed:
+      "Care home fee enquiries often begin when a family is planning care, dealing with hospital discharge, reviewing property, considering authority to act, or trying to understand what information to prepare before taking advice.",
+    serviceScope: [
+      "A solicitor partner may help discuss property ownership, LPAs, deputyship, wills, trusts, care-related documents, family authority, safeguarding concerns, and coordination with care funding or financial advice where relevant.",
+      "Care funding can be technical and fact-specific. This website cannot advise on entitlement, deprivation of assets, or local authority decisions.",
+    ],
+    localContext:
+      "Families in Kidderminster, Wyre Forest, Stourport, Bewdley, Cookley, Hagley, and Worcestershire may be balancing local care homes, home ownership, adult children living away, urgent discharge planning, and sensitive family conversations.",
+    prepareItems: [
+      "care situation summary",
+      "property ownership details",
+      "savings and income overview",
+      "LPA or deputyship status",
+      "will or trust information",
+      "local authority correspondence",
+      "urgent dates or decisions",
+    ],
+    questionItems: [
+      "whether the solicitor handles care-fee related planning",
+      "what documents should be reviewed first",
+      "whether LPA or deputyship issues matter",
+      "whether financial or care funding advice is also needed",
+      "how sensitive family discussions are handled",
+    ],
+    riskItems: [
+      "Care home fee questions can go wrong when families make rushed property or gift decisions, assume next of kin authority exists, ignore capacity, or rely on broad myths about protecting assets.",
+      "Another risk is treating legal planning as separate from care needs, safeguarding, family communication, and financial advice.",
+    ],
+    relatedGuideSlugs: [
+      "lasting-power-of-attorney-basics",
+      "trusts-protecting-your-assets",
+      "inheritance-tax-basics",
+      "when-should-you-update-a-will",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "trust-solicitors-kidderminster",
+    title: "Trust Solicitors Kidderminster",
+    h1: "Trust solicitors in Kidderminster",
+    metaDescription:
+      "Compare trust solicitor options in Kidderminster for wills, estate planning, trustees, family trusts, property, inheritance tax context, and administration.",
+    category: "Trusts",
+    summary:
+      "Support comparing solicitor options for trusts, wills, estate planning, trustees, family trusts, property, inheritance tax context, and trust administration.",
+    userNeed:
+      "Trust enquiries often begin when someone sees trust wording in a will, wants to provide for vulnerable beneficiaries, needs trustee guidance, or is considering estate planning involving property, family wealth, or business assets.",
+    serviceScope: [
+      "A solicitor partner may help with trust creation, will trusts, trustee duties, trust administration, vulnerable beneficiaries, property trusts, inheritance tax context, deeds of variation, and coordination with tax or financial advisers.",
+      "Trust work can be technical. Users should ask what is included, whether tax advice is needed, and whether the matter is planning, administration, or a dispute.",
+    ],
+    localContext:
+      "Trust enquiries in Kidderminster and Worcestershire may involve family homes, vulnerable relatives, blended families, business owners, rural assets, trustees living in different places, or estates being administered across Wyre Forest.",
+    prepareItems: [
+      "trust document or will",
+      "trustee and beneficiary details",
+      "asset summary",
+      "property information",
+      "tax advice if any",
+      "reason for the trust enquiry",
+      "urgent administration dates",
+    ],
+    questionItems: [
+      "whether the issue is trust creation, administration, or dispute",
+      "what trustee duties apply",
+      "whether tax or financial advice is needed",
+      "how costs and ongoing responsibilities work",
+      "what documents should be reviewed first",
+    ],
+    riskItems: [
+      "Trust matters can go wrong when trustees do not understand duties, records are poor, tax filings are overlooked, beneficiaries are not kept appropriately informed, or a trust is used without understanding the long-term administration.",
+      "Another risk is assuming a trust automatically protects assets or reduces tax. The facts, timing, purpose, and advice all matter.",
+    ],
+    relatedGuideSlugs: [
+      "trusts-protecting-your-assets",
+      "inheritance-tax-basics",
+      "deed-of-variation-explained",
+      "executor-responsibilities-explained",
     ],
   }),
   createSpecialistServicePage({
@@ -7227,6 +7587,144 @@ const rawGuidePages: GuidePage[] = [
       },
     ],
   },
+  createQualityGuide({
+    slug: "applying-for-letters-of-administration-guide",
+    title: "Applying for Letters of Administration Guide",
+    h1: "Applying for letters of administration guide",
+    metaDescription:
+      "General guide to applying for letters of administration when there is no will, including who may apply, documents, property, and solicitor questions.",
+    category: "Probate and Wills",
+    relatedServiceSlug: "intestacy-solicitors-kidderminster",
+    intro:
+      "Letters of administration may be needed when someone dies without a valid will or where no executor is able to act. The document gives authority to administer the estate, but the right person to apply and the information needed can depend on the family position and estate assets.",
+    keyTakeaways: [
+      "Letters of administration are often relevant where there is no valid will and someone needs authority to deal with the estate.",
+      "The person entitled to apply may depend on the intestacy position, family tree, and whether anyone with higher priority can or will act.",
+      "A clear asset list, family information, death certificate, and will-search details can make the first solicitor conversation more useful.",
+    ],
+    topicOverview: [
+      "Applying for letters of administration is part of estate administration where there is no executor acting under a will. Banks, investment providers, Land Registry, and other institutions may need formal authority before assets can be collected or transferred.",
+      "A solicitor partner may help check who can apply, what evidence is needed, whether inheritance tax forms are relevant, how property should be handled, and what the administrator must do after authority is granted.",
+    ],
+    practicalExamples: [
+      "A family in Kidderminster may find no will after a parent dies and need to understand whether an adult child, spouse, civil partner, or another relative may apply.",
+      "Another estate may include a local property, several bank accounts, and relatives living in different places. The family tree, asset list, and property ownership should be organised before the application is prepared.",
+    ],
+    commonProblems: [
+      "Applications can become difficult when families assume the wrong person can apply, cannot evidence relationships, distribute assets before authority is granted, or overlook property, debts, tax, or missing relatives.",
+      "Another problem is treating letters of administration as the whole job. After the grant, the administrator may still need to collect assets, pay liabilities, prepare accounts, communicate with beneficiaries, and distribute the estate correctly.",
+    ],
+    prepareItems: [
+      "death certificate",
+      "will search information",
+      "family tree details",
+      "asset and debt list",
+      "property ownership information",
+      "names of close relatives",
+      "bank or institution letters",
+    ],
+    questionItems: [
+      "who may be entitled to apply",
+      "whether any person has higher priority",
+      "what documents are needed",
+      "whether inheritance tax forms are required",
+      "what administration duties follow after the grant",
+    ],
+    localContext:
+      "Letters of administration enquiries around Kidderminster, Stourport, Bewdley, Cookley, Hagley, and wider Worcestershire often involve local homes, relatives living away, blended families, and practical property security or sale questions.",
+    relatedGuideSlugs: [
+      "intestacy-rules-explained",
+      "dies-without-a-will-uk",
+      "executor-responsibilities-explained",
+      "probate-costs-kidderminster",
+    ],
+    faq: [
+      {
+        question: "Are letters of administration the same as probate?",
+        answer:
+          "They are related but not identical. Probate usually refers to proving a will through named executors. Letters of administration are often used where no executor can act or there is no valid will.",
+      },
+      {
+        question: "Can anyone apply for letters of administration?",
+        answer:
+          "No. The person entitled to apply depends on the family and estate position. A qualified provider can check the facts and documents if instructed.",
+      },
+      {
+        question: "What happens after letters of administration are granted?",
+        answer:
+          "The administrator may still need to collect assets, pay debts, prepare accounts, deal with property, communicate with beneficiaries, and distribute the estate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "deed-of-variation-explained",
+    title: "Deed of Variation Explained",
+    h1: "Deed of variation explained",
+    metaDescription:
+      "General guide to deeds of variation after death, including changing estate distributions, beneficiary consent, tax context, timing, and solicitor questions.",
+    category: "Probate and Wills",
+    relatedServiceSlug: "deed-of-variation-solicitors-kidderminster",
+    intro:
+      "A deed of variation is a document that may allow beneficiaries to redirect or change how an inheritance passes after someone has died. It is often discussed for family planning, tax context, charity gifts, or practical fairness, but it needs careful timing, consent, and drafting.",
+    keyTakeaways: [
+      "A deed of variation may be considered after death where beneficiaries want to redirect all or part of an inheritance.",
+      "Affected beneficiaries usually need to agree, and tax consequences should be checked before any document is signed.",
+      "Timing, capacity, estate documents, and executor communication can all matter, so users should prepare the facts before requesting a quote.",
+    ],
+    topicOverview: [
+      "Deeds of variation may relate to a will or intestacy. They can be used to redirect assets to another person, charity, trust, or different beneficiary arrangement where the relevant people agree and the legal requirements are met.",
+      "A solicitor partner may help review the estate position, identify who must consent, draft the variation, coordinate with executors, and explain when separate tax or financial advice may be needed.",
+    ],
+    practicalExamples: [
+      "A beneficiary in Kidderminster may want part of an inheritance to pass directly to adult children rather than receiving it personally. The timing, tax context, and consent position should be checked.",
+      "A family may want to alter an intestacy outcome so that a surviving relative, charity, or vulnerable beneficiary receives a different share. The right document depends on the estate and agreement between those affected.",
+    ],
+    commonProblems: [
+      "Deed of variation problems often arise when people assume an informal family agreement is enough, miss timing points, forget that affected beneficiaries must agree, or make tax assumptions without proper advice.",
+      "Another risk is changing an estate distribution without understanding executor duties, beneficiary capacity, trusts, inheritance tax, capital gains tax, or how the variation will be recorded.",
+    ],
+    prepareItems: [
+      "will or intestacy details",
+      "date of death",
+      "grant status",
+      "estate asset summary",
+      "beneficiary names",
+      "proposed variation",
+      "tax advice already received",
+    ],
+    questionItems: [
+      "whether a deed of variation may be suitable",
+      "who needs to consent",
+      "what tax advice may be needed",
+      "how executors are involved",
+      "what timing and document requirements apply",
+    ],
+    localContext:
+      "Deed of variation enquiries in Kidderminster, Wyre Forest, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may involve local family homes, inherited savings, blended families, charitable gifts, and beneficiaries living in different places.",
+    relatedGuideSlugs: [
+      "inheritance-tax-basics",
+      "intestacy-rules-explained",
+      "executor-responsibilities-explained",
+      "trusts-protecting-your-assets",
+    ],
+    faq: [
+      {
+        question: "Can a deed of variation change who inherits after death?",
+        answer:
+          "It may be able to redirect an inheritance where the relevant beneficiaries agree and the legal and tax requirements are met.",
+      },
+      {
+        question: "Do all beneficiaries need to sign a deed of variation?",
+        answer:
+          "The people whose entitlement is affected usually need to agree. The exact consent position depends on the estate and proposed change.",
+      },
+      {
+        question: "Is tax advice needed before signing a deed of variation?",
+        answer:
+          "It may be needed. Inheritance tax, capital gains tax, and wider estate planning points should be checked by a qualified adviser where relevant.",
+      },
+    ],
+  }),
   {
     type: "guide",
     slug: "what-should-be-included-in-a-will",
@@ -13807,6 +14305,46 @@ const anchorTextByServiceSlug: Record<string, string[]> = {
     "will dispute solicitor options",
     "compare will dispute support",
     "Kidderminster will dispute enquiries",
+  ],
+  "estate-administration-solicitors-kidderminster": [
+    "estate administration solicitor options",
+    "compare estate administration support",
+    "Kidderminster estate administration enquiries",
+  ],
+  "intestacy-solicitors-kidderminster": [
+    "intestacy solicitor options",
+    "compare intestacy estate support",
+    "Kidderminster intestacy enquiries",
+  ],
+  "inheritance-tax-planning-solicitors-kidderminster": [
+    "inheritance tax planning solicitor options",
+    "compare estate tax planning support",
+    "Kidderminster inheritance tax planning enquiries",
+  ],
+  "deed-of-variation-solicitors-kidderminster": [
+    "deed of variation solicitor options",
+    "compare deed of variation support",
+    "Kidderminster deed of variation enquiries",
+  ],
+  "executor-dispute-solicitors-kidderminster": [
+    "executor dispute solicitor options",
+    "compare executor dispute support",
+    "Kidderminster executor dispute enquiries",
+  ],
+  "deputyship-solicitors-kidderminster": [
+    "deputyship solicitor options",
+    "compare deputyship legal support",
+    "Kidderminster deputyship enquiries",
+  ],
+  "care-home-fees-solicitors-kidderminster": [
+    "care home fees solicitor options",
+    "compare care fee planning support",
+    "Kidderminster care home fees enquiries",
+  ],
+  "trust-solicitors-kidderminster": [
+    "trust solicitor options",
+    "compare trust legal support",
+    "Kidderminster trust solicitor enquiries",
   ],
   "family-law-solicitors-kidderminster": [
     "family law solicitor support",
