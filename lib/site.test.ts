@@ -514,6 +514,43 @@ describe("site content model", () => {
     });
   });
 
+  it("includes CE2 Phase 2 batch A9 rural and agricultural pages", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "rural-solicitors-worcestershire",
+        "agricultural-property-solicitors",
+        "agricultural-tenancy-solicitors",
+        "farm-business-solicitors",
+        "rural-land-dispute-solicitors",
+        "rights-of-way-access-solicitors",
+        "common-land-solicitors",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "agricultural-holdings-act-tenancy-guide",
+        "farm-partnership-agreement-guide",
+        "public-rights-of-way-guide",
+      ]),
+    );
+
+    [
+      "rural-solicitors-worcestershire",
+      "agricultural-property-solicitors",
+      "agricultural-tenancy-solicitors",
+      "farm-business-solicitors",
+      "rural-land-dispute-solicitors",
+      "rights-of-way-access-solicitors",
+      "common-land-solicitors",
+      "agricultural-holdings-act-tenancy-guide",
+      "farm-partnership-agreement-guide",
+      "public-rights-of-way-guide",
+    ].forEach((slug) => {
+      expect(getAllPageSlugs()).toContain(slug);
+    });
+  });
+
   it("keeps guide content useful, local, and conversion-aware", () => {
     const localPattern =
       /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;

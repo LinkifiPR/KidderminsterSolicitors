@@ -144,6 +144,21 @@ export const guideCategoryGroups = [
     ],
   },
   {
+    title: "Rural and agricultural",
+    description:
+      "Rural land, farms, agricultural property, tenancies, access, rights of way, common land, and farm business guides.",
+    categories: ["Rural and Agricultural"],
+    serviceSlugs: [
+      "rural-solicitors-worcestershire",
+      "agricultural-property-solicitors",
+      "agricultural-tenancy-solicitors",
+      "farm-business-solicitors",
+      "rural-land-dispute-solicitors",
+      "rights-of-way-access-solicitors",
+      "common-land-solicitors",
+    ],
+  },
+  {
     title: "Personal injury and negligence",
     description:
       "Accident, injury, no win no fee, workplace injury, pedestrian accident, and clinical negligence guides.",
@@ -5383,6 +5398,314 @@ export const servicePages: ServicePage[] = [
       "licensing-agreement-guide",
       "commercial-contract-review-guide",
       "data-processing-agreement-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "rural-solicitors-worcestershire",
+    title: "Rural Solicitors Worcestershire",
+    h1: "Rural solicitors in Worcestershire",
+    metaDescription:
+      "Compare rural solicitor options in Worcestershire for farms, estates, agricultural land, tenancies, rights of way, access, and rural disputes.",
+    category: "Rural Legal Services",
+    summary:
+      "Support comparing solicitor options for farms, estates, rural land, agricultural tenancies, access, common land, and farm business issues.",
+    userNeed:
+      "Rural legal enquiries often start when land, farming businesses, family ownership, access, tenancies, succession, or estate management issues need specialist attention rather than a generic property response.",
+    serviceScope: [
+      "A solicitor partner may help with agricultural property, farm tenancies, estate ownership questions, public and private rights of way, boundary issues, rural business structures, succession planning, common land, and disputes linked to rural land use.",
+      "Rural matters often overlap with property, commercial, family, tax, probate, planning, environmental, and dispute resolution issues, so the first step is usually to identify the documents and facts that drive the legal route.",
+    ],
+    localContext:
+      "Worcestershire and the wider Wyre Forest area include farms, smallholdings, equestrian property, estate land, rural lanes, public footpaths, village-edge development pressure, and family-run agricultural businesses where local context can affect practical handling.",
+    prepareItems: [
+      "land or farm address",
+      "title documents if available",
+      "tenancy or occupation papers",
+      "plan or map",
+      "timeline of events",
+      "photos or correspondence",
+      "desired outcome",
+    ],
+    questionItems: [
+      "which rural documents should be reviewed first",
+      "whether the matter is property, tenancy, business, tax, or dispute led",
+      "what urgent deadlines or notices apply",
+      "whether specialist rural experience is needed",
+      "how costs may be staged",
+    ],
+    riskItems: [
+      "Rural matters can go wrong when informal family or neighbour arrangements are treated as legally simple, maps are unclear, occupation arrangements are not documented, or tax and succession points are left until a transaction or dispute has already started.",
+      "Another risk is separating connected issues too much. A farm sale, access dispute, tenancy notice, or succession plan may need property, dispute, commercial, and private client input at the same time.",
+    ],
+    relatedGuideSlugs: [
+      "agricultural-holdings-act-tenancy-guide",
+      "farm-partnership-agreement-guide",
+      "public-rights-of-way-guide",
+      "rights-of-way-access-disputes",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "agricultural-property-solicitors",
+    title: "Agricultural Property Solicitors",
+    h1: "Agricultural property solicitors",
+    metaDescription:
+      "Compare agricultural property solicitor options for buying, selling, refinancing, transferring, or reviewing farmland and rural property.",
+    category: "Agricultural Property",
+    summary:
+      "Support comparing solicitor options for farmland sales, purchases, rural property due diligence, overage, easements, tenancies, and farm buildings.",
+    userNeed:
+      "Agricultural property enquiries often begin when someone is buying or selling farmland, transferring family land, refinancing farm assets, checking access, reviewing tenancies, or dealing with development potential.",
+    serviceScope: [
+      "A solicitor partner may review title, plans, boundaries, easements, restrictive covenants, overage, wayleaves, drainage, public rights of way, environmental constraints, planning history, tenancy occupation, and completion documents.",
+      "Agricultural property work can involve commercial property due diligence, rural business assets, lender requirements, family transfers, tax planning, farm partnership arrangements, and sale contracts for land, buildings, and entitlements.",
+    ],
+    localContext:
+      "Agricultural property around Kidderminster, Bewdley, Stourport, and rural Worcestershire may involve mixed-use land, older farm buildings, public footpaths, private tracks, water and drainage arrangements, grazing licences, and development pressure near villages.",
+    prepareItems: [
+      "title number or deeds",
+      "sale particulars",
+      "farm plan",
+      "tenancy details",
+      "access arrangements",
+      "planning history",
+      "finance or lender requirements",
+    ],
+    questionItems: [
+      "what title and plan checks are needed",
+      "whether any occupation or tenancy affects completion",
+      "how rights of way and easements will be checked",
+      "whether overage or development clauses are proposed",
+      "what specialist rural enquiries should be raised",
+    ],
+    riskItems: [
+      "Agricultural property transactions can go wrong where land boundaries do not match occupation, access is assumed rather than documented, public rights of way are missed, tenancy arrangements are unclear, or overage wording is accepted without understanding future impact.",
+      "Another risk is treating a farm transaction like a standard house sale. Rural land may need deeper checks on services, tracks, drainage, subsidies, environmental matters, and third-party occupation.",
+    ],
+    relatedGuideSlugs: [
+      "commercial-property-due-diligence-checklist",
+      "public-rights-of-way-guide",
+      "rights-of-way-access-disputes",
+      "farm-partnership-agreement-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "agricultural-tenancy-solicitors",
+    title: "Agricultural Tenancy Solicitors",
+    h1: "Agricultural tenancy solicitors",
+    metaDescription:
+      "Compare agricultural tenancy solicitor options for farm business tenancies, Agricultural Holdings Act tenancies, notices, rent, succession, and disputes.",
+    category: "Agricultural Tenancies",
+    summary:
+      "Support comparing solicitor options for farm tenancies, AHA tenancies, farm business tenancies, notices, rent reviews, occupation, and succession questions.",
+    userNeed:
+      "Agricultural tenancy enquiries often start when a landlord or tenant needs to understand occupation rights, rent review steps, repair obligations, succession, notices, diversification, or the end of a farming arrangement.",
+    serviceScope: [
+      "A solicitor partner may help review Agricultural Holdings Act tenancies, farm business tenancies, grazing licences, notices, rent review provisions, succession rights, repair obligations, termination options, and dispute strategy.",
+      "Tenancy work may overlap with agricultural property sales, farm restructuring, estate management, tax planning, family succession, environmental schemes, and commercial negotiation.",
+    ],
+    localContext:
+      "Rural Worcestershire enquiries may involve long-standing farm occupation, family arrangements, mixed grazing and arable use, estate-owned land, informal licences, or diversification projects around Kidderminster, Bewdley, Stourport, and nearby villages.",
+    prepareItems: [
+      "tenancy agreement",
+      "notice or correspondence",
+      "rent history",
+      "farm plan",
+      "repair records",
+      "occupation timeline",
+      "succession or retirement concerns",
+    ],
+    questionItems: [
+      "whether the tenancy is an AHA tenancy or farm business tenancy",
+      "what notices or deadlines apply",
+      "how rent review or repair issues should be approached",
+      "whether succession rights may be relevant",
+      "what options exist before a dispute escalates",
+    ],
+    riskItems: [
+      "Agricultural tenancy problems can worsen when parties serve notices without checking the tenancy type, rely on informal occupation history, ignore repair evidence, or assume that diversification will be allowed without consent.",
+      "Another risk is leaving succession or retirement discussions too late, especially where family members, estate owners, lenders, or business partners all need to understand the next step.",
+    ],
+    relatedGuideSlugs: [
+      "agricultural-holdings-act-tenancy-guide",
+      "farm-partnership-agreement-guide",
+      "public-rights-of-way-guide",
+      "commercial-lease-break-clause-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "farm-business-solicitors",
+    title: "Farm Business Solicitors",
+    h1: "Farm business solicitors",
+    metaDescription:
+      "Compare farm business solicitor options for partnerships, succession, contracts, diversification, land occupation, and family farming structures.",
+    category: "Farm Businesses",
+    summary:
+      "Support comparing solicitor options for farming partnerships, family business structures, contracts, diversification, succession, and rural commercial arrangements.",
+    userNeed:
+      "Farm business enquiries often begin when a family farming business needs clearer partnership terms, succession planning, ownership structure, land occupation documents, diversification contracts, or dispute prevention.",
+    serviceScope: [
+      "A solicitor partner may help review farm partnership agreements, company or LLP structures, ownership records, land occupation, diversification contracts, supply agreements, employment points, succession plans, and exit arrangements.",
+      "Farm business work can overlap with agricultural property, tax and estate planning, employment law, commercial contracts, dispute resolution, and probate where family ownership and business assets are closely connected.",
+    ],
+    localContext:
+      "Farm businesses around Kidderminster, Wyre Forest, and Worcestershire may combine family labour, owned and rented land, contracting, diversification, holiday lets, equestrian use, direct sales, and older informal arrangements that need careful documentation.",
+    prepareItems: [
+      "partnership or company documents",
+      "land ownership summary",
+      "accounts or business structure notes",
+      "family ownership outline",
+      "key contracts",
+      "planned change",
+      "known areas of disagreement",
+    ],
+    questionItems: [
+      "whether the current business structure is documented",
+      "how land ownership and business assets interact",
+      "what happens if a partner retires or dies",
+      "whether diversification needs new contracts or consents",
+      "how fees can be staged around the most urgent documents",
+    ],
+    riskItems: [
+      "Farm business issues can go wrong where family expectations are not written down, partnership assets are unclear, personal and business ownership are mixed, or a diversification project starts before checking land, planning, tax, and contract implications.",
+      "Another risk is assuming succession can be solved by a will alone. Business documents, land ownership, tax planning, and family communication may all need to align.",
+    ],
+    relatedGuideSlugs: [
+      "farm-partnership-agreement-guide",
+      "business-due-diligence-checklist",
+      "heads-of-terms-business-sale-guide",
+      "commercial-contract-review-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "rural-land-dispute-solicitors",
+    title: "Rural Land Dispute Solicitors",
+    h1: "Rural land dispute solicitors",
+    metaDescription:
+      "Compare rural land dispute solicitor options for boundaries, access, easements, grazing, drainage, trespass, and neighbour disputes.",
+    category: "Rural Land Disputes",
+    summary:
+      "Support comparing solicitor options for rural boundary disputes, access problems, drainage, easements, trespass, grazing, and neighbouring land issues.",
+    userNeed:
+      "Rural land disputes often start when a boundary, track, gate, ditch, access route, grazing arrangement, shooting or leisure use, drainage issue, or neighbour disagreement becomes commercially or personally disruptive.",
+    serviceScope: [
+      "A solicitor partner may review title documents, plans, aerial evidence, historic use, rights of way, easements, correspondence, notices, expert reports, negotiation options, mediation, and court-related steps where needed.",
+      "Rural land disputes can overlap with agricultural tenancies, common land, public rights of way, adverse possession, nuisance, trespass, planning, and farm business relationships.",
+    ],
+    localContext:
+      "Rural disputes around Kidderminster, Bewdley, Stourport, Cookley, Hagley, and wider Worcestershire may involve lanes, tracks, fields, river edges, woodland, grazing land, village boundaries, and long-standing informal arrangements.",
+    prepareItems: [
+      "title documents",
+      "plan or map",
+      "photos",
+      "timeline",
+      "correspondence",
+      "witness notes",
+      "details of any urgent obstruction or notice",
+    ],
+    questionItems: [
+      "what evidence matters most",
+      "whether negotiation or mediation should be tried",
+      "what urgent steps may be available",
+      "whether expert survey evidence is needed",
+      "how proportionality and costs should be assessed",
+    ],
+    riskItems: [
+      "Rural land disputes can go wrong when parties alter gates, fences, tracks, drainage, or access before checking title and evidence, or when informal accusations replace a clear chronology and document review.",
+      "Another risk is letting a neighbour dispute consume more time and money than the land value or practical outcome justifies. A solicitor partner may help assess proportionality if instructed.",
+    ],
+    relatedGuideSlugs: [
+      "rights-of-way-access-disputes",
+      "property-boundaries-explained",
+      "public-rights-of-way-guide",
+      "commercial-property-disputes",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "rights-of-way-access-solicitors",
+    title: "Rights of Way and Access Solicitors",
+    h1: "Rights of way and access solicitors",
+    metaDescription:
+      "Compare rights of way and access solicitor options for private access, public footpaths, obstruction, gates, tracks, maintenance, and title issues.",
+    category: "Rights of Way and Access",
+    summary:
+      "Support comparing solicitor options for private rights of way, public footpaths, farm tracks, blocked access, gates, maintenance, and title evidence.",
+    userNeed:
+      "Rights of way and access enquiries often begin when a track is blocked, a gate is locked, a public footpath affects land use, a deed is unclear, or a sale reveals uncertainty about how land is reached.",
+    serviceScope: [
+      "A solicitor partner may review title entries, transfers, plans, statutory records, public rights of way maps, historic use evidence, maintenance arrangements, obstruction evidence, negotiation options, and potential dispute routes.",
+      "Access work can connect to conveyancing, agricultural property, rural disputes, commercial premises, common land, planning, and development or diversification plans.",
+    ],
+    localContext:
+      "Kidderminster and Worcestershire access questions may involve private lanes, farm tracks, shared driveways, woodland tracks, village footpaths, bridleways, equestrian access, and rural routes used by both landowners and the public.",
+    prepareItems: [
+      "title register and plan",
+      "deed or transfer wording",
+      "photos of the access route",
+      "public map information",
+      "timeline of use",
+      "correspondence",
+      "details of any obstruction",
+    ],
+    questionItems: [
+      "whether the right is private, public, or both",
+      "what the deed wording allows",
+      "who may maintain the route",
+      "what evidence is needed for long use",
+      "how urgent obstruction should be handled",
+    ],
+    riskItems: [
+      "Access issues can go wrong where someone assumes a track can be used because it has always been used, blocks access without checking rights, overlooks maintenance wording, or confuses public footpath rights with private vehicle access.",
+      "Another risk is waiting until a property sale or refinancing deadline before checking whether access is legally adequate and clearly documented.",
+    ],
+    relatedGuideSlugs: [
+      "rights-of-way-access-disputes",
+      "public-rights-of-way-guide",
+      "property-boundaries-explained",
+      "overriding-interests-property",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "common-land-solicitors",
+    title: "Common Land Solicitors",
+    h1: "Common land solicitors",
+    metaDescription:
+      "Compare common land solicitor options for registered commons, town or village greens, grazing rights, access, development constraints, and land use.",
+    category: "Common Land",
+    summary:
+      "Support comparing solicitor options for common land, town and village greens, registration, grazing rights, access, development constraints, and rural land use.",
+    userNeed:
+      "Common land enquiries often start when landowners, developers, farmers, residents, or local groups need to understand registered rights, public access, grazing, village green concerns, or restrictions on changing land use.",
+    serviceScope: [
+      "A solicitor partner may review common land registers, town or village green records, rights of common, ownership documents, access evidence, proposed works, objections, statutory process points, and dispute options.",
+      "Common land issues can overlap with agricultural property, public rights of way, planning, rural disputes, grazing arrangements, conservation, and community objections.",
+    ],
+    localContext:
+      "In Worcestershire and the wider West Midlands, common land and village green questions may arise near rural settlements, estate land, grazing areas, informal recreational spaces, and land considered for access changes or development.",
+    prepareItems: [
+      "land location",
+      "title documents",
+      "common land register information",
+      "town or village green records",
+      "photos or plans",
+      "proposed works or use",
+      "objection or correspondence history",
+    ],
+    questionItems: [
+      "whether the land is registered common land",
+      "what rights of common or public access may apply",
+      "whether consent is needed for works",
+      "how town or village green issues are assessed",
+      "what evidence should be preserved",
+    ],
+    riskItems: [
+      "Common land issues can go wrong where registration is not checked early, works begin without considering consent, grazing or access rights are misunderstood, or community objections are dismissed before evidence is reviewed.",
+      "Another risk is assuming that common land, public rights of way, private access, and village green rules are the same. They can involve different records and legal tests.",
+    ],
+    relatedGuideSlugs: [
+      "public-rights-of-way-guide",
+      "rights-of-way-access-disputes",
+      "property-boundaries-explained",
+      "commercial-property-due-diligence-checklist",
     ],
   }),
 ];
@@ -14107,6 +14430,228 @@ const rawGuidePages: GuidePage[] = [
     ],
   }),
   createQualityGuide({
+    slug: "agricultural-holdings-act-tenancy-guide",
+    title: "Agricultural Holdings Act Tenancy Guide",
+    h1: "Agricultural Holdings Act tenancy guide",
+    metaDescription:
+      "General guide to Agricultural Holdings Act tenancies, including succession, rent, repairs, notices, diversification, and solicitor questions.",
+    category: "Rural and Agricultural",
+    relatedServiceSlug: "agricultural-tenancy-solicitors",
+    intro:
+      "An Agricultural Holdings Act tenancy can create long-term rights and responsibilities for agricultural landlords and tenants. The useful starting point is to identify the tenancy type, documents, occupation history, notices, rent position, repair obligations, and whether succession or retirement planning may be relevant.",
+    keyTakeaways: [
+      "Agricultural Holdings Act tenancies can be materially different from farm business tenancies and should not be treated as ordinary commercial leases.",
+      "Succession, rent review, repairs, notices, diversification, and termination questions often depend on the exact documents and history.",
+      "A solicitor partner may help review the tenancy papers and explain what evidence or next steps may be needed if instructed.",
+    ],
+    topicOverview: [
+      "Agricultural Holdings Act tenancies are commonly associated with older agricultural occupation arrangements. They may involve statutory protections, succession rules, rent review processes, repair obligations, and notice requirements that are highly document-dependent.",
+      "A solicitor partner may review the written tenancy, historic correspondence, rent records, holding details, repair evidence, succession context, and any notice already served. The aim at enquiry stage is to understand the broad issue without treating a short online summary as legal advice.",
+    ],
+    practicalExamples: [
+      "A Worcestershire farm tenant may be considering retirement and wants to understand whether a family member could continue farming the holding. The tenancy papers, occupation history, relationship to the tenant, and timing may all matter.",
+      "An estate owner may want to review rent, repairs, or diversification requests before changing a long-standing arrangement. A careful document review may be needed before sending notices or taking a firm position.",
+    ],
+    commonProblems: [
+      "Agricultural tenancy problems often arise when a party serves a notice without checking the tenancy type, assumes succession is automatic, ignores historic rent or repair records, or relies on informal conversations that are not supported by the documents.",
+      "Another common issue is confusing practical occupation with legal status. Grazing licences, seasonal agreements, farm business tenancies, and Agricultural Holdings Act tenancies can have different consequences.",
+    ],
+    prepareItems: [
+      "tenancy agreement",
+      "holding plan",
+      "rent records",
+      "repair correspondence",
+      "notice documents",
+      "occupation timeline",
+      "succession or retirement summary",
+    ],
+    questionItems: [
+      "whether the arrangement is an Agricultural Holdings Act tenancy",
+      "what notices or deadlines apply",
+      "how succession or retirement should be approached",
+      "what repair and rent evidence matters",
+      "whether negotiation, mediation, or formal steps are proportionate",
+    ],
+    localContext:
+      "Agricultural Holdings Act tenancy enquiries around Kidderminster, Wyre Forest, and Worcestershire may involve family farms, estate-owned land, long occupation histories, rented fields, farm buildings, and sensitive landlord-tenant relationships.",
+    relatedGuideSlugs: [
+      "farm-partnership-agreement-guide",
+      "public-rights-of-way-guide",
+      "commercial-lease-break-clause-guide",
+      "rights-of-way-access-disputes",
+    ],
+    faq: [
+      {
+        question: "Is an Agricultural Holdings Act tenancy the same as a farm business tenancy?",
+        answer:
+          "No. They can have different rules and practical consequences. The documents and occupation history should be checked before assumptions are made.",
+      },
+      {
+        question: "Can succession apply to an Agricultural Holdings Act tenancy?",
+        answer:
+          "Succession may be relevant in some cases, but it depends on the tenancy, facts, eligibility, timing, and evidence. A qualified provider would need to assess the specific position if instructed.",
+      },
+      {
+        question: "What should I do after receiving an agricultural tenancy notice?",
+        answer:
+          "Record the date received, keep the envelope or email, gather the tenancy documents, and ask what deadline applies before responding substantively.",
+      },
+      {
+        question: "Is this Agricultural Holdings Act tenancy guide legal advice?",
+        answer:
+          "No. This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "farm-partnership-agreement-guide",
+    title: "Farm Partnership Agreement Guide",
+    h1: "Farm partnership agreement guide",
+    metaDescription:
+      "General guide to farm partnership agreements, including land ownership, profit shares, succession, retirement, decision-making, and solicitor questions.",
+    category: "Rural and Agricultural",
+    relatedServiceSlug: "farm-business-solicitors",
+    intro:
+      "A farm partnership agreement can help farming families and business partners record how the business is owned, managed, funded, and changed over time. It is especially important where land ownership, partnership assets, family succession, drawings, borrowing, and retirement expectations are not already clear.",
+    keyTakeaways: [
+      "A farm partnership agreement should explain partners, capital, profits, decision-making, land use, retirement, death, dispute steps, and succession mechanics.",
+      "The agreement should align with land ownership records, wills, tax planning, accounts, finance documents, and any tenancy or occupation arrangements.",
+      "A solicitor partner may help identify whether the current structure matches the way the farm is actually run.",
+    ],
+    topicOverview: [
+      "Farm partnerships often mix business, land, family, and succession issues. The partnership may own machinery and livestock, while land may be owned by individuals, trusts, companies, or different family members. That split should be understood before documents are updated.",
+      "A solicitor partner may review partnership agreements, accounts, land ownership, tenancy documents, wills, borrowing, diversification contracts, and exit expectations. This can help avoid later disputes about who owns what and what happens if someone retires, dies, or wants to leave.",
+    ],
+    practicalExamples: [
+      "A Kidderminster-area family farm may have parents and adult children working together, but only some family members own the land. A written agreement may need to separate business assets from privately owned land and explain decision-making.",
+      "A farm may be adding a holiday let, contracting business, equestrian use, or direct sales activity. The partnership agreement may need to explain whether that diversification belongs to the partnership and how income, costs, risk, and exit are handled.",
+    ],
+    commonProblems: [
+      "Farm partnership problems often arise when the family assumes everyone has the same expectation, accounts do not match legal ownership, land is used by the partnership without clear terms, or a partner dies without the partnership agreement and will working together.",
+      "Another issue is dealing with succession only during a crisis. Retirement, illness, divorce, death, borrowing, and sale discussions are easier to manage when the business structure is already documented.",
+    ],
+    prepareItems: [
+      "existing partnership agreement",
+      "recent accounts",
+      "land ownership summary",
+      "business asset list",
+      "wills or succession notes",
+      "loan or finance documents",
+      "planned changes or disagreements",
+    ],
+    questionItems: [
+      "whether the current partnership documents reflect the real business",
+      "how land owned outside the partnership is treated",
+      "what happens on death, retirement, or departure",
+      "how profits, drawings, and capital are recorded",
+      "whether wills and tax planning need to be reviewed together",
+    ],
+    localContext:
+      "Farm partnership enquiries in Worcestershire and the Wyre Forest area may involve family-run farms, mixed land ownership, rented fields, rural diversification, local contracting, and succession planning across generations.",
+    relatedGuideSlugs: [
+      "agricultural-holdings-act-tenancy-guide",
+      "business-due-diligence-checklist",
+      "commercial-contract-review-guide",
+      "heads-of-terms-business-sale-guide",
+    ],
+    faq: [
+      {
+        question: "Does every farm partnership need a written agreement?",
+        answer:
+          "A written agreement is often useful because it records expectations before a dispute or major life event. Whether it is needed depends on the structure and risk.",
+      },
+      {
+        question: "Can a farm partnership agreement deal with succession?",
+        answer:
+          "It can help, but succession may also involve wills, land ownership, tax planning, company or trust documents, and family discussions.",
+      },
+      {
+        question: "What is the risk of relying only on farm accounts?",
+        answer:
+          "Accounts are important but may not answer every legal ownership or exit question. Documents and legal structure may need to be reviewed together.",
+      },
+      {
+        question: "Can this website draft a farm partnership agreement?",
+        answer:
+          "No. This website is not a law firm. It may introduce users to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "public-rights-of-way-guide",
+    title: "Public Rights of Way Guide",
+    h1: "Public rights of way guide",
+    metaDescription:
+      "General guide to public rights of way, including footpaths, bridleways, restricted byways, obstruction, landowner concerns, and solicitor questions.",
+    category: "Rural and Agricultural",
+    relatedServiceSlug: "rights-of-way-access-solicitors",
+    intro:
+      "Public rights of way can affect rural land, farms, residential property, development sites, and village-edge land. A public footpath, bridleway, restricted byway, or byway open to all traffic may need to be checked against title documents, public records, historic use, and practical land management concerns.",
+    keyTakeaways: [
+      "Public rights of way are different from private access rights, although both can appear in the same rural land issue.",
+      "Landowners, occupiers, buyers, and neighbours should check records and evidence before blocking, moving, or relying on a route.",
+      "A solicitor partner may help review the documents, evidence, and process options where a dispute or transaction is affected.",
+    ],
+    topicOverview: [
+      "Public rights of way may include footpaths, bridleways, restricted byways, and byways open to all traffic. They can affect land management, livestock, gates, crops, safety, development plans, property sales, and neighbour relations.",
+      "A solicitor partner may review title documents, the definitive map and statement, historic evidence, public authority correspondence, obstruction allegations, diversion proposals, maintenance issues, and how the public right interacts with private access rights.",
+    ],
+    practicalExamples: [
+      "A Worcestershire landowner may find that a footpath crosses a field used for livestock. The practical question may involve gates, signage, safety, cropping, public access expectations, and whether any route change process is available.",
+      "A buyer may discover during due diligence that a public route crosses a rural property. The solicitor may need to explain what the records say, how the route affects use, and whether the buyer's plans are realistic.",
+    ],
+    commonProblems: [
+      "Public rights of way problems often arise when routes are blocked without checking records, a landowner assumes a route has disappeared because it is rarely used, or a buyer overlooks public access until after exchange or completion.",
+      "Another issue is confusing a public footpath with a private right to drive vehicles. Public pedestrian access does not automatically prove private vehicular access for owners, tenants, visitors, or business use.",
+    ],
+    prepareItems: [
+      "land address",
+      "title documents",
+      "definitive map information",
+      "photos of the route",
+      "timeline of use",
+      "public authority letters",
+      "details of any proposed works or obstruction",
+    ],
+    questionItems: [
+      "what type of public right of way is recorded",
+      "whether private access rights are separate",
+      "what can and cannot be changed without consent",
+      "what evidence matters if the route is disputed",
+      "whether a diversion, declaration, or objection process is relevant",
+    ],
+    localContext:
+      "Public rights of way around Kidderminster, Bewdley, Stourport, Cookley, Hagley, and rural Worcestershire may cross farms, woodland, commons, village lanes, river corridors, and development edges where walkers, riders, landowners, and buyers have practical concerns.",
+    relatedGuideSlugs: [
+      "rights-of-way-access-disputes",
+      "property-boundaries-explained",
+      "overriding-interests-property",
+      "commercial-property-due-diligence-checklist",
+    ],
+    faq: [
+      {
+        question: "Is a public footpath the same as a private right of way?",
+        answer:
+          "No. A public footpath is a public access right. A private right of way is usually tied to land or parties and may have different wording and evidence.",
+      },
+      {
+        question: "Can a landowner move a public right of way?",
+        answer:
+          "A route may only be changed through the proper process where available. Landowners should not assume they can move or block a route informally.",
+      },
+      {
+        question: "Why do public rights of way matter in a property purchase?",
+        answer:
+          "They can affect privacy, development plans, farming operations, insurance, land management, and future resale, so they should be checked before exchange.",
+      },
+      {
+        question: "Is this public rights of way guide legal advice?",
+        answer:
+          "No. This guide is general information only. Kidderminster Solicitors is not a law firm and does not provide legal advice.",
+      },
+    ],
+  }),
+  createQualityGuide({
     slug: "workplace-investigation-guide",
     title: "Workplace Investigation Guide",
     h1: "Workplace investigation guide",
@@ -14678,6 +15223,41 @@ const anchorTextByServiceSlug: Record<string, string[]> = {
     "software contract solicitor options",
     "compare software contract support",
     "SaaS and software legal enquiries",
+  ],
+  "rural-solicitors-worcestershire": [
+    "rural solicitor options in Worcestershire",
+    "compare rural legal support",
+    "farm and estate solicitor enquiries",
+  ],
+  "agricultural-property-solicitors": [
+    "agricultural property solicitor options",
+    "compare farmland transaction support",
+    "rural property legal enquiries",
+  ],
+  "agricultural-tenancy-solicitors": [
+    "agricultural tenancy solicitor options",
+    "compare farm tenancy legal support",
+    "AHA and farm business tenancy enquiries",
+  ],
+  "farm-business-solicitors": [
+    "farm business solicitor options",
+    "compare farming partnership support",
+    "rural business structure enquiries",
+  ],
+  "rural-land-dispute-solicitors": [
+    "rural land dispute solicitor options",
+    "compare farm and land dispute support",
+    "rural boundary and access dispute enquiries",
+  ],
+  "rights-of-way-access-solicitors": [
+    "rights of way solicitor options",
+    "compare access dispute legal support",
+    "public and private access enquiries",
+  ],
+  "common-land-solicitors": [
+    "common land solicitor options",
+    "compare common land legal support",
+    "town and village green enquiries",
   ],
   "personal-injury-solicitors-kidderminster": [
     "personal injury solicitor options in Kidderminster",
