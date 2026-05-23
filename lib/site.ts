@@ -55,6 +55,14 @@ export const guideCategoryGroups = [
       "divorce-solicitors-kidderminster",
       "divorce-separation-solicitors-kidderminster",
       "child-law-solicitors-kidderminster",
+      "financial-remedy-solicitors-kidderminster",
+      "consent-order-solicitors-kidderminster",
+      "pension-sharing-order-solicitors-kidderminster",
+      "child-arrangements-order-solicitors-kidderminster",
+      "cohabitation-agreement-solicitors-kidderminster",
+      "prenuptial-agreement-solicitors-kidderminster",
+      "non-molestation-order-solicitors-kidderminster",
+      "occupation-order-solicitors-kidderminster",
     ],
   },
   {
@@ -1276,6 +1284,358 @@ export const servicePages: ServicePage[] = [
     relatedGuideSlugs: [
       "child-arrangements-explained",
       "parental-responsibility-order-explained",
+      "what-does-a-family-law-solicitor-help-with",
+      "prepare-divorce-solicitor-consultation",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "financial-remedy-solicitors-kidderminster",
+    title: "Financial Remedy Solicitors Kidderminster",
+    h1: "Financial remedy solicitors in Kidderminster",
+    metaDescription:
+      "Compare financial remedy solicitor options in Kidderminster for divorce finances, disclosure, property, pensions, consent orders, and court-related preparation.",
+    category: "Financial Remedy",
+    summary:
+      "Support comparing solicitor options for divorce finances, financial remedy proceedings, disclosure, property, pensions, debts, business interests, and settlement documents.",
+    userNeed:
+      "Financial remedy enquiries often begin when divorcing or separating people need to understand how property, pensions, savings, debts, income, maintenance, or business interests may be addressed formally.",
+    serviceScope: [
+      "A solicitor partner may help with financial disclosure, Form E preparation, negotiation, consent orders, pension questions, property transfer issues, business assets, maintenance, court timetable questions, and settlement wording.",
+      "Financial remedy support may be needed before mediation, during negotiations, after an informal agreement, or when court papers have already been issued.",
+    ],
+    localContext:
+      "Kidderminster and Wyre Forest divorce finance enquiries may involve family homes, mortgages, local businesses, pensions, inherited assets, rental property, debt pressure, and housing affordability across nearby Worcestershire communities.",
+    prepareItems: [
+      "marriage and separation dates",
+      "property and mortgage details",
+      "income and outgoings",
+      "savings and debts",
+      "pension information",
+      "business or self-employment details",
+      "court papers or draft agreement",
+    ],
+    questionItems: [
+      "whether the firm handles financial remedy work",
+      "what disclosure is needed first",
+      "whether a consent order may be appropriate",
+      "how pensions and property are approached",
+      "what timetable or court deadlines apply",
+    ],
+    riskItems: [
+      "Financial remedy matters can go wrong when people rely on informal agreements, overlook pensions, fail to disclose assets, ignore debts, or treat the divorce application as if it automatically resolves finances.",
+      "Another risk is agreeing a headline split before understanding mortgage capacity, tax, business value, pension sharing, or whether the agreement can be recorded properly.",
+    ],
+    relatedGuideSlugs: [
+      "divorce-financial-settlements-explained",
+      "prepare-divorce-solicitor-consultation",
+      "legal-services-payment-order-explained",
+      "divorce-costs-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "consent-order-solicitors-kidderminster",
+    title: "Consent Order Solicitors Kidderminster",
+    h1: "Consent order solicitors in Kidderminster",
+    metaDescription:
+      "Compare consent order solicitor options in Kidderminster for divorce financial agreements, clean break wording, property, pensions, and court approval.",
+    category: "Consent Orders",
+    summary:
+      "Support comparing solicitor options for preparing, reviewing, or understanding financial consent orders after divorce or civil partnership dissolution.",
+    userNeed:
+      "Consent order enquiries often begin when people have reached a financial agreement and want to understand how it may be recorded, reviewed, and submitted for approval.",
+    serviceScope: [
+      "A solicitor partner may help draft or review consent order wording, clean break provisions, property transfer clauses, pension sharing wording, maintenance terms, disclosure summaries, and court approval documents.",
+      "The solicitor may need to understand the wider financial picture, not only the points already agreed, because the court process may require enough information to assess fairness.",
+    ],
+    localContext:
+      "Consent order enquiries in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Worcestershire often involve local family homes, mortgage affordability, pension information, savings, debts, and practical transfer arrangements.",
+    prepareItems: [
+      "divorce application stage",
+      "draft agreement if any",
+      "property and mortgage details",
+      "income and pension information",
+      "savings and debts",
+      "children or maintenance details",
+      "any mediation summary",
+    ],
+    questionItems: [
+      "whether the agreement can be drafted as a consent order",
+      "what financial information is needed",
+      "whether clean break wording is appropriate",
+      "how pension or property clauses are handled",
+      "what court approval steps and costs apply",
+    ],
+    riskItems: [
+      "Consent orders can go wrong when wording is copied, financial disclosure is incomplete, pension clauses are vague, mortgage release steps are unrealistic, or people assume an informal agreement is automatically binding.",
+      "Another risk is missing the difference between the divorce process and a financial order. Finalising a divorce does not by itself record all financial arrangements.",
+    ],
+    relatedGuideSlugs: [
+      "divorce-financial-settlements-explained",
+      "how-long-does-divorce-take",
+      "prepare-divorce-solicitor-consultation",
+      "divorce-costs-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "pension-sharing-order-solicitors-kidderminster",
+    title: "Pension Sharing Order Solicitors Kidderminster",
+    h1: "Pension sharing order solicitors in Kidderminster",
+    metaDescription:
+      "Compare pension sharing order solicitor options in Kidderminster for divorce finances, pension disclosure, implementation, and consent order wording.",
+    category: "Pension Sharing Orders",
+    summary:
+      "Support comparing solicitor options for pension sharing order questions, pension disclosure, divorce finance settlements, and implementation steps.",
+    userNeed:
+      "Pension sharing order enquiries often start when pensions are a significant part of divorce finances or when a proposed settlement needs pension wording reviewed carefully.",
+    serviceScope: [
+      "A solicitor partner may help review pension disclosure, pension sharing order wording, implementation requirements, annex documents, clean break terms, financial settlement context, and coordination with pension administrators or other advisers.",
+      "Pension questions may need actuarial, financial advice, or scheme information as well as legal drafting, especially where defined benefit pensions, public sector pensions, or older schemes are involved.",
+    ],
+    localContext:
+      "Divorce finance enquiries around Kidderminster and Worcestershire may involve workplace pensions, public sector schemes, older occupational pensions, self-employed retirement planning, and housing decisions linked to pension value.",
+    prepareItems: [
+      "pension statements",
+      "cash equivalent values",
+      "scheme details",
+      "draft financial agreement",
+      "property and mortgage information",
+      "income details",
+      "court timetable if any",
+    ],
+    questionItems: [
+      "whether pension sharing is being considered",
+      "what pension information is still missing",
+      "whether actuarial input may be needed",
+      "how the pension annex and order wording work",
+      "what implementation steps and fees may apply",
+    ],
+    riskItems: [
+      "Pension sharing issues can go wrong when pensions are ignored, values are misunderstood, implementation wording is incomplete, or people focus only on the family home without considering retirement consequences.",
+      "Another risk is assuming all pensions are alike. Scheme type, age, benefits, charges, and implementation rules can affect what questions need to be asked.",
+    ],
+    relatedGuideSlugs: [
+      "divorce-financial-settlements-explained",
+      "prepare-divorce-solicitor-consultation",
+      "legal-services-payment-order-explained",
+      "divorce-costs-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "child-arrangements-order-solicitors-kidderminster",
+    title: "Child Arrangements Order Solicitors Kidderminster",
+    h1: "Child arrangements order solicitors in Kidderminster",
+    metaDescription:
+      "Compare child arrangements order solicitor options in Kidderminster for where a child lives, time with parents, holidays, handovers, and court preparation.",
+    category: "Child Arrangements Orders",
+    summary:
+      "Support comparing solicitor options for child arrangements orders, parenting routines, school holidays, handovers, parental responsibility, and court-related preparation.",
+    userNeed:
+      "Child arrangements order enquiries often begin when parents or carers cannot agree where a child lives, how time is shared, or how practical routines should work after separation.",
+    serviceScope: [
+      "A solicitor partner may help with child arrangements applications, response documents, mediation context, safeguarding questions, statements, school holiday disputes, handover arrangements, communication issues, and existing order reviews.",
+      "The right support depends on urgency, the child's needs, current routine, safety concerns, existing agreements, and whether court papers or mediation steps are already in progress.",
+    ],
+    localContext:
+      "Families in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and Wyre Forest may need arrangements that fit school routes, childcare, work shifts, travel between homes, and nearby family support.",
+    prepareItems: [
+      "children's ages and schools",
+      "current weekly routine",
+      "proposed arrangements",
+      "holiday or travel dates",
+      "messages or correspondence",
+      "any existing order or agreement",
+      "safety or safeguarding concerns",
+    ],
+    questionItems: [
+      "whether mediation or MIAM steps are relevant",
+      "what evidence and documents are needed",
+      "how urgent issues are handled",
+      "how child welfare and practical routines are presented",
+      "what costs and stages may apply",
+    ],
+    riskItems: [
+      "Child arrangements matters can go wrong when adults leave holiday plans too late, make vague agreements, use children as messengers, ignore safety concerns, or send hostile messages that later become evidence.",
+      "Another risk is treating court as the only option without understanding mediation, negotiation, safeguarding, or document preparation steps.",
+    ],
+    relatedGuideSlugs: [
+      "child-arrangements-explained",
+      "miam-family-mediation-guide",
+      "child-maintenance-after-separation-guide",
+      "parental-responsibility-order-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "cohabitation-agreement-solicitors-kidderminster",
+    title: "Cohabitation Agreement Solicitors Kidderminster",
+    h1: "Cohabitation agreement solicitors in Kidderminster",
+    metaDescription:
+      "Compare cohabitation agreement solicitor options in Kidderminster for unmarried couples, property shares, contributions, bills, children, and separation planning.",
+    category: "Cohabitation Agreements",
+    summary:
+      "Support comparing solicitor options for cohabitation agreements, unmarried partner property arrangements, contributions, bills, children, and separation planning.",
+    userNeed:
+      "Cohabitation agreement enquiries often begin when unmarried partners buy a home, move in together, contribute different amounts, receive family help, or want clarity before a future dispute.",
+    serviceScope: [
+      "A solicitor partner may help prepare or review cohabitation agreements, declarations of trust context, property shares, deposit contributions, mortgage responsibility, household bills, children-related practical points, and what happens if the relationship ends.",
+      "Cohabitation work may overlap with conveyancing, wills, life insurance, pension nominations, business ownership, and later family law questions.",
+    ],
+    localContext:
+      "Unmarried couples in Kidderminster, Wyre Forest, and Worcestershire may need clarity where a local home is bought together, one partner moves into the other's property, or family money supports a deposit.",
+    prepareItems: [
+      "property details",
+      "deposit contributions",
+      "mortgage position",
+      "ownership intentions",
+      "monthly bill arrangements",
+      "children or dependants if relevant",
+      "any declaration of trust",
+    ],
+    questionItems: [
+      "whether a cohabitation agreement or property document is needed",
+      "how contributions should be recorded",
+      "whether each person needs separate advice",
+      "how future changes are handled",
+      "whether wills or conveyancing documents also need review",
+    ],
+    riskItems: [
+      "Cohabitation issues can go wrong when partners assume unmarried couples have the same rights as spouses, fail to record unequal contributions, or leave ownership and bills unclear until separation.",
+      "Another risk is treating the property transfer alone as enough. Wills, insurance, children, debts, and household arrangements may need separate thought.",
+    ],
+    relatedGuideSlugs: [
+      "cohabitation-agreements-explained",
+      "what-does-a-family-law-solicitor-help-with",
+      "property-boundaries-explained",
+      "what-should-be-included-in-a-will",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "prenuptial-agreement-solicitors-kidderminster",
+    title: "Prenuptial Agreement Solicitors Kidderminster",
+    h1: "Prenuptial agreement solicitors in Kidderminster",
+    metaDescription:
+      "Compare prenuptial agreement solicitor options in Kidderminster for property, inheritance, business assets, pensions, disclosure, and wedding timing.",
+    category: "Prenuptial Agreements",
+    summary:
+      "Support comparing solicitor options for prenuptial agreements, financial disclosure, property, inheritance, business assets, pensions, and timing before marriage.",
+    userNeed:
+      "Prenuptial agreement enquiries often begin before marriage or civil partnership where people want to record expectations around property, inheritance, businesses, family gifts, or children from previous relationships.",
+    serviceScope: [
+      "A solicitor partner may help with prenuptial agreement preparation, financial disclosure, separate advice questions, property and business asset wording, inheritance provisions, pension context, and timing before the ceremony.",
+      "Prenuptial agreement work may need careful communication because pressure, incomplete disclosure, last-minute timing, or unfair terms can create problems later.",
+    ],
+    localContext:
+      "Couples in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may consider prenups where local property, family businesses, inherited assets, rural assets, or blended family planning are relevant.",
+    prepareItems: [
+      "wedding or civil partnership date",
+      "property details",
+      "savings and debts",
+      "business interests",
+      "expected inheritance or family gifts",
+      "children from previous relationships",
+      "any draft agreement",
+    ],
+    questionItems: [
+      "how early the process should start",
+      "what disclosure is needed",
+      "whether both people need separate advice",
+      "how property and business interests are recorded",
+      "when the agreement should be reviewed",
+    ],
+    riskItems: [
+      "Prenuptial agreement issues can go wrong when the document is left until shortly before the wedding, one person feels pressured, disclosure is incomplete, or the agreement ignores future children or major changes.",
+      "Another risk is relying on a template without checking property, pensions, inheritance, business interests, and related wills or ownership documents.",
+    ],
+    relatedGuideSlugs: [
+      "prenuptial-agreements-explained",
+      "postnuptial-agreements-explained",
+      "cohabitation-agreements-explained",
+      "what-should-be-included-in-a-will",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "non-molestation-order-solicitors-kidderminster",
+    title: "Non Molestation Order Solicitors Kidderminster",
+    h1: "Non-molestation order solicitors in Kidderminster",
+    metaDescription:
+      "Compare non-molestation order solicitor options in Kidderminster for domestic abuse, urgent family protection, communication boundaries, and court preparation.",
+    category: "Non-Molestation Orders",
+    summary:
+      "Support comparing solicitor options for non-molestation order enquiries, domestic abuse concerns, urgent protection, communication boundaries, and family court preparation.",
+    userNeed:
+      "Non-molestation order enquiries are sensitive and may start where someone is worried about harassment, threats, intimidation, coercive control, or unsafe contact from a current or former partner or family member.",
+    serviceScope: [
+      "A solicitor partner may help discuss protective order process, evidence, safe contact arrangements, court documents, child arrangement overlap, occupation order questions, and what urgent steps may be available from an appropriate provider.",
+      "Immediate danger should be handled through emergency services or specialist support. This website is not an emergency service and cannot provide safety planning or legal advice.",
+    ],
+    localContext:
+      "People in Kidderminster, Wyre Forest, Stourport, Bewdley, Cookley, Hagley, and Worcestershire may need legal support alongside police, safeguarding, housing, health, or specialist domestic abuse services.",
+    prepareItems: [
+      "safe contact method",
+      "urgent risk details",
+      "basic incident timeline",
+      "messages or evidence if safe to keep",
+      "children or housing concerns",
+      "existing police or court references",
+      "whether it is safe to be contacted",
+    ],
+    questionItems: [
+      "whether the firm can contact you safely",
+      "what urgent options may need discussing",
+      "what evidence should be preserved",
+      "how children or housing issues overlap",
+      "what costs, funding, and timing may apply",
+    ],
+    riskItems: [
+      "Protective order enquiries can go wrong when someone is pressured to share unsafe contact details, includes too much sensitive information in a public form, deletes evidence without advice, or waits despite immediate risk.",
+      "Another risk is treating this website as an emergency route. If there is immediate danger, emergency services or urgent specialist support should be used.",
+    ],
+    relatedGuideSlugs: [
+      "coercive-controlling-behaviour-legal-support",
+      "child-arrangements-explained",
+      "what-does-a-family-law-solicitor-help-with",
+      "miam-family-mediation-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "occupation-order-solicitors-kidderminster",
+    title: "Occupation Order Solicitors Kidderminster",
+    h1: "Occupation order solicitors in Kidderminster",
+    metaDescription:
+      "Compare occupation order solicitor options in Kidderminster for family home occupation, domestic abuse concerns, housing, children, and urgent court preparation.",
+    category: "Occupation Orders",
+    summary:
+      "Support comparing solicitor options for occupation order enquiries involving the family home, domestic abuse concerns, housing, children, and urgent court-related preparation.",
+    userNeed:
+      "Occupation order enquiries often begin where there are urgent questions about who can live in the family home, whether someone should leave, or how housing and safety concerns interact after relationship breakdown.",
+    serviceScope: [
+      "A solicitor partner may help discuss occupation order process, housing evidence, mortgage or tenancy context, children, safety concerns, non-molestation order overlap, court documents, and urgent communication steps.",
+      "The issue may be time-sensitive and fact-specific. This website can only provide general information and solicitor introductions; it cannot assess safety, housing rights, or legal merits.",
+    ],
+    localContext:
+      "Occupation order enquiries in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may involve a local family home, rented property, mortgage payments, school routines, safeguarding, and emergency housing support.",
+    prepareItems: [
+      "safe contact method",
+      "property address and ownership or tenancy details",
+      "who lives at the property",
+      "children's routines if relevant",
+      "incident or risk timeline",
+      "mortgage or rent information",
+      "existing police or court documents",
+    ],
+    questionItems: [
+      "whether the firm handles occupation order work",
+      "what urgent facts should be explained first",
+      "how housing and safety evidence is prepared",
+      "whether related protective steps may be relevant",
+      "what costs, funding, and timing may apply",
+    ],
+    riskItems: [
+      "Occupation order matters can go wrong when people leave urgent safety concerns unclear, rely on informal promises about the home, fail to explain children or housing facts, or use a public form for excessive sensitive detail.",
+      "Another risk is assuming ownership or tenancy alone answers every question. Family court, housing, safety, and child-related facts may all need careful review by a qualified provider.",
+    ],
+    relatedGuideSlugs: [
+      "coercive-controlling-behaviour-legal-support",
+      "child-arrangements-explained",
       "what-does-a-family-law-solicitor-help-with",
       "prepare-divorce-solicitor-consultation",
     ],
@@ -9241,6 +9601,144 @@ const rawGuidePages: GuidePage[] = [
     ],
   }),
   createQualityGuide({
+    slug: "child-maintenance-after-separation-guide",
+    title: "Child Maintenance After Separation Guide",
+    h1: "Child maintenance after separation guide",
+    metaDescription:
+      "General guide to child maintenance after separation, including practical information, calculations, disagreements, evidence, and questions to ask a solicitor.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "child-arrangements-order-solicitors-kidderminster",
+    intro:
+      "Child maintenance is financial support for a child after parents separate. Many families deal with maintenance separately from living arrangements, but the topics often overlap in practical conversations about routines, income, childcare, school costs, and communication.",
+    keyTakeaways: [
+      "Child maintenance is usually about financial support for a child and may be handled through agreement or the relevant maintenance service depending on the situation.",
+      "A solicitor may help explain how maintenance questions interact with wider family law issues, but this website cannot calculate entitlement or provide legal advice.",
+      "Clear records of income, payments, childcare costs, and child arrangements can make the first conversation with a qualified provider more useful.",
+    ],
+    topicOverview: [
+      "Parents may discuss child maintenance when living arrangements change, one parent changes work, informal payments stop, school or childcare costs increase, or communication about money has become difficult.",
+      "A solicitor partner may discuss how maintenance fits with child arrangements, divorce finances, consent orders, school costs, communication, and whether specialist calculation or government service routes need to be considered.",
+    ],
+    practicalExamples: [
+      "A parent in Kidderminster may have an informal maintenance arrangement that worked at first, but later becomes unclear when work hours, childcare, or overnight arrangements change.",
+      "Another family may agree where children live and spend time, but need to understand how regular payments, school uniform, clubs, travel, or one-off costs should be discussed and recorded.",
+    ],
+    commonProblems: [
+      "Child maintenance discussions can go wrong when payments are informal and undocumented, income changes are not communicated, child arrangement disputes are used to argue about money, or parents assume one topic automatically decides the other.",
+      "Another issue is relying on emotional messages rather than clear records. Payment dates, bank references, childcare costs, school expenses, and changes in arrangements can matter when asking for guidance.",
+    ],
+    prepareItems: [
+      "children's ages and living arrangements",
+      "current payment details",
+      "income information",
+      "childcare or school cost notes",
+      "messages about payments",
+      "any existing agreement or order",
+      "recent changes in work or overnight care",
+    ],
+    questionItems: [
+      "whether maintenance is separate from child arrangements",
+      "what records should be kept",
+      "whether a solicitor can help with the wider family law issue",
+      "how maintenance fits with divorce finances if relevant",
+      "what route may be appropriate for calculation or enforcement questions",
+    ],
+    localContext:
+      "Parents around Kidderminster, Wyre Forest, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may need practical arrangements that fit local schools, childcare providers, work shifts, travel costs, and changing housing needs.",
+    relatedGuideSlugs: [
+      "child-arrangements-explained",
+      "miam-family-mediation-guide",
+      "what-does-a-family-law-solicitor-help-with",
+      "divorce-financial-settlements-explained",
+    ],
+    faq: [
+      {
+        question: "Is child maintenance the same as child arrangements?",
+        answer:
+          "No. Maintenance is about financial support, while child arrangements concern where a child lives and spends time. They can overlap practically but are distinct topics.",
+      },
+      {
+        question: "Can this website calculate child maintenance?",
+        answer:
+          "No. This website provides general information only and cannot calculate entitlement, enforce payments, or provide legal advice.",
+      },
+      {
+        question: "What should parents prepare before asking about maintenance?",
+        answer:
+          "Useful information may include child arrangements, income details, payment records, childcare costs, school expenses, and any written agreement or order.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "miam-family-mediation-guide",
+    title: "MIAM and Family Mediation Guide",
+    h1: "MIAM and family mediation guide",
+    metaDescription:
+      "General guide to MIAMs and family mediation, including when mediation may be discussed, preparation, exemptions, safety concerns, and solicitor questions.",
+    category: "Family and Divorce",
+    relatedServiceSlug: "family-law-solicitors-kidderminster",
+    intro:
+      "A MIAM is a Mediation Information and Assessment Meeting. It is often discussed before certain family court applications, but whether mediation is suitable depends on the issue, urgency, safety, disclosure, and the people involved.",
+    keyTakeaways: [
+      "A MIAM is usually an information and assessment step, not a requirement to reach agreement in mediation.",
+      "Mediation may help some families discuss children or finances, but it is not suitable for every situation, especially where safety, pressure, or urgency is a concern.",
+      "A solicitor may help someone understand how mediation, court preparation, and formal documents fit together.",
+    ],
+    topicOverview: [
+      "MIAM and mediation questions commonly arise in child arrangements, financial remedy, separation, cohabitation, and practical parenting discussions. The meeting may explain mediation and assess suitability, but it does not replace legal advice from an instructed solicitor.",
+      "A solicitor partner may help someone prepare questions, understand whether urgent or safety issues should be raised, review proposals from mediation, or explain how an agreement may need to be recorded formally.",
+    ],
+    practicalExamples: [
+      "Parents in Kidderminster may be told to consider a MIAM before applying about school holiday arrangements. They may need to understand what documents and safety concerns to mention.",
+      "A separating couple in Wyre Forest may use mediation to discuss finances, but still need solicitor support to understand disclosure, pensions, property, and consent order wording.",
+    ],
+    commonProblems: [
+      "MIAM and mediation problems can arise when people attend without knowing their finances, misunderstand the mediator's role, assume mediation creates a binding order, or ignore safety concerns because they feel pressured to take part.",
+      "Another issue is leaving legal recording until later. Agreements about children or finances may need different documents or court approval depending on the topic.",
+    ],
+    prepareItems: [
+      "main issues to discuss",
+      "children's routines if relevant",
+      "financial information if relevant",
+      "urgent court or holiday dates",
+      "safety or communication concerns",
+      "previous mediation or correspondence",
+      "desired next step",
+    ],
+    questionItems: [
+      "whether a MIAM may be relevant",
+      "what exemptions or urgent issues should be raised",
+      "whether mediation is suitable",
+      "how any agreement would be recorded",
+      "what solicitor support may be useful before or after mediation",
+    ],
+    localContext:
+      "Families in Kidderminster, Stourport, Bewdley, Cookley, Hagley, and nearby Worcestershire may need mediation or solicitor support shaped around school routines, childcare, housing, travel, shift work, and local support networks.",
+    relatedGuideSlugs: [
+      "mediation-vs-solicitor-family-law",
+      "child-arrangements-explained",
+      "divorce-financial-settlements-explained",
+      "prepare-divorce-solicitor-consultation",
+    ],
+    faq: [
+      {
+        question: "Is a MIAM the same as mediation?",
+        answer:
+          "No. A MIAM is an information and assessment meeting. Mediation sessions may follow only if suitable and if the people involved choose or are able to proceed.",
+      },
+      {
+        question: "Does mediation replace legal advice?",
+        answer:
+          "No. A mediator does not act as either person's solicitor. Legal advice and formal document drafting should come from a qualified provider if instructed.",
+      },
+      {
+        question: "Should safety concerns be raised before mediation?",
+        answer:
+          "Yes. Safety, pressure, abuse, intimidation, urgency, and safeguarding concerns should be raised clearly with the mediator or qualified provider.",
+      },
+    ],
+  }),
+  createQualityGuide({
     slug: "severance-agreement-explained",
     title: "Severance Agreement Explained",
     h1: "Severance agreement explained",
@@ -13331,6 +13829,46 @@ const anchorTextByServiceSlug: Record<string, string[]> = {
     "child law solicitor options",
     "compare child arrangements support",
     "Kidderminster child law solicitor enquiries",
+  ],
+  "financial-remedy-solicitors-kidderminster": [
+    "financial remedy solicitor options",
+    "compare divorce finance support",
+    "Kidderminster financial remedy enquiries",
+  ],
+  "consent-order-solicitors-kidderminster": [
+    "consent order solicitor options",
+    "compare financial order support",
+    "Kidderminster consent order enquiries",
+  ],
+  "pension-sharing-order-solicitors-kidderminster": [
+    "pension sharing order solicitor options",
+    "compare divorce pension support",
+    "Kidderminster pension sharing enquiries",
+  ],
+  "child-arrangements-order-solicitors-kidderminster": [
+    "child arrangements order solicitor options",
+    "compare child arrangement support",
+    "Kidderminster child arrangements order enquiries",
+  ],
+  "cohabitation-agreement-solicitors-kidderminster": [
+    "cohabitation agreement solicitor options",
+    "compare unmarried partner agreement support",
+    "Kidderminster cohabitation agreement enquiries",
+  ],
+  "prenuptial-agreement-solicitors-kidderminster": [
+    "prenuptial agreement solicitor options",
+    "compare prenup legal support",
+    "Kidderminster prenuptial agreement enquiries",
+  ],
+  "non-molestation-order-solicitors-kidderminster": [
+    "non-molestation order solicitor options",
+    "compare protective order support",
+    "Kidderminster non-molestation order enquiries",
+  ],
+  "occupation-order-solicitors-kidderminster": [
+    "occupation order solicitor options",
+    "compare family home order support",
+    "Kidderminster occupation order enquiries",
   ],
   "employment-solicitors-kidderminster": [
     "employment solicitor enquiries",

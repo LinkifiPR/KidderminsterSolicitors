@@ -440,6 +440,43 @@ describe("site content model", () => {
     });
   });
 
+  it("includes CE2 Phase 2 batch A7 family finance and child arrangement pages", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "financial-remedy-solicitors-kidderminster",
+        "consent-order-solicitors-kidderminster",
+        "pension-sharing-order-solicitors-kidderminster",
+        "child-arrangements-order-solicitors-kidderminster",
+        "cohabitation-agreement-solicitors-kidderminster",
+        "prenuptial-agreement-solicitors-kidderminster",
+        "non-molestation-order-solicitors-kidderminster",
+        "occupation-order-solicitors-kidderminster",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "child-maintenance-after-separation-guide",
+        "miam-family-mediation-guide",
+      ]),
+    );
+
+    [
+      "financial-remedy-solicitors-kidderminster",
+      "consent-order-solicitors-kidderminster",
+      "pension-sharing-order-solicitors-kidderminster",
+      "child-arrangements-order-solicitors-kidderminster",
+      "cohabitation-agreement-solicitors-kidderminster",
+      "prenuptial-agreement-solicitors-kidderminster",
+      "non-molestation-order-solicitors-kidderminster",
+      "occupation-order-solicitors-kidderminster",
+      "child-maintenance-after-separation-guide",
+      "miam-family-mediation-guide",
+    ].forEach((slug) => {
+      expect(getAllPageSlugs()).toContain(slug);
+    });
+  });
+
   it("keeps guide content useful, local, and conversion-aware", () => {
     const localPattern =
       /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;
