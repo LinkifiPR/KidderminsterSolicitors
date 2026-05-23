@@ -403,6 +403,43 @@ describe("site content model", () => {
     });
   });
 
+  it("includes CE2 Phase 2 batch A6 IP, data, and digital trading pages", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "intellectual-property-solicitors-kidderminster",
+        "trade-mark-solicitors-kidderminster",
+        "copyright-solicitors-kidderminster",
+        "data-protection-solicitors-kidderminster",
+        "gdpr-solicitors-businesses",
+        "website-terms-conditions-solicitors",
+        "ecommerce-terms-solicitors",
+        "software-contract-solicitors",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "licensing-agreement-guide",
+        "data-processing-agreement-guide",
+      ]),
+    );
+
+    [
+      "intellectual-property-solicitors-kidderminster",
+      "trade-mark-solicitors-kidderminster",
+      "copyright-solicitors-kidderminster",
+      "data-protection-solicitors-kidderminster",
+      "gdpr-solicitors-businesses",
+      "website-terms-conditions-solicitors",
+      "ecommerce-terms-solicitors",
+      "software-contract-solicitors",
+      "licensing-agreement-guide",
+      "data-processing-agreement-guide",
+    ].forEach((slug) => {
+      expect(getAllPageSlugs()).toContain(slug);
+    });
+  });
+
   it("keeps guide content useful, local, and conversion-aware", () => {
     const localPattern =
       /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;

@@ -117,6 +117,14 @@ export const guideCategoryGroups = [
       "management-buyout-solicitors-kidderminster",
       "share-purchase-agreement-solicitors-kidderminster",
       "asset-purchase-agreement-solicitors-kidderminster",
+      "intellectual-property-solicitors-kidderminster",
+      "trade-mark-solicitors-kidderminster",
+      "copyright-solicitors-kidderminster",
+      "data-protection-solicitors-kidderminster",
+      "gdpr-solicitors-businesses",
+      "website-terms-conditions-solicitors",
+      "ecommerce-terms-solicitors",
+      "software-contract-solicitors",
     ],
   },
   {
@@ -4303,6 +4311,358 @@ export const servicePages: ServicePage[] = [
       "heads-of-terms-business-sale-guide",
       "buying-business-legal-checklist",
       "business-premises-legal-checklist",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "intellectual-property-solicitors-kidderminster",
+    title: "Intellectual Property Solicitors Kidderminster",
+    h1: "Intellectual property solicitors in Kidderminster",
+    metaDescription:
+      "Compare intellectual property solicitor options in Kidderminster for trade marks, copyright, designs, licensing, ownership, and business IP disputes.",
+    category: "Intellectual Property",
+    summary:
+      "Support comparing solicitor options for trade marks, copyright, designs, ownership, licensing, confidentiality, and IP dispute enquiries.",
+    userNeed:
+      "Intellectual property enquiries often begin when a business wants to protect a name, logo, design, creative work, software, product idea, confidential information, or customer-facing brand asset.",
+    serviceScope: [
+      "A solicitor partner may help review IP ownership, trade marks, copyright, designs, licensing terms, assignments, confidentiality wording, contractor agreements, website content, software rights, and infringement concerns.",
+      "IP support may overlap with business sales, franchising, commercial contracts, employment contracts, data protection, ecommerce terms, and disputes where ownership or use of a business asset is unclear.",
+    ],
+    localContext:
+      "Kidderminster and Worcestershire businesses may need IP support for retail brands, manufacturers, designers, agencies, software providers, hospitality operators, trades, online sellers, and growing owner-managed companies.",
+    prepareItems: [
+      "business name and website",
+      "brand or work needing protection",
+      "creation or launch date",
+      "designer or contractor agreements",
+      "existing registrations",
+      "suspected copying evidence",
+      "commercial goal",
+    ],
+    questionItems: [
+      "whether the issue is ownership, protection, licensing, or enforcement",
+      "which rights may be relevant",
+      "whether a trade mark search or application is needed",
+      "what evidence should be kept",
+      "whether a fixed-fee first review is available",
+    ],
+    riskItems: [
+      "Intellectual property issues can go wrong where a business assumes it owns work created by a contractor, launches a brand without checks, copies online wording, or delays after discovering possible infringement.",
+      "Another risk is treating IP as a side issue in a business sale, franchise, software project, or marketing agreement when ownership and licences may affect value.",
+    ],
+    relatedGuideSlugs: [
+      "licensing-agreement-guide",
+      "nda-solicitor-guide",
+      "commercial-contract-review-guide",
+      "business-due-diligence-checklist",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "trade-mark-solicitors-kidderminster",
+    title: "Trade Mark Solicitors Kidderminster",
+    h1: "Trade mark solicitors in Kidderminster",
+    metaDescription:
+      "Compare trade mark solicitor options in Kidderminster for brand searches, applications, objections, opposition, licensing, and enforcement.",
+    category: "Trade Marks",
+    summary:
+      "Support comparing solicitor options for trade mark searches, applications, objections, brand protection, licensing, and dispute risk.",
+    userNeed:
+      "Trade mark enquiries often start when a business is naming a product, launching a brand, protecting a logo, receiving an objection, or worried that another trader is using a similar name.",
+    serviceScope: [
+      "A solicitor partner may help with trade mark searches, application strategy, classes, objections, opposition, coexistence discussions, assignments, licences, enforcement letters, and settlement options.",
+      "Trade mark advice can connect to domain names, company names, passing off concerns, franchising, product launches, marketplace listings, and business sale due diligence.",
+    ],
+    localContext:
+      "Local and regional businesses around Kidderminster may need trade mark support before investing in signage, packaging, ecommerce listings, advertising, social media names, or franchise-style branding.",
+    prepareItems: [
+      "brand name or logo",
+      "goods or services",
+      "launch date",
+      "countries of use",
+      "website and social handles",
+      "any search results",
+      "objection or dispute letters",
+    ],
+    questionItems: [
+      "whether a search should be carried out before applying",
+      "which classes may be relevant",
+      "whether the mark is distinctive enough",
+      "what happens if an objection is raised",
+      "how licensing or assignment would work",
+    ],
+    riskItems: [
+      "Trade mark problems can arise when a business invests in a brand before checking availability, applies in the wrong classes, ignores objection deadlines, or assumes a company name gives full brand protection.",
+      "Another risk is reacting aggressively to a similar mark without checking evidence, rights, proportionality, and commercial options.",
+    ],
+    relatedGuideSlugs: [
+      "licensing-agreement-guide",
+      "nda-solicitor-guide",
+      "commercial-contract-review-guide",
+      "heads-of-terms-business-sale-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "copyright-solicitors-kidderminster",
+    title: "Copyright Solicitors Kidderminster",
+    h1: "Copyright solicitors in Kidderminster",
+    metaDescription:
+      "Compare copyright solicitor options in Kidderminster for website content, designs, photographs, software, creative works, ownership, and infringement.",
+    category: "Copyright",
+    summary:
+      "Support comparing solicitor options for copyright ownership, creative works, website content, software, photographs, licensing, and infringement concerns.",
+    userNeed:
+      "Copyright enquiries often begin when a business has commissioned creative work, had content copied, used images online, developed software, or needs to understand who owns a work.",
+    serviceScope: [
+      "A solicitor partner may review copyright ownership, contractor terms, assignments, licences, image use, software development arrangements, takedown correspondence, infringement claims, and settlement options.",
+      "Copyright support can overlap with website terms, ecommerce content, design projects, marketing agency contracts, software agreements, and business sale due diligence.",
+    ],
+    localContext:
+      "Kidderminster businesses, agencies, creators, online sellers, manufacturers, and service providers may need copyright clarity for websites, brochures, product imagery, designs, videos, and software assets.",
+    prepareItems: [
+      "copy of the work",
+      "creation date",
+      "creator or contractor details",
+      "contract or invoice",
+      "where the work is used",
+      "copying evidence",
+      "desired outcome",
+    ],
+    questionItems: [
+      "who may own the copyright",
+      "whether written assignment exists",
+      "what licence terms apply",
+      "what evidence of copying matters",
+      "whether a takedown, negotiation, or claim is proportionate",
+    ],
+    riskItems: [
+      "Copyright issues can go wrong where businesses assume payment equals ownership, use images without licence checks, rely on informal freelancer arrangements, or send accusations before reviewing evidence.",
+      "Another risk is overlooking copyright during a business sale or website build, leaving unclear who can use key content after completion.",
+    ],
+    relatedGuideSlugs: [
+      "licensing-agreement-guide",
+      "terms-and-conditions-solicitor-guide",
+      "commercial-contract-review-guide",
+      "nda-solicitor-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "data-protection-solicitors-kidderminster",
+    title: "Data Protection Solicitors Kidderminster",
+    h1: "Data protection solicitors in Kidderminster",
+    metaDescription:
+      "Compare data protection solicitor options in Kidderminster for privacy notices, data sharing, subject access, breaches, processors, and GDPR compliance.",
+    category: "Data Protection",
+    summary:
+      "Support comparing solicitor options for privacy notices, GDPR, subject access requests, data sharing, breach response, and processor contracts.",
+    userNeed:
+      "Data protection enquiries often begin when a business handles customer, employee, marketing, health, finance, or website data and needs documents or support after a request, complaint, or breach concern.",
+    serviceScope: [
+      "A solicitor partner may help review privacy notices, data sharing arrangements, processor contracts, subject access requests, retention policies, breach response steps, marketing permissions, and supplier terms.",
+      "Data protection work can overlap with employment, ecommerce, software contracts, business sales, healthcare-adjacent services, CCTV, HR records, and customer databases.",
+    ],
+    localContext:
+      "Kidderminster and Worcestershire businesses may handle personal data through shops, care services, trades, professional services, clinics, online stores, hospitality, membership organisations, and employer records.",
+    prepareItems: [
+      "business activity summary",
+      "types of personal data",
+      "privacy notice",
+      "supplier or processor contracts",
+      "subject access request",
+      "breach timeline if relevant",
+      "marketing or website data uses",
+    ],
+    questionItems: [
+      "what documents need updating first",
+      "whether a processor agreement is required",
+      "what deadline applies to a request",
+      "whether a breach may need reporting",
+      "how fees and fixed stages work",
+    ],
+    riskItems: [
+      "Data protection matters can go wrong where privacy notices are copied, processors are not documented, subject access deadlines are missed, breach evidence is not preserved, or marketing data is used without checking permissions.",
+      "Another risk is sharing unnecessary personal data in an initial public enquiry. A short description is enough before speaking directly with a suitable provider.",
+    ],
+    relatedGuideSlugs: [
+      "data-processing-agreement-guide",
+      "data-processing-agreement-guide",
+      "terms-and-conditions-solicitor-guide",
+      "commercial-contract-review-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "gdpr-solicitors-businesses",
+    title: "GDPR Solicitors for Businesses",
+    h1: "GDPR solicitors for businesses",
+    metaDescription:
+      "Compare GDPR solicitor options for businesses needing privacy documents, lawful basis checks, data requests, processor terms, and compliance support.",
+    category: "GDPR for Businesses",
+    summary:
+      "Support comparing solicitor options for business GDPR reviews, privacy documents, lawful basis checks, data requests, processor terms, and compliance questions.",
+    userNeed:
+      "GDPR enquiries often start when a business launches a website, changes suppliers, receives a data request, reviews marketing, responds to a complaint, or needs clearer privacy documentation.",
+    serviceScope: [
+      "A solicitor partner may help with lawful basis checks, privacy notices, cookie and marketing wording, data processing agreements, retention questions, subject access requests, breach response, and supplier data clauses.",
+      "GDPR support may need practical input from website, IT, HR, marketing, and operations teams because legal documents should reflect how data is actually collected and used.",
+    ],
+    localContext:
+      "Businesses in Kidderminster, Wyre Forest, Worcestershire, and the wider West Midlands may need GDPR support for local customer databases, HR files, booking systems, ecommerce sites, and third-party software tools.",
+    prepareItems: [
+      "website address",
+      "privacy notice",
+      "cookie or marketing tools",
+      "customer data sources",
+      "employee data processes",
+      "supplier list",
+      "specific request or complaint",
+    ],
+    questionItems: [
+      "which GDPR documents are missing",
+      "whether data mapping is needed",
+      "what processor contracts are required",
+      "how subject access requests should be handled",
+      "whether the solicitor offers fixed-fee compliance reviews",
+    ],
+    riskItems: [
+      "GDPR work can go wrong where businesses use generic templates, ignore actual data flows, fail to document processors, overlook employee records, or assume cookie banners solve every privacy issue.",
+      "Another risk is waiting until a complaint or breach before organising basic policies, records, and supplier terms.",
+    ],
+    relatedGuideSlugs: [
+      "data-processing-agreement-guide",
+      "data-processing-agreement-guide",
+      "terms-and-conditions-solicitor-guide",
+      "terms-and-conditions-solicitor-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "website-terms-conditions-solicitors",
+    title: "Website Terms and Conditions Solicitors",
+    h1: "Website terms and conditions solicitors",
+    metaDescription:
+      "Compare website terms and conditions solicitor options for business websites, privacy wording, online services, disclaimers, and trading terms.",
+    category: "Website Terms and Conditions",
+    summary:
+      "Support comparing solicitor options for website terms, online service terms, privacy-linked documents, disclaimers, acceptable use wording, and trading terms.",
+    userNeed:
+      "Website terms enquiries often begin when a business launches a new site, sells online, offers digital services, publishes content, handles customer accounts, or wants documents that match how the website works.",
+    serviceScope: [
+      "A solicitor partner may help draft or review website terms, online service terms, acceptable use rules, liability wording, user account terms, privacy-linked wording, cookie notices, and customer-facing trading terms.",
+      "Website documents often need to align with ecommerce flows, consumer information, privacy notices, intellectual property ownership, payment processes, cancellation rights, and complaint handling.",
+    ],
+    localContext:
+      "Kidderminster and Worcestershire businesses may need website terms for service sites, online shops, booking platforms, subscription offers, digital content, local trades, agencies, and hospitality operators.",
+    prepareItems: [
+      "website address",
+      "current terms",
+      "what the site does",
+      "customer type",
+      "payment and refund process",
+      "privacy notice",
+      "planned launch date",
+    ],
+    questionItems: [
+      "whether the terms are for information, sales, services, or accounts",
+      "whether consumer rules apply",
+      "how website terms link with privacy documents",
+      "what liability wording is realistic",
+      "whether fixed-fee drafting is available",
+    ],
+    riskItems: [
+      "Website terms can go wrong where documents are copied from another site, do not match the checkout or service process, omit consumer information, or promise standards the business cannot meet.",
+      "Another risk is treating privacy, cookies, IP, and trading terms as one document when different user journeys may need different wording.",
+    ],
+    relatedGuideSlugs: [
+      "terms-and-conditions-solicitor-guide",
+      "data-processing-agreement-guide",
+      "data-processing-agreement-guide",
+      "terms-and-conditions-solicitor-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "ecommerce-terms-solicitors",
+    title: "Ecommerce Terms Solicitors",
+    h1: "Ecommerce terms solicitors",
+    metaDescription:
+      "Compare ecommerce terms solicitor options for online shops, checkout terms, refunds, delivery, subscriptions, digital products, and consumer compliance.",
+    category: "Ecommerce Terms",
+    summary:
+      "Support comparing solicitor options for ecommerce terms, checkout wording, refunds, delivery, subscriptions, digital products, and customer-facing online sales documents.",
+    userNeed:
+      "Ecommerce terms enquiries often begin when a business sells goods, services, subscriptions, downloads, courses, or bookings online and needs terms that match the customer journey.",
+    serviceScope: [
+      "A solicitor partner may help with online sales terms, consumer cancellation information, refund wording, delivery rules, subscription terms, digital product terms, marketplace issues, payment provider clauses, and complaint processes.",
+      "Ecommerce terms may overlap with privacy notices, cookies, data processing agreements, intellectual property, advertising claims, product descriptions, and supplier contracts.",
+    ],
+    localContext:
+      "Online sellers in Kidderminster, Wyre Forest, Worcestershire, and the wider West Midlands may combine local operations with national customers, courier delivery, marketplace listings, and website checkout journeys.",
+    prepareItems: [
+      "website or marketplace link",
+      "products or services sold",
+      "customer location",
+      "current checkout wording",
+      "delivery and refund process",
+      "subscription or digital product details",
+      "payment provider terms",
+    ],
+    questionItems: [
+      "whether consumer cancellation rules apply",
+      "what refund and delivery wording is needed",
+      "whether digital content or subscription terms are required",
+      "how terms are accepted at checkout",
+      "what documents need updating together",
+    ],
+    riskItems: [
+      "Ecommerce terms can go wrong when refund wording conflicts with consumer rights, checkout acceptance is unclear, subscriptions lack cancellation steps, or product claims are not backed by the actual sales process.",
+      "Another risk is using generic terms that do not reflect delivery, returns, digital access, payment failures, or customer support practices.",
+    ],
+    relatedGuideSlugs: [
+      "terms-and-conditions-solicitor-guide",
+      "data-processing-agreement-guide",
+      "data-processing-agreement-guide",
+      "terms-and-conditions-solicitor-guide",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "software-contract-solicitors",
+    title: "Software Contract Solicitors",
+    h1: "Software contract solicitors",
+    metaDescription:
+      "Compare software contract solicitor options for SaaS terms, development agreements, support terms, licensing, data processing, and IP ownership.",
+    category: "Software Contracts",
+    summary:
+      "Support comparing solicitor options for software development agreements, SaaS terms, licensing, support terms, data processing, and IP ownership.",
+    userNeed:
+      "Software contract enquiries often start when a business is buying software, building a platform, commissioning developers, selling SaaS, licensing code, or needing terms for support and maintenance.",
+    serviceScope: [
+      "A solicitor partner may help with software development agreements, SaaS terms, service levels, support terms, IP ownership, source code, licensing, acceptance testing, data processing, liability, and termination wording.",
+      "Software contracts often need input on technical scope, data security, implementation milestones, payment stages, change control, third-party tools, and post-launch support.",
+    ],
+    localContext:
+      "Kidderminster, Worcestershire, and West Midlands businesses may need software contract support for agencies, SaaS tools, ecommerce projects, internal systems, automation, licence reselling, and technology supplier relationships.",
+    prepareItems: [
+      "draft contract or proposal",
+      "technical scope",
+      "deliverables",
+      "payment milestones",
+      "IP ownership expectations",
+      "data processing details",
+      "support and maintenance needs",
+    ],
+    questionItems: [
+      "who owns the code or deliverables",
+      "how acceptance and change control work",
+      "what service levels or support terms apply",
+      "whether a data processing agreement is needed",
+      "what happens on termination or supplier failure",
+    ],
+    riskItems: [
+      "Software contracts can go wrong where the technical scope is vague, IP ownership is unclear, acceptance testing is missing, data obligations are ignored, or support expectations are not written down.",
+      "Another risk is signing supplier terms that limit remedies or lock the business into a tool without exit, data return, or continuity planning.",
+    ],
+    relatedGuideSlugs: [
+      "data-processing-agreement-guide",
+      "licensing-agreement-guide",
+      "commercial-contract-review-guide",
+      "data-processing-agreement-guide",
     ],
   }),
 ];
@@ -12603,6 +12963,154 @@ const rawGuidePages: GuidePage[] = [
     ],
   }),
   createQualityGuide({
+    slug: "licensing-agreement-guide",
+    title: "Licensing Agreement Guide",
+    h1: "Licensing agreement guide",
+    metaDescription:
+      "General guide to licensing agreements for businesses, including IP rights, scope, royalties, territory, exclusivity, termination, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "intellectual-property-solicitors-kidderminster",
+    intro:
+      "A licensing agreement lets one party use rights owned or controlled by another party, such as a brand, copyright work, design, software, database, product information, or other intellectual property. The useful question is not only whether permission is being given, but exactly what can be used, by whom, where, for how long, and on what commercial terms.",
+    keyTakeaways: [
+      "Licensing agreements should define the rights, permitted use, territory, duration, exclusivity, payment, quality control, and termination process.",
+      "The agreement should be clear about ownership, improvements, sublicensing, confidentiality, data use, warranties, and what happens when the licence ends.",
+      "A solicitor partner may help check whether the licence matches the business deal and whether the wording creates avoidable commercial or IP risk.",
+    ],
+    topicOverview: [
+      "Licensing can support brand collaborations, franchise-style arrangements, software use, manufacturing, distribution, creative work, marketing campaigns, data products, or business sales where rights are retained by one party but used by another.",
+      "A solicitor partner may review or draft licence scope, royalty or fee wording, exclusivity, quality controls, sublicensing, audit rights, termination events, infringement handling, and post-termination use of materials.",
+    ],
+    practicalExamples: [
+      "A Kidderminster business may allow another trader to use its brand name for a limited product range. The agreement may need territory, quality control, approval rights, payment, and termination wording.",
+      "A software provider may license a platform to a customer while keeping ownership of the underlying code. The agreement may need user limits, support terms, data processing wording, uptime expectations, and exit provisions.",
+    ],
+    commonProblems: [
+      "Licensing problems often arise when permission is discussed informally, the licensed rights are not clearly identified, exclusivity is vague, royalty calculations are unclear, or the agreement does not say what happens to stock, content, accounts, or data when the relationship ends.",
+      "Another issue is assuming a licence transfers ownership. A licence usually gives permission to use rights on stated terms, while assignment is a different legal structure.",
+    ],
+    prepareItems: [
+      "draft agreement",
+      "description of rights",
+      "who owns the asset",
+      "planned use",
+      "territory and duration",
+      "fees or royalties",
+      "termination concerns",
+    ],
+    questionItems: [
+      "whether the licence is exclusive or non-exclusive",
+      "what rights are actually being licensed",
+      "whether sublicensing is allowed",
+      "how royalties or usage fees are calculated",
+      "what happens to materials and data after termination",
+    ],
+    localContext:
+      "Licensing enquiries around Kidderminster, Worcestershire, and the West Midlands may involve local brands, manufacturers, creative agencies, software providers, ecommerce sellers, franchise models, and collaborations between regional businesses.",
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "nda-solicitor-guide",
+      "data-processing-agreement-guide",
+      "business-due-diligence-checklist",
+    ],
+    faq: [
+      {
+        question: "Does a licensing agreement transfer ownership?",
+        answer:
+          "Not usually. A licence normally gives permission to use rights on agreed terms. An assignment transfers ownership and needs separate wording.",
+      },
+      {
+        question: "What should a licensing agreement say about exclusivity?",
+        answer:
+          "It should explain whether the licence is exclusive, sole, or non-exclusive, and whether that applies to a territory, customer group, product line, or time period.",
+      },
+      {
+        question: "Can a licence cover software and data processing?",
+        answer:
+          "It can, but software use, support, security, personal data, and service levels may need detailed terms or a separate data processing agreement.",
+      },
+      {
+        question: "Is this licensing agreement guide legal advice?",
+        answer:
+          "No. This guide is general information only. A qualified provider would need to review the specific agreement if instructed.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "data-processing-agreement-guide",
+    title: "Data Processing Agreement Guide",
+    h1: "Data processing agreement guide",
+    metaDescription:
+      "General guide to data processing agreements for businesses, including processors, controllers, security, instructions, subprocessors, and solicitor questions.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "data-protection-solicitors-kidderminster",
+    intro:
+      "A data processing agreement is commonly needed where one business processes personal data for another business, such as a software provider, marketing platform, payroll provider, CRM supplier, outsourced administrator, or other service provider. The agreement should explain the processing instructions, security expectations, subcontracting, breach reporting, and what happens to data when the service ends.",
+    keyTakeaways: [
+      "A data processing agreement helps document controller and processor responsibilities where personal data is handled by a supplier.",
+      "Useful clauses often cover instructions, confidentiality, security, subprocessors, assistance, international transfers, audits, breach notification, and deletion or return of data.",
+      "The document should match the real service and data flow rather than sit separately from the commercial contract.",
+    ],
+    topicOverview: [
+      "Data processing agreements are often linked to website platforms, ecommerce tools, payroll services, HR systems, email marketing, outsourced IT, booking systems, analytics, hosting, customer support tools, and software-as-a-service contracts.",
+      "A solicitor partner may help a business identify whether a supplier is acting as a processor, review processor terms, draft schedules, check security and subprocessor wording, and align data protection clauses with the wider commercial agreement.",
+    ],
+    practicalExamples: [
+      "A Kidderminster retailer using an ecommerce platform may need to understand how customer order data, payment information, delivery details, email marketing tools, and support systems are documented.",
+      "A local employer outsourcing payroll may need processor terms covering employee data, confidentiality, security, breach notification, deletion, and cooperation with data subject requests.",
+    ],
+    commonProblems: [
+      "Data processing agreement problems often arise when businesses sign supplier terms without checking data flows, use generic wording that does not match the service, overlook subprocessors, or fail to update terms when software tools change.",
+      "Another issue is confusing a processor agreement with a privacy notice. The processor agreement governs supplier responsibilities, while the privacy notice explains processing to individuals.",
+    ],
+    prepareItems: [
+      "supplier contract",
+      "description of the service",
+      "types of personal data",
+      "categories of individuals",
+      "security measures",
+      "subprocessor list",
+      "international transfer information",
+    ],
+    questionItems: [
+      "whether the supplier is a processor or controller",
+      "what data processing schedule is needed",
+      "whether subprocessors are adequately controlled",
+      "how breaches and data requests are handled",
+      "what happens to data when the contract ends",
+    ],
+    localContext:
+      "Data processing questions for Kidderminster, Wyre Forest, and Worcestershire businesses may involve local customer databases, employee records, care or appointment systems, ecommerce orders, outsourced IT, and regional suppliers using cloud platforms.",
+    relatedGuideSlugs: [
+      "commercial-contract-review-guide",
+      "terms-and-conditions-solicitor-guide",
+      "licensing-agreement-guide",
+      "business-due-diligence-checklist",
+    ],
+    faq: [
+      {
+        question: "When might a data processing agreement be needed?",
+        answer:
+          "It may be needed where a supplier processes personal data for a business, such as payroll, hosting, CRM, email marketing, IT support, or software services.",
+      },
+      {
+        question: "Is a data processing agreement the same as a privacy policy?",
+        answer:
+          "No. A privacy policy explains processing to individuals. A data processing agreement sets obligations between businesses handling personal data.",
+      },
+      {
+        question: "Should data processing wording sit inside the main contract?",
+        answer:
+          "It can be included in the main contract or a separate schedule, but it should align with the service terms, security commitments, and exit provisions.",
+      },
+      {
+        question: "Can this website check a supplier data processing agreement?",
+        answer:
+          "No. This website is not a law firm and does not review documents. It may introduce users to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
     slug: "workplace-investigation-guide",
     title: "Workplace Investigation Guide",
     h1: "Workplace investigation guide",
@@ -13054,6 +13562,46 @@ const anchorTextByServiceSlug: Record<string, string[]> = {
     "asset purchase agreement solicitor options",
     "compare asset purchase agreement support",
     "Kidderminster business asset purchase enquiries",
+  ],
+  "intellectual-property-solicitors-kidderminster": [
+    "intellectual property solicitor options",
+    "compare IP legal support",
+    "Kidderminster intellectual property enquiries",
+  ],
+  "trade-mark-solicitors-kidderminster": [
+    "trade mark solicitor options",
+    "compare trade mark legal support",
+    "Kidderminster brand protection enquiries",
+  ],
+  "copyright-solicitors-kidderminster": [
+    "copyright solicitor options",
+    "compare copyright legal support",
+    "Kidderminster creative rights enquiries",
+  ],
+  "data-protection-solicitors-kidderminster": [
+    "data protection solicitor options",
+    "compare data protection support",
+    "Kidderminster data protection enquiries",
+  ],
+  "gdpr-solicitors-businesses": [
+    "GDPR solicitor options for businesses",
+    "compare GDPR compliance support",
+    "business GDPR solicitor enquiries",
+  ],
+  "website-terms-conditions-solicitors": [
+    "website terms solicitor options",
+    "compare website terms support",
+    "business website terms enquiries",
+  ],
+  "ecommerce-terms-solicitors": [
+    "ecommerce terms solicitor options",
+    "compare online trading terms support",
+    "ecommerce legal document enquiries",
+  ],
+  "software-contract-solicitors": [
+    "software contract solicitor options",
+    "compare software contract support",
+    "SaaS and software legal enquiries",
   ],
   "personal-injury-solicitors-kidderminster": [
     "personal injury solicitor options in Kidderminster",
