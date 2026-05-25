@@ -149,6 +149,15 @@ describe("site content model", () => {
   it("adds one or two varied contextual in-content pillar links to every guide", () => {
     const serviceSlugs = new Set(servicePages.map((page) => page.slug));
     const anchorsByCategory = new Map<string, Set<string>>();
+    const pillarSlugByCategory = new Map([
+      ["Conveyancing", "conveyancing-solicitors-kidderminster"],
+      ["Probate and Wills", "probate-solicitors-kidderminster"],
+      ["Family and Divorce", "family-law-solicitors-kidderminster"],
+      ["Employment", "employment-solicitors-kidderminster"],
+      ["Commercial, Debt, Landlord and Tenant", "commercial-solicitors-kidderminster"],
+      ["Rural and Agricultural", "rural-solicitors-worcestershire"],
+      ["Personal Injury and Negligence", "personal-injury-solicitors-kidderminster"],
+    ]);
 
     guidePages.forEach((page) => {
       const fullText = [
@@ -156,12 +165,18 @@ describe("site content model", () => {
         ...page.sections.flatMap((section) => section.body),
       ].join(" ");
       const links = extractInlineInternalLinks(fullText);
+      const pillarSlug = pillarSlugByCategory.get(page.category);
 
       expect(links.length).toBeGreaterThanOrEqual(1);
       expect(links.length).toBeLessThanOrEqual(2);
-      expect(links.some((link) => link.slug === page.relatedServiceSlug)).toBe(
-        true,
-      );
+      expect(pillarSlug).toBeDefined();
+      expect(links.some((link) => link.slug === pillarSlug)).toBe(true);
+
+      if (page.relatedServiceSlug !== pillarSlug) {
+        expect(links.some((link) => link.slug === page.relatedServiceSlug)).toBe(
+          true,
+        );
+      }
 
       links.forEach((link) => {
         expect(serviceSlugs.has(link.slug)).toBe(true);
@@ -182,6 +197,49 @@ describe("site content model", () => {
       if (guideCount > 1) {
         expect(anchors.size).toBeGreaterThan(1);
       }
+    });
+  });
+
+  it("adds contextual in-content pillar links to supporting service pages", () => {
+    const pillarSlugs = new Set([
+      "conveyancing-solicitors-kidderminster",
+      "probate-solicitors-kidderminster",
+      "family-law-solicitors-kidderminster",
+      "employment-solicitors-kidderminster",
+      "commercial-solicitors-kidderminster",
+      "rural-solicitors-worcestershire",
+      "personal-injury-solicitors-kidderminster",
+    ]);
+    const pillarSlugByServiceSlug = new Map<string, string>();
+
+    guideCategoryGroups.forEach((group) => {
+      const pillarSlug = group.serviceSlugs.find((slug) => pillarSlugs.has(slug));
+
+      expect(pillarSlug).toBeDefined();
+      group.serviceSlugs.forEach((slug) => {
+        pillarSlugByServiceSlug.set(slug, pillarSlug ?? "");
+      });
+    });
+
+    servicePages.forEach((page) => {
+      const pillarSlug = pillarSlugByServiceSlug.get(page.slug);
+
+      if (!pillarSlug || page.slug === pillarSlug) {
+        return;
+      }
+
+      const fullText = [
+        page.intro,
+        page.localAngle,
+        ...(page.sections ?? []).flatMap((section) => section.body),
+      ].join(" ");
+      const links = extractInlineInternalLinks(fullText);
+
+      expect(links.some((link) => link.slug === pillarSlug)).toBe(true);
+      expect(links.some((link) => link.slug === page.slug)).toBe(false);
+      links.forEach((link) => {
+        expect(link.text).not.toMatch(/click here|read more|learn more/i);
+      });
     });
   });
 

@@ -241,6 +241,16 @@ export type InlineInternalLinkSegment =
       slug: string;
     };
 
+const pillarServiceSlugByGuideCategory: Record<string, string> = {
+  Conveyancing: "conveyancing-solicitors-kidderminster",
+  "Probate and Wills": "probate-solicitors-kidderminster",
+  "Family and Divorce": "family-law-solicitors-kidderminster",
+  Employment: "employment-solicitors-kidderminster",
+  "Commercial, Debt, Landlord and Tenant": "commercial-solicitors-kidderminster",
+  "Rural and Agricultural": "rural-solicitors-worcestershire",
+  "Personal Injury and Negligence": "personal-injury-solicitors-kidderminster",
+};
+
 type SpecialistServiceSeed = {
   slug: string;
   title: string;
@@ -15877,6 +15887,21 @@ const anchorTextByServiceSlug: Record<string, string[]> = {
     "compare software contract support",
     "SaaS and software legal enquiries",
   ],
+  "insolvency-solicitors-kidderminster": [
+    "insolvency solicitor options in Kidderminster",
+    "compare insolvency legal support",
+    "company insolvency solicitor enquiries",
+  ],
+  "regulatory-solicitors-kidderminster": [
+    "regulatory solicitor options in Kidderminster",
+    "compare regulatory legal support",
+    "business regulatory solicitor enquiries",
+  ],
+  "notary-public-services-kidderminster": [
+    "notary public service options in Kidderminster",
+    "compare notary service support",
+    "notary public document enquiries",
+  ],
   "rural-solicitors-worcestershire": [
     "rural solicitor options in Worcestershire",
     "compare rural legal support",
@@ -15952,6 +15977,12 @@ function buildInlineLinkMarker(anchor: string, slug: string) {
 }
 
 function getSecondaryPillarSlug(page: GuidePage) {
+  const pillarSlug = pillarServiceSlugByGuideCategory[page.category];
+
+  if (page.relatedServiceSlug !== pillarSlug) {
+    return page.relatedServiceSlug;
+  }
+
   if (
     page.category === "Conveyancing" &&
     page.relatedServiceSlug !== "conveyancing-quotes-kidderminster"
@@ -15963,9 +15994,11 @@ function getSecondaryPillarSlug(page: GuidePage) {
 }
 
 function getContextualGuidePillarLinks(page: GuidePage) {
+  const pillarSlug =
+    pillarServiceSlugByGuideCategory[page.category] ?? page.relatedServiceSlug;
   const primary = {
-    slug: page.relatedServiceSlug,
-    text: getAnchorText(page.relatedServiceSlug, page.slug),
+    slug: pillarSlug,
+    text: getAnchorText(pillarSlug, page.slug),
   };
   const secondarySlug = getSecondaryPillarSlug(page);
   const secondary =
@@ -15980,6 +16013,49 @@ function getContextualGuidePillarLinks(page: GuidePage) {
     (link): link is { slug: string; text: string } => Boolean(link),
   );
 }
+
+function getServicePillarSlug(serviceSlug: string) {
+  const cluster = guideCategoryGroups.find((group) =>
+    (group.serviceSlugs as readonly string[]).includes(serviceSlug),
+  );
+  const category = cluster?.categories[0];
+
+  return category ? pillarServiceSlugByGuideCategory[category] : null;
+}
+
+function addContextualServicePillarLink(page: ServicePage): ServicePage {
+  const pillarSlug = getServicePillarSlug(page.slug);
+
+  if (!pillarSlug || pillarSlug === page.slug || !page.sections?.length) {
+    return page;
+  }
+
+  const sections = page.sections.map((section) => ({
+    ...section,
+    body: [...section.body],
+  }));
+  const targetSectionIndex = sections.findIndex((section) =>
+    /what .*support may involve|what .*solicitors may help with|what .*may help with/i.test(
+      section.heading,
+    ),
+  );
+  const targetSection = sections[targetSectionIndex >= 0 ? targetSectionIndex : 0];
+  const anchor = getAnchorText(pillarSlug, page.slug);
+
+  targetSection.body[0] = `${targetSection.body[0]} For the wider topic cluster, compare ${buildInlineLinkMarker(
+    anchor,
+    pillarSlug,
+  )} before narrowing the enquiry to this specific service.`;
+
+  return {
+    ...page,
+    sections,
+  };
+}
+
+servicePages.forEach((page, index) => {
+  servicePages[index] = addContextualServicePillarLink(page);
+});
 
 function addContextualGuideLinks(page: GuidePage): GuidePage {
   const links = getContextualGuidePillarLinks(page);
