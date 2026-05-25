@@ -551,6 +551,43 @@ describe("site content model", () => {
     });
   });
 
+  it("includes CE2 Phase 2 batch A10 final rural and specialist pages", () => {
+    expect(servicePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "insolvency-solicitors-kidderminster",
+        "regulatory-solicitors-kidderminster",
+        "notary-public-services-kidderminster",
+      ]),
+    );
+
+    expect(guidePages.map((page) => page.slug)).toEqual(
+      expect.arrayContaining([
+        "estate-owner-legal-advice",
+        "buying-selling-agricultural-property",
+        "common-land-town-village-greens",
+        "public-rights-of-way-highways-disputes",
+        "rural-business-structures",
+        "rural-leisure-pursuits-legal-issues",
+        "rural-tax-succession-planning",
+      ]),
+    );
+
+    [
+      "insolvency-solicitors-kidderminster",
+      "regulatory-solicitors-kidderminster",
+      "notary-public-services-kidderminster",
+      "estate-owner-legal-advice",
+      "buying-selling-agricultural-property",
+      "common-land-town-village-greens",
+      "public-rights-of-way-highways-disputes",
+      "rural-business-structures",
+      "rural-leisure-pursuits-legal-issues",
+      "rural-tax-succession-planning",
+    ].forEach((slug) => {
+      expect(getAllPageSlugs()).toContain(slug);
+    });
+  });
+
   it("keeps guide content useful, local, and conversion-aware", () => {
     const localPattern =
       /Kidderminster|Wyre Forest|Stourport|Bewdley|Cookley|Hagley|Worcestershire/i;
