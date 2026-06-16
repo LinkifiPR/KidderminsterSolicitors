@@ -83,7 +83,7 @@ export function ServiceCard({ service }: { service: ServicePage }) {
       <div className="relative h-44 overflow-hidden">
         <Image
           src={imageSrc}
-          alt={`${service.category} solicitor service in Kidderminster`}
+          alt={`${service.category} solicitor services in Kidderminster and the Wyre Forest`}
           fill
           sizes="(min-width: 1280px) 302px, (min-width: 768px) 50vw, 100vw"
           className="object-cover transition duration-500 group-hover:scale-[1.03]"

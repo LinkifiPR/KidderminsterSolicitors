@@ -472,7 +472,7 @@ export const servicePages: ServicePage[] = [
   {
     type: "service",
     slug: "conveyancing-solicitors-kidderminster",
-    title: "Conveyancing Solicitors Kidderminster",
+    title: "Conveyancing Solicitors in Kidderminster | Compare Quotes",
     h1: "Conveyancing solicitors in Kidderminster",
     metaDescription:
       "Compare conveyancing solicitor options in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
@@ -556,7 +556,7 @@ export const servicePages: ServicePage[] = [
   {
     type: "service",
     slug: "probate-solicitors-kidderminster",
-    title: "Probate Solicitors Kidderminster",
+    title: "Probate Solicitors in Kidderminster | Compare Quotes",
     h1: "Probate solicitors in Kidderminster",
     metaDescription:
       "Find probate solicitor options in Kidderminster and request a no obligation quote from a suitable legal service provider.",
@@ -761,7 +761,7 @@ export const servicePages: ServicePage[] = [
   {
     type: "service",
     slug: "family-law-solicitors-kidderminster",
-    title: "Family Law Solicitors Kidderminster",
+    title: "Family Law Solicitors in Kidderminster | Compare Quotes",
     h1: "Family law solicitors in Kidderminster",
     metaDescription:
       "Compare family law solicitor options in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
@@ -852,7 +852,7 @@ export const servicePages: ServicePage[] = [
   },
   createSpecialistServicePage({
     slug: "divorce-solicitors-kidderminster",
-    title: "Divorce Solicitors Kidderminster",
+    title: "Divorce Solicitors in Kidderminster | Compare Quotes",
     h1: "Divorce solicitors in Kidderminster",
     metaDescription:
       "Compare divorce solicitor options in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
@@ -939,7 +939,7 @@ export const servicePages: ServicePage[] = [
   {
     type: "service",
     slug: "wills-solicitors-kidderminster",
-    title: "Wills Solicitors Kidderminster",
+    title: "Wills Solicitors in Kidderminster | Compare Quotes",
     h1: "Wills solicitors in Kidderminster",
     metaDescription:
       "Compare wills solicitor options in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
@@ -1512,7 +1512,7 @@ export const servicePages: ServicePage[] = [
     title: "Cohabitation Agreement Solicitors Kidderminster",
     h1: "Cohabitation agreement solicitors in Kidderminster",
     metaDescription:
-      "Compare cohabitation agreement solicitor options in Kidderminster for unmarried couples, property shares, contributions, bills, children, and separation planning.",
+      "Compare cohabitation agreement solicitor options in Kidderminster for unmarried couples, property shares, contributions, children, and separation.",
     category: "Cohabitation Agreements",
     summary:
       "Support comparing solicitor options for cohabitation agreements, unmarried partner property arrangements, contributions, bills, children, and separation planning.",
@@ -1644,7 +1644,7 @@ export const servicePages: ServicePage[] = [
     title: "Occupation Order Solicitors Kidderminster",
     h1: "Occupation order solicitors in Kidderminster",
     metaDescription:
-      "Compare occupation order solicitor options in Kidderminster for family home occupation, domestic abuse concerns, housing, children, and urgent court preparation.",
+      "Compare occupation order solicitor options in Kidderminster for family home occupation, domestic abuse concerns, children, and urgent court steps.",
     category: "Occupation Orders",
     summary:
       "Support comparing solicitor options for occupation order enquiries involving the family home, domestic abuse concerns, housing, children, and urgent court-related preparation.",
@@ -2257,7 +2257,7 @@ export const servicePages: ServicePage[] = [
   }),
   createSpecialistServicePage({
     slug: "employment-solicitors-kidderminster",
-    title: "Employment Solicitors Kidderminster",
+    title: "Employment Solicitors in Kidderminster | Compare Quotes",
     h1: "Employment solicitors in Kidderminster",
     metaDescription:
       "Compare employment solicitor options in Kidderminster for settlement agreements, redundancy, dismissal, grievances, contracts, and workplace disputes.",
@@ -2395,7 +2395,7 @@ export const servicePages: ServicePage[] = [
     title: "Constructive Dismissal Solicitors Kidderminster",
     h1: "Constructive dismissal solicitors in Kidderminster",
     metaDescription:
-      "Compare constructive dismissal solicitor options in Kidderminster for workplace resignation, breach of contract, grievance, and deadline-sensitive employment enquiries.",
+      "Compare constructive dismissal solicitor options in Kidderminster for resignation, breach of contract, grievance, and deadline-sensitive enquiries.",
     category: "Constructive Dismissal",
     summary:
       "Support comparing solicitor options for constructive dismissal concerns, serious workplace issues, resignations, grievances, and employment claim timing.",
@@ -2440,7 +2440,7 @@ export const servicePages: ServicePage[] = [
     title: "Employer Employment Law Solicitors Kidderminster",
     h1: "Employer employment law solicitors in Kidderminster",
     metaDescription:
-      "Compare employer employment law solicitor options in Kidderminster for contracts, policies, redundancy, grievances, disciplinary issues, TUPE, and tribunal risk.",
+      "Compare employer employment law solicitor options in Kidderminster for contracts, policies, redundancy, grievances, disciplinary issues, and TUPE.",
     category: "Employer Employment Law",
     summary:
       "Support comparing solicitor options for employers handling contracts, workplace policies, employee relations, redundancies, settlement agreements, and employment tribunal risk.",
@@ -2528,7 +2528,7 @@ export const servicePages: ServicePage[] = [
     title: "Staff Handbook Solicitors Kidderminster",
     h1: "Staff handbook solicitors in Kidderminster",
     metaDescription:
-      "Compare staff handbook solicitor options in Kidderminster for employer policies, disciplinary rules, grievances, sickness, hybrid work, and workplace procedures.",
+      "Compare staff handbook solicitor options in Kidderminster for employer policies, disciplinary rules, grievances, sickness, and workplace procedures.",
     category: "Staff Handbooks",
     summary:
       "Support comparing solicitor options for staff handbooks, workplace policies, disciplinary and grievance procedures, sickness policies, and employer documentation.",
@@ -2616,7 +2616,7 @@ export const servicePages: ServicePage[] = [
     title: "Disciplinary and Grievance Solicitors Kidderminster",
     h1: "Disciplinary and grievance solicitors in Kidderminster",
     metaDescription:
-      "Compare disciplinary and grievance solicitor options in Kidderminster for employers handling workplace complaints, misconduct, investigations, hearings, and appeals.",
+      "Compare disciplinary and grievance solicitor options in Kidderminster for workplace complaints, misconduct, investigations, hearings, and appeals.",
     category: "Disciplinary and Grievance",
     summary:
       "Support comparing solicitor options for workplace disciplinary issues, grievances, investigations, hearings, appeals, and employer process documents.",
@@ -2660,7 +2660,7 @@ export const servicePages: ServicePage[] = [
     title: "Restrictive Covenant Solicitors Kidderminster",
     h1: "Restrictive covenant solicitors in Kidderminster",
     metaDescription:
-      "Compare restrictive covenant solicitor options in Kidderminster for non-compete clauses, confidentiality, non-solicitation, senior employees, and business protection.",
+      "Compare restrictive covenant solicitor options in Kidderminster for non-compete clauses, confidentiality, non-solicitation, and business protection.",
     category: "Restrictive Covenants",
     summary:
       "Support comparing solicitor options for restrictive covenants, confidentiality, non-solicitation, non-dealing, non-compete wording, and post-employment protection.",
@@ -2704,7 +2704,7 @@ export const servicePages: ServicePage[] = [
     title: "TUPE Solicitors Kidderminster",
     h1: "TUPE solicitors in Kidderminster",
     metaDescription:
-      "Compare TUPE solicitor options in Kidderminster for business transfers, outsourcing, insourcing, service provision changes, employee information, and consultation.",
+      "Compare TUPE solicitor options in Kidderminster for business transfers, outsourcing, service provision changes, employee information, and consultation.",
     category: "TUPE",
     summary:
       "Support comparing solicitor options for TUPE questions connected to business sales, outsourcing, insourcing, contract changes, employee transfers, and consultation.",
@@ -2748,7 +2748,7 @@ export const servicePages: ServicePage[] = [
     title: "Settlement Agreement Employer Solicitors Kidderminster",
     h1: "Settlement agreement solicitors for employers in Kidderminster",
     metaDescription:
-      "Compare settlement agreement solicitor options for Kidderminster employers preparing exit terms, redundancy settlements, workplace dispute resolution, and protected conversations.",
+      "Compare settlement agreement solicitor options for Kidderminster employers handling exit terms, redundancy settlements, and protected conversations.",
     category: "Employer Settlement Agreements",
     summary:
       "Support comparing solicitor options for employers preparing settlement agreements, exit terms, redundancy settlements, references, confidentiality, and workplace dispute resolution.",
@@ -2790,7 +2790,7 @@ export const servicePages: ServicePage[] = [
   {
     type: "service",
     slug: "personal-injury-solicitors-kidderminster",
-    title: "Personal Injury Solicitors Kidderminster",
+    title: "Personal Injury Solicitors in Kidderminster | Compare Quotes",
     h1: "Personal injury solicitors in Kidderminster",
     metaDescription:
       "Compare personal injury solicitor options in Kidderminster with clear referral disclosure.",
@@ -2879,7 +2879,7 @@ export const servicePages: ServicePage[] = [
   {
     type: "service",
     slug: "commercial-solicitors-kidderminster",
-    title: "Commercial Solicitors Kidderminster",
+    title: "Commercial Solicitors in Kidderminster | Compare Quotes",
     h1: "Commercial solicitors in Kidderminster",
     metaDescription:
       "Compare commercial solicitor options for Kidderminster businesses and request a no obligation quote.",
@@ -4633,7 +4633,7 @@ export const servicePages: ServicePage[] = [
     title: "Commercial Rent Arrears Solicitors Kidderminster",
     h1: "Commercial rent arrears solicitors in Kidderminster",
     metaDescription:
-      "Compare commercial rent arrears solicitor options in Kidderminster for landlords, tenants, payment plans, forfeiture risk, lease terms, and business premises disputes.",
+      "Compare commercial rent arrears solicitor options in Kidderminster for landlords, tenants, payment plans, forfeiture risk, and lease disputes.",
     category: "Commercial Rent Arrears",
     summary:
       "Support comparing solicitor options for commercial rent arrears, landlord and tenant disputes, payment plans, lease enforcement, and premises risk.",
@@ -4677,7 +4677,7 @@ export const servicePages: ServicePage[] = [
     title: "Dilapidations Solicitors Kidderminster",
     h1: "Dilapidations solicitors in Kidderminster",
     metaDescription:
-      "Compare dilapidations solicitor options in Kidderminster for commercial lease repairs, schedules of dilapidations, reinstatement, negotiations, and premises exits.",
+      "Compare dilapidations solicitor options in Kidderminster for commercial lease repairs, schedules, reinstatement, negotiations, and premises exits.",
     category: "Dilapidations",
     summary:
       "Support comparing solicitor options for commercial lease dilapidations, repair claims, reinstatement, schedules, tenant exits, and landlord negotiations.",
@@ -4765,7 +4765,7 @@ export const servicePages: ServicePage[] = [
     title: "Shareholders Agreement Solicitors Kidderminster",
     h1: "Shareholders agreement solicitors in Kidderminster",
     metaDescription:
-      "Compare shareholders agreement solicitor options in Kidderminster for company owners, decision-making, share transfers, exits, deadlock, and minority protection.",
+      "Compare shareholders agreement solicitor options in Kidderminster for company owners, decision-making, share transfers, exits, and minority protection.",
     category: "Shareholders Agreements",
     summary:
       "Support comparing solicitor options for shareholder agreements, owner-managed company governance, share transfers, exits, deadlock, and dispute prevention.",
@@ -5029,7 +5029,7 @@ export const servicePages: ServicePage[] = [
     title: "Asset Purchase Agreement Solicitors Kidderminster",
     h1: "Asset purchase agreement solicitors in Kidderminster",
     metaDescription:
-      "Compare asset purchase agreement solicitor options in Kidderminster for buying or selling business assets, goodwill, employees, contracts, stock, and completion.",
+      "Compare asset purchase agreement solicitor options in Kidderminster for buying or selling business assets, goodwill, employees, contracts, and stock.",
     category: "Asset Purchase Agreements",
     summary:
       "Support comparing solicitor options for asset purchase agreements, business asset sales, goodwill, stock, employees, premises, contracts, and completion.",
@@ -6873,7 +6873,7 @@ const rawGuidePages: GuidePage[] = [
     title: "Remortgage Solicitor Checklist",
     h1: "Remortgage solicitor checklist",
     metaDescription:
-      "Practical checklist for remortgage solicitor work, including lender panel checks, redemption statements, title checks, registration, and transfer of equity overlap.",
+      "Practical checklist for remortgage solicitor work: lender panel checks, redemption statements, title checks, registration, and transfer of equity.",
     category: "Conveyancing",
     relatedServiceSlug: "conveyancing-solicitors-kidderminster",
     intro:
@@ -9887,7 +9887,7 @@ const rawGuidePages: GuidePage[] = [
     title: "Fathers' Rights Before a Child Is Born",
     h1: "Fathers' rights before a child is born",
     metaDescription:
-      "General family law guide to fathers' rights before a child is born, parental responsibility, birth registration, and what to prepare before speaking to a solicitor.",
+      "General family law guide to fathers' rights before a child is born: parental responsibility, birth registration, and what to prepare beforehand.",
     category: "Family and Divorce",
     relatedServiceSlug: "family-law-solicitors-kidderminster",
     intro:
@@ -10026,7 +10026,7 @@ const rawGuidePages: GuidePage[] = [
     title: "Separated Parents and School Holidays",
     h1: "Separated parents and school holidays",
     metaDescription:
-      "General guide for separated parents planning school holidays, including child arrangements, travel, communication, and what to prepare before speaking to a solicitor.",
+      "Guide for separated parents planning school holidays: child arrangements, travel, communication, and what to prepare before seeing a solicitor.",
     category: "Family and Divorce",
     relatedServiceSlug: "family-law-solicitors-kidderminster",
     intro:
@@ -10786,7 +10786,7 @@ const rawGuidePages: GuidePage[] = [
     title: "Redundancy Rights Overview",
     h1: "Redundancy rights overview",
     metaDescription:
-      "General overview of redundancy rights, consultation, selection, redundancy pay, notice, settlement agreements, and what to prepare before speaking to a solicitor.",
+      "General overview of redundancy rights: consultation, selection, redundancy pay, notice, settlement agreements, and what to prepare beforehand.",
     category: "Employment",
     relatedServiceSlug: "redundancy-solicitors-kidderminster",
     intro:
@@ -10856,7 +10856,7 @@ const rawGuidePages: GuidePage[] = [
     title: "Sham Redundancy Explained",
     h1: "Sham redundancy explained",
     metaDescription:
-      "General UK guide to sham redundancy concerns, selection, consultation, replacement roles, evidence, questions to ask, and when to compare employment solicitor options.",
+      "General UK guide to sham redundancy: selection, consultation, replacement roles, evidence, and when to compare employment solicitor options.",
     category: "Employment",
     relatedServiceSlug: "redundancy-solicitors-kidderminster",
     intro:
@@ -10996,7 +10996,7 @@ const rawGuidePages: GuidePage[] = [
     title: "Constructive Dismissal Explained",
     h1: "Constructive dismissal explained",
     metaDescription:
-      "General UK guide to constructive dismissal, serious workplace problems, resignation timing, grievances, evidence, and what to prepare before speaking to a solicitor.",
+      "General UK guide to constructive dismissal: serious workplace problems, resignation timing, grievances, and what to prepare before seeing a solicitor.",
     category: "Employment",
     relatedServiceSlug: "constructive-dismissal-solicitors-kidderminster",
     intro:
@@ -11206,7 +11206,7 @@ const rawGuidePages: GuidePage[] = [
     title: "Basic Employee Rights Explained",
     h1: "Basic employee rights explained",
     metaDescription:
-      "General UK guide to basic employee rights, written terms, pay, holiday, sick pay, dismissal, redundancy, family leave, and what to prepare before seeking support.",
+      "General UK guide to basic employee rights: written terms, pay, holiday, sick pay, dismissal, redundancy, family leave, and where to get support.",
     category: "Employment",
     relatedServiceSlug: "employment-solicitors-kidderminster",
     intro:
@@ -12953,7 +12953,7 @@ const rawGuidePages: GuidePage[] = [
   }),
   createQualityGuide({
     slug: "personal-injury-vs-clinical-negligence",
-    title: "Personal Injury and Clinical Negligence: What Is the Difference?",
+    title: "Personal Injury vs Clinical Negligence Explained",
     h1: "Personal injury and clinical negligence: what is the difference?",
     metaDescription:
       "General guide to the difference between personal injury and clinical negligence, evidence, medical records, funding, timing, and solicitor questions.",
@@ -13920,7 +13920,7 @@ const rawGuidePages: GuidePage[] = [
     title: "NDA Solicitor Guide",
     h1: "NDA solicitor guide",
     metaDescription:
-      "General guide to non-disclosure agreements, including confidential information, exclusions, duration, remedies, business sales, and questions to ask a solicitor.",
+      "General guide to non-disclosure agreements: confidential information, exclusions, duration, remedies, and questions to ask a solicitor.",
     category: "Commercial, Debt, Landlord and Tenant",
     relatedServiceSlug: "franchise-agreement-solicitors-kidderminster",
     intro:
@@ -14364,7 +14364,7 @@ const rawGuidePages: GuidePage[] = [
     title: "Business Due Diligence Checklist",
     h1: "Business due diligence checklist",
     metaDescription:
-      "General business due diligence checklist for buyers and sellers, including company records, contracts, employees, property, debts, disputes, and completion risk.",
+      "General business due diligence checklist for buyers and sellers: company records, contracts, employees, property, debts, and completion risk.",
     category: "Commercial, Debt, Landlord and Tenant",
     relatedServiceSlug: "business-sale-solicitors-kidderminster",
     intro:
@@ -14956,7 +14956,7 @@ const rawGuidePages: GuidePage[] = [
     title: "Common Land and Town or Village Greens Explained",
     h1: "Common land and town or village greens explained",
     metaDescription:
-      "General guide to common land and town or village greens, including registration, grazing rights, public access, development constraints, and solicitor questions.",
+      "General guide to common land and town or village greens: registration, grazing rights, public access, development limits, and solicitor questions.",
     category: "Rural and Agricultural",
     relatedServiceSlug: "common-land-solicitors",
     intro:
@@ -16168,6 +16168,20 @@ export function buildPagePath(page: SitePage) {
 
 export function buildGuidePath(slug: string) {
   return `/legal-guides/${slug}/`;
+}
+
+export function buildPageTitle(title: string) {
+  // Titles that already reference the locality stand alone — this avoids the
+  // duplicated "...Kidderminster | Kidderminster Solicitors" tail and the
+  // over-length <title> tags it produced.
+  if (/Kidderminster|Wyre Forest|Worcestershire/i.test(title)) {
+    return title;
+  }
+
+  // Otherwise add a brand/location tail, but only when it keeps the tag within
+  // the ~60-char limit. Longer informational titles stand on their own.
+  const withBrand = `${title} | Kidderminster Solicitors`;
+  return withBrand.length <= 60 ? withBrand : title;
 }
 
 export function buildBreadcrumbItems(page: SitePage) {

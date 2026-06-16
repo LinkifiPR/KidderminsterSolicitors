@@ -4,6 +4,7 @@ import { ContentPageView } from "../../components/ContentPageView";
 import {
   buildCanonicalUrl,
   buildGuidePath,
+  buildPageTitle,
   getPageBySlug,
   getRootPageSlugs,
   socialShareImage,
@@ -30,13 +31,13 @@ export async function generateMetadata({
   }
 
   return {
-    title: page.title,
+    title: { absolute: buildPageTitle(page.title) },
     description: page.metaDescription,
     alternates: {
       canonical: buildCanonicalUrl(page.slug),
     },
     openGraph: {
-      title: page.title,
+      title: buildPageTitle(page.title),
       description: page.metaDescription,
       url: buildCanonicalUrl(page.slug),
       images: [socialShareImage],

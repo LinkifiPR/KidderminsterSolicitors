@@ -5,6 +5,7 @@ import {
   buildBreadcrumbSchema,
   buildCanonicalUrl,
   buildGuideArticleSchema,
+  buildPageTitle,
   coreServiceSlugs,
   getAllPageSlugs,
   getDynamicPageSlugs,
@@ -863,5 +864,35 @@ describe("link target integrity", () => {
         ).toBeTruthy();
       }
     });
+  });
+});
+
+describe("metadata length budgets", () => {
+  const all = [...servicePages, ...trustPages, ...guidePages];
+
+  it("keeps every rendered <title> within 60 characters", () => {
+    all.forEach((page) => {
+      const rendered = buildPageTitle(page.title);
+      expect(
+        rendered.length,
+        `title too long (${rendered.length}): ${rendered}`,
+      ).toBeLessThanOrEqual(60);
+    });
+  });
+
+  it("keeps every meta description within 160 characters", () => {
+    all.forEach((page) => {
+      expect(
+        page.metaDescription.length,
+        `meta too long (${page.metaDescription.length}) on "${page.slug}"`,
+      ).toBeLessThanOrEqual(160);
+    });
+  });
+
+  it("keeps titles and meta descriptions unique", () => {
+    const titles = all.map((page) => page.title);
+    const metas = all.map((page) => page.metaDescription);
+    expect(new Set(titles).size).toBe(titles.length);
+    expect(new Set(metas).size).toBe(metas.length);
   });
 });

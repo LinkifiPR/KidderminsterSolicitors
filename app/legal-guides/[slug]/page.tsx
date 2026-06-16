@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ContentPageView } from "../../../components/ContentPageView";
 import {
   buildCanonicalUrl,
+  buildPageTitle,
   getPageBySlug,
   guidePages,
   socialShareImage,
@@ -29,13 +30,13 @@ export async function generateMetadata({
   }
 
   return {
-    title: page.title,
+    title: { absolute: buildPageTitle(page.title) },
     description: page.metaDescription,
     alternates: {
       canonical: buildCanonicalUrl(page.slug),
     },
     openGraph: {
-      title: page.title,
+      title: buildPageTitle(page.title),
       description: page.metaDescription,
       url: buildCanonicalUrl(page.slug),
       images: [socialShareImage],

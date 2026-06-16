@@ -137,7 +137,7 @@ export default function Home() {
               <div className="relative h-[430px] lg:h-[500px]">
                 <Image
                   src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=1400&q=82"
-                  alt="Professional office setting for solicitor service enquiries"
+                  alt="Welcoming solicitor office where Kidderminster clients discuss their legal enquiries"
                   fill
                   priority
                   sizes="(min-width: 1024px) 680px, 100vw"
