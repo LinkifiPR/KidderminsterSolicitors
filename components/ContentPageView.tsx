@@ -2,7 +2,10 @@ import { QuoteForm } from "./QuoteForm";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 import {
+  buildBreadcrumbItems,
+  buildBreadcrumbSchema,
   buildFaqSchema,
+  buildGuideArticleSchema,
   buildGuidePath,
   buildPagePath,
   getMoreGuidesInCategory,
@@ -116,6 +119,37 @@ export function ContentPageView({ page }: { page: SitePage }) {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-32 bg-white" />
         <div className="mx-auto grid max-w-7xl gap-8 rounded-[2rem] border border-[var(--border)] bg-white p-6 shadow-[0_26px_90px_rgba(7,24,39,0.1)] sm:p-10 lg:grid-cols-[1.18fr_0.82fr] lg:items-start">
           <div className="self-center">
+            <nav aria-label="Breadcrumb" className="mb-5">
+              <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-semibold uppercase tracking-[0.08em] text-[var(--muted)]">
+                {buildBreadcrumbItems(page).map((item, index, items) => {
+                  const isLast = index === items.length - 1;
+                  return (
+                    <li key={item.url} className="flex items-center gap-2">
+                      {isLast ? (
+                        <span
+                          aria-current="page"
+                          className="text-[var(--trust-blue)]"
+                        >
+                          {item.name}
+                        </span>
+                      ) : (
+                        <a
+                          href={item.path}
+                          className="transition hover:text-[var(--trust-blue)]"
+                        >
+                          {item.name}
+                        </a>
+                      )}
+                      {!isLast ? (
+                        <span aria-hidden="true" className="text-[var(--gold)]">
+                          ›
+                        </span>
+                      ) : null}
+                    </li>
+                  );
+                })}
+              </ol>
+            </nav>
             <p className="text-sm font-semibold uppercase text-[var(--gold)]">
               {isService
                 ? "Solicitor comparison guide"
@@ -580,6 +614,20 @@ export function ContentPageView({ page }: { page: SitePage }) {
         >
           Request a quote
         </a>
+      ) : null}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(buildBreadcrumbSchema(page)),
+        }}
+      />
+      {page.type === "guide" ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(buildGuideArticleSchema(page)),
+          }}
+        />
       ) : null}
       <SiteFooter />
     </main>

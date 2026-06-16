@@ -38,11 +38,15 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
+    locale: "en_GB",
     siteName: "Kidderminster Solicitors",
     url: baseUrl,
     title: "Kidderminster Solicitors",
     description:
       "Compare local legal services and request a no obligation quote from a trusted solicitor partner.",
+  },
+  twitter: {
+    card: "summary_large_image",
   },
 };
 
@@ -54,6 +58,8 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body className={`${inter.variable} ${manrope.variable}`}>
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
         {children}
         <Analytics />
         <CookieConsentMount />

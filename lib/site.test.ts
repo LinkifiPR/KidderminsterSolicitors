@@ -1,12 +1,16 @@
 import { describe, expect, it } from "vitest";
 import {
   baseUrl,
+  buildBreadcrumbItems,
+  buildBreadcrumbSchema,
   buildCanonicalUrl,
+  buildGuideArticleSchema,
   coreServiceSlugs,
   getAllPageSlugs,
   getDynamicPageSlugs,
   getGuidesForCategoryGroup,
   getMoreGuidesInCategory,
+  getPageBySlug,
   getRelatedServicesForPage,
   getRootPageSlugs,
   guideCategoryGroups,
@@ -757,6 +761,107 @@ describe("site content model", () => {
       expect(page.sections?.some((section) => /questions to ask/i.test(section.heading))).toBe(
         true,
       );
+    });
+  });
+});
+
+describe("breadcrumbs, article, and organization schema", () => {
+  it("builds a two-level breadcrumb for service pages", () => {
+    const service = servicePages[0];
+    const items = buildBreadcrumbItems(service);
+
+    expect(items).toHaveLength(2);
+    expect(items[0]).toMatchObject({ name: "Home", path: "/" });
+    expect(items[1]).toMatchObject({
+      name: service.h1,
+      url: buildCanonicalUrl(service.slug),
+    });
+  });
+
+  it("builds a three-level breadcrumb for guide pages", () => {
+    const guide = guidePages[0];
+    const items = buildBreadcrumbItems(guide);
+
+    expect(items.map((item) => item.name)).toEqual([
+      "Home",
+      "Legal guides",
+      guide.h1,
+    ]);
+    expect(items[2].url).toBe(buildCanonicalUrl(guide.slug));
+  });
+
+  it("emits a BreadcrumbList with sequential positions and absolute URLs", () => {
+    const schema = buildBreadcrumbSchema(guidePages[0]) as {
+      "@type": string;
+      itemListElement: { position: number; item: string }[];
+    };
+
+    expect(schema["@type"]).toBe("BreadcrumbList");
+    schema.itemListElement.forEach((entry, index) => {
+      expect(entry.position).toBe(index + 1);
+      expect(entry.item).toMatch(/^https:\/\//);
+    });
+  });
+
+  it("emits Article schema for guides without implying a law firm", () => {
+    const guide = guidePages[0];
+    const schema = buildGuideArticleSchema(guide) as Record<string, unknown>;
+
+    expect(schema["@type"]).toBe("Article");
+    expect(schema.headline).toBe(guide.h1);
+    expect(schema.mainEntityOfPage).toMatchObject({
+      "@id": buildCanonicalUrl(guide.slug),
+    });
+
+    const serialized = JSON.stringify(schema);
+    expect(serialized).not.toContain("LegalService");
+    expect(serialized).not.toContain("Attorney");
+  });
+
+  it("enriches the organization schema while staying a guide brand", () => {
+    expect(guideOrganizationSchema).toMatchObject({
+      "@type": "Organization",
+      areaServed: expect.stringMatching(/Kidderminster/i),
+    });
+    expect(JSON.stringify(guideOrganizationSchema)).not.toContain("LegalService");
+  });
+});
+
+describe("link target integrity", () => {
+  it("resolves every related guide slug to a guide page", () => {
+    const guideSlugs = new Set(guidePages.map((guide) => guide.slug));
+
+    servicePages.forEach((service) => {
+      (service.relatedGuideSlugs ?? []).forEach((slug) => {
+        expect(
+          guideSlugs.has(slug),
+          `service "${service.slug}" -> missing guide "${slug}"`,
+        ).toBe(true);
+      });
+    });
+
+    guidePages.forEach((guide) => {
+      guide.relatedGuideSlugs.forEach((slug) => {
+        expect(
+          guideSlugs.has(slug),
+          `guide "${guide.slug}" -> missing guide "${slug}"`,
+        ).toBe(true);
+      });
+    });
+  });
+
+  it("resolves every inline [[anchor|slug]] link to a real page", () => {
+    const pattern = /\[\[([^\]|]+)\|([a-z0-9-]+)\]\]/g;
+
+    [...servicePages, ...guidePages].forEach((page) => {
+      const blob = JSON.stringify(page);
+      for (const match of blob.matchAll(pattern)) {
+        const slug = match[2];
+        expect(
+          getPageBySlug(slug),
+          `page "${page.slug}" -> unresolved inline link "${slug}"`,
+        ).toBeTruthy();
+      }
     });
   });
 });

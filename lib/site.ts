@@ -1,5 +1,12 @@
 export const baseUrl = "https://kidderminstersolicitors.co.uk";
 
+export const socialShareImage = {
+  url: "/opengraph-image",
+  width: 1200,
+  height: 630,
+  alt: "Kidderminster Solicitors — an independent local guide to finding trusted solicitors",
+};
+
 export const phaseOneServiceSlugs = [
   "conveyancing-solicitors-kidderminster",
   "probate-solicitors-kidderminster",
@@ -16106,8 +16113,10 @@ export const guideOrganizationSchema = {
   "@type": "Organization",
   name: "Kidderminster Solicitors",
   url: baseUrl,
+  logo: `${baseUrl}/icon.svg`,
   description:
     "An independent local guide to finding trusted solicitors in Kidderminster.",
+  areaServed: "Kidderminster and the Wyre Forest district, Worcestershire",
 };
 
 export const websiteSchema = {
@@ -16159,6 +16168,75 @@ export function buildPagePath(page: SitePage) {
 
 export function buildGuidePath(slug: string) {
   return `/legal-guides/${slug}/`;
+}
+
+export function buildBreadcrumbItems(page: SitePage) {
+  const items = [{ name: "Home", path: "/", url: baseUrl }];
+
+  if (page.type === "guide") {
+    items.push({
+      name: "Legal guides",
+      path: "/legal-guides/",
+      url: `${baseUrl}/legal-guides/`,
+    });
+  }
+
+  items.push({
+    name: page.h1,
+    path: buildPagePath(page),
+    url: buildCanonicalUrl(page.slug),
+  });
+
+  return items;
+}
+
+export function buildBreadcrumbSchema(page: SitePage) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: buildBreadcrumbItems(page).map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+}
+
+export function buildGuideArticleSchema(page: GuidePage) {
+  const url = buildCanonicalUrl(page.slug);
+  const updatedDate = new Date(page.updated);
+  const iso = Number.isNaN(updatedDate.getTime())
+    ? null
+    : updatedDate.toISOString();
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: page.h1,
+    description: page.metaDescription,
+    url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    articleSection: page.category,
+    author: {
+      "@type": "Organization",
+      name: "Kidderminster Solicitors",
+      url: baseUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Kidderminster Solicitors",
+      url: baseUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${baseUrl}/icon.svg`,
+      },
+    },
+    ...(iso ? { datePublished: iso, dateModified: iso } : {}),
+  };
 }
 
 const inlineInternalLinkPattern = /\[\[([^\]|]+)\|([a-z0-9-]+)\]\]/g;

@@ -5,6 +5,7 @@ import {
   buildCanonicalUrl,
   getPageBySlug,
   guidePages,
+  socialShareImage,
 } from "../../../lib/site";
 
 type PageProps = {
@@ -37,6 +38,7 @@ export async function generateMetadata({
       title: page.title,
       description: page.metaDescription,
       url: buildCanonicalUrl(page.slug),
+      images: [socialShareImage],
     },
   };
 }
