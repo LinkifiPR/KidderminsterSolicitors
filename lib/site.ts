@@ -15469,6 +15469,553 @@ const rawGuidePages: GuidePage[] = [
       },
     ],
   }),
+  createQualityGuide({
+    slug: "how-long-personal-injury-claims-take",
+    title: "How Long Do Personal Injury Claims Take?",
+    h1: "How long do personal injury claims take?",
+    metaDescription:
+      "General guide to how long personal injury claims can take: investigation, medical evidence, negotiation, court timelines, and the factors that affect timing.",
+    category: "Personal Injury and Negligence",
+    relatedServiceSlug: "accident-injury-solicitors-kidderminster",
+    intro:
+      "Personal injury timescales vary widely depending on injury severity, whether fault is admitted, how long recovery takes, and whether the matter settles or goes to court. This guide explains the stages that influence timing.",
+    keyTakeaways: [
+      "Straightforward claims with admitted fault can resolve in months, while serious or disputed injuries can take a year or longer.",
+      "Medical recovery often drives timing, because a reliable prognosis is usually needed before a claim can be valued properly.",
+      "Liability disputes, missing evidence, and multiple parties tend to extend timescales.",
+    ],
+    topicOverview: [
+      "Most personal injury matters move through broadly similar stages: early investigation and evidence gathering, medical assessment, valuation, negotiation with insurers, and, if needed, court proceedings. Each stage can be quick or slow depending on the facts.",
+      "Timing is rarely fixed at the outset. A claim where the other side admits responsibility and the injury heals predictably is very different from one where fault is denied or the recovery is long or uncertain.",
+    ],
+    practicalExamples: [
+      "A minor injury with an early admission of fault and a clear prognosis might be resolved relatively quickly once treatment is complete.",
+      "A serious injury affecting someone in the Kidderminster or Wyre Forest area may need specialist medical evidence and rehabilitation before it can be valued, which naturally takes longer.",
+    ],
+    commonProblems: [
+      "Delays often come from waiting for medical records, arranging expert reports, or chasing insurers who are slow to respond or who dispute responsibility.",
+      "Settling too early, before the full effect of an injury is understood, is another common problem because it can undervalue a claim.",
+    ],
+    prepareItems: [
+      "the accident date and location",
+      "how the injury happened",
+      "details of any other party or insurer",
+      "treatment received so far",
+      "any ongoing symptoms",
+      "time off work or lost earnings",
+      "key dates or deadlines",
+    ],
+    questionItems: [
+      "what stages the claim is likely to involve",
+      "what could speed it up or slow it down",
+      "when the injury can realistically be valued",
+      "how interim payments might work",
+      "what happens if liability is disputed",
+    ],
+    localContext:
+      "Personal injury enquiries around Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the wider Wyre Forest area can involve local medical providers, employers, and insurers, which can affect how quickly evidence is gathered.",
+    relatedGuideSlugs: [
+      "no-win-no-fee-explained",
+      "personal-injury-compensation-amounts",
+      "pedestrian-accident-claims",
+      "workplace-injury-claims",
+    ],
+    faq: [
+      {
+        question: "How long does an average personal injury claim take?",
+        answer:
+          "There is no fixed average. Simple claims with admitted fault can take a few months, while serious or disputed claims can take a year or more once medical evidence and negotiation are complete.",
+      },
+      {
+        question: "Why does medical evidence affect timing so much?",
+        answer:
+          "A claim is usually valued once the likely recovery is understood. If a prognosis is uncertain, a solicitor may wait for further medical evidence so the claim is not settled for too little.",
+      },
+      {
+        question: "Does this website handle personal injury claims?",
+        answer:
+          "No. This website does not handle claims or provide legal advice. It can help you request a no obligation introduction to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "personal-injury-claim-time-limits",
+    title: "Personal Injury Claim Time Limits",
+    h1: "Personal injury claim time limits",
+    metaDescription:
+      "General guide to personal injury claim time limits: the usual three-year period, exceptions for children and capacity, and the date of knowledge rule.",
+    category: "Personal Injury and Negligence",
+    relatedServiceSlug: "medical-negligence-solicitors-kidderminster",
+    intro:
+      "Personal injury claims are subject to time limits, and missing a deadline can prevent a claim entirely. This guide explains the general limitation rules and the common exceptions, so you understand why timing matters.",
+    keyTakeaways: [
+      "The general time limit for personal injury claims is usually three years from the date of the accident or the date of knowledge.",
+      "Different rules can apply for children, people who lack capacity, fatal claims, and some specific situations.",
+      "Acting early helps preserve evidence and avoids the risk of a deadline being missed.",
+    ],
+    topicOverview: [
+      "Limitation law sets a window within which a court claim must usually be started. For many injuries the period is three years, running either from the incident or from the date the person first knew their injury was significant and linked to someone else.",
+      "Exceptions exist. For children the period often runs from their eighteenth birthday, and for people who lack mental capacity time may not run in the usual way. The detail depends on the facts, so general rules should not be relied on as advice.",
+    ],
+    practicalExamples: [
+      "Someone injured in a road accident near Kidderminster would usually need to be aware of the three-year window from the date of the collision.",
+      "A person who only later realises an illness was caused by a workplace exposure in the Wyre Forest area may have time running from their date of knowledge rather than the original exposure.",
+    ],
+    commonProblems: [
+      "A frequent problem is assuming there is plenty of time and then approaching the deadline with weak evidence or without having taken advice.",
+      "Confusion about when the clock started, especially in date-of-knowledge cases, can also cause people to act too late.",
+    ],
+    prepareItems: [
+      "the date of the accident or first awareness",
+      "how and when the injury or illness arose",
+      "whether the injured person is a child or lacks capacity",
+      "any correspondence with insurers",
+      "any previous legal contact about the matter",
+      "key upcoming dates",
+    ],
+    questionItems: [
+      "which limitation period applies to my situation",
+      "when the time limit is likely to have started",
+      "whether any exception might apply",
+      "what evidence should be preserved now",
+      "what happens if a deadline is close",
+    ],
+    localContext:
+      "Time-limit questions for people in Kidderminster, Stourport, Bewdley, and the Wyre Forest area are general, but acting promptly helps a local solicitor partner assess evidence while it is still available.",
+    relatedGuideSlugs: [
+      "how-long-personal-injury-claims-take",
+      "medical-negligence-claims-where-to-start",
+      "no-win-no-fee-explained",
+      "personal-injury-vs-clinical-negligence",
+    ],
+    faq: [
+      {
+        question: "What is the time limit for a personal injury claim?",
+        answer:
+          "It is usually three years from the date of the accident or from the date of knowledge, but exceptions apply for children, people who lack capacity, and certain other situations.",
+      },
+      {
+        question: "What is the date of knowledge?",
+        answer:
+          "It is broadly the point at which someone first knew, or reasonably should have known, that a significant injury was linked to another party. In some cases time runs from then rather than the original event.",
+      },
+      {
+        question: "Can a time limit ever be extended?",
+        answer:
+          "A court has discretion to allow some claims out of time in limited circumstances, but this is not guaranteed. It is far safer to take advice well before any deadline.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "what-to-do-after-a-car-accident",
+    title: "What to Do After a Car Accident",
+    h1: "What to do after a car accident",
+    metaDescription:
+      "General guide to what to do after a car accident: staying safe, exchanging details, gathering evidence, medical treatment, and questions for a solicitor.",
+    category: "Personal Injury and Negligence",
+    relatedServiceSlug: "accident-injury-solicitors-kidderminster",
+    intro:
+      "The steps taken in the hours and days after a car accident can affect both safety and any later claim. This guide explains the practical information worth recording and the common mistakes to avoid.",
+    keyTakeaways: [
+      "Safety comes first: check for injuries, make the scene safe, and contact emergency services where needed.",
+      "Recording driver, vehicle, insurer, and witness details early can make a real difference later.",
+      "Prompt medical assessment protects health and creates a clear record of any injury.",
+    ],
+    topicOverview: [
+      "After a collision the immediate priorities are safety and any necessary emergency response. Once that is dealt with, the practical focus turns to recording what happened while details are fresh.",
+      "Useful information includes the other vehicle and driver details, insurer information, the location and time, photographs of the scene and damage, and the names of any witnesses. A short written note made soon afterwards can help.",
+    ],
+    practicalExamples: [
+      "A driver involved in a collision on a busy Kidderminster road may photograph vehicle positions, exchange insurer details, and note any nearby cameras.",
+      "A passenger injured in a Wyre Forest car accident may need their own record of the incident, treatment, and any time taken off work.",
+    ],
+    commonProblems: [
+      "Common problems include failing to record the other driver's details, not seeking medical assessment promptly, and losing witness contact information.",
+      "Accepting an early settlement or signing insurer paperwork that is not understood can also cause difficulties later.",
+    ],
+    prepareItems: [
+      "the date, time, and location",
+      "other driver and vehicle details",
+      "insurer details if available",
+      "photographs of the scene and damage",
+      "witness names and contact details",
+      "any police reference number",
+      "details of medical treatment",
+    ],
+    questionItems: [
+      "what evidence matters most",
+      "how to handle insurer contact",
+      "how medical evidence is obtained",
+      "what to do if fault is disputed",
+      "how funding such as no win no fee works",
+    ],
+    localContext:
+      "Car accident enquiries around Kidderminster, Stourport, Bewdley, Cookley, Hagley, and the Wyre Forest area can involve local roads, junctions, car parks, and regional insurers, so a clear local record helps.",
+    relatedGuideSlugs: [
+      "pedestrian-accident-claims",
+      "personal-injury-compensation-amounts",
+      "no-win-no-fee-explained",
+      "how-long-personal-injury-claims-take",
+    ],
+    faq: [
+      {
+        question: "What details should I record after a car accident?",
+        answer:
+          "Record the other driver and vehicle details, insurer information, location and time, photographs, witness contacts, and any police reference. A short written note made soon afterwards is helpful.",
+      },
+      {
+        question: "Should I see a doctor even for a minor injury?",
+        answer:
+          "Prompt medical assessment is sensible for your health and creates a clear record. Some injuries, such as whiplash, can take time to appear, so early advice is worthwhile.",
+      },
+      {
+        question: "Does this website deal with car accident claims?",
+        answer:
+          "No. This website does not deal with claims or give legal advice. It can help you request a no obligation introduction to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "slips-trips-falls-claims",
+    title: "Slips, Trips and Falls Claims Explained",
+    h1: "Slips, trips and falls claims explained",
+    metaDescription:
+      "General guide to slips, trips and falls claims: occupier responsibility, evidence, reporting, medical records, and the questions to ask a solicitor.",
+    category: "Personal Injury and Negligence",
+    relatedServiceSlug: "personal-injury-solicitors-kidderminster",
+    intro:
+      "Slip, trip, and fall enquiries often turn on whether someone responsible for a place took reasonable care to keep it safe. This guide explains the practical issues and the evidence that tends to matter.",
+    keyTakeaways: [
+      "Whether a claim is possible usually depends on whether the person in control of the place failed to take reasonable care.",
+      "Evidence such as photographs, incident reports, and witness details is often important and is best gathered early.",
+      "Prompt medical attention both protects health and records the injury.",
+    ],
+    topicOverview: [
+      "Slips, trips, and falls can happen in shops, workplaces, public spaces, and private premises. The key legal question is often whether the occupier or employer took reasonable steps to manage the hazard.",
+      "Evidence tends to focus on the hazard itself, how long it was present, whether it was reported, and whether warnings or cleaning systems were in place. Photographs and contemporaneous reports help establish these points.",
+    ],
+    practicalExamples: [
+      "A shopper who slips on an unmarked wet floor in Kidderminster might photograph the area, ask for an incident report, and note any witnesses.",
+      "An employee who trips over poor flooring in a Wyre Forest workplace may have questions about reporting, risk assessments, and time off work.",
+    ],
+    commonProblems: [
+      "Problems often arise where the hazard is cleared before it is photographed, where no incident report is made, or where witness details are not taken.",
+      "Delaying medical assessment can also make it harder to link the injury clearly to the fall.",
+    ],
+    prepareItems: [
+      "where and when the fall happened",
+      "what caused it",
+      "photographs of the hazard if available",
+      "any incident or accident report",
+      "witness names and contacts",
+      "details of medical treatment",
+      "any time off work",
+    ],
+    questionItems: [
+      "who may be responsible for the place",
+      "what evidence is needed",
+      "how to obtain any incident report",
+      "how medical evidence is arranged",
+      "how funding options work",
+    ],
+    localContext:
+      "Slip, trip, and fall enquiries around Kidderminster, Stourport, Bewdley, and the Wyre Forest area can involve local shops, workplaces, pavements, and public spaces, so a clear local record of the hazard helps.",
+    relatedGuideSlugs: [
+      "workplace-injury-claims",
+      "personal-injury-compensation-amounts",
+      "no-win-no-fee-explained",
+      "how-long-personal-injury-claims-take",
+    ],
+    faq: [
+      {
+        question: "When can I claim for a slip, trip, or fall?",
+        answer:
+          "A claim may be possible where the person responsible for a place failed to take reasonable care to keep it safe and that failure caused the injury. The facts and evidence matter a great deal.",
+      },
+      {
+        question: "What evidence helps a slip or trip claim?",
+        answer:
+          "Helpful evidence can include photographs of the hazard, an incident report, witness details, and medical records. Gathering this early, before the hazard is cleared, is valuable.",
+      },
+      {
+        question: "Does this website assess slip and trip claims?",
+        answer:
+          "No. This website does not assess claims or provide legal advice. It can help you request a no obligation introduction to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "shareholder-disputes-options",
+    title: "Shareholder Disputes: Your Options",
+    h1: "Shareholder disputes: your options",
+    metaDescription:
+      "General guide to shareholder disputes: common causes, the articles and any shareholders agreement, unfair prejudice, exit routes, and questions for a solicitor.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "shareholder-dispute-solicitors-kidderminster",
+    intro:
+      "Shareholder disputes can disrupt a company and damage its value. This guide explains the common causes, where rights usually come from, and the options that are often considered before matters escalate.",
+    keyTakeaways: [
+      "Shareholder rights usually come from company law, the articles of association, and any shareholders agreement.",
+      "Common flashpoints include dividends, director pay, decision-making, share transfers, and access to information.",
+      "Options range from negotiation and mediation through to formal remedies such as an unfair prejudice petition.",
+    ],
+    topicOverview: [
+      "Disputes between shareholders often arise where owners disagree about strategy, money, or control. Understanding where the rights sit, in the articles, any shareholders agreement, and company law, is usually the starting point.",
+      "Many disputes are resolved by negotiation, a buyout, or agreed changes to how the company is run. Where that fails, formal court remedies exist, but they can be costly and are usually a last resort.",
+    ],
+    practicalExamples: [
+      "A minority shareholder in a Kidderminster company might be concerned about being excluded from decisions or not receiving dividends while directors take large salaries.",
+      "Co-owners of a Wyre Forest business may disagree about selling the company, prompting questions about share valuation and exit routes.",
+    ],
+    commonProblems: [
+      "Problems often stem from there being no shareholders agreement, or an outdated one, leaving little clarity on how disagreements or exits should be handled.",
+      "Letting a dispute drift can harm the business, so early clarity on rights and realistic options usually helps.",
+    ],
+    prepareItems: [
+      "the company name and your shareholding",
+      "the articles of association",
+      "any shareholders agreement",
+      "what the disagreement is about",
+      "relevant board or company decisions",
+      "any correspondence between owners",
+      "what outcome you are hoping for",
+    ],
+    questionItems: [
+      "where my rights come from",
+      "what options realistically exist",
+      "how a share valuation might work",
+      "whether negotiation or mediation could help",
+      "what a formal remedy would involve",
+    ],
+    localContext:
+      "Shareholder dispute enquiries among Kidderminster and Wyre Forest businesses are general legal matters, but local owners often value clear communication and a practical, proportionate approach.",
+    relatedGuideSlugs: [
+      "shareholders-agreement-guide",
+      "directors-duties-explained",
+      "just-equitable-winding-up",
+    ],
+    faq: [
+      {
+        question: "Where do shareholder rights actually come from?",
+        answer:
+          "They usually come from company law, the company's articles of association, and any shareholders agreement. Reviewing these documents is normally the first step in understanding a dispute.",
+      },
+      {
+        question: "What is an unfair prejudice petition?",
+        answer:
+          "It is a formal court remedy where a shareholder claims the company's affairs are being run in a way that unfairly harms their interests. It is one option but is usually a last resort.",
+      },
+      {
+        question: "Can a shareholder dispute be settled without court?",
+        answer:
+          "Often yes. Many disputes resolve through negotiation, a buyout, or agreed governance changes. A solicitor partner can explain how these options compare for a particular situation.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "partnership-disputes-explained",
+    title: "Partnership Disputes Explained",
+    h1: "Partnership disputes explained",
+    metaDescription:
+      "General guide to partnership disputes: the partnership agreement, profit and decision disagreements, dissolution, and the questions to ask a solicitor.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "partnership-dispute-solicitors-kidderminster",
+    intro:
+      "Disputes between business partners can affect income, reputation, and the future of the business. This guide explains where partnership rights come from and the options often considered when partners fall out.",
+    keyTakeaways: [
+      "Partnership rights usually come from the partnership agreement and partnership law where there is no agreement.",
+      "Common disputes involve profit shares, workload, decision-making, drawings, and how a partner can leave.",
+      "Resolving matters early, by negotiation or agreed changes, is usually less damaging than dissolution.",
+    ],
+    topicOverview: [
+      "A partnership dispute often turns on what the partners agreed, in writing or otherwise, and what the law implies where there is no clear agreement. Without a written agreement, default legal rules can apply in ways partners did not expect.",
+      "Options can include renegotiating terms, one partner buying out another, or, in serious cases, dissolving the partnership. Each route has different financial and practical consequences.",
+    ],
+    practicalExamples: [
+      "Two partners running a Kidderminster business might disagree about reinvesting profits versus taking higher drawings.",
+      "A Wyre Forest partnership without a written agreement may face uncertainty when one partner wants to leave or retire.",
+    ],
+    commonProblems: [
+      "The most common problem is having no written partnership agreement, or an outdated one, which leaves key questions unresolved.",
+      "Mixing personal and business finances and poor record-keeping can also make disputes harder to untangle.",
+    ],
+    prepareItems: [
+      "the partnership name and partners involved",
+      "any written partnership agreement",
+      "what the disagreement concerns",
+      "how profits and drawings are handled",
+      "relevant accounts or records",
+      "any correspondence between partners",
+      "the outcome you would prefer",
+    ],
+    questionItems: [
+      "what the agreement or law says applies",
+      "what options exist to resolve it",
+      "how a partner can leave or be bought out",
+      "what dissolution would involve",
+      "how business assets and debts are treated",
+    ],
+    localContext:
+      "Partnership dispute enquiries among Kidderminster and Wyre Forest businesses are general matters, but local partners often want a practical resolution that protects the business and ongoing relationships where possible.",
+    relatedGuideSlugs: [
+      "shareholders-agreement-guide",
+      "just-equitable-winding-up",
+      "enforceable-contracts-explained",
+    ],
+    faq: [
+      {
+        question: "What happens if there is no partnership agreement?",
+        answer:
+          "Default rules under partnership law can apply, which may not reflect what the partners intended. This is why disagreements are often harder to resolve without a written agreement.",
+      },
+      {
+        question: "Can one partner force the partnership to end?",
+        answer:
+          "Depending on the agreement and the type of partnership, a partner may be able to trigger dissolution, but the consequences can be significant. Advice on the specific situation is important.",
+      },
+      {
+        question: "Does this website resolve partnership disputes?",
+        answer:
+          "No. This website does not resolve disputes or provide legal advice. It can help you request a no obligation introduction to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "commercial-rent-arrears-landlord-options",
+    title: "Commercial Rent Arrears: Landlord Options",
+    h1: "Commercial rent arrears: landlord options",
+    metaDescription:
+      "General guide to commercial rent arrears for landlords: recovery options, forfeiture risks, CRAR, guarantors, and the questions to ask a solicitor.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "commercial-rent-arrears-solicitors-kidderminster",
+    intro:
+      "When a commercial tenant falls behind on rent, a landlord usually has several possible options, each with risks and consequences. This guide explains the common routes and why the lease terms matter.",
+    keyTakeaways: [
+      "A landlord's options usually depend on the lease terms, the amount owed, and the tenant's circumstances.",
+      "Routes can include negotiation, recovering rent from guarantors, commercial rent arrears recovery, and, in some cases, forfeiture.",
+      "Some steps, such as forfeiture, carry real risks and can be difficult to reverse, so care is needed.",
+    ],
+    topicOverview: [
+      "Commercial rent arrears situations usually start with the lease, which sets out the rent, payment dates, and the remedies available. The right approach depends on what the landlord wants: to keep the tenant or to recover possession.",
+      "Options can include agreeing a payment plan, pursuing a guarantor or rent deposit, using the commercial rent arrears recovery process, serving statutory demands, or forfeiting the lease. Each has different costs and consequences.",
+    ],
+    practicalExamples: [
+      "A Kidderminster landlord whose tenant has missed several months may weigh a payment plan against the risk and cost of recovering possession.",
+      "A Wyre Forest landlord with a guarantor in the lease may have questions about pursuing the guarantor rather than forfeiting.",
+    ],
+    commonProblems: [
+      "A common problem is taking a drastic step, such as forfeiture, without checking whether it has been waived by accepting rent or whether it is the best commercial outcome.",
+      "Acting without reviewing the lease terms and any rent deposit or guarantee can also lead to weaker options later.",
+    ],
+    prepareItems: [
+      "the lease and any guarantee or rent deposit",
+      "the amount and period of arrears",
+      "the payment history",
+      "any correspondence with the tenant",
+      "whether you want to keep or remove the tenant",
+      "any insolvency concerns about the tenant",
+      "relevant dates and deadlines",
+    ],
+    questionItems: [
+      "what options the lease allows",
+      "what the risks of forfeiture are",
+      "whether a guarantor or deposit can be used",
+      "how commercial rent arrears recovery works",
+      "what the likely cost and timescale are",
+    ],
+    localContext:
+      "Commercial rent arrears enquiries from Kidderminster and Wyre Forest landlords are general matters, but local landlords often want to balance recovering money with keeping a viable tenant in the premises.",
+    relatedGuideSlugs: [
+      "commercial-landlord-responsibilities",
+      "commercial-lease-repairing-obligations",
+      "commercial-property-disputes",
+    ],
+    faq: [
+      {
+        question: "What can a landlord do about commercial rent arrears?",
+        answer:
+          "Options can include negotiating a payment plan, pursuing a guarantor or rent deposit, using commercial rent arrears recovery, or forfeiting the lease. The right choice depends on the lease and the goal.",
+      },
+      {
+        question: "Is forfeiting the lease a good first step?",
+        answer:
+          "Not always. Forfeiture can be hard to reverse and may be waived by accepting rent. It is important to check the lease and the commercial position before taking that step.",
+      },
+      {
+        question: "Does this website recover rent arrears?",
+        answer:
+          "No. This website does not recover arrears or provide legal advice. It can help you request a no obligation introduction to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
+  createQualityGuide({
+    slug: "dilapidations-claims-explained",
+    title: "Dilapidations Claims Explained",
+    h1: "Dilapidations claims explained",
+    metaDescription:
+      "General guide to dilapidations claims: repairing obligations, schedules of dilapidations, end-of-lease liability, negotiation, and questions for a solicitor.",
+    category: "Commercial, Debt, Landlord and Tenant",
+    relatedServiceSlug: "dilapidations-solicitors-kidderminster",
+    intro:
+      "Dilapidations claims concern the condition of commercial premises and a tenant's repairing obligations, often at the end of a lease. This guide explains how these claims usually arise and what tends to drive their value.",
+    keyTakeaways: [
+      "Dilapidations claims usually flow from the repairing, decorating, and reinstatement obligations in the lease.",
+      "Landlords often serve a schedule of dilapidations setting out alleged breaches and costs.",
+      "The value claimed is not always the value recovered, and statutory limits and the landlord's actual loss can matter.",
+    ],
+    topicOverview: [
+      "Dilapidations issues arise where premises are not kept in the condition the lease requires. They are most common at lease end, when a landlord assesses the state of the property against the tenant's obligations.",
+      "A schedule of dilapidations typically lists the alleged breaches and the cost to put them right. The tenant can usually respond, and the figures are often negotiated, taking account of the landlord's actual loss and any statutory cap.",
+    ],
+    practicalExamples: [
+      "A Kidderminster business approaching the end of its lease may receive a schedule of dilapidations and need to understand which items it is genuinely liable for.",
+      "A Wyre Forest landlord planning to redevelop premises may find that its actual loss differs from the headline repair cost, which can affect the claim.",
+    ],
+    commonProblems: [
+      "A common problem is treating the schedule's headline figure as fixed, when many items are negotiable and some may not reflect the landlord's real loss.",
+      "Ignoring repairing obligations during the lease, then facing a large end-of-term claim, is another frequent issue.",
+    ],
+    prepareItems: [
+      "the lease and any licences for alterations",
+      "the repairing and reinstatement clauses",
+      "any schedule of dilapidations received",
+      "photographs or records of condition",
+      "the lease end date",
+      "any correspondence with the other party",
+      "whether the landlord plans works or redevelopment",
+    ],
+    questionItems: [
+      "what the lease actually requires",
+      "which schedule items are genuinely my liability",
+      "how the landlord's real loss affects the claim",
+      "whether any statutory cap applies",
+      "how these claims are usually negotiated",
+    ],
+    localContext:
+      "Dilapidations enquiries for Kidderminster and Wyre Forest commercial premises are general matters, but local tenants and landlords often want a proportionate, evidence-based approach to end-of-lease condition.",
+    relatedGuideSlugs: [
+      "commercial-lease-repairing-obligations",
+      "commercial-landlord-responsibilities",
+      "assigning-subletting-commercial-lease",
+    ],
+    faq: [
+      {
+        question: "What is a schedule of dilapidations?",
+        answer:
+          "It is a document, usually from the landlord, listing alleged breaches of the tenant's repairing and reinstatement obligations and the cost of putting them right. The figures are often negotiable.",
+      },
+      {
+        question: "Do I have to pay the full amount claimed?",
+        answer:
+          "Not necessarily. The landlord's actual loss and statutory limits can reduce what is recoverable, and many items are negotiated. Advice on the specific lease and schedule is important.",
+      },
+      {
+        question: "Does this website handle dilapidations claims?",
+        answer:
+          "No. This website does not handle claims or provide legal advice. It can help you request a no obligation introduction to a suitable solicitor partner where appropriate.",
+      },
+    ],
+  }),
 ];
 
 const anchorTextByServiceSlug: Record<string, string[]> = {
