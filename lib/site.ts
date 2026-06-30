@@ -636,10 +636,11 @@ export const servicePages: ServicePage[] = [
         ],
       },
       {
-        heading: "Local Kidderminster property context",
+        heading: "Local Kidderminster and Wyre Forest property context",
         body: [
           "Property transactions around Kidderminster and Wyre Forest can involve a mix of older homes, newer estates, flats, terraces, rural edges, leasehold issues, rights of way, drainage questions, planning history, and chain pressure. Local authority searches and enquiries may raise practical points that need explaining before exchange.",
           "A local or regional conveyancing solicitor may be useful if you want familiarity with Worcestershire property transactions, but many matters can also be handled remotely. The key is choosing a firm that explains the process clearly and gives you realistic expectations.",
+          "If your property is in a nearby town, you can also compare [[conveyancing solicitors in Stourport-on-Severn|conveyancing-solicitors-stourport-on-severn]] or [[conveyancing solicitors in Bewdley|conveyancing-solicitors-bewdley]], which cover riverside, flood-risk, and conservation-area points across the wider Wyre Forest district.",
         ],
       },
       {
@@ -682,6 +683,11 @@ export const servicePages: ServicePage[] = [
         question: "Do I have to instruct a firm introduced through this website?",
         answer:
           "No. You are under no obligation to instruct any firm introduced through this website.",
+      },
+      {
+        question: "Do you cover conveyancing across the Wyre Forest?",
+        answer:
+          "Yes. You can compare conveyancing solicitor options across Kidderminster and the wider Wyre Forest area, including Stourport-on-Severn, Bewdley, Cookley, and Hagley, and request a no obligation quote.",
       },
     ],
   },
@@ -1074,7 +1080,7 @@ export const servicePages: ServicePage[] = [
     title: "Wills Solicitors in Kidderminster | Compare Quotes",
     h1: "Wills solicitors in Kidderminster",
     metaDescription:
-      "Compare wills solicitor options in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
+      "Compare wills and will writing solicitor options in Kidderminster and request a no obligation quote from a suitable solicitor partner.",
     category: "Wills",
     summary:
       "Help finding solicitors for wills, estate planning, and related private client work.",
@@ -1095,6 +1101,14 @@ export const servicePages: ServicePage[] = [
           "A wills solicitor may help draft a new will, update an existing will, explain executor choices, record gifts, deal with property ownership questions, and discuss related documents such as lasting powers of attorney. They may also help reduce ambiguity where family circumstances are not straightforward.",
           "Simple wills can still raise important questions. A solicitor may ask about children, previous relationships, jointly owned property, business assets, overseas assets, vulnerable beneficiaries, and whether anyone may be disappointed by the will.",
           "The aim is usually to make the will clear enough that executors know what to do later. A poorly drafted or out-of-date will can create practical probate problems, family uncertainty, and extra cost after death.",
+        ],
+      },
+      {
+        heading: "Will writing in Kidderminster",
+        body: [
+          "Will writing in Kidderminster ranges from a straightforward single will to mirror wills for couples, updates to an existing will, and more detailed estate planning. Whether you search for will writing, a wills solicitor, or will writing services nearby, the underlying work is the same: setting out clear, valid instructions your executors can follow.",
+          "A solicitor-led will writing service can help where there are children, property, a business, or blended-family arrangements, because the wording must be precise and correctly witnessed. Comparing will writing options on cost and scope helps you see what is included before instructing anyone.",
+          "If you are comparing will writing in Kidderminster, Stourport, Bewdley, or the wider Wyre Forest area, you can request a no obligation quote and be introduced to a suitable solicitor partner where appropriate.",
         ],
       },
       {
@@ -1187,6 +1201,11 @@ export const servicePages: ServicePage[] = [
         question: "What should I prepare before requesting a wills quote?",
         answer:
           "Prepare details of assets, property, executors, beneficiaries, children or dependants, specific gifts, business interests, and any existing will or major life changes.",
+      },
+      {
+        question: "Do you offer will writing in Kidderminster?",
+        answer:
+          "This website is not a will writing provider, but it can introduce you to a suitable solicitor partner offering will writing in Kidderminster and the wider Wyre Forest area, so you can compare options and request a no obligation quote.",
       },
     ],
   },
