@@ -791,6 +791,11 @@ export const servicePages: ServicePage[] = [
         answer:
           "No. Kidderminster Solicitors is not a law firm. It provides general information and introductions only. Any legal advice comes from the solicitor or legal service provider you choose.",
       },
+      {
+        question: "How much do probate solicitors charge in Kidderminster?",
+        answer:
+          "Probate solicitor costs vary with the size and complexity of the estate, and firms may quote a fixed fee, an hourly rate, or a percentage of the estate. Request a no obligation quote to compare how Kidderminster probate solicitors would charge for your situation.",
+      },
     ],
   },
   {
@@ -3024,6 +3029,11 @@ export const servicePages: ServicePage[] = [
         question: "Can I request a call?",
         answer:
           "Yes. You can submit a no obligation quote enquiry and a suitable solicitor partner may contact you if they are able to help.",
+      },
+      {
+        question: "How do I find a personal injury solicitor in Kidderminster?",
+        answer:
+          "You can compare personal injury solicitor options in Kidderminster and the wider Wyre Forest area by requesting a no obligation quote, after which a suitable solicitor partner may contact you about an accident, injury at work, or road traffic claim.",
       },
     ],
   },
