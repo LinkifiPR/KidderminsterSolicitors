@@ -32,6 +32,9 @@ export const guideCategoryGroups = [
     categories: ["Conveyancing"],
     serviceSlugs: [
       "conveyancing-solicitors-kidderminster",
+      "transfer-of-equity-solicitors-kidderminster",
+      "conveyancing-solicitors-stourport-on-severn",
+      "conveyancing-solicitors-bewdley",
       "conveyancing-quotes-kidderminster",
       "remortgage-solicitors-kidderminster",
       "land-property-disputes-solicitors-kidderminster",
@@ -469,6 +472,135 @@ function createQualityGuide(seed: QualityGuideSeed): GuidePage {
 }
 
 export const servicePages: ServicePage[] = [
+  createSpecialistServicePage({
+    slug: "transfer-of-equity-solicitors-kidderminster",
+    title: "Transfer of Equity Solicitors Kidderminster",
+    h1: "Transfer of equity solicitors in Kidderminster",
+    metaDescription:
+      "Compare transfer of equity solicitor options in Kidderminster for adding or removing someone from a property title, with or without a remortgage.",
+    category: "Conveyancing",
+    summary:
+      "Adding or removing a person from a property title in and around Kidderminster, with or without a mortgage.",
+    userNeed:
+      "A transfer of equity changes who legally owns a property, for example adding a partner, removing a former partner, buying out a co-owner, or passing a share to family, often alongside a mortgage or remortgage.",
+    serviceScope: [
+      "Transfer of equity work usually involves checking the title, preparing the transfer deed, dealing with any existing lender's requirements, considering stamp duty where it applies, and registering the change at the Land Registry. It can run alongside a remortgage where a lender is added, removed, or changed.",
+      "The work differs depending on whether there is a mortgage, whether money is changing hands, whether the property is owned as joint tenants or tenants in common, and whether anyone being added or removed needs separate advice. A clear quote should reflect the actual transfer rather than treating every case as identical.",
+    ],
+    localContext:
+      "Transfer of equity enquiries around Kidderminster, Stourport-on-Severn, Bewdley, Cookley, Hagley, and the wider Wyre Forest area often follow a separation, marriage, remortgage, or a family arrangement to pass on a share of a home.",
+    prepareItems: [
+      "the property address and postcode",
+      "who is being added or removed",
+      "whether a mortgage or remortgage is involved",
+      "the current lender if any",
+      "whether money is changing hands",
+      "how the property is currently owned",
+      "any deadline such as a remortgage completion date",
+    ],
+    questionItems: [
+      "whether a remortgage is needed at the same time",
+      "how stamp duty might apply",
+      "whether anyone needs independent advice",
+      "what the lender will require",
+      "how long the transfer is likely to take",
+    ],
+    riskItems: [
+      "Problems often arise where a transfer is treated as simple form-filling when a lender, stamp duty, or a co-owner's separate interests are actually involved.",
+      "Another issue is leaving the transfer until a remortgage deadline is close, which adds pressure to the title and registration work.",
+    ],
+    relatedGuideSlugs: [
+      "transfer-of-equity-solicitor-guide",
+      "what-does-a-conveyancing-solicitor-do",
+      "how-much-do-conveyancing-solicitors-cost-in-kidderminster",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "conveyancing-solicitors-stourport-on-severn",
+    title: "Conveyancing Solicitors in Stourport-on-Severn",
+    h1: "Conveyancing solicitors in Stourport-on-Severn",
+    metaDescription:
+      "Compare conveyancing solicitor options for Stourport-on-Severn homes, including riverside, canal-side, and period property, and request a no obligation quote.",
+    category: "Conveyancing",
+    summary:
+      "Buying, selling, and remortgaging homes in Stourport-on-Severn and the surrounding Wyre Forest area.",
+    userNeed:
+      "Buying or selling in Stourport-on-Severn can involve riverside and canal-side property, Georgian and period homes near the basins, and newer estates at Burlish Park and Lickhill, each with its own title and survey considerations.",
+    serviceScope: [
+      "Conveyancing in Stourport-on-Severn covers the usual searches, title checks, contract work, lender requirements, and Land Registry steps, but local factors can matter: homes near the River Severn and the Staffordshire and Worcestershire Canal may need flood-risk searches and insurance checks, and property in Areley Kings or near the riverside conservation areas can raise listed-building or planning points.",
+      "The work also varies by property type, from terraced homes near the town centre and York Street, to inter-war and post-war housing at Lickhill and Burlish, to riverside apartments. A useful quote should reflect tenure, age, flood exposure, and whether a remortgage or transfer of equity is involved.",
+    ],
+    localContext:
+      "Stourport-on-Severn sits within the Wyre Forest district a few miles from Kidderminster, where the River Severn meets the canal network. Local buyers often weigh flood zones, riverside access, and conservation-area rules alongside price and chain position.",
+    prepareItems: [
+      "the property address and postcode",
+      "whether it is near the river or canal",
+      "the tenure if known",
+      "whether a mortgage or remortgage is involved",
+      "the approximate price and chain position",
+      "any flood history you are aware of",
+      "target dates if any",
+    ],
+    questionItems: [
+      "whether flood searches and insurance are needed",
+      "how conservation-area or listed-building rules apply",
+      "what searches the lender will require",
+      "how chain timing will be managed",
+      "what the quote covers beyond legal fees",
+    ],
+    riskItems: [
+      "A common problem with riverside and canal-side property is overlooking flood-risk searches and buildings insurance until late in the transaction.",
+      "Another is assuming a period or town-centre home has a straightforward title when conservation-area or boundary points need checking.",
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-conveyancing-solicitor-do",
+      "buying-a-house-in-kidderminster-legal-checklist",
+      "house-buying-searches-explained",
+    ],
+  }),
+  createSpecialistServicePage({
+    slug: "conveyancing-solicitors-bewdley",
+    title: "Conveyancing Solicitors in Bewdley",
+    h1: "Conveyancing solicitors in Bewdley",
+    metaDescription:
+      "Compare conveyancing solicitor options for Bewdley property, including riverside Georgian homes and conservation areas, and request a no obligation quote.",
+    category: "Conveyancing",
+    summary:
+      "Buying, selling, and remortgaging homes in Bewdley, Wribbenhall, and the surrounding Wyre Forest area.",
+    userNeed:
+      "Bewdley is a historic riverside town where many homes are Georgian, listed, or within conservation areas, so buying and selling can involve extra title, planning, and flood considerations alongside the usual conveyancing steps.",
+    serviceScope: [
+      "Conveyancing in Bewdley covers searches, title checks, contracts, lender requirements, and registration, but the town's character adds local points: many properties along Load Street, Severnside, and in Wribbenhall sit close to the River Severn, so flood-risk searches, flood defences, and buildings insurance often need checking, and listed or conservation-area homes can raise consent and alteration questions.",
+      "Property types range from period townhouses and cottages to riverside homes and newer developments on the edge of town. A clear quote should reflect tenure, listed status, flood exposure, and whether a remortgage or transfer of equity is part of the matter.",
+    ],
+    localContext:
+      "Bewdley sits on the River Severn within the Wyre Forest district, close to Kidderminster. Buyers here often consider flood zones and the town's flood defences, conservation-area rules, and the implications of buying a listed period home.",
+    prepareItems: [
+      "the property address and postcode",
+      "whether the home is listed or in a conservation area",
+      "how close it is to the river",
+      "the tenure if known",
+      "whether a mortgage or remortgage is involved",
+      "the approximate price and chain position",
+      "any flood history you are aware of",
+    ],
+    questionItems: [
+      "whether flood searches and insurance are needed",
+      "how listed-building or conservation rules affect the property",
+      "what searches the lender will require",
+      "how chain timing will be handled",
+      "what the quote includes beyond legal fees",
+    ],
+    riskItems: [
+      "In Bewdley a frequent problem is underestimating flood-risk and insurance checks for riverside homes, or assuming flood defences remove the need for searches.",
+      "Another is overlooking listed-building or conservation-area consents when a period property may have had unauthorised alterations.",
+    ],
+    relatedGuideSlugs: [
+      "what-does-a-conveyancing-solicitor-do",
+      "buying-a-house-in-kidderminster-legal-checklist",
+      "house-buying-searches-explained",
+    ],
+  }),
   {
     type: "service",
     slug: "conveyancing-solicitors-kidderminster",
@@ -5962,6 +6094,21 @@ export const trustPages: TrustPage[] = [
       "Analytics cookies help us understand site performance and improve the user experience. They are off by default until consent is given.",
       "Marketing cookies may support marketing activity where consent is given. They are off by default until consent is given.",
       "You can accept all cookies, reject non-essential cookies, or manage preferences using the cookie settings link in the footer.",
+    ],
+  },
+  {
+    type: "trust",
+    slug: "areas-we-cover",
+    title: "Areas We Cover",
+    h1: "Areas we cover across Kidderminster and Wyre Forest",
+    metaDescription:
+      "Compare solicitor options across Kidderminster, Stourport-on-Severn, Bewdley, and the wider Wyre Forest area, and request a no obligation quote.",
+    body: [
+      "Kidderminster Solicitors is an independent local guide for people comparing solicitor services across Kidderminster and the wider Wyre Forest district. You can request a no obligation quote wherever you are based in the area.",
+      "In Kidderminster itself you can compare [[conveyancing solicitors in Kidderminster|conveyancing-solicitors-kidderminster]] for buying, selling, and remortgaging, alongside probate, wills, family, and employment enquiries.",
+      "Nearby in [[Stourport-on-Severn|conveyancing-solicitors-stourport-on-severn]] we cover riverside and canal-side property, period homes, and newer estates at Lickhill and Burlish Park.",
+      "In historic [[Bewdley|conveyancing-solicitors-bewdley]] we cover Georgian, listed, and conservation-area homes where flood-risk and planning points often matter.",
+      "We also help people across the surrounding Wyre Forest area, including Cookley, Hagley, Hartlebury, and the Stourbridge fringe. Wherever you are, the site is not a law firm and does not provide legal advice; it can introduce you to a suitable solicitor partner where appropriate.",
     ],
   },
 ];

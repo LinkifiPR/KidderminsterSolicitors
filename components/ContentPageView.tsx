@@ -598,9 +598,21 @@ export function ContentPageView({ page }: { page: SitePage }) {
       ) : (
         <section className="bg-white px-5 py-20 sm:px-8">
           <div className="mx-auto max-w-4xl rounded-[2rem] border border-[var(--line)] bg-[var(--cream)] p-7 text-base leading-8 text-[var(--muted)] shadow-[0_30px_90px_rgba(7,24,39,0.08)] sm:p-10">
-            {page.body.map((paragraph) => (
-              <p key={paragraph} className="mb-5 last:mb-0">
-                {paragraph}
+            {page.body.map((paragraph, index) => (
+              <p key={index} className="mb-5 last:mb-0">
+                {parseInlineInternalLinks(paragraph).map((segment, segmentIndex) =>
+                  segment.type === "link" ? (
+                    <a
+                      key={`${segment.slug}-${segmentIndex}`}
+                      href={segment.href}
+                      className="content-body-link"
+                    >
+                      {segment.text}
+                    </a>
+                  ) : (
+                    <span key={`text-${segmentIndex}`}>{segment.text}</span>
+                  ),
+                )}
               </p>
             ))}
           </div>

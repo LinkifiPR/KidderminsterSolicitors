@@ -64,13 +64,19 @@ export function SiteFooter() {
             <Link href="/legal-guides/" className="transition hover:text-white">
               Legal guides
             </Link>
+            <Link href="/areas-we-cover/" className="transition hover:text-white">
+              Areas we cover
+            </Link>
           </div>
         </div>
 
         <div>
           <p className="text-sm font-semibold uppercase text-white">Legal</p>
           <div className="mt-4 grid gap-3 text-sm text-white/68">
-            {trustPages.slice(2).map((page) => (
+            {trustPages
+              .slice(2)
+              .filter((page) => page.slug !== "areas-we-cover")
+              .map((page) => (
               <Link
                 key={page.slug}
                 href={`/${page.slug}/`}
